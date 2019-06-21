@@ -1,0 +1,80 @@
+{
+    "realtimeToken": null,
+    "requestInfo": {
+        "apiVersion": 2,
+        "requestId": "e10e1b06-5af0-4eda-a8e6-9a4689816e1b",
+        "accessTokenStatus": "authenticated",
+        "serverTime": 1560850788
+    },
+    "firstTimeVisitEligibleLocations": [],
+    "accessToken": "6b80b3cb3ac8d6ebcc5cc6bf9f3f3adce040b5ee4300bca896afc346ce1195af",
+    "user": {
+        "lastUpdated": 1560775757,
+        "userStatus": 1,
+        "dateCreated": 1528315193,
+        "wallet": [],
+        "address": {
+            "country": null,
+            "city": null,
+            "countryCode": null,
+            "county": null,
+            "postCode": null,
+            "line2": null,
+            "line1": null,
+            "latLng": {
+                "lng": null,
+                "lat": null
+            },
+            "countryCodeId": null
+        },
+        "color": "#C43C52",
+        "credentials": [{
+            "credential": "user@email.com",
+            "verified": false,
+            "type": "email",
+            "channelId": "2"
+        }],
+        "appsAgreedToTerms": [1],
+        "profile": {
+            "gbkCustomerNumber": null,
+            "gender": "u",
+            "pizzaBuzzCustomerNumber": null,
+            "gbkMarketingOptIn": null,
+            "jamiesVegan": null,
+            "dirtyBurgerFreeBurgerProvided": null,
+            "edsEmail": null,
+            "gbkIeEmail": null,
+            "gbkToken": null,
+            "gbkUserId": null,
+            "jamiesGlutenFree": null,
+            "gbkIeCustomerNumber": null,
+            "gbkPushToken": null,
+            "jamiesFriendsAndFamily": null,
+            "pizzaBuzzEmail": null,
+            "flypayMarketingOptIn": null,
+            "gbkEmail": null,
+            "fishbowlMemberIdJamiesItalian": null,
+            "jamiesVegetarian": null,
+            "gbkCardNumber": null,
+            "mobilePhoneNumber": "7777999000",
+            "burritoMamaMarketingOptIn": null,
+            "jamiesAllergens": null,
+            "jamiesPreferredRestaurant": null,
+            "oliversEmail": null,
+            "facebookId": null,
+            "wahacaMarketingOptIn": null,
+            "gbkIeCardNumber": null,
+            "profilePicture": null,
+            "dirtyBurgerMarketingOptIn": null,
+            "jamiesCoeliac": null,
+            "jamiesGoldClubNumber": null,
+            "dob": 0,
+            "oliversCustomerNumber": null,
+            "name": "Automation",
+            "externalLoyaltyCardNumber": null
+        },
+        "marketingPreferences": [],
+        "userId": 2793560,
+        "defaultCardId": 0
+    }
+}

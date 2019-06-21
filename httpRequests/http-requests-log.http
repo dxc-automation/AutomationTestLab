@@ -1,0 +1,24 @@
+GET https://api.flypaythis.com/v2/location/3357/menu/3?accessToken=b8af7a8fc6e10ac1391aff0128a34c9132350c08b2edefb9f854e741ddd10d31&id=3357
+Accept: text/plain
+Cache-Control: no-cache
+
+<> 2019-02-21T120059.200.json
+
+###
+
+GET https://api.flypaythis.com/v2/location/3357/menu/3?accessToken=b8af7a8fc6e10ac1391aff0128a34c9132350c08b2edefb9f854e741ddd10d31&id=3357
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-21T115900.200.json
+
+###
+
+GET https://api.flypaythis.com/v5/location?accessToken=b8af7a8fc6e10ac1391aff0128a34c9132350c08b2edefb9f854e741ddd10d31&id=3357
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-02-20T120351.200.json
+
+###
+

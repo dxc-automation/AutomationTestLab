@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="3" total="5" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TC_001" duration-ms="3033" started-at="2019-06-18T20:07:18Z" finished-at="2019-06-18T20:07:21Z">
+    <groups>
+    </groups>
+    <test name="TC_01_Example" duration-ms="3033" started-at="2019-06-18T20:07:18Z" finished-at="2019-06-18T20:07:21Z">
+      <class name="com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token@1542153]" name="setup" is-config="true" duration-ms="3662" started-at="2019-06-18T20:07:14Z" finished-at="2019-06-18T20:07:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token@1542153]" name="startTest" is-config="true" duration-ms="171" started-at="2019-06-18T20:07:18Z" finished-at="2019-06-18T20:07:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="getToken(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token@1542153]" name="getToken" duration-ms="1541" started-at="2019-06-18T20:07:18Z" finished-at="2019-06-18T20:07:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token.getToken(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getToken -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token@1542153]" name="report" is-config="true" duration-ms="9" started-at="2019-06-18T20:07:20Z" finished-at="2019-06-18T20:07:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getToken status=SUCCESS method=ID_01_Token.getToken(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token@1542153] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token@1542153]" name="clearXml" is-config="true" duration-ms="3" started-at="2019-06-18T20:07:21Z" finished-at="2019-06-18T20:07:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearXml -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token@1542153]" name="tearDown" is-config="true" duration-ms="1356" started-at="2019-06-18T20:07:21Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-06-18T20:07:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token -->
+      <class name="com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test@1afa13b]" name="startTest" is-config="true" duration-ms="1" started-at="2019-06-18T20:07:20Z" finished-at="2019-06-18T20:07:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="test(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test@1afa13b]" name="test" duration-ms="1290" started-at="2019-06-18T20:07:20Z" finished-at="2019-06-18T20:07:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test.test(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["access_token"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["access_token"] not found.
+at org.json.JSONObject.get(JSONObject.java:473)
+at org.json.JSONObject.getString(JSONObject.java:654)
+at com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test.test(ID_02_Test.java:79)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test@1afa13b]" name="report" is-config="true" duration-ms="9" started-at="2019-06-18T20:07:21Z" finished-at="2019-06-18T20:07:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test status=FAILURE method=ID_02_Test.test(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test@1afa13b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test -->
+    </test> <!-- TC_01_Example -->
+  </suite> <!-- TC_001 -->
+</testng-results>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [TC_001]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.setup.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" verbose="10" name="TC_01_Example(failed)" parallel="tests">
+    <classes>
+      <class name="com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test">
+        <methods>
+          <include name="report"/>
+          <include name="setup"/>
+          <include name="clearXml"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="test" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test -->
+    </classes>
+  </test> <!-- TC_01_Example(failed) -->
+</suite> <!-- Failed suite [TC_001] -->

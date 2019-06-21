@@ -1,0 +1,13 @@
+{
+    "code": 500022,
+    "displayString": null,
+    "requestInfo": {
+        "apiVersion": 0,
+        "requestId": "97fe39c9-7c45-4e8b-9fe4-4d4139acc36d",
+        "accessTokenStatus": "authenticated",
+        "serverTime": 1560850791
+    },
+    "error": true,
+    "message": "The tender type configuration is missing, please contact our team",
+    "contextData": null
+}
