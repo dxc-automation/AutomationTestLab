@@ -157,16 +157,16 @@ public class BasicSetup {
                                         + "[ RESPONSE ]"
                                         + "<br />"
                                         + "<br />"
-                                        + " Response Code  : " + responseCode
+                                        + "Response Code  : " + responseCode
                                         + "<br />"
-                                        + " Message : " + responseMsg
+                                        + "Message : " + responseMsg
                                         + "<br />"
                                         + "<br />"
                                         + headers.replace("[", " ").replace("]", "")
                                         + "<br />"
                                         + "<br />"
                                         + "<br />"
-                                        + " " + response
+                                        + response
                                         + "<br />"
                                         + "<br />"
                                         + "</pre>");
@@ -221,22 +221,22 @@ public class BasicSetup {
                                         + "[ RESPONSE ]"
                                         + "<br />"
                                         + "<br />"
-                                        + " Response Code  : " + responseCode
+                                        + "Response Code  : " + responseCode
                                         + "<br />"
-                                        + " Error Message : " + responseMsg
+                                        + "Error Message : " + responseMsg
                                         + "<br />"
                                         + "<br />"
                                         + headers.replace("[", " ").replace("]", "")
                                         + "<br />"
                                         + "<br />"
                                         + "<br />"
-                                        + " ***** E X C E P T I O N ***** "
+                                        + "***** E X C E P T I O N ***** "
                                         + "<br />"
-                                        + " " + throwable
+                                        + throwable
                                         + "<br />"
                                         + "<br />"
                                         + "<br />"
-                                        + " " + response
+                                        + response
                                         + "<br />"
                                         + "<br />"
                                         + "</pre>");
