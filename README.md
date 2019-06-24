@@ -1,6 +1,6 @@
 # DXCTestLab_TestNG
 
-[![N|Solid](https://assets1.dxc.technology/home/images/DXC-Hero_A.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://www.gamblingsites.org/news/wp-content/uploads/pokerstars-logo.png)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) ![Editor](https://img.shields.io/github/release/pandao/editor.md.svg) [![License badge](https://img.shields.io/badge/license-Apache2-green.svg)](http://www.apache.org/licenses/LICENSE-2.0) ![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)
 
