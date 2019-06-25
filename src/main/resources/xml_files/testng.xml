@@ -7,7 +7,7 @@
         <listener class-name="com.setup.TestNGListener"/>
     </listeners>
 
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="safari"/>
 
     <test name="TC_01_Example" group-by-instances="true">
 

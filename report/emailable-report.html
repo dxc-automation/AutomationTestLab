@@ -9,18 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">TC_001</th></tr>
-<tr><td><a href="#t0">TC_01_Example</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,033</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TC_01_Example</a></td><td class="num">11</td><td class="num">0</td><td class="num attn">1</td><td class="num">49,917</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_01_Example &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test</td><td><a href="#m0">test</a></td><td rowspan="1">1560888440344</td><td rowspan="1">1290</td></tr><tr><th colspan="4">TC_01_Example &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token</td><td><a href="#m1">getToken</a></td><td rowspan="1">1560888438791</td><td rowspan="1">1541</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_01_Example &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser</td><td><a href="#m0">registerUser</a></td><td rowspan="1">1561470243238</td><td rowspan="1">586</td></tr><tr><th colspan="4">TC_01_Example &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken</td><td><a href="#m1">getAccessToken</a></td><td rowspan="1">1561470241816</td><td rowspan="1">1351</td></tr><tr class="passedodd"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate</td><td><a href="#m2">authentication</a></td><td rowspan="1">1561470243850</td><td rowspan="1">425</td></tr><tr class="passedeven"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn</td><td><a href="#m3">signIn</a></td><td rowspan="1">1561470244279</td><td rowspan="1">317</td></tr><tr class="passedodd"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo</td><td><a href="#m4">addInfo</a></td><td rowspan="1">1561470244600</td><td rowspan="1">297</td></tr><tr class="passedeven"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo</td><td><a href="#m5">getUserObject</a></td><td rowspan="1">1561470244899</td><td rowspan="1">466</td></tr><tr class="passedodd"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_07_Business</td><td><a href="#m6">getBusiness</a></td><td rowspan="1">1561470245368</td><td rowspan="1">504</td></tr><tr class="passedeven"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu</td><td><a href="#m7">getMenu</a></td><td rowspan="1">1561470245878</td><td rowspan="1">726</td></tr><tr class="passedodd"><td rowspan="1">com.test.TC_02_Example_HttpClient.Fly.ID_09_Order</td><td><a href="#m8">setOrder</a></td><td rowspan="1">1561470246651</td><td rowspan="1">312</td></tr><tr class="passedeven"><td rowspan="3">com.test.TC_03_Example_UI.ID_01_OpenCart</td><td><a href="#m9">checkCart</a></td><td rowspan="1">1561470289519</td><td rowspan="1">1896</td></tr><tr class="passedeven"><td><a href="#m10">openHomePage</a></td><td rowspan="1">1561470246965</td><td rowspan="1">42079</td></tr><tr class="passedeven"><td><a href="#m11">searchItem</a></td><td rowspan="1">1561470289053</td><td rowspan="1">465</td></tr></tbody>
 </table>
-<h2>TC_01_Example</h2><h3 id="m0">com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test#test</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test.test(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.json.JSONException: JSONObject[&quot;access_token&quot;] not found.
-	at org.json.JSONObject.get(JSONObject.java:473)
-	at org.json.JSONObject.getString(JSONObject.java:654)
-	at com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test.test(ID_02_Test.java:79)
+<h2>TC_01_Example</h2><h3 id="m0">com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser#registerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser.registerUser(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [OK] but found [Conflict]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser.registerUser(ID_02_RegisterUser.java:86)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
@@ -33,11 +37,21 @@
 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
 	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token#getToken</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token.getToken(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken#getAccessToken</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.getAccessToken(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate#authentication</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate.authentication(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn#signIn</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn.signIn(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo#addInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo.addInfo(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo#getUserObject</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo.getUserObject(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.test.TC_02_Example_HttpClient.Fly.ID_07_Business#getBusiness</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_07_Business.getBusiness(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu#getMenu</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu.getMenu(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.test.TC_02_Example_HttpClient.Fly.ID_09_Order#setOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.TC_02_Example_HttpClient.Fly.ID_09_Order.setOrder(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.test.TC_03_Example_UI.ID_01_OpenCart#checkCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.test.TC_03_Example_UI.ID_01_OpenCart#openHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.test.TC_03_Example_UI.ID_01_OpenCart#searchItem</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

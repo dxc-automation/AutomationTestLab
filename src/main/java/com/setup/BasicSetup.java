@@ -18,8 +18,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.FileReader;
@@ -28,11 +34,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import static com.setup.ConsoleRunner.xmlFile;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
-import static com.setup.ConsoleRunner.xmlFile;
-import static com.setup.OkHttpClientUtils.*;
+import static com.setup.OkHttpClientUtils.okHttpResponseCode;
+import static com.setup.OkHttpClientUtils.responseOkClientHeaders;
 
 
 /**
@@ -78,6 +85,9 @@ public class BasicSetup {
         public void setup(String browser) throws Exception {
             String pathChrome = filePath + "/" + "src/main/resources/chromedriver.exe";
             String pathFirefox = filePath + "/" + "src/main/resources/geckodriver.exe";
+            String pathSafari = filePath + "/" + "src/main/resources/safaridriver";
+
+            DesiredCapabilities capability = new DesiredCapabilities();
 
             if (browser.equalsIgnoreCase("chrome")) {
                 System.setProperty("webdriver.chrome.driver", pathChrome);
@@ -95,6 +105,15 @@ public class BasicSetup {
                 options.setLogLevel(FirefoxDriverLogLevel.TRACE);
                 driver = new FirefoxDriver();
                 LOG.info("| Firefox browser launched successfully |");
+
+            } else if (browser.equalsIgnoreCase("safari")) {
+                    capability.setCapability("browserstack.safari.driver", "3.141.59");
+                    capability.setCapability("browserstack.safari.enablePopups", true);
+                    SafariOptions sOptions = new SafariOptions();
+                    sOptions.setUseTechnologyPreview(true);
+                    SafariOptions.fromCapabilities(capability);
+                    capability.setCapability(SafariOptions.CAPABILITY, sOptions);
+                    driver = new SafariDriver();
             }
         }
 

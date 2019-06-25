@@ -16,7 +16,7 @@
             "id": 71907,
             "categories": [{
                 "name": "The All-rounder",
-                "description": "Classic burger, small fries, and fresh & fizzy for ?9.95. Available from 5pm. Upgrade to a beer or glass of wine for ?2.00.  We use lots of different ingredients in our kitchens so cannot guarantee that our food is completely free of any allergens. If you require any allergy information, please check with our teams before you order.\n",
+                "description": "Classic burger, small fries, and fresh & fizzy for £9.95. Available from 5pm. Upgrade to a beer or glass of wine for £2.00.  We use lots of different ingredients in our kitchens so cannot guarantee that our food is completely free of any allergens. If you require any allergy information, please check with our teams before you order.\n",
                 "id": 462533,
                 "items": [
                     {
@@ -49,7 +49,7 @@
                                                     "id": 13048177,
                                                     "pickOptions": [
                                                         {
-                                                            "name": "Jalape?os",
+                                                            "name": "Jalapeños",
                                                             "addPrice": 0.95,
                                                             "id": 60566242,
                                                             "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -373,7 +373,7 @@
                                                     "id": 13048185,
                                                     "pickOptions": [
                                                         {
-                                                            "name": "Jalape?os",
+                                                            "name": "Jalapeños",
                                                             "addPrice": 0.95,
                                                             "id": 60566275,
                                                             "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -671,7 +671,7 @@
                                                         "id": 13048192,
                                                         "pickOptions": [
                                                             {
-                                                                "name": "Jalape?os",
+                                                                "name": "Jalapeños",
                                                                 "addPrice": 0.95,
                                                                 "id": 60566306,
                                                                 "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -1064,7 +1064,7 @@
                                                         "id": 13048202,
                                                         "pickOptions": [
                                                             {
-                                                                "name": "Jalape?os",
+                                                                "name": "Jalapeños",
                                                                 "addPrice": 0.95,
                                                                 "id": 60566413,
                                                                 "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -1450,7 +1450,7 @@
                                                     "id": 13048212,
                                                     "pickOptions": [
                                                         {
-                                                            "name": "Jalape?os",
+                                                            "name": "Jalapeños",
                                                             "addPrice": 0.95,
                                                             "id": 60566496,
                                                             "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -1859,7 +1859,7 @@
                 }
             },
             "upsells": [],
-            "revision": 73
+            "revision": 116
         },
         {
             "name": "gbk-april2019-table-kids",
@@ -1867,7 +1867,7 @@
             "id": 71910,
             "categories": [{
                 "name": "Kids' Menu",
-                "description": "Choose a burger, side & drink for ?6.95. All our kids' beef burgers are cooked well-done as standard. We use lots of different ingredients in our kitchens so cannot guarantee that our food is completely free of any allergens. If you require any allergy information, please check with our teams before you order. \n",
+                "description": "Choose a burger, side & drink for £6.95. All our kids' beef burgers are cooked well-done as standard. We use lots of different ingredients in our kitchens so cannot guarantee that our food is completely free of any allergens. If you require any allergy information, please check with our teams before you order. \n",
                 "id": 462536,
                 "items": [
                     {
@@ -2861,14 +2861,14 @@
                     },
                     {
                         "name": "Ice cream",
-                        "description": "Choose from 2 scoops of ice cream for extra ?1",
+                        "description": "Choose from 2 scoops of ice cream for extra £1",
                         "customisationType": "simple",
                         "id": 3193382,
                         "portions": [{
                             "ingredient": {
                                 "slots": 1,
                                 "name": "Ice cream",
-                                "description": "Choose from 2 scoops of ice cream for extra ?1",
+                                "description": "Choose from 2 scoops of ice cream for extra £1",
                                 "addPrice": 1,
                                 "id": 60568194,
                                 "modifiers": [{
@@ -2916,7 +2916,7 @@
                                 "stockLevel": 1
                             },
                             "name": "Ice cream",
-                            "description": "Choose from 2 scoops of ice cream for extra ?1",
+                            "description": "Choose from 2 scoops of ice cream for extra £1",
                             "id": 3320306,
                             "uuid": "237b0c99-cce8-5068-b428-e6892d059f71"
                         }]
@@ -2929,7 +2929,7 @@
                 "regular": {}
             },
             "upsells": [],
-            "revision": 74
+            "revision": 117
         },
         {
             "name": "gbk-april2019-table-lunch",
@@ -2970,7 +2970,7 @@
                                                     "id": 13048941,
                                                     "pickOptions": [
                                                         {
-                                                            "name": "Jalape?os",
+                                                            "name": "Jalapeños",
                                                             "addPrice": 0.95,
                                                             "id": 60569733,
                                                             "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -3306,7 +3306,7 @@
                                                         "id": 13048953,
                                                         "pickOptions": [
                                                             {
-                                                                "name": "Jalape?os",
+                                                                "name": "Jalapeños",
                                                                 "addPrice": 0.95,
                                                                 "id": 60569765,
                                                                 "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -3676,7 +3676,7 @@
                                                         "id": 13048966,
                                                         "pickOptions": [
                                                             {
-                                                                "name": "Jalape?os",
+                                                                "name": "Jalapeños",
                                                                 "addPrice": 0.95,
                                                                 "id": 60569800,
                                                                 "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -3954,7 +3954,7 @@
                                                     "id": 13048975,
                                                     "pickOptions": [
                                                         {
-                                                            "name": "Jalape?os",
+                                                            "name": "Jalapeños",
                                                             "addPrice": 0.95,
                                                             "id": 60569826,
                                                             "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -4231,7 +4231,7 @@
                                                     "id": 13048984,
                                                     "pickOptions": [
                                                         {
-                                                            "name": "Jalape?os",
+                                                            "name": "Jalapeños",
                                                             "addPrice": 0.95,
                                                             "id": 60569852,
                                                             "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -4612,7 +4612,7 @@
                                                         "id": 13048997,
                                                         "pickOptions": [
                                                             {
-                                                                "name": "Jalape?os",
+                                                                "name": "Jalapeños",
                                                                 "addPrice": 0.95,
                                                                 "id": 60569889,
                                                                 "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -4958,7 +4958,7 @@
                                                         "id": 13049009,
                                                         "pickOptions": [
                                                             {
-                                                                "name": "Jalape?os",
+                                                                "name": "Jalapeños",
                                                                 "addPrice": 0.95,
                                                                 "id": 60569922,
                                                                 "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -5255,7 +5255,7 @@
                                                     "id": 13049020,
                                                     "pickOptions": [
                                                         {
-                                                            "name": "Jalape?os",
+                                                            "name": "Jalapeños",
                                                             "addPrice": 0.95,
                                                             "id": 60569950,
                                                             "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -5573,7 +5573,7 @@
                 }
             },
             "upsells": [],
-            "revision": 72
+            "revision": 115
         },
         {
             "name": "gbk-april2019-table-main",
@@ -5696,7 +5696,7 @@
                                             "id": 13050360,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572335,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -6031,7 +6031,7 @@
                                             "id": 13050372,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572390,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -6359,7 +6359,7 @@
                                             "id": 13050384,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572444,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -6611,7 +6611,7 @@
                                             "id": 13050394,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572487,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -6841,7 +6841,7 @@
                                             "id": 13050403,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572522,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -7176,7 +7176,7 @@
                                             "id": 13050415,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572574,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -7511,7 +7511,7 @@
                                             "id": 13050427,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572632,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -7849,7 +7849,7 @@
                                             "id": 13050441,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572692,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -8187,7 +8187,7 @@
                                             "id": 13050455,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572752,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -8477,7 +8477,7 @@
                                             "id": 13050465,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572805,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -8788,7 +8788,7 @@
                                             "id": 13050477,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572861,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -9102,7 +9102,7 @@
                                             "id": 13050489,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572918,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -9404,7 +9404,7 @@
                                             "id": 13050500,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60572973,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -9706,7 +9706,7 @@
                                             "id": 13050511,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573029,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -10078,7 +10078,7 @@
                                             "id": 13050526,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573092,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -10356,7 +10356,7 @@
                                             "id": 13050537,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573138,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -10677,7 +10677,7 @@
                                             "id": 13050551,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573198,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -10929,7 +10929,7 @@
                                             "id": 13050561,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573261,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -11091,7 +11091,7 @@
                                                     "stockLevel": 1
                                                 },
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "id": 60573301,
                                                     "modifiers": [{
                                                         "visible": true,
@@ -11169,7 +11169,7 @@
                                             "id": 13050570,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573313,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -11476,7 +11476,7 @@
                                                     "stockLevel": 1
                                                 },
                                                 {
-                                                    "name": "Jalape?os Hummus",
+                                                    "name": "Jalapeños Hummus",
                                                     "id": 60573384,
                                                     "modifiers": [{
                                                         "visible": true,
@@ -11553,7 +11553,7 @@
                                             "id": 13050588,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573395,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -11744,7 +11744,7 @@
                                             "id": 13050596,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573431,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -11847,7 +11847,7 @@
                                             "id": 13050598,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?o Hummus",
+                                                    "name": "Jalapeño Hummus",
                                                     "id": 60573455,
                                                     "modifiers": [{
                                                         "visible": true,
@@ -11973,7 +11973,7 @@
                                             "id": 13050605,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573472,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -12238,7 +12238,7 @@
                                             "id": 13050617,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573518,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -12451,7 +12451,7 @@
                                             "id": 13050624,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573553,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -12589,7 +12589,7 @@
                                                         "id": 13050627,
                                                         "pickOptions": [
                                                             {
-                                                                "name": "Jalape?os",
+                                                                "name": "Jalapeños",
                                                                 "addPrice": 1.05,
                                                                 "id": 60573580,
                                                                 "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -14012,7 +14012,7 @@
                                             "id": 13050639,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573738,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -14317,7 +14317,7 @@
                                             "id": 13050650,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573790,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -14622,7 +14622,7 @@
                                             "id": 13050661,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573844,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -14948,7 +14948,7 @@
                                             "id": 13050674,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60573917,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -15238,7 +15238,7 @@
                                             "id": 13050684,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574037,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -15553,7 +15553,7 @@
                                             "id": 13050695,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574147,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -15842,7 +15842,7 @@
                                             "id": 13050706,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574247,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -16144,7 +16144,7 @@
                                             "id": 13050717,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574351,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -16519,7 +16519,7 @@
                                             "id": 13050732,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574480,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -16826,7 +16826,7 @@
                                             "id": 13050743,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574625,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -17055,7 +17055,7 @@
                                             "id": 13050752,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574709,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -17343,7 +17343,7 @@
                                             "id": 13050765,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574820,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -17595,7 +17595,7 @@
                                             "id": 13050775,
                                             "pickOptions": [
                                                 {
-                                                    "name": "Jalape?os",
+                                                    "name": "Jalapeños",
                                                     "addPrice": 1.05,
                                                     "id": 60574885,
                                                     "uuid": "2fe48114-b87e-5f9b-8d7c-7302b2fa6d87",
@@ -19085,7 +19085,7 @@
                 "regular": {}
             },
             "upsells": [],
-            "revision": 72
+            "revision": 115
         }
     ]
 }

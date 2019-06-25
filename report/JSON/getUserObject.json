@@ -2,14 +2,14 @@
     "realtimeToken": null,
     "requestInfo": {
         "apiVersion": 2,
-        "requestId": "da174045-9aa7-4e07-8506-1914feb4b25a",
+        "requestId": "19fcdb04-1028-458a-a75b-e2b99c738252",
         "accessTokenStatus": "authenticated",
-        "serverTime": 1560850789
+        "serverTime": 1561470245
     },
     "firstTimeVisitEligibleLocations": [],
-    "accessToken": "6b80b3cb3ac8d6ebcc5cc6bf9f3f3adce040b5ee4300bca896afc346ce1195af",
+    "accessToken": "cfe9f393373f0a2285d5767b2208600013a583643cbced8c48719c0cb435ddde",
     "user": {
-        "lastUpdated": 1560850788,
+        "lastUpdated": 1561470244,
         "userStatus": 1,
         "dateCreated": 1528315193,
         "wallet": [],
