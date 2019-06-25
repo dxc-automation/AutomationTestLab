@@ -101,7 +101,7 @@ public class BasicSetup {
                 FirefoxProfile profile = new FirefoxProfile();
                 profile.setAcceptUntrustedCertificates(true);
                 profile.setAssumeUntrustedCertificateIssuer(true);
-                
+
                 FirefoxOptions options = new FirefoxOptions();
                 options.setLogLevel(FirefoxDriverLogLevel.TRACE);
                 driver = new FirefoxDriver();

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="446fb699-a12f-4f2c-bbaa-2e018c2f0a34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/JAVA_FRAMEWORK.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA_FRAMEWORK.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA_FRAMEWORK.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVA_FRAMEWORK.iws" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA_FRAMEWORK.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" afterDir="false" />
-    </list>
+    <list default="true" id="446fb699-a12f-4f2c-bbaa-2e018c2f0a34" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -181,7 +176,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -733,7 +728,7 @@
       <workItem from="1561213359278" duration="697000" />
       <workItem from="1561233660299" duration="975000" />
       <workItem from="1561403918158" duration="30000" />
-      <workItem from="1561492478732" duration="908000" />
+      <workItem from="1561492478732" duration="951000" />
     </task>
     <servers />
   </component>
@@ -764,7 +759,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8137000" />
+    <option name="totallyTimeSpent" value="8180000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1198,7 +1193,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
