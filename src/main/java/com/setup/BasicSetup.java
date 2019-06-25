@@ -101,6 +101,7 @@ public class BasicSetup {
                 FirefoxProfile profile = new FirefoxProfile();
                 profile.setAcceptUntrustedCertificates(true);
                 profile.setAssumeUntrustedCertificateIssuer(true);
+                
                 FirefoxOptions options = new FirefoxOptions();
                 options.setLogLevel(FirefoxDriverLogLevel.TRACE);
                 driver = new FirefoxDriver();
@@ -108,12 +109,18 @@ public class BasicSetup {
 
             } else if (browser.equalsIgnoreCase("safari")) {
                     capability.setCapability("browserstack.safari.driver", "3.141.59");
-                    capability.setCapability("browserstack.safari.enablePopups", true);
+                    capability.setCapability("browserstack.safari.enablePopups", false);
+                    capability.setCapability("browserstack.debug", true);
+                    capability.setCapability("browserstack.console", "info");
+                    capability.setCapability("browserstack.networkLogs", true);
+
                     SafariOptions sOptions = new SafariOptions();
                     sOptions.setUseTechnologyPreview(true);
                     SafariOptions.fromCapabilities(capability);
                     capability.setCapability(SafariOptions.CAPABILITY, sOptions);
                     driver = new SafariDriver();
+                    LOG.info("| Safari browser launched successfully |");
+
             }
         }
 
