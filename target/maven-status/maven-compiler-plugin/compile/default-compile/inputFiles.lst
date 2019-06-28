@@ -3,6 +3,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_09_Order.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/ConsoleRunner.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/HttpClient_POST.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/constants/Accounts.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_03_Authenticate.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/URLConnection.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java
@@ -10,6 +11,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/ExtentManager.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/UI.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_05_AddUserInfo.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_01_Example_URLConnection/ID_01_AccessToken.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_03_Example_UI/ID_01_OpenCart.java
@@ -23,7 +25,6 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_03_Example_UI/ID_02_AddToCart.java
-/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/constants/Endpoints.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/HttpClient_GET.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_07_Business.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/OkHttpClient_POST.java

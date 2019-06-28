@@ -7,16 +7,16 @@
   </listeners>
   <test thread-count="5" verbose="10" name="TC_01_Example(failed)" parallel="tests">
     <classes>
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser">
+      <class name="com.test.TC_04_AmelcoAPI.ID_01_LogIn">
         <methods>
           <include name="report"/>
           <include name="setup"/>
+          <include name="loginRam" invocation-numbers="0"/>
           <include name="clearXml"/>
-          <include name="registerUser" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="startTest"/>
         </methods>
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser -->
+      </class> <!-- com.test.TC_04_AmelcoAPI.ID_01_LogIn -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

@@ -83,9 +83,9 @@ public class BasicSetup {
         @Parameters({"browser"})
         @BeforeSuite
         public void setup(String browser) throws Exception {
-            String pathChrome = filePath + "/" + "src/main/resources/chromedriver.exe";
-            String pathFirefox = filePath + "/" + "src/main/resources/geckodriver.exe";
-            String pathSafari = filePath + "/" + "src/main/resources/safaridriver";
+            String pathChrome = filePath + "/" + "src/main/resources/drivers/chromedriver.exe";
+            String pathFirefox = filePath + "/" + "src/main/resources/drivers/geckodriver.exe";
+            String pathSafari = filePath + "/" + "src/main/resources/drivers/safaridriver";
 
             DesiredCapabilities capability = new DesiredCapabilities();
 
@@ -108,19 +108,18 @@ public class BasicSetup {
                 LOG.info("| Firefox browser launched successfully |");
 
             } else if (browser.equalsIgnoreCase("safari")) {
-                    capability.setCapability("browserstack.safari.driver", "3.141.59");
-                    capability.setCapability("browserstack.safari.enablePopups", false);
-                    capability.setCapability("browserstack.debug", true);
-                    capability.setCapability("browserstack.console", "info");
-                    capability.setCapability("browserstack.networkLogs", true);
+                capability.setCapability("browserstack.safari.driver", "3.141.59");
+                capability.setCapability("browserstack.safari.enablePopups", false);
+                capability.setCapability("browserstack.debug", true);
+                capability.setCapability("browserstack.console", "debug");
+                capability.setCapability("browserstack.networkLogs", true);
 
-                    SafariOptions sOptions = new SafariOptions();
-                    sOptions.setUseTechnologyPreview(true);
-                    SafariOptions.fromCapabilities(capability);
-                    capability.setCapability(SafariOptions.CAPABILITY, sOptions);
-                    driver = new SafariDriver();
-                    LOG.info("| Safari browser launched successfully |");
-
+                SafariOptions sOptions = new SafariOptions();
+                sOptions.setUseTechnologyPreview(true);
+                SafariOptions.fromCapabilities(capability);
+                capability.setCapability(SafariOptions.CAPABILITY, sOptions);
+                driver = new SafariDriver();
+                LOG.info("| Safari browser launched successfully |");
             }
         }
 

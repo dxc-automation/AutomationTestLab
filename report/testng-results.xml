@@ -1,232 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="27" total="39" passed="11">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TC_001" duration-ms="49917" started-at="2019-06-25T13:44:01Z" finished-at="2019-06-25T13:44:51Z">
+  <suite name="TC_001" duration-ms="907" started-at="2019-06-28T15:38:40Z" finished-at="2019-06-28T15:38:41Z">
     <groups>
     </groups>
-    <test name="TC_01_Example" duration-ms="49917" started-at="2019-06-25T13:44:01Z" finished-at="2019-06-25T13:44:51Z">
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu">
-        <test-method status="PASS" signature="getMenu(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu@1ed1993a]" name="getMenu" duration-ms="726" started-at="2019-06-25T13:44:05Z" finished-at="2019-06-25T13:44:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu.getMenu(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getMenu -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu@1ed1993a]" name="startTest" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:05Z" finished-at="2019-06-25T13:44:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu@1ed1993a]" name="report" is-config="true" duration-ms="46" started-at="2019-06-25T13:44:06Z" finished-at="2019-06-25T13:44:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getMenu status=SUCCESS method=ID_08_Menu.getMenu(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu@1ed1993a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu -->
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate@49c386c8]" name="startTest" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:03Z" finished-at="2019-06-25T13:44:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="authentication(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate@49c386c8]" name="authentication" duration-ms="425" started-at="2019-06-25T13:44:03Z" finished-at="2019-06-25T13:44:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate.authentication(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- authentication -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate@49c386c8]" name="report" is-config="true" duration-ms="2" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=authentication status=SUCCESS method=ID_03_Authenticate.authentication(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate@49c386c8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate -->
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn@56528192]" name="startTest" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="signIn(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn@56528192]" name="signIn" duration-ms="317" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn.signIn(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signIn -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn@56528192]" name="report" is-config="true" duration-ms="2" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signIn status=SUCCESS method=ID_04_SignIn.signIn(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn@56528192] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn -->
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo@6e0dec4a]" name="startTest" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="addInfo(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo@6e0dec4a]" name="addInfo" duration-ms="297" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo.addInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addInfo -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo@6e0dec4a]" name="report" is-config="true" duration-ms="2" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addInfo status=SUCCESS method=ID_05_AddUserInfo.addInfo(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo@6e0dec4a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo -->
-      <class name="com.test.TC_03_Example_UI.ID_01_OpenCart">
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805]" name="openHomePage" duration-ms="42079" started-at="2019-06-25T13:44:06Z" finished-at="2019-06-25T13:44:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805]" name="startTest" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:06Z" finished-at="2019-06-25T13:44:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805]" name="report" is-config="true" duration-ms="9" started-at="2019-06-25T13:44:49Z" finished-at="2019-06-25T13:44:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openHomePage status=SUCCESS method=ID_01_OpenCart.openHomePage()[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="searchItem()[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805]" name="searchItem" duration-ms="465" started-at="2019-06-25T13:44:49Z" finished-at="2019-06-25T13:44:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchItem -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805]" name="report" is-config="true" duration-ms="1" started-at="2019-06-25T13:44:49Z" finished-at="2019-06-25T13:44:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchItem status=SUCCESS method=ID_01_OpenCart.searchItem()[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="checkCart()[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805]" name="checkCart" duration-ms="1896" started-at="2019-06-25T13:44:49Z" finished-at="2019-06-25T13:44:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCart -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805]" name="report" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:51Z" finished-at="2019-06-25T13:44:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkCart status=SUCCESS method=ID_01_OpenCart.checkCart()[pri:0, instance:com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_03_Example_UI.ID_01_OpenCart -->
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_07_Business">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_07_Business@5ccddd20]" name="startTest" is-config="true" duration-ms="1" started-at="2019-06-25T13:44:05Z" finished-at="2019-06-25T13:44:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="getBusiness(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_07_Business@5ccddd20]" name="getBusiness" duration-ms="504" started-at="2019-06-25T13:44:05Z" finished-at="2019-06-25T13:44:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_07_Business.getBusiness(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getBusiness -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_07_Business@5ccddd20]" name="report" is-config="true" duration-ms="5" started-at="2019-06-25T13:44:05Z" finished-at="2019-06-25T13:44:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getBusiness status=SUCCESS method=ID_07_Business.getBusiness(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_07_Business@5ccddd20] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_07_Business -->
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_09_Order">
-        <test-method status="PASS" signature="setOrder(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_09_Order@1f3f4916]" name="setOrder" duration-ms="312" started-at="2019-06-25T13:44:06Z" finished-at="2019-06-25T13:44:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_09_Order.setOrder(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setOrder -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_09_Order@1f3f4916]" name="startTest" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:06Z" finished-at="2019-06-25T13:44:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_09_Order@1f3f4916]" name="report" is-config="true" duration-ms="1" started-at="2019-06-25T13:44:06Z" finished-at="2019-06-25T13:44:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=setOrder status=SUCCESS method=ID_09_Order.setOrder(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_09_Order@1f3f4916] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_09_Order -->
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken@670002]" name="setup" is-config="true" duration-ms="2657" started-at="2019-06-25T13:43:58Z" finished-at="2019-06-25T13:44:01Z">
+    <test name="TC_01_Example" duration-ms="907" started-at="2019-06-28T15:38:40Z" finished-at="2019-06-28T15:38:41Z">
+      <class name="com.test.TC_04_AmelcoAPI.ID_01_LogIn">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@47542153]" name="setup" is-config="true" duration-ms="7412" started-at="2019-06-28T15:38:32Z" finished-at="2019-06-28T15:38:40Z">
           <params>
             <param index="0">
               <value>
@@ -237,63 +18,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken@670002]" name="startTest" is-config="true" duration-ms="306" started-at="2019-06-25T13:44:01Z" finished-at="2019-06-25T13:44:01Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@47542153]" name="startTest" is-config="true" duration-ms="154" started-at="2019-06-28T15:38:40Z" finished-at="2019-06-28T15:38:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="getAccessToken(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken@670002]" name="getAccessToken" duration-ms="1351" started-at="2019-06-25T13:44:01Z" finished-at="2019-06-25T13:44:03Z">
+        <test-method status="FAIL" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@47542153]" name="loginRam" duration-ms="698" started-at="2019-06-28T15:38:40Z" finished-at="2019-06-28T15:38:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.getAccessToken(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAccessToken -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken@670002]" name="report" is-config="true" duration-ms="69" started-at="2019-06-25T13:44:03Z" finished-at="2019-06-25T13:44:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getAccessToken status=SUCCESS method=ID_01_AccessToken.getAccessToken(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken@670002] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken@670002]" name="clearXml" is-config="true" duration-ms="1" started-at="2019-06-25T13:44:51Z" finished-at="2019-06-25T13:44:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearXml -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken@670002]" name="tearDown" is-config="true" duration-ms="510" started-at="2019-06-25T13:44:51Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-06-25T13:44:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken -->
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser">
-        <test-method status="FAIL" signature="registerUser(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser@1f0f1111]" name="registerUser" duration-ms="586" started-at="2019-06-25T13:44:03Z" finished-at="2019-06-25T13:44:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser.registerUser(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="javax.net.ssl.SSLHandshakeException">
             <message>
-              <![CDATA[expected [OK] but found [Conflict]]]>
+              <![CDATA[sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [OK] but found [Conflict]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser.registerUser(ID_02_RegisterUser.java:86)
+              <![CDATA[javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
+at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
+at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
+at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
+at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
+at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
+at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
+at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
+at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
+at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
+at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
+at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:80)
+at com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(ID_01_LogIn.java:46)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -314,56 +82,47 @@ at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 at java.lang.Thread.run(Thread.java:748)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
+at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
+at sun.security.validator.Validator.validate(Validator.java:262)
+at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
+at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
+at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
+... 41 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
+... 47 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerUser -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser@1f0f1111]" name="startTest" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:03Z" finished-at="2019-06-25T13:44:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser@1f0f1111]" name="report" is-config="true" duration-ms="24" started-at="2019-06-25T13:44:03Z" finished-at="2019-06-25T13:44:03Z">
+        </test-method> <!-- loginRam -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@47542153]" name="report" is-config="true" duration-ms="43" started-at="2019-06-28T15:38:41Z" finished-at="2019-06-28T15:38:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registerUser status=FAILURE method=ID_02_RegisterUser.registerUser(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser@1f0f1111] output={null}]]]>
+                <![CDATA[[TestResult name=loginRam status=FAILURE method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@47542153] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser -->
-      <class name="com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo">
-        <test-method status="PASS" signature="getUserObject(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo@96def03]" name="getUserObject" duration-ms="466" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo.getUserObject(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@47542153]" name="clearXml" is-config="true" duration-ms="1" started-at="2019-06-28T15:38:41Z" finished-at="2019-06-28T15:38:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUserObject -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo@96def03]" name="startTest" is-config="true" duration-ms="0" started-at="2019-06-25T13:44:04Z" finished-at="2019-06-25T13:44:04Z">
+        </test-method> <!-- clearXml -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@47542153]" name="tearDown" is-config="true" duration-ms="351" started-at="2019-06-28T15:38:41Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-06-28T15:38:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo@96def03]" name="report" is-config="true" duration-ms="2" started-at="2019-06-25T13:44:05Z" finished-at="2019-06-25T13:44:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getUserObject status=SUCCESS method=ID_06_UserInfo.getUserObject(java.lang.reflect.Method)[pri:0, instance:com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo@96def03] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.TC_04_AmelcoAPI.ID_01_LogIn -->
     </test> <!-- TC_01_Example -->
   </suite> <!-- TC_001 -->
 </testng-results>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TC_01_Example</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 25 16:44:01 EEST 2019</td>
+<td>Started on:</td><td>Fri Jun 28 18:38:40 EEST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>49 seconds (49917 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (907 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser.registerUser()'><b>registerUser</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser.registerUser(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>java.lang.AssertionError: expected [OK] but found [Conflict]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser.registerUser(ID_02_RegisterUser.java:86)
+<td title='com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam()'><b>loginRam</b><br>Test class: com.test.TC_04_AmelcoAPI.ID_01_LogIn<br>Parameters: public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td><div><pre>javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:80)
+	at com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(ID_01_LogIn.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -104,15 +123,49 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2064844229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2064844229'><pre>java.lang.AssertionError: expected [OK] but found [Conflict]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser.registerUser(ID_02_RegisterUser.java:86)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
+	at sun.security.validator.Validator.validate(Validator.java:262)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
+	... 41 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
+	... 47 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace825345360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace825345360'><pre>javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:80)
+	at com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(ID_01_LogIn.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -133,72 +186,24 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
+	at sun.security.validator.Validator.validate(Validator.java:262)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
+	... 41 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
+	... 47 more
 </pre></div></td>
 <td>0</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser@1f0f1111</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo.addInfo()'><b>addInfo</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo.addInfo(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo@6e0dec4a</td></tr>
-<tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate.authentication()'><b>authentication</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate.authentication(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate@49c386c8</td></tr>
-<tr>
-<td title='com.test.TC_03_Example_UI.ID_01_OpenCart.checkCart()'><b>checkCart</b><br>Test class: com.test.TC_03_Example_UI.ID_01_OpenCart</td>
-<td></td>
-<td>1</td>
-<td>com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805</td></tr>
-<tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.getAccessToken()'><b>getAccessToken</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.getAccessToken(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>1</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken@670002</td></tr>
-<tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_07_Business.getBusiness()'><b>getBusiness</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_07_Business<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_07_Business.getBusiness(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_07_Business@5ccddd20</td></tr>
-<tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu.getMenu()'><b>getMenu</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu.getMenu(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu@1ed1993a</td></tr>
-<tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo.getUserObject()'><b>getUserObject</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo.getUserObject(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo@96def03</td></tr>
-<tr>
-<td title='com.test.TC_03_Example_UI.ID_01_OpenCart.openHomePage()'><b>openHomePage</b><br>Test class: com.test.TC_03_Example_UI.ID_01_OpenCart</td>
-<td></td>
-<td>42</td>
-<td>com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805</td></tr>
-<tr>
-<td title='com.test.TC_03_Example_UI.ID_01_OpenCart.searchItem()'><b>searchItem</b><br>Test class: com.test.TC_03_Example_UI.ID_01_OpenCart</td>
-<td></td>
-<td>0</td>
-<td>com.test.TC_03_Example_UI.ID_01_OpenCart@794cb805</td></tr>
-<tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_09_Order.setOrder()'><b>setOrder</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_09_Order<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_09_Order.setOrder(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_09_Order@1f3f4916</td></tr>
-<tr>
-<td title='com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn.signIn()'><b>signIn</b><br>Test class: com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn<br>Parameters: public void com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn.signIn(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn@56528192</td></tr>
+<td>com.test.TC_04_AmelcoAPI.ID_01_LogIn@47542153</td></tr>
 </table><p>
 </body>
 </html>
