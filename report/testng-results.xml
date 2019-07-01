@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="5" passed="2">
+<testng-results skipped="0" failed="0" ignored="6" total="9" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="TC_001" duration-ms="2421" started-at="2019-07-01T14:21:33Z" finished-at="2019-07-01T14:21:36Z">
+  <suite name="TC_001" duration-ms="2886" started-at="2019-07-01T19:11:28Z" finished-at="2019-07-01T19:11:31Z">
     <groups>
     </groups>
-    <test name="TC_01_Example" duration-ms="2421" started-at="2019-07-01T14:21:33Z" finished-at="2019-07-01T14:21:36Z">
+    <test name="TC_01_Example" duration-ms="2886" started-at="2019-07-01T19:11:28Z" finished-at="2019-07-01T19:11:31Z">
       <class name="com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin@25d250c6]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-01T14:21:35Z" finished-at="2019-07-01T14:21:35Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin@6dbb137d]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-01T19:11:31Z" finished-at="2019-07-01T19:11:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin@25d250c6]" name="externalLogin" duration-ms="444" started-at="2019-07-01T14:21:35Z" finished-at="2019-07-01T14:21:36Z">
+        <test-method status="PASS" signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin@6dbb137d]" name="externalLogin" duration-ms="563" started-at="2019-07-01T19:11:31Z" finished-at="2019-07-01T19:11:31Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- externalLogin -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin@25d250c6]" name="report" is-config="true" duration-ms="1" started-at="2019-07-01T14:21:36Z" finished-at="2019-07-01T14:21:36Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin@6dbb137d]" name="report" is-config="true" duration-ms="1" started-at="2019-07-01T19:11:31Z" finished-at="2019-07-01T19:11:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=externalLogin status=SUCCESS method=ID_03_ExternalLogin.externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin@25d250c6] output={null}]]]>
+                <![CDATA[[TestResult name=externalLogin status=SUCCESS method=ID_03_ExternalLogin.externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin@6dbb137d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -35,7 +35,7 @@
         </test-method> <!-- report -->
       </class> <!-- com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin -->
       <class name="com.test.TC_04_AmelcoAPI.ID_01_LogIn">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@45b9a632]" name="setup" is-config="true" duration-ms="1709" started-at="2019-07-01T14:21:31Z" finished-at="2019-07-01T14:21:33Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@54c562f7]" name="setup" is-config="true" duration-ms="2010" started-at="2019-07-01T19:11:26Z" finished-at="2019-07-01T19:11:28Z">
           <params>
             <param index="0">
               <value>
@@ -46,11 +46,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@45b9a632]" name="startTest" is-config="true" duration-ms="108" started-at="2019-07-01T14:21:33Z" finished-at="2019-07-01T14:21:33Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@54c562f7]" name="startTest" is-config="true" duration-ms="111" started-at="2019-07-01T19:11:28Z" finished-at="2019-07-01T19:11:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@45b9a632]" name="loginRam" duration-ms="1844" started-at="2019-07-01T14:21:33Z" finished-at="2019-07-01T14:21:35Z">
+        <test-method status="PASS" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@54c562f7]" name="loginRam" duration-ms="2185" started-at="2019-07-01T19:11:28Z" finished-at="2019-07-01T19:11:31Z">
           <params>
             <param index="0">
               <value>
@@ -61,26 +61,54 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginRam -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@45b9a632]" name="report" is-config="true" duration-ms="10" started-at="2019-07-01T14:21:35Z" finished-at="2019-07-01T14:21:35Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@54c562f7]" name="report" is-config="true" duration-ms="10" started-at="2019-07-01T19:11:31Z" finished-at="2019-07-01T19:11:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@45b9a632] output={null}]]]>
+                <![CDATA[[TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@54c562f7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@45b9a632]" name="clearXml" is-config="true" duration-ms="1" started-at="2019-07-01T14:21:36Z" finished-at="2019-07-01T14:21:36Z">
+        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@54c562f7]" name="clearXml" is-config="true" duration-ms="1" started-at="2019-07-01T19:11:31Z" finished-at="2019-07-01T19:11:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXml -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@45b9a632]" name="tearDown" is-config="true" duration-ms="348" started-at="2019-07-01T14:21:36Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-07-01T14:21:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@54c562f7]" name="tearDown" is-config="true" duration-ms="354" started-at="2019-07-01T19:11:31Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-07-01T19:11:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.TC_04_AmelcoAPI.ID_01_LogIn -->
+      <class name="com.test.TC_04_AmelcoAPI.ID_02_SignIn">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_SignIn@318ba8c8]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-01T19:11:31Z" finished-at="2019-07-01T19:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="signIn(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_SignIn@318ba8c8]" name="signIn" duration-ms="1" started-at="2019-07-01T19:11:31Z" finished-at="2019-07-01T19:11:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.TC_04_AmelcoAPI.ID_02_SignIn.signIn(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_SignIn@318ba8c8]" name="report" is-config="true" duration-ms="2" started-at="2019-07-01T19:11:31Z" finished-at="2019-07-01T19:11:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signIn status=SUCCESS method=ID_02_SignIn.signIn(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_SignIn@318ba8c8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- com.test.TC_04_AmelcoAPI.ID_02_SignIn -->
     </test> <!-- TC_01_Example -->
   </suite> <!-- TC_001 -->
 </testng-results>

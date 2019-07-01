@@ -30,20 +30,20 @@ public class ID_01_LogIn extends BasicSetup {
     public void loginRam(Method testMethod) throws Exception {
         url = new URIBuilder()
                 .setScheme("https")
-                .setHost("ram.qacore.pyr")
+                .setHost("ram.uat.pyr")
                 .setPath("/ram/login")
                 .build();
 
         JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("username", core1_username);
-        jsonPostData.put("password", core1_password);
-        jsonPostData.put("signature", core1_signature);
-        jsonPostData.put("devIx", core1_devIx);
+        jsonPostData.put("username", uat1_username);
+        jsonPostData.put("password", uat1_password);
+        jsonPostData.put("signature", uat1_signature);
+        jsonPostData.put("devIx", uat1_devIx);
 
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData).addHeader("Referer", "https://sports.qacore.pyr/");
+        httpPost(fileName, url, jsonPostData).addHeader("Referer", "https://sports.uat.pyr/");
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"
@@ -69,5 +69,9 @@ public class ID_01_LogIn extends BasicSetup {
                 + "<br />"
                 + "<br />"
                 + "</pre>");
+
+
+        String token = httpResponseHeaders.get(8).getValue();
+        System.out.println("\n TOKEN \n" + token);
     }
 }

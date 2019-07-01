@@ -6,6 +6,7 @@ import com.setup.ExtentManager;
 import org.apache.http.Consts;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
@@ -16,12 +17,15 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.constants.Accounts.*;
+import static com.constants.Accounts.uat1_password;
+import static com.constants.Accounts.uat1_username;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
 
 public class ID_02_SignIn extends BasicSetup {
+
+    public static UrlEncodedFormEntity entity;
 
     @BeforeClass
     public void startTest() throws Exception {
@@ -41,21 +45,20 @@ public class ID_02_SignIn extends BasicSetup {
                 .build();
 
         JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("username", core1_username);
-        jsonPostData.put("password", core1_password);
-        jsonPostData.put("signature", core1_signature);
-        jsonPostData.put("devIx", core1_devIx);
 
         List<NameValuePair> loginParams = new ArrayList<NameValuePair>();
-        loginParams.add(new BasicNameValuePair("username", core1_username));
-        loginParams.add(new BasicNameValuePair("password", core1_password));
+        loginParams.add(new BasicNameValuePair("username", uat1_username));
+        loginParams.add(new BasicNameValuePair("password", uat1_password));
 
-        UrlEncodedFormEntity entity = new UrlEncodedFormEntity(loginParams, Consts.UTF_8);
+        entity = new UrlEncodedFormEntity(loginParams, Consts.UTF_8);
 
-        String requestData = jsonPostData.toString(4);
+        String requestData = entity.toString();
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData).addHeader("Referer", "https://walletapi.qacore.pyr/PsAmelcoApi/");
+        HttpPost httpPost = new HttpPost(url);
+        httpPost.setEntity(entity);
+
+        //httpPost(fileName, url, jsonPostData).addHeader("Referer", "https://walletapi.uat.pyr/PsAmelcoApi/");
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

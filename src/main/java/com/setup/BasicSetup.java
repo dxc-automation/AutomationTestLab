@@ -149,7 +149,7 @@ public class BasicSetup {
                             // Get the response headers
                             if (httpResponseHeaders != null) {
                                 try {
-                                    headers = httpResponseHeaders.toString().replace("; ", "; \n").replaceAll("Path=/;", "");
+                                    headers = httpResponseHeaders.toString().replace("; ", ";\n").replaceAll("Path=/;", "").replaceAll("Secure,", "");
                                     } catch (Exception e) {
                                     e.printStackTrace();
                                     }
@@ -213,7 +213,7 @@ public class BasicSetup {
                             // Get the response headers
                             if (httpResponseHeaders != null) {
                                 try {
-                                    headers = httpResponseHeaders.toString().replace(",", " ");
+                                    headers = httpResponseHeaders.toString().replace("; ", ";\n").replaceAll("Path=/;", "").replaceAll("Secure,", "");
                                     } catch (Exception e) {
                                     e.printStackTrace();
                                 }

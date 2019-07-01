@@ -55,7 +55,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 1, 2019 05:21:33 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 1, 2019 10:11:28 PM</span>
 				</a>
 			</li>
 			<li>
@@ -94,6 +94,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>POST</a></li>
+					<li><a href='#'>HttpClient</a></li>
 					<li><a href='#'>OkHttpClient</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -142,7 +143,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -157,10 +158,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> others
 				</div>
 			</div>
 		</div>
@@ -178,14 +179,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_01] Send log in ram module request</span>
-						<span class='test-time'>Jul 1, 2019 05:21:33 PM</span>
+						<span class='test-time'>Jul 1, 2019 10:11:28 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 1, 2019 05:21:33 PM</span>
-	<span class='label end-time'>Jul 1, 2019 05:21:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+861ms</span>
+	<span class='label start-time'>Jul 1, 2019 10:11:28 PM</span>
+	<span class='label end-time'>Jul 1, 2019 10:11:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+201ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -207,73 +208,311 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:21:35 PM</td>
-					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    ram.qacore.pyr<br />Path:    /ram/login<br />
+					<td class='timestamp'>10:11:31 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    ram.uat.pyr<br />Path:    /ram/login<br />
 Content-Type: application/json
 Accept: */*
 Connection: keep-alive
-Referer: https://sports.qacore.pyr/<br /><br /><br />[ REQUEST  BODY ]<br /><br />{
-&nbsp;&nbsp;"password": "Test1234",
-&nbsp;&nbsp;"devIx": "V2G22O1H3E1X603M2S",
-&nbsp;&nbsp;"signature": "646fdf0ZZXodaSUJxm7UBdxfq7%2BYXAkpFKogHndScSqi%2BKGXrZqTBJNtXhS%2FaMlFaik%2B7Q1%2F4bz26OiGHHNQo0YQzkt0DqeUTqNGOADR7u%2FEVNOpYCCoLECWrt4%2BEY%2FOW4t5A%2FSU1kiUUwUKWRpBnEX1s8nFh33zsUWXm%2FZqCT9St2mQcK%2FDGRCp83Icr8S6kX7o5AjwMO%2FhRXdRP0v92H8MZKvWbkKeBC3pTizGQo4PUclaD55AYuJAFZr6%2BF5FvB%2B64GKcl60OV1B%2BAEJI9oS4LQ1xulba0lomOlnEnBCqwmUeVQO08SvyJzv5v%2FnNbTMfzBrWBaGFI2VMcXi7ZF3Ocm83z0XV06lMPO7e5TpE2VMA46wQLItMMRo%2BmG6anOv%2BYz%2BcYsTlTzS376%2B3EI3zoffBt27lQcZXhNASbwTN59R1PDlwvA%3D%3D",
-&nbsp;&nbsp;"username": "audharyakQA"
+Referer: https://sports.uat.pyr/<br /><br /><br />[ REQUEST  BODY ]<br /><br />{
+&nbsp;&nbsp;"password": "Testing123",
+&nbsp;&nbsp;"devIx": "X2F3G5R3YV243B4O2G",
+&nbsp;&nbsp;"signature": "Woj5M0IHKiwt9aK2cYHwveP8K%2BcfTFkUePSHA94b%2FFw%2BsaYfzxtMz4AFO5NG1wx19bdwfKTSpVz7ryHMCHcPjQWke4DNcGTCXqCySTWynoiCer2OkJadi8hJIsrgGnHCNhn6tstITOW%2F2urDXiKeLcLOXRn71Db0ch0y%2FwTIy0IDHyaqmsU1kmtG1KqP2iELOEooIoYpj6XOarF2DR7RF2Ak%2B3eRE1YAxNuhOeemPmxeE4IYEiyO9QQeOm8juwOs%2B%2Bx3HzpMsuS%2FFvHQnNQErjoploz1eJN3S19BwjrilKwp4G4tQ9YVdl%2B7wrMxxIHmbKUyWMmp6e4hAxnT8CY%2BX376UHV%2BiR2f54CKI%2FAm6TOoZ6lkmcYVut5Mw1tQgO5U%2BqPRLtambBmtWp%2BFCb3cuiqCEo1Qw5vaDwkYrPWTb1P1cSbf8GvXmQ%3D%3D",
+&nbsp;&nbsp;"username": "BGQACOM1"
 }<br /><br /></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:21:35 PM</td>
-					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=D7E5A34B215FD75B19F0F4886C374DD5; 
-Path=/ram; 
-HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Credentials: true, Set-Cookie: WIID=/U9C2z6pvTJ91LVXCE7D362Jk/56qBDctE5/hXdK/jlbiQf13S1/yO4MabO8PML8dP8GEnUUa2p2C66nP59NnR9YWmGPvRuN; 
-Domain=.qacore.pyr; 
-Expires=Sat, 29-Jun-2024 14:21:33 GMT; 
- 
-Secure, Set-Cookie: JSESSIONID=D7E5A34B215FD75B19F0F4886C374DD5; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: SBTK=OE7YC32LjruwffBGZDNPPAYL; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: SBSG=UDc5lIxVozxmmZWCBwgGf1q9ETEJ7swF3DShIRFrPKjc9/l9jopT736viMA1IfmCsvmD96NPcvKSXJ+K5RPjBIXEq2R9QfQT7Fhz+1lazanQxgcIh5oyGx9G4q19BI9rsjS+1Lf0WzcbF9AK7wrSBs98zTTfITIR; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: LMTMOD=1000; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: BRAND=PokerStars; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: WBID=AXMCUP; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: LCNS=0; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: CTRY=IM; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: LSRC=1; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: GVER=WEB; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: SITE=1; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; 
-mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Mon, 01 Jul 2019 14:21:34 GMT, Server: app server, Set-Cookie: NSC_sbn-33.130-8083=ffffffff09163f9345525d5f4f58455e445a4a4229a3;expires=Mon, 01-Jul-2019 14:31:32 GMT;path=/;secure;httponly<br /><br /><br />{
+					<td class='timestamp'>10:11:31 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=592621C865A6AFFC14EC6419BE521DEF;
+Path=/ram;
+Secure;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=ip7vmajeCjwf83CKjz4YFcjZt1Dp2L54TdNx3wXa4/PNxuDRl7fOyfx5KDEntYCSIq5rJ2hyWn52aJR9lj88fk478U+qDyMa;
+Domain=.uat.pyr;
+Expires=Sat, 29-Jun-2024 19:11:29 GMT;
+
+ Set-Cookie: JSESSIONID=592621C865A6AFFC14EC6419BE521DEF;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SBTK=vmA7NoDh5VaLams6aPMTtZWd;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SBSG=HVrmKqguKeEkZO4nK1Ip2R5T17L0KS3+UPTSS5Ip9N0sF3Wue0ncrHGVxvEypViSVQFb7qoMjXUfvkJskp6Ji7U6YfqksvrzzOfW1yn4fs4mLjt1O+UH1fjuJJuiGcRqhndZolv5shEcqwmtrfCK9M9s9rJylKud;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LMTMOD=1000;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: BRAND=PokerStars;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: WBID=SCVMSV;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LCNS=512;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: CTRY=IM;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LSRC=1;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: GVER=WEB;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SITE=1;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
+mode=block, Strict-Transport-Security: max-age=31536000 ;
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Mon, 01 Jul 2019 19:11:30 GMT, Server: app server<br /><br /><br />{
+  "country": "IM",
+  "pr": 31,
+  "imageid": 0,
+  "fl": 36176137,
+  "timezone": 0,
+  "ipCountry": "UK",
+  "balancestr": "91,665.90 USD",
+  "pr2h": 0,
+  "statecode": "",
+  "locale": 0,
+  "playervisibility": [
+    {
+      "rmTransfersAllowed": true
+    },
+    {
+      "casino": true
+    },
+    {
+      "sportsbook": true
+    },
+    {
+      "livechatsupport": false
+    },
+    {
+      "publiclivechatsupport": true
+    },
+    {
+      "webrealmoneyform": true
+    },
+    {
+      "freebets": true
+    },
+    {
+      "pmcpaywall": false
+    },
+    {
+      "predictorGameEnabled": false
+    },
+    {
+      "documentRequestPromptEnabled": false
+    },
+    {
+      "wcxChat": false
+    },
+    {
+      "chestPageEnabled": true
+    },
+    {
+      "thedeal": true
+    },
+    {
+      "thedeal-highroller": true
+    },
+    {
+      "wcxPublicChat": false
+    },
+    {
+      "playercv": 1794322272
+    },
+    {
+      "playercvhigh": 556670353
+    },
+    {
+      "playercv2": 284691224
+    },
+    {
+      "playercvhigh2": 0
+    },
+    {
+      "wcxLobbyChatVelocity": 0
+    },
+    {
+      "wcxLobbyChatPublicVelocity": 0
+    },
+    {
+      "wc2BalanceLowPromptVelocity": 0
+    },
+    {
+      "balanceLowPrompt": false
+    },
+    {
+      "wcxLowBalance": false
+    },
+    {
+      "showMyHandHistoryRequests": true
+    }
+  ],
+  "balances": [
+    {
+      "chips": 9166590,
+      "tchips": 0,
+      "currency": "USD"
+    },
+    {
+      "chips": 84403,
+      "tchips": 0,
+      "currency": "EUR"
+    }
+  ],
+  "clientvisibility": [
+    {
+      "casino": true
+    },
+    {
+      "sportsbook": true
+    }
+  ],
+  "fl2h": 131072,
+  "balance": 9166590,
+  "totaltmoneycurrency": "USD",
+  "currency": "USD",
+  "LMTMOD": 1000,
+  "embedded": "1",
+  "email": "bgqacom1@starsgroup.com",
+  "timestamp": 1562008290767,
+  "pr3h": 0,
+  "fl3": 8196,
+  "fl2": 540692,
+  "pr3": 0,
+  "pr2": 0,
+  "totalbalanceusd": 9267248,
+  "license": 512,
+  "totaltmoneybalance": 0,
+  "fl3h": 0,
+  "success": true,
+  "playchips": 1001500000,
+  "totalbalance": 9267248,
+  "playerVerification": false,
+  "ipState": "",
+  "username": "BGQACOM1"
+}<br /><br /></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>[ID_02] TEST NAME</span>
+						<span class='test-time'>Jul 1, 2019 10:11:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 1, 2019 10:11:31 PM</span>
+	<span class='label end-time'>Jul 1, 2019 10:11:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
+</div>
+	<div class='test-desc'>DESCRIPTION </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>HttpClient</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>YOURNAME</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>10:11:31 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    ram.uat.pyr<br />Path:    /ram/login<br />
+Content-Type: application/json
+Accept: */*
+Connection: keep-alive
+Referer: https://sports.uat.pyr/<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Type: application/x-www-form-urlencoded; charset=UTF-8,Content-Length: 37,Chunked: false]<br /><br /></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:11:31 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=592621C865A6AFFC14EC6419BE521DEF;
+Path=/ram;
+Secure;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=ip7vmajeCjwf83CKjz4YFcjZt1Dp2L54TdNx3wXa4/PNxuDRl7fOyfx5KDEntYCSIq5rJ2hyWn52aJR9lj88fk478U+qDyMa;
+Domain=.uat.pyr;
+Expires=Sat, 29-Jun-2024 19:11:29 GMT;
+
+ Set-Cookie: JSESSIONID=592621C865A6AFFC14EC6419BE521DEF;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SBTK=vmA7NoDh5VaLams6aPMTtZWd;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SBSG=HVrmKqguKeEkZO4nK1Ip2R5T17L0KS3+UPTSS5Ip9N0sF3Wue0ncrHGVxvEypViSVQFb7qoMjXUfvkJskp6Ji7U6YfqksvrzzOfW1yn4fs4mLjt1O+UH1fjuJJuiGcRqhndZolv5shEcqwmtrfCK9M9s9rJylKud;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LMTMOD=1000;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: BRAND=PokerStars;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: WBID=SCVMSV;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LCNS=512;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: CTRY=IM;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LSRC=1;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: GVER=WEB;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SITE=1;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
+mode=block, Strict-Transport-Security: max-age=31536000 ;
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Mon, 01 Jul 2019 19:11:30 GMT, Server: app server<br /><br /><br />{
   "country": "IM",
   "pr": 31,
   "imageid": 0,
@@ -382,7 +621,7 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
   "LMTMOD": 1000,
   "embedded": "1",
   "email": "audharyak@ps.im",
-  "timestamp": 1561990893970,
+  "timestamp": 1561980097260,
   "pr3h": 0,
   "fl3": 4,
   "fl2": 16384,
@@ -406,17 +645,17 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>[REST/SOAP] TEST NAME</span>
-						<span class='test-time'>Jul 1, 2019 05:21:35 PM</span>
+						<span class='test-name'>[ID_03] External log in</span>
+						<span class='test-time'>Jul 1, 2019 10:11:31 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 1, 2019 05:21:35 PM</span>
-	<span class='label end-time'>Jul 1, 2019 05:21:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+446ms</span>
+	<span class='label start-time'>Jul 1, 2019 10:11:31 PM</span>
+	<span class='label end-time'>Jul 1, 2019 10:11:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+564ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -424,7 +663,7 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 				<span class='category label white-text'>OkHttpClient</span>
 			</div>
 			<div class='author-list'>
-				<span class='author label white-text'>YOURNAME</span>
+				<span class='author label white-text'>PavelPopov</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -439,64 +678,66 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>5:21:36 PM</td>
-					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:   POST<br />Protocol: HTTPS<br />Host:     sports.uat.pyr<br />Path:     /sportsbook/v1/api/externalLogin<br /><br /><br /><br />[ REQUEST  BODY ]<br /><br />username=audharyakQA&password=Test1234<br /></pre></td>
+					<td class='timestamp'>10:11:31 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:   POST<br />Protocol: HTTPS<br />Host:     sports.uat.pyr<br />Path:     /sportsbook/v1/api/externalLogin<br /><br /><br /><br />[ REQUEST  BODY ]<br /><br />username=BGQACOM1&password=Testing123&devIx=X2F3G5R3YV243B4O2G<br /></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>5:21:36 PM</td>
-					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=D7E5A34B215FD75B19F0F4886C374DD5; 
-Path=/ram; 
-HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Credentials: true, Set-Cookie: WIID=/U9C2z6pvTJ91LVXCE7D362Jk/56qBDctE5/hXdK/jlbiQf13S1/yO4MabO8PML8dP8GEnUUa2p2C66nP59NnR9YWmGPvRuN; 
-Domain=.qacore.pyr; 
-Expires=Sat, 29-Jun-2024 14:21:33 GMT; 
- 
-Secure, Set-Cookie: JSESSIONID=D7E5A34B215FD75B19F0F4886C374DD5; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: SBTK=OE7YC32LjruwffBGZDNPPAYL; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: SBSG=UDc5lIxVozxmmZWCBwgGf1q9ETEJ7swF3DShIRFrPKjc9/l9jopT736viMA1IfmCsvmD96NPcvKSXJ+K5RPjBIXEq2R9QfQT7Fhz+1lazanQxgcIh5oyGx9G4q19BI9rsjS+1Lf0WzcbF9AK7wrSBs98zTTfITIR; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: LMTMOD=1000; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: BRAND=PokerStars; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: WBID=AXMCUP; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: LCNS=0; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: CTRY=IM; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: LSRC=1; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: GVER=WEB; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, Set-Cookie: SITE=1; 
-Domain=.qacore.pyr; 
-Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
- 
-Secure, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; 
-mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Mon, 01 Jul 2019 14:21:34 GMT, Server: app server, Set-Cookie: NSC_sbn-33.130-8083=ffffffff09163f9345525d5f4f58455e445a4a4229a3;expires=Mon, 01-Jul-2019 14:31:32 GMT;path=/;secure;httponly<br /><br /><br />{
+					<td class='timestamp'>10:11:31 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=592621C865A6AFFC14EC6419BE521DEF;
+Path=/ram;
+Secure;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=ip7vmajeCjwf83CKjz4YFcjZt1Dp2L54TdNx3wXa4/PNxuDRl7fOyfx5KDEntYCSIq5rJ2hyWn52aJR9lj88fk478U+qDyMa;
+Domain=.uat.pyr;
+Expires=Sat, 29-Jun-2024 19:11:29 GMT;
+
+ Set-Cookie: JSESSIONID=592621C865A6AFFC14EC6419BE521DEF;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SBTK=vmA7NoDh5VaLams6aPMTtZWd;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SBSG=HVrmKqguKeEkZO4nK1Ip2R5T17L0KS3+UPTSS5Ip9N0sF3Wue0ncrHGVxvEypViSVQFb7qoMjXUfvkJskp6Ji7U6YfqksvrzzOfW1yn4fs4mLjt1O+UH1fjuJJuiGcRqhndZolv5shEcqwmtrfCK9M9s9rJylKud;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LMTMOD=1000;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: BRAND=PokerStars;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: WBID=SCVMSV;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LCNS=512;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: CTRY=IM;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: LSRC=1;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: GVER=WEB;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ Set-Cookie: SITE=1;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2019 19:11:30 GMT;
+
+ X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
+mode=block, Strict-Transport-Security: max-age=31536000 ;
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Mon, 01 Jul 2019 19:11:30 GMT, Server: app server<br /><br /><br />{
   "Response": {
     "sessionToken": "",
     "body": {
@@ -592,8 +833,42 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 1, 2019 05:21:33 PM</td>
+										<td>Jul 1, 2019 10:11:28 PM</td>
 										<td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>HttpClient</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 1, 2019 10:11:31 PM</td>
+										<td class='linked' test-id='2'>[ID_02] TEST NAME</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -626,8 +901,8 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 1, 2019 05:21:35 PM</td>
-										<td class='linked' test-id='2'>[REST/SOAP] TEST NAME</td>
+										<td>Jul 1, 2019 10:11:31 PM</td>
+										<td class='linked' test-id='3'>[ID_03] External log in</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -675,12 +950,12 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
                             <div class='author-heading'>
                                 <span class='author-name'>PavelPopov</span>
                                 <span class='author-status right'>
-                                        <span class='label pass'>1</span>
+                                        <span class='label pass'>2</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    <span class='label green accent-4 white-text'>Passed: 1</span>
+                                    <span class='label green accent-4 white-text'>Passed: 2</span>
                                     
                                     
                                 </div>
@@ -696,8 +971,13 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 1, 2019 05:21:33 PM</td>
+                                                <td>Jul 1, 2019 10:11:28 PM</td>
                                                 <td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jul 1, 2019 10:11:31 PM</td>
+                                                <td class='linked' test-id='3'>[ID_03] External log in</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
@@ -730,8 +1010,8 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 1, 2019 05:21:35 PM</td>
-                                                <td class='linked' test-id='2'>[REST/SOAP] TEST NAME</td>
+                                                <td>Jul 1, 2019 10:11:31 PM</td>
+                                                <td class='linked' test-id='2'>[ID_02] TEST NAME</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
@@ -759,31 +1039,31 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 1, 2019 05:21:33 PM</div>
+					<div class='panel-lead'>Jul 1, 2019 10:11:28 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 1, 2019 05:21:36 PM</div>
+			 		<div class='panel-lead'>Jul 1, 2019 10:11:31 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 2s+505ms</div>
+					<div class='panel-lead'>0h 0m 2s+973ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -797,7 +1077,7 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 						</tr>
 							<tr>
 								<td>Local Host</td>
-								<td>10.160.8.106</td>
+								<td>192.168.1.100</td>
 							</tr>
 							<tr>
 								<td>Host Name</td>
@@ -840,6 +1120,15 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 							</td>
 						</tr>
 						<tr>
+							<td>HttpClient</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
 							<td>OkHttpClient</td>
 							<td>1</td>
 							<td>0</td>
@@ -861,7 +1150,7 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
+				passParent: 3,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -869,13 +1158,13 @@ mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8,
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 2,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 2,
+				infoChild: 3,
 				exceptionsChild: 0,
 				
 				passGrandChild: 0,

@@ -19,6 +19,12 @@
             </methods>
         </class>
 
+        <class name="com.test.TC_04_AmelcoAPI.ID_02_SignIn">
+            <methods>
+                <include name="signIn"/>
+            </methods>
+        </class>
+
         <class name="com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin">
             <methods>
                 <include name="externalLogin"/>

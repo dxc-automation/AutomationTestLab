@@ -15,8 +15,7 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-import static com.constants.Accounts.core1_password;
-import static com.constants.Accounts.core1_username;
+import static com.constants.Accounts.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
@@ -28,8 +27,8 @@ public class ID_03_ExternalLogin extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[REST/SOAP] TEST NAME", "DESCRIPTION");
-        test.assignAuthor("YOUR NAME");
+        test = extent.createTest("[ID_03] External log in", "DESCRIPTION");
+        test.assignAuthor("Pavel Popov");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
     }
@@ -40,14 +39,13 @@ public class ID_03_ExternalLogin extends BasicSetup {
         String fileName = testMethod.getName() + ".json";
 
         JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("key", "value");
-        jsonPostData.put("key", "value");
 
         MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
 
         RequestBody requestBody = new FormBody.Builder()
-                .add("username", core1_username)
-                .add("password", core1_password)
+                .add("username", uat1_username)
+                .add("password", uat1_password)
+                .add("devIx", uat1_devIx)
                 .build();
 
         url = new URIBuilder()

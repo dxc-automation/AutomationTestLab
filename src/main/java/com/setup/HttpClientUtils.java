@@ -1,5 +1,6 @@
 package com.setup;
 
+import com.test.TC_04_AmelcoAPI.ID_02_SignIn;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -66,13 +67,19 @@ public class HttpClientUtils {
     public static HttpPost httpPost(String fileName, URI url, JSONObject jsonPostData) throws Exception {
         client = HttpClientBuilder.create().build();
 
-        StringEntity parameters = new StringEntity(jsonPostData.toString());
+        StringEntity entity = new StringEntity(jsonPostData.toString());
 
         post = new HttpPost(url);
         post.setHeader("Content-Type", "application/json");
         post.setHeader("Accept", "*/*");
         post.setHeader("Connection", "keep-alive");
-        post.setEntity(parameters);
+
+        try {
+            post.setEntity(ID_02_SignIn.entity);
+        } catch (Exception e) {
+            System.out.println("\n Form Entity not found.");
+        }
+        post.setEntity(entity);
 
         getUrlElements();
         getPostRequestHeaders();
@@ -83,8 +90,8 @@ public class HttpClientUtils {
         serverResponse = client.execute(post);
         responseMsg = serverResponse.getStatusLine().getReasonPhrase();
         
-        HttpEntity entity = serverResponse.getEntity();
-        String responseEntity = EntityUtils.toString(entity, "UTF-8");
+        HttpEntity serverResponseEntity = serverResponse.getEntity();
+        String responseEntity = EntityUtils.toString(serverResponseEntity, "UTF-8");
 
         requestLine = post.getRequestLine().toString();
         objectResponse = new JSONObject(responseEntity);
