@@ -37,7 +37,7 @@ public class ID_02_Test extends BasicSetup {
 
         MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
 
-        requestBody = RequestBody.create(mediaType, "grant_type=client_credentials");
+        RequestBody requestBody = RequestBody.create(mediaType, "grant_type=client_credentials");
 
         Request request = new Request.Builder()
                 .url("https://api.sandbox.paypal.com/v1/oauth2/token")

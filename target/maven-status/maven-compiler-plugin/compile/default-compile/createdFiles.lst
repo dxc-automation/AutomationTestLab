@@ -14,6 +14,8 @@ com/test/TC_02_Example_HttpClient/Fly/ID_07_Business.class
 com/setup/ExtentManager.class
 com/test/TC_02_Example_HttpClient/Fly/ID_08_Menu.class
 com/test/TC_03_Example_UI/ID_01_OpenCart.class
+com/test/TC_04_AmelcoAPI/ID_02_SignIn.class
+com/test/TC_04_AmelcoAPI/ID_03_ExternalLogin.class
 com/test/TC_01_Example_URLConnection/ID_02_CreateSession.class
 com/setup/BasicSetup.class
 com/test/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.class

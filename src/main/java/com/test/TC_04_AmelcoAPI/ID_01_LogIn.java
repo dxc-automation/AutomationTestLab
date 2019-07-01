@@ -10,10 +10,10 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
+import static com.constants.Accounts.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
-import static com.constants.Accounts.*;
 
 public class ID_01_LogIn extends BasicSetup {
 
@@ -43,7 +43,7 @@ public class ID_01_LogIn extends BasicSetup {
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData);
+        httpPost(fileName, url, jsonPostData).addHeader("Referer", "https://sports.qacore.pyr/");
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

@@ -3,6 +3,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_09_Order.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/ConsoleRunner.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/HttpClient_POST.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_ExternalLogin.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/constants/Accounts.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_03_Authenticate.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/URLConnection.java
@@ -13,6 +14,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_05_AddUserInfo.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_SignIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_01_Example_URLConnection/ID_01_AccessToken.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_03_Example_UI/ID_01_OpenCart.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_01_Example_URLConnection/ID_03_SignIn.java

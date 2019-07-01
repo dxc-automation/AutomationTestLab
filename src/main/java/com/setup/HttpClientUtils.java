@@ -7,16 +7,18 @@ import org.apache.http.ProtocolVersion;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.*;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
 import java.net.URI;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.setup.BasicSetup.*;
+import static com.setup.BasicSetup.filePath;
 
 public class HttpClientUtils {
 
@@ -69,6 +71,7 @@ public class HttpClientUtils {
         post = new HttpPost(url);
         post.setHeader("Content-Type", "application/json");
         post.setHeader("Accept", "*/*");
+        post.setHeader("Connection", "keep-alive");
         post.setEntity(parameters);
 
         getUrlElements();
@@ -79,8 +82,7 @@ public class HttpClientUtils {
 
         serverResponse = client.execute(post);
         responseMsg = serverResponse.getStatusLine().getReasonPhrase();
-
-
+        
         HttpEntity entity = serverResponse.getEntity();
         String responseEntity = EntityUtils.toString(entity, "UTF-8");
 
@@ -139,11 +141,11 @@ public class HttpClientUtils {
     }
 
 
-    public static List<Header> getAllResponseHeaders() throws Exception {
+    public static String getAllResponseHeaders() throws Exception {
         httpResponseHeaders = Arrays.asList(serverResponse.getAllHeaders());
-        for (Header header : httpResponseHeaders) {
+        for (Header header : httpResponseHeaders ) {
         }
-        return httpResponseHeaders;
+        return httpResponseHeaders.toString();
     }
 
     public static String getPostRequestHeaders() throws Exception {

@@ -41,7 +41,6 @@
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -56,7 +55,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 28, 2019 06:38:40 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 1, 2019 05:21:33 PM</span>
 				</a>
 			</li>
 			<li>
@@ -81,7 +80,7 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -95,6 +94,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>POST</a></li>
+					<li><a href='#'>OkHttpClient</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -142,10 +142,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -157,10 +157,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -175,17 +175,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_01] Send log in ram module request</span>
-						<span class='test-time'>Jun 28, 2019 06:38:40 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Jul 1, 2019 05:21:33 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jun 28, 2019 06:38:40 PM</span>
-	<span class='label end-time'>Jun 28, 2019 06:38:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+748ms</span>
+	<span class='label start-time'>Jul 1, 2019 05:21:33 PM</span>
+	<span class='label end-time'>Jul 1, 2019 05:21:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+861ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -205,82 +205,312 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:38:41 PM</td>
-					<td class='step-details'><span class='label white-text red'>| FAILED | ID_01_LogIn[loginRam]</span></td>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:21:35 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    ram.qacore.pyr<br />Path:    /ram/login<br />
+Content-Type: application/json
+Accept: */*
+Connection: keep-alive
+Referer: https://sports.qacore.pyr/<br /><br /><br />[ REQUEST  BODY ]<br /><br />{
+&nbsp;&nbsp;"password": "Test1234",
+&nbsp;&nbsp;"devIx": "V2G22O1H3E1X603M2S",
+&nbsp;&nbsp;"signature": "646fdf0ZZXodaSUJxm7UBdxfq7%2BYXAkpFKogHndScSqi%2BKGXrZqTBJNtXhS%2FaMlFaik%2B7Q1%2F4bz26OiGHHNQo0YQzkt0DqeUTqNGOADR7u%2FEVNOpYCCoLECWrt4%2BEY%2FOW4t5A%2FSU1kiUUwUKWRpBnEX1s8nFh33zsUWXm%2FZqCT9St2mQcK%2FDGRCp83Icr8S6kX7o5AjwMO%2FhRXdRP0v92H8MZKvWbkKeBC3pTizGQo4PUclaD55AYuJAFZr6%2BF5FvB%2B64GKcl60OV1B%2BAEJI9oS4LQ1xulba0lomOlnEnBCqwmUeVQO08SvyJzv5v%2FnNbTMfzBrWBaGFI2VMcXi7ZF3Ocm83z0XV06lMPO7e5TpE2VMA46wQLItMMRo%2BmG6anOv%2BYz%2BcYsTlTzS376%2B3EI3zoffBt27lQcZXhNASbwTN59R1PDlwvA%3D%3D",
+&nbsp;&nbsp;"username": "audharyakQA"
+}<br /><br /></pre></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:38:41 PM</td>
-					<td class='step-details'><pre>javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
-	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:80)
-	at com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(ID_01_LogIn.java:46)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
-	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
-	at sun.security.validator.Validator.validate(Validator.java:262)
-	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
-	... 41 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
-	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
-	... 47 more
-</pre></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:21:35 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=D7E5A34B215FD75B19F0F4886C374DD5; 
+Path=/ram; 
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Credentials: true, Set-Cookie: WIID=/U9C2z6pvTJ91LVXCE7D362Jk/56qBDctE5/hXdK/jlbiQf13S1/yO4MabO8PML8dP8GEnUUa2p2C66nP59NnR9YWmGPvRuN; 
+Domain=.qacore.pyr; 
+Expires=Sat, 29-Jun-2024 14:21:33 GMT; 
+ 
+Secure, Set-Cookie: JSESSIONID=D7E5A34B215FD75B19F0F4886C374DD5; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: SBTK=OE7YC32LjruwffBGZDNPPAYL; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: SBSG=UDc5lIxVozxmmZWCBwgGf1q9ETEJ7swF3DShIRFrPKjc9/l9jopT736viMA1IfmCsvmD96NPcvKSXJ+K5RPjBIXEq2R9QfQT7Fhz+1lazanQxgcIh5oyGx9G4q19BI9rsjS+1Lf0WzcbF9AK7wrSBs98zTTfITIR; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: LMTMOD=1000; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: BRAND=PokerStars; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: WBID=AXMCUP; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: LCNS=0; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: CTRY=IM; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: LSRC=1; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: GVER=WEB; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: SITE=1; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; 
+mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Mon, 01 Jul 2019 14:21:34 GMT, Server: app server, Set-Cookie: NSC_sbn-33.130-8083=ffffffff09163f9345525d5f4f58455e445a4a4229a3;expires=Mon, 01-Jul-2019 14:31:32 GMT;path=/;secure;httponly<br /><br /><br />{
+  "country": "IM",
+  "pr": 31,
+  "imageid": 0,
+  "fl": 524553,
+  "timezone": 1,
+  "balancestr": "10,565,429.82 USD",
+  "pr2h": 0,
+  "statecode": "",
+  "locale": 0,
+  "playervisibility": [
+    {
+      "rmTransfersAllowed": true
+    },
+    {
+      "casino": false
+    },
+    {
+      "sportsbook": true
+    },
+    {
+      "livechatsupport": false
+    },
+    {
+      "publiclivechatsupport": true
+    },
+    {
+      "webrealmoneyform": true
+    },
+    {
+      "freebets": false
+    },
+    {
+      "pmcpaywall": false
+    },
+    {
+      "predictorGameEnabled": true
+    },
+    {
+      "documentRequestPromptEnabled": false
+    },
+    {
+      "wcxChat": false
+    },
+    {
+      "chestPageEnabled": true
+    },
+    {
+      "thedeal": false
+    },
+    {
+      "thedeal-highroller": false
+    },
+    {
+      "wcxPublicChat": false
+    },
+    {
+      "playercv": 671088659
+    },
+    {
+      "playercvhigh": 536874752
+    },
+    {
+      "playercv2": 273154824
+    },
+    {
+      "playercvhigh2": 0
+    },
+    {
+      "wcxLobbyChatVelocity": 0
+    },
+    {
+      "wcxLobbyChatPublicVelocity": 0
+    },
+    {
+      "wc2BalanceLowPromptVelocity": 0
+    },
+    {
+      "balanceLowPrompt": false
+    },
+    {
+      "wcxLowBalance": false
+    },
+    {
+      "showMyHandHistoryRequests": false
+    }
+  ],
+  "balances": [
+    {
+      "chips": 1056542982,
+      "tchips": 0,
+      "currency": "USD"
+    }
+  ],
+  "clientvisibility": [
+    {
+      "casino": false
+    },
+    {
+      "sportsbook": true
+    }
+  ],
+  "fl2h": 131072,
+  "balance": 1056542982,
+  "totaltmoneycurrency": "USD",
+  "currency": "USD",
+  "LMTMOD": 1000,
+  "embedded": "1",
+  "email": "audharyak@ps.im",
+  "timestamp": 1561990893970,
+  "pr3h": 0,
+  "fl3": 4,
+  "fl2": 16384,
+  "pr3": 0,
+  "pr2": 0,
+  "totalbalanceusd": 1056542982,
+  "license": 0,
+  "totaltmoneybalance": 0,
+  "fl3h": 0,
+  "success": true,
+  "playchips": 100000,
+  "totalbalance": 1056542982,
+  "playerVerification": false,
+  "username": "audharyakQA"
+}<br /><br /></pre></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:38:41 PM</td>
-					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn[loginRam].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn[loginRam].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn[loginRam].png'></td>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>[REST/SOAP] TEST NAME</span>
+						<span class='test-time'>Jul 1, 2019 05:21:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 1, 2019 05:21:35 PM</span>
+	<span class='label end-time'>Jul 1, 2019 05:21:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+446ms</span>
+</div>
+	<div class='test-desc'>DESCRIPTION </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>OkHttpClient</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>YOURNAME</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:21:36 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:   POST<br />Protocol: HTTPS<br />Host:     sports.uat.pyr<br />Path:     /sportsbook/v1/api/externalLogin<br /><br /><br /><br />[ REQUEST  BODY ]<br /><br />username=audharyakQA&password=Test1234<br /></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:21:36 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=D7E5A34B215FD75B19F0F4886C374DD5; 
+Path=/ram; 
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Credentials: true, Set-Cookie: WIID=/U9C2z6pvTJ91LVXCE7D362Jk/56qBDctE5/hXdK/jlbiQf13S1/yO4MabO8PML8dP8GEnUUa2p2C66nP59NnR9YWmGPvRuN; 
+Domain=.qacore.pyr; 
+Expires=Sat, 29-Jun-2024 14:21:33 GMT; 
+ 
+Secure, Set-Cookie: JSESSIONID=D7E5A34B215FD75B19F0F4886C374DD5; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: SBTK=OE7YC32LjruwffBGZDNPPAYL; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: SBSG=UDc5lIxVozxmmZWCBwgGf1q9ETEJ7swF3DShIRFrPKjc9/l9jopT736viMA1IfmCsvmD96NPcvKSXJ+K5RPjBIXEq2R9QfQT7Fhz+1lazanQxgcIh5oyGx9G4q19BI9rsjS+1Lf0WzcbF9AK7wrSBs98zTTfITIR; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: LMTMOD=1000; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: BRAND=PokerStars; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: WBID=AXMCUP; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: LCNS=0; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: CTRY=IM; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: LSRC=1; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: GVER=WEB; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, Set-Cookie: SITE=1; 
+Domain=.qacore.pyr; 
+Expires=Tue, 02-Jul-2019 14:21:34 GMT; 
+ 
+Secure, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; 
+mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Mon, 01 Jul 2019 14:21:34 GMT, Server: app server, Set-Cookie: NSC_sbn-33.130-8083=ffffffff09163f9345525d5f4f58455e445a4a4229a3;expires=Mon, 01-Jul-2019 14:31:32 GMT;path=/;secure;httponly<br /><br /><br />{
+  "Response": {
+    "sessionToken": "",
+    "body": {
+      "StackTrace": {
+        "cdata": "-"
+      },
+      "Error": {
+        "code": "VALIDATION_ERROR",
+        "text": "Internal error occurred..."
+      }
+    },
+    "status": "ERROR"
+  }
+}<br /><br /></pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -341,13 +571,13 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 					<div class='category-heading'>
 						<span class='category-name'>POST</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -362,9 +592,43 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 28, 2019 06:38:40 PM</td>
+										<td>Jul 1, 2019 05:21:33 PM</td>
 										<td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>OkHttpClient</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 1, 2019 05:21:35 PM</td>
+										<td class='linked' test-id='2'>[REST/SOAP] TEST NAME</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -411,13 +675,13 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
                             <div class='author-heading'>
                                 <span class='author-name'>PavelPopov</span>
                                 <span class='author-status right'>
-                                        <span class='label fail'>1</span>
+                                        <span class='label pass'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 1</span>
                                     
-                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -432,9 +696,43 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jun 28, 2019 06:38:40 PM</td>
+                                                <td>Jul 1, 2019 05:21:33 PM</td>
                                                 <td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
-                                                <td><span class='test-status fail'>fail</span></td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>YOURNAME</span>
+                                <span class='author-status right'>
+                                        <span class='label pass'>1</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 1</span>
+                                    
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Jul 1, 2019 05:21:35 PM</td>
+                                                <td class='linked' test-id='2'>[REST/SOAP] TEST NAME</td>
+                                                <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -452,129 +750,6 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
         </div>
     </div>
 </div>
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>javax.net.ssl.SSLHandshakeException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jun 28, 2019 06:38:40 PM</td>
-                                                        <td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
-                                                        <td><pre><pre>javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
-	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:80)
-	at com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(ID_01_LogIn.java:46)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
-	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
-	at sun.security.validator.Validator.validate(Validator.java:262)
-	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
-	... 41 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
-	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
-	... 47 more
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -584,31 +759,31 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 28, 2019 06:38:40 PM</div>
+					<div class='panel-lead'>Jul 1, 2019 05:21:33 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 28, 2019 06:38:41 PM</div>
+			 		<div class='panel-lead'>Jul 1, 2019 05:21:36 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 0s+990ms</div>
+					<div class='panel-lead'>0h 0m 2s+505ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -622,7 +797,7 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 						</tr>
 							<tr>
 								<td>Local Host</td>
-								<td>192.168.101.144</td>
+								<td>10.160.8.106</td>
 							</tr>
 							<tr>
 								<td>Host Name</td>
@@ -657,11 +832,20 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 						</tr>
 						<tr>
 							<td>POST</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>OkHttpClient</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -677,22 +861,22 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 2,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 0,
-				failChild: 3,
+				passChild: 2,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 0,
-				exceptionsChild: 3,
+				infoChild: 2,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

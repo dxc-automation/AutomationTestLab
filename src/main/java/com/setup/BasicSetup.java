@@ -83,7 +83,7 @@ public class BasicSetup {
         @Parameters({"browser"})
         @BeforeSuite
         public void setup(String browser) throws Exception {
-            String pathChrome = filePath + "/" + "src/main/resources/drivers/chromedriver.exe";
+            String pathChrome = filePath + "/" + "src/main/resources/drivers/chromedriver";
             String pathFirefox = filePath + "/" + "src/main/resources/drivers/geckodriver.exe";
             String pathSafari = filePath + "/" + "src/main/resources/drivers/safaridriver";
 
@@ -149,7 +149,7 @@ public class BasicSetup {
                             // Get the response headers
                             if (httpResponseHeaders != null) {
                                 try {
-                                    headers = httpResponseHeaders.toString().replace(",", "\n");
+                                    headers = httpResponseHeaders.toString().replace("; ", "; \n").replaceAll("Path=/;", "");
                                     } catch (Exception e) {
                                     e.printStackTrace();
                                     }
@@ -187,7 +187,7 @@ public class BasicSetup {
                                         + "Message : " + responseMsg
                                         + "<br />"
                                         + "<br />"
-                                        + headers.replace("[", " ").replace("]", "")
+                                        + headers.replace("[", "").replace("]", "")
                                         + "<br />"
                                         + "<br />"
                                         + "<br />"
@@ -213,7 +213,7 @@ public class BasicSetup {
                             // Get the response headers
                             if (httpResponseHeaders != null) {
                                 try {
-                                    headers = httpResponseHeaders.toString().replace(",", "\n");
+                                    headers = httpResponseHeaders.toString().replace(",", " ");
                                     } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -251,7 +251,7 @@ public class BasicSetup {
                                         + "Error Message : " + responseMsg
                                         + "<br />"
                                         + "<br />"
-                                        + headers.replace("[", " ").replace("]", "")
+                                        + headers.replace("[", "").replace("]", "")
                                         + "<br />"
                                         + "<br />"
                                         + "<br />"

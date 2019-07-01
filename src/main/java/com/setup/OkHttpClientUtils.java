@@ -2,20 +2,24 @@ package com.setup;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.jayway.restassured.mapper.ObjectMapper;
-import okhttp3.*;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okio.Buffer;
 import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 
-import static com.setup.HttpClientUtils.*;
+import static com.setup.HttpClientUtils.objectResponse;
+import static com.setup.HttpClientUtils.responseMsg;
 
 
 public class OkHttpClientUtils extends BasicSetup {
 
     public static OkHttpClient okHttpClient;
-    public static RequestBody requestBody;
     public static Response okServerResponse;
     public static String responseOkClientHeaders;
     public static String requestOkClientHeaders;
@@ -73,6 +77,12 @@ public class OkHttpClientUtils extends BasicSetup {
         return okHttpClient;
     }
 
+    public static String requestBodyToString(RequestBody requestBody) throws IOException, IOException {
+        Buffer buffer = new Buffer();
+        requestBody.writeTo(buffer);
+        return buffer.readUtf8();
+    }
+
     public static int getOkHttpResponseCode(Response okServerResponse) throws Exception {
         try {
             okHttpResponseCode = okServerResponse.code();
@@ -86,7 +96,6 @@ public class OkHttpClientUtils extends BasicSetup {
     public static String getResponseOkClientHeaders() throws Exception {
         try {
             responseOkClientHeaders = okServerResponse.headers().toString();
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -96,7 +105,6 @@ public class OkHttpClientUtils extends BasicSetup {
     public static String getRequestOkClientHeaders() throws Exception {
         try {
             requestOkClientHeaders = request.headers().toString();
-
         } catch (Exception e) {
             e.printStackTrace();
         }

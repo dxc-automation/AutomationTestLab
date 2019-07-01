@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="446fb699-a12f-4f2c-bbaa-2e018c2f0a34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/JAVA_FRAMEWORK.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA_FRAMEWORK.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVA_FRAMEWORK.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA_FRAMEWORK.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JAVA_FRAMEWORK.iws" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA_FRAMEWORK.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_LogIn[loginRam].png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Failed/ID_01_LogIn[loginRam].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/getToken.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getToken.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/signIn.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/signIn.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TC_001/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_02_Example_HttpClient.PayPal.ID_01_Token.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_02_Example_HttpClient.PayPal.ID_02_Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_01_LogIn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_01_LogIn.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" afterDir="false" />
@@ -20,19 +25,19 @@
       <change beforePath="$PROJECT_DIR$/report/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/constants/Endpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/constants/Accounts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/drivers/geckodriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/safaridriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/drivers/safaridriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/constants/Endpoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/setup/BasicSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/setup/BasicSetup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -204,10 +209,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_SignIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
-              <caret line="87" column="77" selection-start-line="87" selection-start-column="77" selection-end-line="87" selection-end-column="77" />
+            <state relative-caret-position="102">
+              <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1555#1570#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="573">
+              <caret line="45" column="82" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,19 +234,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5376">
-              <caret line="224" column="25" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="29" />
+            <state relative-caret-position="468">
+              <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_ExternalLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="226">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -239,38 +272,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="379">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="455">
+              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="49" column="76" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/Accounts.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_GET.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="868">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -319,8 +358,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/ID_06_POST_UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/extent-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/ID_02_RegisterUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/ID_03_Authenticate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/ID_04_SignIn.java" />
@@ -351,25 +388,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_09_Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/temp/HttpClient_POST.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/temp/HttpClient_GET.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_07_Business.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_08_Menu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_GET.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/paypal.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/ui.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/constants/Accounts.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_SignIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_ExternalLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java" />
       </list>
     </option>
   </component>
@@ -572,6 +611,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="TC_02_Example_HttpClient" type="462c0819:PsiDirectoryNode" />
+              <item name="PayPal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="TC_04_AmelcoAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -590,6 +640,34 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="58d84e3e:PackageViewProjectNode" />
+              <item name="JAVA_FRAMEWORK" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="58d84e3e:PackageViewProjectNode" />
+              <item name="JAVA_FRAMEWORK" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="58d84e3e:PackageViewProjectNode" />
+              <item name="JAVA_FRAMEWORK" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+              <item name="setup" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="58d84e3e:PackageViewProjectNode" />
+              <item name="JAVA_FRAMEWORK" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+              <item name="test" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -648,34 +726,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="58d84e3e:PackageViewProjectNode" />
-              <item name="JAVA_FRAMEWORK" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="58d84e3e:PackageViewProjectNode" />
-              <item name="JAVA_FRAMEWORK" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="58d84e3e:PackageViewProjectNode" />
-              <item name="JAVA_FRAMEWORK" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-              <item name="setup" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="58d84e3e:PackageViewProjectNode" />
-              <item name="JAVA_FRAMEWORK" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-              <item name="test" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="ProjectViewSettings">
@@ -693,19 +743,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml_files" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/drivers" />
+      <recent name="C:\DXCTestLab_DEV\src\main\resources\xml_files" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.test.TC_02_Example_HttpClient.Fly" />
       <recent name="com.test.TC_02_Example_HttpClient" />
       <recent name="com.test.TC_01_Not_Fulfilled.TC_01_Example" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/xml_files" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="C:\DXCTestLab_DEV\src\main\resources\xml_files" />
-      <recent name="C:\DXCTestLab_DEV\src\main\java\com\setup" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.test.TC_04_AmelcoAPI" />
@@ -714,9 +765,11 @@
       <recent name="com.test.TC_02_Example_HttpClient.DXC" />
       <recent name="com.test.TC_02_Example_HttpClient.Fly" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/drivers" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/xml_files" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\DXCTestLab_DEV\src\main\resources\xml_files" />
+      <recent name="C:\DXCTestLab_DEV\src\main\java\com\setup" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -906,8 +959,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-157" width="1920" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" auto_hide="true" content_ui="combo" id="Project" order="0" sideWeight="0.49817517" visible="true" weight="0.1799787" />
+      <window_info auto_hide="true" content_ui="combo" id="Project" order="0" sideWeight="0.49817517" weight="0.17944622" />
       <window_info id="Structure" order="1" sideWeight="0.5018248" side_tool="true" weight="0.19919029" />
       <window_info id="Web" order="2" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="3" />
@@ -1044,14 +1098,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ExtentTestManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_01_Example_URLConnection/ID_04_BrowseQuotes.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/URLConnection_GET_POST.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_03_Example_UI/UI.java" />
@@ -1160,20 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_05_AddUserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -1215,20 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_GET.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="57" column="15" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ExtentManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1236,30 +1254,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="159" column="34" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/URLConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
           <caret line="126" column="53" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="68" column="49" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1301,20 +1299,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5376">
+          <caret line="224" column="25" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="49" column="76" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/Accounts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1325,10 +1330,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="49" column="76" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
+        <state relative-caret-position="751">
+          <caret line="156" column="66" selection-start-line="156" selection-start-column="66" selection-end-line="156" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1337,31 +1342,152 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="379">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="87" column="77" selection-start-line="87" selection-start-column="77" selection-end-line="87" selection-end-column="77" />
+        <state relative-caret-position="455">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_GET.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_ExternalLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5376">
-          <caret line="224" column="25" selection-start-line="224" selection-start-column="21" selection-end-line="224" selection-end-column="29" />
+        <state relative-caret-position="226">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="45" column="82" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_SignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1555#1570#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JAVA_FRAMEWORK</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -1369,6 +1495,18 @@
             <option name="proportions">
               <list>
                 <option value="0.17777778" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.aventstack:extentreports:3.1.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

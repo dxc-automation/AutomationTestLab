@@ -39,7 +39,7 @@ public class ID_01_Token extends BasicSetup {
 
         MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
 
-        requestBody = RequestBody.create(mediaType, "grant_type=client_credentials");
+        RequestBody requestBody = RequestBody.create(mediaType, "grant_type=client_credentials");
 
         url = new URIBuilder()
                 .setScheme("https")
@@ -62,8 +62,6 @@ public class ID_01_Token extends BasicSetup {
                 .build();
 
         postRequest(fileName, request);
-
-        System.out.println(requestBody);
 
 
         test.info("<pre>"
