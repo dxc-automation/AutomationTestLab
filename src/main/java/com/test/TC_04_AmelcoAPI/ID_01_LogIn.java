@@ -4,11 +4,13 @@ import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.cookie.Cookie;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
+import java.util.List;
 
 import static com.constants.Accounts.*;
 import static com.setup.ExtentManager.extent;
@@ -71,7 +73,12 @@ public class ID_01_LogIn extends BasicSetup {
                 + "</pre>");
 
 
-        String token = httpResponseHeaders.get(8).getValue();
-        System.out.println("\n TOKEN \n" + token);
+        List<org.apache.http.cookie.Cookie> cookies = cookieStore.getCookies();
+        for ( Cookie cookie : cookies) {
+            if (cookie.getName().equalsIgnoreCase("SBTK")) {
+                String token = cookie.getValue();
+                System.out.println("\n TOKEN \n" + token);
+            }
+        }
     }
 }

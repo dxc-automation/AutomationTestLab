@@ -5,11 +5,13 @@ import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.ProtocolVersion;
+import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 
@@ -23,7 +25,6 @@ import static com.setup.BasicSetup.filePath;
 
 public class HttpClientUtils {
 
-    public static CloseableHttpClient client;
     public static URI url;
 
     public static String requestLine;
@@ -39,9 +40,11 @@ public class HttpClientUtils {
     public static String requestURL;
     public static List<Header> httpResponseHeaders;
     public static List<Header> httpRequestHeaders;
+    public static CookieStore cookieStore = new BasicCookieStore();
 
     private static HttpPost post;
     private static HttpGet get;
+    private static CloseableHttpClient client = HttpClients.custom().setDefaultCookieStore(cookieStore).build();
 
 
     public static File createJsonFile(String fileName, JSONObject objectResponse) throws Exception {
@@ -65,8 +68,6 @@ public class HttpClientUtils {
     }
 
     public static HttpPost httpPost(String fileName, URI url, JSONObject jsonPostData) throws Exception {
-        client = HttpClientBuilder.create().build();
-
         StringEntity entity = new StringEntity(jsonPostData.toString());
 
         post = new HttpPost(url);
@@ -106,7 +107,6 @@ public class HttpClientUtils {
 
 
     public static HttpGet httpGet(String fileName, URI url) throws Exception {
-        client = HttpClientBuilder.create().build();
 
         get = new HttpGet(url);
         get.setHeader("Content-Type", "application/json");
