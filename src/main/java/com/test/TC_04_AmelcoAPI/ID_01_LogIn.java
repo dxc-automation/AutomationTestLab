@@ -19,6 +19,10 @@ import static com.setup.HttpClientUtils.*;
 
 public class ID_01_LogIn extends BasicSetup {
 
+    public static String externalToken;
+    public static String signature;
+    public static String webId;
+
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
@@ -45,7 +49,7 @@ public class ID_01_LogIn extends BasicSetup {
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData).addHeader("Referer", "https://sports.uat.pyr/");
+        httpPost(fileName, url, jsonPostData).addHeader("Referrer", "https://sports.uat.pyr/");
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"
@@ -75,9 +79,19 @@ public class ID_01_LogIn extends BasicSetup {
 
         List<org.apache.http.cookie.Cookie> cookies = cookieStore.getCookies();
         for ( Cookie cookie : cookies) {
+
             if (cookie.getName().equalsIgnoreCase("SBTK")) {
-                String token = cookie.getValue();
-                System.out.println("\n TOKEN \n" + token);
+                externalToken = cookie.getValue();
+
+                if (cookie.getName().equalsIgnoreCase("SBSG")) {
+                    signature = cookie.getValue();
+                    System.out.println("\n SIGNATURE \n" + signature);
+
+                    if (cookie.getName().equalsIgnoreCase("WBID")) {
+                        webId = cookie.getValue();
+                        System.out.println("\n WEBID \n" + webId);
+                    }
+                }
             }
         }
     }
