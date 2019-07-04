@@ -7,7 +7,7 @@
         <listener class-name="com.setup.TestNGListener"/>
     </listeners>
 
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="safari"/>
 
     <test name="TC_01_Example" group-by-instances="true">
 
@@ -19,9 +19,9 @@
             </methods>
         </class>
 
-        <class name="com.test.TC_04_AmelcoAPI.ID_02_SignIn">
+        <class name="com.test.TC_04_AmelcoAPI.ID_02_PushMessage">
             <methods>
-                <include name="signIn"/>
+                <include name="pushMsg"/>
             </methods>
         </class>
 

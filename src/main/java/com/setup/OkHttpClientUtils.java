@@ -19,8 +19,6 @@ import static com.setup.HttpClientUtils.responseMsg;
 
 public class OkHttpClientUtils extends BasicSetup {
 
-    public static OkHttpClient okHttpClient;
-    public static Response okServerResponse;
     public static String responseOkClientHeaders;
     public static String requestOkClientHeaders;
     public static int okHttpResponseCode;
@@ -31,6 +29,9 @@ public class OkHttpClientUtils extends BasicSetup {
     public static String requestURLScheme;
     public static String requestMethod;
     public static Request request;
+
+    public static OkHttpClient okHttpClient = new OkHttpClient();
+    public static Response okServerResponse;
 
     public static File createJsonFile(Response okServerResponse, String fileName) throws Exception {
         File file = new File(filePath + "/" + "report/JSON/" + fileName);
@@ -43,10 +44,7 @@ public class OkHttpClientUtils extends BasicSetup {
     }
 
     public static OkHttpClient postRequest(String fileName, Request request) throws Exception {
-        // Create client object
-        okHttpClient = new OkHttpClient();
 
-        // Send request and get the response body
         okServerResponse = okHttpClient.newCall(request).execute();
 
         requestMethod = request.method();
@@ -64,10 +62,14 @@ public class OkHttpClientUtils extends BasicSetup {
         getOkHttpResponseCode(okServerResponse);
 
         // Parse the response to json
-        String responseBody = okServerResponse.body().string();
-        objectResponse = new JSONObject(responseBody);
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        response = gson.toJson(responseBody);
+        try {
+            String responseBody = okServerResponse.body().string();
+            objectResponse = new JSONObject(responseBody);
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            response = gson.toJson(responseBody);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         responseProtocol = okServerResponse.protocol().toString().toUpperCase();
         responseMsg = okServerResponse.message();

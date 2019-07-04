@@ -55,7 +55,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 3, 2019 09:22:54 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 4, 2019 05:42:06 PM</span>
 				</a>
 			</li>
 			<li>
@@ -94,7 +94,6 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>POST</a></li>
-					<li><a href='#'>HttpClient</a></li>
 					<li><a href='#'>OkHttpClient</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -158,10 +157,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> others
 				</div>
 			</div>
 		</div>
@@ -179,14 +178,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_01] Send log in ram module request</span>
-						<span class='test-time'>Jul 3, 2019 09:22:54 PM</span>
+						<span class='test-time'>Jul 4, 2019 05:42:06 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 3, 2019 09:22:54 PM</span>
-	<span class='label end-time'>Jul 3, 2019 09:22:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+	<span class='label start-time'>Jul 4, 2019 05:42:06 PM</span>
+	<span class='label end-time'>Jul 4, 2019 05:42:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+947ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -196,26 +195,240 @@
 				<span class='author label white-text'>PavelPopov</span>
 			</div>
 	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:08 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    ram.uat.pyr<br />Path:    /ram/login<br />
+Content-Type: application/json
+Accept: */*
+Connection: keep-alive
+Origin: https://walletapi.uat.pyr<br /><br /><br />[ REQUEST  BODY ]<br /><br />{
+&nbsp;&nbsp;"password": "Testing123",
+&nbsp;&nbsp;"devIx": "X2F3G5R3YV243B4O2G",
+&nbsp;&nbsp;"signature": "Woj5M0IHKiwt9aK2cYHwveP8K%2BcfTFkUePSHA94b%2FFw%2BsaYfzxtMz4AFO5NG1wx19bdwfKTSpVz7ryHMCHcPjQWke4DNcGTCXqCySTWynoiCer2OkJadi8hJIsrgGnHCNhn6tstITOW%2F2urDXiKeLcLOXRn71Db0ch0y%2FwTIy0IDHyaqmsU1kmtG1KqP2iELOEooIoYpj6XOarF2DR7RF2Ak%2B3eRE1YAxNuhOeemPmxeE4IYEiyO9QQeOm8juwOs%2B%2Bx3HzpMsuS%2FFvHQnNQErjoploz1eJN3S19BwjrilKwp4G4tQ9YVdl%2B7wrMxxIHmbKUyWMmp6e4hAxnT8CY%2BX376UHV%2BiR2f54CKI%2FAm6TOoZ6lkmcYVut5Mw1tQgO5U%2BqPRLtambBmtWp%2BFCb3cuiqCEo1Qw5vaDwkYrPWTb1P1cSbf8GvXmQ%3D%3D",
+&nbsp;&nbsp;"username": "BGQACOM1"
+}<br /><br /></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:42:08 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=8E122C0E71D319F44A78FD138C804009;
+Path=/ram;
+Secure;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=xzVF9jj7CMRMtxkmqyaJwVF+xvLSshG0gcQbVbPfXOve2tf0uGRZ4Gwcc+zsfXdAl4xgZEmqv5Kl8dMGPV+O2uFqfuA+mgKh;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2024 14:42:06 GMT;
+
+ Set-Cookie: JSESSIONID=8E122C0E71D319F44A78FD138C804009;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SBTK=wz4itFWbHCuEhVmH4rX5LeC3;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SBSG=ybaAgqjFtY4CYfXle7ARp+fo9gSBaQv3TO1T1TXBaBj/L8W4H2YNrg3aYgnh4B7qWoyESlrEtQd/QIaQhFCOiqmPOBS3Nmy04821Ne3GTkdLuqStjR9VndEpeWpW0iRDfjvQdVXXnHhJnZaxIr4Ft9fBFK95dgLu;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LMTMOD=1000;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: BRAND=PokerStars;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: WBID=SCVMSV;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LCNS=512;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: CTRY=IM;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LSRC=1;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: GVER=WEB;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SITE=1;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
+mode=block, Strict-Transport-Security: max-age=31536000 ;
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Thu, 04 Jul 2019 14:42:07 GMT, Server: app server<br /><br /><br />{
+  "country": "IM",
+  "pr": 31,
+  "imageid": 0,
+  "fl": 36176137,
+  "timezone": 0,
+  "balancestr": "91,680.78 USD",
+  "pr2h": 0,
+  "statecode": "",
+  "locale": 0,
+  "playervisibility": [
+    {
+      "rmTransfersAllowed": true
+    },
+    {
+      "casino": true
+    },
+    {
+      "sportsbook": true
+    },
+    {
+      "livechatsupport": false
+    },
+    {
+      "publiclivechatsupport": true
+    },
+    {
+      "webrealmoneyform": true
+    },
+    {
+      "freebets": true
+    },
+    {
+      "pmcpaywall": false
+    },
+    {
+      "predictorGameEnabled": false
+    },
+    {
+      "documentRequestPromptEnabled": false
+    },
+    {
+      "wcxChat": false
+    },
+    {
+      "chestPageEnabled": true
+    },
+    {
+      "thedeal": true
+    },
+    {
+      "thedeal-highroller": true
+    },
+    {
+      "wcxPublicChat": false
+    },
+    {
+      "playercv": 1794322272
+    },
+    {
+      "playercvhigh": 556670353
+    },
+    {
+      "playercv2": 284691224
+    },
+    {
+      "playercvhigh2": 0
+    },
+    {
+      "wcxLobbyChatVelocity": 0
+    },
+    {
+      "wcxLobbyChatPublicVelocity": 0
+    },
+    {
+      "wc2BalanceLowPromptVelocity": 0
+    },
+    {
+      "balanceLowPrompt": false
+    },
+    {
+      "wcxLowBalance": false
+    },
+    {
+      "showMyHandHistoryRequests": true
+    }
+  ],
+  "balances": [
+    {
+      "chips": 9168078,
+      "tchips": 0,
+      "currency": "USD"
+    },
+    {
+      "chips": 84403,
+      "tchips": 0,
+      "currency": "EUR"
+    }
+  ],
+  "clientvisibility": [
+    {
+      "casino": true
+    },
+    {
+      "sportsbook": true
+    }
+  ],
+  "fl2h": 131072,
+  "balance": 9168078,
+  "totaltmoneycurrency": "USD",
+  "currency": "USD",
+  "LMTMOD": 1000,
+  "embedded": "1",
+  "email": "bgqacom1@starsgroup.com",
+  "timestamp": 1562251327242,
+  "pr3h": 0,
+  "fl3": 8196,
+  "fl2": 540692,
+  "pr3": 0,
+  "pr2": 0,
+  "totalbalanceusd": 9268736,
+  "license": 512,
+  "totaltmoneybalance": 0,
+  "fl3h": 0,
+  "success": true,
+  "playchips": 1001500000,
+  "totalbalance": 9268736,
+  "playerVerification": false,
+  "username": "BGQACOM1"
+}<br /><br /></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 					</div>
 				</li>
 				
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>[ID_02] TEST NAME</span>
-						<span class='test-time'>Jul 3, 2019 09:22:55 PM</span>
+						<span class='test-name'>[REST/SOAP] TEST NAME</span>
+						<span class='test-time'>Jul 4, 2019 05:42:08 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 3, 2019 09:22:55 PM</span>
-	<span class='label end-time'>Jul 3, 2019 09:22:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+3ms</span>
+	<span class='label start-time'>Jul 4, 2019 05:42:08 PM</span>
+	<span class='label end-time'>Jul 4, 2019 05:42:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+852ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>HttpClient</span>
+				<span class='category label white-text'>OkHttpClient</span>
 			</div>
 			<div class='author-list'>
 				<span class='author label white-text'>YOURNAME</span>
@@ -233,11 +446,201 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:22:55 PM</td>
-					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    ram.uat.pyr<br />Path:    /ram/login<br />
-Content-Type: application/json
-Accept: */*
-Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Type: application/x-www-form-urlencoded; charset=UTF-8,Content-Length: 37,Chunked: false]<br /><br /></pre></td>
+					<td class='timestamp'>5:42:09 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:   OPTIONS<br />Protocol: HTTPS<br />Host:     ram.uat.pyr<br />Path:     /ram/login<br /><br />access-control-request-method: POST
+origin: https://walletapi.uat.pyr
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/3.141.59
+access-control-request-headers: content-type
+accept: */*
+cache-control: no-cache
+<br /><br />[ REQUEST  BODY ]<br /><br /></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:42:09 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=8E122C0E71D319F44A78FD138C804009;
+Path=/ram;
+Secure;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=xzVF9jj7CMRMtxkmqyaJwVF+xvLSshG0gcQbVbPfXOve2tf0uGRZ4Gwcc+zsfXdAl4xgZEmqv5Kl8dMGPV+O2uFqfuA+mgKh;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2024 14:42:06 GMT;
+
+ Set-Cookie: JSESSIONID=8E122C0E71D319F44A78FD138C804009;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SBTK=wz4itFWbHCuEhVmH4rX5LeC3;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SBSG=ybaAgqjFtY4CYfXle7ARp+fo9gSBaQv3TO1T1TXBaBj/L8W4H2YNrg3aYgnh4B7qWoyESlrEtQd/QIaQhFCOiqmPOBS3Nmy04821Ne3GTkdLuqStjR9VndEpeWpW0iRDfjvQdVXXnHhJnZaxIr4Ft9fBFK95dgLu;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LMTMOD=1000;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: BRAND=PokerStars;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: WBID=SCVMSV;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LCNS=512;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: CTRY=IM;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LSRC=1;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: GVER=WEB;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SITE=1;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
+mode=block, Strict-Transport-Security: max-age=31536000 ;
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Thu, 04 Jul 2019 14:42:07 GMT, Server: app server<br /><br /><br />{
+  "country": "IM",
+  "pr": 31,
+  "imageid": 0,
+  "fl": 36176137,
+  "timezone": 0,
+  "balancestr": "91,680.78 USD",
+  "pr2h": 0,
+  "statecode": "",
+  "locale": 0,
+  "playervisibility": [
+    {
+      "rmTransfersAllowed": true
+    },
+    {
+      "casino": true
+    },
+    {
+      "sportsbook": true
+    },
+    {
+      "livechatsupport": false
+    },
+    {
+      "publiclivechatsupport": true
+    },
+    {
+      "webrealmoneyform": true
+    },
+    {
+      "freebets": true
+    },
+    {
+      "pmcpaywall": false
+    },
+    {
+      "predictorGameEnabled": false
+    },
+    {
+      "documentRequestPromptEnabled": false
+    },
+    {
+      "wcxChat": false
+    },
+    {
+      "chestPageEnabled": true
+    },
+    {
+      "thedeal": true
+    },
+    {
+      "thedeal-highroller": true
+    },
+    {
+      "wcxPublicChat": false
+    },
+    {
+      "playercv": 1794322272
+    },
+    {
+      "playercvhigh": 556670353
+    },
+    {
+      "playercv2": 284691224
+    },
+    {
+      "playercvhigh2": 0
+    },
+    {
+      "wcxLobbyChatVelocity": 0
+    },
+    {
+      "wcxLobbyChatPublicVelocity": 0
+    },
+    {
+      "wc2BalanceLowPromptVelocity": 0
+    },
+    {
+      "balanceLowPrompt": false
+    },
+    {
+      "wcxLowBalance": false
+    },
+    {
+      "showMyHandHistoryRequests": true
+    }
+  ],
+  "balances": [
+    {
+      "chips": 9168078,
+      "tchips": 0,
+      "currency": "USD"
+    },
+    {
+      "chips": 84403,
+      "tchips": 0,
+      "currency": "EUR"
+    }
+  ],
+  "clientvisibility": [
+    {
+      "casino": true
+    },
+    {
+      "sportsbook": true
+    }
+  ],
+  "fl2h": 131072,
+  "balance": 9168078,
+  "totaltmoneycurrency": "USD",
+  "currency": "USD",
+  "LMTMOD": 1000,
+  "embedded": "1",
+  "email": "bgqacom1@starsgroup.com",
+  "timestamp": 1562251327242,
+  "pr3h": 0,
+  "fl3": 8196,
+  "fl2": 540692,
+  "pr3": 0,
+  "pr2": 0,
+  "totalbalanceusd": 9268736,
+  "license": 512,
+  "totaltmoneybalance": 0,
+  "fl3h": 0,
+  "success": true,
+  "playchips": 1001500000,
+  "totalbalance": 9268736,
+  "playerVerification": false,
+  "username": "BGQACOM1"
+}<br /><br /></pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -249,14 +652,14 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_03] External log in</span>
-						<span class='test-time'>Jul 3, 2019 09:22:55 PM</span>
+						<span class='test-time'>Jul 4, 2019 05:42:09 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 3, 2019 09:22:55 PM</span>
-	<span class='label end-time'>Jul 3, 2019 09:22:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+	<span class='label start-time'>Jul 4, 2019 05:42:09 PM</span>
+	<span class='label end-time'>Jul 4, 2019 05:42:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+772ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -266,6 +669,146 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 			<div class='author-list'>
 				<span class='author label white-text'>PavelPopov</span>
 			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>5:42:10 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:   POST<br />Protocol: HTTPS<br />Host:     sports.uat.pyr<br />Path:     /sportsbook/v1/api/externalLogin<br /><br />access-control-request-method: POST
+origin: https://walletapi.uat.pyr
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/3.141.59
+access-control-request-headers: content-type
+accept: */*
+cache-control: no-cache
+<br /><br />[ REQUEST  BODY ]<br /><br />signature=ybaAgqjFtY4CYfXle7ARp%2Bfo9gSBaQv3TO1T1TXBaBj%2FL8W4H2YNrg3aYgnh4B7qWoyESlrEtQd%2FQIaQhFCOiqmPOBS3Nmy04821Ne3GTkdLuqStjR9VndEpeWpW0iRDfjvQdVXXnHhJnZaxIr4Ft9fBFK95dgLu&externalToken=wz4itFWbHCuEhVmH4rX5LeC3&webId=SCVMSV&application=web-sportsbook&locale=en-gb&site=1&lsrc=1<br /></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>5:42:10 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=8E122C0E71D319F44A78FD138C804009;
+Path=/ram;
+Secure;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=xzVF9jj7CMRMtxkmqyaJwVF+xvLSshG0gcQbVbPfXOve2tf0uGRZ4Gwcc+zsfXdAl4xgZEmqv5Kl8dMGPV+O2uFqfuA+mgKh;
+Domain=.uat.pyr;
+Expires=Tue, 02-Jul-2024 14:42:06 GMT;
+
+ Set-Cookie: JSESSIONID=8E122C0E71D319F44A78FD138C804009;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SBTK=wz4itFWbHCuEhVmH4rX5LeC3;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SBSG=ybaAgqjFtY4CYfXle7ARp+fo9gSBaQv3TO1T1TXBaBj/L8W4H2YNrg3aYgnh4B7qWoyESlrEtQd/QIaQhFCOiqmPOBS3Nmy04821Ne3GTkdLuqStjR9VndEpeWpW0iRDfjvQdVXXnHhJnZaxIr4Ft9fBFK95dgLu;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LMTMOD=1000;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: BRAND=PokerStars;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: WBID=SCVMSV;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LCNS=512;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: CTRY=IM;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: LSRC=1;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: GVER=WEB;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ Set-Cookie: SITE=1;
+Domain=.uat.pyr;
+Expires=Fri, 05-Jul-2019 14:42:07 GMT;
+
+ X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
+mode=block, Strict-Transport-Security: max-age=31536000 ;
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Thu, 04 Jul 2019 14:42:07 GMT, Server: app server<br /><br /><br />{
+  "Login": {
+    "preferredLanguage": "en",
+    "minStake": 0.01,
+    "selfLimits": [],
+    "cookiesToSet": [],
+    "settingValues": [
+      {
+        "name": "ws.keepAliveInternalSeconds",
+        "category": "CLIENT_CFG",
+        "value": "10"
+      },
+      {
+        "name": "api.keepAliveInternalSeconds",
+        "category": "CLIENT_CFG",
+        "value": "300"
+      }
+    ],
+    "userGroups": [],
+    "accountId": 101,
+    "lastLoginTime": 1562243900567,
+    "countryCode": "IM",
+    "maxLoginIdleTimeInMinutes": 60,
+    "name": "SCVMSV doe",
+    "sessionToken": "wz4itFWbHCuEhVmH4rX5LeC3",
+    "cashoutExcluded": false,
+    "accountBalance": {
+      "accountId": 0,
+      "amount": 0,
+      "activeFundsType": "CASH",
+      "currency": "USD",
+      "wallets": [
+        {
+          "availableWithdrawal": false,
+          "bocaId": 0,
+          "walletType": "SPORTSBOOK",
+          "active": true,
+          "fundType": "CASH",
+          "accountId": 0,
+          "fundTypeId": 0,
+          "balance": 0,
+          "initiatingAccbalId": 0,
+          "walletTypeId": 0,
+          "currency": "USD",
+          "id": 0,
+          "paymentOptionId": 0
+        }
+      ]
+    },
+    "thirdPartyParameters": [
+      {
+        "name": "ref1",
+        "value": "SCVMSV"
+      }
+    ],
+    "enabledProducts": "SPBOK,LOTTO",
+    "username": "SCVMSV"
+  }
+}<br /><br /></pre></td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 					</div>
 				</li>
@@ -344,42 +887,8 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 3, 2019 09:22:54 PM</td>
+										<td>Jul 4, 2019 05:42:06 PM</td>
 										<td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>HttpClient</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 3, 2019 09:22:55 PM</td>
-										<td class='linked' test-id='2'>[ID_02] TEST NAME</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -391,12 +900,12 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 					<div class='category-heading'>
 						<span class='category-name'>OkHttpClient</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -412,7 +921,12 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 3, 2019 09:22:55 PM</td>
+										<td>Jul 4, 2019 05:42:08 PM</td>
+										<td class='linked' test-id='2'>[REST/SOAP] TEST NAME</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 4, 2019 05:42:09 PM</td>
 										<td class='linked' test-id='3'>[ID_03] External log in</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -482,12 +996,12 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 3, 2019 09:22:54 PM</td>
+                                                <td>Jul 4, 2019 05:42:06 PM</td>
                                                 <td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 3, 2019 09:22:55 PM</td>
+                                                <td>Jul 4, 2019 05:42:09 PM</td>
                                                 <td class='linked' test-id='3'>[ID_03] External log in</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
@@ -521,8 +1035,8 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 3, 2019 09:22:55 PM</td>
-                                                <td class='linked' test-id='2'>[ID_02] TEST NAME</td>
+                                                <td>Jul 4, 2019 05:42:08 PM</td>
+                                                <td class='linked' test-id='2'>[REST/SOAP] TEST NAME</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
@@ -556,25 +1070,25 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 3, 2019 09:22:54 PM</div>
+					<div class='panel-lead'>Jul 4, 2019 05:42:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 3, 2019 09:22:55 PM</div>
+			 		<div class='panel-lead'>Jul 4, 2019 05:42:10 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 1s+102ms</div>
+					<div class='panel-lead'>0h 0m 3s+749ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -588,7 +1102,7 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 						</tr>
 							<tr>
 								<td>Local Host</td>
-								<td>192.168.43.34</td>
+								<td>10.160.8.106</td>
 							</tr>
 							<tr>
 								<td>Host Name</td>
@@ -631,17 +1145,8 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 							</td>
 						</tr>
 						<tr>
-							<td>HttpClient</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
 							<td>OkHttpClient</td>
-							<td>1</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -669,13 +1174,13 @@ Connection: keep-alive<br /><br /><br />[ REQUEST  BODY ]<br /><br />[Content-Ty
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 0,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 1,
+				infoChild: 3,
 				exceptionsChild: 0,
 				
 				passGrandChild: 0,

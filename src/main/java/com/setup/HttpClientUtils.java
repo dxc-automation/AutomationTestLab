@@ -1,6 +1,6 @@
 package com.setup;
 
-import com.test.TC_04_AmelcoAPI.ID_02_SignIn;
+import com.test.TC_04_AmelcoAPI.ID_02_PushMessage;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -74,12 +74,6 @@ public class HttpClientUtils {
         post.setHeader("Content-Type", "application/json");
         post.setHeader("Accept", "*/*");
         post.setHeader("Connection", "keep-alive");
-
-        try {
-            post.setEntity(ID_02_SignIn.entity);
-        } catch (Exception e) {
-            System.out.println("\n Form Entity not found.");
-        }
         post.setEntity(entity);
 
         getUrlElements();

@@ -20,6 +20,7 @@ import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
+import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.*;
 
 
 public class ID_03_ExternalLogin extends BasicSetup {
@@ -43,9 +44,13 @@ public class ID_03_ExternalLogin extends BasicSetup {
         MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
 
         RequestBody requestBody = new FormBody.Builder()
-                .add("username", uat1_username)
-                .add("password", uat1_password)
-                .add("devIx", uat1_devIx)
+                .add("signature", signature)
+                .add("externalToken", externalToken)
+                .add("webId", webId)
+                .add("application", "web-sportsbook")
+                .add("locale", "en-gb")
+                .add("site", String.valueOf(site))
+                .add("lsrc", String.valueOf(lsrc))
                 .build();
 
         url = new URIBuilder()
@@ -54,13 +59,13 @@ public class ID_03_ExternalLogin extends BasicSetup {
                 .setPath("/sportsbook/v1/api/externalLogin")
                 .build();
 
-        request = new Request.Builder()
+        Request request = new Request.Builder()
                 .url(url.toURL())
                 .post(requestBody)
+                .addHeader("X-Requested-With", "XMLHttpRequest")
+                .addHeader("content-type", "application/x-www-form-urlencoded")
                 .build();
 
-        String postBody = OkHttpClientUtils.request.body().toString();
-        System.out.println(postBody);
 
         postRequest(fileName, request);
 

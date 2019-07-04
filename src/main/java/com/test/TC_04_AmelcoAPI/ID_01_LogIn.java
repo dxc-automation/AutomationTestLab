@@ -22,6 +22,8 @@ public class ID_01_LogIn extends BasicSetup {
     public static String externalToken;
     public static String signature;
     public static String webId;
+    public static int lsrc;
+    public static int site;
 
     @BeforeClass
     public void startTest() throws Exception {
@@ -49,19 +51,19 @@ public class ID_01_LogIn extends BasicSetup {
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData).addHeader("Referrer", "https://sports.uat.pyr/");
+        httpPost(fileName, url, jsonPostData).addHeader("Origin", "https://walletapi.uat.pyr");
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"
                 + "<br />"
                 + "<br />"
-                + "Method:  "  + requestMethod   +   "  "   + requestProtocol
+                + "Method:  " + requestMethod + "  " + requestProtocol
                 + "<br />"
-                + "Scheme:  "    + requestScheme.toUpperCase()
+                + "Scheme:  " + requestScheme.toUpperCase()
                 + "<br />"
-                + "Host:    "      + requestHost
+                + "Host:    " + requestHost
                 + "<br />"
-                + "Path:    "      + requestPath
+                + "Path:    " + requestPath
                 + "<br />"
                 + "\n"
                 + getPostRequestHeaders().replace(", ", "\n")
@@ -78,21 +80,22 @@ public class ID_01_LogIn extends BasicSetup {
 
 
         List<org.apache.http.cookie.Cookie> cookies = cookieStore.getCookies();
-        for ( Cookie cookie : cookies) {
-
-            if (cookie.getName().equalsIgnoreCase("SBTK")) {
-                externalToken = cookie.getValue();
-
-                if (cookie.getName().equalsIgnoreCase("SBSG")) {
-                    signature = cookie.getValue();
-                    System.out.println("\n SIGNATURE \n" + signature);
-
-                    if (cookie.getName().equalsIgnoreCase("WBID")) {
-                        webId = cookie.getValue();
-                        System.out.println("\n WEBID \n" + webId);
-                    }
+        for (Cookie cookie : cookies) {
+                if (cookie.getName().equalsIgnoreCase("SBTK")) {
+                    externalToken = cookie.getValue();
                 }
-            }
+                 else if (cookie.getName().equalsIgnoreCase("SBSG")) {
+                    signature = cookie.getValue();
+                }
+                 else if (cookie.getName().equalsIgnoreCase("WBID")) {
+                     webId = cookie.getValue();
+                 }
+                 else if (cookie.getName().equalsIgnoreCase("LSRC")) {
+                     lsrc = Integer.parseInt(cookie.getValue());
+                }
+                 else if (cookie.getName().equalsIgnoreCase("SITE")) {
+                     site = Integer.parseInt(cookie.getValue());
+                }
         }
     }
 }
