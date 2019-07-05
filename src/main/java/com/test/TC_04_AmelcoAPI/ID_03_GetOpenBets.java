@@ -1,6 +1,8 @@
 package com.test.TC_04_AmelcoAPI;
 
 import com.aventstack.extentreports.AnalysisStrategy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
@@ -11,10 +13,13 @@ import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.FileReader;
 import java.lang.reflect.Method;
 
 import static com.setup.ExtentManager.extent;
@@ -27,7 +32,8 @@ import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.*;
 
 public class ID_03_GetOpenBets extends BasicSetup {
 
-    public static Long selectionId;
+    public static String selectionId;
+    private String file;
 
 
     @BeforeClass
@@ -73,13 +79,13 @@ public class ID_03_GetOpenBets extends BasicSetup {
                 + "[ REQUEST  HEADERS ]"
                 + "<br />"
                 + "<br />"
-                + "Method:   "    + requestMethod
+                + "Method:   " + requestMethod
                 + "<br />"
-                + "Scheme:   "    + requestURLScheme.toUpperCase()
+                + "Scheme:   " + requestURLScheme.toUpperCase()
                 + "<br />"
-                + "Host:     "    + requestURLHost
+                + "Host:     " + requestURLHost
                 + "<br />"
-                + "Path:     "    + requestURLPath
+                + "Path:     " + requestURLPath
                 + "<br />"
                 + "<br />"
                 + getRequestOkClientHeaders()
@@ -92,11 +98,13 @@ public class ID_03_GetOpenBets extends BasicSetup {
                 + "<br />"
                 + "</pre>");
 
-        JSONArray arr = new JSONArray(objectResponse);
-        for (int i = 0; i < arr.length(); i++) {
-            String post_id = arr.getJSONObject(i).getString("selectionId");
-            System.out.println(post_id);
+        file = fileName;
+    }
 
-        }
+    @Test
+    public void getSelectionId() throws Exception {
+        selectionId = JsonPath.read(new FileReader(filePath + "/" + "report/JSON/" + file), "$..selectionId");
+        System.out.println(selectionId);
     }
 }
+

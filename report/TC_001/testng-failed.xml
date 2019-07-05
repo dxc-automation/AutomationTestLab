@@ -10,11 +10,11 @@
       <class name="com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets">
         <methods>
           <include name="report"/>
+          <include name="getSelectionId"/>
           <include name="setup"/>
           <include name="clearXml"/>
           <include name="tearDown"/>
           <include name="startTest"/>
-          <include name="getOpenBets" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets -->
     </classes>

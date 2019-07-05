@@ -4,6 +4,7 @@
     <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/externalLogin.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/externalLogin.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/getOpenBets.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getOpenBets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/loginRam.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/loginRam.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" afterDir="false" />
@@ -12,7 +13,8 @@
       <change beforePath="$PROJECT_DIR$/report/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_01_LogIn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_01_LogIn.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods.html" afterDir="false" />
@@ -21,22 +23,12 @@
       <change beforePath="$PROJECT_DIR$/report/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_PushMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_ExternalLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/HttpClientUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/setup/HttpClientUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_01_LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_01_LogIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_02_PushMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_03_ExternalLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="97" column="23" selection-start-line="97" selection-end-line="98" />
+            <state relative-caret-position="555">
+              <caret line="97" column="71" selection-start-line="95" selection-end-line="97" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,29 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="236" column="58" lean-forward="true" selection-start-line="236" selection-start-column="58" selection-end-line="236" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_GET.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="3015">
+              <caret line="240" column="59" selection-start-line="237" selection-start-column="28" selection-end-line="240" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -114,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+            <state relative-caret-position="450">
+              <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -129,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="94" column="52" selection-start-line="94" selection-start-column="52" selection-end-line="94" selection-end-column="52" />
+            <state relative-caret-position="348">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,10 +138,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_PushMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_04_PlaceBet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java" />
       </list>
     </option>
@@ -185,10 +159,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -349,10 +324,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="23" width="1440" height="877" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18104367" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24320458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -366,9 +340,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" x="0" y="45" width="1920" height="1035" id="Terminal" maximized="true" order="7" type="WINDOWED" weight="0.9587912" />
+      <window_info active="true" anchor="bottom" x="120" y="77" width="1283" height="719" id="Terminal" order="7" visible="true" weight="0.95800525" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32939634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -463,13 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_GET.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -481,23 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="97" column="23" selection-start-line="97" selection-end-line="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -515,20 +465,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="94" column="52" selection-start-line="94" selection-start-column="52" selection-end-line="94" selection-end-column="52" />
+        <state relative-caret-position="555">
+          <caret line="97" column="71" selection-start-line="95" selection-end-line="97" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_GET.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="236" column="58" lean-forward="true" selection-start-line="236" selection-start-column="58" selection-end-line="236" selection-end-column="58" />
+        <state relative-caret-position="3015">
+          <caret line="240" column="59" selection-start-line="237" selection-start-column="28" selection-end-line="240" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

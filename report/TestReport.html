@@ -41,6 +41,7 @@
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -55,7 +56,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 5, 2019 04:07:27 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 5, 2019 10:13:08 PM</span>
 				</a>
 			</li>
 			<li>
@@ -158,10 +159,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>3</span> others
 				</div>
 			</div>
 		</div>
@@ -179,14 +180,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_01] Send log in ram module request</span>
-						<span class='test-time'>Jul 5, 2019 04:07:27 PM</span>
+						<span class='test-time'>Jul 5, 2019 10:13:08 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 5, 2019 04:07:27 PM</span>
-	<span class='label end-time'>Jul 5, 2019 04:07:29 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+929ms</span>
+	<span class='label start-time'>Jul 5, 2019 10:13:08 PM</span>
+	<span class='label end-time'>Jul 5, 2019 10:13:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+815ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -208,7 +209,7 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:07:29 PM</td>
+					<td class='timestamp'>10:13:10 PM</td>
 					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    ram.uat.pyr<br />Path:    /ram/login<br />
 Content-Type: application/json
 Accept: */*
@@ -222,67 +223,68 @@ Origin: https://walletapi.uat.pyr<br /><br /><br />[ REQUEST  BODY ]<br /><br />
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:07:29 PM</td>
-					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=DCBC416F4FC71134BF8E9991FD1009E4;
+					<td class='timestamp'>10:13:10 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=764C5CAB56CA81000FD4EA2D3FD685AC;
 Path=/ram;
 Secure;
-HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=Wry4btPudpJH/mxZnNcpdg5P+J0mPRijWqfIw0VVOjuNEDVPc3Kh8O/13Nu29pbqm+Huv9UNFXgNc7tEDclwSaTXaLPMp3+d;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=cyBq/e6zo1526GvZyjh1Bpap3FaQMwiI0vjGafDSI2hk/ODVibk0O6shFFAPtGIXmqW495P35lnz2V9+LTtwENfIJXzjHN4v;
 Domain=.uat.pyr;
-Expires=Wed, 03-Jul-2024 13:07:28 GMT;
+Expires=Wed, 03-Jul-2024 19:13:09 GMT;
 
- Set-Cookie: JSESSIONID=DCBC416F4FC71134BF8E9991FD1009E4;
+ Set-Cookie: JSESSIONID=764C5CAB56CA81000FD4EA2D3FD685AC;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
- Set-Cookie: SBTK=bqZcUozb7Ch6xYhLqNJmMZ4Y;
+ Set-Cookie: SBTK=wo9SYkR6grzU-ySGqHbrmJd-;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
- Set-Cookie: SBSG=mCgzVFJKfbf+zHTuPzsxGozXJUvjMUqMUL71S+TMlGEgWifximy+05qMmP058aE89cmHfH8QIokcerG/D1m8kpcJ+zN93g0nWqo5LSI11GgCq8SuB2rkPEHYLGbTWE2xQVAcb+LjwSm/i7zLp+J/IHkLy89qDG6c;
+ Set-Cookie: SBSG=/Z823kf9kV6cD6XRkhBQF4AuwDPrbt6tz9kfajg71UG0M9AqYX7nfmFYCPYVuxwV8e2xa2mFsL+B2cvYMbumdim+qmrZjpA39E0NVVIV4lZBkokRjCGiVcKeSuQ3bTmgTTwJCBi12zLxCZM5dtP9DO3IpIvKfPa8;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LMTMOD=1000;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: BRAND=PokerStars;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: WBID=SCVMSV;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LCNS=512;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: CTRY=IM;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LSRC=1;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: GVER=WEB;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: SITE=1;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
 mode=block, Strict-Transport-Security: max-age=31536000 ;
-includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Fri, 05 Jul 2019 13:07:29 GMT, Server: app server<br /><br /><br />{
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Fri, 05 Jul 2019 19:13:10 GMT, Server: app server<br /><br /><br />{
   "country": "IM",
   "pr": 31,
   "imageid": 0,
   "fl": 36176137,
   "timezone": 0,
-  "balancestr": "92,191.92 USD",
+  "ipCountry": "UK",
+  "balancestr": "92,196.92 USD",
   "pr2h": 0,
   "statecode": "",
   "locale": 0,
@@ -365,7 +367,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
   ],
   "balances": [
     {
-      "chips": 9219192,
+      "chips": 9219692,
       "tchips": 0,
       "currency": "USD"
     },
@@ -384,26 +386,27 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
     }
   ],
   "fl2h": 131072,
-  "balance": 9219192,
+  "balance": 9219692,
   "totaltmoneycurrency": "USD",
   "currency": "USD",
   "LMTMOD": 1000,
   "embedded": "1",
   "email": "bgqacom1@starsgroup.com",
-  "timestamp": 1562332049377,
+  "timestamp": 1562353990150,
   "pr3h": 0,
   "fl3": 8196,
   "fl2": 540692,
   "pr3": 0,
   "pr2": 0,
-  "totalbalanceusd": 9319850,
+  "totalbalanceusd": 9320350,
   "license": 512,
   "totaltmoneybalance": 0,
   "fl3h": 0,
   "success": true,
   "playchips": 1001500000,
-  "totalbalance": 9319850,
+  "totalbalance": 9320350,
   "playerVerification": false,
+  "ipState": "",
   "username": "BGQACOM1"
 }<br /><br /></pre></td>
 				</tr>
@@ -417,14 +420,14 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_02] External log in</span>
-						<span class='test-time'>Jul 5, 2019 04:07:29 PM</span>
+						<span class='test-time'>Jul 5, 2019 10:13:10 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 5, 2019 04:07:29 PM</span>
-	<span class='label end-time'>Jul 5, 2019 04:07:30 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+15ms</span>
+	<span class='label start-time'>Jul 5, 2019 10:13:10 PM</span>
+	<span class='label end-time'>Jul 5, 2019 10:13:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+100ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -447,68 +450,68 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:07:30 PM</td>
+					<td class='timestamp'>10:13:11 PM</td>
 					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:   POST<br />Scheme:   HTTPS<br />Host:     sports.uat.pyr<br />Path:     /sportsbook/v1/api/externalLogin<br /><br />X-Requested-With: XMLHttpRequest
 Content-Type: application/x-www-form-urlencoded
-<br /><br />[ REQUEST  BODY ]<br /><br />signature=mCgzVFJKfbf%2BzHTuPzsxGozXJUvjMUqMUL71S%2BTMlGEgWifximy%2B05qMmP058aE89cmHfH8QIokcerG%2FD1m8kpcJ%2BzN93g0nWqo5LSI11GgCq8SuB2rkPEHYLGbTWE2xQVAcb%2BLjwSm%2Fi7zLp%2BJ%2FIHkLy89qDG6c&externalToken=bqZcUozb7Ch6xYhLqNJmMZ4Y&webId=SCVMSV&application=web-sportsbook&locale=en-gb&site=1&lsrc=1<br /></pre></td>
+<br /><br />[ REQUEST  BODY ]<br /><br />signature=%2FZ823kf9kV6cD6XRkhBQF4AuwDPrbt6tz9kfajg71UG0M9AqYX7nfmFYCPYVuxwV8e2xa2mFsL%2BB2cvYMbumdim%2BqmrZjpA39E0NVVIV4lZBkokRjCGiVcKeSuQ3bTmgTTwJCBi12zLxCZM5dtP9DO3IpIvKfPa8&externalToken=wo9SYkR6grzU-ySGqHbrmJd-&webId=SCVMSV&application=web-sportsbook&locale=en-gb&site=1&lsrc=1<br /></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:07:30 PM</td>
-					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=DCBC416F4FC71134BF8E9991FD1009E4;
+					<td class='timestamp'>10:13:11 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=764C5CAB56CA81000FD4EA2D3FD685AC;
 Path=/ram;
 Secure;
-HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=Wry4btPudpJH/mxZnNcpdg5P+J0mPRijWqfIw0VVOjuNEDVPc3Kh8O/13Nu29pbqm+Huv9UNFXgNc7tEDclwSaTXaLPMp3+d;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=cyBq/e6zo1526GvZyjh1Bpap3FaQMwiI0vjGafDSI2hk/ODVibk0O6shFFAPtGIXmqW495P35lnz2V9+LTtwENfIJXzjHN4v;
 Domain=.uat.pyr;
-Expires=Wed, 03-Jul-2024 13:07:28 GMT;
+Expires=Wed, 03-Jul-2024 19:13:09 GMT;
 
- Set-Cookie: JSESSIONID=DCBC416F4FC71134BF8E9991FD1009E4;
+ Set-Cookie: JSESSIONID=764C5CAB56CA81000FD4EA2D3FD685AC;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
- Set-Cookie: SBTK=bqZcUozb7Ch6xYhLqNJmMZ4Y;
+ Set-Cookie: SBTK=wo9SYkR6grzU-ySGqHbrmJd-;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
- Set-Cookie: SBSG=mCgzVFJKfbf+zHTuPzsxGozXJUvjMUqMUL71S+TMlGEgWifximy+05qMmP058aE89cmHfH8QIokcerG/D1m8kpcJ+zN93g0nWqo5LSI11GgCq8SuB2rkPEHYLGbTWE2xQVAcb+LjwSm/i7zLp+J/IHkLy89qDG6c;
+ Set-Cookie: SBSG=/Z823kf9kV6cD6XRkhBQF4AuwDPrbt6tz9kfajg71UG0M9AqYX7nfmFYCPYVuxwV8e2xa2mFsL+B2cvYMbumdim+qmrZjpA39E0NVVIV4lZBkokRjCGiVcKeSuQ3bTmgTTwJCBi12zLxCZM5dtP9DO3IpIvKfPa8;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LMTMOD=1000;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: BRAND=PokerStars;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: WBID=SCVMSV;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LCNS=512;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: CTRY=IM;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LSRC=1;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: GVER=WEB;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: SITE=1;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
 mode=block, Strict-Transport-Security: max-age=31536000 ;
-includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Fri, 05 Jul 2019 13:07:29 GMT, Server: app server<br /><br /><br />{
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Fri, 05 Jul 2019 19:13:10 GMT, Server: app server<br /><br /><br />{
   "Login": {
     "preferredLanguage": "en",
     "minStake": 0.01,
@@ -528,11 +531,11 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
     ],
     "userGroups": [],
     "accountId": 101,
-    "lastLoginTime": 1562331524492,
+    "lastLoginTime": 1562353709999,
     "countryCode": "IM",
     "maxLoginIdleTimeInMinutes": 60,
     "name": "SCVMSV doe",
-    "sessionToken": "bqZcUozb7Ch6xYhLqNJmMZ4Y",
+    "sessionToken": "wo9SYkR6grzU-ySGqHbrmJd-",
     "cashoutExcluded": false,
     "accountBalance": {
       "accountId": 0,
@@ -578,14 +581,14 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_03] Get open bets</span>
-						<span class='test-time'>Jul 5, 2019 04:07:30 PM</span>
+						<span class='test-time'>Jul 5, 2019 10:13:11 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 5, 2019 04:07:30 PM</span>
-	<span class='label end-time'>Jul 5, 2019 04:07:31 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+745ms</span>
+	<span class='label start-time'>Jul 5, 2019 10:13:11 PM</span>
+	<span class='label end-time'>Jul 5, 2019 10:13:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+697ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -608,291 +611,71 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:07:31 PM</td>
+					<td class='timestamp'>10:13:12 PM</td>
 					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:   POST<br />Scheme:   HTTPS<br />Host:     sports.uat.pyr<br />Path:     /sportsbook/v1/api/getOpenBets<br /><br />X-Requested-With: XMLHttpRequest
 Content-Type: application/x-www-form-urlencoded
 Origin: https://sports.uat.pyr
-<br /><br />[ REQUEST  BODY ]<br /><br />sessionToken=bqZcUozb7Ch6xYhLqNJmMZ4Y&excludeChildBets=true&locale=en-gb&siteId=1&channelId=6<br /></pre></td>
+<br /><br />[ REQUEST  BODY ]<br /><br />sessionToken=wo9SYkR6grzU-ySGqHbrmJd-&excludeChildBets=true&locale=en-gb&siteId=1&channelId=6<br /></pre></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:07:31 PM</td>
-					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Error Message : OK<br /><br />Set-Cookie: JSESSIONID=DCBC416F4FC71134BF8E9991FD1009E4;
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:13:12 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=764C5CAB56CA81000FD4EA2D3FD685AC;
 Path=/ram;
 Secure;
-HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=Wry4btPudpJH/mxZnNcpdg5P+J0mPRijWqfIw0VVOjuNEDVPc3Kh8O/13Nu29pbqm+Huv9UNFXgNc7tEDclwSaTXaLPMp3+d;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Set-Cookie: WIID=cyBq/e6zo1526GvZyjh1Bpap3FaQMwiI0vjGafDSI2hk/ODVibk0O6shFFAPtGIXmqW495P35lnz2V9+LTtwENfIJXzjHN4v;
 Domain=.uat.pyr;
-Expires=Wed, 03-Jul-2024 13:07:28 GMT;
+Expires=Wed, 03-Jul-2024 19:13:09 GMT;
 
- Set-Cookie: JSESSIONID=DCBC416F4FC71134BF8E9991FD1009E4;
+ Set-Cookie: JSESSIONID=764C5CAB56CA81000FD4EA2D3FD685AC;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
- Set-Cookie: SBTK=bqZcUozb7Ch6xYhLqNJmMZ4Y;
+ Set-Cookie: SBTK=wo9SYkR6grzU-ySGqHbrmJd-;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
- Set-Cookie: SBSG=mCgzVFJKfbf+zHTuPzsxGozXJUvjMUqMUL71S+TMlGEgWifximy+05qMmP058aE89cmHfH8QIokcerG/D1m8kpcJ+zN93g0nWqo5LSI11GgCq8SuB2rkPEHYLGbTWE2xQVAcb+LjwSm/i7zLp+J/IHkLy89qDG6c;
+ Set-Cookie: SBSG=/Z823kf9kV6cD6XRkhBQF4AuwDPrbt6tz9kfajg71UG0M9AqYX7nfmFYCPYVuxwV8e2xa2mFsL+B2cvYMbumdim+qmrZjpA39E0NVVIV4lZBkokRjCGiVcKeSuQ3bTmgTTwJCBi12zLxCZM5dtP9DO3IpIvKfPa8;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LMTMOD=1000;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: BRAND=PokerStars;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: WBID=SCVMSV;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LCNS=512;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: CTRY=IM;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: LSRC=1;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: GVER=WEB;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  Set-Cookie: SITE=1;
 Domain=.uat.pyr;
-Expires=Sat, 06-Jul-2019 13:07:29 GMT;
+Expires=Sat, 06-Jul-2019 19:13:10 GMT;
 
  X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
 mode=block, Strict-Transport-Security: max-age=31536000 ;
-includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Fri, 05 Jul 2019 13:07:29 GMT, Server: app server<br /><br /><br />***** E X C E P T I O N ***** <br />org.json.JSONException: JSONArray initial value should be a string or collection or array.<br /><br /><br />{
+includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Fri, 05 Jul 2019 19:13:10 GMT, Server: app server<br /><br /><br />{
   "Bets": {
     "bet": [
-      {
-        "childBetSummaries": [],
-        "totalPrice": 12,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1192671320000110002",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "192671320000110002",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 2,
-          "currency": "USD"
-        },
-        "currentlyInplay": false,
-        "potentialPayout": 24,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 24,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 2,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "Doncaster 05 Jul",
-                  "longName": "Doncaster 05 Jul"
-                },
-                "name": "Doncaster 05 Jul",
-                "id": 10016265
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": true,
-              "winSelections": [],
-              "selectionType": "HORSE-2364182",
-              "competitionParent": {
-                "names": {
-                  "shortName": "Doncaster",
-                  "longName": "Doncaster"
-                },
-                "name": "Doncaster",
-                "id": 3844401
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "11/1",
-                "priceType": "STARTING",
-                "decimal": 12
-              },
-              "eventTime": 1562331600000,
-              "id": 225984,
-              "event": {
-                "name": "14:00 Doncaster",
-                "id": 10016266
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 1004432965,
-              "banker": false,
-              "market": {
-                "code": "WEW",
-                "names": {
-                  "shortName": "Win Each Way",
-                  "longName": "Win Each Way"
-                },
-                "name": "Win Each Way",
-                "id": 382162933
-              },
-              "stake": 2,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Raheeb",
-                  "longName": "Raheeb"
-                },
-                "name": "Raheeb",
-                "id": 1004432965
-              },
-              "bog": false,
-              "sport": {
-                "name": "Horse Racing",
-                "id": 2505266
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1562328744463,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 5,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1192671310000110002",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "192671310000110002",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": false,
-        "potentialPayout": 5,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 5,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "Doncaster 05 Jul",
-                  "longName": "Doncaster 05 Jul"
-                },
-                "name": "Doncaster 05 Jul",
-                "id": 10016265
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": true,
-              "winSelections": [],
-              "selectionType": "HORSE-2371439",
-              "competitionParent": {
-                "names": {
-                  "shortName": "Doncaster",
-                  "longName": "Doncaster"
-                },
-                "name": "Doncaster",
-                "id": 3844401
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "4/1",
-                "priceType": "STARTING",
-                "decimal": 5
-              },
-              "eventTime": 1562331600000,
-              "id": 225983,
-              "event": {
-                "name": "14:00 Doncaster",
-                "id": 10016266
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 1004432964,
-              "banker": false,
-              "market": {
-                "code": "WEW",
-                "names": {
-                  "shortName": "Win Each Way",
-                  "longName": "Win Each Way"
-                },
-                "name": "Win Each Way",
-                "id": 382162933
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Queens Gift",
-                  "longName": "Queens Gift"
-                },
-                "name": "Queens Gift",
-                "id": 1004432964
-              },
-              "bog": false,
-              "sport": {
-                "name": "Horse Racing",
-                "id": 2505266
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1562328691420,
-        "liveBet": false,
-        "refund": 0
-      },
       {
         "childBetSummaries": [],
         "totalPrice": 6,
@@ -8461,128 +8244,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 1.5333333333,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1192211080000110003",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "192211080000510003",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": false,
-        "potentialPayout": 1.53,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 1.53,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "AEK Athens",
-                "id": 3406511
-              },
-              "competitorB": {
-                "name": "Prometheus",
-                "id": 3407191
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "A1 Ethniki",
-                  "longName": "A1 Ethniki"
-                },
-                "name": "A1 Ethniki",
-                "id": 6301812
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "H",
-              "competitionParent": {
-                "names": {
-                  "shortName": "Greece BG",
-                  "longName": "Greece BG"
-                },
-                "name": "Greece BG",
-                "id": 6256088
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "8/15",
-                "decimal": 1.53
-              },
-              "eventTime": 1559579400000,
-              "id": 211314,
-              "event": {
-                "names": {
-                  "veryshortName": "AEK Athens v Prometheus",
-                  "shortName": "AEK Athens v Prometheus",
-                  "longName": "AEK Athens v Prometheus"
-                },
-                "name": "AEK Athens v Prometheus",
-                "id": 9761331
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 985032729,
-              "banker": false,
-              "market": {
-                "code": "BA3W",
-                "names": {
-                  "shortName": "3way",
-                  "longName": "3way"
-                },
-                "name": "3way",
-                "id": 375613401
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "AEK Athens",
-                  "longName": "AEK Athens"
-                },
-                "name": "AEK Athens",
-                "id": 985032729
-              },
-              "bog": false,
-              "sport": {
-                "name": "Basketball",
-                "id": 226652
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1559567314079,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
         "totalPrice": 17,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -8705,7 +8366,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 3.5,
+        "totalPrice": 1.5333333333,
         "freeBet": false,
         "bonusWinnings": 0,
         "displayStatus": "OPEN",
@@ -8715,7 +8376,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
         "partialCashoutBetIds": [],
         "enhancements": [],
         "extAccountId": "SCVMSV",
-        "id": "192211080000310003",
+        "id": "192211080000510003",
         "winType": "WIN",
         "channelId": 6,
         "capturedStake": {
@@ -8723,10 +8384,10 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "currency": "USD"
         },
         "currentlyInplay": false,
-        "potentialPayout": 3.5,
+        "potentialPayout": 1.53,
         "betNo": 0,
         "teaserPoints": 0,
-        "potentialTotalPayout": 3.5,
+        "potentialTotalPayout": 1.53,
         "betStatus": "ACCEPTED",
         "winnings": 0,
         "stake": {
@@ -8761,7 +8422,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               "scoreA": 0,
               "eventIsInplay": false,
               "winSelections": [],
-              "selectionType": "A",
+              "selectionType": "H",
               "competitionParent": {
                 "names": {
                   "shortName": "Greece BG",
@@ -8772,11 +8433,11 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               },
               "scoreB": 0,
               "odds": {
-                "fractional": "5/2",
-                "decimal": 3.5
+                "fractional": "8/15",
+                "decimal": 1.53
               },
               "eventTime": 1559579400000,
-              "id": 211312,
+              "id": 211314,
               "event": {
                 "names": {
                   "veryshortName": "AEK Athens v Prometheus",
@@ -8789,7 +8450,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               "resultType": "NOT_SET",
               "bogEnhanced": false,
               "winType": "WIN",
-              "selectionId": 985032735,
+              "selectionId": 985032729,
               "banker": false,
               "market": {
                 "code": "BA3W",
@@ -8804,11 +8465,11 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               "settlementExchangeRate": 0,
               "selection": {
                 "names": {
-                  "shortName": "Prometheus",
-                  "longName": "Prometheus"
+                  "shortName": "AEK Athens",
+                  "longName": "AEK Athens"
                 },
-                "name": "Prometheus",
-                "id": 985032735
+                "name": "AEK Athens",
+                "id": 985032729
               },
               "bog": false,
               "sport": {
@@ -8931,6 +8592,128 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "Prometheus",
                 "id": 985032732
+              },
+              "bog": false,
+              "sport": {
+                "name": "Basketball",
+                "id": 226652
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1559567314079,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 3.5,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1192211080000110003",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "192211080000310003",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": false,
+        "potentialPayout": 3.5,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 3.5,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "AEK Athens",
+                "id": 3406511
+              },
+              "competitorB": {
+                "name": "Prometheus",
+                "id": 3407191
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "A1 Ethniki",
+                  "longName": "A1 Ethniki"
+                },
+                "name": "A1 Ethniki",
+                "id": 6301812
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "A",
+              "competitionParent": {
+                "names": {
+                  "shortName": "Greece BG",
+                  "longName": "Greece BG"
+                },
+                "name": "Greece BG",
+                "id": 6256088
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "5/2",
+                "decimal": 3.5
+              },
+              "eventTime": 1559579400000,
+              "id": 211312,
+              "event": {
+                "names": {
+                  "veryshortName": "AEK Athens v Prometheus",
+                  "shortName": "AEK Athens v Prometheus",
+                  "longName": "AEK Athens v Prometheus"
+                },
+                "name": "AEK Athens v Prometheus",
+                "id": 9761331
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 985032735,
+              "banker": false,
+              "market": {
+                "code": "BA3W",
+                "names": {
+                  "shortName": "3way",
+                  "longName": "3way"
+                },
+                "name": "3way",
+                "id": 375613401
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Prometheus",
+                  "longName": "Prometheus"
+                },
+                "name": "Prometheus",
+                "id": 985032735
               },
               "bog": false,
               "sport": {
@@ -9554,6 +9337,129 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
+        "totalPrice": 1.5,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1192211000000110002",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "192211000000310002",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 1.5,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 1.5,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "O Marach \u0026 H-c Chan ",
+                "id": 3872823
+              },
+              "competitorB": {
+                "name": "H U A Qureshi \u0026 N Kichenok ",
+                "id": 3877025
+              },
+              "line": 2,
+              "competition": {
+                "names": {
+                  "shortName": "French Open, Paris, France, Mixed",
+                  "longName": "French Open, Paris, France, Mixed"
+                },
+                "name": "French Open, Paris, France, Mixed",
+                "id": 9755531
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "playerA",
+              "competitionParent": {
+                "names": {
+                  "shortName": "ATP",
+                  "longName": "ATP"
+                },
+                "name": "ATP",
+                "id": 2091276
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "1/2",
+                "decimal": 1.5
+              },
+              "eventTime": 1559566500000,
+              "id": 211291,
+              "event": {
+                "names": {
+                  "veryshortName": "O Marach \u0026 H-c Chan  v H U A Qureshi \u0026 N Kichenok",
+                  "shortName": "O Marach \u0026 H-c Chan  v H U A Qureshi \u0026 N Kichenok ",
+                  "longName": "O Marach \u0026 H-c Chan  v H U A Qureshi \u0026 N Kichenok "
+                },
+                "name": "O Marach \u0026 H-c Chan  v H U A Qureshi \u0026 N Kichenok ",
+                "id": 9788898
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 987786051,
+              "banker": false,
+              "market": {
+                "code": "STWN",
+                "names": {
+                  "shortName": "Set 2 Result",
+                  "longName": "Set 2 Result"
+                },
+                "subCode": "2",
+                "name": "Set 2 Result",
+                "id": 376564654
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "O Marach \u0026 H-c Chan ",
+                  "longName": "O Marach \u0026 H-c Chan "
+                },
+                "name": "O Marach \u0026 H-c Chan ",
+                "id": 987786051
+              },
+              "bog": false,
+              "sport": {
+                "name": "Tennis",
+                "id": 166662
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1559566810235,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
         "totalPrice": 2.3,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -9782,129 +9688,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "H U A Qureshi \u0026 N Kichenok  2-0",
                 "id": 987785997
-              },
-              "bog": false,
-              "sport": {
-                "name": "Tennis",
-                "id": 166662
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1559566810235,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 1.5,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1192211000000110002",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "192211000000310002",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": true,
-        "potentialPayout": 1.5,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 1.5,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "O Marach \u0026 H-c Chan ",
-                "id": 3872823
-              },
-              "competitorB": {
-                "name": "H U A Qureshi \u0026 N Kichenok ",
-                "id": 3877025
-              },
-              "line": 2,
-              "competition": {
-                "names": {
-                  "shortName": "French Open, Paris, France, Mixed",
-                  "longName": "French Open, Paris, France, Mixed"
-                },
-                "name": "French Open, Paris, France, Mixed",
-                "id": 9755531
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "playerA",
-              "competitionParent": {
-                "names": {
-                  "shortName": "ATP",
-                  "longName": "ATP"
-                },
-                "name": "ATP",
-                "id": 2091276
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "1/2",
-                "decimal": 1.5
-              },
-              "eventTime": 1559566500000,
-              "id": 211291,
-              "event": {
-                "names": {
-                  "veryshortName": "O Marach \u0026 H-c Chan  v H U A Qureshi \u0026 N Kichenok",
-                  "shortName": "O Marach \u0026 H-c Chan  v H U A Qureshi \u0026 N Kichenok ",
-                  "longName": "O Marach \u0026 H-c Chan  v H U A Qureshi \u0026 N Kichenok "
-                },
-                "name": "O Marach \u0026 H-c Chan  v H U A Qureshi \u0026 N Kichenok ",
-                "id": 9788898
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 987786051,
-              "banker": false,
-              "market": {
-                "code": "STWN",
-                "names": {
-                  "shortName": "Set 2 Result",
-                  "longName": "Set 2 Result"
-                },
-                "subCode": "2",
-                "name": "Set 2 Result",
-                "id": 376564654
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "O Marach \u0026 H-c Chan ",
-                  "longName": "O Marach \u0026 H-c Chan "
-                },
-                "name": "O Marach \u0026 H-c Chan ",
-                "id": 987786051
               },
               "bog": false,
               "sport": {
@@ -10373,6 +10156,115 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
+        "totalPrice": 2.375,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1192209520000110001",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "192209520000210001",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 2,
+          "currency": "USD"
+        },
+        "currentlyInplay": false,
+        "potentialPayout": 4.75,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 4.75,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 2,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "Ante Poste",
+                  "longName": "Ante Poste"
+                },
+                "name": "Ante Poste",
+                "id": 8554672
+              },
+              "outright": true,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "Len",
+              "competitionParent": {
+                "names": {
+                  "shortName": "2019 Champion Hurdle",
+                  "longName": "2019 Champion Hurdle"
+                },
+                "name": "2019 Champion Hurdle",
+                "id": 7132144
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "11/8",
+                "decimal": 2.38
+              },
+              "eventTime": 1559170800000,
+              "id": 204252,
+              "event": {
+                "name": "The Fastest Horse Wins",
+                "id": 9655354
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 978068686,
+              "banker": false,
+              "market": {
+                "code": "APHRYC16",
+                "names": {
+                  "shortName": "Antepost - Yorkshire Cup",
+                  "longName": "Antepost - Yorkshire Cup"
+                },
+                "name": "Antepost - Yorkshire Cup",
+                "id": 373334462
+              },
+              "stake": 2,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Len",
+                  "longName": "Len"
+                },
+                "name": "Len",
+                "id": 978068686
+              },
+              "bog": false,
+              "sport": {
+                "name": "Horse Racing",
+                "id": 2505266
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1559557933604,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
         "totalPrice": 5.5,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -10573,115 +10465,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "Nikolay",
                 "id": 978068687
-              },
-              "bog": false,
-              "sport": {
-                "name": "Horse Racing",
-                "id": 2505266
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1559557933604,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 2.375,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1192209520000110001",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "192209520000210001",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 2,
-          "currency": "USD"
-        },
-        "currentlyInplay": false,
-        "potentialPayout": 4.75,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 4.75,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 2,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "Ante Poste",
-                  "longName": "Ante Poste"
-                },
-                "name": "Ante Poste",
-                "id": 8554672
-              },
-              "outright": true,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "Len",
-              "competitionParent": {
-                "names": {
-                  "shortName": "2019 Champion Hurdle",
-                  "longName": "2019 Champion Hurdle"
-                },
-                "name": "2019 Champion Hurdle",
-                "id": 7132144
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "11/8",
-                "decimal": 2.38
-              },
-              "eventTime": 1559170800000,
-              "id": 204252,
-              "event": {
-                "name": "The Fastest Horse Wins",
-                "id": 9655354
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 978068686,
-              "banker": false,
-              "market": {
-                "code": "APHRYC16",
-                "names": {
-                  "shortName": "Antepost - Yorkshire Cup",
-                  "longName": "Antepost - Yorkshire Cup"
-                },
-                "name": "Antepost - Yorkshire Cup",
-                "id": 373334462
-              },
-              "stake": 2,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Len",
-                  "longName": "Len"
-                },
-                "name": "Len",
-                "id": 978068686
               },
               "bog": false,
               "sport": {
@@ -14276,130 +14059,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
         "partialCashoutBetIds": [],
         "enhancements": [],
         "extAccountId": "SCVMSV",
-        "id": "192125700000110004",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": true,
-        "potentialPayout": 1.91,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 1.91,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Chicago Bears",
-                "id": 2812903
-              },
-              "competitorB": {
-                "name": "Green Bay Packers",
-                "id": 471566
-              },
-              "line": -4,
-              "competition": {
-                "names": {
-                  "shortName": "NFL",
-                  "longName": "NFL"
-                },
-                "name": "NFL",
-                "id": 2308790
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "usDisplay": true,
-              "winSelections": [],
-              "selectionType": "A",
-              "competitionParent": {
-                "names": {
-                  "shortName": "USA",
-                  "longName": "USA"
-                },
-                "name": "USA",
-                "id": 2306339
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "10/11",
-                "decimal": 1.91
-              },
-              "eventTime": 1567729200000,
-              "id": 203800,
-              "event": {
-                "names": {
-                  "veryshortName": "Chicago Bears vs Green Bay Packers",
-                  "shortName": "Chicago Bears vs Green Bay Packers",
-                  "longName": "Chicago Bears vs Green Bay Packers"
-                },
-                "name": "Chicago Bears vs Green Bay Packers",
-                "id": 9445970
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 962732442,
-              "banker": false,
-              "market": {
-                "code": "AF2U",
-                "names": {
-                  "shortName": "Spread",
-                  "longName": "Spread"
-                },
-                "subCode": "-3.5",
-                "name": "Spread",
-                "id": 368009768
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Green Bay Packers {awayLine}",
-                  "longName": "Green Bay Packers {awayLine}"
-                },
-                "name": "Green Bay Packers {awayLine}",
-                "id": 962732442
-              },
-              "bog": false,
-              "sport": {
-                "name": "American Football",
-                "id": 268246
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1559055006181,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 1.9090909091,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1192125700000110004",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
         "id": "192125700000210004",
         "winType": "WIN",
         "channelId": 6,
@@ -14520,11 +14179,11 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
         "displayStatus": "OPEN",
         "buildABet": false,
         "type": "SINGLE",
-        "betSlipId": "1192125550000110004",
+        "betSlipId": "1192125700000110004",
         "partialCashoutBetIds": [],
         "enhancements": [],
         "extAccountId": "SCVMSV",
-        "id": "192125550000110004",
+        "id": "192125700000110004",
         "winType": "WIN",
         "channelId": 6,
         "capturedStake": {
@@ -14586,7 +14245,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 "decimal": 1.91
               },
               "eventTime": 1567729200000,
-              "id": 203796,
+              "id": 203800,
               "event": {
                 "names": {
                   "veryshortName": "Chicago Bears vs Green Bay Packers",
@@ -14632,7 +14291,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "internalWinning": 0,
           "rate": 0
         },
-        "betTime": 1559054157489,
+        "betTime": 1559055006181,
         "liveBet": false,
         "refund": 0
       },
@@ -14744,6 +14403,130 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "Chicago Bears {homeLine}",
                 "id": 962732441
+              },
+              "bog": false,
+              "sport": {
+                "name": "American Football",
+                "id": 268246
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1559054157489,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 1.9090909091,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1192125550000110004",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "192125550000110004",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 1.91,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 1.91,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Chicago Bears",
+                "id": 2812903
+              },
+              "competitorB": {
+                "name": "Green Bay Packers",
+                "id": 471566
+              },
+              "line": -4,
+              "competition": {
+                "names": {
+                  "shortName": "NFL",
+                  "longName": "NFL"
+                },
+                "name": "NFL",
+                "id": 2308790
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "usDisplay": true,
+              "winSelections": [],
+              "selectionType": "A",
+              "competitionParent": {
+                "names": {
+                  "shortName": "USA",
+                  "longName": "USA"
+                },
+                "name": "USA",
+                "id": 2306339
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "10/11",
+                "decimal": 1.91
+              },
+              "eventTime": 1567729200000,
+              "id": 203796,
+              "event": {
+                "names": {
+                  "veryshortName": "Chicago Bears vs Green Bay Packers",
+                  "shortName": "Chicago Bears vs Green Bay Packers",
+                  "longName": "Chicago Bears vs Green Bay Packers"
+                },
+                "name": "Chicago Bears vs Green Bay Packers",
+                "id": 9445970
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 962732442,
+              "banker": false,
+              "market": {
+                "code": "AF2U",
+                "names": {
+                  "shortName": "Spread",
+                  "longName": "Spread"
+                },
+                "subCode": "-3.5",
+                "name": "Spread",
+                "id": 368009768
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Green Bay Packers {awayLine}",
+                  "longName": "Green Bay Packers {awayLine}"
+                },
+                "name": "Green Bay Packers {awayLine}",
+                "id": 962732442
               },
               "bog": false,
               "sport": {
@@ -17793,128 +17576,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 1.75,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191606040000110002",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191606040000210002",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": true,
-        "potentialPayout": 1.75,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 1.75,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Bc Zalgiris Kaunas",
-                "id": 548813
-              },
-              "competitorB": {
-                "name": "Fenerbahce Ulker",
-                "id": 548828
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "Euroleague",
-                  "longName": "Euroleague"
-                },
-                "name": "Euroleague",
-                "id": 4548535
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "test1",
-              "competitionParent": {
-                "names": {
-                  "shortName": "International",
-                  "longName": "International"
-                },
-                "name": "International",
-                "id": 2091172
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "3/4",
-                "decimal": 1.75
-              },
-              "eventTime": 1556038800000,
-              "id": 182942,
-              "event": {
-                "names": {
-                  "veryshortName": "Bc Zalgiris Kaunas vs Fenerbahce Ulker",
-                  "shortName": "Bc Zalgiris Kaunas vs Fenerbahce Ulker",
-                  "longName": "Bc Zalgiris Kaunas vs Fenerbahce Ulker"
-                },
-                "name": "Bc Zalgiris Kaunas vs Fenerbahce Ulker",
-                "id": 9404457
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 965627381,
-              "banker": false,
-              "market": {
-                "code": "BASKETBALL_RAB",
-                "names": {
-                  "shortName": "SOCCER_RAB",
-                  "longName": "SOCCER_RAB"
-                },
-                "name": "SOCCER_RAB",
-                "id": 369024107
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "test1",
-                  "longName": "test1"
-                },
-                "name": "test1",
-                "id": 965627381
-              },
-              "bog": false,
-              "sport": {
-                "name": "Basketball",
-                "id": 226652
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1555937080040,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
         "totalPrice": 1.85,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -18024,6 +17685,128 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               "sport": {
                 "name": "Football",
                 "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1555937080040,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 1.75,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191606040000110002",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191606040000210002",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 1.75,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 1.75,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Bc Zalgiris Kaunas",
+                "id": 548813
+              },
+              "competitorB": {
+                "name": "Fenerbahce Ulker",
+                "id": 548828
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "Euroleague",
+                  "longName": "Euroleague"
+                },
+                "name": "Euroleague",
+                "id": 4548535
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "test1",
+              "competitionParent": {
+                "names": {
+                  "shortName": "International",
+                  "longName": "International"
+                },
+                "name": "International",
+                "id": 2091172
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "3/4",
+                "decimal": 1.75
+              },
+              "eventTime": 1556038800000,
+              "id": 182942,
+              "event": {
+                "names": {
+                  "veryshortName": "Bc Zalgiris Kaunas vs Fenerbahce Ulker",
+                  "shortName": "Bc Zalgiris Kaunas vs Fenerbahce Ulker",
+                  "longName": "Bc Zalgiris Kaunas vs Fenerbahce Ulker"
+                },
+                "name": "Bc Zalgiris Kaunas vs Fenerbahce Ulker",
+                "id": 9404457
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 965627381,
+              "banker": false,
+              "market": {
+                "code": "BASKETBALL_RAB",
+                "names": {
+                  "shortName": "SOCCER_RAB",
+                  "longName": "SOCCER_RAB"
+                },
+                "name": "SOCCER_RAB",
+                "id": 369024107
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "test1",
+                  "longName": "test1"
+                },
+                "name": "test1",
+                "id": 965627381
+              },
+              "bog": false,
+              "sport": {
+                "name": "Basketball",
+                "id": 226652
               },
               "partNo": 1
             }
@@ -22075,129 +21858,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 1.4705882353,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191505890000110003",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191505900000110003",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "EUR"
-        },
-        "currentlyInplay": true,
-        "potentialPayout": 1.47,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 1.47,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "EUR"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Aljaz Bedene",
-                "id": 3353907
-              },
-              "competitorB": {
-                "name": "Radu Albot",
-                "id": 2619474
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "Monte Carlo, Monaco",
-                  "longName": "Monte Carlo, Monaco"
-                },
-                "name": "Monte Carlo, Monaco",
-                "id": 9403604
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "playerA",
-              "competitionParent": {
-                "names": {
-                  "shortName": "ATP",
-                  "longName": "ATP"
-                },
-                "name": "ATP",
-                "id": 2091276
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "40/85",
-                "decimal": 1.47
-              },
-              "eventTime": 1555335000000,
-              "id": 150135,
-              "event": {
-                "names": {
-                  "veryshortName": "Aljaz Bedene v Radu Albot",
-                  "shortName": "Aljaz Bedene v Radu Albot",
-                  "longName": "Aljaz Bedene v Radu Albot"
-                },
-                "name": "Aljaz Bedene v Radu Albot",
-                "id": 9415849
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 960575196,
-              "banker": false,
-              "market": {
-                "code": "AB",
-                "names": {
-                  "shortName": "Match Betting",
-                  "longName": "Match Betting"
-                },
-                "subCode": "M",
-                "name": "Match Betting",
-                "id": 367260284
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Aljaz Bedene",
-                  "longName": "Aljaz Bedene"
-                },
-                "name": "Aljaz Bedene",
-                "id": 960575196
-              },
-              "bog": false,
-              "sport": {
-                "name": "Tennis",
-                "id": 166662
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1555336200704,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
         "totalPrice": 1.5,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -22321,17 +21981,17 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 1.8333333333,
+        "totalPrice": 1.4705882353,
         "freeBet": false,
         "bonusWinnings": 0,
         "displayStatus": "OPEN",
         "buildABet": false,
         "type": "SINGLE",
-        "betSlipId": "1191461760000110006",
+        "betSlipId": "1191505890000110003",
         "partialCashoutBetIds": [],
         "enhancements": [],
         "extAccountId": "SCVMSV",
-        "id": "191461760000110006",
+        "id": "191505900000110003",
         "winType": "WIN",
         "channelId": 6,
         "capturedStake": {
@@ -22339,10 +21999,10 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "currency": "EUR"
         },
         "currentlyInplay": true,
-        "potentialPayout": 1.83,
+        "potentialPayout": 1.47,
         "betNo": 0,
         "teaserPoints": 0,
-        "potentialTotalPayout": 1.83,
+        "potentialTotalPayout": 1.47,
         "betStatus": "ACCEPTED",
         "winnings": 0,
         "stake": {
@@ -22357,21 +22017,21 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "betPart": [
             {
               "competitorA": {
-                "name": "M Podlinska \u0026 S Dzik Rogozinska ",
-                "id": 3829960
+                "name": "Aljaz Bedene",
+                "id": 3353907
               },
               "competitorB": {
-                "name": "L Maluniakova \u0026 L Stara ",
-                "id": 3742799
+                "name": "Radu Albot",
+                "id": 2619474
               },
               "line": 0,
               "competition": {
                 "names": {
-                  "shortName": "Sharm El Sheikh, Doubles W-ITF-EGY-12A",
-                  "longName": "Sharm El Sheikh, Doubles W-ITF-EGY-12A"
+                  "shortName": "Monte Carlo, Monaco",
+                  "longName": "Monte Carlo, Monaco"
                 },
-                "name": "Sharm El Sheikh, Doubles W-ITF-EGY-12A",
-                "id": 9377706
+                "name": "Monte Carlo, Monaco",
+                "id": 9403604
               },
               "outright": false,
               "scoreA": 0,
@@ -22380,32 +22040,32 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               "selectionType": "playerA",
               "competitionParent": {
                 "names": {
-                  "shortName": "ITF Women",
-                  "longName": "ITF Women"
+                  "shortName": "ATP",
+                  "longName": "ATP"
                 },
-                "name": "ITF Women",
-                "id": 2091275
+                "name": "ATP",
+                "id": 2091276
               },
               "scoreB": 0,
               "odds": {
-                "fractional": "5/6",
-                "decimal": 1.83
+                "fractional": "40/85",
+                "decimal": 1.47
               },
-              "eventTime": 1555070400000,
-              "id": 149533,
+              "eventTime": 1555335000000,
+              "id": 150135,
               "event": {
                 "names": {
-                  "veryshortName": "M Podlinska \u0026 S Dzik Rogozinska  v L Maluniakova \u0026 L Stara",
-                  "shortName": "M Podlinska \u0026 S Dzik Rogozinska  v L Maluniakova \u0026 L Stara ",
-                  "longName": "M Podlinska \u0026 S Dzik Rogozinska  v L Maluniakova \u0026 L Stara "
+                  "veryshortName": "Aljaz Bedene v Radu Albot",
+                  "shortName": "Aljaz Bedene v Radu Albot",
+                  "longName": "Aljaz Bedene v Radu Albot"
                 },
-                "name": "M Podlinska \u0026 S Dzik Rogozinska  v L Maluniakova \u0026 L Stara ",
-                "id": 9395633
+                "name": "Aljaz Bedene v Radu Albot",
+                "id": 9415849
               },
               "resultType": "NOT_SET",
               "bogEnhanced": false,
               "winType": "WIN",
-              "selectionId": 958275181,
+              "selectionId": 960575196,
               "banker": false,
               "market": {
                 "code": "AB",
@@ -22415,17 +22075,17 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "subCode": "M",
                 "name": "Match Betting",
-                "id": 366433827
+                "id": 367260284
               },
               "stake": 1,
               "settlementExchangeRate": 0,
               "selection": {
                 "names": {
-                  "shortName": "M Podlinska \u0026 S Dzik Rogozinska ",
-                  "longName": "M Podlinska \u0026 S Dzik Rogozinska "
+                  "shortName": "Aljaz Bedene",
+                  "longName": "Aljaz Bedene"
                 },
-                "name": "M Podlinska \u0026 S Dzik Rogozinska ",
-                "id": 958275181
+                "name": "Aljaz Bedene",
+                "id": 960575196
               },
               "bog": false,
               "sport": {
@@ -22438,8 +22098,8 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "internalWinning": 0,
           "rate": 0
         },
-        "betTime": 1555071368324,
-        "liveBet": true,
+        "betTime": 1555336200704,
+        "liveBet": false,
         "refund": 0
       },
       {
@@ -22690,6 +22350,251 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
+        "totalPrice": 1.8333333333,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191461760000110006",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191461760000110006",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "EUR"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 1.83,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 1.83,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "EUR"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "M Podlinska \u0026 S Dzik Rogozinska ",
+                "id": 3829960
+              },
+              "competitorB": {
+                "name": "L Maluniakova \u0026 L Stara ",
+                "id": 3742799
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "Sharm El Sheikh, Doubles W-ITF-EGY-12A",
+                  "longName": "Sharm El Sheikh, Doubles W-ITF-EGY-12A"
+                },
+                "name": "Sharm El Sheikh, Doubles W-ITF-EGY-12A",
+                "id": 9377706
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "playerA",
+              "competitionParent": {
+                "names": {
+                  "shortName": "ITF Women",
+                  "longName": "ITF Women"
+                },
+                "name": "ITF Women",
+                "id": 2091275
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "5/6",
+                "decimal": 1.83
+              },
+              "eventTime": 1555070400000,
+              "id": 149533,
+              "event": {
+                "names": {
+                  "veryshortName": "M Podlinska \u0026 S Dzik Rogozinska  v L Maluniakova \u0026 L Stara",
+                  "shortName": "M Podlinska \u0026 S Dzik Rogozinska  v L Maluniakova \u0026 L Stara ",
+                  "longName": "M Podlinska \u0026 S Dzik Rogozinska  v L Maluniakova \u0026 L Stara "
+                },
+                "name": "M Podlinska \u0026 S Dzik Rogozinska  v L Maluniakova \u0026 L Stara ",
+                "id": 9395633
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 958275181,
+              "banker": false,
+              "market": {
+                "code": "AB",
+                "names": {
+                  "shortName": "Match Betting",
+                  "longName": "Match Betting"
+                },
+                "subCode": "M",
+                "name": "Match Betting",
+                "id": 366433827
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "M Podlinska \u0026 S Dzik Rogozinska ",
+                  "longName": "M Podlinska \u0026 S Dzik Rogozinska "
+                },
+                "name": "M Podlinska \u0026 S Dzik Rogozinska ",
+                "id": 958275181
+              },
+              "bog": false,
+              "sport": {
+                "name": "Tennis",
+                "id": 166662
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1555071368324,
+        "liveBet": true,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 4.5,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191421540000110006",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191421540001610006",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "EUR"
+        },
+        "currentlyInplay": false,
+        "potentialPayout": 4.5,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 4.5,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "EUR"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Fulham",
+                "id": 1370258
+              },
+              "competitorB": {
+                "name": "Everton",
+                "id": 1370197
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "English Premier League",
+                  "longName": "English Premier League"
+                },
+                "name": "English Premier League",
+                "id": 3995089
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "H",
+              "competitionParent": {
+                "names": {
+                  "shortName": "England",
+                  "longName": "England"
+                },
+                "name": "England",
+                "id": 2152168
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "7/2",
+                "decimal": 4.5
+              },
+              "eventTime": 1555164000000,
+              "id": 148589,
+              "event": {
+                "names": {
+                  "veryshortName": "Fulham vs Everton",
+                  "shortName": "Fulham vs Everton",
+                  "longName": "Fulham vs Everton"
+                },
+                "name": "Fulham vs Everton",
+                "id": 8682076
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 870840528,
+              "banker": false,
+              "market": {
+                "code": "MRES",
+                "names": {
+                  "shortName": "Match Result",
+                  "longName": "Match Result"
+                },
+                "name": "Match Result",
+                "id": 334883669
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Fulham",
+                  "longName": "Fulham"
+                },
+                "name": "Fulham",
+                "id": 870840528
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1554830081780,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
         "totalPrice": 2.6,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -22794,6 +22699,250 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "Southampton",
                 "id": 870841349
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1554830081780,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 10,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191421540000110006",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191421540001810006",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "EUR"
+        },
+        "currentlyInplay": false,
+        "potentialPayout": 10,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 10,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "EUR"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Crystal Palace",
+                "id": 1370274
+              },
+              "competitorB": {
+                "name": "Manchester City",
+                "id": 1370278
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "English Premier League",
+                  "longName": "English Premier League"
+                },
+                "name": "English Premier League",
+                "id": 3995089
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "H",
+              "competitionParent": {
+                "names": {
+                  "shortName": "England",
+                  "longName": "England"
+                },
+                "name": "England",
+                "id": 2152168
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "9/1",
+                "decimal": 10
+              },
+              "eventTime": 1555247100000,
+              "id": 148591,
+              "event": {
+                "names": {
+                  "veryshortName": "Crystal Palace vs Manchester City",
+                  "shortName": "Crystal Palace vs Manchester City",
+                  "longName": "Crystal Palace vs Manchester City"
+                },
+                "name": "Crystal Palace vs Manchester City",
+                "id": 8682090
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 870843462,
+              "banker": false,
+              "market": {
+                "code": "MRES",
+                "names": {
+                  "shortName": "Match Result",
+                  "longName": "Match Result"
+                },
+                "name": "Match Result",
+                "id": 334884714
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Crystal Palace",
+                  "longName": "Crystal Palace"
+                },
+                "name": "Crystal Palace",
+                "id": 870843462
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1554830081780,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 1.6153846154,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191421540000110006",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191421540001910006",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "EUR"
+        },
+        "currentlyInplay": false,
+        "potentialPayout": 1.62,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 1.62,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "EUR"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Liverpool",
+                "id": 1370201
+              },
+              "competitorB": {
+                "name": "Chelsea",
+                "id": 1370209
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "English Premier League",
+                  "longName": "English Premier League"
+                },
+                "name": "English Premier League",
+                "id": 3995089
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "H",
+              "competitionParent": {
+                "names": {
+                  "shortName": "England",
+                  "longName": "England"
+                },
+                "name": "England",
+                "id": 2152168
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "8/13",
+                "decimal": 1.62
+              },
+              "eventTime": 1555255800000,
+              "id": 148592,
+              "event": {
+                "names": {
+                  "veryshortName": "Liverpool vs Chelsea",
+                  "shortName": "Liverpool vs Chelsea",
+                  "longName": "Liverpool vs Chelsea"
+                },
+                "name": "Liverpool vs Chelsea",
+                "id": 8682229
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 870874398,
+              "banker": false,
+              "market": {
+                "code": "MRES",
+                "names": {
+                  "shortName": "Match Result",
+                  "longName": "Match Result"
+                },
+                "name": "Match Result",
+                "id": 334895735
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Liverpool",
+                  "longName": "Liverpool"
+                },
+                "name": "Liverpool",
+                "id": 870874398
               },
               "bog": false,
               "sport": {
@@ -23160,372 +23309,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "Burnley",
                 "id": 870858786
-              },
-              "bog": false,
-              "sport": {
-                "name": "Football",
-                "id": 166661
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1554830081780,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 4.5,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191421540000110006",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191421540001610006",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "EUR"
-        },
-        "currentlyInplay": false,
-        "potentialPayout": 4.5,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 4.5,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "EUR"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Fulham",
-                "id": 1370258
-              },
-              "competitorB": {
-                "name": "Everton",
-                "id": 1370197
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "English Premier League",
-                  "longName": "English Premier League"
-                },
-                "name": "English Premier League",
-                "id": 3995089
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "H",
-              "competitionParent": {
-                "names": {
-                  "shortName": "England",
-                  "longName": "England"
-                },
-                "name": "England",
-                "id": 2152168
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "7/2",
-                "decimal": 4.5
-              },
-              "eventTime": 1555164000000,
-              "id": 148589,
-              "event": {
-                "names": {
-                  "veryshortName": "Fulham vs Everton",
-                  "shortName": "Fulham vs Everton",
-                  "longName": "Fulham vs Everton"
-                },
-                "name": "Fulham vs Everton",
-                "id": 8682076
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 870840528,
-              "banker": false,
-              "market": {
-                "code": "MRES",
-                "names": {
-                  "shortName": "Match Result",
-                  "longName": "Match Result"
-                },
-                "name": "Match Result",
-                "id": 334883669
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Fulham",
-                  "longName": "Fulham"
-                },
-                "name": "Fulham",
-                "id": 870840528
-              },
-              "bog": false,
-              "sport": {
-                "name": "Football",
-                "id": 166661
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1554830081780,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 1.6153846154,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191421540000110006",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191421540001910006",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "EUR"
-        },
-        "currentlyInplay": false,
-        "potentialPayout": 1.62,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 1.62,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "EUR"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Liverpool",
-                "id": 1370201
-              },
-              "competitorB": {
-                "name": "Chelsea",
-                "id": 1370209
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "English Premier League",
-                  "longName": "English Premier League"
-                },
-                "name": "English Premier League",
-                "id": 3995089
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "H",
-              "competitionParent": {
-                "names": {
-                  "shortName": "England",
-                  "longName": "England"
-                },
-                "name": "England",
-                "id": 2152168
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "8/13",
-                "decimal": 1.62
-              },
-              "eventTime": 1555255800000,
-              "id": 148592,
-              "event": {
-                "names": {
-                  "veryshortName": "Liverpool vs Chelsea",
-                  "shortName": "Liverpool vs Chelsea",
-                  "longName": "Liverpool vs Chelsea"
-                },
-                "name": "Liverpool vs Chelsea",
-                "id": 8682229
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 870874398,
-              "banker": false,
-              "market": {
-                "code": "MRES",
-                "names": {
-                  "shortName": "Match Result",
-                  "longName": "Match Result"
-                },
-                "name": "Match Result",
-                "id": 334895735
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Liverpool",
-                  "longName": "Liverpool"
-                },
-                "name": "Liverpool",
-                "id": 870874398
-              },
-              "bog": false,
-              "sport": {
-                "name": "Football",
-                "id": 166661
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1554830081780,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 10,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191421540000110006",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191421540001810006",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "EUR"
-        },
-        "currentlyInplay": false,
-        "potentialPayout": 10,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 10,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "EUR"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Crystal Palace",
-                "id": 1370274
-              },
-              "competitorB": {
-                "name": "Manchester City",
-                "id": 1370278
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "English Premier League",
-                  "longName": "English Premier League"
-                },
-                "name": "English Premier League",
-                "id": 3995089
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "H",
-              "competitionParent": {
-                "names": {
-                  "shortName": "England",
-                  "longName": "England"
-                },
-                "name": "England",
-                "id": 2152168
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "9/1",
-                "decimal": 10
-              },
-              "eventTime": 1555247100000,
-              "id": 148591,
-              "event": {
-                "names": {
-                  "veryshortName": "Crystal Palace vs Manchester City",
-                  "shortName": "Crystal Palace vs Manchester City",
-                  "longName": "Crystal Palace vs Manchester City"
-                },
-                "name": "Crystal Palace vs Manchester City",
-                "id": 8682090
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 870843462,
-              "banker": false,
-              "market": {
-                "code": "MRES",
-                "names": {
-                  "shortName": "Match Result",
-                  "longName": "Match Result"
-                },
-                "name": "Match Result",
-                "id": 334884714
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Crystal Palace",
-                  "longName": "Crystal Palace"
-                },
-                "name": "Crystal Palace",
-                "id": 870843462
               },
               "bog": false,
               "sport": {
@@ -26907,6 +26690,128 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
+        "totalPrice": 2.35,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191261510000110006",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191261510000710006",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 2.35,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 2.35,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Roma",
+                "id": 1369491
+              },
+              "competitorB": {
+                "name": "Napoli",
+                "id": 1369486
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "Serie A",
+                  "longName": "Serie A"
+                },
+                "name": "Serie A",
+                "id": 2153452
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "H",
+              "competitionParent": {
+                "names": {
+                  "shortName": "Italy",
+                  "longName": "Italy"
+                },
+                "name": "Italy",
+                "id": 2153406
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "27/20",
+                "decimal": 2.35
+              },
+              "eventTime": 1554037200000,
+              "id": 147231,
+              "event": {
+                "names": {
+                  "veryshortName": "Roma vs Napoli",
+                  "shortName": "Roma vs Napoli",
+                  "longName": "Roma vs Napoli"
+                },
+                "name": "Roma vs Napoli",
+                "id": 9083087
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 923703836,
+              "banker": false,
+              "market": {
+                "code": "MRES",
+                "names": {
+                  "shortName": "Match Result",
+                  "longName": "Match Result"
+                },
+                "name": "Match Result",
+                "id": 353955886
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Roma",
+                  "longName": "Roma"
+                },
+                "name": "Roma",
+                "id": 923703836
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1553869912583,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
         "totalPrice": 1.8,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -27030,7 +26935,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 2.35,
+        "totalPrice": 1.3333333333,
         "freeBet": false,
         "bonusWinnings": 0,
         "displayStatus": "OPEN",
@@ -27040,7 +26945,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
         "partialCashoutBetIds": [],
         "enhancements": [],
         "extAccountId": "SCVMSV",
-        "id": "191261510000710006",
+        "id": "191261510000210006",
         "winType": "WIN",
         "channelId": 6,
         "capturedStake": {
@@ -27048,10 +26953,10 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "currency": "USD"
         },
         "currentlyInplay": true,
-        "potentialPayout": 2.35,
+        "potentialPayout": 1.33,
         "betNo": 0,
         "teaserPoints": 0,
-        "potentialTotalPayout": 2.35,
+        "potentialTotalPayout": 1.33,
         "betStatus": "ACCEPTED",
         "winnings": 0,
         "stake": {
@@ -27066,256 +26971,12 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "betPart": [
             {
               "competitorA": {
-                "name": "Roma",
-                "id": 1369491
+                "name": "Barcelona",
+                "id": 1369864
               },
               "competitorB": {
-                "name": "Napoli",
-                "id": 1369486
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "Serie A",
-                  "longName": "Serie A"
-                },
-                "name": "Serie A",
-                "id": 2153452
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "H",
-              "competitionParent": {
-                "names": {
-                  "shortName": "Italy",
-                  "longName": "Italy"
-                },
-                "name": "Italy",
-                "id": 2153406
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "27/20",
-                "decimal": 2.35
-              },
-              "eventTime": 1554037200000,
-              "id": 147231,
-              "event": {
-                "names": {
-                  "veryshortName": "Roma vs Napoli",
-                  "shortName": "Roma vs Napoli",
-                  "longName": "Roma vs Napoli"
-                },
-                "name": "Roma vs Napoli",
-                "id": 9083087
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 923703836,
-              "banker": false,
-              "market": {
-                "code": "MRES",
-                "names": {
-                  "shortName": "Match Result",
-                  "longName": "Match Result"
-                },
-                "name": "Match Result",
-                "id": 353955886
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Roma",
-                  "longName": "Roma"
-                },
-                "name": "Roma",
-                "id": 923703836
-              },
-              "bog": false,
-              "sport": {
-                "name": "Football",
-                "id": 166661
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1553869912583,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 2.85,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191261510000110006",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191261510000610006",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": true,
-        "potentialPayout": 2.85,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 2.85,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Frosinone Calcio",
-                "id": 1369548
-              },
-              "competitorB": {
-                "name": "Spal 2013",
-                "id": 1369539
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "Serie A",
-                  "longName": "Serie A"
-                },
-                "name": "Serie A",
-                "id": 2153452
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "H",
-              "competitionParent": {
-                "names": {
-                  "shortName": "Italy",
-                  "longName": "Italy"
-                },
-                "name": "Italy",
-                "id": 2153406
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "37/20",
-                "decimal": 2.85
-              },
-              "eventTime": 1554037200000,
-              "id": 147230,
-              "event": {
-                "names": {
-                  "veryshortName": "Frosinone Calcio vs Spal 2013",
-                  "shortName": "Frosinone Calcio vs Spal 2013",
-                  "longName": "Frosinone Calcio vs Spal 2013"
-                },
-                "name": "Frosinone Calcio vs Spal 2013",
-                "id": 9083078
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 923699906,
-              "banker": false,
-              "market": {
-                "code": "MRES",
-                "names": {
-                  "shortName": "Match Result",
-                  "longName": "Match Result"
-                },
-                "name": "Match Result",
-                "id": 353954184
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Frosinone Calcio",
-                  "longName": "Frosinone Calcio"
-                },
-                "name": "Frosinone Calcio",
-                "id": 923699906
-              },
-              "bog": false,
-              "sport": {
-                "name": "Football",
-                "id": 166661
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1553869912582,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
-        "totalPrice": 5,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191261510000110006",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191261510000410006",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": true,
-        "potentialPayout": 5,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 5,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Alaves",
-                "id": 1369907
-              },
-              "competitorB": {
-                "name": "Atletico Madrid",
-                "id": 1369863
+                "name": "Espanyol",
+                "id": 1369866
               },
               "line": 0,
               "competition": {
@@ -27341,24 +27002,24 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               },
               "scoreB": 0,
               "odds": {
-                "fractional": "4/1",
-                "decimal": 5
+                "fractional": "1/3",
+                "decimal": 1.33
               },
-              "eventTime": 1553975100000,
-              "id": 147228,
+              "eventTime": 1553958900000,
+              "id": 147226,
               "event": {
                 "names": {
-                  "veryshortName": "Alaves vs Atletico Madrid",
-                  "shortName": "Alaves vs Atletico Madrid",
-                  "longName": "Alaves vs Atletico Madrid"
+                  "veryshortName": "Barcelona vs Espanyol",
+                  "shortName": "Barcelona vs Espanyol",
+                  "longName": "Barcelona vs Espanyol"
                 },
-                "name": "Alaves vs Atletico Madrid",
-                "id": 9083470
+                "name": "Barcelona vs Espanyol",
+                "id": 9083464
               },
               "resultType": "NOT_SET",
               "bogEnhanced": false,
               "winType": "WIN",
-              "selectionId": 923782683,
+              "selectionId": 923780992,
               "banker": false,
               "market": {
                 "code": "MRES",
@@ -27367,17 +27028,17 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                   "longName": "Match Result"
                 },
                 "name": "Match Result",
-                "id": 353986852
+                "id": 353986240
               },
               "stake": 1,
               "settlementExchangeRate": 0,
               "selection": {
                 "names": {
-                  "shortName": "Alaves",
-                  "longName": "Alaves"
+                  "shortName": "Barcelona",
+                  "longName": "Barcelona"
                 },
-                "name": "Alaves",
-                "id": 923782683
+                "name": "Barcelona",
+                "id": 923780992
               },
               "bog": false,
               "sport": {
@@ -27518,7 +27179,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 1.3333333333,
+        "totalPrice": 5,
         "freeBet": false,
         "bonusWinnings": 0,
         "displayStatus": "OPEN",
@@ -27528,7 +27189,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
         "partialCashoutBetIds": [],
         "enhancements": [],
         "extAccountId": "SCVMSV",
-        "id": "191261510000210006",
+        "id": "191261510000410006",
         "winType": "WIN",
         "channelId": 6,
         "capturedStake": {
@@ -27536,10 +27197,10 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "currency": "USD"
         },
         "currentlyInplay": true,
-        "potentialPayout": 1.33,
+        "potentialPayout": 5,
         "betNo": 0,
         "teaserPoints": 0,
-        "potentialTotalPayout": 1.33,
+        "potentialTotalPayout": 5,
         "betStatus": "ACCEPTED",
         "winnings": 0,
         "stake": {
@@ -27554,12 +27215,12 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "betPart": [
             {
               "competitorA": {
-                "name": "Barcelona",
-                "id": 1369864
+                "name": "Alaves",
+                "id": 1369907
               },
               "competitorB": {
-                "name": "Espanyol",
-                "id": 1369866
+                "name": "Atletico Madrid",
+                "id": 1369863
               },
               "line": 0,
               "competition": {
@@ -27585,24 +27246,24 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               },
               "scoreB": 0,
               "odds": {
-                "fractional": "1/3",
-                "decimal": 1.33
+                "fractional": "4/1",
+                "decimal": 5
               },
-              "eventTime": 1553958900000,
-              "id": 147226,
+              "eventTime": 1553975100000,
+              "id": 147228,
               "event": {
                 "names": {
-                  "veryshortName": "Barcelona vs Espanyol",
-                  "shortName": "Barcelona vs Espanyol",
-                  "longName": "Barcelona vs Espanyol"
+                  "veryshortName": "Alaves vs Atletico Madrid",
+                  "shortName": "Alaves vs Atletico Madrid",
+                  "longName": "Alaves vs Atletico Madrid"
                 },
-                "name": "Barcelona vs Espanyol",
-                "id": 9083464
+                "name": "Alaves vs Atletico Madrid",
+                "id": 9083470
               },
               "resultType": "NOT_SET",
               "bogEnhanced": false,
               "winType": "WIN",
-              "selectionId": 923780992,
+              "selectionId": 923782683,
               "banker": false,
               "market": {
                 "code": "MRES",
@@ -27611,17 +27272,17 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                   "longName": "Match Result"
                 },
                 "name": "Match Result",
-                "id": 353986240
+                "id": 353986852
               },
               "stake": 1,
               "settlementExchangeRate": 0,
               "selection": {
                 "names": {
-                  "shortName": "Barcelona",
-                  "longName": "Barcelona"
+                  "shortName": "Alaves",
+                  "longName": "Alaves"
                 },
-                "name": "Barcelona",
-                "id": 923780992
+                "name": "Alaves",
+                "id": 923782683
               },
               "bog": false,
               "sport": {
@@ -27744,6 +27405,128 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "Rayo Vallecano",
                 "id": 923779081
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1553869912582,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 2.85,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191261510000110006",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191261510000610006",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 2.85,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 2.85,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Frosinone Calcio",
+                "id": 1369548
+              },
+              "competitorB": {
+                "name": "Spal 2013",
+                "id": 1369539
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "Serie A",
+                  "longName": "Serie A"
+                },
+                "name": "Serie A",
+                "id": 2153452
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "H",
+              "competitionParent": {
+                "names": {
+                  "shortName": "Italy",
+                  "longName": "Italy"
+                },
+                "name": "Italy",
+                "id": 2153406
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "37/20",
+                "decimal": 2.85
+              },
+              "eventTime": 1554037200000,
+              "id": 147230,
+              "event": {
+                "names": {
+                  "veryshortName": "Frosinone Calcio vs Spal 2013",
+                  "shortName": "Frosinone Calcio vs Spal 2013",
+                  "longName": "Frosinone Calcio vs Spal 2013"
+                },
+                "name": "Frosinone Calcio vs Spal 2013",
+                "id": 9083078
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 923699906,
+              "banker": false,
+              "market": {
+                "code": "MRES",
+                "names": {
+                  "shortName": "Match Result",
+                  "longName": "Match Result"
+                },
+                "name": "Match Result",
+                "id": 353954184
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Frosinone Calcio",
+                  "longName": "Frosinone Calcio"
+                },
+                "name": "Frosinone Calcio",
+                "id": 923699906
               },
               "bog": false,
               "sport": {
@@ -30735,128 +30518,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 3.25,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191219150000110006",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191219150002010006",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": true,
-        "potentialPayout": 3.25,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 3.25,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Alaves",
-                "id": 1369907
-              },
-              "competitorB": {
-                "name": "Atletico Madrid",
-                "id": 1369863
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "Spanish La Liga",
-                  "longName": "Spanish La Liga"
-                },
-                "name": "Spanish La Liga",
-                "id": 2154128
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "D",
-              "competitionParent": {
-                "names": {
-                  "shortName": "Spain",
-                  "longName": "Spain"
-                },
-                "name": "Spain",
-                "id": 2154124
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "9/4",
-                "decimal": 3.25
-              },
-              "eventTime": 1553975100000,
-              "id": 146511,
-              "event": {
-                "names": {
-                  "veryshortName": "Alaves vs Atletico Madrid",
-                  "shortName": "Alaves vs Atletico Madrid",
-                  "longName": "Alaves vs Atletico Madrid"
-                },
-                "name": "Alaves vs Atletico Madrid",
-                "id": 9083470
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 923782684,
-              "banker": false,
-              "market": {
-                "code": "MRES",
-                "names": {
-                  "shortName": "Match Result",
-                  "longName": "Match Result"
-                },
-                "name": "Match Result",
-                "id": 353986852
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Draw",
-                  "longName": "Draw"
-                },
-                "name": "Draw",
-                "id": 923782684
-              },
-              "bog": false,
-              "sport": {
-                "name": "Football",
-                "id": 166661
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1553615712629,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
         "totalPrice": 5.25,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -30979,7 +30640,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 3.4,
+        "totalPrice": 3.25,
         "freeBet": false,
         "bonusWinnings": 0,
         "displayStatus": "OPEN",
@@ -30989,7 +30650,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
         "partialCashoutBetIds": [],
         "enhancements": [],
         "extAccountId": "SCVMSV",
-        "id": "191219150001710006",
+        "id": "191219150002010006",
         "winType": "WIN",
         "channelId": 6,
         "capturedStake": {
@@ -30997,10 +30658,10 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "currency": "USD"
         },
         "currentlyInplay": true,
-        "potentialPayout": 3.4,
+        "potentialPayout": 3.25,
         "betNo": 0,
         "teaserPoints": 0,
-        "potentialTotalPayout": 3.4,
+        "potentialTotalPayout": 3.25,
         "betStatus": "ACCEPTED",
         "winnings": 0,
         "stake": {
@@ -31015,12 +30676,12 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "betPart": [
             {
               "competitorA": {
-                "name": "Rayo Vallecano",
-                "id": 1369873
+                "name": "Alaves",
+                "id": 1369907
               },
               "competitorB": {
-                "name": "Betis",
-                "id": 1369901
+                "name": "Atletico Madrid",
+                "id": 1369863
               },
               "line": 0,
               "competition": {
@@ -31046,24 +30707,24 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
               },
               "scoreB": 0,
               "odds": {
-                "fractional": "12/5",
-                "decimal": 3.4
+                "fractional": "9/4",
+                "decimal": 3.25
               },
-              "eventTime": 1554033600000,
-              "id": 146508,
+              "eventTime": 1553975100000,
+              "id": 146511,
               "event": {
                 "names": {
-                  "veryshortName": "Rayo Vallecano vs Betis",
-                  "shortName": "Rayo Vallecano vs Betis",
-                  "longName": "Rayo Vallecano vs Betis"
+                  "veryshortName": "Alaves vs Atletico Madrid",
+                  "shortName": "Alaves vs Atletico Madrid",
+                  "longName": "Alaves vs Atletico Madrid"
                 },
-                "name": "Rayo Vallecano vs Betis",
-                "id": 9083458
+                "name": "Alaves vs Atletico Madrid",
+                "id": 9083470
               },
               "resultType": "NOT_SET",
               "bogEnhanced": false,
               "winType": "WIN",
-              "selectionId": 923779082,
+              "selectionId": 923782684,
               "banker": false,
               "market": {
                 "code": "MRES",
@@ -31072,7 +30733,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                   "longName": "Match Result"
                 },
                 "name": "Match Result",
-                "id": 353985518
+                "id": 353986852
               },
               "stake": 1,
               "settlementExchangeRate": 0,
@@ -31082,7 +30743,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                   "longName": "Draw"
                 },
                 "name": "Draw",
-                "id": 923779082
+                "id": 923782684
               },
               "bog": false,
               "sport": {
@@ -31095,7 +30756,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
           "internalWinning": 0,
           "rate": 0
         },
-        "betTime": 1553615712628,
+        "betTime": 1553615712629,
         "liveBet": false,
         "refund": 0
       },
@@ -31205,6 +30866,128 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "Rayo Vallecano",
                 "id": 923779081
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1553615712628,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 3.4,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191219150000110006",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191219150001710006",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 3.4,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 3.4,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Rayo Vallecano",
+                "id": 1369873
+              },
+              "competitorB": {
+                "name": "Betis",
+                "id": 1369901
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "Spanish La Liga",
+                  "longName": "Spanish La Liga"
+                },
+                "name": "Spanish La Liga",
+                "id": 2154128
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "D",
+              "competitionParent": {
+                "names": {
+                  "shortName": "Spain",
+                  "longName": "Spain"
+                },
+                "name": "Spain",
+                "id": 2154124
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "12/5",
+                "decimal": 3.4
+              },
+              "eventTime": 1554033600000,
+              "id": 146508,
+              "event": {
+                "names": {
+                  "veryshortName": "Rayo Vallecano vs Betis",
+                  "shortName": "Rayo Vallecano vs Betis",
+                  "longName": "Rayo Vallecano vs Betis"
+                },
+                "name": "Rayo Vallecano vs Betis",
+                "id": 9083458
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 923779082,
+              "banker": false,
+              "market": {
+                "code": "MRES",
+                "names": {
+                  "shortName": "Match Result",
+                  "longName": "Match Result"
+                },
+                "name": "Match Result",
+                "id": 353985518
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Draw",
+                  "longName": "Draw"
+                },
+                "name": "Draw",
+                "id": 923779082
               },
               "bog": false,
               "sport": {
@@ -31469,128 +31252,6 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
       },
       {
         "childBetSummaries": [],
-        "totalPrice": 1.5,
-        "freeBet": false,
-        "bonusWinnings": 0,
-        "displayStatus": "OPEN",
-        "buildABet": false,
-        "type": "SINGLE",
-        "betSlipId": "1191219150000110006",
-        "partialCashoutBetIds": [],
-        "enhancements": [],
-        "extAccountId": "SCVMSV",
-        "id": "191219150000310006",
-        "winType": "WIN",
-        "channelId": 6,
-        "capturedStake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "currentlyInplay": true,
-        "potentialPayout": 1.5,
-        "betNo": 0,
-        "teaserPoints": 0,
-        "potentialTotalPayout": 1.5,
-        "betStatus": "ACCEPTED",
-        "winnings": 0,
-        "stake": {
-          "amount": 1,
-          "currency": "USD"
-        },
-        "accountId": 101,
-        "site": "COM",
-        "betRiskGroup": "PRE_MATCH_SINGLE",
-        "potentialBonusWinnings": 0,
-        "parts": {
-          "betPart": [
-            {
-              "competitorA": {
-                "name": "Crystal Palace",
-                "id": 1370274
-              },
-              "competitorB": {
-                "name": "Huddersfield Town",
-                "id": 1370244
-              },
-              "line": 0,
-              "competition": {
-                "names": {
-                  "shortName": "English Premier League",
-                  "longName": "English Premier League"
-                },
-                "name": "English Premier League",
-                "id": 3995089
-              },
-              "outright": false,
-              "scoreA": 0,
-              "eventIsInplay": false,
-              "winSelections": [],
-              "selectionType": "H",
-              "competitionParent": {
-                "names": {
-                  "shortName": "England",
-                  "longName": "England"
-                },
-                "name": "England",
-                "id": 2152168
-              },
-              "scoreB": 0,
-              "odds": {
-                "fractional": "1/2",
-                "decimal": 1.5
-              },
-              "eventTime": 1553958000000,
-              "id": 146494,
-              "event": {
-                "names": {
-                  "veryshortName": "Crystal Palace vs Huddersfield Town",
-                  "shortName": "Crystal Palace vs Huddersfield Town",
-                  "longName": "Crystal Palace vs Huddersfield Town"
-                },
-                "name": "Crystal Palace vs Huddersfield Town",
-                "id": 8682184
-              },
-              "resultType": "NOT_SET",
-              "bogEnhanced": false,
-              "winType": "WIN",
-              "selectionId": 870864590,
-              "banker": false,
-              "market": {
-                "code": "MRES",
-                "names": {
-                  "shortName": "Match Result",
-                  "longName": "Match Result"
-                },
-                "name": "Match Result",
-                "id": 334892252
-              },
-              "stake": 1,
-              "settlementExchangeRate": 0,
-              "selection": {
-                "names": {
-                  "shortName": "Crystal Palace",
-                  "longName": "Crystal Palace"
-                },
-                "name": "Crystal Palace",
-                "id": 870864590
-              },
-              "bog": false,
-              "sport": {
-                "name": "Football",
-                "id": 166661
-              },
-              "partNo": 1
-            }
-          ],
-          "internalWinning": 0,
-          "rate": 0
-        },
-        "betTime": 1553615712616,
-        "liveBet": false,
-        "refund": 0
-      },
-      {
-        "childBetSummaries": [],
         "totalPrice": 3.1,
         "freeBet": false,
         "bonusWinnings": 0,
@@ -31695,6 +31356,128 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                 },
                 "name": "Draw",
                 "id": 870856118
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1553615712616,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 1.5,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1191219150000110006",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "191219150000310006",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 1.5,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 1.5,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Crystal Palace",
+                "id": 1370274
+              },
+              "competitorB": {
+                "name": "Huddersfield Town",
+                "id": 1370244
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "English Premier League",
+                  "longName": "English Premier League"
+                },
+                "name": "English Premier League",
+                "id": 3995089
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "H",
+              "competitionParent": {
+                "names": {
+                  "shortName": "England",
+                  "longName": "England"
+                },
+                "name": "England",
+                "id": 2152168
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "1/2",
+                "decimal": 1.5
+              },
+              "eventTime": 1553958000000,
+              "id": 146494,
+              "event": {
+                "names": {
+                  "veryshortName": "Crystal Palace vs Huddersfield Town",
+                  "shortName": "Crystal Palace vs Huddersfield Town",
+                  "longName": "Crystal Palace vs Huddersfield Town"
+                },
+                "name": "Crystal Palace vs Huddersfield Town",
+                "id": 8682184
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 870864590,
+              "banker": false,
+              "market": {
+                "code": "MRES",
+                "names": {
+                  "shortName": "Match Result",
+                  "longName": "Match Result"
+                },
+                "name": "Match Result",
+                "id": 334892252
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Crystal Palace",
+                  "longName": "Crystal Palace"
+                },
+                "name": "Crystal Palace",
+                "id": 870864590
               },
               "bog": false,
               "sport": {
@@ -39505,10 +39288,291 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
         "betTime": 1549993484984,
         "liveBet": false,
         "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 2,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1190615410000210003",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "190615410000510003",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 2,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 2,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Empoli",
+                "id": 1369492
+              },
+              "competitorB": {
+                "name": "Sassuolo",
+                "id": 1369488
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "Serie A",
+                  "longName": "Serie A"
+                },
+                "name": "Serie A",
+                "id": 2153452
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "Test 2",
+              "competitionParent": {
+                "names": {
+                  "shortName": "Italy",
+                  "longName": "Italy"
+                },
+                "name": "Italy",
+                "id": 2153406
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "1/1",
+                "decimal": 2
+              },
+              "eventTime": 1550412000000,
+              "id": 111296,
+              "event": {
+                "names": {
+                  "veryshortName": "Empoli vs Sassuolo",
+                  "shortName": "Empoli vs Sassuolo",
+                  "longName": "Empoli vs Sassuolo"
+                },
+                "name": "Empoli vs Sassuolo",
+                "id": 8787333
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 906612302,
+              "banker": false,
+              "market": {
+                "code": "SOCCER_RAB",
+                "names": {
+                  "shortName": "Request a Bet",
+                  "longName": "Request a Bet"
+                },
+                "name": "Request a Bet",
+                "id": 347967184
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Test 2",
+                  "longName": "Test 2"
+                },
+                "name": "Test 2",
+                "id": 906612302
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1549993287351,
+        "liveBet": false,
+        "refund": 0
+      },
+      {
+        "childBetSummaries": [],
+        "totalPrice": 2,
+        "freeBet": false,
+        "bonusWinnings": 0,
+        "displayStatus": "OPEN",
+        "buildABet": false,
+        "type": "SINGLE",
+        "betSlipId": "1190615410000210003",
+        "partialCashoutBetIds": [],
+        "enhancements": [],
+        "extAccountId": "SCVMSV",
+        "id": "190615410000410003",
+        "winType": "WIN",
+        "channelId": 6,
+        "capturedStake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "currentlyInplay": true,
+        "potentialPayout": 2,
+        "betNo": 0,
+        "teaserPoints": 0,
+        "potentialTotalPayout": 2,
+        "betStatus": "ACCEPTED",
+        "winnings": 0,
+        "stake": {
+          "amount": 1,
+          "currency": "USD"
+        },
+        "accountId": 101,
+        "site": "COM",
+        "betRiskGroup": "PRE_MATCH_SINGLE",
+        "potentialBonusWinnings": 0,
+        "parts": {
+          "betPart": [
+            {
+              "competitorA": {
+                "name": "Empoli",
+                "id": 1369492
+              },
+              "competitorB": {
+                "name": "Sassuolo",
+                "id": 1369488
+              },
+              "line": 0,
+              "competition": {
+                "names": {
+                  "shortName": "Serie A",
+                  "longName": "Serie A"
+                },
+                "name": "Serie A",
+                "id": 2153452
+              },
+              "outright": false,
+              "scoreA": 0,
+              "eventIsInplay": false,
+              "winSelections": [],
+              "selectionType": "Test 1",
+              "competitionParent": {
+                "names": {
+                  "shortName": "Italy",
+                  "longName": "Italy"
+                },
+                "name": "Italy",
+                "id": 2153406
+              },
+              "scoreB": 0,
+              "odds": {
+                "fractional": "1/1",
+                "decimal": 2
+              },
+              "eventTime": 1550412000000,
+              "id": 111295,
+              "event": {
+                "names": {
+                  "veryshortName": "Empoli vs Sassuolo",
+                  "shortName": "Empoli vs Sassuolo",
+                  "longName": "Empoli vs Sassuolo"
+                },
+                "name": "Empoli vs Sassuolo",
+                "id": 8787333
+              },
+              "resultType": "NOT_SET",
+              "bogEnhanced": false,
+              "winType": "WIN",
+              "selectionId": 906612301,
+              "banker": false,
+              "market": {
+                "code": "SOCCER_RAB",
+                "names": {
+                  "shortName": "Request a Bet",
+                  "longName": "Request a Bet"
+                },
+                "name": "Request a Bet",
+                "id": 347967184
+              },
+              "stake": 1,
+              "settlementExchangeRate": 0,
+              "selection": {
+                "names": {
+                  "shortName": "Test 1",
+                  "longName": "Test 1"
+                },
+                "name": "Test 1",
+                "id": 906612301
+              },
+              "bog": false,
+              "sport": {
+                "name": "Football",
+                "id": 166661
+              },
+              "partNo": 1
+            }
+          ],
+          "internalWinning": 0,
+          "rate": 0
+        },
+        "betTime": 1549993287351,
+        "liveBet": false,
+        "refund": 0
       }
     ]
   }
 }<br /><br /></pre></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:13:12 PM</td>
+					<td class='step-details'><span class='label white-text red'>| FAILED | ID_03_GetOpenBets[getSelectionId]</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:13:12 PM</td>
+					<td class='step-details'><pre>java.lang.ClassCastException: net.minidev.json.JSONArray cannot be cast to java.lang.String
+	at com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getSelectionId(ID_03_GetOpenBets.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:13:12 PM</td>
+					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets[getSelectionId].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets[getSelectionId].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets[getSelectionId].png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -39590,7 +39654,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 5, 2019 04:07:27 PM</td>
+										<td>Jul 5, 2019 10:13:08 PM</td>
 										<td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -39625,12 +39689,12 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 5, 2019 04:07:29 PM</td>
+										<td>Jul 5, 2019 10:13:10 PM</td>
 										<td class='linked' test-id='2'>[ID_02] External log in</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 5, 2019 04:07:30 PM</td>
+										<td>Jul 5, 2019 10:13:11 PM</td>
 										<td class='linked' test-id='3'>[ID_03] Get open bets</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -39700,12 +39764,12 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 5, 2019 04:07:27 PM</td>
+                                                <td>Jul 5, 2019 10:13:08 PM</td>
                                                 <td class='linked' test-id='1'>[ID_01] Send log in ram module request</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 5, 2019 04:07:29 PM</td>
+                                                <td>Jul 5, 2019 10:13:10 PM</td>
                                                 <td class='linked' test-id='2'>[ID_02] External log in</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
@@ -39739,7 +39803,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 5, 2019 04:07:30 PM</td>
+                                                <td>Jul 5, 2019 10:13:11 PM</td>
                                                 <td class='linked' test-id='3'>[ID_03] Get open bets</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
@@ -39759,6 +39823,89 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
         </div>
     </div>
 </div>
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.ClassCastException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 5, 2019 10:13:11 PM</td>
+                                                        <td class='linked' test-id='3'>[ID_03] Get open bets</td>
+                                                        <td><pre><pre>java.lang.ClassCastException: net.minidev.json.JSONArray cannot be cast to java.lang.String
+	at com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getSelectionId(ID_03_GetOpenBets.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -39774,25 +39921,25 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 5, 2019 04:07:27 PM</div>
+					<div class='panel-lead'>Jul 5, 2019 10:13:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 5, 2019 04:07:31 PM</div>
+			 		<div class='panel-lead'>Jul 5, 2019 10:13:12 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 3s+901ms</div>
+					<div class='panel-lead'>0h 0m 3s+891ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -39806,7 +39953,7 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 						</tr>
 							<tr>
 								<td>Local Host</td>
-								<td>10.160.8.106</td>
+								<td>192.168.1.100</td>
 							</tr>
 							<tr>
 								<td>Host Name</td>
@@ -39878,14 +40025,14 @@ includeSubDomains, X-Frame-Options: DENY, Content-Type: application/json;charset
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 2,
-				failChild: 1,
+				passChild: 3,
+				failChild: 3,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 3,
-				exceptionsChild: 1,
+				exceptionsChild: 3,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
