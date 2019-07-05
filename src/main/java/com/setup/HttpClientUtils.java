@@ -1,6 +1,5 @@
 package com.setup;
 
-import com.test.TC_04_AmelcoAPI.ID_02_PushMessage;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

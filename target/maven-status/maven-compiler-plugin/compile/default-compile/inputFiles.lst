@@ -2,11 +2,11 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_09_Order.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/ConsoleRunner.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/HttpClient_POST.java
-/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_ExternalLogin.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/constants/Accounts.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_03_Authenticate.java
-/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_PushMessage.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/URLConnection.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/OkHttpClientUtils.java
@@ -20,6 +20,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_01_Example_URLConnection/ID_03_SignIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/TestNGListener.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_08_Menu.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_04_PlaceBet.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_04_SignIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/BasicSetup.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/HttpClientUtils.java

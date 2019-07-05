@@ -53,7 +53,7 @@ public class OkHttpClientUtils extends BasicSetup {
         requestURLScheme = request.url().uri().getScheme();
 
         // Get request headers
-        getRequestOkClientHeaders();
+        //getRequestOkClientHeaders();
 
         // Get response headers
         getResponseOkClientHeaders();

@@ -3,6 +3,7 @@ package com.test.temp;
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
+import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -19,6 +20,8 @@ import static com.setup.HttpClientUtils.*;
 import static com.setup.OkHttpClientUtils.*;
 import static com.setup.OkHttpClientUtils.requestMethod;
 import static com.setup.OkHttpClientUtils.requestURLPath;
+import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.site;
+import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.sessionToken;
 
 public class OkHttpClient_POST extends BasicSetup {
 
@@ -40,9 +43,13 @@ public class OkHttpClient_POST extends BasicSetup {
         jsonPostData.put("key", "value");
         jsonPostData.put("key", "value");
 
-        MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-
-        RequestBody requestBody = RequestBody.create(mediaType, "grant_type=client_credentials");
+        RequestBody requestBody = new FormBody.Builder()
+                .add("sessionToken", sessionToken)
+                .add("excludeChildBets", "true")
+                .add("locale", "en-gb")
+                .add("siteId", String.valueOf(site))
+                .add("channelId", "6")
+                .build();
 
         url = new URIBuilder()
                 .setScheme("http/https")
@@ -50,7 +57,7 @@ public class OkHttpClient_POST extends BasicSetup {
                 .setPath("/v2/auth/login")
                 .build();
 
-        Request request = new Request.Builder()
+        request = new Request.Builder()
                 .url(url.toURL())
                 .post(requestBody)
                 .build();
@@ -63,18 +70,19 @@ public class OkHttpClient_POST extends BasicSetup {
                 + "<br />"
                 + "Method:   "    + requestMethod
                 + "<br />"
-                + "Protocol: "    + requestURLScheme.toUpperCase()
+                + "Scheme:   "    + requestURLScheme.toUpperCase()
                 + "<br />"
                 + "Host:     "    + requestURLHost
                 + "<br />"
                 + "Path:     "    + requestURLPath
                 + "<br />"
                 + "<br />"
-                + requestOkClientHeaders
+                + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
                 + "[ REQUEST  BODY ]"
                 + "<br />"
+                + requestBodyToString(requestBody)
                 + "<br />"
                 + "</pre>");
     }

@@ -19,15 +19,15 @@
             </methods>
         </class>
 
-        <class name="com.test.TC_04_AmelcoAPI.ID_02_PushMessage">
+        <class name="com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin">
             <methods>
-                <include name="pushMsg"/>
+                <include name="externalLogin"/>
             </methods>
         </class>
 
-        <class name="com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin">
+        <class name="com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets">
             <methods>
-                <include name="externalLogin"/>
+                <include name="getOpenBets"/>
             </methods>
         </class>
 

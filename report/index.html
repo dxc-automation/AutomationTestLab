@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-TC_001">
-              <span class="suite-name border-passed">TC_001</span>
+              <span class="suite-name border-failed">TC_001</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TC_001" class="hide-methods failed suite-TC_001"> (hide)</a> <!-- hide-methods failed suite-TC_001 -->
+                      <a href="#" panel-name="suite-TC_001" class="show-methods failed suite-TC_001"> (show)</a> <!-- show-methods failed suite-TC_001 -->
+                    </span>
+                    <div class="method-list-content failed suite-TC_001">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets" hash-for-method="getOpenBets(public void com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ...)">getOpenBets(public void com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TC_001 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +116,12 @@
                     <div class="method-list-content passed suite-TC_001">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin" hash-for-method="externalLogin(public void com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)">externalLogin(public void com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin" hash-for-method="externalLogin(public void com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)">externalLogin(public void com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.TC_04_AmelcoAPI.ID_01_LogIn" hash-for-method="loginRam(public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang...)">loginRam(public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.TC_04_AmelcoAPI.ID_02_PushMessage" hash-for-method="pushMsg(public void com.test.TC_04_AmelcoAPI.ID_02_PushMessage.pushMsg(java.lang.reflect.Method) throws java...)">pushMsg(public void com.test.TC_04_AmelcoAPI.ID_02_PushMessage.pushMsg(java.lang.reflect.Method) throws java...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TC_001 -->
@@ -127,18 +136,59 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TC_001" class="panel TC_001">
-          <div class="suite-TC_001-class-passed">
+          <div class="suite-TC_001-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="externalLogin(public void com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)">
-                  </a> <!-- externalLogin(public void com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...) -->
+                  <a name="getOpenBets(public void com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ...)">
+                  </a> <!-- getOpenBets(public void com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ...) -->
+                  <span class="method-name">getOpenBets</span>
+                  <span class="parameters">(public void com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">org.json.JSONException: JSONArray initial value should be a string or collection or array.
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:177)
+	at com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(ID_03_GetOpenBets.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TC_001-class-failed -->
+          <div class="suite-TC_001-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="externalLogin(public void com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)">
+                  </a> <!-- externalLogin(public void com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...) -->
                   <span class="method-name">externalLogin</span>
-                  <span class="parameters">(public void com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <span class="parameters">(public void com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -155,22 +205,6 @@
                   </a> <!-- loginRam(public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang...) -->
                   <span class="method-name">loginRam</span>
                   <span class="parameters">(public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TC_001-class-passed -->
-          <div class="suite-TC_001-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.TC_04_AmelcoAPI.ID_02_PushMessage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="pushMsg(public void com.test.TC_04_AmelcoAPI.ID_02_PushMessage.pushMsg(java.lang.reflect.Method) throws java...)">
-                  </a> <!-- pushMsg(public void com.test.TC_04_AmelcoAPI.ID_02_PushMessage.pushMsg(java.lang.reflect.Method) throws java...) -->
-                  <span class="method-name">pushMsg</span>
-                  <span class="parameters">(public void com.test.TC_04_AmelcoAPI.ID_02_PushMessage.pushMsg(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,16 +230,16 @@
           &lt;include name=&quot;loginRam&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.test.TC_04_AmelcoAPI.ID_01_LogIn --&gt;
-      &lt;class name=&quot;com.test.TC_04_AmelcoAPI.ID_02_PushMessage&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;pushMsg&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.test.TC_04_AmelcoAPI.ID_02_PushMessage --&gt;
-      &lt;class name=&quot;com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin&quot;&gt;
+      &lt;class name=&quot;com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;externalLogin&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin --&gt;
+      &lt;/class&gt; &lt;!-- com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin --&gt;
+      &lt;class name=&quot;com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;getOpenBets&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TC_01_Example --&gt;
 &lt;/suite&gt; &lt;!-- TC_001 --&gt;
@@ -249,15 +283,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginRam')
 data.setCell(0, 2, 'com.test.TC_04_AmelcoAPI.ID_01_LogIn')
-data.setCell(0, 3, 1910);
+data.setCell(0, 3, 1890);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'pushMsg')
-data.setCell(1, 2, 'com.test.TC_04_AmelcoAPI.ID_02_PushMessage')
-data.setCell(1, 3, 848);
+data.setCell(1, 1, 'externalLogin')
+data.setCell(1, 2, 'com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin')
+data.setCell(1, 3, 1013);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'externalLogin')
-data.setCell(2, 2, 'com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin')
-data.setCell(2, 3, 770);
+data.setCell(2, 1, 'getOpenBets')
+data.setCell(2, 2, 'com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets')
+data.setCell(2, 3, 660);
 window.suiteTableData['TC_001']= { tableData: data, tableDiv: 'times-div-TC_001'}
 return data;
 }
@@ -281,7 +315,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin</span>
+              <span class="ignored-class-name">com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -292,7 +326,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.TC_04_AmelcoAPI.ID_02_PushMessage</span>
+              <span class="ignored-class-name">com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -317,56 +351,58 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">21434 ms</span>
+                <span class="method-start">2113 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginRam(public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang...)</span>
-                <span class="method-start">21536 ms</span>
+                <span class="method-start">2240 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0...)</span>
-                <span class="method-start">23446 ms</span>
+                <span class="method-start">4130 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.TC_04_AmelcoAPI.ID_02_PushMessage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">23480 ms</span>
+                <span class="method-start">4165 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">pushMsg(public void com.test.TC_04_AmelcoAPI.ID_02_PushMessage.pushMsg(java.lang.reflect.Method) throws java...)</span>
-                <span class="method-start">23481 ms</span>
+                <span class="method-name">externalLogin(public void com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)</span>
+                <span class="method-start">4165 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">report([TestResult name=pushMsg status=SUCCESS method=ID_02_PushMessage.pushMsg(java.lang.reflect.Method)[p...)</span>
-                <span class="method-start">24329 ms</span>
+                <span class="method-name">report([TestResult name=externalLogin status=SUCCESS method=ID_02_ExternalLogin.externalLogin(java.lang.ref...)</span>
+                <span class="method-start">5179 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">24332 ms</span>
+                <span class="method-start">5181 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">externalLogin(public void com.test.TC_04_AmelcoAPI.ID_03_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)</span>
-                <span class="method-start">24333 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getOpenBets(public void com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ...)</span>
+                <span class="method-start">5181 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">report([TestResult name=externalLogin status=SUCCESS method=ID_03_ExternalLogin.externalLogin(java.lang.ref...)</span>
-                <span class="method-start">25103 ms</span>
+                <span class="method-name">report([TestResult name=getOpenBets status=FAILURE method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.M...)</span>
+                <span class="method-start">5842 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.TC_04_AmelcoAPI.ID_01_LogIn</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXml</span>
-                <span class="method-start">25114 ms</span>
+                <span class="method-start">5941 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25114 ms</span>
+                <span class="method-start">5941 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

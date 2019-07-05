@@ -6,6 +6,7 @@ import com.setup.ExtentManager;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.cookie.Cookie;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
