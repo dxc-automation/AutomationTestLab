@@ -152,8 +152,10 @@
                   <a name="getSelectionId">
                   </a> <!-- getSelectionId -->
                   <span class="method-name">getSelectionId</span>
-                  <div class="stack-trace">java.lang.ClassCastException: net.minidev.json.JSONArray cannot be cast to java.lang.String
-	at com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getSelectionId(ID_03_GetOpenBets.java:106)
+                  <div class="stack-trace">org.json.JSONException: JSONObject[&quot;selectionId&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:473)
+	at org.json.JSONObject.getLong(JSONObject.java:592)
+	at com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getSelectionId(ID_03_GetOpenBets.java:107)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -303,19 +305,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginRam')
 data.setCell(0, 2, 'com.test.TC_04_AmelcoAPI.ID_01_LogIn')
-data.setCell(0, 3, 1777);
+data.setCell(0, 3, 1850);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'externalLogin')
 data.setCell(1, 2, 'com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin')
-data.setCell(1, 3, 1098);
+data.setCell(1, 3, 999);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getOpenBets')
 data.setCell(2, 2, 'com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets')
-data.setCell(2, 3, 526);
+data.setCell(2, 3, 832);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'getSelectionId')
 data.setCell(3, 2, 'com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 39);
 window.suiteTableData['TC_001']= { tableData: data, tableDiv: 'times-div-TC_001'}
 return data;
 }
@@ -375,66 +377,66 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">1460 ms</span>
+                <span class="method-start">1406 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginRam(public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang...)</span>
-                <span class="method-start">1558 ms</span>
+                <span class="method-start">1509 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0...)</span>
-                <span class="method-start">3336 ms</span>
+                <span class="method-start">3360 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">3370 ms</span>
+                <span class="method-start">3393 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">externalLogin(public void com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) thr...)</span>
-                <span class="method-start">3370 ms</span>
+                <span class="method-start">3394 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=externalLogin status=SUCCESS method=ID_02_ExternalLogin.externalLogin(java.lang.ref...)</span>
-                <span class="method-start">4468 ms</span>
+                <span class="method-start">4393 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">4470 ms</span>
+                <span class="method-start">4395 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">getOpenBets(public void com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ...)</span>
-                <span class="method-start">4471 ms</span>
+                <span class="method-start">4396 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=getOpenBets status=SUCCESS method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.M...)</span>
-                <span class="method-start">4997 ms</span>
+                <span class="method-start">5228 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getSelectionId</span>
-                <span class="method-start">5092 ms</span>
+                <span class="method-start">5311 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=getSelectionId status=FAILURE method=ID_03_GetOpenBets.getSelectionId()[pri:0, inst...)</span>
-                <span class="method-start">5094 ms</span>
+                <span class="method-start">5350 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.TC_04_AmelcoAPI.ID_01_LogIn</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXml</span>
-                <span class="method-start">5184 ms</span>
+                <span class="method-start">5445 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5184 ms</span>
+                <span class="method-start">5446 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

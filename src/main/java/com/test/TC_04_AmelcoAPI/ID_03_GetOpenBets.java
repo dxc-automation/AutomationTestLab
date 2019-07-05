@@ -32,7 +32,7 @@ import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.*;
 
 public class ID_03_GetOpenBets extends BasicSetup {
 
-    public static String selectionId;
+    public static Long selectionId;
     private String file;
 
 
@@ -103,7 +103,8 @@ public class ID_03_GetOpenBets extends BasicSetup {
 
     @Test
     public void getSelectionId() throws Exception {
-        selectionId = JsonPath.read(new FileReader(filePath + "/" + "report/JSON/" + file), "$..selectionId");
+        System.out.println("\n RESPONSE \n" + objectResponse);
+        selectionId = (Long) objectResponse.getLong("selectionId");
         System.out.println(selectionId);
     }
 }
