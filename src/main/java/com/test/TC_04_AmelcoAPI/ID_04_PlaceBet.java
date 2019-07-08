@@ -1,6 +1,9 @@
 package com.test.TC_04_AmelcoAPI;
 
 import com.aventstack.extentreports.AnalysisStrategy;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import okhttp3.FormBody;
@@ -20,6 +23,7 @@ import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.site;
 import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.sessionToken;
+import static com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.*;
 
 public class ID_04_PlaceBet extends BasicSetup {
 
@@ -33,20 +37,19 @@ public class ID_04_PlaceBet extends BasicSetup {
     }
 
     @Test
-    public void get(Method testMethod) throws Exception {
+    public void placeBet(Method testMethod) throws Exception {
 
         String fileName = testMethod.getName() + ".json";
 
-        JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("key", "value");
-        jsonPostData.put("key", "value");
+        MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
+
+
+        String bets = "{\"PlaceBetsRequest\":{\"accountId\":" + accountId + ",\"bets\":{\"bet\":[{\"type\":\"" + type + "\",\"winType\":\"" + winType + "\",\"stake\":{\"amount\":\"" + amount + "\",\"currency\":\"" + currency + "\"},\"parts\":{\"betPart\":[{\"partNo\":" + partNo + ",\"selectionId\":" + selectionId + ",\"odds\":{\"decimal\":\"" + decimal + "\",\"fractional\":\"" + fractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
+
 
         RequestBody requestBody = new FormBody.Builder()
+                .add("bets", bets)
                 .add("sessionToken", sessionToken)
-                .add("excludeChildBets", "true")
-                .add("locale", "en-gb")
-                .add("siteId", String.valueOf(site))
-                .add("channelId", "6")
                 .build();
 
         url = new URIBuilder()

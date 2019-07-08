@@ -28,7 +28,12 @@
         <class name="com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets">
             <methods>
                 <include name="getOpenBets"/>
-                <include name="getSelectionId"/>
+            </methods>
+        </class>
+
+        <class name="com.test.TC_04_AmelcoAPI.ID_04_PlaceBet">
+            <methods>
+                <include name="placeBet"/>
             </methods>
         </class>
 

@@ -33,7 +33,15 @@ import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.*;
 public class ID_03_GetOpenBets extends BasicSetup {
 
     public static Long selectionId;
-    private String file;
+    public static Long accountId;
+    public static String type;
+    public static String winType;
+    public static Long amount;
+    public static String currency;
+    public static Long partNo;
+    public static Double decimal;
+    public static String fractional;
+
 
 
     @BeforeClass
@@ -98,14 +106,17 @@ public class ID_03_GetOpenBets extends BasicSetup {
                 + "<br />"
                 + "</pre>");
 
-        file = fileName;
-    }
+        Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
 
-    @Test
-    public void getSelectionId() throws Exception {
-        System.out.println("\n RESPONSE \n" + objectResponse);
-        selectionId = (Long) objectResponse.getLong("selectionId");
-        System.out.println(selectionId);
+        selectionId = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].selectionId");
+        accountId = JsonPath.read(object, "$.Bets.bet[0].accountId");
+        winType = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].winType");
+        type = JsonPath.read(object, "$.Bets.bet[0].type");
+        amount = JsonPath.read(object, "$.Bets.bet[0].stake.amount");
+        currency = JsonPath.read(object, "$.Bets.bet[0].stake.currency");
+        partNo = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].partNo");
+        fractional = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.fractional");
+        decimal = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.decimal");
     }
 }
 

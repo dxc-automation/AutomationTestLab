@@ -7,16 +7,16 @@
   </listeners>
   <test thread-count="5" verbose="10" name="TC_01_Example(failed)" parallel="tests">
     <classes>
-      <class name="com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets">
+      <class name="com.test.TC_04_AmelcoAPI.ID_04_PlaceBet">
         <methods>
           <include name="report"/>
-          <include name="getSelectionId"/>
+          <include name="startTest"/>
           <include name="setup"/>
           <include name="clearXml"/>
           <include name="tearDown"/>
-          <include name="startTest"/>
+          <include name="placeBet" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets -->
+      </class> <!-- com.test.TC_04_AmelcoAPI.ID_04_PlaceBet -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->
