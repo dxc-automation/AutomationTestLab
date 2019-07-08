@@ -1,1 +1,1 @@
-{"Response":{"sessionToken":"C7RYtQEarUBmDPCLsqFv0zfU","body":{"StackTrace":{"cdata":"-"},"Error":{"code":"UNEXPECTED_EXCEPTION","text":"Internal error occurred..."}},"status":"ERROR"}}
+{"PlaceBetsResponse":{"betPlacementResult":[{"enhancements":[],"betNo":0,"potentialBonusWinnings":0,"rejectionReason":"INTERNAL_SERVER_ERROR","betPartPlacementResult":[],"status":"REJECTED"}],"freebets":[]}}

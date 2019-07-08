@@ -6,10 +6,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
-import okhttp3.FormBody;
-import okhttp3.MediaType;
-import okhttp3.Request;
-import okhttp3.RequestBody;
+import okhttp3.*;
 import org.apache.http.client.utils.URIBuilder;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
@@ -41,15 +38,16 @@ public class ID_04_PlaceBet extends BasicSetup {
 
         String fileName = testMethod.getName() + ".json";
 
-        MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-
+        MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
 
         String bets = "{\"PlaceBetsRequest\":{\"accountId\":" + accountId + ",\"bets\":{\"bet\":[{\"type\":\"" + type + "\",\"winType\":\"" + winType + "\",\"stake\":{\"amount\":\"" + amount + "\",\"currency\":\"" + currency + "\"},\"parts\":{\"betPart\":[{\"partNo\":" + partNo + ",\"selectionId\":" + selectionId + ",\"odds\":{\"decimal\":\"" + decimal + "\",\"fractional\":\"" + fractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
 
-
-        RequestBody requestBody = new FormBody.Builder()
-                .add("bets", bets)
+        RequestBody requestBody =  new FormBody.Builder()
+                .add("isSpinAndBet", "false")
                 .add("sessionToken", sessionToken)
+                .add("bets", bets)
+                .add("locale", "en-gb")
+                .add("siteId", String.valueOf(site))
                 .build();
 
         url = new URIBuilder()
@@ -61,6 +59,9 @@ public class ID_04_PlaceBet extends BasicSetup {
         request = new Request.Builder()
                 .url(url.toURL())
                 .post(requestBody)
+                .addHeader("X-Requested-With", "XMLHttpRequest")
+                .addHeader("Content-Type", "application/x-www-form-urlencoded")
+                .addHeader("Origin", "https://sports.uat.pyr")
                 .build();
 
         postRequest(fileName, request);
@@ -82,6 +83,7 @@ public class ID_04_PlaceBet extends BasicSetup {
                 + "<br />"
                 + "<br />"
                 + "[ REQUEST  BODY ]"
+                + "<br />"
                 + "<br />"
                 + requestBodyToString(requestBody)
                 + "<br />"

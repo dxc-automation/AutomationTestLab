@@ -1859,7 +1859,7 @@
                 }
             },
             "upsells": [],
-            "revision": 116
+            "revision": 158
         },
         {
             "name": "gbk-april2019-table-kids",
@@ -2929,7 +2929,7 @@
                 "regular": {}
             },
             "upsells": [],
-            "revision": 117
+            "revision": 160
         },
         {
             "name": "gbk-april2019-table-lunch",
@@ -5573,7 +5573,7 @@
                 }
             },
             "upsells": [],
-            "revision": 115
+            "revision": 158
         },
         {
             "name": "gbk-april2019-table-main",
@@ -8736,7 +8736,7 @@
                                         }
                                     ],
                                     "uuid": "e5762c3a-87bb-5bdd-83ea-26f7845465dd",
-                                    "stockLevel": 1
+                                    "stockLevel": 0
                                 },
                                 "name": "Major Tom",
                                 "description": "30 day dry-aged steak patty, blue cheese slaw, crispy bacon, smoked Applewood cheese, beef ketchup, dill pickle \n",
@@ -18376,7 +18376,7 @@
                                     "addPrice": 6.25,
                                     "id": 60575037,
                                     "uuid": "0bc9cda8-a5e6-5352-bf9a-cecc6b69b28e",
-                                    "stockLevel": 1
+                                    "stockLevel": 0
                                 },
                                 "name": "Brewdog Punk IPA 500ml",
                                 "description": "Classic pale, hoppy IPA (5.6%)",
@@ -18473,7 +18473,7 @@
                                         "addPrice": 5.95,
                                         "id": 60575049,
                                         "uuid": "4018ef9e-194b-53d2-9ff8-4ee6f6d9ef1b",
-                                        "stockLevel": 1
+                                        "stockLevel": 0
                                     },
                                     "name": "Pint Brooklyn",
                                     "id": 3320913,
@@ -18486,7 +18486,7 @@
                                         "addPrice": 4.25,
                                         "id": 60575052,
                                         "uuid": "05e23c05-c3b5-5614-b629-cf6d769da590",
-                                        "stockLevel": 1
+                                        "stockLevel": 0
                                     },
                                     "name": "2/3 Brooklyn",
                                     "id": 3320914,
@@ -19085,7 +19085,7 @@
                 "regular": {}
             },
             "upsells": [],
-            "revision": 115
+            "revision": 157
         }
     ]
 }

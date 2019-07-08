@@ -3,9 +3,9 @@
     "displayString": null,
     "requestInfo": {
         "apiVersion": 0,
-        "requestId": "52f81179-be08-421a-b53b-d2f9179b662d",
+        "requestId": "dd1b2fab-9e1e-41c0-b702-821f542b9b54",
         "accessTokenStatus": "authenticated",
-        "serverTime": 1561470246
+        "serverTime": 1562596324
     },
     "error": true,
     "message": "The tender type configuration is missing, please contact our team",
