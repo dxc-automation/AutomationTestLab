@@ -60,8 +60,9 @@ public class ID_04_PlaceBet extends BasicSetup {
                 .url(url.toURL())
                 .post(requestBody)
                 .addHeader("X-Requested-With", "XMLHttpRequest")
-                .addHeader("Content-Type", "application/x-www-form-urlencoded")
+                .addHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
                 .addHeader("Origin", "https://sports.uat.pyr")
+                .addHeader("Accept", "application/json, text/javascript, */*; q=0.01")
                 .build();
 
         postRequest(fileName, request);

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="9" total="13" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="TC_001" duration-ms="4685" started-at="2019-07-08T15:11:05Z" finished-at="2019-07-08T15:11:09Z">
+  <suite name="TC_001" duration-ms="4062" started-at="2019-07-08T17:34:38Z" finished-at="2019-07-08T17:34:42Z">
     <groups>
     </groups>
-    <test name="TC_01_Example" duration-ms="4685" started-at="2019-07-08T15:11:05Z" finished-at="2019-07-08T15:11:09Z">
+    <test name="TC_01_Example" duration-ms="4062" started-at="2019-07-08T17:34:38Z" finished-at="2019-07-08T17:34:42Z">
       <class name="com.test.TC_04_AmelcoAPI.ID_04_PlaceBet">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@43301423]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-08T15:11:09Z" finished-at="2019-07-08T15:11:09Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@43301423]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-08T17:34:42Z" finished-at="2019-07-08T17:34:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@43301423]" name="placeBet" duration-ms="123" started-at="2019-07-08T15:11:09Z" finished-at="2019-07-08T15:11:09Z">
+        <test-method status="PASS" signature="placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@43301423]" name="placeBet" duration-ms="94" started-at="2019-07-08T17:34:42Z" finished-at="2019-07-08T17:34:42Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeBet -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@43301423]" name="report" is-config="true" duration-ms="1" started-at="2019-07-08T15:11:09Z" finished-at="2019-07-08T15:11:09Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@43301423]" name="report" is-config="true" duration-ms="2" started-at="2019-07-08T17:34:42Z" finished-at="2019-07-08T17:34:42Z">
           <params>
             <param index="0">
               <value>
@@ -35,11 +35,11 @@
         </test-method> <!-- report -->
       </class> <!-- com.test.TC_04_AmelcoAPI.ID_04_PlaceBet -->
       <class name="com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@6dbb137d]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-08T15:11:07Z" finished-at="2019-07-08T15:11:07Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@6dbb137d]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-08T17:34:40Z" finished-at="2019-07-08T17:34:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@6dbb137d]" name="externalLogin" duration-ms="1194" started-at="2019-07-08T15:11:07Z" finished-at="2019-07-08T15:11:08Z">
+        <test-method status="PASS" signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@6dbb137d]" name="externalLogin" duration-ms="964" started-at="2019-07-08T17:34:40Z" finished-at="2019-07-08T17:34:41Z">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- externalLogin -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@6dbb137d]" name="report" is-config="true" duration-ms="2" started-at="2019-07-08T15:11:08Z" finished-at="2019-07-08T15:11:08Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@6dbb137d]" name="report" is-config="true" duration-ms="2" started-at="2019-07-08T17:34:41Z" finished-at="2019-07-08T17:34:41Z">
           <params>
             <param index="0">
               <value>
@@ -63,11 +63,11 @@
         </test-method> <!-- report -->
       </class> <!-- com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin -->
       <class name="com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@3c9d0b9d]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-08T15:11:08Z" finished-at="2019-07-08T15:11:08Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@3c9d0b9d]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-08T17:34:41Z" finished-at="2019-07-08T17:34:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@3c9d0b9d]" name="getOpenBets" duration-ms="932" started-at="2019-07-08T15:11:08Z" finished-at="2019-07-08T15:11:09Z">
+        <test-method status="PASS" signature="getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@3c9d0b9d]" name="getOpenBets" duration-ms="1005" started-at="2019-07-08T17:34:41Z" finished-at="2019-07-08T17:34:42Z">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOpenBets -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@3c9d0b9d]" name="report" is-config="true" duration-ms="70" started-at="2019-07-08T15:11:09Z" finished-at="2019-07-08T15:11:09Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@3c9d0b9d]" name="report" is-config="true" duration-ms="61" started-at="2019-07-08T17:34:42Z" finished-at="2019-07-08T17:34:42Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
         </test-method> <!-- report -->
       </class> <!-- com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets -->
       <class name="com.test.TC_04_AmelcoAPI.ID_01_LogIn">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="setup" is-config="true" duration-ms="1442" started-at="2019-07-08T15:11:03Z" finished-at="2019-07-08T15:11:05Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="setup" is-config="true" duration-ms="1413" started-at="2019-07-08T17:34:37Z" finished-at="2019-07-08T17:34:38Z">
           <params>
             <param index="0">
               <value>
@@ -102,11 +102,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="startTest" is-config="true" duration-ms="111" started-at="2019-07-08T15:11:05Z" finished-at="2019-07-08T15:11:05Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="startTest" is-config="true" duration-ms="110" started-at="2019-07-08T17:34:38Z" finished-at="2019-07-08T17:34:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="loginRam" duration-ms="2199" started-at="2019-07-08T15:11:05Z" finished-at="2019-07-08T15:11:07Z">
+        <test-method status="PASS" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="loginRam" duration-ms="1777" started-at="2019-07-08T17:34:38Z" finished-at="2019-07-08T17:34:40Z">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginRam -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="report" is-config="true" duration-ms="40" started-at="2019-07-08T15:11:07Z" finished-at="2019-07-08T15:11:07Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="report" is-config="true" duration-ms="32" started-at="2019-07-08T17:34:40Z" finished-at="2019-07-08T17:34:40Z">
           <params>
             <param index="0">
               <value>
@@ -128,11 +128,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="tearDown" is-config="true" duration-ms="384" started-at="2019-07-08T15:11:09Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-07-08T15:11:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="tearDown" is-config="true" duration-ms="371" started-at="2019-07-08T17:34:42Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-07-08T17:34:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="clearXml" is-config="true" duration-ms="0" started-at="2019-07-08T15:11:09Z" finished-at="2019-07-08T15:11:09Z">
+        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@318ba8c8]" name="clearXml" is-config="true" duration-ms="0" started-at="2019-07-08T17:34:42Z" finished-at="2019-07-08T17:34:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXml -->
