@@ -81,11 +81,20 @@ public class OkHttpClientUtils extends BasicSetup {
         return okHttpClient;
     }
 
+
+
     public static String requestBodyToString(RequestBody requestBody) throws IOException, IOException {
         Buffer buffer = new Buffer();
         requestBody.writeTo(buffer);
-        return buffer.readUtf8();
+        String object = buffer.readUtf8();
+
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String jsonRequest = String.valueOf(gson.toJsonTree(object));
+
+        return jsonRequest;
     }
+
+
 
     public static int getOkHttpResponseCode(Response okServerResponse) throws Exception {
         try {
@@ -97,14 +106,18 @@ public class OkHttpClientUtils extends BasicSetup {
     }
 
 
+
+
     public static String getResponseOkClientHeaders() throws Exception {
         try {
             responseOkClientHeaders = okServerResponse.headers().toString();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return responseOkClientHeaders.replace("Domain=.uat.pyr;", "");
+        return responseOkClientHeaders;
     }
+
+
 
     public static String getRequestOkClientHeaders() throws Exception {
         try {

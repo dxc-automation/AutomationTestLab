@@ -149,12 +149,12 @@ public class BasicSetup {
                             // Get the response headers
                             if (httpResponseHeaders != null) {
                                 try {
-                                    headers = httpResponseHeaders.toString().replace("; ", ";\n").replaceAll("Path=/;", "").replaceAll("Secure,", "");
+                                    headers = httpResponseHeaders.toString().replaceAll("; ", ";\n").replaceAll("Path=/;", "").replaceAll("Secure,", "");
                                     } catch (Exception e) {
                                     e.printStackTrace();
                                     }
                                 } else {
-                                headers = responseOkClientHeaders;
+                                headers = responseOkClientHeaders.replaceAll("Domain=.uat.pyr;", "");
                             }
 
 

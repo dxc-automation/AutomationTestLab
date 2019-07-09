@@ -23,7 +23,7 @@ import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.objectResponse;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
-import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.site;
+import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.*;
 import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.sessionToken;
 import static com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.*;
 
@@ -50,14 +50,11 @@ public class ID_04_PlaceBet extends BasicSetup {
         String jsonBets = gson.toJson(bets);
         System.out.println("\n jsonBets \n" + jsonBets);
 
-        JsonParser jsonParser = new JsonParser();
-        JsonObject objectFromString = jsonParser.parse(bets).getAsJsonObject();
-        System.out.println("\n objectFromString \n" + objectFromString);
 
         RequestBody requestBody =  new FormBody.Builder()
                 .add("isSpinAndBet", "false")
                 .add("sessionToken", sessionToken)
-                .add("bets", String.valueOf(objectFromString))
+                .add("bets", bets)
                 .add("locale", "en-gb")
                 .add("siteId", String.valueOf(site))
                 .build();
@@ -76,6 +73,10 @@ public class ID_04_PlaceBet extends BasicSetup {
                 .addHeader("Origin", "https://sports.uat.pyr")
                 .addHeader("Accept", "application/json, text/javascript, */*; q=0.01")
                 .addHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36")
+                .addHeader("Set-Cookie: SBSG=", signature)
+                .addHeader("Set-Cookie: WBID=", webId)
+                .addHeader("Set-Cookie: SBTK=", externalToken)
+                .addHeader("Set-Cookie: SITE=", String.valueOf(site))
                 .build();
 
         postRequest(fileName, request);
