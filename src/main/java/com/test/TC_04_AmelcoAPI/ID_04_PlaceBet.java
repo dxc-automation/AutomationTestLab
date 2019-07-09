@@ -2,6 +2,8 @@ package com.test.TC_04_AmelcoAPI;
 
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.setup.BasicSetup;
@@ -12,10 +14,13 @@ import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.lang.reflect.Method;
 
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
+import static com.setup.HttpClientUtils.objectResponse;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.site;
@@ -41,11 +46,18 @@ public class ID_04_PlaceBet extends BasicSetup {
         MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
 
         String bets = "{\"PlaceBetsRequest\":{\"accountId\":" + accountId + ",\"bets\":{\"bet\":[{\"type\":\"" + type + "\",\"winType\":\"" + winType + "\",\"stake\":{\"amount\":\"" + amount + "\",\"currency\":\"" + currency + "\"},\"parts\":{\"betPart\":[{\"partNo\":" + partNo + ",\"selectionId\":" + selectionId + ",\"odds\":{\"decimal\":\"" + decimal + "\",\"fractional\":\"" + fractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String jsonBets = gson.toJson(bets);
+        System.out.println("\n jsonBets \n" + jsonBets);
+
+        JsonParser jsonParser = new JsonParser();
+        JsonObject objectFromString = jsonParser.parse(bets).getAsJsonObject();
+        System.out.println("\n objectFromString \n" + objectFromString);
 
         RequestBody requestBody =  new FormBody.Builder()
                 .add("isSpinAndBet", "false")
                 .add("sessionToken", sessionToken)
-                .add("bets", bets)
+                .add("bets", String.valueOf(objectFromString))
                 .add("locale", "en-gb")
                 .add("siteId", String.valueOf(site))
                 .build();
@@ -63,6 +75,7 @@ public class ID_04_PlaceBet extends BasicSetup {
                 .addHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
                 .addHeader("Origin", "https://sports.uat.pyr")
                 .addHeader("Accept", "application/json, text/javascript, */*; q=0.01")
+                .addHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36")
                 .build();
 
         postRequest(fileName, request);

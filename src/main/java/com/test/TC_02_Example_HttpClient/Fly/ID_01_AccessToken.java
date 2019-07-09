@@ -45,7 +45,7 @@ public class ID_01_AccessToken extends BasicSetup {
                 .setPath("/v1/apps/bootstrap")
                 .build();
 
-        /*** Create JSON object. ***/
+        /*** Create JSON object for request body. ***/
         JSONObject jsonPostData = new JSONObject();
         jsonPostData.put("deviceToken", "07304e56c452be73ad2b51a4647d0300");
         jsonPostData.put("platform", "Android");
@@ -58,7 +58,7 @@ public class ID_01_AccessToken extends BasicSetup {
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        /*** Send request. ***/
+        /*** Send request by using method 'httpPost' from HttpClientUtils.class ***/
         httpPost(fileName, url, jsonPostData);
 
         /*** Add request properties to the report. ***/

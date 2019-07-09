@@ -29,6 +29,8 @@ public class ID_03_Authenticate extends BasicSetup {
 
     @Test
     public void authentication(Method testMethod) throws Exception {
+
+        /*** Set URL address components. ***/
         url = new URIBuilder()
                 .setScheme("https")
                 .setHost("api.flypaythis.com")
@@ -36,6 +38,7 @@ public class ID_03_Authenticate extends BasicSetup {
                 .addParameter("accessToken", accessToken)
                 .build();
 
+        /*** Create JSON object for request body. ***/
         JSONObject jsonPostData = new JSONObject();
         jsonPostData.put("email", "user@email.com");
         jsonPostData.put("challenge", 1234);
@@ -47,8 +50,12 @@ public class ID_03_Authenticate extends BasicSetup {
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
+
+        /*** Send request by using method 'httpPost' from HttpClientUtils.class ***/
         httpPost(fileName, url, jsonPostData);
 
+
+        /*** Add request properties to the report. ***/
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"
                 + "<br />"

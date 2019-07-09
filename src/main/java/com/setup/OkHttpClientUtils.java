@@ -2,6 +2,8 @@ package com.setup;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -101,7 +103,7 @@ public class OkHttpClientUtils extends BasicSetup {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return responseOkClientHeaders;
+        return responseOkClientHeaders.replace("Domain=.uat.pyr;", "");
     }
 
     public static String getRequestOkClientHeaders() throws Exception {

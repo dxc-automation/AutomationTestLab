@@ -36,7 +36,7 @@ public class ID_03_GetOpenBets extends BasicSetup {
     public static Long accountId;
     public static String type;
     public static String winType;
-    public static Long amount;
+    public static Double amount;
     public static String currency;
     public static Long partNo;
     public static Double decimal;
@@ -108,15 +108,16 @@ public class ID_03_GetOpenBets extends BasicSetup {
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
 
-        selectionId = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].selectionId");
-        accountId = JsonPath.read(object, "$.Bets.bet[0].accountId");
-        winType = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].winType");
-        type = JsonPath.read(object, "$.Bets.bet[0].type");
-        amount = JsonPath.read(object, "$.Bets.bet[0].stake.amount");
-        currency = JsonPath.read(object, "$.Bets.bet[0].stake.currency");
-        partNo = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].partNo");
-        fractional = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.fractional");
-        decimal = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.decimal");
+        selectionId = JsonPath.read(object, "$.Bets.bet[2].parts.betPart[0].selectionId");
+        accountId = JsonPath.read(object, "$.Bets.bet[2].accountId");
+        winType = JsonPath.read(object, "$.Bets.bet[2].parts.betPart[0].winType");
+        type = JsonPath.read(object, "$.Bets.bet[2].type");
+        Long amountL = JsonPath.read(object, "$.Bets.bet[2].stake.amount");
+        amount = amountL.doubleValue();
+        currency = JsonPath.read(object, "$.Bets.bet[2].stake.currency");
+        partNo = JsonPath.read(object, "$.Bets.bet[2].parts.betPart[0].partNo");
+        fractional = JsonPath.read(object, "$.Bets.bet[2].parts.betPart[0].odds.fractional");
+        decimal = JsonPath.read(object, "$.Bets.bet[2].parts.betPart[0].odds.decimal");
     }
 }
 

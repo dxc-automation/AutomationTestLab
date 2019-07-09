@@ -24,6 +24,7 @@ public class ID_02_RegisterUser extends BasicSetup {
 
     protected static Logger LOG = LoggerFactory.getLogger(ID_02_RegisterUser.class);
 
+    /*** Set test name, test description, author and category. ***/
     @BeforeClass()
     public void startTest() throws UnknownHostException {
         extent = ExtentManager.GetExtent();
@@ -36,6 +37,7 @@ public class ID_02_RegisterUser extends BasicSetup {
     @Test
     public void registerUser(Method testMethod) throws Exception {
 
+        /*** Set URL address components. ***/
         url = new URIBuilder()
                 .setScheme("https")
                 .setHost("api.flypaythis.com")
@@ -43,6 +45,7 @@ public class ID_02_RegisterUser extends BasicSetup {
                 .addParameter("accessToken", accessToken)
                 .build();
 
+        /*** Create JSON object for request body. ***/
         JSONObject jsonPostData = new JSONObject();
         jsonPostData.put("email", "user@email.com");
         jsonPostData.put("pinCode", 1234);
@@ -54,8 +57,12 @@ public class ID_02_RegisterUser extends BasicSetup {
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
+
+        /*** Send request by using method 'httpPost' from HttpClientUtils.class ***/
         httpPost(fileName, url, jsonPostData);
 
+
+        /*** Add request properties to the report. ***/
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"
                 + "<br />"
@@ -80,8 +87,6 @@ public class ID_02_RegisterUser extends BasicSetup {
                 + "<br />"
                 + "<br />"
                 + "</pre>");
-
-        httpPost(fileName, url, jsonPostData);
 
         Assert.assertEquals(responseMsg, "OK");
     }

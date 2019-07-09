@@ -31,7 +31,7 @@ public class ID_04_SignIn extends BasicSetup {
     @Test
     public void signIn(Method testMethod) throws Exception {
 
-        // Create url address
+        /*** Set URL address components. ***/
         url = new URIBuilder()
                 .setScheme("https")
                 .setHost("api.flypaythis.com")
@@ -39,11 +39,9 @@ public class ID_04_SignIn extends BasicSetup {
                 .addParameter("accessToken", accessToken)
                 .build();
 
-        JSONObject jsonGetData = new JSONObject();
-
-        String requestData = jsonGetData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
+        /*** Send request by using method 'httpGet' from HttpClientUtils.class ***/
         httpGet(fileName, url);
 
         // Add request data to the report
@@ -66,8 +64,6 @@ public class ID_04_SignIn extends BasicSetup {
                 + "<br />"
                 + "[ REQUEST  BODY ]"
                 + "<br />"
-                + "<br />"
-                + requestData.replace("    ", "&nbsp;&nbsp;")
                 + "<br />"
                 + "<br />"
                 + "</pre>");
