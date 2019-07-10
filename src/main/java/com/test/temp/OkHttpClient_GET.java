@@ -3,11 +3,8 @@ package com.test.temp;
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
-import okhttp3.MediaType;
 import okhttp3.Request;
-import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
-import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -51,7 +48,7 @@ public class OkHttpClient_GET extends BasicSetup {
                 .get()
                 .build();
 
-        postRequest(fileName, request);
+        okClientRequest(fileName, request);
 
 
         // Add request data to the report

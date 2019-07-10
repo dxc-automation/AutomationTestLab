@@ -19,7 +19,6 @@ import static com.setup.OkHttpClientUtils.*;
 import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.*;
 import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.sessionToken;
 import static com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.*;
-import static com.constants.Accounts.*;
 
 
 public class ID_04_PlaceBet extends BasicSetup {
@@ -67,14 +66,13 @@ public class ID_04_PlaceBet extends BasicSetup {
                 .addHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
                 .addHeader("Origin", "https://sports.uat.pyr")
                 .addHeader("Accept", "application/json, text/javascript, */*; q=0.01")
-                .addHeader("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36")
-                .addHeader("Set-Cookie: SBSG=", signature)
-                .addHeader("Set-Cookie: WBID=", webId)
-                .addHeader("Set-Cookie: SBTK=", externalToken)
-                .addHeader("Set-Cookie: SITE=", String.valueOf(site))
+                .addHeader("Cookie", "SBSG=" + signature)
+                .addHeader("Cookie", "WBID=" + webId)
+                .addHeader("Cookie", "SBTK=" + externalToken)
+                .addHeader("Cookie", "SITE=" + site)
                 .build();
 
-        postRequest(fileName, request);
+        okClientRequest(fileName, request);
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

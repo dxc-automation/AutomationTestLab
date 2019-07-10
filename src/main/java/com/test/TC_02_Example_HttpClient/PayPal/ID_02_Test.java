@@ -52,7 +52,7 @@ public class ID_02_Test extends BasicSetup {
                 .build();
 
 
-        postRequest(fileName, request);
+        okClientRequest(fileName, request);
 
 
         test.info("<pre>"

@@ -4,7 +4,6 @@ import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import okhttp3.FormBody;
-import okhttp3.MediaType;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
@@ -62,7 +61,7 @@ public class OkHttpClient_POST extends BasicSetup {
                 .post(requestBody)
                 .build();
 
-        postRequest(fileName, request);
+        okClientRequest(fileName, request);
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"
@@ -74,7 +73,7 @@ public class OkHttpClient_POST extends BasicSetup {
                 + "<br />"
                 + "Host:     "    + requestURLHost
                 + "<br />"
-                + "Path:     "    + requestURLPath
+                + "Path:     "    + requestURLPath + "/" + query
                 + "<br />"
                 + "<br />"
                 + getRequestOkClientHeaders()

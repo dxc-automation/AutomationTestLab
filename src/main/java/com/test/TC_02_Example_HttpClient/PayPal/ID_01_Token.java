@@ -61,7 +61,7 @@ public class ID_01_Token extends BasicSetup {
                 .addHeader("Connection", "keep-alive")
                 .build();
 
-        postRequest(fileName, request);
+        okClientRequest(fileName, request);
 
 
         test.info("<pre>"

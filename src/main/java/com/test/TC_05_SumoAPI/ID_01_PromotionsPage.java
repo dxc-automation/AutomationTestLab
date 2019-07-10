@@ -16,7 +16,6 @@ import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.responseMsg;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
-import static com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.accessToken;
 
 public class ID_01_PromotionsPage extends BasicSetup {
 
@@ -44,12 +43,12 @@ public class ID_01_PromotionsPage extends BasicSetup {
 
         request = new Request.Builder()
                 .url(url.toURL())
-                .addHeader("Content-Type", "application/x-www-form-urlencoded; charset=ISO-8859-1")
                 .addHeader("Accept", "*/*")
+
                 .get()
                 .build();
 
-        postRequest(fileName, request);
+        okClientRequest(fileName, request);
 
 
         // Add request data to the report
@@ -63,7 +62,7 @@ public class ID_01_PromotionsPage extends BasicSetup {
                 + "<br />"
                 + "Host:     "    + requestURLHost
                 + "<br />"
-                + "Path:     "    + requestURLPath
+                + "Path:     "    + requestURLPath + "/" + query
                 + "<br />"
                 + "<br />"
                 + getRequestOkClientHeaders()

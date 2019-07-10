@@ -29,6 +29,7 @@ public class OkHttpClientUtils extends BasicSetup {
     public static String requestURLPath;
     public static String requestURLScheme;
     public static String requestMethod;
+    public static String query;
     public static Request request;
 
     public static OkHttpClient okHttpClient = new OkHttpClient();
@@ -37,11 +38,12 @@ public class OkHttpClientUtils extends BasicSetup {
 
 
 
-    public static OkHttpClient postRequest(String fileName, Request request) throws Exception {
+    public static OkHttpClient okClientRequest(String fileName, Request request) throws Exception {
         file = new File(filePath + "/" + "report/JSON/" + fileName);
 
         okServerResponse = okHttpClient.newCall(request).execute();
 
+        query = request.url().query();
         requestMethod = request.method();
         requestURLPath = request.url().uri().getPath();
         requestURLHost = request.url().uri().getHost();

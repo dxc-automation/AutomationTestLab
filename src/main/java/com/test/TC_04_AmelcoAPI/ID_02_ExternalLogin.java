@@ -65,7 +65,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 .build();
 
 
-        postRequest(fileName, request);
+        okClientRequest(fileName, request);
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

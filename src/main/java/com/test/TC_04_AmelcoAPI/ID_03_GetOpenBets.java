@@ -30,7 +30,7 @@ public class ID_03_GetOpenBets extends BasicSetup {
     public static Long amount;
     public static String currency;
     public static Long partNo;
-    public static Long decimal;
+    public static Double decimal;
     public static String fractional;
 
 
@@ -71,7 +71,7 @@ public class ID_03_GetOpenBets extends BasicSetup {
                 .addHeader("Origin", "https://sports.uat.pyr")
                 .build();
 
-        postRequest(fileName, request);
+        okClientRequest(fileName, request);
 
 
         test.info("<pre>"
