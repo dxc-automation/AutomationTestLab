@@ -16,6 +16,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_05_AddUserInfo.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_01_Example_URLConnection/ID_01_AccessToken.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_05_SumoAPI/ID_01_PromotionsPage.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_03_Example_UI/ID_01_OpenCart.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_01_Example_URLConnection/ID_03_SignIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/TestNGListener.java

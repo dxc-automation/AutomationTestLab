@@ -1,31 +1,26 @@
 package com.test.TC_04_AmelcoAPI;
 
 import com.aventstack.extentreports.AnalysisStrategy;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import okhttp3.*;
 import org.apache.http.client.utils.URIBuilder;
-import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.lang.reflect.Method;
 
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
-import static com.setup.HttpClientUtils.objectResponse;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.*;
 import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.sessionToken;
 import static com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.*;
+import static com.constants.Accounts.*;
+
 
 public class ID_04_PlaceBet extends BasicSetup {
 

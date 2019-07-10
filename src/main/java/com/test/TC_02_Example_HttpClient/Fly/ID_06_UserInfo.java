@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
-import java.net.URI;
 
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
@@ -77,7 +76,7 @@ public class ID_06_UserInfo extends BasicSetup {
                 + "<br />"
                 + "</pre>");
 
-            String response = objectResponse.toString();
+            String response = jsonObjectResponse.toString();
             String name = JsonPath.read(response, "$.user.profile.name");
             Assert.assertEquals(name, "Automation");
     }

@@ -77,7 +77,7 @@ public class ID_01_AccessToken extends BasicSetup {
         //File filePath = new File(System.getProperty("user.dir")).getParentFile();
         //File file = new File(filePath + "/" + "report/JSON/" + fileName);
         //FileWriter fw = new FileWriter(file);
-        //fw.write(objectResponse.toString(4));
+        //fw.write(jsonObjectResponse.toString(4));
         //fw.flush();
         //fw.close();
 

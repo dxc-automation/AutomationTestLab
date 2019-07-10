@@ -37,6 +37,12 @@
             </methods>
         </class>
 
+        <class name="com.test.TC_05_SumoAPI.ID_01_PromotionsPage">
+            <methods>
+                <include name="getPromotionConfigurations"/>
+            </methods>
+        </class>
+
     </classes>
 </test>
 </suite>

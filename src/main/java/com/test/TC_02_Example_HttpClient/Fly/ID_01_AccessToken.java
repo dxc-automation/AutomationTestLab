@@ -10,14 +10,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
-import java.net.URI;
 
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
 import static com.setup.HttpClientUtils.requestMethod;
-import static com.setup.OkHttpClientUtils.*;
-import static com.setup.OkHttpClientUtils.requestURLPath;
 
 public class ID_01_AccessToken extends BasicSetup {
 
@@ -89,8 +86,8 @@ public class ID_01_AccessToken extends BasicSetup {
 
 
         /*** Get keys from the response. ***/
-        accessToken = objectResponse.getString("accessToken");
-        businessId = objectResponse.getJSONArray("businessIds").getInt(2);
+        accessToken = jsonObjectResponse.getString("accessToken");
+        businessId = jsonObjectResponse.getJSONArray("businessIds").getInt(2);
 
 
         /*** Add key values that we take from the response. ***/

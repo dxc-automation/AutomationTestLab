@@ -2,20 +2,20 @@ package com.setup;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 import okio.Buffer;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import static com.setup.HttpClientUtils.objectResponse;
+import static com.setup.HttpClientUtils.jsonObjectResponse;
+import static com.setup.HttpClientUtils.jsonArrayResponse;
 import static com.setup.HttpClientUtils.responseMsg;
 
 
@@ -23,9 +23,8 @@ public class OkHttpClientUtils extends BasicSetup {
 
     public static String responseOkClientHeaders;
     public static String requestOkClientHeaders;
-    public static int okHttpResponseCode;
+    public static int    okHttpResponseCode;
     public static String responseProtocol;
-    public static String requestURL;
     public static String requestURLHost;
     public static String requestURLPath;
     public static String requestURLScheme;
@@ -34,18 +33,12 @@ public class OkHttpClientUtils extends BasicSetup {
 
     public static OkHttpClient okHttpClient = new OkHttpClient();
     public static Response okServerResponse;
+    public static File file;
 
-    public static File createJsonFile(Response okServerResponse, String fileName) throws Exception {
-        File file = new File(filePath + "/" + "report/JSON/" + fileName);
-        FileWriter fw = new FileWriter(file);
-        fw.write(objectResponse.toString());
-        fw.flush();
-        fw.close();
 
-        return file;
-    }
 
     public static OkHttpClient postRequest(String fileName, Request request) throws Exception {
+        file = new File(filePath + "/" + "report/JSON/" + fileName);
 
         okServerResponse = okHttpClient.newCall(request).execute();
 
@@ -64,21 +57,52 @@ public class OkHttpClientUtils extends BasicSetup {
         getOkHttpResponseCode(okServerResponse);
 
         // Parse the response to json
+        String responseBody = okServerResponse.body().string();
+
+
         try {
-            String responseBody = okServerResponse.body().string();
-            objectResponse = new JSONObject(responseBody);
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            response = gson.toJson(responseBody);
+            jsonObjectResponse = new JSONObject(responseBody);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("*** No JSON Object found in response ***");
         }
+
+        try {
+            jsonArrayResponse = new JSONArray(responseBody);
+        } catch (Exception e) {
+            System.out.println("*** No JSON Array found in response ***");
+        }
+
+
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        response = gson.toJson(responseBody);
 
         responseProtocol = okServerResponse.protocol().toString().toUpperCase();
         responseMsg = okServerResponse.message();
 
-        createJsonFile(okServerResponse, fileName);
+        createJsonFile(fileName);
 
         return okHttpClient;
+    }
+
+
+    public static File createJsonFile(String fileName ) throws Exception {
+        file = new File(filePath + "/" + "report/JSON/" + fileName);
+
+        if (jsonObjectResponse != null) {
+            FileWriter fw = new FileWriter(file);
+            fw.write(jsonObjectResponse.toString());
+            fw.flush();
+            fw.close();
+
+
+        } else if (jsonArrayResponse != null) {
+            FileWriter fw = new FileWriter(file);
+            fw.write(jsonArrayResponse.toString());
+            fw.flush();
+            fw.close();
+
+        }
+        return file;
     }
 
 

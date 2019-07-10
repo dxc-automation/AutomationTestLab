@@ -46,7 +46,7 @@ public class OkHttpClient_GET extends BasicSetup {
                 .addParameter("accessToken", accessToken)
                 .build();
 
-        Request request = new Request.Builder()
+        request = new Request.Builder()
                 .url(url.toURL())
                 .get()
                 .build();
@@ -68,7 +68,7 @@ public class OkHttpClient_GET extends BasicSetup {
                 + "Path:     "    + requestURLPath
                 + "<br />"
                 + "<br />"
-                + requestOkClientHeaders
+                + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
                 + "[ REQUEST  BODY ]"

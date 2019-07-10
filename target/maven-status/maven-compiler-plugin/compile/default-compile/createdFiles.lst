@@ -1,6 +1,7 @@
 com/setup/URLConnection.class
 com/setup/HttpClientUtils.class
 com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.class
+com/test/TC_05_SumoAPI/ID_01_PromotionsPage.class
 com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.class
 com/test/TC_03_Example_UI/ID_02_AddToCart.class
 com/test/temp/HttpClient_POST.class

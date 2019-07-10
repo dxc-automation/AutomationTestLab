@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
-import static com.setup.HttpClientUtils.objectResponse;
+import static com.setup.HttpClientUtils.jsonObjectResponse;
 import static com.setup.OkHttpClientUtils.*;
 
 public class ID_02_Test extends BasicSetup {
@@ -76,7 +76,7 @@ public class ID_02_Test extends BasicSetup {
                 + "</pre>");
 
 
-        paypalAccessToken = objectResponse.getString("access_token");
+        paypalAccessToken = jsonObjectResponse.getString("access_token");
         System.out.println("\n ===TOKEN=== \n" + paypalAccessToken);
 
 

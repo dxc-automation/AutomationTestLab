@@ -12,6 +12,7 @@ import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -33,7 +34,8 @@ public class HttpClientUtils {
     public static String requestPath;
     public static String requestScheme;
     public static int httpResponseCode;
-    public static JSONObject objectResponse;
+    public static JSONObject jsonObjectResponse;
+    public static JSONArray  jsonArrayResponse;
     public static HttpResponse serverResponse;
     public static String requestMethod;
     public static String requestURL;
@@ -88,12 +90,12 @@ public class HttpClientUtils {
         String responseEntity = EntityUtils.toString(serverResponseEntity, "UTF-8");
 
         requestLine = post.getRequestLine().toString();
-        objectResponse = new JSONObject(responseEntity);
+        jsonObjectResponse = new JSONObject(responseEntity);
 
         getAllResponseHeaders();
         getHttpResponseCode();
 
-        HttpClientUtils.createJsonFile(fileName, objectResponse);
+        HttpClientUtils.createJsonFile(fileName, jsonObjectResponse);
 
         return post;
     }
@@ -121,12 +123,16 @@ public class HttpClientUtils {
 
         requestLine = get.getRequestLine().toString();
 
-        objectResponse = new JSONObject(responseEntity);
+        try {
+            jsonObjectResponse = new JSONObject(responseEntity);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         getAllResponseHeaders();
         getHttpResponseCode();
 
-        HttpClientUtils.createJsonFile(fileName, objectResponse);
+        HttpClientUtils.createJsonFile(fileName, jsonObjectResponse);
 
         return get;
     }

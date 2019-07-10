@@ -86,7 +86,7 @@ public class ID_01_Token extends BasicSetup {
                 + "</pre>");
 
 
-        paypalAccessToken = objectResponse.getString("access_token");
+        paypalAccessToken = jsonObjectResponse.getString("access_token");
         System.out.println("\n ===TOKEN=== \n" + paypalAccessToken);
 
 
