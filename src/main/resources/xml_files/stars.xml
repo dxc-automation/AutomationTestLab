@@ -7,7 +7,7 @@
         <listener class-name="com.setup.TestNGListener"/>
     </listeners>
 
-    <parameter name="browser" value="safari"/>
+    <parameter name="browser" value="chrome"/>
 
     <test name="TC_01_Example" group-by-instances="true">
 
@@ -37,9 +37,15 @@
             </methods>
         </class>
 
-        <class name="com.test.TC_05_SumoAPI.ID_01_PromotionsPage">
+        <class name="com.test.TC_05_Sumo.API.ID_01_PromotionsPage">
             <methods>
                 <include name="getPromotionConfigurations"/>
+            </methods>
+        </class>
+
+        <class name="com.test.TC_05_Sumo.UI.ID_01_Promotions">
+            <methods>
+                <include name="openSumoHomePage"/>
             </methods>
         </class>
 

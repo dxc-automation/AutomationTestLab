@@ -26,7 +26,7 @@ public class ID_01_AccessToken extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[ID_01] Access Token", "Bootstrap into the Flyt API. The purpose of this test is to verify that the user can receive a unique access token.");
+        test = extent.createTest("[ID_01] Access Token", "Bootstrap into the Flyt UI. The purpose of this test is to verify that the user can receive a unique access token.");
         test.assignAuthor("Pavel Popov");
         test.assignCategory("POST");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);

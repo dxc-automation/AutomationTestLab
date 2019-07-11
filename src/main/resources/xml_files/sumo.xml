@@ -13,7 +13,7 @@
 
     <classes>
 
-        <class name="com.test.TC_05_SumoAPI.ID_01_PromotionsPage">
+        <class name="com.test.TC_05_Sumo.API.ID_01_PromotionsPage">
             <methods>
                 <include name="getPromotionConfigurations"/>
             </methods>
