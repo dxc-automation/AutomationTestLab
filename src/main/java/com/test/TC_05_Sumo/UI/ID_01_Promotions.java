@@ -1,9 +1,9 @@
 package com.test.TC_05_Sumo.UI;
 
 import com.aventstack.extentreports.AnalysisStrategy;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
+import com.setup.GetCompare;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
@@ -18,10 +18,9 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.lang.reflect.Method;
 
+import static com.constants.SumoPageElements.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
-import static com.constants.SumoPageElements.*;
-import com.setup.WebDriverUtils;
 
 public class ID_01_Promotions extends BasicSetup {
 
@@ -29,6 +28,9 @@ public class ID_01_Promotions extends BasicSetup {
     private static Point point;
     private static int height;
     private static int width;
+    public static String actualImage;
+    public static String expectedImage;
+    public static String imageFile;
 
 
 
@@ -66,21 +68,22 @@ public class ID_01_Promotions extends BasicSetup {
 
     @Test
     public void checkTable(Method testMethod) throws Exception {
-        String fileName = testMethod.getName();
+        Thread.sleep(1000);
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        WebElement addHeaderBtn = driver.findElement(By.cssSelector(addPageHeader));
+        wait.until(ExpectedConditions.elementToBeClickable(addHeaderBtn));
+
+        imageFile = testMethod.getName();
         takeScreenshot(driver, "promotions");
         BufferedImage img = ImageIO.read(screenshotFile);
-
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(promoTable)));
 
         WebElement table = driver.findElement(By.cssSelector(promoTable));
 
         point = table.getLocation();
         width = table.getSize().getWidth();
         height = table.getSize().getHeight();
-
         bufferedImage = img.getSubimage(point.getX(), point.getY(), width, height);
-        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/" + fileName + ".png"));
+        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/table.png"));
 
 
         WebElement tableHeader = driver.findElement(By.cssSelector(promoTableHeader));
@@ -88,10 +91,12 @@ public class ID_01_Promotions extends BasicSetup {
         point = tableHeader.getLocation();
         width = tableHeader.getSize().getWidth();
         height = tableHeader.getSize().getHeight();
-
         bufferedImage = img.getSubimage(point.getX(), point.getY(), width, height);
-        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/" + fileName));
+        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/actualTableHeader.png"));
 
+        actualImage = filePath + "/" + "Screenshots/Actual/actualTableHeader.png";
+        expectedImage = filePath + "/" + "Screenshots/Expected/expectedTableHeader.png";
 
+        GetCompare.GetCompare();
     }
 }
