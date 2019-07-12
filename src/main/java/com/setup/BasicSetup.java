@@ -137,7 +137,7 @@ public class BasicSetup {
             String fileName = method + ".json";
             Path file = Paths.get(filePath + "/" + "report/JSON/" + fileName);
 
-            methodName = String.format("%s[%s]", result.getMethod().getRealClass().getSimpleName(), result.getMethod().getMethodName());
+            methodName = String.format("%s  [%s]", result.getMethod().getRealClass().getSimpleName(), result.getMethod().getMethodName());
 
             switch (result.getStatus()) {
 

@@ -29,7 +29,7 @@ public class ID_01_LogIn extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[ID_01] Send log in ram module request ", "");
+        test = extent.createTest("[ID_01] Log in", "");
         test.assignAuthor("Pavel Popov");
         test.assignCategory("POST");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
