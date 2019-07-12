@@ -37,15 +37,10 @@
             </methods>
         </class>
 
-        <class name="com.test.TC_05_Sumo.API.ID_01_PromotionsPage">
-            <methods>
-                <include name="getPromotionConfigurations"/>
-            </methods>
-        </class>
-
         <class name="com.test.TC_05_Sumo.UI.ID_01_Promotions">
             <methods>
                 <include name="openSumoHomePage"/>
+                <include name="checkTable"/>
             </methods>
         </class>
 

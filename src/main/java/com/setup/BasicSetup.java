@@ -66,14 +66,15 @@ public class BasicSetup {
     public static JSONParser parser;
     private static String headers;
     public static int responseCode;
+    public static File screenshotFile;
     public static File filePath = new File(System.getProperty("user.dir")).getParentFile();
 
     static final Logger LOG = LogManager.getLogger(BasicSetup.class);
 
         public void takeScreenshot (WebDriver driver, String name){
-            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
-                FileUtils.copyFile(scrFile, new File(filePath + "/" + "Screenshots/Actual/" + name + ".png"));
+                FileUtils.copyFile(screenshotFile, new File(filePath + "/" + "Screenshots/Actual/" + name + ".png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }

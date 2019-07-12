@@ -11,8 +11,15 @@ public interface SumoPageElements  {
 
     //***   LOG IN  ***//
 
-    WebElement usernameField = driver.findElement(By.name("name"));
-    WebElement passwordField = driver.findElement(By.cssSelector(".form-group___3IVrV:nth-child(2) > .input___36Zmo"));
-    WebElement loginBtn      = driver.findElement(By.cssSelector("#login"));
+    String usernameField = ".form-group___3IVrV:nth-child(1) > .input___36Zmo";
+    String passwordField = ".form-group___3IVrV:nth-child(2) > .input___36Zmo";
+    String loginButton   = "#login";
+
+
+
+
+    //***   PROMOTIONS  ***//
+    String promoTable = "table.table___yjv84.variant-1___1z0lW";
+
 
 }
