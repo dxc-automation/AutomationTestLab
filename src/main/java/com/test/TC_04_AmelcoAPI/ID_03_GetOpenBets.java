@@ -23,14 +23,14 @@ import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.*;
 
 public class ID_03_GetOpenBets extends BasicSetup {
 
-    public static Long selectionId;
-    public static Long accountId;
+    public static Long   selectionId;
+    public static Long   accountId;
     public static String type;
     public static String winType;
-    public static Long amount;
+    public static Long   amount;
     public static String currency;
-    public static Long partNo;
-    public static Double decimal;
+    public static Long   partNo;
+    public static Long   decimal;
     public static String fractional;
 
 

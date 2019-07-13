@@ -40,7 +40,7 @@
         <class name="com.test.TC_05_Sumo.UI.ID_01_Promotions">
             <methods>
                 <include name="openSumoHomePage"/>
-                <include name="checkTable"/>
+                <include name="checkToolbarButtons"/>
             </methods>
         </class>
 

@@ -1,13 +1,13 @@
 com/setup/URLConnection.class
 com/setup/HttpClientUtils.class
 com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.class
+com/setup/WebDriverUtils.class
 com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.class
 com/test/TC_03_Example_UI/ID_02_AddToCart.class
 com/test/temp/HttpClient_POST.class
 com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.class
 com/test/temp/UI.class
 com/test/TC_02_Example_HttpClient/Fly/ID_09_Order.class
-com/setup/GetCompare.class
 com/test/TC_02_Example_HttpClient/Fly/ID_03_Authenticate.class
 com/setup/TestNGListener.class
 com/setup/ConsoleRunner.class
@@ -29,6 +29,7 @@ com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.class
 com/test/temp/OkHttpClient_GET.class
 com/test/TC_04_AmelcoAPI/ID_01_LogIn.class
 com/test/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.class
+com/setup/GetImageCompare.class
 com/test/temp/OkHttpClient_POST.class
 com/test/TC_05_Sumo/UI/ID_01_Promotions.class
 com/test/temp/HttpClient_GET.class

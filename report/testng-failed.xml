@@ -7,16 +7,6 @@
   </listeners>
   <test thread-count="5" verbose="10" name="TC_01_Example(failed)" parallel="tests">
     <classes>
-      <class name="com.test.TC_05_Sumo.UI.ID_01_Promotions">
-        <methods>
-          <include name="report"/>
-          <include name="setup"/>
-          <include name="checkTable" invocation-numbers="0"/>
-          <include name="clearXml"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.test.TC_05_Sumo.UI.ID_01_Promotions -->
       <class name="com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets">
         <methods>
           <include name="report"/>

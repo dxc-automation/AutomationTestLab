@@ -14,9 +14,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import static com.setup.HttpClientUtils.jsonObjectResponse;
-import static com.setup.HttpClientUtils.jsonArrayResponse;
-import static com.setup.HttpClientUtils.responseMsg;
+import static com.setup.HttpClientUtils.*;
 
 
 public class OkHttpClientUtils extends BasicSetup {

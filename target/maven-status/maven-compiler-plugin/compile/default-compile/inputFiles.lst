@@ -19,6 +19,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_01_Example_URLConnection/ID_01_AccessToken.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_03_Example_UI/ID_01_OpenCart.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/GetImageCompare.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_01_Example_URLConnection/ID_03_SignIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/TestNGListener.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_08_Menu.java
@@ -27,7 +28,6 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/BasicSetup.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/HttpClientUtils.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/OkHttpClient_GET.java
-/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/GetCompare.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_03_Example_UI/ID_02_AddToCart.java
@@ -35,3 +35,4 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_07_Business.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/constants/SumoPageElements.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/OkHttpClient_POST.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/WebDriverUtils.java
