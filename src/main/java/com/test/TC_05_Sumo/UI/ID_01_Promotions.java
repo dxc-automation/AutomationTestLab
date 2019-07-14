@@ -9,7 +9,6 @@ import com.setup.ExtentManager;
 import com.setup.GetImageCompare;
 import com.setup.WebDriverUtils;
 import org.openqa.selenium.Point;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -36,12 +35,12 @@ public class ID_01_Promotions extends BasicSetup {
     public static String expectedImage;
     public static String imageFile;
 
-
-    private WebElement removeBtn;
-    private WebElement cloneBtn;
-    private WebElement copySegmentsBtn;
-    private WebElement removeSegmentsBtn;
-    private WebElement deselectBtn;
+    boolean addBtn       = WebDriverUtils.isClickable(toolbarBtn_Add);
+    boolean removeBtn    = WebDriverUtils.isClickable(toolbarBtn_Remove);
+    boolean cloneBtn     = WebDriverUtils.isClickable(toolbarBtn_Clone);
+    boolean copySgmBtn   = WebDriverUtils.isClickable(toolbarBtn_CopySegments);
+    boolean removeSgmBtn = WebDriverUtils.isClickable(toolbatBtn_RemoveSegments);
+    boolean deselectBtn  = WebDriverUtils.isClickable(toolbarBtn_DeselectSegments);
 
 
 
@@ -89,7 +88,7 @@ public class ID_01_Promotions extends BasicSetup {
         imageFile = testMethod.getName();
 
         //***   Take screenshot and store it into "Screenshots/Actual/method_name.png"
-        takeScreenshot(driver, "promotions");
+        takeScreenshot(driver, "promotions_no_selection");
 
         //***   Localize the element and crop it from the screenshot
         BufferedImage img = ImageIO.read(screenshotFile);
@@ -97,31 +96,70 @@ public class ID_01_Promotions extends BasicSetup {
         width = toolbarPage.getSize().getWidth();
         height = toolbarPage.getSize().getHeight();
         bufferedImage = img.getSubimage(point.getX(), point.getY(), width, height);
-        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/actualTableHeader.png"));
+        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/toolbar_no_selection.png"));
+
 
         //***   Compare the actual screenshot with file from data base
-        actualImage = filePath + "/" + "Screenshots/Actual/actualTableHeader.png";
-        expectedImage = filePath + "/" + "Screenshots/Expected/expectedTableHeader.png";
+        actualImage = filePath + "/" + "Screenshots/Actual/toolbar_no_selection.png";
+        expectedImage = filePath + "/" + "Screenshots/Expected/toolbar_no_selection.png";
 
         GetImageCompare.GetCompare();
 
 
-
-        boolean removeButton    = WebDriverUtils.isClickable(toolbarBtn_Remove);
-        boolean cloneButton     = WebDriverUtils.isClickable(toolbarBtn_Clone);
-        boolean copySgmButton   = WebDriverUtils.isClickable(toolbarBtn_CopySegments);
-        boolean removeSgmButton = WebDriverUtils.isClickable(toolbatBtn_RemoveSegments);
-        boolean deselectButton  = WebDriverUtils.isClickable(toolbarBtn_DeselectSegments);
-
-        if (removeButton == false || cloneButton == false || copySgmButton == false || removeSgmButton == false || deselectButton == false) {
+        //***   Check the state of the toolbar buttons
+        if (addBtn == true || removeBtn == false || cloneBtn == false || copySgmBtn == false || removeSgmBtn == false || deselectBtn == false) {
             test.pass("Toolbar buttons has correct states when there is no selection");
         }
-        else if (removeButton == true || cloneButton == true || copySgmButton == true || removeSgmButton == true || deselectButton == true) {
+        else if (addBtn == true || removeBtn == true || cloneBtn == true || copySgmBtn == true || removeSgmBtn == true || deselectBtn == true) {
             test.fail("Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
     }
 
     @Test
     public void selectionBtnStates() throws Exception {
+        tableCheckBox_Row1.click();
+
+        //***   Check the state of the toolbar buttons
+        if (addBtn == true || removeBtn == true || cloneBtn == true || copySgmBtn == true || removeSgmBtn == true || deselectBtn == false) {
+            test.pass("Toolbar buttons has correct states when there is no selection");
+        }
+        else if (addBtn == false || removeBtn == false || cloneBtn == false || copySgmBtn == false || removeSgmBtn == false || deselectBtn == true) {
+            test.fail("Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
+
+
+        takeScreenshot(driver, "promotions_select_one");
+
+        //***   Localize the element and crop it from the screenshot
+        BufferedImage img = ImageIO.read(screenshotFile);
+        point = toolbarPage.getLocation();
+        width = toolbarPage.getSize().getWidth();
+        height = toolbarPage.getSize().getHeight();
+        bufferedImage = img.getSubimage(point.getX(), point.getY(), width, height);
+        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/toolbar_select_one.png"));
+
+
+        //***   Compare the actual screenshot with file from data base
+         actualImage = filePath + "/" + "Screenshots/Actual/toolbar_select_one.png";
+         expectedImage = filePath + "/" + "Screenshots/Expected/toolbar_select_one.png";
+
+         GetImageCompare.GetCompare();
+        }
+    }
+
+    @Test
+    public void checkTable() throws Exception {
+        BufferedImage img = ImageIO.read(screenshotFile);
+        point = toolbarPage.getLocation();
+        width = toolbarPage.getSize().getWidth();
+        height = toolbarPage.getSize().getHeight();
+        bufferedImage = img.getSubimage(point.getX(), point.getY(), width, height);
+        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/tebla_header.png"));
+
+        //***   Compare the actual screenshot with file from data base
+        actualImage = filePath + "/" + "Screenshots/Actual/table_header.png";
+        expectedImage = filePath + "/" + "Screenshots/Expected/table_header.png";
+
+        GetImageCompare.GetCompare();
+
     }
 }

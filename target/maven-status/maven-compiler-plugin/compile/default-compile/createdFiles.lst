@@ -1,6 +1,7 @@
 com/setup/URLConnection.class
 com/setup/HttpClientUtils.class
 com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.class
+com/pages/SumoPromotionsPage.class
 com/setup/WebDriverUtils.class
 com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.class
 com/test/TC_03_Example_UI/ID_02_AddToCart.class
@@ -16,9 +17,9 @@ com/test/TC_02_Example_HttpClient/Fly/ID_04_SignIn.class
 com/test/TC_02_Example_HttpClient/Fly/ID_07_Business.class
 com/test/TC_05_Sumo/API/ID_01_PromotionsPage.class
 com/setup/ExtentManager.class
-com/constants/SumoLoginPage.class
 com/test/TC_02_Example_HttpClient/Fly/ID_08_Menu.class
 com/test/TC_03_Example_UI/ID_01_OpenCart.class
+com/pages/SumoLoginPage.class
 com/test/TC_01_Example_URLConnection/ID_02_CreateSession.class
 com/setup/BasicSetup.class
 com/test/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.class
@@ -35,5 +36,4 @@ com/test/temp/OkHttpClient_POST.class
 com/test/TC_05_Sumo/UI/ID_01_Promotions.class
 com/test/temp/HttpClient_GET.class
 com/setup/OkHttpClientUtils.class
-com/constants/SumoPageElements.class
 com/test/TC_01_Example_URLConnection/ID_01_AccessToken.class

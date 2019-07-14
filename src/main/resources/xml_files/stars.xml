@@ -41,6 +41,8 @@
             <methods>
                 <include name="openSumoHomePage"/>
                 <include name="noSelectionBtnStates"/>
+                <include name="selectionBtnStates"/>
+                <include name="checkTable"/>
             </methods>
         </class>
 
