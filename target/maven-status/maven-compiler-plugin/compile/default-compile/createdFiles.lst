@@ -16,6 +16,7 @@ com/test/TC_02_Example_HttpClient/Fly/ID_04_SignIn.class
 com/test/TC_02_Example_HttpClient/Fly/ID_07_Business.class
 com/test/TC_05_Sumo/API/ID_01_PromotionsPage.class
 com/setup/ExtentManager.class
+com/constants/SumoLoginPage.class
 com/test/TC_02_Example_HttpClient/Fly/ID_08_Menu.class
 com/test/TC_03_Example_UI/ID_01_OpenCart.class
 com/test/TC_01_Example_URLConnection/ID_02_CreateSession.class

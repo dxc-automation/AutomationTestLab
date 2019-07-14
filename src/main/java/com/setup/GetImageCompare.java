@@ -1,8 +1,6 @@
 package com.setup;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -84,35 +82,37 @@ public class GetImageCompare extends BasicSetup {
         long stop = System.currentTimeMillis();
 
         if (x > 95) {
-            test.pass(MarkupHelper.createLabel("Compare actual screenshot with screenshot from the data base", ExtentColor.GREEN));
-            test.pass("[ ACTUAL PAGE VIEW ]", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
-            test.pass("<pre>"
-                    + "Success rate = " + x + "%" + "\n"
-                    + "Time(ms) for visualization check = " + (stop - start) + "\n"
-                    + "Number of pixels gets varied = " + q + "\n"
-                    + "Number of pixels gets matched = " + p + "\n"
-                    + "</pre>");
+            test.pass("Image comparison successfully completed"
+                    + "<br />"
+                    + "Success rate = " + x + "%"
+                    + "<br />"
+                    + "Time(ms) for visualization check = " + (stop - start)
+                    + "<br />"
+                    + "Number of pixels gets varied = " + q
+                    + "<br />"
+                    + "Number of pixels gets matched = " + p, MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
         if (x == 95) {
-            test.warning(MarkupHelper.createLabel("Compare actual screenshot with screenshot from the data base", ExtentColor.ORANGE));
-            test.warning("[ ACTUAL PAGE VIEW ]", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
-            test.warning("[ EXPECTED PAGE VIEW ]", MediaEntityBuilder.createScreenCaptureFromPath(expectedImage).build());
-            test.warning("<pre>"
-                    + "Success rate = " + x + "%" + "\n"
-                    + "Time(ms) for visualization check = " + (stop - start) + "\n"
-                    + "Number of pixels gets varied = " + q + "\n"
-                    + "Number of pixels gets matched = " + p + "\n"
-                    + "</pre>");
+            test.warning("| WARNING | Results from comparison needs to be checked"
+                    + "<br />"
+                    + "Success rate = " + x + "%"
+                    + "<br />"
+                    + "Time(ms) for visualization check = " + (stop - start)
+                    + "<br />"
+                    + "Number of pixels gets varied = " + q
+                    + "<br />"
+                    + "Number of pixels gets matched = " + p, MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
         if (x < 95) {
-            test.fail(MarkupHelper.createLabel("Compare actual screenshot with screenshot from the data base has failed \n"
-                    + "Success rate = " + x + "% \n"
-                    + "Time(ms) for visualization check = " + (stop - start) + "\n"
-                    + "Number of pixels gets varied = " + q + "\n"
-                    + "Number of pixels gets matched = " + p + "\n", ExtentColor.RED));
-
-            test.fail("[ ACTUAL PAGE VIEW ]", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
-            test.fail("[ EXPECTED PAGE VIEW ]", MediaEntityBuilder.createScreenCaptureFromPath(expectedImage).build());
+            test.fail("Compare actual screenshot with screenshot from the data base has failed"
+                    + "<br />"
+                    + "Success rate = " + x + "%"
+                    + "<br />"
+                    + "Time(ms) for visualization check = " + (stop - start)
+                    + "<br />"
+                    + "Number of pixels gets varied = " + q
+                    + "<br />"
+                    + "Number of pixels gets matched = " + p, MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
         return null;
     }
