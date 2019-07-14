@@ -48,7 +48,15 @@ public class ID_01_Promotions extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[TC_01] Promotions Page", "<pre>dhjbsabhdashjda</pre>");
+        test = extent.createTest(
+                  "[TC_01] Promotions Page",
+                  "<pre>"
+                             + "D E S C R I P T I O N<br/>"
+                             + "[1] openSumoHomePage:    Verify that login functionality and redirection are working properly.<br/>"
+                             + "[2] noSelectionBtnState: Verify that only 'Add' button is enabled when there are no selected checkboxes.<br/>"
+                             + "[3] selectionBtnState:   Verify that only 'Deselect Expires' button is disabled when there is a one selected checkbox.<br/>"
+                             + "[4] checkTable:          Verify that the table column numbers and names are correct."
+                             + "</pre>");
         test.assignAuthor("SUMO");
         test.assignCategory("Front-End");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
@@ -78,7 +86,7 @@ public class ID_01_Promotions extends BasicSetup {
     }
 
     @Test
-    public void noSelectionBtnStates(Method testMethod) throws Exception {
+    public void noSelectionBtnState(Method testMethod) throws Exception {
         PageFactory.initElements(driver, SumoPromotionsPage.class);
 
         Thread.sleep(4000);
@@ -116,7 +124,7 @@ public class ID_01_Promotions extends BasicSetup {
     }
 
     @Test
-    public void selectionBtnStates() throws Exception {
+    public void selectionBtnState() throws Exception {
         tableCheckBox_Row1.click();
 
         //***   Check the state of the toolbar buttons

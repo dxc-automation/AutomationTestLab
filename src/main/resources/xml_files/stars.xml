@@ -40,8 +40,8 @@
         <class name="com.test.TC_05_Sumo.UI.ID_01_Promotions">
             <methods>
                 <include name="openSumoHomePage"/>
-                <include name="noSelectionBtnStates"/>
-                <include name="selectionBtnStates"/>
+                <include name="noSelectionBtnState"/>
+                <include name="selectionBtnState"/>
                 <include name="checkTable"/>
             </methods>
         </class>
