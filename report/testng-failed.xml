@@ -15,7 +15,6 @@
           <include name="clearXml"/>
           <include name="tearDown"/>
           <include name="startTest"/>
-          <include name="noSelectionBtnState" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.test.TC_05_Sumo.UI.ID_01_Promotions -->
     </classes>

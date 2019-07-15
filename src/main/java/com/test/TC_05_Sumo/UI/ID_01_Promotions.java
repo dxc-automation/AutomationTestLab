@@ -2,6 +2,8 @@ package com.test.TC_05_Sumo.UI;
 
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.pages.SumoLoginPage;
 import com.pages.SumoPromotionsPage;
 import com.setup.BasicSetup;
@@ -116,10 +118,10 @@ public class ID_01_Promotions extends BasicSetup {
 
         //***   Check the state of the toolbar buttons
         if (addBtn == true || removeBtn == false || cloneBtn == false || copySgmBtn == false || removeSgmBtn == false || deselectBtn == false) {
-            test.pass("Toolbar buttons has correct states when there is no selection");
+            test.pass(MarkupHelper.createLabel("| PASSED |Toolbar buttons has correct states when there is no selection", ExtentColor.GREEN));
         }
         else if (addBtn == true || removeBtn == true || cloneBtn == true || copySgmBtn == true || removeSgmBtn == true || deselectBtn == true) {
-            test.fail("Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
+            test.fail("| FAILED | Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
     }
 
@@ -129,10 +131,10 @@ public class ID_01_Promotions extends BasicSetup {
 
         //***   Check the state of the toolbar buttons
         if (addBtn == true || removeBtn == true || cloneBtn == true || copySgmBtn == true || removeSgmBtn == true || deselectBtn == false) {
-            test.pass("Toolbar buttons has correct states when there is no selection");
+            test.pass(MarkupHelper.createLabel("| PASSED | Toolbar buttons has correct states when there is selected checkbox", ExtentColor.GREEN));
         }
         else if (addBtn == false || removeBtn == false || cloneBtn == false || copySgmBtn == false || removeSgmBtn == false || deselectBtn == true) {
-            test.fail("Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
+            test.fail("| FAILED | Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
 
 
         takeScreenshot(driver, "promotions_select_one");
@@ -157,11 +159,11 @@ public class ID_01_Promotions extends BasicSetup {
     @Test
     public void checkTable() throws Exception {
         BufferedImage img = ImageIO.read(screenshotFile);
-        point = toolbarPage.getLocation();
-        width = toolbarPage.getSize().getWidth();
-        height = toolbarPage.getSize().getHeight();
+        point = header_Table.getLocation();
+        width = header_Table.getSize().getWidth();
+        height = header_Table.getSize().getHeight();
         bufferedImage = img.getSubimage(point.getX(), point.getY(), width, height);
-        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/tebla_header.png"));
+        ImageIO.write(bufferedImage, "png", new File(filePath + "/" + "Screenshots/Actual/table_header.png"));
 
         //***   Compare the actual screenshot with file from data base
         actualImage = filePath + "/" + "Screenshots/Actual/table_header.png";

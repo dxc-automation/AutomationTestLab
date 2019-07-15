@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screenshots/Actual/promotions_no_selection.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Actual/promotions_no_selection.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Actual/tebla_header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Actual/toolbar_no_selection.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Actual/toolbar_no_selection.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [checkTable].png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [checkTable].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/noSelectionBtnState.txt" beforeDir="false" afterPath="$PROJECT_DIR$/noSelectionBtnState.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/externalLogin.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/externalLogin.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/getOpenBets.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getOpenBets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/loginRam.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/loginRam.json" afterDir="false" />
@@ -18,14 +24,17 @@
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_04_PlaceBet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_04_AmelcoAPI.ID_04_PlaceBet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_05_Sumo.UI.ID_01_Promotions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_05_Sumo.UI.ID_01_Promotions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/old/TC_001/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_05_Sumo/UI/ID_01_Promotions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/TC_05_Sumo/UI/ID_01_Promotions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,20 +52,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
+            <state relative-caret-position="405">
               <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+            <state relative-caret-position="269">
+              <caret line="132" column="138" selection-start-line="132" selection-start-column="138" selection-end-line="132" selection-end-column="138" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
+            <state relative-caret-position="660">
               <caret line="46" column="95" selection-start-line="46" selection-start-column="95" selection-end-line="46" selection-end-column="95" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
+            <state relative-caret-position="645">
               <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
             </state>
           </provider>
@@ -173,6 +194,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,17 +274,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="TC_02_Example_HttpClient" type="462c0819:PsiDirectoryNode" />
-              <item name="Fly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="TC_04_AmelcoAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -304,9 +316,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="CatdeaLogs" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,9 +370,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="831" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1011" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17596567" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.185836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -376,7 +387,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" x="120" y="77" width="1283" height="719" id="Terminal" order="7" visible="true" weight="0.8910614" />
+      <window_info anchor="bottom" x="120" y="77" width="1283" height="719" id="Terminal" order="7" weight="0.890625" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32939634" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -598,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -632,16 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -659,19 +653,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/SumoPageElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/SumoPageElements.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
+        <state relative-caret-position="660">
           <caret line="46" column="95" selection-start-line="46" selection-start-column="95" selection-end-line="46" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -681,18 +666,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
+        <state relative-caret-position="645">
           <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+        <state relative-caret-position="269">
+          <caret line="132" column="138" selection-start-line="132" selection-start-column="138" selection-end-line="132" selection-end-column="138" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
         </state>
       </provider>
     </entry>
