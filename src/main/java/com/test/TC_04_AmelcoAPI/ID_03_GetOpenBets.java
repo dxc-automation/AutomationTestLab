@@ -30,7 +30,7 @@ public class ID_03_GetOpenBets extends BasicSetup {
     public static Long   amount;
     public static String currency;
     public static Long   partNo;
-    public static Long   decimal;
+    public static Double decimal;
     public static String fractional;
 
 

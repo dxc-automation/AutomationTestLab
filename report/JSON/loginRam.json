@@ -4,7 +4,7 @@
     "imageid": 0,
     "fl": 36176137,
     "timezone": 0,
-    "balancestr": "91,988.75 USD",
+    "balancestr": "786.77 EUR",
     "pr2h": 0,
     "statecode": "",
     "locale": 0,
@@ -26,7 +26,7 @@
         {"wcxPublicChat": false},
         {"playercv": 1794322272},
         {"playercvhigh": 556670353},
-        {"playercv2": 284691224},
+        {"playercv2": 16255768},
         {"playercvhigh2": 0},
         {"wcxLobbyChatVelocity": 0},
         {"wcxLobbyChatPublicVelocity": 0},
@@ -37,14 +37,14 @@
     ],
     "balances": [
         {
-            "chips": 9198875,
-            "tchips": 0,
-            "currency": "USD"
-        },
-        {
-            "chips": 84403,
+            "chips": 78677,
             "tchips": 0,
             "currency": "EUR"
+        },
+        {
+            "chips": 9198775,
+            "tchips": 0,
+            "currency": "USD"
         }
     ],
     "clientvisibility": [
@@ -52,25 +52,25 @@
         {"sportsbook": true}
     ],
     "fl2h": 131072,
-    "balance": 9198875,
-    "totaltmoneycurrency": "USD",
-    "currency": "USD",
+    "balance": 78677,
+    "totaltmoneycurrency": "EUR",
+    "currency": "EUR",
     "LMTMOD": 1000,
     "embedded": "1",
     "email": "bgqacom1@starsgroup.com",
-    "timestamp": 1563183933052,
+    "timestamp": 1563379698668,
     "pr3h": 0,
     "fl3": 8196,
     "fl2": 540692,
     "pr3": 0,
     "pr2": 0,
-    "totalbalanceusd": 9299533,
+    "totalbalanceusd": 9292604,
     "license": 512,
     "totaltmoneybalance": 0,
     "fl3h": 0,
     "success": true,
     "playchips": 1001500000,
-    "totalbalance": 9299533,
+    "totalbalance": 7791981,
     "playerVerification": false,
     "username": "BGQACOM1"
 }

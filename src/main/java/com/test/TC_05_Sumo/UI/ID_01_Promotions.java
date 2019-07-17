@@ -2,8 +2,6 @@ package com.test.TC_05_Sumo.UI;
 
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.pages.SumoLoginPage;
 import com.pages.SumoPromotionsPage;
 import com.setup.BasicSetup;
@@ -99,9 +97,10 @@ public class ID_01_Promotions extends BasicSetup {
 
         //***   Take screenshot and store it into "Screenshots/Actual/method_name.png"
         takeScreenshot(driver, "promotions_no_selection");
+        File img_NoSelection = screenshotFile;
 
         //***   Localize the element and crop it from the screenshot
-        BufferedImage img = ImageIO.read(screenshotFile);
+        BufferedImage img = ImageIO.read(img_NoSelection);
         point = toolbarPage.getLocation();
         width = toolbarPage.getSize().getWidth();
         height = toolbarPage.getSize().getHeight();
@@ -117,30 +116,32 @@ public class ID_01_Promotions extends BasicSetup {
 
 
         //***   Check the state of the toolbar buttons
-        if (addBtn == true || removeBtn == false || cloneBtn == false || copySgmBtn == false || removeSgmBtn == false || deselectBtn == false) {
-            test.pass(MarkupHelper.createLabel("| PASSED |Toolbar buttons has correct states when there is no selection", ExtentColor.GREEN));
+        if (addBtn == true && removeBtn == false && cloneBtn == false && copySgmBtn == false && removeSgmBtn == false && deselectBtn == false) {
+            test.pass("Toolbar buttons has correct states when there is no selection");
         }
-        else if (addBtn == true || removeBtn == true || cloneBtn == true || copySgmBtn == true || removeSgmBtn == true || deselectBtn == true) {
-            test.fail("| FAILED | Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
+        else if (addBtn == true && removeBtn == true && cloneBtn == true && copySgmBtn == true && removeSgmBtn == true && deselectBtn == true) {
+            test.fail("Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
     }
 
     @Test
     public void selectionBtnState() throws Exception {
         tableCheckBox_Row1.click();
+        takeScreenshot(driver, "selection");
 
         //***   Check the state of the toolbar buttons
-        if (addBtn == true || removeBtn == true || cloneBtn == true || copySgmBtn == true || removeSgmBtn == true || deselectBtn == false) {
-            test.pass(MarkupHelper.createLabel("| PASSED | Toolbar buttons has correct states when there is selected checkbox", ExtentColor.GREEN));
+        if (addBtn == true && removeBtn == true && cloneBtn == true && copySgmBtn == true && removeSgmBtn == true && deselectBtn == false) {
+            test.pass("Toolbar buttons has correct states when there is selected checkbox");
         }
-        else if (addBtn == false || removeBtn == false || cloneBtn == false || copySgmBtn == false || removeSgmBtn == false || deselectBtn == true) {
-            test.fail("| FAILED | Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
+        else if (addBtn == false && removeBtn == false && cloneBtn == false && copySgmBtn == false && removeSgmBtn == false && deselectBtn == true) {
+            test.fail("Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
 
 
         takeScreenshot(driver, "promotions_select_one");
+        File img_Selection = screenshotFile;
 
         //***   Localize the element and crop it from the screenshot
-        BufferedImage img = ImageIO.read(screenshotFile);
+        BufferedImage img = ImageIO.read(img_Selection);
         point = toolbarPage.getLocation();
         width = toolbarPage.getSize().getWidth();
         height = toolbarPage.getSize().getHeight();

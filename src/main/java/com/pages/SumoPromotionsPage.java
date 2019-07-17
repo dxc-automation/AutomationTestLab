@@ -44,7 +44,7 @@ public class SumoPromotionsPage {
     @FindBy(how = How.CSS, using = "tr.row___2FvyH[data-qa='tableRowWrapper-header']")
     public static WebElement header_Table;
 
-    @FindBy(how = How.CSS, using = "div#content tr:nth-child(2) > td:nth-child(2) > div > label")
+    @FindBy(how = How.CSS, using = "label.checkbox___2HPJM")
     public static WebElement tableCheckBox_Row1;
 
     @FindBy(how = How.CSS, using = "div#content tr:nth-child(3) > td:nth-child(2) > div > label")

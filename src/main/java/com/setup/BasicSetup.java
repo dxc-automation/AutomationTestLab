@@ -1,8 +1,6 @@
 package com.setup;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.commons.io.FileUtils;
@@ -197,7 +195,7 @@ public class BasicSetup {
                                         + "<br />"
                                         + "</pre>");
                         } else {
-                            test.pass(MarkupHelper.createLabel("| PASSED | " + methodName, ExtentColor.GREEN));
+                            test.pass(methodName);
                         }
                         break;
 
@@ -271,7 +269,7 @@ public class BasicSetup {
                             fileFail = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                             FileUtils.copyFile(fileFail, new File(pathFail + methodName + ".png"));
 
-                            test.fail(MarkupHelper.createLabel("| FAILED | " + methodName, ExtentColor.RED));
+                            test.fail(methodName);
                             test.fail(throwable);
                             //test.log(Status.ERROR, "EXCEPTION" + "<br />" + result.getThrowable());
                             test.fail("FAILED ON SCREEN", MediaEntityBuilder.createScreenCaptureFromPath(pathFail + methodName + ".png").build());
@@ -279,7 +277,7 @@ public class BasicSetup {
                             break;
 
                     case ITestResult.SKIP:
-                        test.skip(MarkupHelper.createLabel("| SKIPPED | " + methodName, ExtentColor.ORANGE));
+                        test.skip(methodName);
                         break;
 
                     default:

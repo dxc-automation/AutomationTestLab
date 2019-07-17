@@ -4,10 +4,7 @@
     <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screenshots/Actual/promotions_no_selection.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Actual/promotions_no_selection.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Actual/tebla_header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Actual/toolbar_no_selection.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Actual/toolbar_no_selection.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [checkTable].png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [checkTable].png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/Actual/table_header.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/Actual/table_header.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/noSelectionBtnState.txt" beforeDir="false" afterPath="$PROJECT_DIR$/noSelectionBtnState.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/externalLogin.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/externalLogin.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/getOpenBets.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getOpenBets.json" afterDir="false" />
@@ -26,15 +23,12 @@
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_05_Sumo.UI.ID_01_Promotions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_05_Sumo.UI.ID_01_Promotions.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_05_Sumo/UI/ID_01_Promotions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/TC_05_Sumo/UI/ID_01_Promotions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,20 +46,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+            <state relative-caret-position="435">
+              <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-456">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="132" column="138" selection-start-line="132" selection-start-column="138" selection-end-line="132" selection-end-column="138" />
+            <state relative-caret-position="189">
+              <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_04_PlaceBet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ExtentManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
+            <state relative-caret-position="1440">
               <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="46" column="95" selection-start-line="46" selection-start-column="95" selection-end-line="46" selection-end-column="95" />
+            <state relative-caret-position="690">
+              <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +170,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_PromotionsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_PromotionsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotionс.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/constants/SumoPageElements.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/GetCompare.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/WebDriverUtils.java" />
@@ -151,8 +179,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/constants/SumoLoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pages/SumoLoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java" />
       </list>
     </option>
@@ -167,6 +197,7 @@
       <MavenImportingSettings>
         <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -181,10 +212,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1874" />
-    <option name="height" value="831" />
+    <option name="width" value="1920" />
+    <option name="height" value="1011" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -195,7 +226,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,6 +275,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="setup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -265,16 +304,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="TC_02_Example_HttpClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="TC_04_AmelcoAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -317,6 +346,7 @@
         </subPane>
       </pane>
       <pane id="CatdeaLogs" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,10 +400,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1011" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1011" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.185836" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18903089" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -527,16 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_04_PlaceBet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="86" column="50" lean-forward="true" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -572,16 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ExtentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/Accounts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -593,16 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="52" column="32" selection-start-line="52" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -654,10 +654,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/SumoPageElements.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="46" column="95" selection-start-line="46" selection-start-column="95" selection-end-line="46" selection-end-column="95" />
+        <state relative-caret-position="1440">
+          <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ExtentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -671,20 +691,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pages/SumoPromotionsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="132" column="138" selection-start-line="132" selection-start-column="138" selection-end-line="132" selection-end-column="138" />
+        <state relative-caret-position="690">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_04_PlaceBet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+        <state relative-caret-position="734">
+          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -693,8 +713,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
+        <state relative-caret-position="435">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_05_Sumo/UI/ID_01_Promotions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="102" column="56" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
