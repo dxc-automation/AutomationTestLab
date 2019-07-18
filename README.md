@@ -7,6 +7,7 @@
 ### Description
 <p align="justify">
 Automation testing environment that can be used for writing functional and non-functional tests. The project is based on Java, TestNG and Maven.
+<br/>
 Framework advantages:
 
 It is also flexible and can be quickly refactored to work with desktop or mobile devices. 
@@ -26,14 +27,14 @@ It is also flexible and can be quickly refactored to work with desktop or mobile
 *****
 
 ### Links
-* [JSON Formatter](http://www.tutorialspoint.com/online_json_formatter.htm) //** Online JSON Formatter **//
-* [JSON Editor](http://www.tutorialspoint.com/online_json_editor.htm)       //** Online JSON Editor **//
-* [XML Editor](http://www.tutorialspoint.com/online_xml_editor.htm)         //** Online XML Editor **//
-* [Ping Test](http://www.tutorialspoint.com/online_ping_test.htm)           //** Ping Test a Server for Network Connectivity **//
-* [Port Scanner](http://www.tutorialspoint.com/open_port_scan.htm)          //** Find out what are the open ports on your web server **//
-* [Host IP Lookup](http://www.tutorialspoint.com/host_ip_lookup.htm)        //** Get IP address for a given host name, domain name **//
-* [DNS Lookup](http://www.tutorialspoint.com/dns_lookup.htm)                //** Displays complete DNS Record for a Website **//
-* [Trace Route](http://www.tutorialspoint.com/online_trace_route.htm)       //** Traces the route of packets to destination host from our server **//
+- [x] [JSON Formatter](http://www.tutorialspoint.com/online_json_formatter.htm) //** Online JSON Formatter **//
+- [x] [JSON Editor](http://www.tutorialspoint.com/online_json_editor.htm)       //** Online JSON Editor **//
+- [x] [XML Editor](http://www.tutorialspoint.com/online_xml_editor.htm)         //** Online XML Editor **//
+- [x] [Ping Test](http://www.tutorialspoint.com/online_ping_test.htm)           //** Ping Test a Server for Network Connectivity **//
+- [x] [Port Scanner](http://www.tutorialspoint.com/open_port_scan.htm)          //** Find out what are the open ports on your web server **//
+- [x] [Host IP Lookup](http://www.tutorialspoint.com/host_ip_lookup.htm)        //** Get IP address for a given host name, domain name **//
+- [x] [DNS Lookup](http://www.tutorialspoint.com/dns_lookup.htm)                //** Displays complete DNS Record for a Website **//
+- [x] [Trace Route](http://www.tutorialspoint.com/online_trace_route.htm)       //** Traces the route of packets to destination host from our server **//
  
 
 
@@ -95,19 +96,19 @@ test.pass("Text");
 
 
 #### <i>Report Functionality</i>
-*   REST/SOAP API request method, header and body details 
-    ([view](https://github.dxc.com/storage/user/52163/files/8a62a980-6386-11e9-9467-1561653f7117))
-*   REST/SOAP API response body, header and error messages details
-    ([view](https://github.dxc.com/storage/user/52163/files/f9d99880-6388-11e9-89fd-c049052911ed))
-*   Stack trace and screenshots of the failed screens in case of exceptions
-    ([view](https://github.dxc.com/storage/user/52163/files/4329e800-6389-11e9-8ac7-963abe443808))
-*   Views (
-    [test,](https://github.dxc.com/storage/user/52163/files/a588e580-6395-11e9-8b44-9c2adc9afc83)
-    [category,](https://github.dxc.com/storage/user/52163/files/e54fcd00-6395-11e9-8ee6-1bea201c4e90)
-    [exception,](https://github.dxc.com/storage/user/52163/files/f13b8f00-6395-11e9-9876-5b1a2aa4f549)
-    [dashboard](https://github.dxc.com/storage/user/52163/files/fdbfe780-6395-11e9-853e-24f7e20b975f))
-*   Assign test category and author
-*   Adding system info on the dashboard    
+- [x]   REST/SOAP API request method, header and body details
+        ([view](https://github.dxc.com/storage/user/52163/files/8a62a980-6386-11e9-9467-1561653f7117))
+- [x]   REST/SOAP API response body, header and error messages details
+        ([view](https://github.dxc.com/storage/user/52163/files/f9d99880-6388-11e9-89fd-c049052911ed))
+- [x]   Stack trace and screenshots of the failed screens in case of exceptions
+        ([view](https://github.dxc.com/storage/user/52163/files/4329e800-6389-11e9-8ac7-963abe443808))
+- [x]   Views (
+        [test,](https://github.dxc.com/storage/user/52163/files/a588e580-6395-11e9-8b44-9c2adc9afc83)
+        [category,](https://github.dxc.com/storage/user/52163/files/e54fcd00-6395-11e9-8ee6-1bea201c4e90)
+        [exception,](https://github.dxc.com/storage/user/52163/files/f13b8f00-6395-11e9-9876-5b1a2aa4f549)
+        [dashboard](https://github.dxc.com/storage/user/52163/files/fdbfe780-6395-11e9-853e-24f7e20b975f))
+- [x]   Assign test category and author
+- [x]   Adding system info on the dashboard
 
 
 *****
@@ -168,10 +169,10 @@ String responseEntity = EntityUtils.toString(entity, "UTF-8");
 <p style = "line-height: 1.1">
 
 More documentation about
-* [Request Sending](https://hc.apache.org/httpcomponents-client-4.5.x/tutorial/html/fundamentals.html#d5e49) 
-* [Response Receiving](https://hc.apache.org/httpcomponents-client-4.5.x/tutorial/html/fundamentals.html#d5e74)
-* [Entity](https://hc.apache.org/httpcomponents-client-4.5.x/tutorial/html/fundamentals.html#d5e95)
-* [Exception Handling](https://hc.apache.org/httpcomponents-client-4.5.x/tutorial/html/fundamentals.html#d5e279)
+- [x] [Request Sending](https://hc.apache.org/httpcomponents-client-4.5.x/tutorial/html/fundamentals.html#d5e49)
+- [x] [Response Receiving](https://hc.apache.org/httpcomponents-client-4.5.x/tutorial/html/fundamentals.html#d5e74)
+- [x] [Entity](https://hc.apache.org/httpcomponents-client-4.5.x/tutorial/html/fundamentals.html#d5e95)
+- [x] [Exception Handling](https://hc.apache.org/httpcomponents-client-4.5.x/tutorial/html/fundamentals.html#d5e279)
 </p>
 
 <br>
