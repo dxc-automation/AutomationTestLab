@@ -210,15 +210,17 @@ public class BasicSetup {
 
 
                             // Get the response headers
-                            if (httpResponseHeaders != null) {
                                 try {
                                     headers = httpResponseHeaders.toString().replace("; ", ";\n").replaceAll("Path=/;", "").replaceAll("Secure,", "");
                                     } catch (Exception e) {
                                     e.printStackTrace();
                                 }
-                            } else {
+
+                                try {
                                     headers = responseOkClientHeaders;
-                            }
+                            } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
 
 
                             // Get the response code

@@ -129,13 +129,6 @@ public class ID_01_Promotions extends BasicSetup {
         tableCheckBox_Row1.click();
         takeScreenshot(driver, "selection");
 
-        //***   Check the state of the toolbar buttons
-        if (addBtn == true && removeBtn == true && cloneBtn == true && copySgmBtn == true && removeSgmBtn == true && deselectBtn == false) {
-            test.pass("Toolbar buttons has correct states when there is selected checkbox");
-        }
-        else if (addBtn == false && removeBtn == false && cloneBtn == false && copySgmBtn == false && removeSgmBtn == false && deselectBtn == true) {
-            test.fail("Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
-
 
         takeScreenshot(driver, "promotions_select_one");
         File img_Selection = screenshotFile;
@@ -154,6 +147,13 @@ public class ID_01_Promotions extends BasicSetup {
          expectedImage = filePath + "/" + "Screenshots/Expected/toolbar_select_one.png";
 
          GetImageCompare.GetCompare();
+
+        //***   Check the state of the toolbar buttons
+        if (addBtn == true && removeBtn == true && cloneBtn == true && copySgmBtn == true && removeSgmBtn == true && deselectBtn == false) {
+            test.pass("Toolbar buttons has correct states when there is selected checkbox");
+        }
+        else if (addBtn == false && removeBtn == false && cloneBtn == false && copySgmBtn == false && removeSgmBtn == false && deselectBtn == true) {
+            test.fail("Toolbar buttons has incorrect states when there is no selection", MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
     }
 

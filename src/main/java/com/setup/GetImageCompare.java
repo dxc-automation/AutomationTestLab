@@ -81,9 +81,10 @@ public class GetImageCompare extends BasicSetup {
 
         long stop = System.currentTimeMillis();
 
-        if (x > 95) {
+        if (x == 100) {
             test.pass("Image comparison successfully completed"
                     + "<br />"
+                    + "<br />"
                     + "Success rate = " + x + "%"
                     + "<br />"
                     + "Time(ms) for visualization check = " + (stop - start)
@@ -92,9 +93,10 @@ public class GetImageCompare extends BasicSetup {
                     + "<br />"
                     + "Number of pixels gets matched = " + p, MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
-        if (x == 95) {
+        if (x < 100) {
             test.warning("| WARNING | Results from comparison needs to be checked"
                     + "<br />"
+                    + "<br />"
                     + "Success rate = " + x + "%"
                     + "<br />"
                     + "Time(ms) for visualization check = " + (stop - start)
@@ -103,8 +105,9 @@ public class GetImageCompare extends BasicSetup {
                     + "<br />"
                     + "Number of pixels gets matched = " + p, MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
         }
-        if (x < 95) {
+        if (x <= 99) {
             test.fail("Compare actual screenshot with screenshot from the data base has failed"
+                    + "<br />"
                     + "<br />"
                     + "Success rate = " + x + "%"
                     + "<br />"
