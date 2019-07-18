@@ -42,7 +42,7 @@ At this moment we don't have the full project structure because there are featur
 
 | Package | Class | Description |
 | ------- | ----- | ----------- |
-| com.constants | Endpoints | Interface class that will contains endpoints |
+| com.setup | GetImageCompare  | Class that contains method for image comparing |
 | com.setup | BasicSetup | Methods for starting web browser, taking screenshots and results reporting |
 | com.setup | ConsoleRunner | Main class for TestNG |
 | com.setup | ExtentManager | HTML report configuration |
@@ -50,9 +50,7 @@ At this moment we don't have the full project structure because there are featur
 | com.setup | URLConnection | HTTP connection for requests and response reading configuration |
 | com.setup | HttpClientUtils | Utility class that contains configuration methods for HttpClient library |
 | com.setup | OkHttpClientUtils | Utility class that contains configuration methods for OkHttpClient library |
-| com.test.temp | HttpClient_GET | Template class for GET request |
-| com.test.temp | HttpClient_POST | Template class for POST request |
-| com.test.temp | UI | Template class for tests based on UI |
+| com.test.temp || Templates that can be used for faster test creation |
 | com.test | | All tests will be here |
 
 

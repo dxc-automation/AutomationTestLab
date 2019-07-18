@@ -18,7 +18,7 @@ public class GetImageCompare extends BasicSetup {
     public static GetImageCompare GetCompare() throws IOException {
         long start = System.currentTimeMillis();
         int q = 0;
-        File file1 = new File(filePath + "/" + imageFile + ".txt");
+        File file1 = new File(filePath + "/Screenshots/Buffer/" + imageFile + ".txt");
 
         FileWriter fw = new FileWriter(file1.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(fw);

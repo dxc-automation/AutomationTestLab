@@ -2,46 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/constants/Accounts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/SumoLoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/SumoPromotionsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/BasicSetup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/ConsoleRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/ExtentManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/GetImageCompare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/HttpClientUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/OkHttpClientUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/TestNGListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/URLConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/WebDriverUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_01_Example_URLConnection/ID_01_AccessToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_01_Example_URLConnection/ID_02_CreateSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_01_Example_URLConnection/ID_03_SignIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_03_Authenticate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_04_SignIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_05_AddUserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_07_Business.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_08_Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/Fly/ID_09_Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/PayPal/ID_01_Token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_02_Example_HttpClient/PayPal/ID_02_Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_03_Example_UI/ID_01_OpenCart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_03_Example_UI/ID_02_AddToCart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_01_LogIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_03_GetOpenBets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_04_AmelcoAPI/ID_04_PlaceBet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_05_Sumo/API/ID_01_PromotionsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/TC_05_Sumo/UI/ID_01_Promotions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/HttpClient_GET.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/HttpClient_POST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/OkHttpClient_GET.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/OkHttpClient_POST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkTable.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkToolbarButtons.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/noSelectionBtnState.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/noSelectionBtnStates.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,22 +26,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2655">
-              <caret line="214" column="53" selection-start-line="214" selection-start-column="53" selection-end-line="214" selection-end-column="53" />
+            <state relative-caret-position="300">
+              <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="404">
+              <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -101,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
+            <state relative-caret-position="639">
               <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
             </state>
           </provider>
@@ -210,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -252,8 +219,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="CatdeaLogs" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,13 +232,47 @@
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="Screenshots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="setup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="CatdeaLogs" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,9 +355,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1011" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="831" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20553781" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2081545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -643,16 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="52" column="32" selection-start-line="52" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_02_ExternalLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
@@ -673,20 +666,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
+        <state relative-caret-position="639">
           <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/TC_04_AmelcoAPI/ID_01_LogIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+        <state relative-caret-position="540">
+          <caret line="52" column="32" selection-start-line="52" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
         </state>
       </provider>
     </entry>
