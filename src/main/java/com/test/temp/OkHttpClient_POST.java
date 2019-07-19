@@ -19,8 +19,8 @@ import static com.setup.HttpClientUtils.*;
 import static com.setup.OkHttpClientUtils.*;
 import static com.setup.OkHttpClientUtils.requestMethod;
 import static com.setup.OkHttpClientUtils.requestURLPath;
-import static com.test.TC_04_AmelcoAPI.ID_01_LogIn.site;
-import static com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.sessionToken;
+import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
+import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 
 public class OkHttpClient_POST extends BasicSetup {
 

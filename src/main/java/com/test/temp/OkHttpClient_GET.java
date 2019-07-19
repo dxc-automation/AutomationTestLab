@@ -17,7 +17,7 @@ import static com.setup.HttpClientUtils.*;
 import static com.setup.OkHttpClientUtils.*;
 import static com.setup.OkHttpClientUtils.requestMethod;
 import static com.setup.OkHttpClientUtils.requestURLPath;
-import static com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.accessToken;
+import static com.test.examples.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.accessToken;
 
 public class OkHttpClient_GET extends BasicSetup {
 

@@ -1,413 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="12" total="20" passed="4">
+<testng-results skipped="0" failed="0" ignored="15" total="24" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="TC_001" duration-ms="21218" started-at="2019-07-18T16:15:13Z" finished-at="2019-07-18T16:15:35Z">
+  <suite name="TC_001" duration-ms="20771" started-at="2019-07-19T15:48:00Z" finished-at="2019-07-19T15:48:21Z">
     <groups>
     </groups>
-    <test name="TC_01_Example" duration-ms="21218" started-at="2019-07-18T16:15:13Z" finished-at="2019-07-18T16:15:35Z">
-      <class name="com.test.TC_04_AmelcoAPI.ID_04_PlaceBet">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@4bc03b27]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-18T16:15:18Z" finished-at="2019-07-18T16:15:18Z">
+    <test name="TC_01_Example" duration-ms="20771" started-at="2019-07-19T15:48:00Z" finished-at="2019-07-19T15:48:21Z">
+      <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@555ac8de]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-19T15:48:06Z" finished-at="2019-07-19T15:48:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@4bc03b27]" name="placeBet" duration-ms="131" started-at="2019-07-18T16:15:18Z" finished-at="2019-07-18T16:15:18Z">
+        <test-method status="PASS" signature="placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@555ac8de]" name="placeBet" duration-ms="250" started-at="2019-07-19T15:48:06Z" finished-at="2019-07-19T15:48:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.TC_04_AmelcoAPI.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeBet -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@4bc03b27]" name="report" is-config="true" duration-ms="3" started-at="2019-07-18T16:15:18Z" finished-at="2019-07-18T16:15:18Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@555ac8de]" name="report" is-config="true" duration-ms="3" started-at="2019-07-19T15:48:06Z" finished-at="2019-07-19T15:48:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=placeBet status=SUCCESS method=ID_04_PlaceBet.placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_04_PlaceBet@4bc03b27] output={null}]]]>
+                <![CDATA[[TestResult name=placeBet status=SUCCESS method=ID_04_PlaceBet.placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@555ac8de] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-      </class> <!-- com.test.TC_04_AmelcoAPI.ID_04_PlaceBet -->
-      <class name="com.test.TC_05_Sumo.UI.ID_01_Promotions">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-18T16:15:18Z" finished-at="2019-07-18T16:15:18Z">
+      </class> <!-- com.test.uat.TC_01_Bet.ID_04_PlaceBet -->
+      <class name="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-19T15:48:07Z" finished-at="2019-07-19T15:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="FAIL" signature="openSumoHomePage()[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="openSumoHomePage" duration-ms="4060" started-at="2019-07-18T16:15:18Z" finished-at="2019-07-18T16:15:22Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://sumo-qa.pokerstarsdev.com/matrix/promotions] but found [https://sumo-qa.pokerstarsdev.com/login?redirect=%2Fmatrix%2Fpromotions]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://sumo-qa.pokerstarsdev.com/matrix/promotions] but found [https://sumo-qa.pokerstarsdev.com/login?redirect=%2Fmatrix%2Fpromotions]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.test.TC_05_Sumo.UI.ID_01_Promotions.openSumoHomePage(ID_01_Promotions.java:84)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:813)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="openSumoHomePage()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="openSumoHomePage" duration-ms="5908" started-at="2019-07-19T15:48:07Z" finished-at="2019-07-19T15:48:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSumoHomePage -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="report" is-config="true" duration-ms="1810" started-at="2019-07-18T16:15:22Z" finished-at="2019-07-18T16:15:24Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="report" is-config="true" duration-ms="2" started-at="2019-07-19T15:48:13Z" finished-at="2019-07-19T15:48:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openSumoHomePage status=FAILURE method=ID_01_Promotions.openSumoHomePage()[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28] output={null}]]]>
+                <![CDATA[[TestResult name=openSumoHomePage status=SUCCESS method=ID_01_Promotions.openSumoHomePage()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="FAIL" signature="noSelectionBtnState(java.lang.reflect.Method)[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="noSelectionBtnState" duration-ms="5982" started-at="2019-07-18T16:15:24Z" finished-at="2019-07-18T16:15:30Z">
+        <test-method status="PASS" signature="noSelectionBtnState(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="noSelectionBtnState" duration-ms="6040" started-at="2019-07-19T15:48:13Z" finished-at="2019-07-19T15:48:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.TC_05_Sumo.UI.ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div.content-block___Kf-lC[data-qa='contentBlock-promotionConfigurations-toolbar']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: 'fe80:0:0:0:c4e:7b5d:3074:8757%en0', os.name: 'Mac OS X', os.arch: 'amd64', os.version: '10.14.5', java.version: '1.8.0_212'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64471}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: ab744842e876f52c4ffc2e9a933ed93e
-*** Element info: {Using=css selector, value=div.content-block___Kf-lC[data-qa='contentBlock-promotionConfigurations-toolbar']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.content-block___Kf-lC[data-qa='contentBlock-promotionConfigurations-toolbar']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: 'fe80:0:0:0:c4e:7b5d:3074:8757%en0', os.name: 'Mac OS X', os.arch: 'amd64', os.version: '10.14.5', java.version: '1.8.0_212'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64471}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: ab744842e876f52c4ffc2e9a933ed93e
-*** Element info: {Using=css selector, value=div.content-block___Kf-lC[data-qa='contentBlock-promotionConfigurations-toolbar']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.getLocation(Unknown Source)
-at com.test.TC_05_Sumo.UI.ID_01_Promotions.noSelectionBtnState(ID_01_Promotions.java:104)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:813)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noSelectionBtnState -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="report" is-config="true" duration-ms="1545" started-at="2019-07-18T16:15:30Z" finished-at="2019-07-18T16:15:31Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="report" is-config="true" duration-ms="0" started-at="2019-07-19T15:48:19Z" finished-at="2019-07-19T15:48:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=noSelectionBtnState status=FAILURE method=ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method)[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28] output={null}]]]>
+                <![CDATA[[TestResult name=noSelectionBtnState status=SUCCESS method=ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="FAIL" signature="selectionBtnState()[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="selectionBtnState" duration-ms="17" started-at="2019-07-18T16:15:31Z" finished-at="2019-07-18T16:15:31Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"label.checkbox___2HPJM"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: 'fe80:0:0:0:c4e:7b5d:3074:8757%en0', os.name: 'Mac OS X', os.arch: 'amd64', os.version: '10.14.5', java.version: '1.8.0_212'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64471}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: ab744842e876f52c4ffc2e9a933ed93e
-*** Element info: {Using=css selector, value=label.checkbox___2HPJM}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"label.checkbox___2HPJM"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: 'fe80:0:0:0:c4e:7b5d:3074:8757%en0', os.name: 'Mac OS X', os.arch: 'amd64', os.version: '10.14.5', java.version: '1.8.0_212'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64471}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: ab744842e876f52c4ffc2e9a933ed93e
-*** Element info: {Using=css selector, value=label.checkbox___2HPJM}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.click(Unknown Source)
-at com.test.TC_05_Sumo.UI.ID_01_Promotions.selectionBtnState(ID_01_Promotions.java:129)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:813)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="selectionBtnState()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="selectionBtnState" duration-ms="2424" started-at="2019-07-19T15:48:19Z" finished-at="2019-07-19T15:48:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectionBtnState -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="report" is-config="true" duration-ms="1540" started-at="2019-07-18T16:15:31Z" finished-at="2019-07-18T16:15:33Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="report" is-config="true" duration-ms="1" started-at="2019-07-19T15:48:21Z" finished-at="2019-07-19T15:48:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=selectionBtnState status=FAILURE method=ID_01_Promotions.selectionBtnState()[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28] output={null}]]]>
+                <![CDATA[[TestResult name=selectionBtnState status=SUCCESS method=ID_01_Promotions.selectionBtnState()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="FAIL" signature="checkTable()[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="checkTable" duration-ms="126" started-at="2019-07-18T16:15:33Z" finished-at="2019-07-18T16:15:33Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"tr.row___2FvyH[data-qa='tableRowWrapper-header']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: 'fe80:0:0:0:c4e:7b5d:3074:8757%en0', os.name: 'Mac OS X', os.arch: 'amd64', os.version: '10.14.5', java.version: '1.8.0_212'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64471}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: ab744842e876f52c4ffc2e9a933ed93e
-*** Element info: {Using=css selector, value=tr.row___2FvyH[data-qa='tableRowWrapper-header']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"tr.row___2FvyH[data-qa='tableRowWrapper-header']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: 'fe80:0:0:0:c4e:7b5d:3074:8757%en0', os.name: 'Mac OS X', os.arch: 'amd64', os.version: '10.14.5', java.version: '1.8.0_212'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64471}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: ab744842e876f52c4ffc2e9a933ed93e
-*** Element info: {Using=css selector, value=tr.row___2FvyH[data-qa='tableRowWrapper-header']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.getLocation(Unknown Source)
-at com.test.TC_05_Sumo.UI.ID_01_Promotions.checkTable(ID_01_Promotions.java:163)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:813)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="checkTable()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="checkTable" duration-ms="196" started-at="2019-07-19T15:48:21Z" finished-at="2019-07-19T15:48:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTable -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28]" name="report" is-config="true" duration-ms="1533" started-at="2019-07-18T16:15:33Z" finished-at="2019-07-18T16:15:35Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28]" name="report" is-config="true" duration-ms="1" started-at="2019-07-19T15:48:21Z" finished-at="2019-07-19T15:48:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkTable status=FAILURE method=ID_01_Promotions.checkTable()[pri:0, instance:com.test.TC_05_Sumo.UI.ID_01_Promotions@c3850d28] output={null}]]]>
+                <![CDATA[[TestResult name=checkTable status=SUCCESS method=ID_01_Promotions.checkTable()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@23051d28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-      </class> <!-- com.test.TC_05_Sumo.UI.ID_01_Promotions -->
-      <class name="com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin">
-        <test-method status="PASS" signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@db0385b6]" name="externalLogin" duration-ms="1199" started-at="2019-07-18T16:15:15Z" finished-at="2019-07-18T16:15:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- externalLogin -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@db0385b6]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-18T16:15:15Z" finished-at="2019-07-18T16:15:15Z">
+      </class> <!-- com.test.uat.TC_02_Sumo.UI.ID_01_Promotions -->
+      <class name="com.test.uat.TC_01_Bet.ID_05_GetBetStatus">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@c74f60f3]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-19T15:48:06Z" finished-at="2019-07-19T15:48:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@db0385b6]" name="report" is-config="true" duration-ms="4" started-at="2019-07-18T16:15:17Z" finished-at="2019-07-18T16:15:17Z">
+        <test-method status="PASS" signature="getBetStatus(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@c74f60f3]" name="getBetStatus" duration-ms="706" started-at="2019-07-19T15:48:06Z" finished-at="2019-07-19T15:48:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=externalLogin status=SUCCESS method=ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin@db0385b6] output={null}]]]>
+                <![CDATA[public void com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBetStatus -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@c74f60f3]" name="report" is-config="true" duration-ms="2" started-at="2019-07-19T15:48:07Z" finished-at="2019-07-19T15:48:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getBetStatus status=SUCCESS method=ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@c74f60f3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-      </class> <!-- com.test.TC_04_AmelcoAPI.ID_02_ExternalLogin -->
-      <class name="com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@ecf37a26]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-18T16:15:17Z" finished-at="2019-07-18T16:15:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@ecf37a26]" name="getOpenBets" duration-ms="1163" started-at="2019-07-18T16:15:17Z" finished-at="2019-07-18T16:15:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getOpenBets -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@ecf37a26]" name="report" is-config="true" duration-ms="126" started-at="2019-07-18T16:15:18Z" finished-at="2019-07-18T16:15:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getOpenBets status=SUCCESS method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets@ecf37a26] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.TC_04_AmelcoAPI.ID_03_GetOpenBets -->
-      <class name="com.test.TC_04_AmelcoAPI.ID_01_LogIn">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@148af7b8]" name="setup" is-config="true" duration-ms="1694" started-at="2019-07-18T16:15:12Z" finished-at="2019-07-18T16:15:13Z">
+      </class> <!-- com.test.uat.TC_01_Bet.ID_05_GetBetStatus -->
+      <class name="com.test.uat.TC_01_Bet.ID_01_LogIn">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@683d4ac8]" name="setup" is-config="true" duration-ms="1631" started-at="2019-07-19T15:47:59Z" finished-at="2019-07-19T15:48:00Z">
           <params>
             <param index="0">
               <value>
@@ -418,41 +147,97 @@ at java.lang.Thread.run(Thread.java:813)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@148af7b8]" name="startTest" is-config="true" duration-ms="129" started-at="2019-07-18T16:15:13Z" finished-at="2019-07-18T16:15:13Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@683d4ac8]" name="startTest" is-config="true" duration-ms="126" started-at="2019-07-19T15:48:00Z" finished-at="2019-07-19T15:48:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@148af7b8]" name="loginRam" duration-ms="1800" started-at="2019-07-18T16:15:14Z" finished-at="2019-07-18T16:15:15Z">
+        <test-method status="PASS" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@683d4ac8]" name="loginRam" duration-ms="2862" started-at="2019-07-19T15:48:01Z" finished-at="2019-07-19T15:48:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.TC_04_AmelcoAPI.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginRam -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@148af7b8]" name="report" is-config="true" duration-ms="29" started-at="2019-07-18T16:15:15Z" finished-at="2019-07-18T16:15:15Z">
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@683d4ac8]" name="report" is-config="true" duration-ms="15" started-at="2019-07-19T15:48:03Z" finished-at="2019-07-19T15:48:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@148af7b8] output={null}]]]>
+                <![CDATA[[TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@683d4ac8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@148af7b8]" name="clearXml" is-config="true" duration-ms="1" started-at="2019-07-18T16:15:35Z" finished-at="2019-07-18T16:15:35Z">
+        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@683d4ac8]" name="clearXml" is-config="true" duration-ms="1" started-at="2019-07-19T15:48:21Z" finished-at="2019-07-19T15:48:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXml -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.TC_04_AmelcoAPI.ID_01_LogIn@148af7b8]" name="tearDown" is-config="true" duration-ms="678" started-at="2019-07-18T16:15:35Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-07-18T16:15:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@683d4ac8]" name="tearDown" is-config="true" duration-ms="477" started-at="2019-07-19T15:48:21Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-07-19T15:48:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.test.TC_04_AmelcoAPI.ID_01_LogIn -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_01_LogIn -->
+      <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@bbb98a39]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-19T15:48:03Z" finished-at="2019-07-19T15:48:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@bbb98a39]" name="externalLogin" duration-ms="1017" started-at="2019-07-19T15:48:03Z" finished-at="2019-07-19T15:48:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- externalLogin -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@bbb98a39]" name="report" is-config="true" duration-ms="4" started-at="2019-07-19T15:48:04Z" finished-at="2019-07-19T15:48:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=externalLogin status=SUCCESS method=ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@bbb98a39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_02_ExternalLogin -->
+      <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@90cb66ba]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-19T15:48:04Z" finished-at="2019-07-19T15:48:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@90cb66ba]" name="getOpenBets" duration-ms="1083" started-at="2019-07-19T15:48:04Z" finished-at="2019-07-19T15:48:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOpenBets -->
+        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@90cb66ba]" name="report" is-config="true" duration-ms="113" started-at="2019-07-19T15:48:06Z" finished-at="2019-07-19T15:48:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getOpenBets status=SUCCESS method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@90cb66ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_03_GetOpenBets -->
     </test> <!-- TC_01_Example -->
   </suite> <!-- TC_001 -->
 </testng-results>

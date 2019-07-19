@@ -10,12 +10,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
-import java.net.URI;
 
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
-import static com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.accessToken;
+import static com.test.examples.TC_02_Example_HttpClient.Fly.ID_01_AccessToken.accessToken;
 
 public class HttpClient_GET extends BasicSetup {
 

@@ -10,7 +10,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import static com.setup.ExtentManager.test;
-import static com.test.TC_05_Sumo.UI.ID_01_Promotions.*;
+import static com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.*;
 
 
 public class GetImageCompare extends BasicSetup {

@@ -13,61 +13,61 @@
 
         <classes>
 
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_01_AccessToken">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_01_AccessToken">
             <methods>
                 <include name="getAccessToken"/>
             </methods>
         </class>
 
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser">
             <methods>
                 <include name="registerUser"/>
             </methods>
         </class>
 
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_03_Authenticate">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_03_Authenticate">
             <methods>
                 <include name="authentication"/>
             </methods>
         </class>
             
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_04_SignIn">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_04_SignIn">
             <methods>
                 <include name="signIn"/>
             </methods>
         </class>
 
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo">
             <methods>
                 <include name="addInfo"/>
             </methods>
         </class>
 
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_06_UserInfo">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_06_UserInfo">
             <methods>
                 <include name="getUserObject"/>
             </methods>
         </class>
 
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_07_Business">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_07_Business">
             <methods>
                 <include name="getBusiness"/>
             </methods>
         </class>
 
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_08_Menu">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_08_Menu">
             <methods>
                 <include name="getMenu"/>
             </methods>
         </class>
 
-        <class name="com.test.TC_02_Example_HttpClient.Fly.ID_09_Order">
+        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_09_Order">
             <methods>
                 <include name="setOrder"/>
             </methods>
         </class>
 
-            <class name="com.test.TC_03_Example_UI.ID_01_OpenCart">
+            <class name="com.test.examples.TC_03_Example_UI.ID_01_OpenCart">
                 <methods>
                     <include name="openHomePage"/>
                     <include name="searchItem"/>
