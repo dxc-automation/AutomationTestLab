@@ -9,12 +9,16 @@
 Automation testing environment that can be used for writing functional and non-functional tests. The project is based on Java, TestNG and Maven.
 It is also flexible and can be quickly refactored to work with desktop or mobile devices. 
 </p>
-Framework advantages:
 
-* Code for UI and API tests can be in one project.
+<b>Framework advantages:</b>
+<br> [1] Code for UI and API tests can be in one project.
+<br> [2] Working with three different libraries for API testing.
+<br> [3] Easy refactoring for test executing on real device.
+<br> [4] Full test report.
+<br> [5] Templates for fast and easy tests writing.
 
-It is also flexible and can be quickly refactored to work with desktop or mobile devices. 
-</p>
+
+
 
 ### Requirements 
 
