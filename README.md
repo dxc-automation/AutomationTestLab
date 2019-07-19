@@ -7,23 +7,24 @@
 ### Description
 <p align="justify">
 Automation testing environment that can be used for writing functional and non-functional tests. The project is based on Java, TestNG and Maven.
-<br/>
+It is also flexible and can be quickly refactored to work with desktop or mobile devices. 
+</p>
 Framework advantages:
-<ol start="1">
-<li>Code for UI and API tests can be in one project.</li>
+
+* Code for UI and API tests can be in one project.
 
 It is also flexible and can be quickly refactored to work with desktop or mobile devices. 
 </p>
 
 ### Requirements 
 
-* [JDK](https://www.oracle.com/technetwork/java/javaee/downloads/jdk8-downloads-2133151.html) - my suggestion is to use JDK 8
-* [Maven](https://maven.apache.org/download.cgi) - latest version
-* [Appium](http://appium.io/) - in case to write tests for mobile devices
-* [Node.js](https://nodejs.org/) - latest stable version
-* [npm](https://www.npmjs.com/get-npm) - latest version
-* [WebDriver](https://www.seleniumhq.org/docs/03_webdriver.jsp)
-* [TestNG](https://mvnrepository.com/artifact/org.testng/testng)
+- [JDK](https://www.oracle.com/technetwork/java/javaee/downloads/jdk8-downloads-2133151.html) - my suggestion is to use JDK 8
+- [Maven](https://maven.apache.org/download.cgi) - latest version
+- [Appium](http://appium.io/) - in case to write tests for mobile devices
+- [Node.js](https://nodejs.org/) - latest stable version
+- [npm](https://www.npmjs.com/get-npm) - latest version
+- [WebDriver](https://www.seleniumhq.org/docs/03_webdriver.jsp)
+- [TestNG](https://mvnrepository.com/artifact/org.testng/testng)
 
 
 *****
