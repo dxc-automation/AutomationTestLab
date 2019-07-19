@@ -104,5 +104,14 @@ public class ID_04_PlaceBet extends BasicSetup {
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
         betSlipId = JsonPath.read(object, "$.PlaceBetsResponse.betSlipId");
+
+        /*** Add key values that we take from the response. ***/
+        test.pass("<pre>"
+                + "[ KEYS ]"
+                + "<br />"
+                + "\n betSlipId = " + betSlipId
+                + "<br />"
+                + "<br />"
+                + "</pre>");
     }
 }

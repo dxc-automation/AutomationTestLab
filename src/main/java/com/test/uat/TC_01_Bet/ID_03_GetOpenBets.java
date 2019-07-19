@@ -108,6 +108,23 @@ public class ID_03_GetOpenBets extends BasicSetup {
         partNo = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].partNo");
         fractional = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.fractional");
         decimal = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.decimal");
+
+        /*** Add key values that we take from the response. ***/
+        test.pass("<pre>"
+                + "[ KEYS ]"
+                + "<br />"
+                + "\n selectionId = "   + selectionId
+                + "\n accountId = "     + accountId
+                + "\n winType = "       + winType
+                + "\n type = "          + type
+                + "\n amount = "        + amount
+                + "\n currency = "      + currency
+                + "\n partNo = "        + partNo
+                + "\n fractional = "    + fractional
+                + "\n decimal = "       + decimal
+                + "<br />"
+                + "<br />"
+                + "</pre>");
     }
 }
 

@@ -94,5 +94,14 @@ public class ID_02_ExternalLogin extends BasicSetup {
         sessionToken = JsonPath.read(response, "$.Login.sessionToken");
         Assert.assertNotNull(sessionToken);
 
+        /*** Add key values that we take from the response. ***/
+        test.pass("<pre>"
+                + "[ KEYS ]"
+                + "<br />"
+                + "\n sessionToken = " + sessionToken
+                + "<br />"
+                + "<br />"
+                + "</pre>");
+
     }
 }

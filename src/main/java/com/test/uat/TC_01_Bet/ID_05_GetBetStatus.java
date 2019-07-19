@@ -41,7 +41,7 @@ public class ID_05_GetBetStatus extends BasicSetup {
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData);
+        httpPost(fileName, url, jsonPostData).addHeader("Origin", "https://walletapi.uat.pyr");
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

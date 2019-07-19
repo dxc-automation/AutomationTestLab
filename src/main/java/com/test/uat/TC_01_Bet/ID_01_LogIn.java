@@ -97,5 +97,18 @@ public class ID_01_LogIn extends BasicSetup {
                      site = Integer.parseInt(cookie.getValue());
                 }
         }
+
+        /*** Add key values that we take from the response. ***/
+        test.pass("<pre>"
+                + "[ KEYS ]"
+                + "<br />"
+                + "\n externalToken = " + externalToken
+                + "\n signature = " + signature
+                + "\n webId = " + webId
+                + "\n lsrc = " + lsrc
+                + "\n site = " + site
+                + "<br />"
+                + "<br />"
+                + "</pre>");
     }
 }
