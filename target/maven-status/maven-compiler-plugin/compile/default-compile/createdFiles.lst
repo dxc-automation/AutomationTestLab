@@ -32,6 +32,7 @@ com/constants/Accounts.class
 com/test/temp/OkHttpClient_GET.class
 com/setup/GetImageCompare.class
 com/test/uat/TC_01_Bet/ID_01_LogIn.class
+com/test/uat/TC_01_Bet/ID_08_GetSportsTree.class
 com/test/temp/OkHttpClient_POST.class
 com/test/uat/TC_02_Sumo/UI/ID_01_Promotions.class
 com/test/uat/TC_01_Bet/ID_02_ExternalLogin.class

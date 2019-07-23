@@ -36,8 +36,8 @@ public class ConsoleRunner {
 
         // Get value of the property
         String testXml = properties.getProperty("xml");
-        scheme = properties.getProperty(scheme);
-        host = properties.getProperty(host);
+        scheme = properties.getProperty("scheme");
+        host = properties.getProperty("host");
         inputStream.close();
 
         // Source file
