@@ -22,9 +22,10 @@ import static com.setup.BasicSetup.filePath;
 
 public class ConsoleRunner {
 
-    public static File xmlFile;
-    public static String scheme;
     public static String host;
+    public static String scheme;
+    public static File   xmlFile;
+    private static String testXml;
 
 
     public static void main(String[] args) throws Exception {
@@ -35,7 +36,7 @@ public class ConsoleRunner {
         properties.load(inputStream);
 
         // Get value of the property
-        String testXml = properties.getProperty("xml");
+        testXml = properties.getProperty("xml");
         scheme = properties.getProperty("scheme");
         host = properties.getProperty("host");
         inputStream.close();
