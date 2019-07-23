@@ -14,13 +14,16 @@ import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
+import static com.setup.ConsoleRunner.*;
+
+
 
 public class ID_05_GetBetStatus extends BasicSetup {
 
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[REST/SOAP] TEST NAME", "DESCRIPTION");
+        test = extent.createTest("[ID_05] Get Bet Status", "DESCRIPTION");
         test.assignAuthor("YOUR NAME");
         test.assignCategory("HttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
@@ -29,7 +32,7 @@ public class ID_05_GetBetStatus extends BasicSetup {
     @Test
     public void getBetStatus(Method testMethod) throws Exception {
         url = new URIBuilder()
-                .setScheme("https")
+                .setScheme(scheme)
                 .setHost("walletapi.uat.pyr")
                 .setPath("/PsAmelcoApi/getBetStatus")
                 .build();
@@ -55,7 +58,7 @@ public class ID_05_GetBetStatus extends BasicSetup {
                 + "<br />"
                 + "Path:    "      + requestPath
                 + "<br />"
-                + "\n"
+                + "<br />"
                 + getPostRequestHeaders().replace(", ", "\n")
                 + "<br />"
                 + "<br />"

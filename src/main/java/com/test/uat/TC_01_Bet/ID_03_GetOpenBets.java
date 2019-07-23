@@ -20,6 +20,7 @@ import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
+import static com.setup.ConsoleRunner.*;
 
 public class ID_03_GetOpenBets extends BasicSetup {
 
@@ -58,8 +59,8 @@ public class ID_03_GetOpenBets extends BasicSetup {
                 .build();
 
         url = new URIBuilder()
-                .setScheme("https")
-                .setHost("sports.uat.pyr")
+                .setScheme(scheme)
+                .setHost(host)
                 .setPath("/sportsbook/v1/api/getOpenBets")
                 .build();
 

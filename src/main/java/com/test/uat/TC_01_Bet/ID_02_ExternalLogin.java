@@ -14,12 +14,14 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
+import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.jsonObjectResponse;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
+import static com.setup.ConsoleRunner.host;
 
 
 public class ID_02_ExternalLogin extends BasicSetup {
@@ -52,8 +54,8 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 .build();
 
         url = new URIBuilder()
-                .setScheme("https")
-                .setHost("sports.uat.pyr")
+                .setScheme(scheme)
+                .setHost(host)
                 .setPath("/sportsbook/v1/api/externalLogin")
                 .build();
 

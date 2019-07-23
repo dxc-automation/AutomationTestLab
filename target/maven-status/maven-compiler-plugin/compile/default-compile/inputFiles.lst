@@ -1,4 +1,5 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/pages/SumoPromotionsPage.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_01_Example_URLConnection/ID_02_CreateSession.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_02_Example_HttpClient/Fly/ID_09_Order.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.java
@@ -25,6 +26,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/TestNGListener.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_01_Example_URLConnection/ID_01_AccessToken.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/BasicSetup.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/HttpClientUtils.java

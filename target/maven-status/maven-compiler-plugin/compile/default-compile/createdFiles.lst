@@ -17,6 +17,7 @@ com/test/examples/TC_01_Example_URLConnection/ID_03_SignIn.class
 com/test/examples/TC_02_Example_HttpClient/PayPal/ID_02_Test.class
 com/test/uat/TC_02_Sumo/API/ID_01_PromotionsPage.class
 com/test/uat/TC_01_Bet/ID_04_PlaceBet.class
+com/test/uat/TC_01_Bet/ID_07_Cashout.class
 com/setup/ExtentManager.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.class
@@ -25,6 +26,7 @@ com/test/examples/TC_02_Example_HttpClient/Fly/ID_08_Menu.class
 com/pages/SumoLoginPage.class
 com/test/examples/TC_02_Example_HttpClient/PayPal/ID_01_Token.class
 com/setup/BasicSetup.class
+com/test/uat/TC_01_Bet/ID_06_CalculateCashout.class
 com/test/examples/TC_03_Example_UI/ID_02_AddToCart.class
 com/constants/Accounts.class
 com/test/temp/OkHttpClient_GET.class

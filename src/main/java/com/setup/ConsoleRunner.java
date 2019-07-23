@@ -23,6 +23,8 @@ import static com.setup.BasicSetup.filePath;
 public class ConsoleRunner {
 
     public static File xmlFile;
+    public static String scheme;
+    public static String host;
 
 
     public static void main(String[] args) throws Exception {
@@ -34,6 +36,8 @@ public class ConsoleRunner {
 
         // Get value of the property
         String testXml = properties.getProperty("xml");
+        scheme = properties.getProperty(scheme);
+        host = properties.getProperty(host);
         inputStream.close();
 
         // Source file

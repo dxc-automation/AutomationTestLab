@@ -21,6 +21,8 @@ import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 import static com.test.uat.TC_01_Bet.ID_03_GetOpenBets.*;
+import static com.setup.ConsoleRunner.*;
+
 
 
 public class ID_04_PlaceBet extends BasicSetup {
@@ -59,8 +61,8 @@ public class ID_04_PlaceBet extends BasicSetup {
                 .build();
 
         url = new URIBuilder()
-                .setScheme("https")
-                .setHost("sports.uat.pyr")
+                .setScheme(scheme)
+                .setHost(host)
                 .setPath("/sportsbook/v1/api/placeBets")
                 .build();
 
