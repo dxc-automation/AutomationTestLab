@@ -7,36 +7,16 @@
   </listeners>
   <test thread-count="5" verbose="10" name="TC_01_Example(failed)" parallel="tests">
     <classes>
-      <class name="com.test.uat.TC_01_Bet.ID_07_Cashout">
+      <class name="com.test.uat.TC_01_Bet.ID_08_GetSportsTree">
         <methods>
           <include name="report"/>
           <include name="setup"/>
-          <include name="betCashout" invocation-numbers="0"/>
           <include name="clearXml"/>
           <include name="tearDown"/>
+          <include name="getSportsTree" invocation-numbers="0"/>
           <include name="startTest"/>
         </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_07_Cashout -->
-      <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
-        <methods>
-          <include name="report"/>
-          <include name="getOpenBets" invocation-numbers="0"/>
-          <include name="setup"/>
-          <include name="clearXml"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_03_GetOpenBets -->
-      <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
-        <methods>
-          <include name="startTest"/>
-          <include name="report"/>
-          <include name="placeBet" invocation-numbers="0"/>
-          <include name="setup"/>
-          <include name="clearXml"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_04_PlaceBet -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_08_GetSportsTree -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

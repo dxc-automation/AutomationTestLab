@@ -49,6 +49,12 @@
             </methods>
         </class>
 
+        <class name="com.test.uat.TC_01_Bet.ID_08_GetSportsTree">
+            <methods>
+                <include name="getSportsTree"/>
+            </methods>
+        </class>
+
         <class name="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions">
             <methods>
                 <include name="openSumoHomePage"/>

@@ -47,13 +47,15 @@ public class ID_08_GetSportsTree extends BasicSetup {
     }
 
     @Test
-    public void getOpenBets(Method testMethod) throws Exception {
+    public void getSportsTree(Method testMethod) throws Exception {
 
         String fileName = testMethod.getName() + ".json";
 
         RequestBody requestBody = new FormBody.Builder()
                 .add("sessionToken", sessionToken)
-                .add("excludeChildBets", "true")
+                .add("sport", "SOCCER")
+                .add("includeOutrights", "true")
+                .add("includeEvents", "true")
                 .add("locale", "en-gb")
                 .add("siteId", String.valueOf(site))
                 .add("channelId", "6")
