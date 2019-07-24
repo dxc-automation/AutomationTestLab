@@ -8,6 +8,8 @@ import okhttp3.MediaType;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -75,6 +77,9 @@ public class ID_07_Cashout extends BasicSetup {
                 .build();
 
         okClientRequest(fileName, request);
+
+        JSONObject jsonBody = (JSONObject) JSONValue.parse(requestBody.toString());
+        System.out.println("\n JSON \n" + jsonBody);
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

@@ -1,7 +1,6 @@
 package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
-import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import okhttp3.FormBody;
@@ -102,33 +101,6 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 + "</pre>");
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-
-        selectionId = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].selectionId");
-        accountId = JsonPath.read(object, "$.Bets.bet[0].accountId");
-        winType = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].winType");
-        type = JsonPath.read(object, "$.Bets.bet[0].type");
-        amount = JsonPath.read(object, "$.Bets.bet[0].stake.amount");
-        currency = JsonPath.read(object, "$.Bets.bet[0].stake.currency");
-        partNo = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].partNo");
-        fractional = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.fractional");
-        decimal = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.decimal");
-
-        /*** Add key values that we take from the response. ***/
-        test.pass("<pre>"
-                + "[ KEYS ]"
-                + "<br />"
-                + "\n selectionId = "   + selectionId
-                + "\n accountId = "     + accountId
-                + "\n winType = "       + winType
-                + "\n type = "          + type
-                + "\n amount = "        + amount
-                + "\n currency = "      + currency
-                + "\n partNo = "        + partNo
-                + "\n fractional = "    + fractional
-                + "\n decimal = "       + decimal
-                + "<br />"
-                + "<br />"
-                + "</pre>");
     }
 }
 

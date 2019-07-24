@@ -13,6 +13,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import static com.setup.HttpClientUtils.*;
 
@@ -30,7 +31,7 @@ public class OkHttpClientUtils extends BasicSetup {
     public static String query;
     public static Request request;
 
-    public static OkHttpClient okHttpClient = new OkHttpClient();
+    public static OkHttpClient okHttpClient;
     public static Response okServerResponse;
     public static File file;
 
@@ -38,6 +39,12 @@ public class OkHttpClientUtils extends BasicSetup {
 
     public static OkHttpClient okClientRequest(String fileName, Request request) throws Exception {
         file = new File(filePath + "/" + "report/JSON/" + fileName);
+
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        builder.callTimeout(5000, TimeUnit.MILLISECONDS);
+        builder.readTimeout(5000, TimeUnit.MILLISECONDS);
+
+        okHttpClient = builder.build();
 
         okServerResponse = okHttpClient.newCall(request).execute();
 

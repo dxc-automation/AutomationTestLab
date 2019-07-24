@@ -69,6 +69,8 @@ public class BasicSetup {
 
     static final Logger LOG = LogManager.getLogger(BasicSetup.class);
 
+
+    
         public void takeScreenshot (WebDriver driver, String name){
             screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
@@ -77,6 +79,13 @@ public class BasicSetup {
                 e.printStackTrace();
             }
         }
+
+        @BeforeSuite
+        public void cleanResponseData() throws Exception{
+            FileUtils.cleanDirectory(new File(filePath + "/report/JSON"));
+        }
+
+
 
         //  Launch web browser
         @Parameters({"browser"})

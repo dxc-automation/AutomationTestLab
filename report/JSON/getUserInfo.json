@@ -1,8 +1,0 @@
-{
-    "name": "AUTHENTICATION_FAILURE",
-    "links": [{
-        "rel": "information_link",
-        "href": "https://developer.paypal.com/docs/api/overview/#error"
-    }],
-    "message": "Authentication failed due to invalid authentication credentials or a missing Authorization header."
-}
