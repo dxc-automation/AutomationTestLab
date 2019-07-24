@@ -7,20 +7,39 @@
   </listeners>
   <test thread-count="5" verbose="10" name="TC_01_Example(failed)" parallel="tests">
     <classes>
-      <class name="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions">
+      <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
         <methods>
           <include name="report"/>
-          <include name="openSumoHomePage"/>
+          <include name="getOpenBets" invocation-numbers="0"/>
           <include name="cleanResponseData"/>
           <include name="setup"/>
-          <include name="checkTable"/>
           <include name="clearXml"/>
-          <include name="startTest"/>
           <include name="tearDown"/>
-          <include name="selectionBtnState"/>
-          <include name="noSelectionBtnState" invocation-numbers="0"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- com.test.uat.TC_02_Sumo.UI.ID_01_Promotions -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_03_GetOpenBets -->
+      <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
+        <methods>
+          <include name="startTest"/>
+          <include name="report"/>
+          <include name="cleanResponseData"/>
+          <include name="placeBet" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="clearXml"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.uat.TC_01_Bet.ID_04_PlaceBet -->
+      <class name="com.test.uat.TC_01_Bet.ID_07_Cashout">
+        <methods>
+          <include name="report"/>
+          <include name="cleanResponseData"/>
+          <include name="betCashout" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="clearXml"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.test.uat.TC_01_Bet.ID_07_Cashout -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->
