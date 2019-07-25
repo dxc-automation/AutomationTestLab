@@ -55,10 +55,6 @@ public class ID_04_PlaceBet extends BasicSetup {
         String jsonBets = gson.toJson(bets);
         System.out.println("\n jsonBets \n" + jsonBets);
 
-        String json = parser.parse(jsonBets).toString();
-        System.out.println("\n JSON \n" + json);
-
-
 
         RequestBody requestBody =  new FormBody.Builder()
                 .add("isSpinAndBet", "false")

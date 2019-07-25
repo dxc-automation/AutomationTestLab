@@ -8,13 +8,13 @@ import okhttp3.MediaType;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONValue;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
+import static com.setup.ConsoleRunner.host;
+import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
@@ -24,7 +24,6 @@ import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 import static com.test.uat.TC_01_Bet.ID_03_GetOpenBets.accountId;
 import static com.test.uat.TC_01_Bet.ID_03_GetOpenBets.selectionId;
 import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
-import static com.setup.ConsoleRunner.*;
 
 
 
@@ -78,8 +77,8 @@ public class ID_07_Cashout extends BasicSetup {
 
         okClientRequest(fileName, request);
 
-        JSONObject jsonBody = (JSONObject) JSONValue.parse(requestBody.toString());
-        System.out.println("\n JSON \n" + jsonBody);
+        Object object = parser.parse(requestBody.toString());
+        System.out.println(object);
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"
