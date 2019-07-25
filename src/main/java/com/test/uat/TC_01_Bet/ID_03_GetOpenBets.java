@@ -21,6 +21,8 @@ import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
 import static com.setup.ConsoleRunner.*;
+import static com.constants.API.*;
+
 
 public class ID_03_GetOpenBets extends BasicSetup {
 
@@ -61,7 +63,7 @@ public class ID_03_GetOpenBets extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath("/sportsbook/v1/api/getOpenBets")
+                .setPath(get_open_bets)
                 .build();
 
         request = new Request.Builder()
@@ -94,7 +96,8 @@ public class ID_03_GetOpenBets extends BasicSetup {
                 + "[ REQUEST  BODY ]"
                 + "<br />"
                 + "<br />"
-                + requestBodyToString(requestBody)
+                + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
+                + "<br />"
                 + "<br />"
                 + "</pre>");
 

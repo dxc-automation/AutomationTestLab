@@ -19,6 +19,7 @@ import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
+import static com.constants.API.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 import static com.test.uat.TC_01_Bet.ID_03_GetOpenBets.accountId;
@@ -59,7 +60,7 @@ public class ID_07_Cashout extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath("/sportsbook/v1/api/cashoutBet")
+                .setPath(cashout)
                 .build();
 
         request = new Request.Builder()
@@ -77,8 +78,7 @@ public class ID_07_Cashout extends BasicSetup {
 
         okClientRequest(fileName, request);
 
-        Object object = parser.parse(requestBody.toString());
-        System.out.println(object);
+        System.out.println(requestBody);
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"
@@ -99,7 +99,8 @@ public class ID_07_Cashout extends BasicSetup {
                 + "[ REQUEST  BODY ]"
                 + "<br />"
                 + "<br />"
-                + requestBodyToString(requestBody)
+                + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
+                + "<br />"
                 + "<br />"
                 + "</pre>");
     }

@@ -82,7 +82,7 @@ public class OkHttpClient_POST extends BasicSetup {
                 + "[ REQUEST  BODY ]"
                 + "<br />"
                 + "<br />"
-                + requestBodyToString(requestBody)
+                + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
                 + "<br />"
                 + "</pre>");
     }

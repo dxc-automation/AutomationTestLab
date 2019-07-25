@@ -21,6 +21,8 @@ import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
+import static com.constants.API.*;
+
 
 public class ID_08_GetSportsTree extends BasicSetup {
 
@@ -63,7 +65,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath("/sportsbook/v1/api/getSportTree")
+                .setPath(get_sports_tree)
                 .build();
 
         request = new Request.Builder()
@@ -96,7 +98,8 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 + "[ REQUEST  BODY ]"
                 + "<br />"
                 + "<br />"
-                + requestBodyToString(requestBody)
+                + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
+                + "<br />"
                 + "<br />"
                 + "</pre>");
 

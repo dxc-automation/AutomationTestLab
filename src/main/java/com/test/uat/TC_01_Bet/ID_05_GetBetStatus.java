@@ -15,6 +15,8 @@ import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
 import static com.setup.ConsoleRunner.*;
+import static com.constants.API.*;
+
 
 
 
@@ -34,7 +36,7 @@ public class ID_05_GetBetStatus extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost("walletapi.uat.pyr")
-                .setPath("/PsAmelcoApi/getBetStatus")
+                .setPath(get_bet_status)
                 .build();
 
 
