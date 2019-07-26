@@ -1,18 +1,22 @@
 package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
+import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import okhttp3.FormBody;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.FileReader;
 import java.lang.reflect.Method;
 
+import static com.constants.API.get_sports_tree;
 import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
@@ -21,21 +25,11 @@ import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
-import static com.constants.API.*;
 
 
 public class ID_08_GetSportsTree extends BasicSetup {
 
-    public static Long   selectionId;
-    public static Long   accountId;
-    public static String type;
-    public static String winType;
-    public static Long   amount;
-    public static String currency;
-    public static Long   partNo;
-    public static Double decimal;
-    public static String fractional;
-
+    public static JSONArray bet_1_displayed;
 
 
     @BeforeClass
@@ -104,6 +98,10 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 + "</pre>");
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+        JSONObject json = (JSONObject) object;
+        bet_1_displayed = JsonPath.read(json, "$.categories[0].competition[0].event[0]");
+
+        System.out.println(bet_1_displayed);
     }
 }
 

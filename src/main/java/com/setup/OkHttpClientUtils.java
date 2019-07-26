@@ -41,8 +41,9 @@ public class OkHttpClientUtils extends BasicSetup {
         file = new File(filePath + "/" + "report/JSON/" + fileName);
 
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
-        builder.callTimeout(10000, TimeUnit.MILLISECONDS);
-        builder.readTimeout(10000, TimeUnit.MILLISECONDS);
+        builder.callTimeout(20, TimeUnit.SECONDS);
+        builder.readTimeout(20, TimeUnit.SECONDS);
+        builder.connectTimeout(20, TimeUnit.SECONDS);
 
         okHttpClient = builder.build();
 

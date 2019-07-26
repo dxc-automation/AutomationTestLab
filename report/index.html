@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-TC_001" class="navigator-link">
-              <span class="suite-name border-passed">TC_001</span>
+            <a href="#" class="navigator-link" panel-name="suite-TC_001">
+              <span class="suite-name border-failed">TC_001</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-TC_001">
                     <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-TC_001">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-TC_001">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-TC_001">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-TC_001">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TC_001">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-TC_001">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">11 methods, 4 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TC_001" class="hide-methods failed suite-TC_001"> (hide)</a> <!-- hide-methods failed suite-TC_001 -->
+                      <a href="#" panel-name="suite-TC_001" class="show-methods failed suite-TC_001"> (show)</a> <!-- show-methods failed suite-TC_001 -->
+                    </span>
+                    <div class="method-list-content failed suite-TC_001">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_07_Cashout" hash-for-method="betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...)">betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_03_GetOpenBets" hash-for-method="getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...)">getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_08_GetSportsTree" hash-for-method="getSportsTree(public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throw...)">getSportsTree(public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throw...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_04_PlaceBet" hash-for-method="placeBet(public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lan...)">placeBet(public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lan...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TC_001 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,58 +130,38 @@
                     </span>
                     <div class="method-list-content passed suite-TC_001">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_07_Cashout" class="method navigator-link" hash-for-method="betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...)">betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions" hash-for-method="checkTable">checkTable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions" class="method navigator-link" hash-for-method="checkTable">checkTable</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_02_ExternalLogin" hash-for-method="externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...)">externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_02_ExternalLogin" class="method navigator-link" hash-for-method="externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...)">externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_05_GetBetStatus" hash-for-method="getBetStatus(public void com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method) throws ...)">getBetStatus(public void com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method) throws ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_05_GetBetStatus" class="method navigator-link" hash-for-method="getBetStatus(public void com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method) throws ...)">getBetStatus(public void com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method) throws ...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_01_LogIn" hash-for-method="loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...)">loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_03_GetOpenBets" class="method navigator-link" hash-for-method="getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...)">getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions" hash-for-method="noSelectionBtnState(public void com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method...)">noSelectionBtnState(public void com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_08_GetSportsTree" class="method navigator-link" hash-for-method="getSportsTree(public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throw...)">getSportsTree(public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throw...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions" hash-for-method="openSumoHomePage">openSumoHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_01_LogIn" class="method navigator-link" hash-for-method="loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...)">loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions" class="method navigator-link" hash-for-method="noSelectionBtnState(public void com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method...)">noSelectionBtnState(public void com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions" class="method navigator-link" hash-for-method="openSumoHomePage">openSumoHomePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_01_Bet.ID_04_PlaceBet" class="method navigator-link" hash-for-method="placeBet(public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lan...)">placeBet(public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lan...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions" class="method navigator-link" hash-for-method="selectionBtnState">selectionBtnState</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions" hash-for-method="selectionBtnState">selectionBtnState</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TC_001 -->
@@ -167,41 +176,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TC_001" class="panel TC_001">
-          <div class="suite-TC_001-class-passed">
+          <div class="suite-TC_001-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.uat.TC_01_Bet.ID_03_GetOpenBets</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.test.uat.TC_01_Bet.ID_07_Cashout</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...)">
-                  </a> <!-- getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...) -->
-                  <span class="method-name">getOpenBets</span>
-                  <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <a name="betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...)">
+                  </a> <!-- betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...) -->
+                  <span class="method-name">betCashout</span>
+                  <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
+	at okhttp3.FormBody$Builder.add(FormBody.kt)
+	at com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(ID_07_Cashout.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:813)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TC_001-class-passed -->
-          <div class="suite-TC_001-class-passed">
+          </div> <!-- suite-TC_001-class-failed -->
+          <div class="suite-TC_001-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.uat.TC_01_Bet.ID_01_LogIn</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...)">
-                  </a> <!-- loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...) -->
-                  <span class="method-name">loginRam</span>
-                  <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TC_001-class-passed -->
-          <div class="suite-TC_001-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.test.uat.TC_01_Bet.ID_04_PlaceBet</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -211,13 +229,86 @@
                   </a> <!-- placeBet(public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lan...) -->
                   <span class="method-name">placeBet</span>
                   <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">com.jayway.jsonpath.PathNotFoundException: Missing property in path $[&apos;PlaceBetsResponse&apos;]
+	at com.jayway.jsonpath.internal.path.PathToken.handleObjectProperty(PathToken.java:72)
+	at com.jayway.jsonpath.internal.path.PropertyPathToken.evaluate(PropertyPathToken.java:79)
+	at com.jayway.jsonpath.internal.path.RootPathToken.evaluate(RootPathToken.java:62)
+	at com.jayway.jsonpath.internal.path.CompiledPath.evaluate(CompiledPath.java:53)
+	at com.jayway.jsonpath.internal.path.CompiledPath.evaluate(CompiledPath.java:61)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
+	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
+	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:89)
+	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:488)
+	at com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(ID_04_PlaceBet.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:813)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TC_001-class-passed -->
-          <div class="suite-TC_001-class-passed">
+          </div> <!-- suite-TC_001-class-failed -->
+          <div class="suite-TC_001-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.test.uat.TC_01_Bet.ID_03_GetOpenBets</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...)">
+                  </a> <!-- getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...) -->
+                  <span class="method-name">getOpenBets</span>
+                  <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">java.lang.ClassCastException: java.lang.Double incompatible with java.lang.Long
+	at com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(ID_03_GetOpenBets.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:813)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TC_001-class-failed -->
+          <div class="suite-TC_001-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.test.uat.TC_01_Bet.ID_08_GetSportsTree</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -227,10 +318,71 @@
                   </a> <!-- getSportsTree(public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throw...) -->
                   <span class="method-name">getSportsTree</span>
                   <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.kt:104)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.kt:293)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.kt:257)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:192)
+	at okhttp3.RealCall.execute(RealCall.kt:66)
+	at com.setup.OkHttpClientUtils.okClientRequest(OkHttpClientUtils.java:49)
+	at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:813)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(Okio.kt:102)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:159)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:349)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:222)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readHeaderLine(Http1ExchangeCodec.kt:210)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:181)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:105)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:37)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:84)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:71)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:184)
+	... 23 more
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TC_001-class-passed -->
+          </div> <!-- suite-TC_001-class-failed -->
           <div class="suite-TC_001-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -271,15 +423,15 @@
           <div class="suite-TC_001-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.uat.TC_01_Bet.ID_02_ExternalLogin</span>
+              <span class="class-name">com.test.uat.TC_01_Bet.ID_01_LogIn</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...)">
-                  </a> <!-- externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...) -->
-                  <span class="method-name">externalLogin</span>
-                  <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <a name="loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...)">
+                  </a> <!-- loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...) -->
+                  <span class="method-name">loginRam</span>
+                  <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -303,15 +455,15 @@
           <div class="suite-TC_001-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.test.uat.TC_01_Bet.ID_07_Cashout</span>
+              <span class="class-name">com.test.uat.TC_01_Bet.ID_02_ExternalLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...)">
-                  </a> <!-- betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...) -->
-                  <span class="method-name">betCashout</span>
-                  <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <a name="externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...)">
+                  </a> <!-- externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...) -->
+                  <span class="method-name">externalLogin</span>
+                  <span class="parameters">(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -325,12 +477,12 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite configfailurepolicy=&quot;continue&quot; parallel=&quot;tests&quot; name=&quot;TC_001&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;TC_001&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.setup.TestNGListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TC_01_Example&quot; group-by-instances=&quot;true&quot; verbose=&quot;10&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;10&quot; name=&quot;TC_01_Example&quot; parallel=&quot;tests&quot; group-by-instances=&quot;true&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.uat.TC_01_Bet.ID_01_LogIn&quot;&gt;
         &lt;methods&gt;
@@ -416,54 +568,54 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'noSelectionBtnState')
-data.setCell(0, 2, 'com.test.uat.TC_02_Sumo.UI.ID_01_Promotions')
-data.setCell(0, 3, 5347);
+data.setCell(0, 1, 'getSportsTree')
+data.setCell(0, 2, 'com.test.uat.TC_01_Bet.ID_08_GetSportsTree')
+data.setCell(0, 3, 15006);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'openSumoHomePage')
+data.setCell(1, 1, 'noSelectionBtnState')
 data.setCell(1, 2, 'com.test.uat.TC_02_Sumo.UI.ID_01_Promotions')
-data.setCell(1, 3, 3033);
+data.setCell(1, 3, 6486);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getSportsTree')
-data.setCell(2, 2, 'com.test.uat.TC_01_Bet.ID_08_GetSportsTree')
-data.setCell(2, 3, 2822);
+data.setCell(2, 1, 'openSumoHomePage')
+data.setCell(2, 2, 'com.test.uat.TC_02_Sumo.UI.ID_01_Promotions')
+data.setCell(2, 3, 3049);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getOpenBets')
-data.setCell(3, 2, 'com.test.uat.TC_01_Bet.ID_03_GetOpenBets')
-data.setCell(3, 3, 2474);
+data.setCell(3, 1, 'selectionBtnState')
+data.setCell(3, 2, 'com.test.uat.TC_02_Sumo.UI.ID_01_Promotions')
+data.setCell(3, 3, 2645);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'selectionBtnState')
-data.setCell(4, 2, 'com.test.uat.TC_02_Sumo.UI.ID_01_Promotions')
-data.setCell(4, 3, 2148);
+data.setCell(4, 1, 'loginRam')
+data.setCell(4, 2, 'com.test.uat.TC_01_Bet.ID_01_LogIn')
+data.setCell(4, 3, 1838);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginRam')
-data.setCell(5, 2, 'com.test.uat.TC_01_Bet.ID_01_LogIn')
-data.setCell(5, 3, 1737);
+data.setCell(5, 1, 'getOpenBets')
+data.setCell(5, 2, 'com.test.uat.TC_01_Bet.ID_03_GetOpenBets')
+data.setCell(5, 3, 1570);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'externalLogin')
 data.setCell(6, 2, 'com.test.uat.TC_01_Bet.ID_02_ExternalLogin')
-data.setCell(6, 3, 1171);
+data.setCell(6, 3, 1060);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'placeBet')
-data.setCell(7, 2, 'com.test.uat.TC_01_Bet.ID_04_PlaceBet')
-data.setCell(7, 3, 1095);
+data.setCell(7, 1, 'getBetStatus')
+data.setCell(7, 2, 'com.test.uat.TC_01_Bet.ID_05_GetBetStatus')
+data.setCell(7, 3, 695);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getBetStatus')
-data.setCell(8, 2, 'com.test.uat.TC_01_Bet.ID_05_GetBetStatus')
-data.setCell(8, 3, 851);
+data.setCell(8, 1, 'placeBet')
+data.setCell(8, 2, 'com.test.uat.TC_01_Bet.ID_04_PlaceBet')
+data.setCell(8, 3, 449);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'betCashout')
-data.setCell(9, 2, 'com.test.uat.TC_01_Bet.ID_07_Cashout')
-data.setCell(9, 3, 439);
+data.setCell(9, 1, 'checkTable')
+data.setCell(9, 2, 'com.test.uat.TC_02_Sumo.UI.ID_01_Promotions')
+data.setCell(9, 3, 185);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'checkTable')
-data.setCell(10, 2, 'com.test.uat.TC_02_Sumo.UI.ID_01_Promotions')
-data.setCell(10, 3, 141);
+data.setCell(10, 1, 'betCashout')
+data.setCell(10, 2, 'com.test.uat.TC_01_Bet.ID_07_Cashout')
+data.setCell(10, 3, 1);
 window.suiteTableData['TC_001']= { tableData: data, tableDiv: 'times-div-TC_001'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-TC_001">
               </div> <!-- times-div-TC_001 -->
             </div> <!-- times-div -->
@@ -482,7 +634,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.uat.TC_01_Bet.ID_03_GetOpenBets</span>
+              <span class="ignored-class-name">com.test.uat.TC_02_Sumo.UI.ID_01_Promotions</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">cleanResponseData</span>
+                <br/>
+                <span class="ignored-method-name">setup</span>
+                <br/>
+                <span class="ignored-method-name">clearXml</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.test.uat.TC_01_Bet.ID_07_Cashout</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">cleanResponseData</span>
                 <br/>
@@ -508,20 +673,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.uat.TC_01_Bet.ID_08_GetSportsTree</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">cleanResponseData</span>
-                <br/>
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">clearXml</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.uat.TC_02_Sumo.UI.ID_01_Promotions</span>
+              <span class="ignored-class-name">com.test.uat.TC_01_Bet.ID_05_GetBetStatus</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">cleanResponseData</span>
                 <br/>
@@ -547,7 +699,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.uat.TC_01_Bet.ID_05_GetBetStatus</span>
+              <span class="ignored-class-name">com.test.uat.TC_01_Bet.ID_03_GetOpenBets</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">cleanResponseData</span>
                 <br/>
@@ -560,7 +712,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.test.uat.TC_01_Bet.ID_07_Cashout</span>
+              <span class="ignored-class-name">com.test.uat.TC_01_Bet.ID_08_GetSportsTree</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">cleanResponseData</span>
                 <br/>
@@ -587,159 +739,167 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">7 ms</span>
+                <span class="method-start">10 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">2073 ms</span>
+                <span class="method-start">1933 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginRam(public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.E...)</span>
-                <span class="method-start">2217 ms</span>
+                <span class="method-start">2047 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0...)</span>
-                <span class="method-start">3954 ms</span>
+                <span class="method-start">3886 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.uat.TC_01_Bet.ID_02_ExternalLogin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">3967 ms</span>
+                <span class="method-start">3924 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">externalLogin(public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throw...)</span>
-                <span class="method-start">3967 ms</span>
+                <span class="method-start">3925 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=externalLogin status=SUCCESS method=ID_02_ExternalLogin.externalLogin(java.lang.ref...)</span>
-                <span class="method-start">5138 ms</span>
+                <span class="method-start">4986 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.uat.TC_01_Bet.ID_03_GetOpenBets</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">5141 ms</span>
+                <span class="method-start">4989 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">getOpenBets(public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws ja...)</span>
-                <span class="method-start">5141 ms</span>
+                <span class="method-start">4990 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">report([TestResult name=getOpenBets status=SUCCESS method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.M...)</span>
-                <span class="method-start">7615 ms</span>
+                <span class="method-name">report([TestResult name=getOpenBets status=FAILURE method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.M...)</span>
+                <span class="method-start">6561 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.uat.TC_01_Bet.ID_04_PlaceBet</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">7699 ms</span>
+                <span class="method-start">6728 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">placeBet(public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lan...)</span>
-                <span class="method-start">7699 ms</span>
+                <span class="method-start">6729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">report([TestResult name=placeBet status=SUCCESS method=ID_04_PlaceBet.placeBet(java.lang.reflect.Method)[pr...)</span>
-                <span class="method-start">8795 ms</span>
+                <span class="method-name">report([TestResult name=placeBet status=FAILURE method=ID_04_PlaceBet.placeBet(java.lang.reflect.Method)[pr...)</span>
+                <span class="method-start">7178 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.uat.TC_01_Bet.ID_05_GetBetStatus</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">8798 ms</span>
+                <span class="method-start">7182 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">getBetStatus(public void com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method) throws ...)</span>
-                <span class="method-start">8799 ms</span>
+                <span class="method-start">7182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=getBetStatus status=SUCCESS method=ID_05_GetBetStatus.getBetStatus(java.lang.reflec...)</span>
-                <span class="method-start">9650 ms</span>
+                <span class="method-start">7878 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.uat.TC_01_Bet.ID_07_Cashout</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">9652 ms</span>
+                <span class="method-start">7880 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">betCashout(public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.la...)</span>
-                <span class="method-start">9652 ms</span>
+                <span class="method-start">7880 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">report([TestResult name=betCashout status=SUCCESS method=ID_07_Cashout.betCashout(java.lang.reflect.Method)...)</span>
-                <span class="method-start">10091 ms</span>
+                <span class="method-name">report([TestResult name=betCashout status=FAILURE method=ID_07_Cashout.betCashout(java.lang.reflect.Method)...)</span>
+                <span class="method-start">7881 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.uat.TC_01_Bet.ID_08_GetSportsTree</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">10093 ms</span>
+                <span class="method-start">8177 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">getSportsTree(public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throw...)</span>
-                <span class="method-start">10093 ms</span>
+                <span class="method-start">8177 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">report([TestResult name=getSportsTree status=SUCCESS method=ID_08_GetSportsTree.getSportsTree(java.lang.ref...)</span>
-                <span class="method-start">12915 ms</span>
+                <span class="method-name">report([TestResult name=getSportsTree status=FAILURE method=ID_08_GetSportsTree.getSportsTree(java.lang.ref...)</span>
+                <span class="method-start">23183 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.uat.TC_02_Sumo.UI.ID_01_Promotions</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTest</span>
-                <span class="method-start">13485 ms</span>
+                <span class="method-start">23465 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">openSumoHomePage</span>
-                <span class="method-start">13485 ms</span>
+                <span class="method-start">23466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=openSumoHomePage status=SUCCESS method=ID_01_Promotions.openSumoHomePage()[pri:0, i...)</span>
-                <span class="method-start">16518 ms</span>
+                <span class="method-start">26516 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">noSelectionBtnState(public void com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method...)</span>
-                <span class="method-start">16519 ms</span>
+                <span class="method-start">26517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=noSelectionBtnState status=SUCCESS method=ID_01_Promotions.noSelectionBtnState(java...)</span>
-                <span class="method-start">21866 ms</span>
+                <span class="method-start">33003 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">selectionBtnState</span>
-                <span class="method-start">21867 ms</span>
+                <span class="method-start">33005 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=selectionBtnState status=SUCCESS method=ID_01_Promotions.selectionBtnState()[pri:0,...)</span>
-                <span class="method-start">24015 ms</span>
+                <span class="method-start">35651 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">checkTable</span>
-                <span class="method-start">24016 ms</span>
+                <span class="method-start">35652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">report([TestResult name=checkTable status=SUCCESS method=ID_01_Promotions.checkTable()[pri:0, instance:com....)</span>
-                <span class="method-start">24158 ms</span>
+                <span class="method-start">35837 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.uat.TC_01_Bet.ID_01_LogIn</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXml</span>
-                <span class="method-start">24174 ms</span>
+                <span class="method-start">35922 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24174 ms</span>
+                <span class="method-start">35922 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
