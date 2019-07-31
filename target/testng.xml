@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TC_001" configfailurepolicy="continue" verbose="10" parallel="tests" thread-count="5">
+
+    <listeners>
+        <listener class-name="com.setup.TestNGListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+
+    <test name="TC_01_Example" group-by-instances="true">
+
+    <classes>
+
+        <class name="com.test.uat.TC_01_Bet.ID_01_LogIn">
+            <methods>
+                <include name="loginRam"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
+            <methods>
+                <include name="externalLogin"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
+            <methods>
+                <include name="getOpenBets"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
+            <methods>
+                <include name="placeBet"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.ID_05_GetBetStatus">
+            <methods>
+                <include name="getBetStatus"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.ID_07_Cashout">
+            <methods>
+                <include name="betCashout"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.ID_08_GetSportsTree">
+            <methods>
+                <include name="getSportsTree"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions">
+            <methods>
+                <include name="openSumoHomePage"/>
+                <include name="noSelectionBtnState"/>
+                <include name="selectionBtnState"/>
+                <include name="checkTable"/>
+            </methods>
+        </class>
+
+    </classes>
+</test>
+</suite>
+
+
+
+

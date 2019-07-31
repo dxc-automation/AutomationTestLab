@@ -27,6 +27,11 @@ public class ConsoleRunner {
     public static File   xmlFile;
     private static String testXml;
 
+    public static String username;
+    public static String password;
+    public static String sign;
+    public static String devIx;
+
 
     public static void main(String[] args) throws Exception {
 
@@ -37,8 +42,13 @@ public class ConsoleRunner {
 
         // Get value of the property
         testXml = properties.getProperty("xml");
-        scheme = properties.getProperty("scheme");
-        host = properties.getProperty("host");
+        scheme  = properties.getProperty("scheme");
+        host    = properties.getProperty("host");
+
+        username  = properties.getProperty("username");
+        password  = properties.getProperty("password");
+        sign      = properties.getProperty("signature");
+        devIx     = properties.getProperty("devIx");
         inputStream.close();
 
         // Source file

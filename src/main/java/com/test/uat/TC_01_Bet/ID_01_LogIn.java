@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import static com.constants.Accounts.*;
+import static com.setup.ConsoleRunner.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
@@ -38,15 +38,15 @@ public class ID_01_LogIn extends BasicSetup {
     public void loginRam(Method testMethod) throws Exception {
         url = new URIBuilder()
                 .setScheme("https")
-                .setHost("ram.uat.pyr")
+                .setHost("ram.qacore.pyr")
                 .setPath("/ram/login")
                 .build();
 
         JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("username", uat1_username);
-        jsonPostData.put("password", uat1_password);
-        jsonPostData.put("signature", uat1_signature);
-        jsonPostData.put("devIx", uat1_devIx);
+        jsonPostData.put("username", username);
+        jsonPostData.put("password", password);
+        jsonPostData.put("signature", sign);
+        jsonPostData.put("devIx", devIx);
 
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";

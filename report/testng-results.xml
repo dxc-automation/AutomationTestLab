@@ -1,46 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="28" total="39" passed="7">
+<testng-results skipped="11" failed="0" ignored="28" total="39" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TC_001" duration-ms="33910" started-at="2019-07-26T15:00:47Z" finished-at="2019-07-26T15:01:21Z">
+  <suite name="TC_001" duration-ms="17" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
     <groups>
     </groups>
-    <test name="TC_01_Example" duration-ms="33910" started-at="2019-07-26T15:00:47Z" finished-at="2019-07-26T15:01:21Z">
+    <test name="TC_01_Example" duration-ms="17" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
       <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@c933ea7d]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-26T15:00:52Z" finished-at="2019-07-26T15:00:52Z">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@ef9296d]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="FAIL" signature="placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@c933ea7d]" name="placeBet" duration-ms="449" started-at="2019-07-26T15:00:52Z" finished-at="2019-07-26T15:00:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <exception class="com.jayway.jsonpath.PathNotFoundException">
-            <message>
-              <![CDATA[Missing property in path $['PlaceBetsResponse']]]>
-            </message>
+        <test-method status="SKIP" signature="placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@ef9296d]" name="placeBet" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.ExceptionInInitializerError">
             <full-stacktrace>
-              <![CDATA[com.jayway.jsonpath.PathNotFoundException: Missing property in path $['PlaceBetsResponse']
-at com.jayway.jsonpath.internal.path.PathToken.handleObjectProperty(PathToken.java:72)
-at com.jayway.jsonpath.internal.path.PropertyPathToken.evaluate(PropertyPathToken.java:79)
-at com.jayway.jsonpath.internal.path.RootPathToken.evaluate(RootPathToken.java:62)
-at com.jayway.jsonpath.internal.path.CompiledPath.evaluate(CompiledPath.java:53)
-at com.jayway.jsonpath.internal.path.CompiledPath.evaluate(CompiledPath.java:61)
-at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
-at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
-at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:89)
-at com.jayway.jsonpath.JsonPath.read(JsonPath.java:488)
-at com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(ID_04_PlaceBet.java:115)
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeBet -->
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@ef9296d]" name="report" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_04_PlaceBet.placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@ef9296d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -54,132 +113,475 @@ at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
 at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:813)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.jayway.jsonpath.PathNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- placeBet -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@c933ea7d]" name="report" is-config="true" duration-ms="4" started-at="2019-07-26T15:00:52Z" finished-at="2019-07-26T15:00:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=placeBet status=FAILURE method=ID_04_PlaceBet.placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_PlaceBet@c933ea7d] output={null}]]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
       </class> <!-- com.test.uat.TC_01_Bet.ID_04_PlaceBet -->
       <class name="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-26T15:01:08Z" finished-at="2019-07-26T15:01:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="openSumoHomePage()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="openSumoHomePage" duration-ms="3049" started-at="2019-07-26T15:01:08Z" finished-at="2019-07-26T15:01:11Z">
+        <test-method status="SKIP" signature="openSumoHomePage()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="openSumoHomePage" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSumoHomePage -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="report" is-config="true" duration-ms="1" started-at="2019-07-26T15:01:11Z" finished-at="2019-07-26T15:01:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openSumoHomePage status=SUCCESS method=ID_01_Promotions.openSumoHomePage()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="noSelectionBtnState(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="noSelectionBtnState" duration-ms="6486" started-at="2019-07-26T15:01:11Z" finished-at="2019-07-26T15:01:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noSelectionBtnState -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="report" is-config="true" duration-ms="1" started-at="2019-07-26T15:01:18Z" finished-at="2019-07-26T15:01:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=noSelectionBtnState status=SUCCESS method=ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="selectionBtnState()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="selectionBtnState" duration-ms="2645" started-at="2019-07-26T15:01:18Z" finished-at="2019-07-26T15:01:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectionBtnState -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="report" is-config="true" duration-ms="1" started-at="2019-07-26T15:01:21Z" finished-at="2019-07-26T15:01:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=selectionBtnState status=SUCCESS method=ID_01_Promotions.selectionBtnState()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="checkTable()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="checkTable" duration-ms="185" started-at="2019-07-26T15:01:21Z" finished-at="2019-07-26T15:01:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkTable -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f]" name="report" is-config="true" duration-ms="1" started-at="2019-07-26T15:01:21Z" finished-at="2019-07-26T15:01:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkTable status=SUCCESS method=ID_01_Promotions.checkTable()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@a217285f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.uat.TC_02_Sumo.UI.ID_01_Promotions -->
-      <class name="com.test.uat.TC_01_Bet.ID_05_GetBetStatus">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@75f571b]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-26T15:00:52Z" finished-at="2019-07-26T15:00:52Z">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="getBetStatus(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@75f571b]" name="getBetStatus" duration-ms="695" started-at="2019-07-26T15:00:52Z" finished-at="2019-07-26T15:00:53Z">
+        <test-method status="SKIP" signature="noSelectionBtnState(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="noSelectionBtnState" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noSelectionBtnState -->
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="report" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_01_Promotions.openSumoHomePage()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="report" is-config="true" duration-ms="1" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_01_Promotions.selectionBtnState()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="report" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_01_Promotions.noSelectionBtnState(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="SKIP" signature="selectionBtnState()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="selectionBtnState" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectionBtnState -->
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="report" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_01_Promotions.checkTable()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="SKIP" signature="checkTable()[pri:0, instance:com.test.uat.TC_02_Sumo.UI.ID_01_Promotions@1c93084c]" name="checkTable" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTable -->
+      </class> <!-- com.test.uat.TC_02_Sumo.UI.ID_01_Promotions -->
+      <class name="com.test.uat.TC_01_Bet.ID_05_GetBetStatus">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@36c88a32]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="SKIP" signature="getBetStatus(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@36c88a32]" name="getBetStatus" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBetStatus -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@75f571b]" name="report" is-config="true" duration-ms="1" started-at="2019-07-26T15:00:53Z" finished-at="2019-07-26T15:00:53Z">
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@36c88a32]" name="report" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getBetStatus status=SUCCESS method=ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@75f571b] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_05_GetBetStatus.getBetStatus(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_GetBetStatus@36c88a32] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
       </class> <!-- com.test.uat.TC_01_Bet.ID_05_GetBetStatus -->
       <class name="com.test.uat.TC_01_Bet.ID_01_LogIn">
-        <test-method status="PASS" signature="cleanResponseData()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@41b22941]" name="cleanResponseData" is-config="true" duration-ms="10" started-at="2019-07-26T15:00:45Z" finished-at="2019-07-26T15:00:45Z">
+        <test-method status="PASS" signature="cleanResponseData()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@1b1473ab]" name="cleanResponseData" is-config="true" duration-ms="6" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanResponseData -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@41b22941]" name="setup" is-config="true" duration-ms="1917" started-at="2019-07-26T15:00:45Z" finished-at="2019-07-26T15:00:47Z">
+        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@1b1473ab]" name="setup" is-config="true" duration-ms="249" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <params>
             <param index="0">
               <value>
@@ -187,67 +589,217 @@ at java.lang.Thread.run(Thread.java:813)
               </value>
             </param>
           </params>
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@41b22941]" name="startTest" is-config="true" duration-ms="110" started-at="2019-07-26T15:00:47Z" finished-at="2019-07-26T15:00:47Z">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@1b1473ab]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@41b22941]" name="loginRam" duration-ms="1838" started-at="2019-07-26T15:00:47Z" finished-at="2019-07-26T15:00:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@1b1473ab]" name="loginRam" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginRam -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@41b22941]" name="report" is-config="true" duration-ms="37" started-at="2019-07-26T15:00:49Z" finished-at="2019-07-26T15:00:49Z">
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@1b1473ab]" name="report" is-config="true" duration-ms="1" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@41b22941] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@1b1473ab] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@41b22941]" name="tearDown" is-config="true" duration-ms="526" started-at="2019-07-26T15:01:21Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-07-26T15:01:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="clearXml()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@41b22941]" name="clearXml" is-config="true" duration-ms="0" started-at="2019-07-26T15:01:21Z" finished-at="2019-07-26T15:01:21Z">
+        <test-method status="SKIP" signature="clearXml()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@1b1473ab]" name="clearXml" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXml -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@1b1473ab]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" depends-on-methods="com.setup.BasicSetup.clearXml" finished-at="2019-07-31T16:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.test.uat.TC_01_Bet.ID_01_LogIn -->
       <class name="com.test.uat.TC_01_Bet.ID_07_Cashout">
-        <test-method status="FAIL" signature="betCashout(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_07_Cashout@ba88a6f1]" name="betCashout" duration-ms="1" started-at="2019-07-26T15:00:53Z" finished-at="2019-07-26T15:00:53Z">
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_07_Cashout@7880cdf3]" name="report" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_07_Cashout.betCashout(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_07_Cashout@7880cdf3] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
-at okhttp3.FormBody$Builder.add(FormBody.kt)
-at com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(ID_07_Cashout.java:54)
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -261,61 +813,112 @@ at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
 at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:813)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="SKIP" signature="betCashout(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_07_Cashout@7880cdf3]" name="betCashout" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- betCashout -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_07_Cashout@ba88a6f1]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-26T15:00:53Z" finished-at="2019-07-26T15:00:53Z">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_07_Cashout@7880cdf3]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_07_Cashout@ba88a6f1]" name="report" is-config="true" duration-ms="295" started-at="2019-07-26T15:00:53Z" finished-at="2019-07-26T15:00:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=betCashout status=FAILURE method=ID_07_Cashout.betCashout(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_07_Cashout@ba88a6f1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
       </class> <!-- com.test.uat.TC_01_Bet.ID_07_Cashout -->
       <class name="com.test.uat.TC_01_Bet.ID_08_GetSportsTree">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_08_GetSportsTree@8c74e1a9]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-26T15:00:53Z" finished-at="2019-07-26T15:00:53Z">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_08_GetSportsTree@5be6e01c]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="FAIL" signature="getSportsTree(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_08_GetSportsTree@8c74e1a9]" name="getSportsTree" duration-ms="15006" started-at="2019-07-26T15:00:53Z" finished-at="2019-07-26T15:01:08Z">
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_08_GetSportsTree@5be6e01c]" name="report" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_08_GetSportsTree@5be6e01c] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.io.InterruptedIOException">
-            <message>
-              <![CDATA[timeout]]>
-            </message>
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.io.InterruptedIOException: timeout
-at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.kt:104)
-at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.kt:293)
-at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.kt:257)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:192)
-at okhttp3.RealCall.execute(RealCall.kt:66)
-at com.setup.OkHttpClientUtils.okClientRequest(OkHttpClientUtils.java:49)
-at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:73)
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -329,110 +932,172 @@ at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
 at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:813)
-Caused by: java.net.SocketException: Socket closed
-at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-at java.net.SocketInputStream.read(SocketInputStream.java:171)
-at java.net.SocketInputStream.read(SocketInputStream.java:141)
-at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
-at sun.security.ssl.InputRecord.read(InputRecord.java:503)
-at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
-at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
-at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
-at okio.InputStreamSource.read(Okio.kt:102)
-at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:159)
-at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:349)
-at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:222)
-at okhttp3.internal.http1.Http1ExchangeCodec.readHeaderLine(Http1ExchangeCodec.kt:210)
-at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:181)
-at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:105)
-at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:82)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:37)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:84)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:71)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:184)
-... 23 more
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.InterruptedIOException -->
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="SKIP" signature="getSportsTree(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_08_GetSportsTree@5be6e01c]" name="getSportsTree" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSportsTree -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_08_GetSportsTree@8c74e1a9]" name="report" is-config="true" duration-ms="282" started-at="2019-07-26T15:01:08Z" finished-at="2019-07-26T15:01:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getSportsTree status=FAILURE method=ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_08_GetSportsTree@8c74e1a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
       </class> <!-- com.test.uat.TC_01_Bet.ID_08_GetSportsTree -->
       <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@7060dca4]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-26T15:00:49Z" finished-at="2019-07-26T15:00:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@7060dca4]" name="externalLogin" duration-ms="1060" started-at="2019-07-26T15:00:49Z" finished-at="2019-07-26T15:00:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- externalLogin -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@7060dca4]" name="report" is-config="true" duration-ms="3" started-at="2019-07-26T15:00:50Z" finished-at="2019-07-26T15:00:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=externalLogin status=SUCCESS method=ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@7060dca4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-      </class> <!-- com.test.uat.TC_01_Bet.ID_02_ExternalLogin -->
-      <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@55f75cfc]" name="startTest" is-config="true" duration-ms="1" started-at="2019-07-26T15:00:50Z" finished-at="2019-07-26T15:00:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="FAIL" signature="getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@55f75cfc]" name="getOpenBets" duration-ms="1570" started-at="2019-07-26T15:00:50Z" finished-at="2019-07-26T15:00:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[java.lang.Double incompatible with java.lang.Long]]>
-            </message>
+        <test-method status="SKIP" signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@2f7c2f4f]" name="externalLogin" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.ExceptionInInitializerError">
             <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: java.lang.Double incompatible with java.lang.Long
-at com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(ID_03_GetOpenBets.java:110)
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- externalLogin -->
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@2f7c2f4f]" name="report" is-config="true" duration-ms="1" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@2f7c2f4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -446,21 +1111,129 @@ at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
 at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:813)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@2f7c2f4f]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_02_ExternalLogin -->
+      <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
+        <test-method status="SKIP" signature="getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@6af93788]" name="getOpenBets" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at javax.crypto.JceSecurityManager.<clinit>(JceSecurityManager.java:65)
+at javax.crypto.Cipher.getConfiguredPermission(Cipher.java:2586)
+at javax.crypto.Cipher.getMaxAllowedKeyLength(Cipher.java:2610)
+at sun.security.ssl.CipherSuite$BulkCipher.isUnlimited(CipherSuite.java:535)
+at sun.security.ssl.CipherSuite$BulkCipher.<init>(CipherSuite.java:507)
+at sun.security.ssl.CipherSuite.<clinit>(CipherSuite.java:614)
+at sun.security.ssl.SSLContextImpl.getApplicableSupportedCipherSuiteList(SSLContextImpl.java:294)
+at sun.security.ssl.SSLContextImpl.access$100(SSLContextImpl.java:42)
+at sun.security.ssl.SSLContextImpl$AbstractTLSContext.<clinit>(SSLContextImpl.java:529)
+at java.lang.Class.forName0(Native Method)
+at java.lang.Class.forName(Class.java:264)
+at java.security.Provider$Service.getImplClass(Provider.java:1634)
+at java.security.Provider$Service.newInstance(Provider.java:1592)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+at okhttp3.internal.platform.Platform.newSSLContext(Platform.kt:79)
+at okhttp3.OkHttpClient$Companion.newSslSocketFactory(OkHttpClient.kt:955)
+at okhttp3.OkHttpClient$Companion.access$newSslSocketFactory(OkHttpClient.kt:947)
+at okhttp3.OkHttpClient.<init>(OkHttpClient.kt:213)
+at okhttp3.OkHttpClient$Builder.build(OkHttpClient.kt:944)
+at org.openqa.selenium.remote.internal.OkHttpClient$Factory.createClient(OkHttpClient.java:163)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:89)
+at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:72)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:63)
+at org.openqa.selenium.chrome.ChromeDriverCommandExecutor.<init>(ChromeDriverCommandExecutor.java:40)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:174)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:163)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:120)
+at com.setup.BasicSetup.setup(BasicSetup.java:104)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at com.setup.ConsoleRunner.main(ConsoleRunner.java:79)
+Caused by: java.lang.SecurityException: Can not initialize cryptographic mechanism
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:93)
+... 48 more
+Caused by: java.lang.SecurityException: Cannot locate policy or framework files!
+at javax.crypto.JceSecurity.setupJurisdictionPolicies(JceSecurity.java:316)
+at javax.crypto.JceSecurity.access$000(JceSecurity.java:50)
+at javax.crypto.JceSecurity$1.run(JceSecurity.java:85)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.crypto.JceSecurity.<clinit>(JceSecurity.java:82)
+... 48 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOpenBets -->
-        <test-method status="PASS" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@55f75cfc]" name="report" is-config="true" duration-ms="167" started-at="2019-07-26T15:00:52Z" finished-at="2019-07-26T15:00:52Z">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@6af93788]" name="startTest" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@6af93788]" name="report" is-config="true" duration-ms="0" started-at="2019-07-31T16:11:39Z" finished-at="2019-07-31T16:11:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getOpenBets status=FAILURE method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@55f75cfc] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@6af93788] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.setup.BasicSetup.report(BasicSetup.java:296)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:533)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
