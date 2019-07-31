@@ -101,7 +101,8 @@ public class BasicSetup {
                 System.setProperty("webdriver.chrome.driver", pathChrome);
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("test-type");
-                driver = new ChromeDriver();
+                options.addArguments("start-maximized");
+                driver = new ChromeDriver(options);
                 LOG.info("| Chrome browser launched successfully |");
 
             } else if (browser.equalsIgnoreCase("firefox")) {

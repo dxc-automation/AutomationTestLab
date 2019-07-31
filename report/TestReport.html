@@ -56,7 +56,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 31, 2019 06:54:35 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 31, 2019 11:48:33 PM</span>
 				</a>
 			</li>
 			<li>
@@ -181,14 +181,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_01] Log in</span>
-						<span class='test-time'>Jul 31, 2019 06:54:35 PM</span>
+						<span class='test-time'>Jul 31, 2019 11:48:33 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 06:54:35 PM</span>
-	<span class='label end-time'>Jul 31, 2019 06:54:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+896ms</span>
+	<span class='label start-time'>Jul 31, 2019 11:48:33 PM</span>
+	<span class='label end-time'>Jul 31, 2019 11:48:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+99ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -210,26 +210,15 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
+					<td class='timestamp'>11:48:34 PM</td>
 					<td class='step-details'>ID_01_LogIn  [loginRam]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
-					<td class='step-details'><pre>javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
-	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+					<td class='timestamp'>11:48:34 PM</td>
+					<td class='step-details'><textarea>javax.net.ssl.SSLPeerUnverifiedException: Certificate for <ram.qacore.pyr> doesn't match any of the subject alternative names: [*.qacore.pyr, qacore.pyr]
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:507)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
@@ -248,9 +237,9 @@
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -262,27 +251,12 @@
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
-	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
-	at sun.security.validator.Validator.validate(Validator.java:262)
-	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
-	... 41 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
-	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
-	... 47 more
-</pre></td>
+	at java.lang.Thread.run(Thread.java:748)
+</textarea></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
+					<td class='timestamp'>11:48:34 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn  [loginRam].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn  [loginRam].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn  [loginRam].png'></td>
 				</tr>
 			</tbody>
@@ -295,14 +269,14 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_02] External log in</span>
-						<span class='test-time'>Jul 31, 2019 06:54:36 PM</span>
+						<span class='test-time'>Jul 31, 2019 11:48:34 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 06:54:36 PM</span>
-	<span class='label end-time'>Jul 31, 2019 06:54:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+267ms</span>
+	<span class='label start-time'>Jul 31, 2019 11:48:34 PM</span>
+	<span class='label end-time'>Jul 31, 2019 11:48:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+417ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -325,12 +299,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'>ID_02_ExternalLogin  [externalLogin]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
 	at com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(ID_02_ExternalLogin.java:49)
@@ -339,9 +313,9 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -353,12 +327,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_02_ExternalLogin  [externalLogin].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_02_ExternalLogin  [externalLogin].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_02_ExternalLogin  [externalLogin].png'></td>
 				</tr>
 			</tbody>
@@ -371,14 +345,14 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_03] Get open bets</span>
-						<span class='test-time'>Jul 31, 2019 06:54:36 PM</span>
+						<span class='test-time'>Jul 31, 2019 11:48:35 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 06:54:36 PM</span>
-	<span class='label end-time'>Jul 31, 2019 06:54:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+264ms</span>
+	<span class='label start-time'>Jul 31, 2019 11:48:35 PM</span>
+	<span class='label end-time'>Jul 31, 2019 11:48:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+411ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -401,12 +375,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'>ID_03_GetOpenBets  [getOpenBets]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
 	at com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(ID_03_GetOpenBets.java:56)
@@ -415,9 +389,9 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -429,12 +403,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:36 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets  [getOpenBets].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets  [getOpenBets].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets  [getOpenBets].png'></td>
 				</tr>
 			</tbody>
@@ -447,14 +421,14 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_04] Place a bet</span>
-						<span class='test-time'>Jul 31, 2019 06:54:36 PM</span>
+						<span class='test-time'>Jul 31, 2019 11:48:35 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 06:54:36 PM</span>
-	<span class='label end-time'>Jul 31, 2019 06:54:37 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+263ms</span>
+	<span class='label start-time'>Jul 31, 2019 11:48:35 PM</span>
+	<span class='label end-time'>Jul 31, 2019 11:48:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+398ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -477,12 +451,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:37 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'>ID_04_PlaceBet  [placeBet]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:37 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
 	at com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(ID_04_PlaceBet.java:63)
@@ -491,9 +465,9 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -505,12 +479,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:37 PM</td>
+					<td class='timestamp'>11:48:35 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_04_PlaceBet  [placeBet].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_04_PlaceBet  [placeBet].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_04_PlaceBet  [placeBet].png'></td>
 				</tr>
 			</tbody>
@@ -523,14 +497,14 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_05] Get Bet Status</span>
-						<span class='test-time'>Jul 31, 2019 06:54:37 PM</span>
+						<span class='test-time'>Jul 31, 2019 11:48:35 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 06:54:37 PM</span>
-	<span class='label end-time'>Jul 31, 2019 06:54:37 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+819ms</span>
+	<span class='label start-time'>Jul 31, 2019 11:48:35 PM</span>
+	<span class='label end-time'>Jul 31, 2019 11:48:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+862ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -553,12 +527,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:37 PM</td>
+					<td class='timestamp'>11:48:36 PM</td>
 					<td class='step-details'>ID_05_GetBetStatus  [getBetStatus]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:37 PM</td>
+					<td class='timestamp'>11:48:36 PM</td>
 					<td class='step-details'><textarea>javax.net.ssl.SSLPeerUnverifiedException: Certificate for <walletapi.uat.pyr> doesn't match any of the subject alternative names: [*.uat.pyr, uat.pyr]
 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:507)
 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
@@ -580,9 +554,9 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -594,12 +568,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </textarea></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:37 PM</td>
+					<td class='timestamp'>11:48:36 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_05_GetBetStatus  [getBetStatus].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_05_GetBetStatus  [getBetStatus].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_05_GetBetStatus  [getBetStatus].png'></td>
 				</tr>
 			</tbody>
@@ -612,14 +586,14 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_06] Cashout bet</span>
-						<span class='test-time'>Jul 31, 2019 06:54:37 PM</span>
+						<span class='test-time'>Jul 31, 2019 11:48:36 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 06:54:37 PM</span>
-	<span class='label end-time'>Jul 31, 2019 06:54:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+265ms</span>
+	<span class='label start-time'>Jul 31, 2019 11:48:36 PM</span>
+	<span class='label end-time'>Jul 31, 2019 11:48:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+403ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -642,12 +616,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:38 PM</td>
+					<td class='timestamp'>11:48:37 PM</td>
 					<td class='step-details'>ID_07_Cashout  [betCashout]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:38 PM</td>
+					<td class='timestamp'>11:48:37 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
 	at com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(ID_07_Cashout.java:53)
@@ -656,9 +630,9 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -670,12 +644,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:38 PM</td>
+					<td class='timestamp'>11:48:37 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_07_Cashout  [betCashout].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_07_Cashout  [betCashout].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_07_Cashout  [betCashout].png'></td>
 				</tr>
 			</tbody>
@@ -688,14 +662,14 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_08] Get Sports Tree</span>
-						<span class='test-time'>Jul 31, 2019 06:54:38 PM</span>
+						<span class='test-time'>Jul 31, 2019 11:48:37 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 06:54:38 PM</span>
-	<span class='label end-time'>Jul 31, 2019 06:54:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+266ms</span>
+	<span class='label start-time'>Jul 31, 2019 11:48:37 PM</span>
+	<span class='label end-time'>Jul 31, 2019 11:48:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+397ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -718,12 +692,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:38 PM</td>
+					<td class='timestamp'>11:48:37 PM</td>
 					<td class='step-details'>ID_08_GetSportsTree  [getSportsTree]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:38 PM</td>
+					<td class='timestamp'>11:48:37 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
 	at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:50)
@@ -732,9 +706,9 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -746,12 +720,12 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:38 PM</td>
+					<td class='timestamp'>11:48:37 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_08_GetSportsTree  [getSportsTree].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_08_GetSportsTree  [getSportsTree].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_08_GetSportsTree  [getSportsTree].png'></td>
 				</tr>
 			</tbody>
@@ -764,14 +738,14 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>[TC_01] Promotions Page</span>
-						<span class='test-time'>Jul 31, 2019 06:54:38 PM</span>
+						<span class='test-time'>Jul 31, 2019 11:48:37 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 06:54:38 PM</span>
-	<span class='label end-time'>Jul 31, 2019 06:54:55 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+679ms</span>
+	<span class='label start-time'>Jul 31, 2019 11:48:37 PM</span>
+	<span class='label end-time'>Jul 31, 2019 11:48:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+816ms</span>
 </div>
 	<div class='test-desc'><pre>D E S C R I P T I O N<br/>[1] openSumoHomePage:    Verify that login functionality and redirection are working properly.<br/>[2] noSelectionBtnState: Verify that only 'Add' button is enabled when there are no selected checkboxes.<br/>[3] selectionBtnState:   Verify that only 'Deselect Expires' button is disabled when there is a one selected checkbox.<br/>[4] checkTable:          Verify that the table column numbers and names are correct.</pre> </div>
 	<div class='test-attributes'>
@@ -794,28 +768,29 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:43 PM</td>
+					<td class='timestamp'>11:48:37 PM</td>
 					<td class='step-details'>ID_01_Promotions  [openSumoHomePage]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:43 PM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: expected [https://sumo-qa.pokerstarsdev.com/matrix/promotions] but found [https://sumo-qa.pokerstarsdev.com/login?redirect=%2Fmatrix%2Fpromotions]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.openSumoHomePage(ID_01_Promotions.java:84)
+					<td class='timestamp'>11:48:37 PM</td>
+					<td class='step-details'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:65)
+	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.openSumoHomePage(ID_01_Promotions.java:69)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -827,61 +802,45 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locatable
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 more
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:43 PM</td>
+					<td class='timestamp'>11:48:37 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [openSumoHomePage].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [openSumoHomePage].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [openSumoHomePage].png'></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:51 PM</td>
+					<td class='timestamp'>11:48:38 PM</td>
 					<td class='step-details'>ID_01_Promotions  [noSelectionBtnState]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:51 PM</td>
-					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.content-block___Kf-lC[data-qa='contentBlock-promotionConfigurations-toolbar']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: '10.160.8.106', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_222'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51801}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: d8344aa37a3bdc46c904128a223be9ee
-*** Element info: {Using=css selector, value=div.content-block___Kf-lC[data-qa='contentBlock-promotionConfigurations-toolbar']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.getLocation(Unknown Source)
-	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(ID_01_Promotions.java:104)
+					<td class='timestamp'>11:48:38 PM</td>
+					<td class='step-details'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:65)
+	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(ID_01_Promotions.java:90)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -893,61 +852,32 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:51 PM</td>
+					<td class='timestamp'>11:48:38 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png'></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:53 PM</td>
+					<td class='timestamp'>11:48:38 PM</td>
 					<td class='step-details'>ID_01_Promotions  [selectionBtnState]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:53 PM</td>
-					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"label.checkbox___2HPJM"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: '10.160.8.106', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_222'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51801}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: d8344aa37a3bdc46c904128a223be9ee
-*** Element info: {Using=css selector, value=label.checkbox___2HPJM}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
+					<td class='timestamp'>11:48:38 PM</td>
+					<td class='step-details'><pre>java.lang.NullPointerException
 	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.selectionBtnState(ID_01_Promotions.java:129)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -959,61 +889,33 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:53 PM</td>
+					<td class='timestamp'>11:48:38 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [selectionBtnState].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [selectionBtnState].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [selectionBtnState].png'></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:55 PM</td>
+					<td class='timestamp'>11:48:39 PM</td>
 					<td class='step-details'>ID_01_Promotions  [checkTable]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:55 PM</td>
-					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"tr.row___2FvyH[data-qa='tableRowWrapper-header']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: '10.160.8.106', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_222'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51801}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: d8344aa37a3bdc46c904128a223be9ee
-*** Element info: {Using=css selector, value=tr.row___2FvyH[data-qa='tableRowWrapper-header']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.getLocation(Unknown Source)
-	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.checkTable(ID_01_Promotions.java:163)
+					<td class='timestamp'>11:48:39 PM</td>
+					<td class='step-details'><pre>java.lang.IllegalArgumentException: input == null!
+	at javax.imageio.ImageIO.read(ImageIO.java:1299)
+	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.checkTable(ID_01_Promotions.java:162)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -1025,12 +927,12 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:54:55 PM</td>
+					<td class='timestamp'>11:48:39 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [checkTable].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [checkTable].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [checkTable].png'></td>
 				</tr>
 			</tbody>
@@ -1113,7 +1015,7 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 31, 2019 06:54:35 PM</td>
+										<td>Jul 31, 2019 11:48:33 PM</td>
 										<td class='linked' test-id='1'>[ID_01] Log in</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -1147,27 +1049,27 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 31, 2019 06:54:36 PM</td>
+										<td>Jul 31, 2019 11:48:34 PM</td>
 										<td class='linked' test-id='2'>[ID_02] External log in</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 31, 2019 06:54:36 PM</td>
+										<td>Jul 31, 2019 11:48:35 PM</td>
 										<td class='linked' test-id='3'>[ID_03] Get open bets</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 31, 2019 06:54:36 PM</td>
+										<td>Jul 31, 2019 11:48:35 PM</td>
 										<td class='linked' test-id='4'>[ID_04] Place a bet</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 31, 2019 06:54:37 PM</td>
+										<td>Jul 31, 2019 11:48:36 PM</td>
 										<td class='linked' test-id='6'>[ID_06] Cashout bet</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 31, 2019 06:54:38 PM</td>
+										<td>Jul 31, 2019 11:48:37 PM</td>
 										<td class='linked' test-id='7'>[ID_08] Get Sports Tree</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -1201,7 +1103,7 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 31, 2019 06:54:37 PM</td>
+										<td>Jul 31, 2019 11:48:35 PM</td>
 										<td class='linked' test-id='5'>[ID_05] Get Bet Status</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -1235,7 +1137,7 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 31, 2019 06:54:38 PM</td>
+										<td>Jul 31, 2019 11:48:37 PM</td>
 										<td class='linked' test-id='8'>[TC_01] Promotions Page</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -1305,12 +1207,12 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 31, 2019 06:54:35 PM</td>
+                                                <td>Jul 31, 2019 11:48:33 PM</td>
                                                 <td class='linked' test-id='1'>[ID_01] Log in</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 06:54:36 PM</td>
+                                                <td>Jul 31, 2019 11:48:34 PM</td>
                                                 <td class='linked' test-id='2'>[ID_02] External log in</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
@@ -1344,27 +1246,27 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 31, 2019 06:54:36 PM</td>
+                                                <td>Jul 31, 2019 11:48:35 PM</td>
                                                 <td class='linked' test-id='3'>[ID_03] Get open bets</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 06:54:36 PM</td>
+                                                <td>Jul 31, 2019 11:48:35 PM</td>
                                                 <td class='linked' test-id='4'>[ID_04] Place a bet</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 06:54:37 PM</td>
+                                                <td>Jul 31, 2019 11:48:35 PM</td>
                                                 <td class='linked' test-id='5'>[ID_05] Get Bet Status</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 06:54:37 PM</td>
+                                                <td>Jul 31, 2019 11:48:36 PM</td>
                                                 <td class='linked' test-id='6'>[ID_06] Cashout bet</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 06:54:38 PM</td>
+                                                <td>Jul 31, 2019 11:48:37 PM</td>
                                                 <td class='linked' test-id='7'>[ID_08] Get Sports Tree</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
@@ -1398,7 +1300,7 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 31, 2019 06:54:38 PM</td>
+                                                <td>Jul 31, 2019 11:48:37 PM</td>
                                                 <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
@@ -1445,8 +1347,8 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>javax.net.ssl.SSLHandshakeException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-name'>javax.net.ssl.SSLPeerUnverifiedException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -1460,22 +1362,11 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 31, 2019 06:54:35 PM</td>
+                                                        <td>Jul 31, 2019 11:48:33 PM</td>
                                                         <td class='linked' test-id='1'>[ID_01] Log in</td>
-                                                        <td><pre><pre>javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
-	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1946)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:316)
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:310)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1639)
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:223)
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1037)
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:965)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1064)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1367)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1395)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1379)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+                                                        <td><pre><textarea>javax.net.ssl.SSLPeerUnverifiedException: Certificate for <ram.qacore.pyr> doesn't match any of the subject alternative names: [*.qacore.pyr, qacore.pyr]
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:507)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
@@ -1494,9 +1385,9 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -1508,208 +1399,11 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:397)
-	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:302)
-	at sun.security.validator.Validator.validate(Validator.java:262)
-	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:330)
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:237)
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1621)
-	... 41 more
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
-	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
-	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
-	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:392)
-	... 47 more
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.IllegalArgumentException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>5</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jul 31, 2019 06:54:36 PM</td>
-                                                        <td class='linked' test-id='2'>[ID_02] External log in</td>
-                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
-	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(ID_02_ExternalLogin.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
-</pre></pre></td>
+	at java.lang.Thread.run(Thread.java:748)
+</textarea></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Jul 31, 2019 06:54:36 PM</td>
-                                                        <td class='linked' test-id='3'>[ID_03] Get open bets</td>
-                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
-	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(ID_03_GetOpenBets.java:56)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 31, 2019 06:54:36 PM</td>
-                                                        <td class='linked' test-id='4'>[ID_04] Place a bet</td>
-                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
-	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(ID_04_PlaceBet.java:63)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 31, 2019 06:54:37 PM</td>
-                                                        <td class='linked' test-id='6'>[ID_06] Cashout bet</td>
-                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
-	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(ID_07_Cashout.java:53)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 31, 2019 06:54:38 PM</td>
-                                                        <td class='linked' test-id='7'>[ID_08] Get Sports Tree</td>
-                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
-	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>javax.net.ssl.SSLPeerUnverifiedException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jul 31, 2019 06:54:37 PM</td>
+                                                        <td>Jul 31, 2019 11:48:35 PM</td>
                                                         <td class='linked' test-id='5'>[ID_05] Get Bet Status</td>
                                                         <td><pre><textarea>javax.net.ssl.SSLPeerUnverifiedException: Certificate for <walletapi.uat.pyr> doesn't match any of the subject alternative names: [*.uat.pyr, uat.pyr]
 	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:507)
@@ -1732,9 +1426,9 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -1746,7 +1440,7 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </textarea></pre></td>
                                                     </tr>
                                         </tbody>
@@ -1756,8 +1450,8 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
                         </li>
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-name'>java.lang.IllegalArgumentException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -1771,24 +1465,19 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 31, 2019 06:54:38 PM</td>
-                                                        <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
-                                                        <td><pre><pre>java.lang.AssertionError: expected [https://sumo-qa.pokerstarsdev.com/matrix/promotions] but found [https://sumo-qa.pokerstarsdev.com/login?redirect=%2Fmatrix%2Fpromotions]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.openSumoHomePage(ID_01_Promotions.java:84)
+                                                        <td>Jul 31, 2019 11:48:34 PM</td>
+                                                        <td class='linked' test-id='2'>[ID_02] External log in</td>
+                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
+	at okhttp3.FormBody$Builder.add(FormBody.kt)
+	at com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(ID_02_ExternalLogin.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -1800,7 +1489,147 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jul 31, 2019 11:48:35 PM</td>
+                                                        <td class='linked' test-id='3'>[ID_03] Get open bets</td>
+                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
+	at okhttp3.FormBody$Builder.add(FormBody.kt)
+	at com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(ID_03_GetOpenBets.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jul 31, 2019 11:48:35 PM</td>
+                                                        <td class='linked' test-id='4'>[ID_04] Place a bet</td>
+                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
+	at okhttp3.FormBody$Builder.add(FormBody.kt)
+	at com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(ID_04_PlaceBet.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jul 31, 2019 11:48:36 PM</td>
+                                                        <td class='linked' test-id='6'>[ID_06] Cashout bet</td>
+                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
+	at okhttp3.FormBody$Builder.add(FormBody.kt)
+	at com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(ID_07_Cashout.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jul 31, 2019 11:48:37 PM</td>
+                                                        <td class='linked' test-id='7'>[ID_08] Get Sports Tree</td>
+                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
+	at okhttp3.FormBody$Builder.add(FormBody.kt)
+	at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Jul 31, 2019 11:48:37 PM</td>
+                                                        <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
+                                                        <td><pre><pre>java.lang.IllegalArgumentException: input == null!
+	at javax.imageio.ImageIO.read(ImageIO.java:1299)
+	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.checkTable(ID_01_Promotions.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -1810,7 +1639,7 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
                         </li>
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>java.lang.NoClassDefFoundError</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -1825,47 +1654,25 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 31, 2019 06:54:38 PM</td>
+                                                        <td>Jul 31, 2019 11:48:37 PM</td>
                                                         <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.content-block___Kf-lC[data-qa='contentBlock-promotionConfigurations-toolbar']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: '10.160.8.106', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_222'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51801}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: d8344aa37a3bdc46c904128a223be9ee
-*** Element info: {Using=css selector, value=div.content-block___Kf-lC[data-qa='contentBlock-promotionConfigurations-toolbar']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.getLocation(Unknown Source)
-	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(ID_01_Promotions.java:104)
+                                                        <td><pre><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:65)
+	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.openSumoHomePage(ID_01_Promotions.java:69)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -1877,51 +1684,83 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locatable
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 more
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Jul 31, 2019 06:54:38 PM</td>
+                                                        <td>Jul 31, 2019 11:48:37 PM</td>
                                                         <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"label.checkbox___2HPJM"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: '10.160.8.106', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_222'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51801}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: d8344aa37a3bdc46c904128a223be9ee
-*** Element info: {Using=css selector, value=label.checkbox___2HPJM}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
+                                                        <td><pre><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:65)
+	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.noSelectionBtnState(ID_01_Promotions.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.NullPointerException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Jul 31, 2019 11:48:37 PM</td>
+                                                        <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
+                                                        <td><pre><pre>java.lang.NullPointerException
 	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.selectionBtnState(ID_01_Promotions.java:129)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -1933,63 +1772,7 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 31, 2019 06:54:38 PM</td>
-                                                        <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"tr.row___2FvyH[data-qa='tableRowWrapper-header']"}
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'BUL0000566.local', ip: '10.160.8.106', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_222'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51801}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: d8344aa37a3bdc46c904128a223be9ee
-*** Element info: {Using=css selector, value=tr.row___2FvyH[data-qa='tableRowWrapper-header']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.getLocation(Unknown Source)
-	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.checkTable(ID_01_Promotions.java:163)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:819)
+	at java.lang.Thread.run(Thread.java:748)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -2028,19 +1811,19 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 31, 2019 06:54:35 PM</div>
+					<div class='panel-lead'>Jul 31, 2019 11:48:33 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 31, 2019 06:54:55 PM</div>
+			 		<div class='panel-lead'>Jul 31, 2019 11:48:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 20s+66ms</div>
+					<div class='panel-lead'>0h 0m 6s+29ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -2054,7 +1837,7 @@ Session ID: d8344aa37a3bdc46c904128a223be9ee
 						</tr>
 							<tr>
 								<td>Local Host</td>
-								<td>10.160.8.106</td>
+								<td>192.168.1.107</td>
 							</tr>
 							<tr>
 								<td>Host Name</td>
