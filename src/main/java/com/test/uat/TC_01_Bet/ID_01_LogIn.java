@@ -51,7 +51,7 @@ public class ID_01_LogIn extends BasicSetup {
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData).addHeader("Origin", "https://sports.uat.pyr");
+        httpPost(fileName, url, jsonPostData).addHeader("Origin", "https://sports.qacore.pyr");
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

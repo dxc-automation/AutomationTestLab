@@ -56,7 +56,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 31, 2019 11:48:33 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 1, 2019 01:14:54 PM</span>
 				</a>
 			</li>
 			<li>
@@ -81,7 +81,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-											<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -145,10 +146,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>2</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>8</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='75%'>6</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -160,10 +161,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='9.375%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>33</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='84.375%'>27</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='6.25%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -178,17 +179,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_01] Log in</span>
-						<span class='test-time'>Jul 31, 2019 11:48:33 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Aug 1, 2019 01:14:54 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 11:48:33 PM</span>
-	<span class='label end-time'>Jul 31, 2019 11:48:34 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+99ms</span>
+	<span class='label start-time'>Aug 1, 2019 01:14:54 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:14:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+832ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -208,56 +209,214 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:34 PM</td>
-					<td class='step-details'>ID_01_LogIn  [loginRam]</td>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:14:55 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    ram.qacore.pyr<br />Path:    /ram/login<br />
+Content-Type: application/json
+Accept: */*
+Connection: keep-alive
+Origin: https://sports.qacore.pyr<br /><br /><br />[ REQUEST  BODY ]<br /><br />{
+&nbsp;&nbsp;"password": "Test1234",
+&nbsp;&nbsp;"devIx": "V2G22O1H3E1X603M2S",
+&nbsp;&nbsp;"signature": "646fdf0ZZXodaSUJxm7UBdxfq7%2BYXAkpFKogHndScSqi%2BKGXrZqTBJNtXhS%2FaMlFaik%2B7Q1%2F4bz26OiGHHNQo0YQzkt0DqeUTqNGOADR7u%2FEVNOpYCCoLECWrt4%2BEY%2FOW4t5A%2FSU1kiUUwUKWRpBnEX1s8nFh33zsUWXm%2FZqCT9St2mQcK%2FDGRCp83Icr8S6kX7o5AjwMO%2FhRXdRP0v92H8MZKvWbkKeBC3pTizGQo4PUclaD55AYuJAFZr6%2BF5FvB%2B64GKcl60OV1B%2BAEJI9oS4LQ1xulba0lomOlnEnBCqwmUeVQO08SvyJzv5v%2FnNbTMfzBrWBaGFI2VMcXi7ZF3Ocm83z0XV06lMPO7e5TpE2VMA46wQLItMMRo%2BmG6anOv%2BYz%2BcYsTlTzS376%2B3EI3zoffBt27lQcZXhNASbwTN59R1PDlwvA%3D%3D",
+&nbsp;&nbsp;"username": "audharyakQA"
+}<br /><br /></pre></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:34 PM</td>
-					<td class='step-details'><textarea>javax.net.ssl.SSLPeerUnverifiedException: Certificate for <ram.qacore.pyr> doesn't match any of the subject alternative names: [*.qacore.pyr, qacore.pyr]
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:507)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:86)
-	at com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(ID_01_LogIn.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:14:55 PM</td>
+					<td class='step-details'><pre>[ KEYS ]<br />
+ externalToken = J5-wT6L7H5YYpZsRrRSYoYjT
+ signature = kHQfErUXWMmQ6zuwdjcWVnrJWa1yzCRfuPkdXSRxkODaAINbosrwpXdOrCqXGqw61ZiwBMzQbNZJ9J7IawXmaZsfFUZoR0oi91fTu7km4Y3BD6mw8AuvYOfuLuKjrgXpt7047ha3Yc/PMgIL5rHrgERE16yaR7ux
+ webId = AXMCUP
+ lsrc = 1
+ site = 1<br /><br /></pre></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:34 PM</td>
-					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn  [loginRam].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn  [loginRam].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_LogIn  [loginRam].png'></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:14:55 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 200<br />Message : OK<br /><br />Set-Cookie: JSESSIONID=550F94560A6003729D69DEE3276F21AC;
+Path=/ram;
+HttpOnly, Pragma: no-cache, Pragma: no-store, Cache-Control: private, Cache-Control: no-cache, Cache-Control: no-store, Cache-Control: max-age=0, Cache-Control: must-revalidate, Expires: -86400, Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Credentials: true, Set-Cookie: WIID=H2+rS2xu5nN0dMDwflFu2Y1ScfNwfbThZDzCbuCZW+HRqf6Mv45zrbkgEz8DJN13VxIAG9iPFVD2RvxJD4kiQPnEs/RBwKej;
+Domain=.qacore.pyr;
+Expires=Tue, 30-Jul-2024 10:14:55 GMT;
+
+ Set-Cookie: JSESSIONID=550F94560A6003729D69DEE3276F21AC;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: SBTK=J5-wT6L7H5YYpZsRrRSYoYjT;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: SBSG=kHQfErUXWMmQ6zuwdjcWVnrJWa1yzCRfuPkdXSRxkODaAINbosrwpXdOrCqXGqw61ZiwBMzQbNZJ9J7IawXmaZsfFUZoR0oi91fTu7km4Y3BD6mw8AuvYOfuLuKjrgXpt7047ha3Yc/PMgIL5rHrgERE16yaR7ux;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: LMTMOD=1000;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: BRAND=PokerStars;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: WBID=AXMCUP;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: LCNS=0;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: CTRY=IM;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: LSRC=1;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: GVER=WEB;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ Set-Cookie: SITE=1;
+Domain=.qacore.pyr;
+Expires=Fri, 02-Aug-2019 10:14:56 GMT;
+
+ X-Content-Type-Options: nosniff, X-XSS-Protection: 1;
+mode=block, X-Frame-Options: DENY, Content-Type: application/json;charset=UTF-8, Transfer-Encoding: chunked, Date: Thu, 01 Aug 2019 10:14:56 GMT, Server: app server, Set-Cookie: NSC_sbn-33.130-8083=ffffffff09163f9345525d5f4f58455e445a4a4229a5;expires=Thu, 01-Aug-2019 10:24:43 GMT;path=/;secure;httponly<br /><br /><br />{
+  "country": "IM",
+  "pr": 31,
+  "imageid": 0,
+  "fl": 34078985,
+  "timezone": 1,
+  "balancestr": "1.10 EUR",
+  "pr2h": 0,
+  "statecode": "",
+  "locale": 0,
+  "playervisibility": [
+    {
+      "rmTransfersAllowed": true
+    },
+    {
+      "casino": false
+    },
+    {
+      "sportsbook": true
+    },
+    {
+      "livechatsupport": false
+    },
+    {
+      "publiclivechatsupport": true
+    },
+    {
+      "webrealmoneyform": true
+    },
+    {
+      "freebets": false
+    },
+    {
+      "pmcpaywall": false
+    },
+    {
+      "predictorGameEnabled": true
+    },
+    {
+      "documentRequestPromptEnabled": false
+    },
+    {
+      "wcxChat": false
+    },
+    {
+      "chestPageEnabled": true
+    },
+    {
+      "thedeal": false
+    },
+    {
+      "thedeal-highroller": false
+    },
+    {
+      "wcxPublicChat": false
+    },
+    {
+      "playercv": 671088659
+    },
+    {
+      "playercvhigh": 536874752
+    },
+    {
+      "playercv2": 273154824
+    },
+    {
+      "playercvhigh2": 0
+    },
+    {
+      "wcxLobbyChatVelocity": 0
+    },
+    {
+      "wcxLobbyChatPublicVelocity": 0
+    },
+    {
+      "wc2BalanceLowPromptVelocity": 0
+    },
+    {
+      "balanceLowPrompt": 0
+    },
+    {
+      "wcxLowBalance": false
+    },
+    {
+      "showMyHandHistoryRequests": false
+    }
+  ],
+  "balances": [
+    {
+      "chips": 110,
+      "tchips": 0,
+      "currency": "EUR"
+    },
+    {
+      "chips": 1053471526,
+      "tchips": 0,
+      "currency": "USD"
+    }
+  ],
+  "clientvisibility": [
+    {
+      "casino": false
+    },
+    {
+      "sportsbook": true
+    }
+  ],
+  "fl2h": 131072,
+  "balance": 110,
+  "totaltmoneycurrency": "EUR",
+  "currency": "EUR",
+  "LMTMOD": 1000,
+  "embedded": "1",
+  "email": "audharyak@ps.im",
+  "timestamp": 1564654496079,
+  "pr3h": 0,
+  "fl3": 4,
+  "fl2": 16400,
+  "pr3": 0,
+  "pr2": 0,
+  "totalbalanceusd": 1053471669,
+  "license": 0,
+  "totaltmoneybalance": 0,
+  "fl3h": 0,
+  "success": true,
+  "playchips": 100000,
+  "totalbalance": 810362822,
+  "playerVerification": false,
+  "username": "audharyakQA"
+}<br /><br /></pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -269,14 +428,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_02] External log in</span>
-						<span class='test-time'>Jul 31, 2019 11:48:34 PM</span>
+						<span class='test-time'>Aug 1, 2019 01:14:55 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 11:48:34 PM</span>
-	<span class='label end-time'>Jul 31, 2019 11:48:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+417ms</span>
+	<span class='label start-time'>Aug 1, 2019 01:14:55 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:15:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+317ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -299,15 +458,20 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
+					<td class='timestamp'>1:15:16 PM</td>
 					<td class='step-details'>ID_02_ExternalLogin  [externalLogin]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
-					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
-	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(ID_02_ExternalLogin.java:49)
+					<td class='timestamp'>1:15:16 PM</td>
+					<td class='step-details'><pre>java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.kt:104)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.kt:293)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.kt:257)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:192)
+	at okhttp3.RealCall.execute(RealCall.kt:66)
+	at com.setup.OkHttpClientUtils.okClientRequest(OkHttpClientUtils.java:50)
+	at com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(ID_02_ExternalLogin.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -328,11 +492,43 @@
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(Okio.kt:102)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:159)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:349)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:222)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readHeaderLine(Http1ExchangeCodec.kt:210)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:181)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:105)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:37)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:84)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:71)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:184)
+	... 23 more
 </pre></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
+					<td class='timestamp'>1:15:16 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_02_ExternalLogin  [externalLogin].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_02_ExternalLogin  [externalLogin].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_02_ExternalLogin  [externalLogin].png'></td>
 				</tr>
 			</tbody>
@@ -345,14 +541,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_03] Get open bets</span>
-						<span class='test-time'>Jul 31, 2019 11:48:35 PM</span>
+						<span class='test-time'>Aug 1, 2019 01:15:16 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 11:48:35 PM</span>
-	<span class='label end-time'>Jul 31, 2019 11:48:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+411ms</span>
+	<span class='label start-time'>Aug 1, 2019 01:15:16 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:15:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+251ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -375,12 +571,12 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
+					<td class='timestamp'>1:15:16 PM</td>
 					<td class='step-details'>ID_03_GetOpenBets  [getOpenBets]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
+					<td class='timestamp'>1:15:16 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
 	at com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(ID_03_GetOpenBets.java:56)
@@ -408,7 +604,7 @@
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
+					<td class='timestamp'>1:15:16 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets  [getOpenBets].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets  [getOpenBets].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_03_GetOpenBets  [getOpenBets].png'></td>
 				</tr>
 			</tbody>
@@ -421,14 +617,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_04] Place a bet</span>
-						<span class='test-time'>Jul 31, 2019 11:48:35 PM</span>
+						<span class='test-time'>Aug 1, 2019 01:15:16 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 11:48:35 PM</span>
-	<span class='label end-time'>Jul 31, 2019 11:48:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+398ms</span>
+	<span class='label start-time'>Aug 1, 2019 01:15:16 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:15:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+250ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -451,12 +647,12 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
+					<td class='timestamp'>1:15:16 PM</td>
 					<td class='step-details'>ID_04_PlaceBet  [placeBet]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
+					<td class='timestamp'>1:15:16 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
 	at com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(ID_04_PlaceBet.java:63)
@@ -484,7 +680,7 @@
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:35 PM</td>
+					<td class='timestamp'>1:15:16 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_04_PlaceBet  [placeBet].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_04_PlaceBet  [placeBet].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_04_PlaceBet  [placeBet].png'></td>
 				</tr>
 			</tbody>
@@ -494,17 +690,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_05] Get Bet Status</span>
-						<span class='test-time'>Jul 31, 2019 11:48:35 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Aug 1, 2019 01:15:16 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 11:48:35 PM</span>
-	<span class='label end-time'>Jul 31, 2019 11:48:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+862ms</span>
+	<span class='label start-time'>Aug 1, 2019 01:15:16 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:15:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+683ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -525,56 +721,22 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:36 PM</td>
-					<td class='step-details'>ID_05_GetBetStatus  [getBetStatus]</td>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>1:15:17 PM</td>
+					<td class='step-details'><pre>[ REQUEST  HEADERS ]<br /><br />Method:  POST  HTTP/1.1<br />Scheme:  HTTPS<br />Host:    walletapi.uat.pyr<br />Path:    /PsAmelcoApi/getBetStatus<br /><br />Content-Type: application/json
+Accept: */*
+Connection: keep-alive
+Origin: https://walletapi.uat.pyr<br /><br /><br />[ REQUEST  BODY ]<br /><br />{}<br /><br /></pre></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:36 PM</td>
-					<td class='step-details'><textarea>javax.net.ssl.SSLPeerUnverifiedException: Certificate for <walletapi.uat.pyr> doesn't match any of the subject alternative names: [*.uat.pyr, uat.pyr]
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:507)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:86)
-	at com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(ID_05_GetBetStatus.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:36 PM</td>
-					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_05_GetBetStatus  [getBetStatus].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_05_GetBetStatus  [getBetStatus].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_05_GetBetStatus  [getBetStatus].png'></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:15:17 PM</td>
+					<td class='step-details'><pre>[ RESPONSE ]<br /><br />Response Code  : 400<br />Message : Bad Request<br /><br />Content-Type: application/json;charset=UTF-8, Content-Length: 21, Date: Thu, 01 Aug 2019 10:15:17 GMT, Connection: close, Server: app server, X-FRAME-OPTIONS: SAMEORIGIN<br /><br /><br />{
+  "invalid": [
+    "betId"
+  ]
+}<br /><br /></pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -586,14 +748,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_06] Cashout bet</span>
-						<span class='test-time'>Jul 31, 2019 11:48:36 PM</span>
+						<span class='test-time'>Aug 1, 2019 01:15:17 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 11:48:36 PM</span>
-	<span class='label end-time'>Jul 31, 2019 11:48:37 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+403ms</span>
+	<span class='label start-time'>Aug 1, 2019 01:15:17 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:15:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+270ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -616,12 +778,12 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:17 PM</td>
 					<td class='step-details'>ID_07_Cashout  [betCashout]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:17 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
 	at com.test.uat.TC_01_Bet.ID_07_Cashout.betCashout(ID_07_Cashout.java:53)
@@ -649,7 +811,7 @@
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:17 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_07_Cashout  [betCashout].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_07_Cashout  [betCashout].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_07_Cashout  [betCashout].png'></td>
 				</tr>
 			</tbody>
@@ -662,14 +824,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>[ID_08] Get Sports Tree</span>
-						<span class='test-time'>Jul 31, 2019 11:48:37 PM</span>
+						<span class='test-time'>Aug 1, 2019 01:15:17 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 11:48:37 PM</span>
-	<span class='label end-time'>Jul 31, 2019 11:48:37 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+397ms</span>
+	<span class='label start-time'>Aug 1, 2019 01:15:17 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:15:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+265ms</span>
 </div>
 	<div class='test-desc'>DESCRIPTION </div>
 	<div class='test-attributes'>
@@ -692,15 +854,15 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'>ID_08_GetSportsTree  [getSportsTree]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:50)
+	at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -725,7 +887,7 @@
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_08_GetSportsTree  [getSportsTree].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_08_GetSportsTree  [getSportsTree].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_08_GetSportsTree  [getSportsTree].png'></td>
 				</tr>
 			</tbody>
@@ -738,14 +900,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>[TC_01] Promotions Page</span>
-						<span class='test-time'>Jul 31, 2019 11:48:37 PM</span>
+						<span class='test-time'>Aug 1, 2019 01:15:18 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 31, 2019 11:48:37 PM</span>
-	<span class='label end-time'>Jul 31, 2019 11:48:39 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+816ms</span>
+	<span class='label start-time'>Aug 1, 2019 01:15:18 PM</span>
+	<span class='label end-time'>Aug 1, 2019 01:15:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+229ms</span>
 </div>
 	<div class='test-desc'><pre>D E S C R I P T I O N<br/>[1] openSumoHomePage:    Verify that login functionality and redirection are working properly.<br/>[2] noSelectionBtnState: Verify that only 'Add' button is enabled when there are no selected checkboxes.<br/>[3] selectionBtnState:   Verify that only 'Deselect Expires' button is disabled when there is a one selected checkbox.<br/>[4] checkTable:          Verify that the table column numbers and names are correct.</pre> </div>
 	<div class='test-attributes'>
@@ -768,12 +930,12 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'>ID_01_Promotions  [openSumoHomePage]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
 	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
 	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
@@ -813,17 +975,17 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:37 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [openSumoHomePage].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [openSumoHomePage].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [openSumoHomePage].png'></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:38 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'>ID_01_Promotions  [noSelectionBtnState]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:38 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
 	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
 	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
@@ -857,17 +1019,17 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:38 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png'></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:38 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'>ID_01_Promotions  [selectionBtnState]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:38 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'><pre>java.lang.NullPointerException
 	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.selectionBtnState(ID_01_Promotions.java:129)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -894,17 +1056,17 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:38 PM</td>
+					<td class='timestamp'>1:15:18 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [selectionBtnState].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [selectionBtnState].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [selectionBtnState].png'></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:39 PM</td>
+					<td class='timestamp'>1:15:19 PM</td>
 					<td class='step-details'>ID_01_Promotions  [checkTable]</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:39 PM</td>
+					<td class='timestamp'>1:15:19 PM</td>
 					<td class='step-details'><pre>java.lang.IllegalArgumentException: input == null!
 	at javax.imageio.ImageIO.read(ImageIO.java:1299)
 	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.checkTable(ID_01_Promotions.java:162)
@@ -932,7 +1094,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>11:48:39 PM</td>
+					<td class='timestamp'>1:15:19 PM</td>
 					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [checkTable].png' width='10%' src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [checkTable].png' data-src='/Users/popovpav/Documents/GitHub/AutomationTestLab/Screenshots/Failed/ID_01_Promotions  [checkTable].png'></td>
 				</tr>
 			</tbody>
@@ -994,13 +1156,13 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 					<div class='category-heading'>
 						<span class='category-name'>POST</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1015,9 +1177,9 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 31, 2019 11:48:33 PM</td>
+										<td>Aug 1, 2019 01:14:54 PM</td>
 										<td class='linked' test-id='1'>[ID_01] Log in</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1049,27 +1211,27 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 31, 2019 11:48:34 PM</td>
+										<td>Aug 1, 2019 01:14:55 PM</td>
 										<td class='linked' test-id='2'>[ID_02] External log in</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 31, 2019 11:48:35 PM</td>
+										<td>Aug 1, 2019 01:15:16 PM</td>
 										<td class='linked' test-id='3'>[ID_03] Get open bets</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 31, 2019 11:48:35 PM</td>
+										<td>Aug 1, 2019 01:15:16 PM</td>
 										<td class='linked' test-id='4'>[ID_04] Place a bet</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 31, 2019 11:48:36 PM</td>
+										<td>Aug 1, 2019 01:15:17 PM</td>
 										<td class='linked' test-id='6'>[ID_06] Cashout bet</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 31, 2019 11:48:37 PM</td>
+										<td>Aug 1, 2019 01:15:17 PM</td>
 										<td class='linked' test-id='7'>[ID_08] Get Sports Tree</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -1082,13 +1244,13 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 					<div class='category-heading'>
 						<span class='category-name'>HttpClient</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1103,9 +1265,9 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 31, 2019 11:48:35 PM</td>
+										<td>Aug 1, 2019 01:15:16 PM</td>
 										<td class='linked' test-id='5'>[ID_05] Get Bet Status</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1137,7 +1299,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 31, 2019 11:48:37 PM</td>
+										<td>Aug 1, 2019 01:15:18 PM</td>
 										<td class='linked' test-id='8'>[TC_01] Promotions Page</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -1186,13 +1348,14 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                             <div class='author-heading'>
                                 <span class='author-name'>PavelPopov</span>
                                 <span class='author-status right'>
-                                        <span class='label fail'>2</span>
+                                        <span class='label pass'>1</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    
-                                    <span class='label red lighten-1 white-text'>Failed: 2</span>
+                                    <span class='label green accent-4 white-text'>Passed: 1</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -1207,12 +1370,12 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 31, 2019 11:48:33 PM</td>
+                                                <td>Aug 1, 2019 01:14:54 PM</td>
                                                 <td class='linked' test-id='1'>[ID_01] Log in</td>
-                                                <td><span class='test-status fail'>fail</span></td>
+                                                <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 11:48:34 PM</td>
+                                                <td>Aug 1, 2019 01:14:55 PM</td>
                                                 <td class='linked' test-id='2'>[ID_02] External log in</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
@@ -1225,13 +1388,14 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                             <div class='author-heading'>
                                 <span class='author-name'>YOURNAME</span>
                                 <span class='author-status right'>
-                                        <span class='label fail'>5</span>
+                                        <span class='label pass'>1</span>
+                                        <span class='label fail'>4</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
-                                    
-                                    <span class='label red lighten-1 white-text'>Failed: 5</span>
+                                    <span class='label green accent-4 white-text'>Passed: 1</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 4</span>
                                     
                                 </div>
 
@@ -1246,27 +1410,27 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 31, 2019 11:48:35 PM</td>
+                                                <td>Aug 1, 2019 01:15:16 PM</td>
                                                 <td class='linked' test-id='3'>[ID_03] Get open bets</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 11:48:35 PM</td>
+                                                <td>Aug 1, 2019 01:15:16 PM</td>
                                                 <td class='linked' test-id='4'>[ID_04] Place a bet</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 11:48:35 PM</td>
+                                                <td>Aug 1, 2019 01:15:16 PM</td>
                                                 <td class='linked' test-id='5'>[ID_05] Get Bet Status</td>
-                                                <td><span class='test-status fail'>fail</span></td>
+                                                <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 11:48:36 PM</td>
+                                                <td>Aug 1, 2019 01:15:17 PM</td>
                                                 <td class='linked' test-id='6'>[ID_06] Cashout bet</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
                                             <tr>
-                                                <td>Jul 31, 2019 11:48:37 PM</td>
+                                                <td>Aug 1, 2019 01:15:17 PM</td>
                                                 <td class='linked' test-id='7'>[ID_08] Get Sports Tree</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
@@ -1300,7 +1464,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jul 31, 2019 11:48:37 PM</td>
+                                                <td>Aug 1, 2019 01:15:18 PM</td>
                                                 <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
                                                 <td><span class='test-status fail'>fail</span></td>
                                             </tr>
@@ -1347,8 +1511,8 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>javax.net.ssl.SSLPeerUnverifiedException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-name'>java.io.InterruptedIOException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -1362,24 +1526,16 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:33 PM</td>
-                                                        <td class='linked' test-id='1'>[ID_01] Log in</td>
-                                                        <td><pre><textarea>javax.net.ssl.SSLPeerUnverifiedException: Certificate for <ram.qacore.pyr> doesn't match any of the subject alternative names: [*.qacore.pyr, qacore.pyr]
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:507)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:86)
-	at com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(ID_01_LogIn.java:54)
+                                                        <td>Aug 1, 2019 01:14:55 PM</td>
+                                                        <td class='linked' test-id='2'>[ID_02] External log in</td>
+                                                        <td><pre><pre>java.io.InterruptedIOException: timeout
+	at okhttp3.internal.connection.Transmitter.timeoutExit(Transmitter.kt:104)
+	at okhttp3.internal.connection.Transmitter.maybeReleaseConnection(Transmitter.kt:293)
+	at okhttp3.internal.connection.Transmitter.noMoreExchanges(Transmitter.kt:257)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:192)
+	at okhttp3.RealCall.execute(RealCall.kt:66)
+	at com.setup.OkHttpClientUtils.okClientRequest(OkHttpClientUtils.java:50)
+	at com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(ID_02_ExternalLogin.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1400,48 +1556,39 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-</textarea></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 31, 2019 11:48:35 PM</td>
-                                                        <td class='linked' test-id='5'>[ID_05] Get Bet Status</td>
-                                                        <td><pre><textarea>javax.net.ssl.SSLPeerUnverifiedException: Certificate for <walletapi.uat.pyr> doesn't match any of the subject alternative names: [*.uat.pyr, uat.pyr]
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.verifyHostname(SSLConnectionSocketFactory.java:507)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:437)
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
-	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at com.setup.HttpClientUtils.httpPost(HttpClientUtils.java:86)
-	at com.test.uat.TC_01_Bet.ID_05_GetBetStatus.getBetStatus(ID_05_GetBetStatus.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea></pre></td>
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:975)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:933)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(Okio.kt:102)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:159)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:349)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:222)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readHeaderLine(Http1ExchangeCodec.kt:210)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:181)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:105)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:37)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:82)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:84)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:71)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:112)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:87)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.kt:184)
+	... 23 more
+</pre></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -1451,7 +1598,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.IllegalArgumentException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>6</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>5</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -1465,35 +1612,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:34 PM</td>
-                                                        <td class='linked' test-id='2'>[ID_02] External log in</td>
-                                                        <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
-	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(ID_02_ExternalLogin.java:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 31, 2019 11:48:35 PM</td>
+                                                        <td>Aug 1, 2019 01:15:16 PM</td>
                                                         <td class='linked' test-id='3'>[ID_03] Get open bets</td>
                                                         <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
@@ -1521,7 +1640,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:35 PM</td>
+                                                        <td>Aug 1, 2019 01:15:16 PM</td>
                                                         <td class='linked' test-id='4'>[ID_04] Place a bet</td>
                                                         <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
@@ -1549,7 +1668,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:36 PM</td>
+                                                        <td>Aug 1, 2019 01:15:17 PM</td>
                                                         <td class='linked' test-id='6'>[ID_06] Cashout bet</td>
                                                         <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
@@ -1577,11 +1696,11 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:37 PM</td>
+                                                        <td>Aug 1, 2019 01:15:17 PM</td>
                                                         <td class='linked' test-id='7'>[ID_08] Get Sports Tree</td>
                                                         <td><pre><pre>java.lang.IllegalArgumentException: Parameter specified as non-null is null: method okhttp3.FormBody$Builder.add, parameter value
 	at okhttp3.FormBody$Builder.add(FormBody.kt)
-	at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:50)
+	at com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(ID_08_GetSportsTree.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1605,7 +1724,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:37 PM</td>
+                                                        <td>Aug 1, 2019 01:15:18 PM</td>
                                                         <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
                                                         <td><pre><pre>java.lang.IllegalArgumentException: input == null!
 	at javax.imageio.ImageIO.read(ImageIO.java:1299)
@@ -1654,7 +1773,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:37 PM</td>
+                                                        <td>Aug 1, 2019 01:15:18 PM</td>
                                                         <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
                                                         <td><pre><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
 	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
@@ -1694,7 +1813,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:37 PM</td>
+                                                        <td>Aug 1, 2019 01:15:18 PM</td>
                                                         <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
                                                         <td><pre><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/internal/Locatable
 	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.proxyForLocator(DefaultFieldDecorator.java:101)
@@ -1749,7 +1868,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 31, 2019 11:48:37 PM</td>
+                                                        <td>Aug 1, 2019 01:15:18 PM</td>
                                                         <td class='linked' test-id='8'>[TC_01] Promotions Page</td>
                                                         <td><pre><pre>java.lang.NullPointerException
 	at com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.selectionBtnState(ID_01_Promotions.java:129)
@@ -1805,25 +1924,25 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>33</div>
+					<div class='panel-lead'>32</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 31, 2019 11:48:33 PM</div>
+					<div class='panel-lead'>Aug 1, 2019 01:14:54 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 31, 2019 11:48:39 PM</div>
+			 		<div class='panel-lead'>Aug 1, 2019 01:15:19 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 6s+29ms</div>
+					<div class='panel-lead'>0h 0m 25s+359ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1837,7 +1956,7 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 						</tr>
 							<tr>
 								<td>Local Host</td>
-								<td>192.168.1.107</td>
+								<td>10.160.8.106</td>
 							</tr>
 							<tr>
 								<td>Host Name</td>
@@ -1872,11 +1991,11 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 						</tr>
 						<tr>
 							<td>POST</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
@@ -1890,11 +2009,11 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 						</tr>
 						<tr>
 							<td>HttpClient</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
@@ -1919,22 +2038,22 @@ Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.Locata
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 8,
+				passParent: 2,
+				failParent: 6,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 8,
+				exceptionsParent: 6,
 				
-				passChild: 0,
-				failChild: 33,
+				passChild: 3,
+				failChild: 27,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 0,
-				exceptionsChild: 33,
+				infoChild: 2,
+				exceptionsChild: 27,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

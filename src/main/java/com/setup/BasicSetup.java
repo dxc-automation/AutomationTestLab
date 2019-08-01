@@ -70,7 +70,6 @@ public class BasicSetup {
     static final Logger LOG = LogManager.getLogger(BasicSetup.class);
 
 
-    
         public void takeScreenshot (WebDriver driver, String name){
             screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
@@ -81,8 +80,10 @@ public class BasicSetup {
         }
 
         @BeforeSuite
-        public void cleanResponseData() throws Exception{
+        public void cleanTestData() throws Exception{
+
             FileUtils.cleanDirectory(new File(filePath + "/report/JSON"));
+            FileUtils.cleanDirectory(new File(filePath + "/Screenshots/Failed"));
         }
 
 

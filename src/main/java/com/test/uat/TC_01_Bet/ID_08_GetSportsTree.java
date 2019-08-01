@@ -8,7 +8,6 @@ import okhttp3.FormBody;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -29,7 +28,6 @@ import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 
 public class ID_08_GetSportsTree extends BasicSetup {
 
-    public static JSONArray bet_1_displayed;
 
 
     @BeforeClass
@@ -99,9 +97,13 @@ public class ID_08_GetSportsTree extends BasicSetup {
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
         JSONObject json = (JSONObject) object;
-        bet_1_displayed = JsonPath.read(json, "$.categories[0].competition[0].event[0]");
 
-        System.out.println(bet_1_displayed);
+        JSONObject bet_1 = JsonPath.read(json, "$.categories[0].competition[0].event[0]");
+        JSONObject bet_2 = JsonPath.read(json, "$.categories[0].competition[0].event[1]");
+
+        System.out.println("\n EVENT_1 \n" + bet_1);
+        System.out.println("\n EVENT_2 \n" + bet_2);
+
     }
 }
 

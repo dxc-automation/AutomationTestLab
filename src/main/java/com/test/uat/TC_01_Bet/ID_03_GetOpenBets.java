@@ -26,15 +26,15 @@ import static com.constants.API.*;
 
 public class ID_03_GetOpenBets extends BasicSetup {
 
-    public static Long   selectionId;
-    public static Long   accountId;
-    public static String type;
-    public static String winType;
-    public static Double amount;
-    public static String currency;
-    public static Long   partNo;
-    public static Long   decimal;
-    public static String fractional;
+    public static Long      selectionId;
+    public static Long      accountId;
+    public static String    type;
+    public static String    winType;
+    public static Long      amount;
+    public static String    currency;
+    public static Long      partNo;
+    public static Double    decimal;
+    public static String    fractional;
 
 
 
