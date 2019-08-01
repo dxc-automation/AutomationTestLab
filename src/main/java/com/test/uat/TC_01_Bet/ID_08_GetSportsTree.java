@@ -95,35 +95,68 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 + "<br />"
                 + "</pre>");
 
+
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
         JSONObject jsonResponse = (JSONObject) object;
 
-        Long competition_1 = JsonPath.read(jsonResponse,"popularCompetitions[0].numEvents");
-        if (competition_1 > 0) {
-            boolean displayed       = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
-            String eventState      = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].state");
-            boolean eventIsInplay   = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].isInplay");
-            Long eventId         = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].id");
-            String competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].compNames.longName");
-            String eventNames      = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
 
-            test.pass("<pre>"
-                    + "[ KEYS ]"
-                    + "<br />"
-                    + "Event Names  = "      + eventNames
-                    + "<br />"
-                    + "Competition Name = "  + competitionName
-                    + "<br />"
-                    + "Event ID = "          + eventId
-                    + "<br />"
-                    + "Event IsInplay = "    + eventIsInplay
-                    + "<br />"
-                    + "Event State = "       + eventState
-                    + "<br />"
-                    + "Event IsDisplayed = " + displayed
-                    + "</pre>");
+        try {
+            Long competition_1 = JsonPath.read(jsonResponse,"popularCompetitions[0].numEvents");
+            if ( competition_1 > 0 ) {
+                boolean displayed = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
+                boolean eventIsInplay = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].isInplay");
+                Long eventId = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].id");
+                String eventState = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].state");
+                String competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].compNames.longName");
+                String eventNames = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
+
+                test.pass("<pre>"
+                        + "[ EVENT DETAILS ]"
+                        + "<br />"
+                        + "<br />"
+                        + "Event Names  = " + eventNames
+                        + "<br />"
+                        + "Competition Name = " + competitionName
+                        + "<br />"
+                        + "Event ID = " + eventId
+                        + "<br />"
+                        + "Event IsInplay = " + eventIsInplay
+                        + "<br />"
+                        + "Event State = " + eventState
+                        + "<br />"
+                        + "Event IsDisplayed = " + displayed
+                        + "</pre>");
+            } else {
+                Long competition_2 = JsonPath.read(jsonResponse,"popularCompetitions[1].numEvents");
+                if ( competition_1 == 0 && competition_2 > 0) {
+                    boolean displayed = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
+                    boolean eventIsInplay = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].isInplay");
+                    Long eventId = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].id");
+                    String eventState = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].state");
+                    String competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].compNames.longName");
+                    String eventNames = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
+
+                    test.pass("<pre>"
+                            + "[ EVENT DETAILS ]"
+                            + "<br />"
+                            + "<br />"
+                            + "Event Names  = " + eventNames
+                            + "<br />"
+                            + "Competition Name = " + competitionName
+                            + "<br />"
+                            + "Event ID = " + eventId
+                            + "<br />"
+                            + "Event IsInplay = " + eventIsInplay
+                            + "<br />"
+                            + "Event State = " + eventState
+                            + "<br />"
+                            + "Event IsDisplayed = " + displayed
+                            + "</pre>");
+                }
+            }
+        } catch ( Exception e) {
+            e.printStackTrace();
         }
-
     }
 }
 
