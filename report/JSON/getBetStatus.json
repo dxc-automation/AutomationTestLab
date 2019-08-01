@@ -1,1 +1,4 @@
-{"invalid": ["betId"]}
+{
+    "errString": "SB_LN(476),Unknown Bet ID.",
+    "errCode": 10041
+}

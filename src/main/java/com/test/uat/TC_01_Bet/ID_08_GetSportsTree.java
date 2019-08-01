@@ -96,13 +96,33 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 + "</pre>");
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-        JSONObject json = (JSONObject) object;
+        JSONObject jsonResponse = (JSONObject) object;
 
-        JSONObject bet_1 = JsonPath.read(json, "$.categories[0].competition[0].event[0]");
-        JSONObject bet_2 = JsonPath.read(json, "$.categories[0].competition[0].event[1]");
+        Long competition_1 = JsonPath.read(jsonResponse,"popularCompetitions[0].numEvents");
+        if (competition_1 > 0) {
+            boolean displayed       = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
+            String eventState      = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].state");
+            boolean eventIsInplay   = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].isInplay");
+            Long eventId         = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].id");
+            String competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].compNames.longName");
+            String eventNames      = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
 
-        System.out.println("\n EVENT_1 \n" + bet_1);
-        System.out.println("\n EVENT_2 \n" + bet_2);
+            test.pass("<pre>"
+                    + "[ KEYS ]"
+                    + "<br />"
+                    + "Event Names  = "      + eventNames
+                    + "<br />"
+                    + "Competition Name = "  + competitionName
+                    + "<br />"
+                    + "Event ID = "          + eventId
+                    + "<br />"
+                    + "Event IsInplay = "    + eventIsInplay
+                    + "<br />"
+                    + "Event State = "       + eventState
+                    + "<br />"
+                    + "Event IsDisplayed = " + displayed
+                    + "</pre>");
+        }
 
     }
 }
