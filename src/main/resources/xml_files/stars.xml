@@ -31,24 +31,6 @@
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
-            <methods>
-                <include name="placeBet"/>
-            </methods>
-        </class>
-
-        <class name="com.test.uat.TC_01_Bet.ID_05_GetBetStatus">
-            <methods>
-                <include name="getBetStatus"/>
-            </methods>
-        </class>
-
-        <class name="com.test.uat.TC_01_Bet.ID_07_Cashout">
-            <methods>
-                <include name="betCashout"/>
-            </methods>
-        </class>
-
         <class name="com.test.uat.TC_01_Bet.ID_08_GetSportsTree">
             <methods>
                 <include name="getSportsTree"/>

@@ -427,8 +427,9 @@ long stop = System.currentTimeMillis();
 
 <br>
 
-### Build and Run from Command Line
-* Build: Navigate to the project directory then execute <code>mvn clean package -Dmaven.test.skip=true</code> in case that debug 
-is needed just execute <code>mvn clean package -Dmaven.test.skip=true -X</code>
-* Run: Open <i>target</i> folder and execute <code>java -jar JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar testng.xml</code>
+### Build and Run
+
+<br> [1] Open <i>config.properties</i> file and change the <i>xml</i> value with name of the xml file.
+<br> [2] Run <i>build.sh</i> file that can be found in <i>bin</i> folder.
+<br> [3] Run <i>test.sh</i> file.
  

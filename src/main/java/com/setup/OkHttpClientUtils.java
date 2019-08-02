@@ -40,12 +40,13 @@ public class OkHttpClientUtils extends BasicSetup {
     public static OkHttpClient okClientRequest(String fileName, Request request) throws Exception {
         file = new File(filePath + "/" + "report/JSON/" + fileName);
 
-        OkHttpClient.Builder builder = new OkHttpClient.Builder();
-        builder.callTimeout(20, TimeUnit.SECONDS);
-        builder.readTimeout(20, TimeUnit.SECONDS);
-        builder.connectTimeout(20, TimeUnit.SECONDS);
-
-        okHttpClient = builder.build();
+        okHttpClient = new OkHttpClient.Builder()
+                .readTimeout(30, TimeUnit.SECONDS)
+                .connectTimeout(60, TimeUnit.SECONDS)
+                .callTimeout(30, TimeUnit.SECONDS)
+                .retryOnConnectionFailure(true)
+                .followRedirects(true)
+                .build();
 
         okServerResponse = okHttpClient.newCall(request).execute();
 
