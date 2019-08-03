@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [checkTable].png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [noSelectionBtnState].png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [openSumoHomePage].png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/Failed/ID_01_Promotions  [selectionBtnState].png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/externalLogin.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/externalLogin.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/getOpenBets.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getOpenBets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/getSportsTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getSportsTree.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/loginRam.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/loginRam.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" afterDir="false" />
@@ -19,25 +15,14 @@
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ID_02_ExternalLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ID_02_ExternalLogin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ID_03_GetOpenBets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ID_03_GetOpenBets.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ID_08_GetSportsTree.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ID_08_GetSportsTree.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_02_Sumo.UI.ID_01_Promotions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="121" column="115" selection-start-line="121" selection-start-column="74" selection-end-line="121" selection-end-column="115" />
+            <state relative-caret-position="479">
+              <caret line="124" column="41" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,6 +178,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
@@ -300,6 +286,29 @@
               <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="uat" type="462c0819:PsiDirectoryNode" />
+              <item name="TC_02_Sumo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="uat" type="462c0819:PsiDirectoryNode" />
+              <item name="TC_02_Sumo" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -314,7 +323,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,7 +411,7 @@
     <frame x="0" y="23" width="1440" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881259" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19027181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -583,16 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_02_Sumo/UI/ID_01_Promotions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,10 +839,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_02_Sumo/UI/ID_01_Promotions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="121" column="115" selection-start-line="121" selection-start-column="74" selection-end-line="121" selection-end-column="115" />
+        <state relative-caret-position="479">
+          <caret line="124" column="41" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

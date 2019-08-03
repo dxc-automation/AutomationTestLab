@@ -120,10 +120,9 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 Long eventMarkets = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].numMarkets");
                 if ( eventMarkets > 0 ) {
                     JSONArray marketObject = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
-
-                    JSONObject ii = new JSONObject();
-                    ii.put("", marketObject);
-                    System.out.println(ii);
+                    JSONObject t = (JSONObject) marketObject.get(9);
+                    boolean aa = (boolean) t.getOrDefault("displayed", true);
+                    System.out.println(aa);
                 }
 
 
