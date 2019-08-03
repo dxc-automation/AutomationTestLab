@@ -81,7 +81,7 @@ public class ID_07_Cashout extends BasicSetup {
         System.out.println(requestBody);
 
         test.info("<pre>"
-                + "[ REQUEST  HEADERS ]"
+                + "[ R E Q U E S T   H E A D E R S ]"
                 + "<br />"
                 + "<br />"
                 + "Method:   "    + requestMethod
@@ -96,7 +96,7 @@ public class ID_07_Cashout extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[ REQUEST  BODY ]"
+                + "[ R E Q U E S T   B O D Y ]"
                 + "<br />"
                 + "<br />"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")

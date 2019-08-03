@@ -37,15 +37,6 @@
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions">
-            <methods>
-                <include name="openSumoHomePage"/>
-                <include name="noSelectionBtnState"/>
-                <include name="selectionBtnState"/>
-                <include name="checkTable"/>
-            </methods>
-        </class>
-
     </classes>
 </test>
 </suite>

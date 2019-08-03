@@ -189,7 +189,7 @@ public class BasicSetup {
 
                             //  Print into HTML report file
                             test.pass("<pre>"
-                                        + "[ RESPONSE ]"
+                                        + "[ R E S P O N SE ]"
                                         + "<br />"
                                         + "<br />"
                                         + "Response Code  : " + responseCode
@@ -255,7 +255,7 @@ public class BasicSetup {
 
                             // Print into HTML report file
                             test.fail("<pre>"
-                                        + "[ RESPONSE ]"
+                                        + "[ R E S P O N S E ]"
                                         + "<br />"
                                         + "<br />"
                                         + "Response Code  : " + responseCode

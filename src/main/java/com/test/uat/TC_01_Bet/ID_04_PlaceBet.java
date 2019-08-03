@@ -88,7 +88,7 @@ public class ID_04_PlaceBet extends BasicSetup {
         okClientRequest(fileName, request);
 
         test.info("<pre>"
-                + "[ REQUEST  HEADERS ]"
+                + "[ R E Q U E S T   H E A D E R S ]"
                 + "<br />"
                 + "<br />"
                 + "Method:   "    + requestMethod
@@ -103,7 +103,7 @@ public class ID_04_PlaceBet extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[ REQUEST  BODY ]"
+                + "[ R E Q U E S T   B O D Y ]"
                 + "<br />"
                 + "<br />"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
@@ -116,7 +116,7 @@ public class ID_04_PlaceBet extends BasicSetup {
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
-                + "[ KEYS ]"
+                + "[ K E Y S ]"
                 + "<br />"
                 + "\n betSlipId = " + betSlipId
                 + "<br />"

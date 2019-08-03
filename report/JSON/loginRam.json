@@ -43,7 +43,7 @@
             "currency": "EUR"
         },
         {
-            "chips": 9017479,
+            "chips": 9013662,
             "tchips": 0,
             "currency": "USD"
         }
@@ -59,19 +59,19 @@
     "LMTMOD": 1000,
     "embedded": "1",
     "email": "bgqacom1@starsgroup.com",
-    "timestamp": 1564779365786,
+    "timestamp": 1564866276827,
     "pr3h": 0,
     "fl3": 8196,
     "fl2": 540692,
     "pr3": 0,
     "pr2": 0,
-    "totalbalanceusd": 9017479,
+    "totalbalanceusd": 9013662,
     "license": 512,
     "totaltmoneybalance": 0,
     "fl3h": 0,
     "success": true,
     "playchips": 1001500000,
-    "totalbalance": 7561285,
+    "totalbalance": 7558084,
     "playerVerification": false,
     "ipState": "",
     "username": "BGQACOM1"
