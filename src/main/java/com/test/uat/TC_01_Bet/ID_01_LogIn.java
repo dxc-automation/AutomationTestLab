@@ -103,10 +103,10 @@ public class ID_01_LogIn extends BasicSetup {
                 + "[ K E Y S ]"
                 + "<br />"
                 + "\n externalToken = " + externalToken
-                + "\n signature = " + signature
-                + "\n webId = " + webId
-                + "\n lsrc = " + lsrc
-                + "\n site = " + site
+                + "\n signature = "     + signature
+                + "\n webId = "         + webId
+                + "\n lsrc = "          + lsrc
+                + "\n site = "          + site
                 + "<br />"
                 + "<br />"
                 + "</pre>");

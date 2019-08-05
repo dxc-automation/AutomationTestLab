@@ -160,4 +160,12 @@ public class OkHttpClientUtils extends BasicSetup {
         }
         return requestOkClientHeaders;
     }
+
+    public static JSONObject checkDisplayed(JSONArray markets, JSONObject[] jsonObjects) {
+        for ( JSONObject object : jsonObjects) {
+            if (object.getBoolean("displayed") == true);
+            return object;
+        }
+        return null;
+    }
 }
