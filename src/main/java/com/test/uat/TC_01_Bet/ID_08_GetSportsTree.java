@@ -16,8 +16,6 @@ import org.testng.annotations.Test;
 import java.io.FileReader;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
-import java.util.List;
-import java.util.Map;
 
 import static com.constants.API.get_sports_tree;
 import static com.setup.ConsoleRunner.host;
@@ -119,19 +117,15 @@ public class ID_08_GetSportsTree extends BasicSetup {
 
                 Long eventMarkets = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].numMarkets");
                 if (eventMarkets > 0) {
-                    JSONArray markets = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
-
-                    List<Map<String, Object>> dataList = JsonPath.parse(markets).read("$[?('true' in @['displayed'])]");
-                    JSONArray marketSelection = (JSONArray) dataList.get(0);
-                    System.out.println(marketSelection);
-
+                    JSONArray marketsJsonArray = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
+                    
 
                     if (eventMarkets > 0) {
-                        JSONObject marketObject_1 = (JSONObject) markets.get(0);
+                        JSONObject marketObject_1 = (JSONObject) marketsJsonArray.get(0);
                         boolean marketIsDisplayed_1 = (boolean) marketObject_1.getOrDefault("displayed", true);
 
                         if (marketIsDisplayed_1 == false) {
-                            JSONObject marketObject_2 = (JSONObject) markets.get(3);
+                            JSONObject marketObject_2 = (JSONObject) marketsJsonArray.get(3);
                             boolean marketIsDisplayed_2 = (boolean) marketObject_2.getOrDefault("displayed", true);
                             System.out.println(marketIsDisplayed_2);
 

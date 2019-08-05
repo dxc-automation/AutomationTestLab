@@ -7,20 +7,28 @@
   </listeners>
   <test thread-count="5" verbose="10" name="TC_01_Example(failed)" parallel="tests">
     <classes>
-      <class name="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions">
+      <class name="com.test.uat.TC_01_Bet.ID_08_GetSportsTree">
         <methods>
           <include name="report"/>
-          <include name="openSumoHomePage"/>
           <include name="setup"/>
-          <include name="checkTable"/>
           <include name="cleanTestData"/>
           <include name="clearXml"/>
-          <include name="startTest"/>
           <include name="tearDown"/>
-          <include name="selectionBtnState"/>
-          <include name="noSelectionBtnState" invocation-numbers="0"/>
+          <include name="getSportsTree" invocation-numbers="0"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- com.test.uat.TC_02_Sumo.UI.ID_01_Promotions -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_08_GetSportsTree -->
+      <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
+        <methods>
+          <include name="report"/>
+          <include name="getOpenBets" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="cleanTestData"/>
+          <include name="clearXml"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.test.uat.TC_01_Bet.ID_03_GetOpenBets -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->
