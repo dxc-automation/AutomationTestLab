@@ -4,7 +4,7 @@
     "imageid": 0,
     "fl": 36176137,
     "timezone": 0,
-    "balancestr": "9.50 EUR",
+    "balancestr": "64.60 EUR",
     "pr2h": 0,
     "statecode": "",
     "locale": 0,
@@ -37,12 +37,12 @@
     ],
     "balances": [
         {
-            "chips": 950,
+            "chips": 6460,
             "tchips": 0,
             "currency": "EUR"
         },
         {
-            "chips": 9008506,
+            "chips": 8945446,
             "tchips": 0,
             "currency": "USD"
         }
@@ -52,25 +52,25 @@
         {"sportsbook": true}
     ],
     "fl2h": 131072,
-    "balance": 950,
+    "balance": 6460,
     "totaltmoneycurrency": "EUR",
     "currency": "EUR",
     "LMTMOD": 1000,
     "embedded": "1",
     "email": "bgqacom1@starsgroup.com",
-    "timestamp": 1565020012617,
+    "timestamp": 1565106204900,
     "pr3h": 0,
     "fl3": 8196,
     "fl2": 540692,
     "pr3": 0,
     "pr2": 0,
-    "totalbalanceusd": 9009639,
+    "totalbalanceusd": 8953150,
     "license": 512,
     "totaltmoneybalance": 0,
     "fl3h": 0,
     "success": true,
     "playchips": 1001500000,
-    "totalbalance": 7554711,
+    "totalbalance": 7507344,
     "playerVerification": false,
     "username": "BGQACOM1"
 }
