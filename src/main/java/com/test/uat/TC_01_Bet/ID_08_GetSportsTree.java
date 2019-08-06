@@ -2,6 +2,7 @@ package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
@@ -14,6 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 
@@ -29,6 +31,8 @@ import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 
 
 public class ID_08_GetSportsTree extends BasicSetup {
+
+    protected FileWriter fileWriter;
 
     private int popularCompetition;
     private int eventMarketsNumber;
@@ -121,6 +125,13 @@ public class ID_08_GetSportsTree extends BasicSetup {
             if (eventsNumber > 0 && eventMarketsNumber > 0) {
 
                 Object marketsJsonArray = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
+                JsonElement element = marketsJsonArray.toString(
+                if ( marketsJsonArray != null) {
+                    fileWriter = new FileWriter(filePath + "/" + "report/JSON/TEST" + fileName);
+                    gson.toJson(marketsJsonArray, fileWriter);
+                }
+
+
 
                 displayed = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
                 eventIsInplay = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].isInplay");

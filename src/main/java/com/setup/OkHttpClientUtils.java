@@ -41,9 +41,9 @@ public class OkHttpClientUtils extends BasicSetup {
         file = new File(filePath + "/" + "report/JSON/" + fileName);
 
         okHttpClient = new OkHttpClient.Builder()
-                .readTimeout(30, TimeUnit.SECONDS)
-                .connectTimeout(60, TimeUnit.SECONDS)
-                .callTimeout(30, TimeUnit.SECONDS)
+                .readTimeout(190, TimeUnit.SECONDS)
+                .connectTimeout(300, TimeUnit.SECONDS)
+                .callTimeout(190, TimeUnit.SECONDS)
                 .retryOnConnectionFailure(true)
                 .followRedirects(true)
                 .build();

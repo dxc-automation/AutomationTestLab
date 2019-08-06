@@ -7,6 +7,28 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_01_Example(failed)" verbose="10">
     <classes>
+      <class name="com.test.uat.TC_01_Bet.ID_01_LogIn">
+        <methods>
+          <include name="report"/>
+          <include name="startTest"/>
+          <include name="loginRam" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="cleanTestData"/>
+          <include name="clearXml"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.uat.TC_01_Bet.ID_01_LogIn -->
+      <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
+        <methods>
+          <include name="report"/>
+          <include name="externalLogin" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="cleanTestData"/>
+          <include name="clearXml"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.test.uat.TC_01_Bet.ID_02_ExternalLogin -->
       <class name="com.test.uat.TC_01_Bet.ID_08_GetSportsTree">
         <methods>
           <include name="report"/>
@@ -18,6 +40,17 @@
           <include name="startTest"/>
         </methods>
       </class> <!-- com.test.uat.TC_01_Bet.ID_08_GetSportsTree -->
+      <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
+        <methods>
+          <include name="report"/>
+          <include name="getOpenBets" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="cleanTestData"/>
+          <include name="clearXml"/>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.test.uat.TC_01_Bet.ID_03_GetOpenBets -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->
