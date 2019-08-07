@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/externalLogin.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/externalLogin.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/getOpenBets.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getOpenBets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/getSportsTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getSportsTree.json" afterDir="false" />
@@ -18,10 +19,22 @@
       <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ID_08_GetSportsTree.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ID_08_GetSportsTree.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/old/TC_001/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,22 +53,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/API.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="146" column="76" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="76" />
+            <state relative-caret-position="210">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="126" column="32" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+            <state relative-caret-position="748">
+              <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="54" column="224" selection-start-line="54" selection-start-column="224" selection-end-line="54" selection-end-column="224" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="692">
+              <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="771">
+              <caret line="52" column="224" selection-start-line="52" selection-start-column="224" selection-end-line="52" selection-end-column="224" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -63,20 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+            <state relative-caret-position="625">
+              <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,8 +133,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-451">
+            <state relative-caret-position="765">
               <caret line="51" column="71" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1867">
+              <caret line="215" column="64" selection-start-line="215" selection-start-column="64" selection-end-line="215" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="677">
+              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,18 +225,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/constants/API_Keys.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java" />
       </list>
     </option>
   </component>
@@ -210,10 +281,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="180" />
-    <option name="y" value="126" />
-    <option name="width" value="1080" />
-    <option name="height" value="624" />
+    <option name="x" value="636" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -223,7 +294,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,6 +382,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="TC_03_Example_UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="uat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,17 +405,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="uat" type="462c0819:PsiDirectoryNode" />
               <item name="TC_01_Bet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="uat" type="462c0819:PsiDirectoryNode" />
-              <item name="TC_02_Sumo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -357,6 +427,7 @@
       </pane>
       <pane id="Scope" />
       <pane id="CatdeaLogs" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,10 +513,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="830" extended-state="6" />
+    <frame x="636" y="-1057" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12017167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12992546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,11 +573,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/extent-config.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_POST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="767">
@@ -621,13 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/Accounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="43" selection-start-line="22" selection-start-column="2" selection-end-line="25" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -663,60 +715,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1117">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -821,43 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-451">
-          <caret line="51" column="71" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="146" column="76" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -879,20 +844,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
+        <state relative-caret-position="1635">
+          <caret line="146" column="76" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/API_Keys.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/Accounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="71" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/constants/API.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="102" column="30" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_03_GetOpenBets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_05_GetBetStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_04_PlaceBet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="54" column="224" selection-start-line="54" selection-start-column="224" selection-end-line="54" selection-end-column="224" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_06_CalculateCashout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="52" column="224" selection-start-line="52" selection-start-column="224" selection-end-line="52" selection-end-column="224" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_Cashout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_08_GetSportsTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="126" column="32" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+        <state relative-caret-position="1867">
+          <caret line="215" column="64" selection-start-line="215" selection-start-column="64" selection-end-line="215" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

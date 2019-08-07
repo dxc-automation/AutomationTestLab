@@ -2,7 +2,6 @@ package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
@@ -34,18 +33,30 @@ public class ID_08_GetSportsTree extends BasicSetup {
 
     protected FileWriter fileWriter;
 
-    private int popularCompetition;
-    private int eventMarketsNumber;
-    private int eventId;
-    private int competitionId;
-    private int eventsNumber;
-    private Long eventTime;
-    private String eventState;
-    private String eventName;
-    private String competitionName;
-    private boolean displayed;
-    private boolean eventIsInplay;
-    private Timestamp time;
+    // ***  COMPETITION   ***//
+    public static int popularCompetition;
+    public static String competitionName;
+
+    // ***  EVENT   *** //
+    public static int eventMarketsNumber;
+    public static int eventId;
+    public static int competitionId;
+    public static int eventsNumber;
+    public static Long eventTime;
+    public static String eventState;
+    public static String eventName;
+    public static boolean displayed;
+    public static boolean eventIsInplay;
+    public static Timestamp time;
+
+    // ***  MARKET  *** //
+    public static String marketName;
+    public static String marketType;
+    public static Long marketId;
+    public static boolean marketCashout;
+    public static Double selectionDecimal;
+    public static String selectionFractional;
+    public static Long selectionId;
 
 
     @BeforeClass
@@ -90,7 +101,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
 
 
         test.info("<pre>"
-                + "[ R E Q U E S T   H E A D E R S ]"
+                + "[   R E Q U E S T   H E A D E R S   ]"
                 + "<br />"
                 + "<br />"
                 + "Method:   " + requestMethod
@@ -105,7 +116,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[ R E Q U E S T   B O D Y ]"
+                + "[   R E Q U E S T   B O D Y   ]"
                 + "<br />"
                 + "<br />"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
@@ -124,12 +135,22 @@ public class ID_08_GetSportsTree extends BasicSetup {
 
             if (eventsNumber > 0 && eventMarketsNumber > 0) {
 
-                Object marketsJsonArray = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
-                JsonElement element = marketsJsonArray.toString(
-                if ( marketsJsonArray != null) {
-                    fileWriter = new FileWriter(filePath + "/" + "report/JSON/TEST" + fileName);
-                    gson.toJson(marketsJsonArray, fileWriter);
+                Object allMarkets = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
+                Object displayedMarkets = JsonPath.read(allMarkets, "$[?(@.displayed == true)]");
+
+                if (displayedMarkets != null) {
+                    marketName = JsonPath.read(displayedMarkets, "$[0].name");
+                    marketType = JsonPath.read(displayedMarkets, "$[0].type");
+                    marketId   = JsonPath.read(displayedMarkets, "$[0].id");
+                    marketCashout = JsonPath.read(displayedMarkets, "$[0].attributes.attrib[1].value");
+                    selectionId = JsonPath.read(displayedMarkets, "$[0].selection[0].id");
+                    selectionDecimal = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.dec");
+                    selectionFractional = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.frac");
+
+
                 }
+
+
 
 
 
@@ -146,7 +167,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 eventName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
 
                 test.pass("<pre>"
-                        + "[ E V E N T    D E T A I L S ]"
+                        + "[   E V E N T    D E T A I L S   ]"
                         + "<br />"
                         + "<br />"
                         + "Competition ID = " + competitionId
@@ -192,7 +213,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
                     eventName = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].names.longName");
 
                     test.pass("<pre>"
-                            + "[ E V E N T    D E T A I L S ]"
+                            + "[   E V E N T    D E T A I L S   ]"
                             + "<br />"
                             + "<br />"
                             + "Competition ID = " + competitionId

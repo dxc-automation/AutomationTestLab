@@ -21,8 +21,7 @@ import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.constants.API.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
-import static com.test.uat.TC_01_Bet.ID_03_GetOpenBets.accountId;
+import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
 import static com.test.uat.TC_01_Bet.ID_03_GetOpenBets.selectionId;
 import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
 
@@ -81,7 +80,7 @@ public class ID_07_Cashout extends BasicSetup {
         System.out.println(requestBody);
 
         test.info("<pre>"
-                + "[ R E Q U E S T   H E A D E R S ]"
+                + "[   R E Q U E S T   H E A D E R S   ]"
                 + "<br />"
                 + "<br />"
                 + "Method:   "    + requestMethod
@@ -96,7 +95,7 @@ public class ID_07_Cashout extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[ R E Q U E S T   B O D Y ]"
+                + "[   R E Q U E S T   B O D Y   ]"
                 + "<br />"
                 + "<br />"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")

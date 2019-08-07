@@ -49,7 +49,7 @@ public class ID_05_GetBetStatus extends BasicSetup {
         httpPost(fileName, url, jsonPostData).addHeader("Origin", "https://walletapi.uat.pyr");
 
         test.info("<pre>"
-                + "[ R E Q U E S T   H E A D E R S ]"
+                + "[   R E Q U E S T   H E A D E R S   ]"
                 + "<br />"
                 + "<br />"
                 + "Method:  "  + requestMethod   +   "  "   + requestProtocol
@@ -65,7 +65,7 @@ public class ID_05_GetBetStatus extends BasicSetup {
                 + "<br />"
                 + "<br />"
                 + "<br />"
-                + "[ R E Q U E S T   B O D Y ]"
+                + "[   R E Q U E S T   B O D Y   ]"
                 + "<br />"
                 + "<br />"
                 + requestData.replace("    ", "&nbsp;&nbsp;")

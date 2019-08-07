@@ -24,7 +24,7 @@ import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
+import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
 import static com.test.uat.TC_01_Bet.ID_03_GetOpenBets.*;
 import static com.constants.API.*;
 
@@ -52,7 +52,7 @@ public class ID_04_PlaceBet extends BasicSetup {
 
         MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
 
-        String bets = "{\"PlaceBetsRequest\":{\"accountId\":" + accountId + ",\"bets\":{\"bet\":[{\"type\":\"" + type + "\",\"winType\":\"" + winType + "\",\"stake\":{\"amount\":\"" + amount + "\",\"currency\":\"" + currency + "\"},\"parts\":{\"betPart\":[{\"partNo\":" + partNo + ",\"selectionId\":" + selectionId + ",\"odds\":{\"decimal\":\"" + decimal + "\",\"fractional\":\"" + fractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
+        String bets = "{\"PlaceBetsRequest\":{\"accountId\":" + accountId + ",\"bets\":{\"bet\":[{\"type\":\"" + type + "\",\"winType\":\"" + winType + "\",\"stake\":{\"amount\":\"" + amount + "\",\"currency\":\"" + accountCurrency + "\"},\"parts\":{\"betPart\":[{\"partNo\":" + partNo + ",\"selectionId\":" + selectionId + ",\"odds\":{\"decimal\":\"" + decimal + "\",\"fractional\":\"" + fractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonBets = gson.toJson(bets);
         System.out.println("\n jsonBets \n" + jsonBets);
@@ -88,7 +88,7 @@ public class ID_04_PlaceBet extends BasicSetup {
         okClientRequest(fileName, request);
 
         test.info("<pre>"
-                + "[ R E Q U E S T   H E A D E R S ]"
+                + "[   R E Q U E S T   H E A D E R S   ]"
                 + "<br />"
                 + "<br />"
                 + "Method:   "    + requestMethod
@@ -103,7 +103,7 @@ public class ID_04_PlaceBet extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[ R E Q U E S T   B O D Y ]"
+                + "[   R E Q U E S T   B O D Y   ]"
                 + "<br />"
                 + "<br />"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
@@ -116,7 +116,7 @@ public class ID_04_PlaceBet extends BasicSetup {
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
-                + "[ K E Y S ]"
+                + "[   K E Y S   ]"
                 + "<br />"
                 + "\n betSlipId = " + betSlipId
                 + "<br />"

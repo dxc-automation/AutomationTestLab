@@ -54,7 +54,7 @@ public class ID_01_LogIn extends BasicSetup {
         httpPost(fileName, url, jsonPostData).addHeader("Origin", "https://sports.uat.pyr");
 
         test.info("<pre>"
-                + "[ R E Q U E S T   H E A D E R S ]"
+                + "[   R E Q U E S T   H E A D E R S   ]"
                 + "<br />"
                 + "<br />"
                 + "Method:  " + requestMethod + "  " + requestProtocol
@@ -70,7 +70,7 @@ public class ID_01_LogIn extends BasicSetup {
                 + "<br />"
                 + "<br />"
                 + "<br />"
-                + "[ R E Q U E S T   B O D Y ]"
+                + "[   R E Q U E S T   B O D Y   ]"
                 + "<br />"
                 + "<br />"
                 + requestData.replace("    ", "&nbsp;&nbsp;")
@@ -100,7 +100,7 @@ public class ID_01_LogIn extends BasicSetup {
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
-                + "[ K E Y S ]"
+                + "[   K E Y S   ]"
                 + "<br />"
                 + "\n externalToken = " + externalToken
                 + "\n signature = "     + signature

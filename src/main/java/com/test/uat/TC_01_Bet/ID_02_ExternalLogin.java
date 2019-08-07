@@ -12,8 +12,10 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.FileReader;
 import java.lang.reflect.Method;
 
+import static com.constants.API.external_login;
 import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
@@ -22,13 +24,17 @@ import static com.setup.HttpClientUtils.jsonObjectResponse;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
-import static com.constants.API.*;
 
 
 
 public class ID_02_ExternalLogin extends BasicSetup {
 
     public static String sessionToken;
+    public static Long   accountId;
+    public static String accountCurrency;
+    public static String accountLanguage;
+
+
 
 
     @BeforeClass
@@ -72,7 +78,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
         okClientRequest(fileName, request);
 
         test.info("<pre>"
-                + "[ R E Q U E S T   H E A D E R S ]"
+                + "[   R E Q U E S T   H E A D E R S   ]"
                 + "<br />"
                 + "<br />"
                 + "Method:   "    + requestMethod
@@ -87,7 +93,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[ R E Q U E S T   B O D Y ]"
+                + "[   R E Q U E S T   B O D Y   ]"
                 + "<br />"
                 + "<br />"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
@@ -95,12 +101,21 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 + "</pre>");
 
         String response = jsonObjectResponse.toString();
-        sessionToken = JsonPath.read(response, "$.Login.sessionToken");
+
+        Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+
+        accountId       = JsonPath.read(object, "$.Login.accountId");
+        accountCurrency = JsonPath.read(object, ".$Login.accountBalance.currency");
+        sessionToken    = JsonPath.read(response, "$.Login.sessionToken");
+        accountLanguage = JsonPath.read(object, "$.Login.preferredLanguage");
+
+
         Assert.assertNotNull(sessionToken);
+
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
-                + "[ K E Y S ]"
+                + "[   A C C O U N T D E T A I L S   ]"
                 + "<br />"
                 + "\n sessionToken = " + sessionToken
                 + "<br />"
