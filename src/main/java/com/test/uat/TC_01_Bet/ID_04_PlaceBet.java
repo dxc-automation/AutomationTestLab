@@ -89,26 +89,26 @@ public class ID_04_PlaceBet extends BasicSetup {
 
         test.info("<pre>"
                 + "[   R E Q U E S T   H E A D E R S   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "Method:   "    + requestMethod
-                + "<br />"
+                + "<br/>"
                 + "Scheme:   "    + requestURLScheme.toUpperCase()
-                + "<br />"
+                + "<br/>"
                 + "Host:     "    + requestURLHost
-                + "<br />"
+                + "<br/>"
                 + "Path:     "    + requestURLPath
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + getRequestOkClientHeaders()
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "[   R E Q U E S T   B O D Y   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "</pre>");
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
@@ -117,10 +117,10 @@ public class ID_04_PlaceBet extends BasicSetup {
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
                 + "[   K E Y S   ]"
-                + "<br />"
+                + "<br/>"
                 + "\n betSlipId = " + betSlipId
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "</pre>");
     }
 }

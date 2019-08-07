@@ -32,19 +32,18 @@ public class ID_08_GetSportsTree extends BasicSetup {
     protected FileWriter fileWriter;
 
     // ***  COMPETITION   ***//
-    public static int popularCompetition;
     public static String competitionName;
 
     // ***  EVENT   *** //
-    public static int   eventMarketsNumber;
-    public static int   eventId;
-    public static int   competitionId;
-    public static int   eventsNumber;
-    public static Long      eventTime;
-    public static String    eventState;
-    public static String    eventName;
-    public static boolean   displayed;
-    public static boolean   eventIsInplay;
+    public static int    eventMarketsNumber;
+    public static int    eventId;
+    public static int    competitionId;
+    public static int    eventsNumber;
+    public static Long   eventTime;
+    public static String eventState;
+    public static String eventName;
+    public static boolean displayed;
+    public static boolean eventIsInplay;
     public static Timestamp time;
 
     // ***  MARKET  *** //
@@ -55,6 +54,11 @@ public class ID_08_GetSportsTree extends BasicSetup {
     public static String selectionDecimal;
     public static String selectionFractional;
     public static int    selectionId;
+
+    protected static Object allMarkets;
+    protected static Object displayedMarketsObj;
+    protected static String displayedMarkets;
+
 
 
     @BeforeClass
@@ -100,149 +104,150 @@ public class ID_08_GetSportsTree extends BasicSetup {
 
         test.info("<pre>"
                 + "[   R E Q U E S T   H E A D E R S   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "Method:   " + requestMethod
-                + "<br />"
+                + "<br/>"
                 + "Scheme:   " + requestURLScheme.toUpperCase()
-                + "<br />"
+                + "<br/>"
                 + "Host:     " + requestURLHost
-                + "<br />"
+                + "<br/>"
                 + "Path:     " + requestURLPath
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
                 + "[   R E Q U E S T   B O D Y   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "</pre>");
 
+
         String jsonResponse = getJsonResponse(fileName);
+        eventsNumber        = JsonPath.read(jsonResponse, "$.popularCompetitions[0].numEvents");
+        eventMarketsNumber  = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].numMarkets");
 
-        try {
-            eventsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[0].numEvents");
-            eventMarketsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].numMarkets");
+        if (eventsNumber > 0 && eventMarketsNumber > 0) {
+            allMarkets          = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
+            displayedMarketsObj = JsonPath.read(allMarkets, "$[?(@.displayed == true)]");
+            displayedMarkets    = gson.toJson(displayedMarketsObj);
 
-            if (eventsNumber > 0 && eventMarketsNumber > 0) {
-
-                Object allMarkets = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
-                Object displayedMarketsObj = JsonPath.read(allMarkets, "$[?(@.displayed == true)]");
-                gson = new Gson();
-                String displayedMarkets = gson.toJson(displayedMarketsObj);
-
-                if (displayedMarkets != null) {
-                    marketName = JsonPath.read(displayedMarkets, "$[0].name");
-                    marketType = JsonPath.read(displayedMarkets, "$[0].type");
-                    marketId   = JsonPath.read(displayedMarkets, "$[0].id");
-                    marketCashout = JsonPath.read(displayedMarkets, "$[0].attributes.attrib[1].value");
-                    selectionId = JsonPath.read(displayedMarkets, "$[0].selection[0].id");
-                    selectionDecimal = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.dec");
-                    selectionFractional = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.frac");
-
-
-                }
-
-
-
-
-
-                displayed = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
+            if (displayedMarkets != null) {
+                marketName = JsonPath.read(displayedMarkets, "$[0].name");
+                marketType = JsonPath.read(displayedMarkets, "$[0].type");
+                marketId   = JsonPath.read(displayedMarkets, "$[0].id");
+                displayed  = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
+                eventId    = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].id");
+                selectionId   = JsonPath.read(displayedMarkets, "$[0].selection[0].id");
+                marketCashout = JsonPath.read(displayedMarkets, "$[0].attributes.attrib[1].value");
                 eventIsInplay = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].isInplay");
-                eventId = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].id");
                 competitionId = JsonPath.read(jsonResponse, "$.popularCompetitions[0].id");
+                selectionDecimal    = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.dec");
+                selectionFractional = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.frac");
 
                 eventTime = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].eventTime");
-                time = new Timestamp(eventTime);
+                time      = new Timestamp(eventTime);
 
-                eventState = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].state");
+                eventState      = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].state");
                 competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].compNames.longName");
-                eventName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
+                eventName       = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
 
                 test.pass("<pre>"
                         + "[   E V E N T    D E T A I L S   ]"
-                        + "<br />"
-                        + "<br />"
-                        + "Competition ID = " + competitionId
-                        + "<br />"
+                        + "       used for place bets        "
+                        + "<br/>"
+                        + "<br/>"
+                        + "Competition ID = "   + competitionId
+                        + "<br/>"
                         + "Competition Name = " + competitionName
-                        + "<br />"
-                        + "<br />"
-                        + "Event ID = " + eventId
-                        + "<br />"
+                        + "<br/>"
+                        + "<br/>"
+                        + "Event ID = "   + eventId
+                        + "<br/>"
                         + "Event Name = " + eventName
-                        + "<br />"
+                        + "<br/>"
                         + "Event Time = " + time
-                        + "<br />"
-                        + "<br />"
+                        + "<br/>"
+                        + "Event State = "+ eventState
+                        + "<br/>"
+                        + "<br/>"
                         + "IsInplay = " + eventIsInplay
-                        + "<br />"
+                        + "<br/>"
                         + "IsDisplayed = " + displayed
-                        + "<br />"
+                        + "<br/>"
                         + "State = " + eventState
-                        + "<br />"
+                        + "<br/>"
                         + "</pre>");
 
 
             } else {
                 try {
-                eventsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[1].numEvents");
-                eventMarketsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].numMarkets");
+                    eventsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[0].numEvents");
+                    eventMarketsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].numMarkets");
 
-                if (eventsNumber > 0 && eventMarketsNumber > 0) {
+                    if (eventsNumber > 0 && eventMarketsNumber > 0) {
+                        gson = new Gson();
+                        allMarkets = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
+                        displayedMarketsObj = JsonPath.read(allMarkets, "$[?(@.displayed == true)]");
+                        displayedMarkets = gson.toJson(displayedMarketsObj);
 
-                    Object marketsJsonArray = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].markets");
+                        if (displayedMarkets != null) {
+                            marketName = JsonPath.read(displayedMarkets, "$[0].name");
+                            marketType = JsonPath.read(displayedMarkets, "$[0].type");
+                            marketId = JsonPath.read(displayedMarkets, "$[0].id");
+                            marketCashout = JsonPath.read(displayedMarkets, "$[0].attributes.attrib[1].value");
+                            selectionId = JsonPath.read(displayedMarkets, "$[0].selection[0].id");
+                            selectionDecimal = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.dec");
+                            selectionFractional = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.frac");
+                            displayed = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
+                            eventIsInplay = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].isInplay");
+                            eventId = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].id");
+                            competitionId = JsonPath.read(jsonResponse, "$.popularCompetitions[0].id");
 
-                    displayed = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].displayed");
-                    eventIsInplay = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].isInplay");
-                    eventId = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].id");
-                    competitionId = JsonPath.read(jsonResponse, "$.popularCompetitions[1].id");
+                            eventTime = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].eventTime");
+                            time = new Timestamp(eventTime);
 
-                    eventTime = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].eventTime");
-                    time = new Timestamp(eventTime);
+                            eventState = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].state");
+                            competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].compNames.longName");
+                            eventName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
 
-                    eventState = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].state");
-                    competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].compNames.longName");
-                    eventName = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].names.longName");
-
-                    test.pass("<pre>"
-                            + "[   E V E N T    D E T A I L S   ]"
-                            + "<br />"
-                            + "<br />"
-                            + "Competition ID = " + competitionId
-                            + "<br />"
-                            + "Competition Name = " + competitionName
-                            + "<br />"
-                            + "<br />"
-                            + "Event ID = " + eventId
-                            + "<br />"
-                            + "Event Name = " + eventName
-                            + "<br />"
-                            + "Event Time = " + time
-                            + "<br />"
-                            + "<br />"
-                            + "IsInplay = " + eventIsInplay
-                            + "<br />"
-                            + "IsDisplayed = " + displayed
-                            + "<br />"
-                            + "State = " + eventState
-                            + "<br />"
-                            + "</pre>");
+                            test.pass("<pre>"
+                                    + "[   E V E N T    D E T A I L S   ]"
+                                    + "       used for place bets        "
+                                    + "<br/>"
+                                    + "<br/>"
+                                    + "Competition ID = " + competitionId
+                                    + "<br/>"
+                                    + "Competition Name = " + competitionName
+                                    + "<br/>"
+                                    + "<br/>"
+                                    + "Event ID = " + eventId
+                                    + "<br/>"
+                                    + "Event Name = " + eventName
+                                    + "<br/>"
+                                    + "Event Time = " + time
+                                    + "<br/>"
+                                    + "<br/>"
+                                    + "IsInplay = " + eventIsInplay
+                                    + "<br/>"
+                                    + "IsDisplayed = " + displayed
+                                    + "<br/>"
+                                    + "State = " + eventState
+                                    + "<br/>"
+                                    + "</pre>");
                         }
-                    } finally {
-
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-                }
-            } catch (Exception e) {
-              e.printStackTrace();
+            }
         }
     }
 }
-
 
 
 

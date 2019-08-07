@@ -78,29 +78,29 @@ public class ID_07_Cashout extends BasicSetup {
         okClientRequest(fileName, request);
 
         System.out.println(requestBody);
-
         test.info("<pre>"
                 + "[   R E Q U E S T   H E A D E R S   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "Method:   "    + requestMethod
-                + "<br />"
+                + "<br/>"
                 + "Scheme:   "    + requestURLScheme.toUpperCase()
-                + "<br />"
+                + "<br/>"
                 + "Host:     "    + requestURLHost
-                + "<br />"
+                + "<br/>"
                 + "Path:     "    + requestURLPath
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
                 + "[   R E Q U E S T   B O D Y   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "</pre>");
+
     }
 }
