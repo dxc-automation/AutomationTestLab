@@ -11,26 +11,26 @@ import org.apache.http.client.utils.URIBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.FileReader;
 import java.lang.reflect.Method;
 
+import static com.constants.API.get_open_bets;
+import static com.setup.ConsoleRunner.host;
+import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
-import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
-import static com.setup.ConsoleRunner.*;
-import static com.constants.API.*;
+import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
+import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 
 
 public class ID_03_GetOpenBets extends BasicSetup {
 
-    protected static Long      selectionId;
+    protected static int       selectionId;
     protected static String    type;
     protected static String    winType;
-    protected static Long      amount;
-    protected static Long      partNo;
+    protected static int       amount;
+    protected static int       partNo;
     protected static Double    decimal;
     protected static String    fractional;
 
@@ -99,15 +99,15 @@ public class ID_03_GetOpenBets extends BasicSetup {
                 + "<br />"
                 + "</pre>");
 
-        Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+        String jsonResponse = getJsonResponse(fileName);
 
-        selectionId = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].selectionId");
-        winType     = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].winType");
-        type        = JsonPath.read(object, "$.Bets.bet[0].type");
-        amount      = JsonPath.read(object, "$.Bets.bet[0].stake.amount");
-        partNo      = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].partNo");
-        fractional  = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.fractional");
-        decimal     = JsonPath.read(object, "$.Bets.bet[0].parts.betPart[0].odds.decimal");
+        selectionId = JsonPath.read(jsonResponse, "$.Bets.bet[0].parts.betPart[0].selectionId");
+        winType     = JsonPath.read(jsonResponse, "$.Bets.bet[0].parts.betPart[0].winType");
+        type        = JsonPath.read(jsonResponse, "$.Bets.bet[0].type");
+        amount      = JsonPath.read(jsonResponse, "$.Bets.bet[0].stake.amount");
+        partNo      = JsonPath.read(jsonResponse, "$.Bets.bet[0].parts.betPart[0].partNo");
+        fractional  = JsonPath.read(jsonResponse, "$.Bets.bet[0].parts.betPart[0].odds.fractional");
+        decimal     = JsonPath.read(jsonResponse, "$.Bets.bet[0].parts.betPart[0].odds.decimal");
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"

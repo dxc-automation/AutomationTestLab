@@ -28,7 +28,13 @@ public class ID_01_LogIn extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[ID_01] Log in", "");
+        test = extent.createTest(
+                "[TC_01] Log in",
+                "<pre>"
+                        + "DESCRIPTION"
+                        + "<br/>"
+                        + "Verify that the login functionality is working correctly."
+                        + "</pre>");
         test.assignAuthor("Pavel Popov");
         test.assignCategory("POST");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
@@ -55,27 +61,27 @@ public class ID_01_LogIn extends BasicSetup {
 
         test.info("<pre>"
                 + "[   R E Q U E S T   H E A D E R S   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "Method:  " + requestMethod + "  " + requestProtocol
-                + "<br />"
+                + "<br/>"
                 + "Scheme:  " + requestScheme.toUpperCase()
-                + "<br />"
+                + "<br/>"
                 + "Host:    " + requestHost
-                + "<br />"
+                + "<br/>"
                 + "Path:    " + requestPath
-                + "<br />"
+                + "<br/>"
                 + "\n"
                 + getPostRequestHeaders().replace(", ", "\n")
-                + "<br />"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
+                + "<br/>"
                 + "[   R E Q U E S T   B O D Y   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + requestData.replace("    ", "&nbsp;&nbsp;")
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "</pre>");
 
 
@@ -101,14 +107,14 @@ public class ID_01_LogIn extends BasicSetup {
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
                 + "[   K E Y S   ]"
-                + "<br />"
+                + "<br/>"
                 + "\n externalToken = " + externalToken
                 + "\n signature = "     + signature
                 + "\n webId = "         + webId
                 + "\n lsrc = "          + lsrc
                 + "\n site = "          + site
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "</pre>");
     }
 }

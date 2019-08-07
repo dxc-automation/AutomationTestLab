@@ -2,7 +2,6 @@ package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.google.gson.Gson;
-import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
@@ -13,7 +12,6 @@ import org.apache.http.client.utils.URIBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
@@ -38,25 +36,25 @@ public class ID_08_GetSportsTree extends BasicSetup {
     public static String competitionName;
 
     // ***  EVENT   *** //
-    public static int eventMarketsNumber;
-    public static int eventId;
-    public static int competitionId;
-    public static int eventsNumber;
-    public static Long eventTime;
-    public static String eventState;
-    public static String eventName;
-    public static boolean displayed;
-    public static boolean eventIsInplay;
+    public static int   eventMarketsNumber;
+    public static int   eventId;
+    public static int   competitionId;
+    public static int   eventsNumber;
+    public static Long      eventTime;
+    public static String    eventState;
+    public static String    eventName;
+    public static boolean   displayed;
+    public static boolean   eventIsInplay;
     public static Timestamp time;
 
     // ***  MARKET  *** //
     public static String marketName;
     public static String marketType;
-    public static Long marketId;
-    public static boolean marketCashout;
-    public static Double selectionDecimal;
+    public static int    marketId;
+    public static String marketCashout;
+    public static String selectionDecimal;
     public static String selectionFractional;
-    public static Long selectionId;
+    public static int    selectionId;
 
 
     @BeforeClass
@@ -124,10 +122,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 + "<br />"
                 + "</pre>");
 
-        Gson gson = new Gson();
-        JsonParser jsonParser = new JsonParser();
-        Object object = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-        String jsonResponse = gson.toJson(object);
+        String jsonResponse = getJsonResponse(fileName);
 
         try {
             eventsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[0].numEvents");
@@ -136,7 +131,9 @@ public class ID_08_GetSportsTree extends BasicSetup {
             if (eventsNumber > 0 && eventMarketsNumber > 0) {
 
                 Object allMarkets = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
-                Object displayedMarkets = JsonPath.read(allMarkets, "$[?(@.displayed == true)]");
+                Object displayedMarketsObj = JsonPath.read(allMarkets, "$[?(@.displayed == true)]");
+                gson = new Gson();
+                String displayedMarkets = gson.toJson(displayedMarketsObj);
 
                 if (displayedMarkets != null) {
                     marketName = JsonPath.read(displayedMarkets, "$[0].name");

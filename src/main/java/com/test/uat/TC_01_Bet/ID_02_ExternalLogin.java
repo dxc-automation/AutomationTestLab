@@ -1,6 +1,8 @@
 package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
+import com.google.gson.Gson;
+import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
@@ -20,7 +22,6 @@ import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
-import static com.setup.HttpClientUtils.jsonObjectResponse;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
@@ -30,7 +31,7 @@ import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
 public class ID_02_ExternalLogin extends BasicSetup {
 
     public static String sessionToken;
-    public static Long   accountId;
+    public static int    accountId;
     public static String accountCurrency;
     public static String accountLanguage;
 
@@ -79,35 +80,37 @@ public class ID_02_ExternalLogin extends BasicSetup {
 
         test.info("<pre>"
                 + "[   R E Q U E S T   H E A D E R S   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "Method:   "    + requestMethod
-                + "<br />"
+                + "<br/>"
                 + "Scheme:   "    + requestURLScheme.toUpperCase()
-                + "<br />"
+                + "<br/>"
                 + "Host:     "    + requestURLHost
-                + "<br />"
+                + "<br/>"
                 + "Path:     "    + requestURLPath
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + getRequestOkClientHeaders()
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + "[   R E Q U E S T   B O D Y   ]"
-                + "<br />"
-                + "<br />"
+                + "<br/>"
+                + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
-                + "<br />"
+                + "<br/>"
                 + "</pre>");
 
-        String response = jsonObjectResponse.toString();
+        Gson gson = new Gson();
+        JsonParser jsonParser = new JsonParser();
+        Object object = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+        String jsonResponse = gson.toJson(object);
 
-        Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
 
-        accountId       = JsonPath.read(object, "$.Login.accountId");
-        accountCurrency = JsonPath.read(object, ".$Login.accountBalance.currency");
-        sessionToken    = JsonPath.read(response, "$.Login.sessionToken");
-        accountLanguage = JsonPath.read(object, "$.Login.preferredLanguage");
+        accountId       = JsonPath.read(jsonResponse, "$.Login.accountId");
+        accountCurrency = JsonPath.read(jsonResponse, "$.Login.accountBalance.currency");
+        sessionToken    = JsonPath.read(jsonResponse, "$.Login.sessionToken");
+        accountLanguage = JsonPath.read(jsonResponse, "$.Login.preferredLanguage");
 
 
         Assert.assertNotNull(sessionToken);
