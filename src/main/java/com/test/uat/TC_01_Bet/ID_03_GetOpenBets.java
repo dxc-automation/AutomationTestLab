@@ -147,12 +147,12 @@ public class ID_03_GetOpenBets extends BasicSetup {
                     + "[   KEYS   ]"
                     + "<br/>"
                     + "\n selectionId = " + selectionId
-                    + "\n winType = " + winType
-                    + "\n type = " + type
-                    + "\n amount = " + amount
-                    + "\n partNo = " + partNo
-                    + "\n fractional = " + fractional
-                    + "\n decimal = " + decimal
+                    + "\n winType = "     + winType
+                    + "\n type = "        + type
+                    + "\n amount = "      + amount
+                    + "\n partNo = "      + partNo
+                    + "\n fractional = "  + fractional
+                    + "\n decimal = "     + decimal
                     + "<br/>"
                     + "<br/>"
                     + "</pre>");

@@ -43,6 +43,12 @@
             </methods>
         </class>
 
+        <class name="com.test.uat.TC_01_Bet.ID_09_GetFootballSportTree">
+            <methods>
+                <include name="getFootballTree"/>
+            </methods>
+        </class>
+
     </classes>
 </test>
 </suite>

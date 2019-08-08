@@ -4,6 +4,7 @@
     "imageid": 0,
     "fl": 36176137,
     "timezone": 0,
+    "ipCountry": "UK",
     "balancestr": "44.01 EUR",
     "pr2h": 0,
     "statecode": "",
@@ -58,7 +59,7 @@
     "LMTMOD": 1000,
     "embedded": "1",
     "email": "bgqacom1@starsgroup.com",
-    "timestamp": 1565278222412,
+    "timestamp": 1565290591489,
     "pr3h": 0,
     "fl3": 8196,
     "fl2": 540692,
@@ -72,5 +73,6 @@
     "playchips": 1001500000,
     "totalbalance": 7505285,
     "playerVerification": false,
+    "ipState": "",
     "username": "BGQACOM1"
 }

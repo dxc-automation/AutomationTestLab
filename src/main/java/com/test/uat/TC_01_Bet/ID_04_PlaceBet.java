@@ -33,6 +33,11 @@ import static com.test.uat.TC_01_Bet.ID_08_GetSportsTree.selectionId;
 public class ID_04_PlaceBet extends BasicSetup {
 
     public static String betSlipId;
+    protected int intDecimal;
+    protected int odd;
+    protected Double doubDecimal;
+    protected String doubleDecimal;
+    protected String integerDecimal;
 
 
     @BeforeClass
@@ -132,13 +137,12 @@ public class ID_04_PlaceBet extends BasicSetup {
         String betSlipId = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betSlipId");
         String betType   = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betType");
         String betStatus = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].status");
-        Double odd       = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].odds.decimal");
         int    stake     = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].totalStake");
 
         int eventId      = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventId");
         Long eventTime   = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventTime");
         boolean inplay   = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].inplay");
-        String eventName = JsonPath.read(jsonResponse, "x.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventName");
+        String eventName = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventName");
         Timestamp time   = new Timestamp(eventTime);
 
         int selectionId        = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].selectionId");
@@ -147,13 +151,35 @@ public class ID_04_PlaceBet extends BasicSetup {
         int marketId           = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].marketId");
         String marketName      = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].marketName");
 
+        try {
+            intDecimal     = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].odds.decimal");
+            integerDecimal = Integer.toString(intDecimal);
 
+            try {
+                doubDecimal   = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].odds.decimal");
+                doubleDecimal = Double.toString(doubDecimal);
+
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
+
+        } catch (ClassCastException e2) {
+            e2.printStackTrace();
+        }
+
+        if (integerDecimal != null && doubleDecimal == null) {
+            odd = intDecimal;
+
+        } else {
+            odd = doubDecimal.intValue();
+        }
 
 
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
                 + "[   BET DETAILS   ]"
+                + "<br/>"
                 + "<br/>"
                 + "Competition Name = " + competitionName
                 + "<br/>"
@@ -176,7 +202,7 @@ public class ID_04_PlaceBet extends BasicSetup {
                 + "<br/>"
                 + "Market ID = " + marketId
                 + "<br/>"
-                + "Bet Status" + betStatus
+                + "Bet Status = " + betStatus
                 + "<br/>"
                 + "Bet Type = " + betType
                 + "<br/>"

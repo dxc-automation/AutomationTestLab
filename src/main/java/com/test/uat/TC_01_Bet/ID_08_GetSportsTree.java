@@ -185,8 +185,6 @@ public class ID_08_GetSportsTree extends BasicSetup {
                         + "<br/>"
                         + "Event IsDisplayed = "+ displayed
                         + "<br/>"
-                        + "Event State = "      + eventState
-                        + "<br/>"
                         + "<br/>"
                         + "Selection ID = "     + selectionId
                         + "<br/>"
