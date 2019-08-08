@@ -37,7 +37,13 @@ public class ID_06_CalculateCashout extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[ID_04] Place a bet", "DESCRIPTION");
+        test = extent.createTest(
+                "[ID_06] Calculate Cashout",
+                "<pre>"
+                        + "DESCRIPTION"
+                        + "<br/>"
+                        + ""
+                        + "</pre>");
         test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
@@ -50,7 +56,9 @@ public class ID_06_CalculateCashout extends BasicSetup {
 
         MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
 
-        String bets = "{\"PlaceBetsRequest\":{\"accountId\":" + accountId + ",\"bets\":{\"bet\":[{\"type\":\"" + type + "\",\"winType\":\"" + winType + "\",\"stake\":{\"amount\":\"" + amount + "\",\"currency\":\"" + accountCurrency + "\"},\"parts\":{\"betPart\":[{\"partNo\":" + partNo + ",\"selectionId\":" + selectionId + ",\"odds\":{\"decimal\":\"" + decimal + "\",\"fractional\":\"" + fractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
+        String bets = "{\"PlaceBetsRequest\":{\"accountId\":"
+                + accountId + ",\"bets\":{\"bet\":[{\"type\":\""
+                + type + "\",\"winType\":\"" + winType + "\",\"stake\":{\"amount\":\"" + amount + "\",\"currency\":\"" + accountCurrency + "\"},\"parts\":{\"betPart\":[{\"partNo\":" + partNo + ",\"selectionId\":" + selectionId + ",\"odds\":{\"decimal\":\"" + decimal + "\",\"fractional\":\"" + fractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonBets = gson.toJson(bets);
 

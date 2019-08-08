@@ -36,7 +36,7 @@ public class OkHttpClientUtils extends BasicSetup {
     public static OkHttpClient okHttpClient;
     public static Response okServerResponse;
     public static File file;
-    public static Gson gson;
+    public static Gson gson = new Gson();
 
 
 

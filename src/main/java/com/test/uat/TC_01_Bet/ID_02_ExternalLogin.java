@@ -39,7 +39,13 @@ public class ID_02_ExternalLogin extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[ID_02] External log in", "DESCRIPTION");
+        test = extent.createTest(
+                "[ID_02] External Login",
+                "<pre>"
+                        + "DESCRIPTION"
+                        + "<br/>"
+                        + "Verify that the login functionality is working correctly."
+                        + "</pre>");
         test.assignAuthor("Pavel Popov");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
@@ -116,6 +122,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
                 + "[   ACCOUNT   DETAILS   ]"
+                + "<br/>"
                 + "<br/>"
                 + "Account = "    + username
                 + "<br/>"

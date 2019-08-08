@@ -29,14 +29,14 @@ public class ID_01_LogIn extends BasicSetup {
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
         test = extent.createTest(
-                "[TC_01] Log in",
+                "[ID_01] Log in",
                 "<pre>"
                         + "DESCRIPTION"
                         + "<br/>"
                         + "Verify that the login functionality is working correctly."
                         + "</pre>");
         test.assignAuthor("Pavel Popov");
-        test.assignCategory("POST");
+        test.assignCategory("Wallet API");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
     }
 

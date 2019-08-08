@@ -34,7 +34,13 @@ public class ID_07_Cashout extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[ID_06] Cashout bet", "DESCRIPTION");
+        test = extent.createTest(
+                "[ID_07] Cashout",
+                "<pre>"
+                        + "DESCRIPTION"
+                        + "<br/>"
+                        + "Verify that the login functionality is working correctly."
+                        + "</pre>");
         test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);

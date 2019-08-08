@@ -64,7 +64,13 @@ public class ID_08_GetSportsTree extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[ID_08] Get Sports Tree", "DESCRIPTION");
+        test = extent.createTest(
+                "[ID_08] Get Sport Tree",
+                "<pre>"
+                        + "DESCRIPTION"
+                        + "<br/>"
+                        + "Verify that the login functionality is working correctly."
+                        + "</pre>");
         test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
@@ -158,7 +164,8 @@ public class ID_08_GetSportsTree extends BasicSetup {
 
                 test.pass("<pre>"
                         + "[   EVENT    DETAILS   ]"
-                        + "       used for place bets        "
+                        + "<br/>"
+                        + "  used for place bets  "
                         + "<br/>"
                         + "<br/>"
                         + "Competition ID = "   + competitionId
@@ -180,11 +187,12 @@ public class ID_08_GetSportsTree extends BasicSetup {
                         + "<br/>"
                         + "Event State = "      + eventState
                         + "<br/>"
+                        + "<br/>"
                         + "Selection ID = "     + selectionId
                         + "<br/>"
-                        + "Selection Decimal = "+ selectionDecimal
+                        + "Selection Decimal = "    + selectionDecimal
                         + "<br/>"
-                        + "Selection Fractional"
+                        + "Selection Fractional = " + selectionFractional
                         + "</pre>");
 
 
@@ -244,11 +252,12 @@ public class ID_08_GetSportsTree extends BasicSetup {
                                     + "<br/>"
                                     + "Event State = "      + eventState
                                     + "<br/>"
+                                    + "<br/>"
                                     + "Selection ID = "     + selectionId
                                     + "<br/>"
-                                    + "Selection Decimal = "+ selectionDecimal
+                                    + "Selection Decimal = "    + selectionDecimal
                                     + "<br/>"
-                                    + "Selection Fractional"+ selectionFractional
+                                    + "Selection Fractional = " + selectionFractional
                                     + "</pre>");
 
 

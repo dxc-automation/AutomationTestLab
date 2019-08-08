@@ -7,17 +7,17 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_01_Example(failed)" verbose="10">
     <classes>
-      <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
+      <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
         <methods>
           <include name="report"/>
-          <include name="getOpenBets" invocation-numbers="0"/>
+          <include name="startTest"/>
+          <include name="placeBet" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="cleanTestData"/>
           <include name="clearXml"/>
           <include name="tearDown"/>
-          <include name="startTest"/>
         </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_03_GetOpenBets -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_04_PlaceBet -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

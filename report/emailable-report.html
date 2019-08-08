@@ -9,13 +9,36 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">TC_001</th></tr>
-<tr><td><a href="#t0">TC_01_Example</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">9,838</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TC_01_Example</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,862</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_01_Example &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.uat.TC_01_Bet.ID_01_LogIn</td><td><a href="#m0">loginRam</a></td><td rowspan="1">1565255709087</td><td rowspan="1">1972</td></tr><tr class="passedodd"><td rowspan="1">com.test.uat.TC_01_Bet.ID_02_ExternalLogin</td><td><a href="#m1">externalLogin</a></td><td rowspan="1">1565255711074</td><td rowspan="1">1185</td></tr><tr class="passedeven"><td rowspan="1">com.test.uat.TC_01_Bet.ID_03_GetOpenBets</td><td><a href="#m2">getOpenBets</a></td><td rowspan="1">1565255712263</td><td rowspan="1">2133</td></tr><tr class="passedodd"><td rowspan="1">com.test.uat.TC_01_Bet.ID_08_GetSportsTree</td><td><a href="#m3">getSportsTree</a></td><td rowspan="1">1565255714515</td><td rowspan="1">3984</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_01_Example &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.test.uat.TC_01_Bet.ID_04_PlaceBet</td><td><a href="#m0">placeBet</a></td><td rowspan="1">1565278230504</td><td rowspan="1">513</td></tr><tr><th colspan="4">TC_01_Example &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.test.uat.TC_01_Bet.ID_01_LogIn</td><td><a href="#m1">loginRam</a></td><td rowspan="1">1565278222320</td><td rowspan="1">1916</td></tr><tr class="passedodd"><td rowspan="1">com.test.uat.TC_01_Bet.ID_02_ExternalLogin</td><td><a href="#m2">externalLogin</a></td><td rowspan="1">1565278224248</td><td rowspan="1">1004</td></tr><tr class="passedeven"><td rowspan="1">com.test.uat.TC_01_Bet.ID_03_GetOpenBets</td><td><a href="#m3">getOpenBets</a></td><td rowspan="1">1565278225255</td><td rowspan="1">2690</td></tr><tr class="passedodd"><td rowspan="1">com.test.uat.TC_01_Bet.ID_08_GetSportsTree</td><td><a href="#m4">getSportsTree</a></td><td rowspan="1">1565278228090</td><td rowspan="1">2072</td></tr></tbody>
 </table>
-<h2>TC_01_Example</h2><h3 id="m0">com.test.uat.TC_01_Bet.ID_01_LogIn#loginRam</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.test.uat.TC_01_Bet.ID_02_ExternalLogin#externalLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.test.uat.TC_01_Bet.ID_03_GetOpenBets#getOpenBets</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.test.uat.TC_01_Bet.ID_08_GetSportsTree#getSportsTree</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TC_01_Example</h2><h3 id="m0">com.test.uat.TC_01_Bet.ID_04_PlaceBet#placeBet</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.Double (java.lang.Integer and java.lang.Double are in module java.base of loader &apos;bootstrap&apos;)
+	at com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(ID_04_PlaceBet.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.test.uat.TC_01_Bet.ID_01_LogIn#loginRam</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.test.uat.TC_01_Bet.ID_02_ExternalLogin#externalLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.test.uat.TC_01_Bet.ID_03_GetOpenBets#getOpenBets</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.test.uat.TC_01_Bet.ID_08_GetSportsTree#getSportsTree</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.test.uat.TC_01_Bet.ID_08_GetSportsTree.getSportsTree(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

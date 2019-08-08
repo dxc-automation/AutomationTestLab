@@ -25,7 +25,13 @@ public class ID_05_GetBetStatus extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[ID_05] Get Bet Status", "DESCRIPTION");
+        test = extent.createTest(
+                "[ID_05] Get Bet Status",
+                "<pre>"
+                        + "DESCRIPTION"
+                        + "<br/>"
+                        + "Check bet status."
+                        + "</pre>");
         test.assignAuthor("YOUR NAME");
         test.assignCategory("HttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
