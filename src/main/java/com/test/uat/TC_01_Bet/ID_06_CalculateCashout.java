@@ -53,7 +53,6 @@ public class ID_06_CalculateCashout extends BasicSetup {
         String bets = "{\"PlaceBetsRequest\":{\"accountId\":" + accountId + ",\"bets\":{\"bet\":[{\"type\":\"" + type + "\",\"winType\":\"" + winType + "\",\"stake\":{\"amount\":\"" + amount + "\",\"currency\":\"" + accountCurrency + "\"},\"parts\":{\"betPart\":[{\"partNo\":" + partNo + ",\"selectionId\":" + selectionId + ",\"odds\":{\"decimal\":\"" + decimal + "\",\"fractional\":\"" + fractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonBets = gson.toJson(bets);
-        System.out.println("\n jsonBets \n" + jsonBets);
 
 
         RequestBody requestBody =  new FormBody.Builder()
@@ -86,7 +85,7 @@ public class ID_06_CalculateCashout extends BasicSetup {
         okClientRequest(fileName, request);
 
         test.info("<pre>"
-                + "[   R E Q U E S T   H E A D E R S   ]"
+                + "[   REQUEST   HEADERS   ]"
                 + "<br/>"
                 + "<br/>"
                 + "Method:   "    + requestMethod
@@ -101,7 +100,7 @@ public class ID_06_CalculateCashout extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[   R E Q U E S T   B O D Y   ]"
+                + "[    REQUEST   BODY    ]"
                 + "<br/>"
                 + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
@@ -110,11 +109,11 @@ public class ID_06_CalculateCashout extends BasicSetup {
                 + "</pre>");
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-        betSlipId = JsonPath.read(object, "$.PlaceBetsResponse.betSlipId");
+        betSlipId     = JsonPath.read(object, "$.PlaceBetsResponse.betSlipId");
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
-                + "[   K E Y S   ]"
+                + "[   KEYS   ]"
                 + "<br/>"
                 + "\n betSlipId = " + betSlipId
                 + "<br/>"

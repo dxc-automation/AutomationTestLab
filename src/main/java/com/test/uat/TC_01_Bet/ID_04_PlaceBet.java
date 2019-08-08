@@ -88,7 +88,7 @@ public class ID_04_PlaceBet extends BasicSetup {
         okClientRequest(fileName, request);
 
         test.info("<pre>"
-                + "[   R E Q U E S T   H E A D E R S   ]"
+                + "[   REQUEST   HEADERS   ]"
                 + "<br/>"
                 + "<br/>"
                 + "Method:   "    + requestMethod
@@ -103,7 +103,7 @@ public class ID_04_PlaceBet extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br/>"
                 + "<br/>"
-                + "[   R E Q U E S T   B O D Y   ]"
+                + "[    REQUEST   BODY    ]"
                 + "<br/>"
                 + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
@@ -112,11 +112,11 @@ public class ID_04_PlaceBet extends BasicSetup {
                 + "</pre>");
 
         Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-        betSlipId = JsonPath.read(object, "$.PlaceBetsResponse.betSlipId");
+        betSlipId     = JsonPath.read(object, "$.PlaceBetsResponse.betSlipId");
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
-                + "[   K E Y S   ]"
+                + "[   KEYS   ]"
                 + "<br/>"
                 + "\n betSlipId = " + betSlipId
                 + "<br/>"

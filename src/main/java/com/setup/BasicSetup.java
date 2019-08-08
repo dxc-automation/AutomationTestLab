@@ -92,9 +92,9 @@ public class BasicSetup {
         @Parameters({"browser"})
         @BeforeSuite
         public void setup(String browser) throws Exception {
-            String pathChrome = filePath + "/" + "src/main/resources/drivers/chromedriver";
+            String pathChrome  = filePath + "/" + "src/main/resources/drivers/chromedriver";
             String pathFirefox = filePath + "/" + "src/main/resources/drivers/geckodriver.exe";
-            String pathSafari = filePath + "/" + "src/main/resources/drivers/safaridriver";
+            String pathSafari  = filePath + "/" + "src/main/resources/drivers/safaridriver";
 
             DesiredCapabilities capability = new DesiredCapabilities();
 
@@ -142,9 +142,9 @@ public class BasicSetup {
             pathFail = filePath + "/" + "Screenshots/Failed/";
             pathPass = filePath + "/" + "Screenshots/Passed/";
 
-            String method = result.getMethod().getMethodName();
+            String method   = result.getMethod().getMethodName();
             String fileName = method + ".json";
-            Path file = Paths.get(filePath + "/" + "report/JSON/" + fileName);
+            Path file       = Paths.get(filePath + "/" + "report/JSON/" + fileName);
 
             methodName = String.format("%s  [%s]", result.getMethod().getRealClass().getSimpleName(), result.getMethod().getMethodName());
 
@@ -181,29 +181,29 @@ public class BasicSetup {
 
 
                             // Parse the data from json file
-                            parser = new JSONParser();
+                            parser        = new JSONParser();
                             Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-                            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-                            response = gson.toJson(object);
+                            Gson gson     = new GsonBuilder().setPrettyPrinting().create();
+                            response      = gson.toJson(object);
 
 
                             //  Print into HTML report file
                             test.pass("<pre>"
-                                        + "[ R E S P O N S E ]"
-                                        + "<br />"
-                                        + "<br />"
+                                        + "[   RESPONSE   ]"
+                                        + "<br/>"
+                                        + "<br/>"
                                         + "Response Code  : " + responseCode
-                                        + "<br />"
+                                        + "<br/>"
                                         + "Message : " + responseMsg
-                                        + "<br />"
-                                        + "<br />"
+                                        + "<br/>"
+                                        + "<br/>"
                                         + headers.replace("[", "").replace("]", "")
-                                        + "<br />"
-                                        + "<br />"
-                                        + "<br />"
+                                        + "<br/>"
+                                        + "<br/>"
+                                        + "<br/>"
                                         + response
-                                        + "<br />"
-                                        + "<br />"
+                                        + "<br/>"
+                                        + "<br/>"
                                         + "</pre>");
                         } else {
                             test.pass(methodName);
@@ -247,15 +247,15 @@ public class BasicSetup {
 
 
                             // Parse the data from json file
-                            parser = new JSONParser();
+                            parser        = new JSONParser();
                             Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-                            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-                            response = gson.toJson(object);
+                            Gson gson     = new GsonBuilder().setPrettyPrinting().create();
+                            response      = gson.toJson(object);
 
 
                             // Print into HTML report file
                             test.fail("<pre>"
-                                        + "[ R E S P O N S E ]"
+                                        + "[   RESPONSE   ]"
                                         + "<br />"
                                         + "<br />"
                                         + "Response Code  : " + responseCode

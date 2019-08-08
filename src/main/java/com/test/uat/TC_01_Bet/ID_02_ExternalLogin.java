@@ -1,7 +1,6 @@
 package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
-import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
@@ -18,8 +17,7 @@ import java.io.FileReader;
 import java.lang.reflect.Method;
 
 import static com.constants.API.external_login;
-import static com.setup.ConsoleRunner.host;
-import static com.setup.ConsoleRunner.scheme;
+import static com.setup.ConsoleRunner.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
@@ -79,7 +77,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
         okClientRequest(fileName, request);
 
         test.info("<pre>"
-                + "[   R E Q U E S T   H E A D E R S   ]"
+                + "[   REQUEST   HEADERS   ]"
                 + "<br/>"
                 + "<br/>"
                 + "Method:   "    + requestMethod
@@ -94,17 +92,16 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br/>"
                 + "<br/>"
-                + "[   R E Q U E S T   B O D Y   ]"
+                + "[    REQUEST   BODY    ]"
                 + "<br/>"
                 + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
                 + "<br/>"
                 + "</pre>");
 
-        Gson gson = new Gson();
         JsonParser jsonParser = new JsonParser();
-        Object object = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-        String jsonResponse = gson.toJson(object);
+        Object object         = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+        String jsonResponse   = gson.toJson(object);
 
 
         accountId       = JsonPath.read(jsonResponse, "$.Login.accountId");
@@ -118,11 +115,19 @@ public class ID_02_ExternalLogin extends BasicSetup {
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
-                + "[   A C C O U N T D E T A I L S   ]"
-                + "<br />"
-                + "\n sessionToken = " + sessionToken
-                + "<br />"
-                + "<br />"
+                + "[   ACCOUNT   DETAILS   ]"
+                + "<br/>"
+                + "Account = "    + username
+                + "<br/>"
+                + "Account ID = " + accountId
+                + "<br/>"
+                + "Account Currency = " + accountCurrency
+                + "<br/>"
+                + "Account Language = " + accountLanguage
+                + "<br/>"
+                + "sessionToken = "     + sessionToken
+                + "<br/>"
+                + "<br/>"
                 + "</pre>");
 
     }

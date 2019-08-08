@@ -103,7 +103,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
 
 
         test.info("<pre>"
-                + "[   R E Q U E S T   H E A D E R S   ]"
+                + "[   REQUEST   HEADERS   ]"
                 + "<br/>"
                 + "<br/>"
                 + "Method:   " + requestMethod
@@ -118,7 +118,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[   R E Q U E S T   B O D Y   ]"
+                + "[    REQUEST   BODY    ]"
                 + "<br/>"
                 + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
@@ -157,7 +157,7 @@ public class ID_08_GetSportsTree extends BasicSetup {
                 eventName       = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
 
                 test.pass("<pre>"
-                        + "[   E V E N T    D E T A I L S   ]"
+                        + "[   EVENT    DETAILS   ]"
                         + "       used for place bets        "
                         + "<br/>"
                         + "<br/>"
@@ -166,79 +166,92 @@ public class ID_08_GetSportsTree extends BasicSetup {
                         + "Competition Name = " + competitionName
                         + "<br/>"
                         + "<br/>"
-                        + "Event ID = "   + eventId
+                        + "Event ID = "         + eventId
                         + "<br/>"
-                        + "Event Name = " + eventName
+                        + "Event Name = "       + eventName
                         + "<br/>"
-                        + "Event Time = " + time
+                        + "Event Time = "       + time
                         + "<br/>"
-                        + "Event State = "+ eventState
+                        + "Event State = "      + eventState
                         + "<br/>"
+                        + "Event IsInplay = "   + eventIsInplay
                         + "<br/>"
-                        + "IsInplay = " + eventIsInplay
+                        + "Event IsDisplayed = "+ displayed
                         + "<br/>"
-                        + "IsDisplayed = " + displayed
+                        + "Event State = "      + eventState
                         + "<br/>"
-                        + "State = " + eventState
+                        + "Selection ID = "     + selectionId
                         + "<br/>"
+                        + "Selection Decimal = "+ selectionDecimal
+                        + "<br/>"
+                        + "Selection Fractional"
                         + "</pre>");
 
 
             } else {
                 try {
-                    eventsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[0].numEvents");
-                    eventMarketsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].numMarkets");
+                    eventsNumber       = JsonPath.read(jsonResponse, "$.popularCompetitions[1].numEvents");
+                    eventMarketsNumber = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].numMarkets");
 
                     if (eventsNumber > 0 && eventMarketsNumber > 0) {
                         gson = new Gson();
-                        allMarkets = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].markets");
+                        allMarkets          = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].markets");
                         displayedMarketsObj = JsonPath.read(allMarkets, "$[?(@.displayed == true)]");
-                        displayedMarkets = gson.toJson(displayedMarketsObj);
+                        displayedMarkets    = gson.toJson(displayedMarketsObj);
 
                         if (displayedMarkets != null) {
                             marketName = JsonPath.read(displayedMarkets, "$[0].name");
                             marketType = JsonPath.read(displayedMarkets, "$[0].type");
-                            marketId = JsonPath.read(displayedMarkets, "$[0].id");
+                            marketId   = JsonPath.read(displayedMarkets, "$[0].id");
+                            displayed  = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].displayed");
+                            eventId    = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].id");
+                            selectionId   = JsonPath.read(displayedMarkets, "$[0].selection[0].id");
                             marketCashout = JsonPath.read(displayedMarkets, "$[0].attributes.attrib[1].value");
-                            selectionId = JsonPath.read(displayedMarkets, "$[0].selection[0].id");
-                            selectionDecimal = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.dec");
+                            eventIsInplay = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].isInplay");
+                            competitionId = JsonPath.read(jsonResponse, "$.popularCompetitions[1].id");
+                            selectionDecimal    = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.dec");
                             selectionFractional = JsonPath.read(displayedMarkets, "$[0].selection[0].odds.frac");
-                            displayed = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].displayed");
-                            eventIsInplay = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].isInplay");
-                            eventId = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].id");
-                            competitionId = JsonPath.read(jsonResponse, "$.popularCompetitions[0].id");
 
-                            eventTime = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].eventTime");
-                            time = new Timestamp(eventTime);
+                            eventTime = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].eventTime");
+                            time      = new Timestamp(eventTime);
 
-                            eventState = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].state");
-                            competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].compNames.longName");
-                            eventName = JsonPath.read(jsonResponse, "$.popularCompetitions[0].event[0].names.longName");
+                            eventState      = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].state");
+                            competitionName = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].compNames.longName");
+                            eventName       = JsonPath.read(jsonResponse, "$.popularCompetitions[1].event[0].names.longName");
 
                             test.pass("<pre>"
-                                    + "[   E V E N T    D E T A I L S   ]"
+                                    + "[   EVENT    DETAILS   ]"
+                                    + "<br/>"
                                     + "       used for place bets        "
                                     + "<br/>"
                                     + "<br/>"
-                                    + "Competition ID = " + competitionId
+                                    + "Competition ID = "   + competitionId
                                     + "<br/>"
                                     + "Competition Name = " + competitionName
                                     + "<br/>"
                                     + "<br/>"
-                                    + "Event ID = " + eventId
+                                    + "Event ID = "         + eventId
                                     + "<br/>"
-                                    + "Event Name = " + eventName
+                                    + "Event Name = "       + eventName
                                     + "<br/>"
-                                    + "Event Time = " + time
+                                    + "Event Time = "       + time
                                     + "<br/>"
+                                    + "Event State = "      + eventState
                                     + "<br/>"
-                                    + "IsInplay = " + eventIsInplay
+                                    + "Event IsInplay = "   + eventIsInplay
                                     + "<br/>"
-                                    + "IsDisplayed = " + displayed
+                                    + "Event IsDisplayed = "+ displayed
                                     + "<br/>"
-                                    + "State = " + eventState
+                                    + "Event State = "      + eventState
                                     + "<br/>"
+                                    + "Selection ID = "     + selectionId
+                                    + "<br/>"
+                                    + "Selection Decimal = "+ selectionDecimal
+                                    + "<br/>"
+                                    + "Selection Fractional"+ selectionFractional
                                     + "</pre>");
+
+
                         }
                     }
                 } catch (Exception e) {

@@ -76,7 +76,7 @@ public class ID_03_GetOpenBets extends BasicSetup {
 
 
         test.info("<pre>"
-                + "[   R E Q U E S T   H E A D E R S   ]"
+                + "[   REQUEST   HEADERS   ]"
                 + "<br/>"
                 + "<br/>"
                 + "Method:   " + requestMethod
@@ -91,7 +91,7 @@ public class ID_03_GetOpenBets extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br/>"
                 + "<br/>"
-                + "[   R E Q U E S T   B O D Y   ]"
+                + "[    REQUEST   BODY    ]"
                 + "<br/>"
                 + "<br/>"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
@@ -111,7 +111,7 @@ public class ID_03_GetOpenBets extends BasicSetup {
 
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
-                + "[   K E Y S   ]"
+                + "[   KEYS   ]"
                 + "<br/>"
                 + "\n selectionId = "   + selectionId
                 + "\n winType = "       + winType
