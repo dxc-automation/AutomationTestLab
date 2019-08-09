@@ -2,7 +2,6 @@ package com.setup;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -12,7 +11,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -118,15 +116,6 @@ public class OkHttpClientUtils extends BasicSetup {
         return file;
     }
 
-
-    public static String getJsonResponse(String fileName) throws Exception {
-        gson = new Gson();
-        JsonParser jsonParser = new JsonParser();
-        Object object = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-        String jsonResponse = gson.toJson(object);
-
-        return jsonResponse;
-    }
 
 
 

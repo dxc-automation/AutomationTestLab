@@ -31,21 +31,9 @@
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_08_GetSportsTree">
+        <class name="com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree">
             <methods>
                 <include name="getSportsTree"/>
-            </methods>
-        </class>
-
-        <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
-            <methods>
-                <include name="placeBet"/>
-            </methods>
-        </class>
-
-        <class name="com.test.uat.TC_01_Bet.ID_09_GetFootballSportTree">
-            <methods>
-                <include name="getFootballTree"/>
             </methods>
         </class>
 
