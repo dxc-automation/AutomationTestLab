@@ -8,6 +8,7 @@ com/test/examples/TC_03_Example_UI/ID_01_OpenCart.class
 com/test/uat/TC_01_Bet/ID_03_GetOpenBets.class
 com/pages/SumoPromotionsPage.class
 com/setup/WebDriverUtils.class
+com/test/uat/TC_01_Bet/ID_05_PlaceBet.class
 com/test/temp/HttpClient_POST.class
 com/test/temp/UI.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_09_Order.class

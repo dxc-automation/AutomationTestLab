@@ -37,6 +37,12 @@
             </methods>
         </class>
 
+        <class name="com.test.uat.TC_01_Bet.ID_05_PlaceBet">
+            <methods>
+                <include name="placeBet"/>
+            </methods>
+        </class>
+
     </classes>
 </test>
 </suite>

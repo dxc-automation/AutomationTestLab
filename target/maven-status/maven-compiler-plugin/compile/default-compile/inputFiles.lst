@@ -30,6 +30,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/HttpClientUtils.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/uat/TC_01_Bet/ID_05_PlaceBet.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/temp/OkHttpClient_GET.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_02_Example_HttpClient/Fly/ID_03_Authenticate.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_03_Example_UI/ID_01_OpenCart.java

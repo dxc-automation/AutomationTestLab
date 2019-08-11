@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="16" passed="4" failed="0" skipped="0">
+<testng-results ignored="16" total="21" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-11T14:40:24Z" name="TC_001" finished-at="2019-08-11T14:40:33Z" duration-ms="9495">
+  <suite started-at="2019-08-11T22:36:08Z" name="TC_001" finished-at="2019-08-11T22:36:21Z" duration-ms="12995">
     <groups>
     </groups>
-    <test started-at="2019-08-11T14:40:24Z" name="TC_01_Example" finished-at="2019-08-11T14:40:33Z" duration-ms="9495">
+    <test started-at="2019-08-11T22:36:08Z" name="TC_01_Example" finished-at="2019-08-11T22:36:21Z" duration-ms="12995">
       <class name="com.test.uat.TC_01_Bet.ID_01_LogIn">
-        <test-method is-config="true" signature="cleanTestData()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@55493582]" started-at="2019-08-11T14:40:22Z" name="cleanTestData" finished-at="2019-08-11T14:40:22Z" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="cleanTestData()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@2f16c6b3]" started-at="2019-08-11T22:36:07Z" name="cleanTestData" finished-at="2019-08-11T22:36:07Z" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanTestData -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@55493582]" started-at="2019-08-11T14:40:22Z" name="setup" finished-at="2019-08-11T14:40:24Z" duration-ms="1708" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@2f16c6b3]" started-at="2019-08-11T22:36:07Z" name="setup" finished-at="2019-08-11T22:36:08Z" duration-ms="1477" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@55493582]" started-at="2019-08-11T14:40:24Z" name="startTest" finished-at="2019-08-11T14:40:24Z" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@2f16c6b3]" started-at="2019-08-11T22:36:08Z" name="startTest" finished-at="2019-08-11T22:36:09Z" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@55493582]" started-at="2019-08-11T14:40:24Z" name="loginRam" finished-at="2019-08-11T14:40:26Z" duration-ms="1874" status="PASS">
+        <test-method signature="loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@2f16c6b3]" started-at="2019-08-11T22:36:09Z" name="loginRam" finished-at="2019-08-11T22:36:11Z" duration-ms="1953" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,28 +37,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginRam -->
-        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@55493582]" started-at="2019-08-11T14:40:26Z" name="report" finished-at="2019-08-11T14:40:26Z" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@2f16c6b3]" started-at="2019-08-11T22:36:11Z" name="report" finished-at="2019-08-11T22:36:11Z" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@55493582] output={null}]]]>
+                <![CDATA[[TestResult name=loginRam status=SUCCESS method=ID_01_LogIn.loginRam(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@2f16c6b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="clearXml()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@55493582]" started-at="2019-08-11T14:40:33Z" name="clearXml" finished-at="2019-08-11T14:40:33Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearXml -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@55493582]" started-at="2019-08-11T14:40:33Z" name="tearDown" finished-at="2019-08-11T14:40:34Z" depends-on-methods="com.setup.BasicSetup.clearXml" duration-ms="480" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@2f16c6b3]" started-at="2019-08-11T22:36:21Z" name="tearDown" finished-at="2019-08-11T22:36:22Z" depends-on-methods="com.setup.BasicSetup.clearXml" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="clearXml()[pri:0, instance:com.test.uat.TC_01_Bet.ID_01_LogIn@2f16c6b3]" started-at="2019-08-11T22:36:21Z" name="clearXml" finished-at="2019-08-11T22:36:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearXml -->
       </class> <!-- com.test.uat.TC_01_Bet.ID_01_LogIn -->
       <class name="com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree">
-        <test-method signature="getSportsTree(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree@336f1079]" started-at="2019-08-11T14:40:29Z" name="getSportsTree" finished-at="2019-08-11T14:40:33Z" duration-ms="4421" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree@52c3cb31]" started-at="2019-08-11T22:36:12Z" name="startTest" finished-at="2019-08-11T22:36:12Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="getSportsTree(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree@52c3cb31]" started-at="2019-08-11T22:36:12Z" name="getSportsTree" finished-at="2019-08-11T22:36:14Z" duration-ms="1430" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,15 +73,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSportsTree -->
-        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree@336f1079]" started-at="2019-08-11T14:40:29Z" name="startTest" finished-at="2019-08-11T14:40:29Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree@336f1079]" started-at="2019-08-11T14:40:33Z" name="report" finished-at="2019-08-11T14:40:33Z" duration-ms="134" status="PASS">
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree@52c3cb31]" started-at="2019-08-11T22:36:14Z" name="report" finished-at="2019-08-11T22:36:14Z" duration-ms="109" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getSportsTree status=SUCCESS method=ID_04_GetFootballSportTree.getSportsTree(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree@336f1079] output={null}]]]>
+                <![CDATA[[TestResult name=getSportsTree status=SUCCESS method=ID_04_GetFootballSportTree.getSportsTree(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree@52c3cb31] output={null}]]]>
               </value>
             </param>
           </params>
@@ -85,12 +85,36 @@
           </reporter-output>
         </test-method> <!-- report -->
       </class> <!-- com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree -->
-      <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
-        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@1a20270e]" started-at="2019-08-11T14:40:26Z" name="startTest" finished-at="2019-08-11T14:40:26Z" duration-ms="0" status="PASS">
+      <class name="com.test.uat.TC_01_Bet.ID_05_PlaceBet">
+        <test-method signature="placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_PlaceBet@4b79ac84]" started-at="2019-08-11T22:36:14Z" name="placeBet" finished-at="2019-08-11T22:36:21Z" duration-ms="7664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.uat.TC_01_Bet.ID_05_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeBet -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_PlaceBet@4b79ac84]" started-at="2019-08-11T22:36:14Z" name="startTest" finished-at="2019-08-11T22:36:14Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@1a20270e]" started-at="2019-08-11T14:40:26Z" name="externalLogin" finished-at="2019-08-11T14:40:27Z" duration-ms="1182" status="PASS">
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_PlaceBet@4b79ac84]" started-at="2019-08-11T22:36:21Z" name="report" finished-at="2019-08-11T22:36:21Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=placeBet status=SUCCESS method=ID_05_PlaceBet.placeBet(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_05_PlaceBet@4b79ac84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+      </class> <!-- com.test.uat.TC_01_Bet.ID_05_PlaceBet -->
+      <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
+        <test-method signature="externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@34158c08]" started-at="2019-08-11T22:36:11Z" name="externalLogin" finished-at="2019-08-11T22:36:11Z" duration-ms="594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,11 +125,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- externalLogin -->
-        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@1a20270e]" started-at="2019-08-11T14:40:27Z" name="report" finished-at="2019-08-11T14:40:27Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@34158c08]" started-at="2019-08-11T22:36:11Z" name="startTest" finished-at="2019-08-11T22:36:11Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@34158c08]" started-at="2019-08-11T22:36:11Z" name="report" finished-at="2019-08-11T22:36:11Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=externalLogin status=SUCCESS method=ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@1a20270e] output={null}]]]>
+                <![CDATA[[TestResult name=externalLogin status=SUCCESS method=ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_02_ExternalLogin@34158c08] output={null}]]]>
               </value>
             </param>
           </params>
@@ -114,11 +142,11 @@
         </test-method> <!-- report -->
       </class> <!-- com.test.uat.TC_01_Bet.ID_02_ExternalLogin -->
       <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
-        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@6b88ca8c]" started-at="2019-08-11T14:40:27Z" name="startTest" finished-at="2019-08-11T14:40:27Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@19e4fcac]" started-at="2019-08-11T22:36:11Z" name="startTest" finished-at="2019-08-11T22:36:11Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@6b88ca8c]" started-at="2019-08-11T14:40:27Z" name="getOpenBets" finished-at="2019-08-11T14:40:29Z" duration-ms="1628" status="PASS">
+        <test-method signature="getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@19e4fcac]" started-at="2019-08-11T22:36:11Z" name="getOpenBets" finished-at="2019-08-11T22:36:12Z" duration-ms="978" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,11 +157,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getOpenBets -->
-        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@6b88ca8c]" started-at="2019-08-11T14:40:29Z" name="report" finished-at="2019-08-11T14:40:29Z" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="report(org.testng.ITestResult)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@19e4fcac]" started-at="2019-08-11T22:36:12Z" name="report" finished-at="2019-08-11T22:36:12Z" duration-ms="89" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getOpenBets status=SUCCESS method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@6b88ca8c] output={null}]]]>
+                <![CDATA[[TestResult name=getOpenBets status=SUCCESS method=ID_03_GetOpenBets.getOpenBets(java.lang.reflect.Method)[pri:0, instance:com.test.uat.TC_01_Bet.ID_03_GetOpenBets@19e4fcac] output={null}]]]>
               </value>
             </param>
           </params>
