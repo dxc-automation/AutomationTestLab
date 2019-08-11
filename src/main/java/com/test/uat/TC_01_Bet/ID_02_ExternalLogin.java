@@ -124,7 +124,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 + "[   ACCOUNT   DETAILS   ]"
                 + "<br/>"
                 + "<br/>"
-                + "Account = "    + username
+                + "Account    = " + username
                 + "<br/>"
                 + "Account ID = " + accountId
                 + "<br/>"
@@ -132,7 +132,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 + "<br/>"
                 + "Account Language = " + accountLanguage
                 + "<br/>"
-                + "sessionToken = "     + sessionToken
+                + "sessionToken     = " + sessionToken
                 + "<br/>"
                 + "<br/>"
                 + "</pre>");
