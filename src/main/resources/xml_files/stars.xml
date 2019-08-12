@@ -43,6 +43,12 @@
             </methods>
         </class>
 
+        <class name="com.test.uat.TC_01_Bet.ID_06_CalculateCashout">
+            <methods>
+                <include name="calculateCashout"/>
+            </methods>
+        </class>
+
     </classes>
 </test>
 </suite>

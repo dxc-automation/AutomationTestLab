@@ -53,7 +53,7 @@ public class OkHttpClient_GET extends BasicSetup {
 
         // Add request data to the report
         test.info("<pre>"
-                + "[ REQUEST  HEADERS ]"
+                + "[   REQUEST  HEADERS   ]"
                 + "<br />"
                 + "<br />"
                 + "Method:   "    + requestMethod
@@ -68,7 +68,7 @@ public class OkHttpClient_GET extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[ REQUEST  BODY ]"
+                + "[   REQUEST  BODY   ]"
                 + "<br />"
                 + "<br />"
                 + "</pre>");

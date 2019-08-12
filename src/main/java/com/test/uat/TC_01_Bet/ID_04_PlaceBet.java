@@ -35,6 +35,10 @@ public class ID_04_PlaceBet extends BasicSetup {
     protected static Double selectionDecimalOdd;
 
     public static String betSlipId;
+    public static String betTypeRequest;
+    public static String betWinTypeRequest;
+    public static int amountRequest;
+    public static int partNoRequest;
 
 
     @BeforeClass
@@ -57,21 +61,31 @@ public class ID_04_PlaceBet extends BasicSetup {
 
         String fileName = testMethod.getName() + ".json";
 
-        int amount  = 2;
-        int partNo  = 1;
-        String type = "SINGLE";
-        String winType = "WIN";
+        amountRequest  = 2;
+        partNoRequest  = 1;
+        betTypeRequest = "SINGLE";
+        betWinTypeRequest = "WIN";
 
-        String bets = "{\"PlaceBetsRequest\":{\"accountId\":"
-                + accountId + ",\"bets\":{\"bet\":[{\"type\":\""
-                + type + "\",\"winType\":\""
-                + winType + "\",\"stake\":{\"amount\":\""
-                + amount + "\",\"currency\":\""
-                + accountCurrency + "\"},\"parts\":{\"betPart\":[{\"partNo\":"
-                + partNo + ",\"selectionId\":"
-                + selectionId + ",\"odds\":{\"decimal\":\""
-                + selectionDecimal + "\",\"fractional\":\""
-                + selectionFractional + "\"}}]}}]},\"channelId\":6,\"reqId\":0,\"acceptPriceChange\":true}}";
+        String bets =
+                "{\"PlaceBetsRequest\":" +
+                "{\"accountId\":"        + accountId + "," +
+                "\"bets\":"              +
+                "{\"bet\":["             +
+                "{\"type\":\""           + betTypeRequest + "\"," +
+                "\"winType\":\""         + betWinTypeRequest + "\"," +
+                "\"stake\":"             +
+                "{\"amount\":\""         + amountRequest + "\"," +
+                "\"currency\":\""        + accountCurrency + "\"}," +
+                "\"parts\":"             +
+                "{\"betPart\":["         +
+                "{\"partNo\":"           + partNoRequest + "," +
+                "\"selectionId\":"       + selectionId + "," +
+                "\"odds\":"              +
+                "{\"decimal\":\""        + selectionDecimal + "\"," +
+                "\"fractional\":\""      + selectionFractional + "\"}}]}}]}," +
+                "\"channelId\":6,"       +
+                "\"reqId\":0,"           +
+                "\"acceptPriceChange\":true}}";
 
         RequestBody requestBody =  new FormBody.Builder()
                 .add("isSpinAndBet", "false")
@@ -134,7 +148,7 @@ public class ID_04_PlaceBet extends BasicSetup {
         Object object         = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
         String jsonResponse   = gsonPretyPrint.toJson(object);
 
-        String betType   = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betType");
+        String betTypeResponse = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betType");
         String betStatus = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].status");
         int betStake = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].totalStake");
         int  eventId = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventId");
@@ -189,7 +203,7 @@ public class ID_04_PlaceBet extends BasicSetup {
                     + "Market ID        = " + marketId
                     + "<br/>"
                     + "<br/>"
-                    + "Bet Type     = " + betType
+                    + "Bet Type     = " + betTypeResponse
                     + "<br/>"
                     + "Bet Status   = " + betStatus
                     + "<br/>"

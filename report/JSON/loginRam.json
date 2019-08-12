@@ -4,6 +4,7 @@
     "imageid": 0,
     "fl": 36176137,
     "timezone": 0,
+    "ipCountry": "UK",
     "balancestr": "0.00 EUR",
     "pr2h": 0,
     "statecode": "",
@@ -42,7 +43,7 @@
             "currency": "EUR"
         },
         {
-            "chips": 8888644,
+            "chips": 8887170,
             "tchips": 0,
             "currency": "USD"
         }
@@ -58,19 +59,20 @@
     "LMTMOD": 1000,
     "embedded": "1",
     "email": "bgqacom1@starsgroup.com",
-    "timestamp": 1565625062232,
+    "timestamp": 1565644001037,
     "pr3h": 0,
     "fl3": 8196,
     "fl2": 540692,
     "pr3": 0,
     "pr2": 0,
-    "totalbalanceusd": 8888644,
+    "totalbalanceusd": 8887170,
     "license": 512,
     "totaltmoneybalance": 0,
     "fl3h": 0,
     "success": true,
     "playchips": 1001500000,
-    "totalbalance": 7453255,
+    "totalbalance": 7452019,
     "playerVerification": false,
+    "ipState": "",
     "username": "BGQACOM1"
 }

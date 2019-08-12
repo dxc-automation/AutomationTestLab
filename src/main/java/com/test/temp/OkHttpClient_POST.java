@@ -13,12 +13,11 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
+import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
-import static com.setup.HttpClientUtils.*;
+import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
-import static com.setup.OkHttpClientUtils.requestMethod;
-import static com.setup.OkHttpClientUtils.requestURLPath;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 
@@ -27,7 +26,13 @@ public class OkHttpClient_POST extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("[REST/SOAP] TEST NAME", "DESCRIPTION");
+        test = extent.createTest(
+                "[ID_**] TEMP",
+                "<pre>"
+                        + "DESCRIPTION"
+                        + "<br/>"
+                        + "Test description....."
+                        + "</pre>");
         test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
@@ -51,9 +56,9 @@ public class OkHttpClient_POST extends BasicSetup {
                 .build();
 
         url = new URIBuilder()
-                .setScheme("http/https")
-                .setHost("api.flypaythis.com")
-                .setPath("/v2/auth/login")
+                .setScheme(scheme)
+                .setHost("")
+                .setPath("")
                 .build();
 
         request = new Request.Builder()
@@ -64,7 +69,7 @@ public class OkHttpClient_POST extends BasicSetup {
         okClientRequest(fileName, request);
 
         test.info("<pre>"
-                + "[ REQUEST  HEADERS ]"
+                + "[   REQUEST  HEADERS   ]"
                 + "<br />"
                 + "<br />"
                 + "Method:   "    + requestMethod
@@ -79,7 +84,7 @@ public class OkHttpClient_POST extends BasicSetup {
                 + getRequestOkClientHeaders()
                 + "<br />"
                 + "<br />"
-                + "[ REQUEST  BODY ]"
+                + "[   REQUEST   BODY   ]"
                 + "<br />"
                 + "<br />"
                 + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
