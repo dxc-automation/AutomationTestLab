@@ -2,6 +2,7 @@ package com.setup;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonParser;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -35,6 +36,8 @@ public class OkHttpClientUtils extends BasicSetup {
     public static Response okServerResponse;
     public static File file;
     public static Gson gson = new Gson();
+    public static Gson gsonPretyPrint = new GsonBuilder().setPrettyPrinting().create();
+    public static JsonParser jsonParser = new JsonParser();
 
 
 
@@ -83,8 +86,7 @@ public class OkHttpClientUtils extends BasicSetup {
         }
 
 
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        response = gson.toJson(responseBody);
+        response = gsonPretyPrint.toJson(responseBody);
 
         responseProtocol = okServerResponse.protocol().toString().toUpperCase();
         responseMsg = okServerResponse.message();
@@ -124,8 +126,7 @@ public class OkHttpClientUtils extends BasicSetup {
         requestBody.writeTo(buffer);
         String object = buffer.readUtf8();
 
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String jsonRequest = String.valueOf(gson.toJsonTree(object));
+        String jsonRequest = String.valueOf(gsonPretyPrint.toJsonTree(object));
 
         return jsonRequest;
     }

@@ -25,21 +25,21 @@
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
-            <methods>
-                <include name="getOpenBets"/>
-            </methods>
-        </class>
-
-        <class name="com.test.uat.TC_01_Bet.ID_04_GetFootballSportTree">
+        <class name="com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree">
             <methods>
                 <include name="getSportsTree"/>
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_05_PlaceBet">
+        <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
             <methods>
                 <include name="placeBet"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.ID_05_OpenBets">
+            <methods>
+                <include name="openBets"/>
             </methods>
         </class>
 

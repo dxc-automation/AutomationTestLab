@@ -132,7 +132,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 + "<br/>"
                 + "Account Language = " + accountLanguage
                 + "<br/>"
-                + "sessionToken     = " + sessionToken
+                + "Session Token    = " + sessionToken
                 + "<br/>"
                 + "<br/>"
                 + "</pre>");
