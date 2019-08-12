@@ -21,6 +21,7 @@ com/setup/ExtentManager.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.class
 com/test/examples/TC_01_Example_URLConnection/ID_02_CreateSession.class
+com/setup/JSONUtils.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_08_Menu.class
 com/pages/SumoLoginPage.class
 com/test/examples/TC_02_Example_HttpClient/PayPal/ID_01_Token.class

@@ -21,6 +21,7 @@ import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
+import static com.setup.JSONUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
@@ -39,7 +40,7 @@ public class ID_05_OpenBets extends BasicSetup {
                 "<pre>"
                         + "DESCRIPTION"
                         + "<br/>"
-                        + "Get all bets with status <i>open</i> for current account and verify that the bet has been placed successfully. "
+                        + "Send POST request to get all bets with status OPEN. Then search for a Bet Slip ID in the response."
                         + "</pre>");
         test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
@@ -101,12 +102,13 @@ public class ID_05_OpenBets extends BasicSetup {
                 + "</pre>");
 
         Object object         = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
-        String jsonResponse   = gsonPretyPrint.toJson(object);
+        String jsonResponse   = gson.toJson(object);
 
         String bet = "$..[?(@.betSlipId == " + betSlipId + ")]";
         Object jsonArray = JsonPath.read(jsonResponse, bet);
 
-        if (jsonArray != null) {
+        createJSONDebugFile(testMethod, jsonArray);
+
             String eventName = JsonPath.read(jsonArray, "$[0].parts.betPart[0].event.name");
             int    eventId   = JsonPath.read(jsonArray, "$[0].parts.betPart[0].event.id");
             String betStatus = JsonPath.read(jsonArray, "$[0].betStatus");
@@ -119,6 +121,7 @@ public class ID_05_OpenBets extends BasicSetup {
 
             test.pass("<pre>"
                     + "[   SEARCH RESULT   ]"
+                    + "<br/>"
                     + "<br/>"
                     + "Event Name        = " + eventName
                     + "<br/>"
@@ -135,9 +138,13 @@ public class ID_05_OpenBets extends BasicSetup {
                     + "Bet Status        = " + betStatus
                     + "<br/>"
                     + "Potential Payout  = " + potentialPayout
+                    + "<br/>"
+                    + "BetSlip ID        = " + betSlipId
+                    + "<br/>"
+                    + "<br/>"
                     + "</pre>");
         }
     }
-}
+
 
 

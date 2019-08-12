@@ -1,8 +1,5 @@
 package com.setup;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -17,6 +14,8 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import static com.setup.HttpClientUtils.*;
+import static com.setup.JSONUtils.*;
+
 
 
 public class OkHttpClientUtils extends BasicSetup {
@@ -35,9 +34,6 @@ public class OkHttpClientUtils extends BasicSetup {
     public static OkHttpClient okHttpClient;
     public static Response okServerResponse;
     public static File file;
-    public static Gson gson = new Gson();
-    public static Gson gsonPretyPrint = new GsonBuilder().setPrettyPrinting().create();
-    public static JsonParser jsonParser = new JsonParser();
 
 
 

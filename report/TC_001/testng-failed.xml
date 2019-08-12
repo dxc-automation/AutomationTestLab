@@ -9,13 +9,13 @@
     <classes>
       <class name="com.test.uat.TC_01_Bet.ID_05_OpenBets">
         <methods>
-          <include name="openBets" invocation-numbers="0"/>
           <include name="report"/>
           <include name="setup"/>
           <include name="cleanTestData"/>
           <include name="clearXml"/>
           <include name="tearDown"/>
           <include name="startTest"/>
+          <include name="openBets" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.test.uat.TC_01_Bet.ID_05_OpenBets -->
     </classes>

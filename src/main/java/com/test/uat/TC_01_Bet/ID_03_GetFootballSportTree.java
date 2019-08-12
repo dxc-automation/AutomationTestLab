@@ -25,6 +25,7 @@ import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
+import static com.setup.JSONUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 
@@ -53,11 +54,11 @@ public class ID_03_GetFootballSportTree extends BasicSetup {
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
         test = extent.createTest(
-                "[ID_04] Get Football Sport Tree",
+                "[ID_03] Get Football Sport Tree",
                 "<pre>"
                         + "DESCRIPTION"
                         + "<br/>"
-                        + "Verify that the login functionality is working correctly."
+                        + "Get the full football sports tree and search for event that is displayed and has markets that are not suspended."
                         + "</pre>");
         test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
@@ -147,6 +148,7 @@ public class ID_03_GetFootballSportTree extends BasicSetup {
 
                 test.pass("<pre>"
                         + "[   EVENT    DETAILS   ]"
+                        + "<br/>"
                         + "<br/>"
                         + "Market Name  = " + marketName
                         + "<br/>"

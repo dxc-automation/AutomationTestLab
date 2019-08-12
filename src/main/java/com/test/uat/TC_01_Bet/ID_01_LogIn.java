@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.util.List;
 
+import static com.setup.JSONUtils.*;
 import static com.setup.ConsoleRunner.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
@@ -56,6 +57,7 @@ public class ID_01_LogIn extends BasicSetup {
 
         String requestData = jsonPostData.toString(4);
         String fileName = testMethod.getName() + ".json";
+        String jsonBody = convertJson(requestData);
 
         httpPost(fileName, url, jsonPostData).addHeader("Origin", "https://sports.uat.pyr");
 
@@ -79,7 +81,7 @@ public class ID_01_LogIn extends BasicSetup {
                 + "[    REQUEST   BODY    ]"
                 + "<br/>"
                 + "<br/>"
-                + requestData.replace("    ", "&nbsp;&nbsp;")
+                + jsonBody
                 + "<br/>"
                 + "<br/>"
                 + "</pre>");
@@ -107,6 +109,7 @@ public class ID_01_LogIn extends BasicSetup {
         /*** Add key values that we take from the response. ***/
         test.pass("<pre>"
                 + "[   KEYS   ]"
+                + "<br/>"
                 + "<br/>"
                 + "\n externalToken = " + externalToken
                 + "\n signature     = " + signature
