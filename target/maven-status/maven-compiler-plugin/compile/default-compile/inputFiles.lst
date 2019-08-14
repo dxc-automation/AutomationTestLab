@@ -28,6 +28,7 @@
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_02_Example_HttpClient/Fly/ID_04_SignIn.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/TestNGListener.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/uat/TC_01_Bet/ID_02_ExternalLogin.java
+/Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/uat/TC_01_Bet/ID_07_CashoutBet.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_01_Example_URLConnection/ID_01_AccessToken.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/setup/BasicSetup.java
 /Users/popovpav/Documents/GitHub/AutomationTestLab/src/main/java/com/test/examples/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.java

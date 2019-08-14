@@ -12,7 +12,6 @@ import org.apache.http.client.utils.URIBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.lang.reflect.Method;
@@ -24,8 +23,9 @@ import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
+import static com.setup.JSONUtils.createJSONDebugFile;
+import static com.setup.JSONUtils.gson;
 import static com.setup.OkHttpClientUtils.*;
-import static com.setup.JSONUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 
@@ -69,7 +69,6 @@ public class ID_03_GetFootballSportTree extends BasicSetup {
     public void getSportsTree(Method testMethod) throws Exception {
 
         String fileName  = testMethod.getName() + ".json";
-        String fileDebug = testMethod.getName() + "[debug].json";
 
         RequestBody requestBody = new FormBody.Builder()
                 .add("sessionToken", sessionToken)
@@ -127,24 +126,20 @@ public class ID_03_GetFootballSportTree extends BasicSetup {
         Object object         = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
         String jsonResponse   = gson.toJson(object);
 
-        Object event = JsonPath.read(jsonResponse, "$..[?(@.suspended == false && @.displayed == true)]");
+        Object jsonArray = JsonPath.read(jsonResponse, "$..[?(@.suspended == false && @.displayed == true)]");
 
-        String debugFileName = testMethod.getName() + "[debug].json";
-        file = new File(filePath + "/report/JSON/" + debugFileName);
-        fileWriter = new FileWriter(file);
-        fileWriter.write(event.toString());
-        fileWriter.flush();
-        fileWriter.close();
+        createJSONDebugFile(testMethod, jsonArray);
 
-            if (event != null) {
-                marketName = JsonPath.read(event, "$[0].name");
-                marketType = JsonPath.read(event, "$[0].type");
-                marketId   = JsonPath.read(event, "$[0].id");
-                displayed  = JsonPath.read(event, "$[0].displayed");
-                selectionId   = JsonPath.read(event, "$[0].selection[0].id");
-                marketCashout = JsonPath.read(event, "$[0].attributes.attrib[1].value");
-                selectionDecimal    = JsonPath.read(event, "$[0].selection[0].odds.dec");
-                selectionFractional = JsonPath.read(event, "$[0].selection[0].odds.frac");
+
+            if (jsonArray != null) {
+                marketName = JsonPath.read(jsonArray, "$[0].name");
+                marketType = JsonPath.read(jsonArray, "$[0].type");
+                marketId   = JsonPath.read(jsonArray, "$[0].id");
+                displayed  = JsonPath.read(jsonArray, "$[0].displayed");
+                selectionId   = JsonPath.read(jsonArray, "$[0].selection[0].id");
+                marketCashout = JsonPath.read(jsonArray, "$[0].attributes.attrib[1].value");
+                selectionDecimal    = JsonPath.read(jsonArray, "$[0].selection[0].odds.dec");
+                selectionFractional = JsonPath.read(jsonArray, "$[0].selection[0].odds.frac");
 
                 test.pass("<pre>"
                         + "[   EVENT    DETAILS   ]"

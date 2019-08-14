@@ -27,6 +27,7 @@ com/pages/SumoLoginPage.class
 com/test/examples/TC_02_Example_HttpClient/PayPal/ID_01_Token.class
 com/setup/BasicSetup.class
 com/test/uat/TC_01_Bet/ID_06_CalculateCashout.class
+com/test/uat/TC_01_Bet/ID_07_CashoutBet.class
 com/test/examples/TC_03_Example_UI/ID_02_AddToCart.class
 com/constants/Accounts.class
 com/test/temp/OkHttpClient_GET.class

@@ -1,6 +1,7 @@
 package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
+import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import okhttp3.FormBody;
@@ -10,6 +11,7 @@ import org.apache.http.client.utils.URIBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.io.FileReader;
 import java.lang.reflect.Method;
 
 import static com.constants.API.calculate_cashout;
@@ -18,7 +20,7 @@ import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
-import static com.setup.JSONUtils.convertJson;
+import static com.setup.JSONUtils.*;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
 import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.selectionDecimal;
@@ -28,18 +30,21 @@ import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.*;
 
 public class ID_06_CalculateCashout extends BasicSetup {
 
+    public static Double cashoutValue;
+
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
         extent = ExtentManager.GetExtent();
         test = extent.createTest(
-                "[ID_06] Get Open Bets",
+                "[ID_06] Calculate Cashout",
                 "<pre>"
                         + "DESCRIPTION"
                         + "<br/>"
                         + "Send POST request to get all bets with status OPEN. Then search for a Bet Slip ID in the response."
                         + "</pre>");
-        test.assignAuthor("YOUR NAME");        test.assignAuthor("YOUR NAME");
+        test.assignAuthor("YOUR NAME");
+        test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
     }
@@ -115,5 +120,25 @@ public class ID_06_CalculateCashout extends BasicSetup {
                 + jsonBody
                 + "<br />"
                 + "</pre>");
+
+        Object object         = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+        String jsonResponse   = gson.toJson(object);
+
+        String betStatus    = JsonPath.read(jsonResponse, "$.CalculateCashoutResponse.cashoutResult[0].status");
+        String betId        = JsonPath.read(jsonResponse, "$.CalculateCashoutResponse.cashoutResult[0].betId");
+        cashoutValue        = JsonPath.read(jsonResponse, "$.CalculateCashoutResponse.cashoutResult[0].cashoutValue");
+
+        test.pass("<pre>"
+                + "[   CASHOUT DETAILS   ]"
+                + "<br/>"
+                + "<br/>"
+                + "Bet ID = " + betId
+                + "<br/>"
+                + "Status = " + betStatus
+                + "<br/>"
+                + "Value  = " + cashoutValue
+                + "<br/>"
+                + "<br/>"
+        );
     }
 }

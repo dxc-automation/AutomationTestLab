@@ -18,12 +18,11 @@ import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
-import static com.setup.JSONUtils.convertJson;
 import static com.setup.OkHttpClientUtils.*;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
-import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.selectionDecimal;
+import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.selectionId;
-import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.*;
+import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
+import static com.test.uat.TC_01_Bet.ID_06_CalculateCashout.cashoutValue;
 
 
 public class ID_07_CashoutBet extends BasicSetup {
@@ -39,7 +38,8 @@ public class ID_07_CashoutBet extends BasicSetup {
                         + "<br/>"
                         + "Send POST request to get all bets with status OPEN. Then search for a Bet Slip ID in the response."
                         + "</pre>");
-        test.assignAuthor("YOUR NAME");        test.assignAuthor("YOUR NAME");
+        test.assignAuthor("YOUR NAME");
+        test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
     }
@@ -49,33 +49,15 @@ public class ID_07_CashoutBet extends BasicSetup {
 
         String fileName = testMethod.getName() + ".json";
 
-        System.out.println("\n \n \n BETSLIP \n" + betSlipId);
-
-        String jsonString =
-                "{\"CalculateCashoutRequest\":" +
-                "{\"accountId\":"               + accountId + "," +
-                "\"bets\":"                     +
-                "{\"bet\":"                     +
-                "[{\"type\":\""                 + betTypeRequest + "\"," +
-                "\"winType\":\""                + betWinTypeRequest + "\"," +
-                "\"stake\":"                    +
-                "{\"amount\":"                  + amountRequest + "," +
-                "\"currency\":\""               + accountCurrency + "\"}," +
-                "\"parts\":"                    +
-                "{\"betPart\":"                 +
-                "[{\"partNo\":"                 + partNoRequest + "," +
-                "\"selectionId\":"              + selectionId + "," +
-                "\"odds\":"                     +
-                "{\"decimal\":"                 + selectionDecimal + "," +
-                "\"fractional\":null}}]},"      +
-                "\"id\":\""                     + betSlipId + "\"}]}}}";
-
         RequestBody requestBody = new FormBody.Builder()
                 .add("sessionToken", sessionToken)
-                .add("bets", jsonString)
+                .add("betId", betSlipId)
+                .add("cashOutStake", String.valueOf(cashoutValue))
+                .add("selectionId", String.valueOf(selectionId))
+                .add("channelId", "6")
                 .build();
 
-        String jsonBody = convertJson(jsonString);
+        //String jsonBody = convertJson(jsonString);
 
         url = new URIBuilder()
                 .setScheme(scheme)
@@ -112,7 +94,7 @@ public class ID_07_CashoutBet extends BasicSetup {
                 + "[   REQUEST   BODY   ]"
                 + "<br />"
                 + "<br />"
-                + jsonBody
+               // + jsonBody
                 + "<br />"
                 + "</pre>");
     }

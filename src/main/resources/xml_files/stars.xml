@@ -49,6 +49,12 @@
             </methods>
         </class>
 
+        <class name="com.test.uat.TC_01_Bet.ID_07_CashoutBet">
+            <methods>
+                <include name="cashoutBet"/>
+            </methods>
+        </class>
+
     </classes>
 </test>
 </suite>
