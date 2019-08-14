@@ -36,7 +36,7 @@ public class ID_05_OpenBets extends BasicSetup {
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
         test = extent.createTest(
-                "[ID_06] Get Open Bets",
+                "[ID_05] Get Open Bets",
                 "<pre>"
                         + "DESCRIPTION"
                         + "<br/>"

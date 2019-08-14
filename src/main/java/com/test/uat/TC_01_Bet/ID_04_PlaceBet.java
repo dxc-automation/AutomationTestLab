@@ -45,7 +45,7 @@ public class ID_04_PlaceBet extends BasicSetup {
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
         test = extent.createTest(
-                "[ID_05] Place a Bet",
+                "[ID_04] Place a Bet",
                 "<pre>"
                         + "DESCRIPTION"
                         + "<br/>"
@@ -149,18 +149,21 @@ public class ID_04_PlaceBet extends BasicSetup {
         String jsonResponse   = gsonPretyPrint.toJson(object);
 
         String betTypeResponse = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betType");
-        String betStatus = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].status");
+        String betStatus       = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].status");
         int betStake = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].totalStake");
         int  eventId = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventId");
         String eventName = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventName");
         int  selectionId = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].selectionId");
-        betSlipId = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betSlipId");
-        boolean inplay   = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].inplay");
-        String selectionName = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventName");
+
+        String betId = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betSlipId");
+        betSlipId = betId.substring(1);
+
+        boolean inplay         = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].inplay");
+        String selectionName   = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].eventName");
         String competitionName = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].competition");
 
         try {
-            integerDecimalOdd = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].odds.decimal");
+            integerDecimalOdd   = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betPartPlacementResult[0].odds.decimal");
             stringIntDecimalOdd = Integer.toString(integerDecimalOdd);
             selectionDecimalOdd = Double.valueOf(stringIntDecimalOdd);
         } catch (Exception e) {

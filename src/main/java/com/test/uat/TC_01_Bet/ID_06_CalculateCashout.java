@@ -7,7 +7,6 @@ import okhttp3.FormBody;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
-import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -32,22 +31,25 @@ public class ID_06_CalculateCashout extends BasicSetup {
     @BeforeClass
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
-        test = extent.createTest("ID_07_CalculateCashout", "DESCRIPTION");
-        test.assignAuthor("YOUR NAME");
+        extent = ExtentManager.GetExtent();
+        test = extent.createTest(
+                "[ID_06] Get Open Bets",
+                "<pre>"
+                        + "DESCRIPTION"
+                        + "<br/>"
+                        + "Send POST request to get all bets with status OPEN. Then search for a Bet Slip ID in the response."
+                        + "</pre>");
+        test.assignAuthor("YOUR NAME");        test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
     }
 
     @Test
-    public void calculateCashout(Method testMethod) throws Exception {
+    public void calcCashout(Method testMethod) throws Exception {
 
         String fileName = testMethod.getName() + ".json";
-        String fractional = null;
 
-        JSONObject jsonObject = new JSONObject("CalculateCashoutRequest");
-        jsonObject.
-
-
+        System.out.println("\n \n \n BETSLIP \n" + betSlipId);
 
         String jsonString =
                 "{\"CalculateCashoutRequest\":" +
@@ -65,7 +67,7 @@ public class ID_06_CalculateCashout extends BasicSetup {
                 "\"selectionId\":"              + selectionId + "," +
                 "\"odds\":"                     +
                 "{\"decimal\":"                 + selectionDecimal + "," +
-                "\"fractional\":"               + fractional + "}}]}," +
+                "\"fractional\":null}}]},"      +
                 "\"id\":\""                     + betSlipId + "\"}]}}}";
 
         RequestBody requestBody = new FormBody.Builder()
