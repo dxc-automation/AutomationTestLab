@@ -48,7 +48,8 @@ property value in <code>src/main/resource/config.properties</code>.
 Run specific test suite:
 1. Create XML file that must contains specific test methods.
 2. Open _config.properties_ file and set the name of the XML file without any file extensions.
-3. Save the configuration file and run following command via cmd `java -jar JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar`
+3. Run <code>/bin/build.sh</code> to compile your code.
+4. Run <code>/bin/test.sh</code>.
 
 
 *****
