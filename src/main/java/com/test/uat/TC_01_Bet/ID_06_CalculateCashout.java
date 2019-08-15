@@ -54,8 +54,6 @@ public class ID_06_CalculateCashout extends BasicSetup {
 
         String fileName = testMethod.getName() + ".json";
 
-        System.out.println("\n \n \n BETSLIP \n" + betSlipId);
-
         String jsonString =
                 "{\"CalculateCashoutRequest\":" +
                 "{\"accountId\":"               + accountId + "," +

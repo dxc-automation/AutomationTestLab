@@ -19,6 +19,7 @@ import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
+import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.accountId;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.selectionId;
 import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
@@ -54,7 +55,8 @@ public class ID_07_CashoutBet extends BasicSetup {
                 .add("betId", betSlipId)
                 .add("cashOutStake", String.valueOf(cashoutValue))
                 .add("selectionId", String.valueOf(selectionId))
-                .add("channelId", "6")
+                .add("siteId", "1")
+                .add("accountId", String.valueOf(accountId))
                 .build();
 
         //String jsonBody = convertJson(jsonString);
@@ -68,9 +70,11 @@ public class ID_07_CashoutBet extends BasicSetup {
         request = new Request.Builder()
                 .url(url.toURL())
                 .post(requestBody)
-                .addHeader("X-Requested-With", "XMLHttpRequest")
-                .addHeader("Content-Type", "application/x-www-form-urlencoded")
-                .addHeader("Sec-Fetch-Mode", "cors")
+                .addHeader("sec-fetch-mode", "cors")
+                .addHeader("content-type", "application/x-www-form-urlencoded")
+                .addHeader("cache-control", "no-cache")
+                .addHeader("accept", "application/json, text/javascript, */*; q=0.01")
+                .addHeader("x-requested-with", "XMLHttpRequest")
                 .build();
 
         okClientRequest(fileName, request);
@@ -94,7 +98,7 @@ public class ID_07_CashoutBet extends BasicSetup {
                 + "[   REQUEST   BODY   ]"
                 + "<br />"
                 + "<br />"
-               // + jsonBody
+                + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
                 + "<br />"
                 + "</pre>");
     }
