@@ -58,20 +58,9 @@ Run specific test suite:
 
 <p align="justify">
 Most important part for every automation is the report. By using ExtentReport and Log4j libraries we have very detailed 
-report that contains only important information. All report files  generated from the different listeners are generated 
-in `report` folder. <a href = report/TestReport.html>TestReport.html</a>
-
-
-
-
-
-
-
-Configuration methods 
-are in <code>ExtentManager.class</code>.  Basically  there  is  one  general  file 
-<a href = https://github.dxc.com/ppopov6/DXCTestLab_DEV/blob/master/report/TestReport.html>TestReport.html</a> that can 
-be found in <i>report</i> folder. There is only one method to care of test results. That method can be found in 
-<i>BasicSetup.class</i>. Every API test creates a file with JSON extension and store into it response from the server. 
+report that contains only important information. <a href = report/TestReport.html>TestReport.html</a> provides all of the 
+necessary details for the bussiness and QA's. Configuration methods are in <code>ExtentManager.class</code>.  . Every API 
+test creates a file with JSON extension and store into it response from the server. 
 This decision makes tests faster and separate reports for front-end from the back-end tests. More information about 
 library can be found <a href = http://extentreports.com/docs/versions/3/java/#email-example>here</a>. Log events can be 
 created by using <code>test</code> keyword.
