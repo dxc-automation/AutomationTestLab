@@ -59,7 +59,15 @@ Run specific test suite:
 <p align="justify">
 Most important part for every automation is the report. By using ExtentReport and Log4j libraries we have very detailed 
 report that contains only important information. All report files  generated from the different listeners are generated 
-in <a href = https://github.dxc.com/ppopov6/DXCTestLab_DEV/tree/master/report>report</a> folder. Configuration methods 
+in `report` folder. <a href = report/TestReport.html>TestReport.html</a>
+
+
+
+
+
+
+
+Configuration methods 
 are in <code>ExtentManager.class</code>.  Basically  there  is  one  general  file 
 <a href = https://github.dxc.com/ppopov6/DXCTestLab_DEV/blob/master/report/TestReport.html>TestReport.html</a> that can 
 be found in <i>report</i> folder. There is only one method to care of test results. That method can be found in 
