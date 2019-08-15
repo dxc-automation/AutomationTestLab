@@ -2,7 +2,7 @@
 
 [![N|Solid](https://www.gamblingsites.org/news/wp-content/uploads/pokerstars-logo.png)](https://nodesource.com/products/nsolid)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) ![Editor](https://img.shields.io/github/release/pandao/editor.md.svg) [![License badge](https://img.shields.io/badge/license-Apache2-green.svg)](http://www.apache.org/licenses/LICENSE-2.0) [![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)]
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) ![Editor](https://img.shields.io/github/release/pandao/editor.md.svg) [![License badge](https://img.shields.io/badge/license-Apache2-green.svg)](http://www.apache.org/licenses/LICENSE-2.0) ![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)
 
 ### Description
 <p align="justify">
@@ -17,32 +17,6 @@ It is also flexible and can be quickly refactored to work with desktop or mobile
 <br> [4] Full test report.
 <br> [5] Templates for fast and easy tests writing.
 
-
-
-
-### Requirements 
-
-- [JDK](https://www.oracle.com/technetwork/java/javaee/downloads/jdk8-downloads-2133151.html) - my suggestion is to use JDK 8
-- [Maven](https://maven.apache.org/download.cgi) - latest version
-- [Appium](http://appium.io/) - in case to write tests for mobile devices
-- [Node.js](https://nodejs.org/) - latest stable version
-- [npm](https://www.npmjs.com/get-npm) - latest version
-- [WebDriver](https://www.seleniumhq.org/docs/03_webdriver.jsp)
-- [TestNG](https://mvnrepository.com/artifact/org.testng/testng)
-
-
-*****
-
-### Links
-- [x] [JSON Formatter](http://www.tutorialspoint.com/online_json_formatter.htm) //** Online JSON Formatter **//
-- [x] [JSON Editor](http://www.tutorialspoint.com/online_json_editor.htm)       //** Online JSON Editor **//
-- [x] [XML Editor](http://www.tutorialspoint.com/online_xml_editor.htm)         //** Online XML Editor **//
-- [x] [Ping Test](http://www.tutorialspoint.com/online_ping_test.htm)           //** Ping Test a Server for Network Connectivity **//
-- [x] [Port Scanner](http://www.tutorialspoint.com/open_port_scan.htm)          //** Find out what are the open ports on your web server **//
-- [x] [Host IP Lookup](http://www.tutorialspoint.com/host_ip_lookup.htm)        //** Get IP address for a given host name, domain name **//
-- [x] [DNS Lookup](http://www.tutorialspoint.com/dns_lookup.htm)                //** Displays complete DNS Record for a Website **//
-- [x] [Trace Route](http://www.tutorialspoint.com/online_trace_route.htm)       //** Traces the route of packets to destination host from our server **//
- 
 
 
 ### Project Structure & Process
