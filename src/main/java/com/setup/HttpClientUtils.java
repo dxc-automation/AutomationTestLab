@@ -68,8 +68,7 @@ public class HttpClientUtils {
         return ;
     }
 
-    public static HttpPost httpPost(String fileName, URI url, JSONObject jsonPostData) throws Exception {
-        StringEntity entity = new StringEntity(jsonPostData.toString());
+    public static HttpPost httpPost(String fileName, URI url, StringEntity entity) throws Exception {
 
         post = new HttpPost(url);
         post.setHeader("Content-Type", "application/json");

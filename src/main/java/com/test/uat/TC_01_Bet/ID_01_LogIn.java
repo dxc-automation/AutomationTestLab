@@ -5,6 +5,7 @@ import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.cookie.Cookie;
+import org.apache.http.entity.StringEntity;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -49,17 +50,19 @@ public class ID_01_LogIn extends BasicSetup {
                 .setPath("/ram/login")
                 .build();
 
-        JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("username", username);
-        jsonPostData.put("password", password);
-        jsonPostData.put("signature", sign);
-        jsonPostData.put("devIx", devIx);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("username", username);
+        jsonObject.put("password", password);
+        jsonObject.put("signature", sign);
+        jsonObject.put("devIx", devIx);
 
-        String requestData = jsonPostData.toString(4);
+        String requestData = jsonObject.toString(4);
         String fileName = testMethod.getName() + ".json";
         String jsonBody = convertJson(requestData);
 
-        httpPost(fileName, url, jsonPostData).addHeader("Origin", "https://sports.uat.pyr");
+        StringEntity entity = new StringEntity(jsonObject.toString());
+
+        httpPost(fileName, url, entity).addHeader("Origin", "https://sports.uat.pyr");
 
         test.info("<pre>"
                 + "[   REQUEST   HEADERS   ]"

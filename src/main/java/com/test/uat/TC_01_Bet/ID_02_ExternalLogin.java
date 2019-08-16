@@ -1,9 +1,6 @@
 package com.test.uat.TC_01_Bet;
 
 import com.aventstack.extentreports.AnalysisStrategy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import com.setup.BasicSetup;
@@ -24,7 +21,7 @@ import static com.setup.ConsoleRunner.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
-import static com.setup.JSONUtils.convertJson;
+import static com.setup.JSONUtils.gson;
 import static com.setup.OkHttpClientUtils.*;
 import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
 
@@ -70,10 +67,6 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 .add("lsrc", String.valueOf(lsrc))
                 .build();
 
-        Gson gson = new GsonBuilder().setLenient().create();
-        JsonObject body = gson.toJsonTree(requestBody).getAsJsonObject();
-        System.out.println(body);
-        String jsonBody = convertJson(body.getAsJsonObject().toString());
 
         url = new URIBuilder()
                 .setScheme(scheme)
@@ -110,7 +103,7 @@ public class ID_02_ExternalLogin extends BasicSetup {
                 + "[    REQUEST   BODY    ]"
                 + "<br/>"
                 + "<br/>"
-                + jsonBody
+                + requestBodyToString(requestBody)
                 + "<br/>"
                 + "</pre>");
 
