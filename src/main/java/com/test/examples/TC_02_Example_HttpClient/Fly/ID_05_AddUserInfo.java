@@ -6,6 +6,7 @@ import com.google.gson.GsonBuilder;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.StringEntity;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -40,13 +41,14 @@ public class ID_05_AddUserInfo extends BasicSetup {
                 .addParameter("accessToken", accessToken)
                 .build();
 
-        JSONObject jsonPostData = new JSONObject("{\"profileFields\":{\"name\":{\"value\":\"Automation\"}}}");
+        JSONObject jsonObject = new JSONObject("{\"profileFields\":{\"name\":{\"value\":\"Automation\"}}}");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String requestData = gson.toJson(jsonPostData);
+        String requestData = gson.toJson(jsonObject);
 
         String fileName = testMethod.getName() + ".json";
+        StringEntity entity = new StringEntity(jsonObject.toString());
 
-        httpPost(fileName, url, jsonPostData);
+        httpPost(fileName, url, entity);
 
         // Add request data to the report
         test.info("<pre>"

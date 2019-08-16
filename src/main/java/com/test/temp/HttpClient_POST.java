@@ -4,12 +4,12 @@ import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.StringEntity;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
-import java.net.URI;
 
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
@@ -34,14 +34,16 @@ public class HttpClient_POST extends BasicSetup {
                 .setPath("/v2/auth/login")
                 .build();
 
-        JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("key", "value");
-        jsonPostData.put("key", "value");
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("key", "value");
+        jsonObject.put("key", "value");
 
-        String requestData = jsonPostData.toString(4);
+        String requestData = jsonObject.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData);
+        StringEntity entity = new StringEntity(jsonObject.toString());
+
+        httpPost(fileName, url, entity);
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

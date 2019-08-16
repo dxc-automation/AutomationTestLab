@@ -4,6 +4,7 @@ import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.StringEntity;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
@@ -46,15 +47,17 @@ public class ID_09_Order extends BasicSetup {
         JSONArray items = new JSONArray();
         items.put(uuid);
 
-        JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("locationId", id);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("locationId", id);
         //jsonPostData.put("items", items);
-        jsonPostData.append("items", uuid);
+        jsonObject.append("items", uuid);
 
-        String requestData = jsonPostData.toString(4);
+        String requestData = jsonObject.toString(4);
         String fileName = testMethod.getName() + ".json";
 
-        httpPost(fileName, url, jsonPostData).setHeader("X-Flypay-Api-Key", "sltpeikpvo4i2rzqufo5f");
+        StringEntity entity = new StringEntity(jsonObject.toString());
+
+        httpPost(fileName, url, entity).setHeader("X-Flypay-Api-Key", "sltpeikpvo4i2rzqufo5f");
 
         test.info("<pre>"
                 + "[ REQUEST  HEADERS ]"

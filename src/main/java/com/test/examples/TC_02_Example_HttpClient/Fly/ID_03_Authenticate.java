@@ -4,6 +4,7 @@ import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.StringEntity;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -38,20 +39,21 @@ public class ID_03_Authenticate extends BasicSetup {
                 .build();
 
         /*** Create JSON object for request body. ***/
-        JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("email", "user@email.com");
-        jsonPostData.put("challenge", 1234);
-        jsonPostData.put("credentialsType", "email");
-        jsonPostData.put("challengeType", "pin");
-        jsonPostData.put("countryCodeId", 221);
-        jsonPostData.put("phoneNumber", 777799900);
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("email", "user@email.com");
+        jsonObject.put("challenge", 1234);
+        jsonObject.put("credentialsType", "email");
+        jsonObject.put("challengeType", "pin");
+        jsonObject.put("countryCodeId", 221);
+        jsonObject.put("phoneNumber", 777799900);
 
-        String requestData = jsonPostData.toString(4);
+        String requestData = jsonObject.toString(4);
         String fileName = testMethod.getName() + ".json";
 
+        StringEntity entity = new StringEntity(jsonObject.toString());
 
         /*** Send request by using method 'httpPost' from HttpClientUtils.class ***/
-        httpPost(fileName, url, jsonPostData);
+        httpPost(fileName, url, entity);
 
 
         /*** Add request properties to the report. ***/

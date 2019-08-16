@@ -4,6 +4,7 @@ import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
 import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.StringEntity;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -43,20 +44,23 @@ public class ID_01_AccessToken extends BasicSetup {
                 .build();
 
         /*** Create JSON object for request body. ***/
-        JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("deviceToken", "07304e56c452be73ad2b51a4647d0300");
-        jsonPostData.put("platform", "Android");
-        jsonPostData.put("platformVersion", "6.0");
-        jsonPostData.put("appId", 1);
-        jsonPostData.put("frameworkVersion", "1.0.0");
-        jsonPostData.put("model", "LG Nexus 5X");
-        jsonPostData.put("appVersion", "1.0.0");
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("deviceToken", "07304e56c452be73ad2b51a4647d0300");
+        jsonObject.put("platform", "Android");
+        jsonObject.put("platformVersion", "6.0");
+        jsonObject.put("appId", 1);
+        jsonObject.put("frameworkVersion", "1.0.0");
+        jsonObject.put("model", "LG Nexus 5X");
+        jsonObject.put("appVersion", "1.0.0");
 
-        String requestData = jsonPostData.toString(4);
+        String requestData = jsonObject.toString(4);
         String fileName = testMethod.getName() + ".json";
 
+        StringEntity entity = new StringEntity(jsonObject.toString());
+
+
         /*** Send request by using method 'httpPost' from HttpClientUtils.class ***/
-        httpPost(fileName, url, jsonPostData);
+        httpPost(fileName, url, entity);
 
         /*** Add request properties to the report. ***/
         test.info("<pre>"
