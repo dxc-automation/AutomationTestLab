@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TC_01_Example</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 19 19:03:46 EEST 2019</td>
+<td>Started on:</td><td>Mon Aug 19 22:24:01 EEST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7606 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9003 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.ID_05_OpenBets.openBets()'><b>openBets</b><br>Test class: com.test.uat.TC_01_Bet.ID_05_OpenBets<br>Parameters: public void com.test.uat.TC_01_Bet.ID_05_OpenBets.openBets(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.test.uat.TC_01_Bet.OpenBets.openBets()'><b>openBets</b><br>Test class: com.test.uat.TC_01_Bet.OpenBets<br>Parameters: public void com.test.uat.TC_01_Bet.OpenBets.openBets(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td><div><pre>com.jayway.jsonpath.PathNotFoundException: No results for path: $[0][&apos;parts&apos;][&apos;betPart&apos;][0][&apos;event&apos;][&apos;name&apos;]
 	at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
 	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
 	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
 	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:89)
 	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:488)
-	at com.test.uat.TC_01_Bet.ID_05_OpenBets.openBets(ID_05_OpenBets.java:112)
+	at com.test.uat.TC_01_Bet.OpenBets.openBets(OpenBets.java:112)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,14 +103,14 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div><a href='#' onClick='toggleBox("stack-trace276733011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace276733011'><pre>com.jayway.jsonpath.PathNotFoundException: No results for path: $[0][&apos;parts&apos;][&apos;betPart&apos;][0][&apos;event&apos;][&apos;name&apos;]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2135583366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2135583366'><pre>com.jayway.jsonpath.PathNotFoundException: No results for path: $[0][&apos;parts&apos;][&apos;betPart&apos;][0][&apos;event&apos;][&apos;name&apos;]
 	at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
 	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
 	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
 	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:89)
 	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:488)
-	at com.test.uat.TC_01_Bet.ID_05_OpenBets.openBets(ID_05_OpenBets.java:112)
+	at com.test.uat.TC_01_Bet.OpenBets.openBets(OpenBets.java:112)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -133,7 +133,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </pre></div></td>
 <td>0</td>
-<td>com.test.uat.TC_01_Bet.ID_05_OpenBets@3fc9504b</td></tr>
+<td>com.test.uat.TC_01_Bet.OpenBets@676cf48</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -143,35 +143,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.ID_06_CalculateCashout.calcCashout()'><b>calcCashout</b><br>Test class: com.test.uat.TC_01_Bet.ID_06_CalculateCashout<br>Parameters: public void com.test.uat.TC_01_Bet.ID_06_CalculateCashout.calcCashout(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.test.uat.TC_01_Bet.BetStatus.betStatus()'><b>betStatus</b><br>Test class: com.test.uat.TC_01_Bet.BetStatus<br>Parameters: public void com.test.uat.TC_01_Bet.BetStatus.betStatus(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>0</td>
-<td>com.test.uat.TC_01_Bet.ID_06_CalculateCashout@6d025197</td></tr>
+<td>com.test.uat.TC_01_Bet.BetStatus@1b955cac</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.ID_07_7_CashoutBet.cashoutBet()'><b>cashoutBet</b><br>Test class: com.test.uat.TC_01_Bet.ID_07_7_CashoutBet<br>Parameters: public void com.test.uat.TC_01_Bet.ID_07_7_CashoutBet.cashoutBet(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.test.uat.TC_01_Bet.CalculateCashout.calcCashout()'><b>calcCashout</b><br>Test class: com.test.uat.TC_01_Bet.CalculateCashout<br>Parameters: public void com.test.uat.TC_01_Bet.CalculateCashout.calcCashout(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>0</td>
-<td>com.test.uat.TC_01_Bet.ID_07_7_CashoutBet@27d4a09</td></tr>
+<td>com.test.uat.TC_01_Bet.CalculateCashout@5a1de7fb</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin()'><b>externalLogin</b><br>Test class: com.test.uat.TC_01_Bet.ID_02_ExternalLogin<br>Parameters: public void com.test.uat.TC_01_Bet.ID_02_ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.test.uat.TC_01_Bet.CashoutBet.cashoutBet()'><b>cashoutBet</b><br>Test class: com.test.uat.TC_01_Bet.CashoutBet<br>Parameters: public void com.test.uat.TC_01_Bet.CashoutBet.cashoutBet(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>0</td>
-<td>com.test.uat.TC_01_Bet.ID_02_ExternalLogin@5460cf3a</td></tr>
+<td>com.test.uat.TC_01_Bet.CashoutBet@335b5620</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.getSportsTree()'><b>getSportsTree</b><br>Test class: com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree<br>Parameters: public void com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.getSportsTree(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.test.uat.TC_01_Bet.ExternalLogin.externalLogin()'><b>externalLogin</b><br>Test class: com.test.uat.TC_01_Bet.ExternalLogin<br>Parameters: public void com.test.uat.TC_01_Bet.ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>1</td>
-<td>com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree@65a15628</td></tr>
+<td>com.test.uat.TC_01_Bet.ExternalLogin@740d2e78</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam()'><b>loginRam</b><br>Test class: com.test.uat.TC_01_Bet.ID_01_LogIn<br>Parameters: public void com.test.uat.TC_01_Bet.ID_01_LogIn.loginRam(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.test.uat.TC_01_Bet.FootballSportTree.getSportsTree()'><b>getSportsTree</b><br>Test class: com.test.uat.TC_01_Bet.FootballSportTree<br>Parameters: public void com.test.uat.TC_01_Bet.FootballSportTree.getSportsTree(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>1</td>
-<td>com.test.uat.TC_01_Bet.ID_01_LogIn@2766ca9d</td></tr>
+<td>com.test.uat.TC_01_Bet.FootballSportTree@1c481ff2</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet()'><b>placeBet</b><br>Test class: com.test.uat.TC_01_Bet.ID_04_PlaceBet<br>Parameters: public void com.test.uat.TC_01_Bet.ID_04_PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.test.uat.TC_01_Bet.LogInRam.loginRam()'><b>loginRam</b><br>Test class: com.test.uat.TC_01_Bet.LogInRam<br>Parameters: public void com.test.uat.TC_01_Bet.LogInRam.loginRam(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>1</td>
-<td>com.test.uat.TC_01_Bet.ID_04_PlaceBet@2e6a5539</td></tr>
+<td>com.test.uat.TC_01_Bet.LogInRam@b7c4869</td></tr>
+<tr>
+<td title='com.test.uat.TC_01_Bet.PlaceBet.placeBet()'><b>placeBet</b><br>Test class: com.test.uat.TC_01_Bet.PlaceBet<br>Parameters: public void com.test.uat.TC_01_Bet.PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>2</td>
+<td>com.test.uat.TC_01_Bet.PlaceBet@72437d8d</td></tr>
 </table><p>
 </body>
 </html>

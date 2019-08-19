@@ -23,12 +23,12 @@ import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.setup.JSONUtils.*;
-import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
-import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.*;
+import static com.test.uat.TC_01_Bet.LogInRam.*;
+import static com.test.uat.TC_01_Bet.ExternalLogin.*;
+import static com.test.uat.TC_01_Bet.FootballSportTree.*;
 
 
-public class ID_04_PlaceBet extends BasicSetup {
+public class PlaceBet extends BasicSetup {
 
     protected static  int integerDecimalOdd;
     protected static String stringIntDecimalOdd;

@@ -13,43 +13,49 @@
 
     <classes>
 
-        <class name="com.test.uat.TC_01_Bet.ID_01_LogIn">
+        <class name="com.test.uat.TC_01_Bet.LogInRam">
             <methods>
                 <include name="loginRam"/>
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
+        <class name="com.test.uat.TC_01_Bet.ExternalLogin">
             <methods>
                 <include name="externalLogin"/>
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree">
+        <class name="com.test.uat.TC_01_Bet.FootballSportTree">
             <methods>
                 <include name="getSportsTree"/>
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
+        <class name="com.test.uat.TC_01_Bet.PlaceBet">
             <methods>
                 <include name="placeBet"/>
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_05_OpenBets">
+        <class name="com.test.uat.TC_01_Bet.BetStatus">
+            <methods>
+                <include name="betStatus"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.OpenBets">
             <methods>
                 <include name="openBets"/>
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_06_CalculateCashout">
+        <class name="com.test.uat.TC_01_Bet.CalculateCashout">
             <methods>
                 <include name="calcCashout"/>
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_07_7_CashoutBet">
+        <class name="com.test.uat.TC_01_Bet.CashoutBet">
             <methods>
                 <include name="cashoutBet"/>
             </methods>

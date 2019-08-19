@@ -23,11 +23,11 @@ import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.JSONUtils.gson;
 import static com.setup.OkHttpClientUtils.*;
-import static com.test.uat.TC_01_Bet.ID_01_LogIn.*;
+import static com.test.uat.TC_01_Bet.LogInRam.*;
 
 
 
-public class ID_02_ExternalLogin extends BasicSetup {
+public class ExternalLogin extends BasicSetup {
 
     public static String sessionToken;
     public static int    accountId;

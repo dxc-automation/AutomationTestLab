@@ -7,7 +7,7 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_01_Example(failed)" verbose="10">
     <classes>
-      <class name="com.test.uat.TC_01_Bet.ID_05_OpenBets">
+      <class name="com.test.uat.TC_01_Bet.OpenBets">
         <methods>
           <include name="report"/>
           <include name="setup"/>
@@ -17,7 +17,7 @@
           <include name="startTest"/>
           <include name="openBets" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_05_OpenBets -->
+      </class> <!-- com.test.uat.TC_01_Bet.OpenBets -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

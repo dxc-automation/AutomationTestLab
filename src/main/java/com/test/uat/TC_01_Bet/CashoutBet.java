@@ -3,34 +3,30 @@ package com.test.uat.TC_01_Bet;
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.setup.BasicSetup;
 import com.setup.ExtentManager;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
+import okhttp3.FormBody;
+import okhttp3.Request;
+import okhttp3.RequestBody;
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
 
 import static com.constants.API.cashout;
 import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
-import static com.setup.HttpClientUtils.httpPost;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.accountId;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
-import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.selectionId;
-import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
-import static com.test.uat.TC_01_Bet.ID_06_CalculateCashout.cashoutValue;
+import static com.test.uat.TC_01_Bet.LogInRam.externalToken;
+import static com.test.uat.TC_01_Bet.ExternalLogin.accountId;
+import static com.test.uat.TC_01_Bet.FootballSportTree.selectionId;
+import static com.test.uat.TC_01_Bet.PlaceBet.betSlipId;
+import static com.test.uat.TC_01_Bet.CalculateCashout.cashoutValue;
 
 
-public class ID_07_7_CashoutBet extends BasicSetup {
+public class CashoutBet extends BasicSetup {
 
     @BeforeClass
     public void startTest() throws Exception {
@@ -53,17 +49,14 @@ public class ID_07_7_CashoutBet extends BasicSetup {
 
         String fileName = testMethod.getName() + ".json";
 
-        List<NameValuePair> params = new ArrayList<>();
-        params.add(new BasicNameValuePair("sessionToken", sessionToken));
-        params.add(new BasicNameValuePair("betId", betSlipId));
-        params.add(new BasicNameValuePair("cashOutStake", String.valueOf(cashoutValue)));
-        params.add(new BasicNameValuePair("selectionId", String.valueOf(selectionId)));
-        params.add(new BasicNameValuePair("siteId", "1"));
-        params.add(new BasicNameValuePair("accountId", String.valueOf(accountId)));
-
-        UrlEncodedFormEntity entity1 = new UrlEncodedFormEntity(params);
-        StringEntity entity = new StringEntity(entity1.toString());
-
+        RequestBody requestBody = new FormBody.Builder()
+                .add("sessionToken", externalToken)
+                .add("betId", betSlipId)
+                .add("cashOutStake", String.valueOf(cashoutValue))
+                .add("selectionId", String.valueOf(selectionId))
+                .add("siteId", "1")
+                .add("accountId", String.valueOf(accountId))
+                .build();
 
         //String jsonBody = convertJson(jsonString);
 
@@ -73,8 +66,17 @@ public class ID_07_7_CashoutBet extends BasicSetup {
                 .setPath(cashout)
                 .build();
 
-        httpPost(fileName, url, entity);
+        request = new Request.Builder()
+                .url(url.toURL())
+                .post(requestBody)
+                .addHeader("sec-fetch-mode", "cors")
+                .addHeader("content-type", "application/x-www-form-urlencoded")
+                .addHeader("cache-control", "no-cache")
+                .addHeader("accept", "application/json, text/javascript, */*; q=0.01")
+                .addHeader("x-requested-with", "XMLHttpRequest")
+                .build();
 
+        okClientRequest(fileName, request);
 
         test.info("<pre>"
                 + "[   REQUEST   HEADERS   ]"
@@ -95,8 +97,7 @@ public class ID_07_7_CashoutBet extends BasicSetup {
                 + "[   REQUEST   BODY   ]"
                 + "<br />"
                 + "<br />"
-                + params
-              //  + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
+                + requestBodyToString(requestBody).replaceAll("&", "\n").replaceAll("\"", "")
                 + "<br />"
                 + "</pre>");
     }

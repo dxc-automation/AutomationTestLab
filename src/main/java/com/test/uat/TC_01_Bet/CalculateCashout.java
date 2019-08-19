@@ -22,13 +22,13 @@ import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.JSONUtils.*;
 import static com.setup.OkHttpClientUtils.*;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.*;
-import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.selectionDecimal;
-import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.selectionId;
-import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.*;
+import static com.test.uat.TC_01_Bet.ExternalLogin.*;
+import static com.test.uat.TC_01_Bet.FootballSportTree.selectionDecimal;
+import static com.test.uat.TC_01_Bet.FootballSportTree.selectionId;
+import static com.test.uat.TC_01_Bet.PlaceBet.*;
 
 
-public class ID_06_CalculateCashout extends BasicSetup {
+public class CalculateCashout extends BasicSetup {
 
     public static Double cashoutValue;
 

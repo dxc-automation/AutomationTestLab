@@ -22,13 +22,13 @@ import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
 import static com.setup.JSONUtils.*;
-import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
-import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
+import static com.test.uat.TC_01_Bet.LogInRam.site;
+import static com.test.uat.TC_01_Bet.ExternalLogin.sessionToken;
+import static com.test.uat.TC_01_Bet.PlaceBet.betSlipId;
 
 
 
-public class ID_05_OpenBets extends BasicSetup {
+public class OpenBets extends BasicSetup {
 
 
 

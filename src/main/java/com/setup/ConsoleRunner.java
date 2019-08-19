@@ -23,6 +23,8 @@ import static com.setup.BasicSetup.filePath;
 public class ConsoleRunner {
 
     public static String host;
+    public static String ramHost;
+    public static String walletHost;
     public static String scheme;
     public static File   xmlFile;
     private static String testXml;
@@ -44,6 +46,8 @@ public class ConsoleRunner {
         testXml = properties.getProperty("xml");
         scheme  = properties.getProperty("scheme");
         host    = properties.getProperty("host");
+        ramHost = properties.getProperty("ram_host");
+        walletHost = properties.getProperty("wallet_host");
 
         username  = properties.getProperty("username");
         password  = properties.getProperty("password");

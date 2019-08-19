@@ -13,4 +13,8 @@ public interface API {
   String calculate_cashout  = "/sportsbook/v1/api/calculateCashout";
   String cashout            = "/sportsbook/v1/api/cashoutBet";
   String get_sports_tree    = "/sportsbook/v1/api/getSportTree";
+
+  String ram_login          = "/ram/login";
+
+  String wallet_bet_status  = "/PsAmelcoApi/getBetStatus";
 }

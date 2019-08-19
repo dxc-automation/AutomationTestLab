@@ -68,13 +68,13 @@
         </class>
 
 
-            <class name="com.test.uat.TC_01_Bet.ID_01_LogIn">
+            <class name="com.test.uat.TC_01_Bet.LogInRam">
                 <methods>
                     <include name="loginRam"/>
                 </methods>
             </class>
 
-            <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
+            <class name="com.test.uat.TC_01_Bet.ExternalLogin">
                 <methods>
                     <include name="externalLogin"/>
                 </methods>
@@ -86,7 +86,7 @@
                 </methods>
             </class>
 
-            <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
+            <class name="com.test.uat.TC_01_Bet.PlaceBet">
                 <methods>
                     <include name="placeBet"/>
                 </methods>

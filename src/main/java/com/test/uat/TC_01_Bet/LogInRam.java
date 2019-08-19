@@ -15,11 +15,12 @@ import java.util.List;
 
 import static com.setup.JSONUtils.*;
 import static com.setup.ConsoleRunner.*;
+import static com.constants.API.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
 
-public class ID_01_LogIn extends BasicSetup {
+public class LogInRam extends BasicSetup {
 
     public static String externalToken;
     public static String signature;
@@ -45,9 +46,9 @@ public class ID_01_LogIn extends BasicSetup {
     @Test
     public void loginRam(Method testMethod) throws Exception {
         url = new URIBuilder()
-                .setScheme("https")
-                .setHost("ram.uat.pyr")
-                .setPath("/ram/login")
+                .setScheme(scheme)
+                .setHost(ramHost)
+                .setPath(ram_login)
                 .build();
 
         JSONObject jsonObject = new JSONObject();

@@ -26,11 +26,11 @@ import static com.setup.HttpClientUtils.url;
 import static com.setup.JSONUtils.createJSONDebugFile;
 import static com.setup.JSONUtils.gson;
 import static com.setup.OkHttpClientUtils.*;
-import static com.test.uat.TC_01_Bet.ID_01_LogIn.site;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
+import static com.test.uat.TC_01_Bet.LogInRam.site;
+import static com.test.uat.TC_01_Bet.ExternalLogin.sessionToken;
 
 
-public class ID_03_GetFootballSportTree extends BasicSetup {
+public class FootballSportTree extends BasicSetup {
 
     protected FileWriter fileWriter;
 
