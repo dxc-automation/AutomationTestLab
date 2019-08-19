@@ -7,17 +7,6 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_01_Example(failed)" verbose="10">
     <classes>
-      <class name="com.test.uat.TC_01_Bet.ID_04_PlaceBet">
-        <methods>
-          <include name="startTest"/>
-          <include name="report"/>
-          <include name="placeBet" invocation-numbers="0"/>
-          <include name="setup"/>
-          <include name="cleanTestData"/>
-          <include name="clearXml"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_04_PlaceBet -->
       <class name="com.test.uat.TC_01_Bet.ID_05_OpenBets">
         <methods>
           <include name="report"/>
@@ -29,50 +18,6 @@
           <include name="openBets" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.test.uat.TC_01_Bet.ID_05_OpenBets -->
-      <class name="com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree">
-        <methods>
-          <include name="report"/>
-          <include name="setup"/>
-          <include name="cleanTestData"/>
-          <include name="clearXml"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-          <include name="getSportsTree" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree -->
-      <class name="com.test.uat.TC_01_Bet.ID_06_CalculateCashout">
-        <methods>
-          <include name="report"/>
-          <include name="setup"/>
-          <include name="cleanTestData"/>
-          <include name="clearXml"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-          <include name="calcCashout" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_06_CalculateCashout -->
-      <class name="com.test.uat.TC_01_Bet.ID_02_ExternalLogin">
-        <methods>
-          <include name="report"/>
-          <include name="externalLogin" invocation-numbers="0"/>
-          <include name="setup"/>
-          <include name="cleanTestData"/>
-          <include name="clearXml"/>
-          <include name="tearDown"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_02_ExternalLogin -->
-      <class name="com.test.uat.TC_01_Bet.ID_07_CashoutBet">
-        <methods>
-          <include name="report"/>
-          <include name="setup"/>
-          <include name="cleanTestData"/>
-          <include name="clearXml"/>
-          <include name="tearDown"/>
-          <include name="cashoutBet" invocation-numbers="0"/>
-          <include name="startTest"/>
-        </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.ID_07_CashoutBet -->
     </classes>
   </test> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

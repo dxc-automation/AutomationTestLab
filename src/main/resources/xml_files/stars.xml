@@ -49,7 +49,7 @@
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.ID_07_CashoutBet">
+        <class name="com.test.uat.TC_01_Bet.ID_07_7_CashoutBet">
             <methods>
                 <include name="cashoutBet"/>
             </methods>

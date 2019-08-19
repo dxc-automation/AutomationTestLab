@@ -6,15 +6,11 @@ import com.setup.ExtentManager;
 import okhttp3.FormBody;
 import okhttp3.Request;
 import okhttp3.RequestBody;
-import org.apache.http.NameValuePair;
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.http.message.BasicNameValuePair;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
 
 import static com.constants.API.cashout;
 import static com.setup.ConsoleRunner.host;
@@ -23,8 +19,8 @@ import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.url;
 import static com.setup.OkHttpClientUtils.*;
+import static com.test.uat.TC_01_Bet.ID_01_LogIn.externalToken;
 import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.accountId;
-import static com.test.uat.TC_01_Bet.ID_02_ExternalLogin.sessionToken;
 import static com.test.uat.TC_01_Bet.ID_03_GetFootballSportTree.selectionId;
 import static com.test.uat.TC_01_Bet.ID_04_PlaceBet.betSlipId;
 import static com.test.uat.TC_01_Bet.ID_06_CalculateCashout.cashoutValue;
@@ -44,7 +40,6 @@ public class ID_07_CashoutBet extends BasicSetup {
                         + "Send POST request to get all bets with status OPEN. Then search for a Bet Slip ID in the response."
                         + "</pre>");
         test.assignAuthor("YOUR NAME");
-        test.assignAuthor("YOUR NAME");
         test.assignCategory("OkHttpClient");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
     }
@@ -55,7 +50,7 @@ public class ID_07_CashoutBet extends BasicSetup {
         String fileName = testMethod.getName() + ".json";
 
         RequestBody requestBody = new FormBody.Builder()
-                .add("sessionToken", sessionToken)
+                .add("sessionToken", externalToken)
                 .add("betId", betSlipId)
                 .add("cashOutStake", String.valueOf(cashoutValue))
                 .add("selectionId", String.valueOf(selectionId))
@@ -63,26 +58,17 @@ public class ID_07_CashoutBet extends BasicSetup {
                 .add("accountId", String.valueOf(accountId))
                 .build();
 
-        List<NameValuePair> parameters = new ArrayList<NameValuePair>();
-        parameters.add(new BasicNameValuePair("sessionToken", sessionToken));
-        parameters.add(new BasicNameValuePair("betId", betSlipId));
-        parameters.add(new BasicNameValuePair("cashOutStake", String.valueOf(cashoutValue)));
-        parameters.add(new BasicNameValuePair("selectionId", String.valueOf(selectionId)));
-        parameters.add(new BasicNameValuePair("siteId", "1"));
-        parameters.add(new BasicNameValuePair("accountId", String.valueOf(accountId)));
-
         //String jsonBody = convertJson(jsonString);
 
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
                 .setPath(cashout)
-                .addParameters(parameters)
                 .build();
 
         request = new Request.Builder()
                 .url(url.toURL())
-                .post((RequestBody) parameters)
+                .post(requestBody)
                 .addHeader("sec-fetch-mode", "cors")
                 .addHeader("content-type", "application/x-www-form-urlencoded")
                 .addHeader("cache-control", "no-cache")

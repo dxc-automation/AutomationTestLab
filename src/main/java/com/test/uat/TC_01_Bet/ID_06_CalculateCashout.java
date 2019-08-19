@@ -124,7 +124,20 @@ public class ID_06_CalculateCashout extends BasicSetup {
 
         String betStatus    = JsonPath.read(jsonResponse, "$.CalculateCashoutResponse.cashoutResult[0].status");
         String betId        = JsonPath.read(jsonResponse, "$.CalculateCashoutResponse.cashoutResult[0].betId");
-        cashoutValue        = JsonPath.read(jsonResponse, "$.CalculateCashoutResponse.cashoutResult[0].cashoutValue");
+
+        try {
+            cashoutValue = JsonPath.read(jsonResponse, "$.CalculateCashoutResponse.cashoutResult[0].cashoutValue");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            int integerCashoutValue = JsonPath.read(jsonResponse, "$.CalculateCashoutResponse.cashoutResult[0].cashoutValue");
+            String stringCashoutValue = Integer.toString(integerCashoutValue);
+            cashoutValue = Double.valueOf(stringCashoutValue);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         test.pass("<pre>"
                 + "[   CASHOUT DETAILS   ]"
