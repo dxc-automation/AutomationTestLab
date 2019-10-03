@@ -2,11 +2,7 @@ package com.setup;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.markuputils.Markup;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
-
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -27,8 +23,8 @@ public class ExtentManager {
     public static ExtentTest test;
     private static ExtentHtmlReporter htmlReporter;
 
-    private static String htmlPath = "/../report/TestReport.html";
-    private static String confPath = "/../src/main/resources/extent-config.xml";
+    private static String htmlPath = "/report/TestReport.html";
+    private static String confPath = "/src/main/resources/extent-config.xml";
     private static String osName = System.getProperty("os.name");
     private static String osVersion = System.getProperty("os.version");
     private static String osArch = System.getProperty("os.arch");
