@@ -8,6 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -130,6 +131,16 @@ public class BasicSetup {
                 capability.setCapability(SafariOptions.CAPABILITY, sOptions);
                 driver = new SafariDriver();
                 LOG.info("| Safari browser launched successfully |");
+
+            } else if (browser.equalsIgnoreCase("none")) {
+                System.setProperty("webdriver.chrome.driver", pathChrome);
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("test-type");
+                driver = new ChromeDriver(options);
+
+                Point position = new Point(-2000, 0);
+                driver.manage().window().setPosition(position);
+                LOG.info("| Chrome browser minimized successfully |");
             }
         }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite configfailurepolicy="continue" parallel="tests" name="Failed suite [TC_001]" guice-stage="DEVELOPMENT" verbose="10">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="none"/>
   <listeners>
     <listener class-name="com.setup.TestNGListener"/>
   </listeners>

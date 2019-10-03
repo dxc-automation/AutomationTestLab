@@ -7,7 +7,7 @@
         <listener class-name="com.setup.TestNGListener"/>
     </listeners>
 
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="none"/>
 
     <test name="TC_01_Example" group-by-instances="true">
 
@@ -58,6 +58,12 @@
         <class name="com.test.uat.TC_01_Bet.CashoutBet">
             <methods>
                 <include name="cashoutBet"/>
+            </methods>
+        </class>
+
+        <class name="com.test.uat.TC_01_Bet.SessionID">
+            <methods>
+                <include name="sessionId"/>
             </methods>
         </class>
 

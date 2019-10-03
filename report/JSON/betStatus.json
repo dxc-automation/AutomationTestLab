@@ -1,12 +1,12 @@
 {
     "result": "UNR",
-    "betOdds": "1.005",
+    "betOdds": "4",
     "settledTime": "NullTime",
     "errCode": 0,
-    "placedTime": "2019-08-19 19:24:08",
-    "betId": 193323630000110002,
+    "placedTime": "2019-08-30 18:42:48",
+    "betId": 193481620000110006,
     "cashAmount": 200,
-    "currency": "EUR",
+    "currency": "USD",
     "balanceAmount": -200,
     "returnAmount": 0
 }

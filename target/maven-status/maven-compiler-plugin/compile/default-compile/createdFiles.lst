@@ -34,6 +34,7 @@ com/setup/BasicSetup.class
 com/test/examples/TC_03_Example_UI/ID_02_AddToCart.class
 com/constants/Accounts.class
 com/test/temp/OkHttpClient_GET.class
+com/test/uat/TC_01_Bet/SessionID.class
 com/setup/GetImageCompare.class
 com/test/temp/OkHttpClient_POST.class
 com/test/uat/TC_02_Sumo/UI/ID_01_Promotions.class
