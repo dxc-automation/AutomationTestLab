@@ -66,7 +66,7 @@ public class BasicSetup {
     public static JSONParser parser;
     public static int responseCode;
     public static File screenshotFile;
-    public static File filePath = new File(System.getProperty("user.dir")).getParentFile();
+    public static File filePath = new File(System.getProperty("user.dir"));
 
     static final Logger LOG = LogManager.getLogger(BasicSetup.class);
 
