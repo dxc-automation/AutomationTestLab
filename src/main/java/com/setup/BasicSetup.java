@@ -152,8 +152,8 @@ public class BasicSetup {
     @AfterMethod(alwaysRun = true)
         public void report(ITestResult result) throws Exception {
 
-            pathFail = path + "/" + "Screenshots/Failed/";
-            pathPass = path + "/" + "Screenshots/Passed/";
+            pathFail = path + "/Screenshots/Failed/";
+            pathPass = path + "/Screenshots/Passed/";
 
             String method   = result.getMethod().getMethodName();
             String fileName = method + ".json";
