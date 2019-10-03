@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.List;
 import java.util.Properties;
+import static com.setup.BasicSetup.*;
 
 /**
  *  This class is used as an main class and point out TestNG
@@ -34,8 +35,6 @@ public class ConsoleRunner {
 
 
     public static void main(String[] args) throws Exception {
-
-        File path = new File(System.getProperty("user.dir"));
 
 
         // Load properties file

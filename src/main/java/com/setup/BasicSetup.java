@@ -66,7 +66,9 @@ public class BasicSetup {
     public static JSONParser parser;
     public static int responseCode;
     public static File screenshotFile;
-    public static File filePath = new File(System.getProperty("user.dir"));
+
+    protected static File path = new File(System.getProperty("user.dir"));
+    protected static File filePath = new File(System.getProperty("user.dir")).getParentFile();
 
     static final Logger LOG = LogManager.getLogger(BasicSetup.class);
 
@@ -74,7 +76,7 @@ public class BasicSetup {
         public void takeScreenshot (WebDriver driver, String name){
             screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
-                FileUtils.copyFile(screenshotFile, new File(filePath + "/" + "Screenshots/Actual/" + name + ".png"));
+                FileUtils.copyFile(screenshotFile, new File(path + "/" + "Screenshots/Actual/" + name + ".png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -83,8 +85,8 @@ public class BasicSetup {
         @BeforeSuite
         public void cleanTestData() throws Exception{
 
-            FileUtils.cleanDirectory(new File(filePath + "/report/JSON"));
-            FileUtils.cleanDirectory(new File(filePath + "/Screenshots/Failed"));
+            FileUtils.cleanDirectory(new File(path + "/report/JSON"));
+            FileUtils.cleanDirectory(new File(path + "/Screenshots/Failed"));
         }
 
 
@@ -93,9 +95,9 @@ public class BasicSetup {
         @Parameters({"browser"})
         @BeforeSuite
         public void setup(String browser) throws Exception {
-            String pathChrome  = filePath + "/" + "src/main/resources/drivers/chromedriver";
-            String pathFirefox = filePath + "/" + "src/main/resources/drivers/geckodriver.exe";
-            String pathSafari  = filePath + "/" + "src/main/resources/drivers/safaridriver";
+            String pathChrome  = path + "/" + "src/main/resources/drivers/chromedriver";
+            String pathFirefox = path + "/" + "src/main/resources/drivers/geckodriver.exe";
+            String pathSafari  = path + "/" + "src/main/resources/drivers/safaridriver";
 
             DesiredCapabilities capability = new DesiredCapabilities();
 
@@ -150,12 +152,12 @@ public class BasicSetup {
     @AfterMethod(alwaysRun = true)
         public void report(ITestResult result) throws Exception {
 
-            pathFail = filePath + "/" + "Screenshots/Failed/";
-            pathPass = filePath + "/" + "Screenshots/Passed/";
+            pathFail = path + "/" + "Screenshots/Failed/";
+            pathPass = path + "/" + "Screenshots/Passed/";
 
             String method   = result.getMethod().getMethodName();
             String fileName = method + ".json";
-            Path file       = Paths.get(filePath + "/" + "report/JSON/" + fileName);
+            Path file       = Paths.get(path + "/" + "report/JSON/" + fileName);
 
             methodName = String.format("%s  [%s]", result.getMethod().getRealClass().getSimpleName(), result.getMethod().getMethodName());
 
@@ -193,7 +195,7 @@ public class BasicSetup {
 
                             // Parse the data from json file
                             parser        = new JSONParser();
-                            Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+                            Object object = parser.parse(new FileReader(path + "/" + "report/JSON/" + fileName));
                             Gson gson     = new GsonBuilder().setPrettyPrinting().create();
                             response      = gson.toJson(object);
 
@@ -259,7 +261,7 @@ public class BasicSetup {
 
                             // Parse the data from json file
                             parser        = new JSONParser();
-                            Object object = parser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+                            Object object = parser.parse(new FileReader(path + "/" + "report/JSON/" + fileName));
                             Gson gson     = new GsonBuilder().setPrettyPrinting().create();
                             response      = gson.toJson(object);
 
@@ -291,12 +293,12 @@ public class BasicSetup {
                         } else {
                             File fileFail;
                             fileFail = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-                            FileUtils.copyFile(fileFail, new File(pathFail + methodName + ".png"));
+                            FileUtils.copyFile(fileFail, new File(path + methodName + ".png"));
 
                             test.fail(methodName);
                             test.fail(throwable);
                             //test.log(Status.ERROR, "EXCEPTION" + "<br />" + result.getThrowable());
-                            test.fail("FAILED ON SCREEN", MediaEntityBuilder.createScreenCaptureFromPath(pathFail + methodName + ".png").build());
+                            test.fail("FAILED ON SCREEN", MediaEntityBuilder.createScreenCaptureFromPath(path + methodName + ".png").build());
                         }
                             break;
 
