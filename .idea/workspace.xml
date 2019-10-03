@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/betStatus.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/betStatus.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/calcCashout.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/calcCashout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/cashoutBet.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/cashoutBet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/externalLogin.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/externalLogin.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/getSportsTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getSportsTree.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/getSportsTree[debug].json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/getSportsTree[debug].json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/loginRam.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/loginRam.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/openBets.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/openBets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/placeBet.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/placeBet.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TC_001/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.BetStatus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.BetStatus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.CalculateCashout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.CalculateCashout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.CashoutBet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.CashoutBet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ExternalLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.ExternalLogin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.FootballSportTree.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.FootballSportTree.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.LogInRam.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.LogInRam.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.OpenBets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.OpenBets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.PlaceBet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.uat.TC_01_Bet.PlaceBet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/constants/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/constants/API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/constants/API.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/constants/API.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/BasicSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/setup/BasicSetup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/temp/OkHttpClient_GET.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/PlaceBet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,17 +70,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="330">
               <caret line="43" column="48" selection-start-line="43" selection-end-line="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -220,13 +175,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_01_LogIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ID_07_CashoutBet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/CashoutBet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/BetStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/constants/API.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/stars.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/SessionID.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java" />
       </list>
     </option>
   </component>
@@ -272,6 +227,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -382,8 +339,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="CatdeaLogs" />
     </panes>
   </component>
@@ -475,7 +430,7 @@
     <frame x="0" y="23" width="1440" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25250357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -635,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="49" column="59" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/GetImageCompare.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -792,6 +740,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="43" column="48" selection-start-line="43" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/OpenBets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -812,17 +767,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="43" column="48" selection-start-line="43" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="40" column="82" selection-start-line="40" selection-start-column="82" selection-end-line="40" selection-end-column="82" />
         </state>
       </provider>
     </entry>
