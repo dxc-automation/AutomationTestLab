@@ -34,7 +34,7 @@ public class JSONUtils extends BasicSetup {
     public static void createJSONDebugFile(Method testMethod, Object jsonObject) throws Exception {
         String debugFileName = testMethod.getName() + "[debug].json";
 
-        file = new File(filePath + "/report/JSON/" + debugFileName);
+        file = new File(path + "/report/JSON/" + debugFileName);
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write(jsonObject.toString());
         fileWriter.flush();
