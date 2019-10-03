@@ -11,8 +11,6 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.Properties;
 
-import static com.setup.BasicSetup.filePath;
-
 /**
  *  This class is used as an main class and point out TestNG
  *  framework  with  XML file.  The  original  XML  file  is
@@ -71,7 +69,7 @@ public class ConsoleRunner {
         File xmlCopied = new File(path + "/target/" + xml);
 
         // Destination folder + renamed file
-        xmlFile = new File(path + "/" + "target/testng.xml");
+        xmlFile = new File(path +  "/target/testng.xml");
 
         FileUtils.copyFileToDirectory(from, to);
         boolean isRenamed = xmlCopied.renameTo(xmlFile);
@@ -82,7 +80,7 @@ public class ConsoleRunner {
 
             TestNG testng = new TestNG();
             testng.setXmlSuites(suite);
-            testng.setOutputDirectory(filePath + "/" + "report/");
+            testng.setOutputDirectory(path + "/report/");
             testng.run();
         } catch (Exception e) {
             e.printStackTrace();
