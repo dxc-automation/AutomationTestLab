@@ -62,16 +62,16 @@ public class ConsoleRunner {
         String xml = testXml + ".xml";
 
         // Original folder + source file
-        File from = new File(filePath + "/src/main/resources/xml_files/" + xml);
+        File from = new File(path + "/src/main/resources/xml_files/" + xml);
 
         // Destination folder
-        File to = new File(filePath + "/target/");
+        File to = new File(path + "/target/");
 
         // Destination folder + source file
-        File xmlCopied = new File(filePath + "/target/" + xml);
+        File xmlCopied = new File(path + "/target/" + xml);
 
         // Destination folder + renamed file
-        xmlFile = new File(filePath + "/" + "target/testng.xml");
+        xmlFile = new File(path + "/" + "target/testng.xml");
 
         FileUtils.copyFileToDirectory(from, to);
         boolean isRenamed = xmlCopied.renameTo(xmlFile);
