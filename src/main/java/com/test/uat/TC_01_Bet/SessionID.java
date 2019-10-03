@@ -79,7 +79,7 @@ public class SessionID extends BasicSetup {
                 + "<br/>"
                 + "</pre>");
 
-        Object object         = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+        Object object         = jsonParser.parse(new FileReader(path + "/" + "report/JSON/" + fileName));
         String jsonResponse   = gson.toJson(object);
 
         String signature = JsonPath.read(jsonResponse, "$.signature");

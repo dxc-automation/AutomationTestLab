@@ -21,7 +21,7 @@ import java.net.URI;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.setup.BasicSetup.filePath;
+import static com.setup.BasicSetup.path;
 
 public class HttpClientUtils {
 
@@ -49,7 +49,7 @@ public class HttpClientUtils {
 
 
     public static File createJsonFile(String fileName, JSONObject objectResponse) throws Exception {
-        File file = new File(filePath + "/" + "report/JSON/" + fileName);
+        File file = new File(path +  "/report/JSON/" + fileName);
         FileWriter fw = new FileWriter(file);
         fw.write(objectResponse.toString(4));
         fw.flush();
