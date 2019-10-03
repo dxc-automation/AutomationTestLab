@@ -2,7 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/constants/API.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/constants/Accounts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/SumoLoginPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pages/SumoPromotionsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/BasicSetup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/ConsoleRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/ExtentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/GetImageCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/HttpClientUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/JSONUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/OkHttpClientUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/TestNGListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/URLConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/setup/WebDriverUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_01_Example_URLConnection/ID_01_AccessToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_01_Example_URLConnection/ID_02_CreateSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_01_Example_URLConnection/ID_03_SignIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_02_RegisterUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_03_Authenticate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_04_SignIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_05_AddUserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_07_Business.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_08_Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/Fly/ID_09_Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/PayPal/ID_01_Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_02_Example_HttpClient/PayPal/ID_02_Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_03_Example_UI/ID_01_OpenCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/examples/TC_03_Example_UI/ID_02_AddToCart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/HttpClient_GET.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/HttpClient_POST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/OkHttpClient_GET.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/OkHttpClient_POST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/temp/UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/BetStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/CalculateCashout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/CashoutBet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/ExternalLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/FootballSportTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/LogInRam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/OpenBets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/PlaceBet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_01_Bet/SessionID.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_02_Sumo/API/ID_01_PromotionsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/uat/TC_02_Sumo/UI/ID_01_Promotions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="68" column="31" selection-start-line="68" selection-end-line="69" />
+            <state relative-caret-position="312">
+              <caret line="318" column="24" selection-start-line="318" selection-start-column="24" selection-end-line="318" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -87,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+            <state relative-caret-position="450">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -711,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/BetStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -769,17 +813,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/stars.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="68" column="31" selection-start-line="68" selection-end-line="69" />
+        <state relative-caret-position="255">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="73" column="31" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+        <state relative-caret-position="450">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/setup/BasicSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="318" column="24" selection-start-line="318" selection-start-column="24" selection-end-line="318" selection-end-column="24" />
         </state>
       </provider>
     </entry>

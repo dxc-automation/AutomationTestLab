@@ -24,7 +24,7 @@ public class ConsoleRunner {
     public static String ramHost;
     public static String walletHost;
     public static String scheme;
-    public static File   xmlFile;
+    protected static File   xmlFile;
     private static String testXml;
 
     public static String username;
@@ -69,7 +69,7 @@ public class ConsoleRunner {
         File xmlCopied = new File(path + "/target/" + xml);
 
         // Destination folder + renamed file
-        xmlFile = new File(path +  "/target/testng.xml");
+        xmlFile = new File(path + "/" + "target/testng.xml");
 
         FileUtils.copyFileToDirectory(from, to);
         boolean isRenamed = xmlCopied.renameTo(xmlFile);
