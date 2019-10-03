@@ -37,8 +37,11 @@ public class ConsoleRunner {
 
     public static void main(String[] args) throws Exception {
 
+        File path = new File(System.getProperty("user.dir"));
+
+
         // Load properties file
-        InputStream inputStream = new FileInputStream(System.getProperty("user.dir")  + "/src/main/resources/config.properties");
+        InputStream inputStream = new FileInputStream(path + "/src/main/resources/config.properties");
         Properties properties = new Properties();
         properties.load(inputStream);
 

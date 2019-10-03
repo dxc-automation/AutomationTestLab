@@ -62,8 +62,8 @@ public class BasicSetup {
     public static String pathPass;
     public static String methodName;
     public static String response;
-    public static JSONParser parser;
     private static String headers;
+    public static JSONParser parser;
     public static int responseCode;
     public static File screenshotFile;
     public static File filePath = new File(System.getProperty("user.dir")).getParentFile();
