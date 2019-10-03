@@ -38,7 +38,7 @@ public class OkHttpClientUtils extends BasicSetup {
 
 
     public static OkHttpClient okClientRequest(String fileName, Request request) throws Exception {
-        file = new File(filePath + "/" + "report/JSON/" + fileName);
+        file = new File(path + "/report/JSON/" + fileName);
 
         okHttpClient = new OkHttpClient.Builder()
                 .readTimeout(600, TimeUnit.SECONDS)
@@ -96,7 +96,7 @@ public class OkHttpClientUtils extends BasicSetup {
 
 
     public static File createJsonFile(String fileName ) throws Exception {
-        file = new File(filePath + "/" + "report/JSON/" + fileName);
+        file = new File(path + "/report/JSON/" + fileName);
 
         if (jsonObjectResponse != null) {
             FileWriter fw = new FileWriter(file);
