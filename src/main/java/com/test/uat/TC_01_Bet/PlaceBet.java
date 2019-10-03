@@ -145,7 +145,7 @@ public class PlaceBet extends BasicSetup {
 
 
 
-        Object object         = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+        Object object         = jsonParser.parse(new FileReader(path + "/report/JSON/" + fileName));
         String jsonResponse   = gsonPretyPrint.toJson(object);
 
         String betTypeResponse = JsonPath.read(jsonResponse, "$.PlaceBetsResponse.betPlacementResult[0].betType");

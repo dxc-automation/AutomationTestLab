@@ -108,7 +108,7 @@ public class ExternalLogin extends BasicSetup {
                 + "</pre>");
 
         JsonParser jsonParser = new JsonParser();
-        Object object         = jsonParser.parse(new FileReader(filePath + "/" + "report/JSON/" + fileName));
+        Object object         = jsonParser.parse(new FileReader(path + "/report/JSON/" + fileName));
         String jsonResponse   = gson.toJson(object);
 
 
