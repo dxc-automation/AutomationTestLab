@@ -13,6 +13,12 @@
 
     <classes>
 
+        <class name="com.test.uat.TC_01_Bet.SessionID">
+            <methods>
+                <include name="sessionId"/>
+            </methods>
+        </class>
+
         <class name="com.test.uat.TC_01_Bet.LogInRam">
             <methods>
                 <include name="loginRam"/>
@@ -61,11 +67,6 @@
             </methods>
         </class>
 
-        <class name="com.test.uat.TC_01_Bet.SessionID">
-            <methods>
-                <include name="sessionId"/>
-            </methods>
-        </class>
 
     </classes>
 </test>
