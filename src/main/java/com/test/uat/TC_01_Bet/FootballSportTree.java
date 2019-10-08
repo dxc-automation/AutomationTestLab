@@ -135,7 +135,7 @@ public class FootballSportTree extends BasicSetup {
                 marketId   = JsonPath.read(jsonArray, "$[0].id");
                 displayed  = JsonPath.read(jsonArray, "$[0].displayed");
                 selectionId   = JsonPath.read(jsonArray, "$[0].selection[0].id");
-                marketCashout = JsonPath.read(jsonArray, "$[0].attributes.attrib[1].value");
+                marketCashout = JsonPath.read(jsonArray, "$.[0].attributes.attrib[1].value");
                 selectionDecimal    = JsonPath.read(jsonArray, "$[0].selection[0].odds.dec");
                 selectionFractional = JsonPath.read(jsonArray, "$[0].selection[0].odds.frac");
 
