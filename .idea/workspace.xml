@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53cb064f-3e0b-4b37-92ce-115b0b131703" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/constants/API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/objects/API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/constants/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/objects/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/setup/ConsoleRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/BetStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/BetStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/CalculateCashout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/CalculateCashout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/CashoutBet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/CashoutBet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/basic_requests/RamLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/basic_requests/RamLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ExternalLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ExternalLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/FootballSportTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/FootballSportTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/LogInRam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/LogInRam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/OpenBets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/OpenBets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/PlaceBet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/PlaceBet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/SessionID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/SessionID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/FootballSportTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
+            <state relative-caret-position="638">
               <caret line="142" column="52" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ExternalLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="117" column="57" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/LogInRam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
+            <state relative-caret-position="-128">
               <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,17 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/basic_requests/RamLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/objects/Accounts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -85,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/PlaceBet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
+            <state relative-caret-position="1830">
               <caret line="147" column="72" selection-start-line="147" selection-start-column="72" selection-end-line="147" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -94,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -200,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/setup/OkHttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/SessionID.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/setup/HttpClientUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ExternalLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/OpenBets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/PlaceBet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/CalculateCashout.java" />
@@ -212,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/objects/API.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/basic_requests/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/basic_requests/RamLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ExternalLogin.java" />
       </list>
     </option>
   </component>
@@ -243,11 +234,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="180" />
-    <option name="y" value="126" />
-    <option name="width" value="1080" />
-    <option name="height" value="624" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectId" id="1P8WbWjdrEt5EdailH8l5y52wdy" />
   <component name="ProjectLevelVcsManager">
@@ -258,7 +248,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -375,6 +364,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="CatdeaLogs" />
     </panes>
   </component>
@@ -463,10 +453,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="830" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2267525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22961374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -685,16 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ExternalLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/CashoutBet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -749,16 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/FootballSportTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="142" column="52" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/objects/Accounts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -770,6 +740,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/PlaceBet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="147" column="72" selection-start-line="147" selection-start-column="72" selection-end-line="147" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -803,26 +783,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/PlaceBet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="147" column="72" selection-start-line="147" selection-start-column="72" selection-end-line="147" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/basic_requests/RamLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/LogInRam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
+        <state relative-caret-position="-128">
           <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -830,10 +807,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/ExternalLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="281">
+          <caret line="117" column="57" selection-start-line="117" selection-start-column="57" selection-end-line="117" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/uat/TC_01_Bet/FootballSportTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="142" column="52" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

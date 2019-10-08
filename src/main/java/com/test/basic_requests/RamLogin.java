@@ -4,5 +4,5 @@ import com.setup.BasicSetup;
 
 public class RamLogin extends BasicSetup {
 
-    
+
 }

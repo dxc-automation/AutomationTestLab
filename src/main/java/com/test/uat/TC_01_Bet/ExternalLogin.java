@@ -112,10 +112,10 @@ public class ExternalLogin extends BasicSetup {
         String jsonResponse   = gson.toJson(object);
 
 
-        accountId       = JsonPath.read(jsonResponse, "$.RamLogin.accountId");
-        accountCurrency = JsonPath.read(jsonResponse, "$.RamLogin.accountBalance.currency");
-        sessionToken    = JsonPath.read(jsonResponse, "$.RamLogin.sessionToken");
-        accountLanguage = JsonPath.read(jsonResponse, "$.RamLogin.preferredLanguage");
+        accountId       = JsonPath.read(jsonResponse, "$.accountId");
+        accountCurrency = JsonPath.read(jsonResponse, "$.accountBalance.currency");
+        sessionToken    = JsonPath.read(jsonResponse, "$.sessionToken");
+        accountLanguage = JsonPath.read(jsonResponse, "$.preferredLanguage");
 
 
         Assert.assertNotNull(sessionToken);
