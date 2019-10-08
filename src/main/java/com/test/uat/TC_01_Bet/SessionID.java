@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.io.FileReader;
 import java.lang.reflect.Method;
 
-import static com.constants.API.ram_session_id;
+import static com.objects.API.RAM_SESSION_ID;
 import static com.setup.ConsoleRunner.ramHost;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
@@ -50,7 +50,7 @@ public class SessionID extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(ramHost)
-                .setPath(ram_session_id)
+                .setPath(RAM_SESSION_ID)
                 .build();
 
 

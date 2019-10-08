@@ -15,7 +15,7 @@ import java.io.FileReader;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 
-import static com.constants.API.place_bets;
+import static com.objects.API.PLACE_BETS;
 import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
@@ -101,7 +101,7 @@ public class PlaceBet extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath(place_bets)
+                .setPath(PLACE_BETS)
                 .build();
 
         request = new Request.Builder()

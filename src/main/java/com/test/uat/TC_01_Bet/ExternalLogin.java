@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import java.io.FileReader;
 import java.lang.reflect.Method;
 
-import static com.constants.API.external_login;
+import static com.objects.API.EXTERNAL_LOGIN;
 import static com.setup.ConsoleRunner.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
@@ -41,7 +41,7 @@ public class ExternalLogin extends BasicSetup {
     public void startTest() throws Exception {
         extent = ExtentManager.GetExtent();
         test = extent.createTest(
-                "[ID_02] External Login",
+                "[ID_02] External RamLogin",
                 "<pre>"
                         + "DESCRIPTION"
                         + "<br/>"
@@ -71,7 +71,7 @@ public class ExternalLogin extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath(external_login)
+                .setPath(EXTERNAL_LOGIN)
                 .build();
 
         request = new Request.Builder()
@@ -112,10 +112,10 @@ public class ExternalLogin extends BasicSetup {
         String jsonResponse   = gson.toJson(object);
 
 
-        accountId       = JsonPath.read(jsonResponse, "$.Login.accountId");
-        accountCurrency = JsonPath.read(jsonResponse, "$.Login.accountBalance.currency");
-        sessionToken    = JsonPath.read(jsonResponse, "$.Login.sessionToken");
-        accountLanguage = JsonPath.read(jsonResponse, "$.Login.preferredLanguage");
+        accountId       = JsonPath.read(jsonResponse, "$.RamLogin.accountId");
+        accountCurrency = JsonPath.read(jsonResponse, "$.RamLogin.accountBalance.currency");
+        sessionToken    = JsonPath.read(jsonResponse, "$.RamLogin.sessionToken");
+        accountLanguage = JsonPath.read(jsonResponse, "$.RamLogin.preferredLanguage");
 
 
         Assert.assertNotNull(sessionToken);

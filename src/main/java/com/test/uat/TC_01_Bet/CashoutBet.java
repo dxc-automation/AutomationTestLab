@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-import static com.constants.API.cashout;
+import static com.objects.API.CASHOUT_BET;
 import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
@@ -63,7 +63,7 @@ public class CashoutBet extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath(cashout)
+                .setPath(CASHOUT_BET)
                 .build();
 
         request = new Request.Builder()

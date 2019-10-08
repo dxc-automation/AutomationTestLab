@@ -15,7 +15,7 @@ import java.util.List;
 
 import static com.setup.JSONUtils.*;
 import static com.setup.ConsoleRunner.*;
-import static com.constants.API.*;
+import static com.objects.API.*;
 import static com.setup.ExtentManager.extent;
 import static com.setup.ExtentManager.test;
 import static com.setup.HttpClientUtils.*;
@@ -48,7 +48,7 @@ public class LogInRam extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(ramHost)
-                .setPath(ram_login)
+                .setPath(RAM_LOGIN)
                 .build();
 
         JSONObject jsonObject = new JSONObject();

@@ -3,6 +3,7 @@ com/setup/URLConnection.class
 com/test/examples/TC_01_Example_URLConnection/ID_01_AccessToken.class
 com/setup/HttpClientUtils.class
 com/test/uat/TC_01_Bet/PlaceBet.class
+com/test/basic_requests/RamLogin.class
 com/test/uat/TC_01_Bet/BetStatus.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_07_Business.class
 com/test/examples/TC_03_Example_UI/ID_01_OpenCart.class
@@ -15,12 +16,13 @@ com/test/uat/TC_01_Bet/CashoutBet.class
 com/test/temp/HttpClient_POST.class
 com/test/temp/UI.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_09_Order.class
+com/objects/API.class
 com/setup/TestNGListener.class
 com/setup/ConsoleRunner.class
 com/test/examples/TC_01_Example_URLConnection/ID_03_SignIn.class
 com/test/examples/TC_02_Example_HttpClient/PayPal/ID_02_Test.class
+com/objects/Accounts.class
 com/test/uat/TC_02_Sumo/API/ID_01_PromotionsPage.class
-com/constants/API.class
 com/setup/ExtentManager.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_01_AccessToken.class
 com/test/examples/TC_02_Example_HttpClient/Fly/ID_06_UserInfo.class
@@ -32,7 +34,6 @@ com/test/uat/TC_01_Bet/CalculateCashout.class
 com/test/examples/TC_02_Example_HttpClient/PayPal/ID_01_Token.class
 com/setup/BasicSetup.class
 com/test/examples/TC_03_Example_UI/ID_02_AddToCart.class
-com/constants/Accounts.class
 com/test/temp/OkHttpClient_GET.class
 com/test/uat/TC_01_Bet/SessionID.class
 com/setup/GetImageCompare.class

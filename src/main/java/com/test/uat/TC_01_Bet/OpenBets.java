@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import java.io.FileReader;
 import java.lang.reflect.Method;
 
-import static com.constants.API.get_open_bets;
+import static com.objects.API.GET_OPEN_BETS;
 import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
@@ -63,7 +63,7 @@ public class OpenBets extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath(get_open_bets)
+                .setPath(GET_OPEN_BETS)
                 .build();
 
         request = new Request.Builder()

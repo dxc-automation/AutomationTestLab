@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import java.io.FileReader;
 import java.lang.reflect.Method;
 
-import static com.constants.API.calculate_cashout;
+import static com.objects.API.CALCULATE_CASHOUT;
 import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
@@ -83,7 +83,7 @@ public class CalculateCashout extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath(calculate_cashout)
+                .setPath(CALCULATE_CASHOUT)
                 .build();
 
         request = new Request.Builder()

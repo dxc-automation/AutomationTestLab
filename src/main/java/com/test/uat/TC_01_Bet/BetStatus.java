@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-import static com.constants.API.wallet_bet_status;
+import static com.objects.API.WALLET_BET_STATUS;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ConsoleRunner.walletHost;
 import static com.setup.ExtentManager.extent;
@@ -48,7 +48,7 @@ public class BetStatus extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(walletHost)
-                .setPath(wallet_bet_status)
+                .setPath(WALLET_BET_STATUS)
                 .build();
 
         JSONObject jsonObject = new JSONObject();

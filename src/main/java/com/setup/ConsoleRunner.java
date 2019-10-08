@@ -24,6 +24,7 @@ public class ConsoleRunner {
     public static String host;
     public static String ramHost;
     public static String walletHost;
+    public static String tradingHost;
     public static String scheme;
     protected static File   xmlFile;
     private static String testXml;
@@ -48,6 +49,7 @@ public class ConsoleRunner {
         host    = properties.getProperty("host");
         ramHost = properties.getProperty("ram_host");
         walletHost = properties.getProperty("wallet_host");
+        tradingHost = properties.getProperty("trading_host");
 
         username  = properties.getProperty("username");
         password  = properties.getProperty("password");

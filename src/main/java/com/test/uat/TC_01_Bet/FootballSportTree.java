@@ -17,7 +17,7 @@ import java.io.FileWriter;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 
-import static com.constants.API.get_sports_tree;
+import static com.objects.API.GET_SPORT_TREE;
 import static com.setup.ConsoleRunner.host;
 import static com.setup.ConsoleRunner.scheme;
 import static com.setup.ExtentManager.extent;
@@ -83,7 +83,7 @@ public class FootballSportTree extends BasicSetup {
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
-                .setPath(get_sports_tree)
+                .setPath(GET_SPORT_TREE)
                 .build();
 
         request = new Request.Builder()
@@ -130,8 +130,6 @@ public class FootballSportTree extends BasicSetup {
 
         createJSONDebugFile(testMethod, jsonArray);
 
-
-            if (jsonArray != null) {
                 marketName = JsonPath.read(jsonArray, "$[0].name");
                 marketType = JsonPath.read(jsonArray, "$[0].type");
                 marketId   = JsonPath.read(jsonArray, "$[0].id");
@@ -160,7 +158,6 @@ public class FootballSportTree extends BasicSetup {
                         + "Fractional   = " + selectionFractional
                         + "</pre>");
         }
-    }
 }
 
 
