@@ -1,0 +1,20 @@
+{
+  "requestInfo": {
+    "apiVersion": 1,
+    "requestId": "339a6fd4-ef94-4c19-8705-583696968dd9",
+    "accessTokenStatus": "authenticated",
+    "serverTime": 1578396187
+  },
+  "firstTimeVisitEligibleLocations": [],
+  "user": {
+    "lastUpdated": 1562596322,
+    "userStatus": 1,
+    "dateCreated": 1528315193,
+    "color": "#C43C52",
+    "appsAgreedToTerms": [
+      1
+    ],
+    "userId": 2793560,
+    "defaultCardId": 0
+  }
+}

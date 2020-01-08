@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite configfailurepolicy="continue" parallel="tests" name="Failed suite [TC_001]" guice-stage="DEVELOPMENT" verbose="10">
-  <parameter name="browser" value="none"/>
+  <parameter name="environment" value="uat"/>
+  <parameter name="browser" value="chrome"/>
   <listeners>
-    <listener class-name="com.setup.TestNGListener"/>
+    <listener class-name="com.demo.config.TestNGListener"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_01_Example(failed)" verbose="10">
     <classes>
-      <class name="com.test.uat.TC_01_Bet.OpenBets">
+      <class name="com.demo.test_suites.TC_01_Fly">
         <methods>
           <include name="report"/>
           <include name="setup"/>
+          <include name="checkUI"/>
           <include name="cleanTestData"/>
           <include name="clearXml"/>
+          <include name="endReport"/>
+          <include name="getEnvironmentConfiguration"/>
           <include name="tearDown"/>
-          <include name="startTest"/>
-          <include name="openBets" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.test.uat.TC_01_Bet.OpenBets -->
+      </class> <!-- com.test_suites_suites.TC_01_Fly
     </classes>
-  </test> <!-- TC_01_Example(failed) -->
+  </test_suites> <!-- TC_01_Example(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

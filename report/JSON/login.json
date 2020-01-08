@@ -1,0 +1,40 @@
+{
+  "requestInfo": {
+    "apiVersion": 2,
+    "requestId": "51ee069b-640b-4fae-aecf-981279c6bc7c",
+    "accessTokenStatus": "authenticated",
+    "serverTime": 1578396186
+  },
+  "firstTimeVisitEligibleLocations": [],
+  "accessToken": "62bb5079fa3e2d17c20fbda32e940a4e4d205507c7bb45d0b4daa908584f873a",
+  "user": {
+    "lastUpdated": 1562596322,
+    "userStatus": 1,
+    "dateCreated": 1528315193,
+    "wallet": [],
+    "address": {
+      "latLng": {}
+    },
+    "color": "#C43C52",
+    "credentials": [
+      {
+        "credential": "user@email.com",
+        "verified": false,
+        "type": "email",
+        "channelId": "2"
+      }
+    ],
+    "appsAgreedToTerms": [
+      1
+    ],
+    "profile": {
+      "mobilePhoneNumber": "7777999000",
+      "gender": "u",
+      "dob": 0,
+      "name": "Automation"
+    },
+    "marketingPreferences": [],
+    "userId": 2793560,
+    "defaultCardId": 0
+  }
+}

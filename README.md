@@ -1,41 +1,107 @@
-# DXCTestLab_TestNG
+# Hybrid Automation Framework
 
-[![N|Solid](https://www.gamblingsites.org/news/wp-content/uploads/pokerstars-logo.png)](https://nodesource.com/products/nsolid)
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) ![Editor](https://img.shields.io/github/release/pandao/editor.md.svg) [![License badge](https://img.shields.io/badge/license-Apache2-green.svg)](http://www.apache.org/licenses/LICENSE-2.0) ![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)
-
-### Description
 <p align="justify">
-Automation testing environment that can be used for writing functional and non-functional tests. The project is based on Java, TestNG and Maven.
-It is also flexible and can be quickly refactored to work with desktop or mobile devices. 
+As the name suggests, the Hybrid Testing Framework is a combination of more than one above mentioned frameworks. 
+The best thing about such a setup is that it leverages the benefits of all kinds of associated frameworks.
 </p>
 
-<b>Framework advantages:</b>
-<br> [1] Code for UI and API tests can be in one project.
-<br> [2] Working with three different libraries for API testing.
-<br> [3] Easy refactoring for test executing on real device.
-<br> [4] Full test report.
-<br> [5] Templates for fast and easy tests writing.
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) 
+![Editor](https://img.shields.io/github/release/pandao/editor.md.svg) 
+[![License badge](https://img.shields.io/badge/license-Apache2-green.svg)](http://www.apache.org/licenses/LICENSE-2.0) 
+![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)
+
+<br>
+
+### <i>Automation Framework</i>
+- [x] JDK
+- [x] Selenium WebDriver
+- [x] Apache HttpClient
+- [x] TestNG
+- [x] Maven
+
+<br>
+
+### <i>Project Classes</i>
+
+##### <i>com.demo.config</i>
+- [x] BasicConfiguration.class
+- [x] ConsoleRunner.class
+- [x] ReporterConfig.class
+- [x] TestNGListener.class
+
+
+##### <i>com.demo.test_properties</i>
+- [x] FilePaths.class
+- [x] TestData.class
+- [x] UrlPaths.class
+- [x] TestNGListener
+
+
+##### <i>com.demo.test_scripts.api</i>
+- [x] All API test script classes
+
+##### <i>com.demo.test_scripts.ui</i> 
+- [x] All UI test script classes
+
+
+<ul>
+  <li>com.demo.test_suites
+    <ul>
+      <li>TC_01_Fly.class</li>
+    </ul>
+  </li>
+</ul> 
+<br>
+
+<ul>
+  <li>com.demo.ui_mapping
+    <ul>
+      <li>HomePage.class</li>
+    </ul>
+  </li>
+</ul> 
+<br>
+
+<ul>
+  <li>com.demo.utilities
+    <ul>
+      <li>com.demo.utilities.user_interface</li>
+      <li>com.demo.utilities.web_services</li>
+    </ul>
+  </li>
+</ul> 
+<br>
+</ul>
+
+
+<br> 
+
+#### <i>Architecture Components</i>
 
 
 
-### Project Structure & Process
+| Path | Content Description |
+| ------- | ----------- | 
+| /bin | Contains batch files which contains scripts for quick project packaging and test execution. | 
+| /lib | Contains all additional libraries. | 
+| /report | All generated report files are here. | 
+| /report/JSON</code> | In case when testing APIs after every request we save the response body here. |
+| /report/TestReport.html | General report file that is created after test suite execution. |
+| /src/main/java/com/demo/config |  
+ 
+ 
+ with scripts for quick project packaging <code>mvn clean package -Dmaven.test.skip=true</code>. 
+which contains the binary output of your project, along its the unpacked dependencies. 
+This built-in descriptor produces an assembly with the classifier jar-with-dependencies using the JAR archive format.
+ assembled archive contains the binary JAR <code>mvn clean package -Dmaven.test.skip=true</code>  
 
-At this moment we don't have the full project structure because there are features that will made some changes. 
 
 
-| Package | Class | Description |
-| ------- | ----- | ----------- |
-| com.setup | GetImageCompare  | Class that contains method for image comparing |
-| com.setup | BasicSetup | Methods for starting web browser, taking screenshots and results reporting |
-| com.setup | ConsoleRunner | Main class for TestNG |
-| com.setup | ExtentManager | HTML report configuration |
-| com.setup | TestNGListener | Additional result reporting configuration |
-| com.setup | URLConnection | HTTP connection for requests and response reading configuration |
-| com.setup | HttpClientUtils | Utility class that contains configuration methods for HttpClient library |
-| com.setup | OkHttpClientUtils | Utility class that contains configuration methods for OkHttpClient library |
-| com.test.temp || Templates that can be used for faster test creation |
-| com.test | | All tests will be here |
+
+
+
+<i><q>.sh</q></i> for MacOS and <i><q>.bat</q></i> files for windows   |
+
 
 
 <p align="justify">

@@ -4,103 +4,28 @@
 <suite name="TC_001" configfailurepolicy="continue" verbose="10" parallel="tests" thread-count="5">
 
     <listeners>
-        <listener class-name="com.setup.TestNGListener"/>
+        <listener class-name="com.demo.config.TestNGListener"/>
     </listeners>
 
-    <parameter name="browser" value="safari"/>
+    <parameter name="browser"     value="chrome"/>
+    <parameter name="environment" value="uat"/>
 
     <test name="TC_01_Example" group-by-instances="true">
 
-        <classes>
-
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_01_AccessToken">
+    <classes>
+        <class name="com.demo.test_suites.TC_01_Fly">
             <methods>
-                <include name="getAccessToken"/>
+                <include name="sessionID"/>
+                <include name="ramLogin"/>
+                <include name="externalLogin"/>
+                <include name="cmsLogin"/>
+                <include name="addBonusCampaign"/>
+                <include name="uploadFile"/>
+                <include name="userBonusEntitlements"/>
+                <include name="checkUI"/>
+                <include name="getSportsbookEvent"/>
             </methods>
         </class>
-
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_02_RegisterUser">
-            <methods>
-                <include name="registerUser"/>
-            </methods>
-        </class>
-
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_03_Authenticate">
-            <methods>
-                <include name="authentication"/>
-            </methods>
-        </class>
-            
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_04_SignIn">
-            <methods>
-                <include name="signIn"/>
-            </methods>
-        </class>
-
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_05_AddUserInfo">
-            <methods>
-                <include name="addInfo"/>
-            </methods>
-        </class>
-
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_06_UserInfo">
-            <methods>
-                <include name="getUserObject"/>
-            </methods>
-        </class>
-
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_07_Business">
-            <methods>
-                <include name="getBusiness"/>
-            </methods>
-        </class>
-
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_08_Menu">
-            <methods>
-                <include name="getMenu"/>
-            </methods>
-        </class>
-
-        <class name="com.test.examples.TC_02_Example_HttpClient.Fly.ID_09_Order">
-            <methods>
-                <include name="setOrder"/>
-            </methods>
-        </class>
-
-
-            <class name="com.test.uat.TC_01_Bet.LogInRam">
-                <methods>
-                    <include name="loginRam"/>
-                </methods>
-            </class>
-
-            <class name="com.test.uat.TC_01_Bet.ExternalLogin">
-                <methods>
-                    <include name="externalLogin"/>
-                </methods>
-            </class>
-
-            <class name="com.test.uat.TC_01_Bet.ID_03_GetOpenBets">
-                <methods>
-                    <include name="getOpenBets"/>
-                </methods>
-            </class>
-
-            <class name="com.test.uat.TC_01_Bet.PlaceBet">
-                <methods>
-                    <include name="placeBet"/>
-                </methods>
-            </class>
-
-            <class name="com.test.uat.TC_02_Sumo.UI.ID_01_Promotions">
-                <methods>
-                    <include name="openSumoHomePage"/>
-                    <include name="noSelectionBtnState"/>
-                    <include name="selectionBtnState"/>
-                    <include name="checkTable"/>
-                </methods>
-            </class>
-
     </classes>
 </test>
 </suite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" parallel="tests" name="Failed suite [TC_001]" guice-stage="DEVELOPMENT" verbose="10">
+  <parameter name="environment" value="fly"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.setup.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="TC_01_Freebet(failed)" verbose="10">
+    <classes>
+      <class name="com.test.TC_01_Fly">
+        <methods>
+          <include name="report"/>
+          <include name="setup"/>
+          <include name="newUser" invocation-numbers="0"/>
+          <include name="cleanTestData"/>
+          <include name="clearXml"/>
+          <include name="endReport"/>
+          <include name="getEnvironmentConfiguration"/>
+          <include name="tearDown"/>
+          <include name="hyperlinks"/>
+        </methods>
+      </class> <!-- com.test.TC_01_Fly -->
+    </classes>
+  </test> <!-- TC_01_Freebet(failed) -->
+</suite> <!-- Failed suite [TC_001] -->

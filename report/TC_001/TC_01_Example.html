@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TC_01_Example</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 30 21:42:38 EEST 2019</td>
+<td>Started on:</td><td>Wed Dec 04 13:20:21 EET 2019</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13905 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34184 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,74 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.test.uat.TC_01_Bet.OpenBets.openBets()'><b>openBets</b><br>Test class: com.test.uat.TC_01_Bet.OpenBets<br>Parameters: public void com.test.uat.TC_01_Bet.OpenBets.openBets(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>com.jayway.jsonpath.PathNotFoundException: No results for path: $[0][&apos;parts&apos;][&apos;betPart&apos;][0][&apos;event&apos;][&apos;name&apos;]
-	at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
-	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
-	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
-	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:89)
-	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:488)
-	at com.test.uat.TC_01_Bet.OpenBets.openBets(OpenBets.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div><a href='#' onClick='toggleBox("stack-trace983568175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace983568175'><pre>com.jayway.jsonpath.PathNotFoundException: No results for path: $[0][&apos;parts&apos;][&apos;betPart&apos;][0][&apos;event&apos;][&apos;name&apos;]
-	at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
-	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
-	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
-	at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:89)
-	at com.jayway.jsonpath.JsonPath.read(JsonPath.java:488)
-	at com.test.uat.TC_01_Bet.OpenBets.openBets(OpenBets.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>0</td>
-<td>com.test.uat.TC_01_Bet.OpenBets@32a68f4f</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -143,45 +75,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.BetStatus.betStatus()'><b>betStatus</b><br>Test class: com.test.uat.TC_01_Bet.BetStatus<br>Parameters: public void com.test.uat.TC_01_Bet.BetStatus.betStatus(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.demo.test_suites.TC_01_Fly.addBonusCampaign()'><b>addBonusCampaign</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.addBonusCampaign(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>0</td>
-<td>com.test.uat.TC_01_Bet.BetStatus@29a0cdb</td></tr>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.CalculateCashout.calcCashout()'><b>calcCashout</b><br>Test class: com.test.uat.TC_01_Bet.CalculateCashout<br>Parameters: public void com.test.uat.TC_01_Bet.CalculateCashout.calcCashout(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.demo.test_suites.TC_01_Fly.checkUI()'><b>checkUI</b><br>Test class: com.test_suites.TC_01_Fly</td>
+<td></td>
+<td>13</td>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
+<tr>
+<td title='com.demo.test_suites.TC_01_Fly.cmsLogin()'><b>cmsLogin</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.cmsLogin(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>0</td>
-<td>com.test.uat.TC_01_Bet.CalculateCashout@73194df</td></tr>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.CashoutBet.cashoutBet()'><b>cashoutBet</b><br>Test class: com.test.uat.TC_01_Bet.CashoutBet<br>Parameters: public void com.test.uat.TC_01_Bet.CashoutBet.cashoutBet(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>0</td>
-<td>com.test.uat.TC_01_Bet.CashoutBet@6eb2384f</td></tr>
-<tr>
-<td title='com.test.uat.TC_01_Bet.ExternalLogin.externalLogin()'><b>externalLogin</b><br>Test class: com.test.uat.TC_01_Bet.ExternalLogin<br>Parameters: public void com.test.uat.TC_01_Bet.ExternalLogin.externalLogin(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.demo.test_suites.TC_01_Fly.externalLogin()'><b>externalLogin</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.externalLogin(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>1</td>
-<td>com.test.uat.TC_01_Bet.ExternalLogin@676cf48</td></tr>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.FootballSportTree.getSportsTree()'><b>getSportsTree</b><br>Test class: com.test.uat.TC_01_Bet.FootballSportTree<br>Parameters: public void com.test.uat.TC_01_Bet.FootballSportTree.getSportsTree(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.demo.test_suites.TC_01_Fly.getSportEvents()'><b>getSportEvents</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.getSportEvents(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>5</td>
-<td>com.test.uat.TC_01_Bet.FootballSportTree@5a1de7fb</td></tr>
+<td>11</td>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
 <tr>
-<td title='com.test.uat.TC_01_Bet.LogInRam.loginRam()'><b>loginRam</b><br>Test class: com.test.uat.TC_01_Bet.LogInRam<br>Parameters: public void com.test.uat.TC_01_Bet.LogInRam.loginRam(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>2</td>
-<td>com.test.uat.TC_01_Bet.LogInRam@1b955cac</td></tr>
-<tr>
-<td title='com.test.uat.TC_01_Bet.PlaceBet.placeBet()'><b>placeBet</b><br>Test class: com.test.uat.TC_01_Bet.PlaceBet<br>Parameters: public void com.test.uat.TC_01_Bet.PlaceBet.placeBet(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td></td>
-<td>1</td>
-<td>com.test.uat.TC_01_Bet.PlaceBet@335b5620</td></tr>
-<tr>
-<td title='com.test.uat.TC_01_Bet.SessionID.sessionId()'><b>sessionId</b><br>Test class: com.test.uat.TC_01_Bet.SessionID<br>Parameters: public void com.test.uat.TC_01_Bet.SessionID.sessionId(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td title='com.demo.test_suites.TC_01_Fly.placeFreeBet()'><b>placeFreeBet</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.placeFreeBet(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>0</td>
-<td>com.test.uat.TC_01_Bet.SessionID@3c9c0d96</td></tr>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
+<tr>
+<td title='com.demo.test_suites.TC_01_Fly.ramLogin()'><b>ramLogin</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.ramLogin(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>1</td>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
+<tr>
+<td title='com.demo.test_suites.TC_01_Fly.removeCampaignTemplate()'><b>removeCampaignTemplate</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.removeCampaignTemplate(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
+<tr>
+<td title='com.demo.test_suites.TC_01_Fly.sessionID()'><b>sessionID</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.sessionID(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>1</td>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
+<tr>
+<td title='com.demo.test_suites.TC_01_Fly.uploadFile()'><b>uploadFile</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.uploadFile(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>1</td>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
+<tr>
+<td title='com.demo.test_suites.TC_01_Fly.userBonusEntitlements()'><b>userBonusEntitlements</b><br>Test class: com.test_suites.TC_01_Fly<br>Parameters: public void com.test_suites.TC_01_Fly.userBonusEntitlements(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.test_suites.TC_01_Freebet@e70f13a</td></tr>
 </table><p>
 </body>
 </html>

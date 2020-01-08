@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extentreports>
 <configuration>
-    <!-- setup theme -->
+    <!-- browserConfig theme -->
     <!-- standard, dark -->
     <theme>dark</theme>
 
@@ -16,11 +16,11 @@
     <!-- title of the document -->
     <documentTitle>MS2 Automation</documentTitle>
 
-    <!-- setup name - displayed at top-nav -->
+    <!-- browserConfig name - displayed at top-nav -->
     <reportName> <![CDATA[ <img src='../src/main/resources/logo.png' />  ]]>
     </reportName>
 
-    <!-- location of charts in the test view -->
+    <!-- location of charts in the test_scripts view -->
     <!-- top, bottom -->
     <testViewChartLocation>top</testViewChartLocation>
     <enableCategoryView>true</enableCategoryView>

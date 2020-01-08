@@ -1,0 +1,11 @@
+{
+  "code": 409001,
+  "requestInfo": {
+    "apiVersion": 1,
+    "requestId": "b53271d8-950d-40fb-8ba1-e9091ebbe1b1",
+    "accessTokenStatus": "anonymous",
+    "serverTime": 1578396186
+  },
+  "error": true,
+  "message": "User exists."
+}

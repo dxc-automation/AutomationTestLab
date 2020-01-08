@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.dxc</groupId>
+    <groupId>com.demo</groupId>
     <artifactId>JAVA_FRAMEWORK</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
@@ -29,7 +29,7 @@
                 <version>2.5</version>
                 <configuration>
                     <sourceDestDir>${project.basedir}/src/main/java</sourceDestDir>
-                    <bindingDirectory>${project.build.directory}/src/main/java</bindingDirectory>
+                    <bindingDirectory>${project.basedir}/src/main/java</bindingDirectory>
                     <extension>true</extension>
                     <genWsdl>false</genWsdl>
                     <xdisableSSLHostnameVerification>false</xdisableSSLHostnameVerification>
@@ -51,7 +51,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.setup.ConsoleRunner</mainClass>
+                            <mainClass>com.demo.config.ConsoleRunner</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -92,9 +92,9 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.21.0</version>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M3</version>
                 <configuration>
                     <properties>
                         <property>
@@ -107,7 +107,7 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>./src/main/resources/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -126,7 +126,13 @@
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
-            <version>4.0.0-RC1</version>
+            <version>4.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp-urlconnection</artifactId>
+            <version>4.2.2</version>
         </dependency>
 
         <dependency>
@@ -202,9 +208,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.jayway.restassured</groupId>
-            <artifactId>json-schema-validator</artifactId>
-            <version>2.8.0</version>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.4.0</version>
         </dependency>
 
         <dependency>
@@ -216,7 +222,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
-            <version>3.13.0</version>
+            <version>3.141.59</version>
         </dependency>
 
         <dependency>
@@ -252,7 +258,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
-            <version>3.0.1</version>
+            <version>3.141.59</version>
         </dependency>
 
         <dependency>
@@ -305,7 +311,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
-            <version>3.0.1</version>
+            <version>3.141.59</version>
         </dependency>
 
         <dependency>
@@ -339,6 +345,12 @@
         </dependency>
 
         <dependency>
+            <groupId>ru.yandex.qatools.ashot</groupId>
+            <artifactId>ashot</artifactId>
+            <version>1.5.4</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.uncommons</groupId>
             <artifactId>reportng</artifactId>
             <version>1.1.4</version>
@@ -349,6 +361,18 @@
                     <artifactId>testng</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.stephenc.monte</groupId>
+            <artifactId>monte-screen-recorder</artifactId>
+            <version>0.7.7.0</version>
         </dependency>
 
     </dependencies>
