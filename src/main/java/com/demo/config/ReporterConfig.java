@@ -23,8 +23,8 @@ import java.net.UnknownHostException;
 
 public class ReporterConfig {
 
+    public static ExtentTest    test;
     public static ExtentReports extent;
-    public static ExtentTest test;
     private static ExtentHtmlReporter htmlReporter;
 
     private static String osName    = System.getProperty("os.name");
@@ -57,14 +57,6 @@ public class ReporterConfig {
         return htmlReporter;
     }
 
-    public static ExtentTest createTest(String name, String description) {
-        test = extent.createTest(name, description);
-        return test;
-    }
-
-    public static void testInfo() throws Exception {
-        System.out.println("\n \n DEF RegisterUser \n" + testNG.getDefaultTestName());
-    }
 
     public static void startTestReport(String testName, String testDescription, String testCategory) throws Exception {
         extent = ReporterConfig.GetExtent();

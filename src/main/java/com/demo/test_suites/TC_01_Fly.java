@@ -8,7 +8,7 @@ import com.demo.test_scripts.api.RegisterUser;
 import com.demo.test_scripts.api.UserInfo;
 import com.demo.test_scripts.ui.ElementExist;
 import com.demo.test_scripts.ui.GetAllLinks;
-import com.demo.test_scripts.ui.RecordVideo;
+import com.demo.utilities.user_interface.ScreenRecorderUtils;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
@@ -47,7 +47,7 @@ public class TC_01_Fly extends BasicConfiguration {
 
     @Test
     public void record() throws Exception {
-        RecordVideo.recordVideo();
+        ScreenRecorderUtils.recordVideo();
     }
 
     @Test

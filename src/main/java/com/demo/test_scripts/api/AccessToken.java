@@ -13,8 +13,8 @@ import static com.demo.test_properties.TestData.*;
 
 import static com.demo.test_properties.UrlPaths.BOOTSTRAP;
 import static com.demo.config.ReporterConfig.*;
-import static demo.config.HttpClientConfig.closeableHttpClient;
-import static demo.config.HttpClientConfig.*;
+import static com.demo.utilities.web_services.HttpClientConfig.*;
+import static com.demo.utilities.web_services.HttpClientUtils.*;
 import static com.demo.utilities.FileUtility.createLogFile;
 import static com.demo.utilities.FileUtility.getFormattedJson;
 
