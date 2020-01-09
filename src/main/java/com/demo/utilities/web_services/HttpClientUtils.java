@@ -9,9 +9,11 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.net.URI;
 import java.util.Arrays;
+
+import static com.demo.utilities.FileUtility.getFormattedJson;
+import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 
 public class HttpClientUtils extends BasicConfiguration {
@@ -23,7 +25,7 @@ public class HttpClientUtils extends BasicConfiguration {
         get.setHeader("Accept", "*/*");
         get.setHeader("Connection", "keep-alive");
 
-        HttpClientConfig.requestMethod = get.getMethod();
+        requestMethod = get.getMethod();
         return get;
     }
 
@@ -37,18 +39,18 @@ public class HttpClientUtils extends BasicConfiguration {
         post.setHeader("Connection", "keep-alive");
         post.setEntity(entity);
 
-        HttpClientConfig.requestMethod = post.getMethod();
+        requestMethod = post.getMethod();
         return post;
     }
 
 
     public static void getClosableHttpClientResponseDetails(CloseableHttpResponse response) throws Exception {
-        HttpClientConfig.responseEntity       = response.getEntity();
-        HttpClientConfig.responseStringEntity = EntityUtils.toString(HttpClientConfig.responseEntity, "UTF-8");
-        HttpClientConfig.responseBody         = FileUtility.getFormattedJson(HttpClientConfig.responseStringEntity);
-        HttpClientConfig.responseCode         = response.getStatusLine().getStatusCode();
-        HttpClientConfig.responseMsg          = response.getStatusLine().getReasonPhrase();
-        HttpClientConfig.responseHeaders      = Arrays.asList(response.getAllHeaders())
+        responseEntity       = response.getEntity();
+        responseStringEntity = EntityUtils.toString(responseEntity, "UTF-8");
+        responseBody         = getFormattedJson(responseStringEntity);
+        responseCode         = response.getStatusLine().getStatusCode();
+        responseMsg          = response.getStatusLine().getReasonPhrase();
+        responseHeaders      = Arrays.asList(response.getAllHeaders())
                             .toString()
                             .replace(", ", "\n")
                             .replace("[", "")

@@ -11,6 +11,7 @@ import java.io.FileWriter;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 
+import static com.demo.test_properties.FilePaths.report_json_folder;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 
@@ -47,7 +48,7 @@ public class FileUtility extends BasicConfiguration {
 
 
     public static File createLogFile(String fileName, String responseBody) throws Exception {
-        File file = new File(FilePaths.report_json_folder + fileName);
+        File file = new File(report_json_folder + fileName);
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write(getFormattedJson(responseBody));
         fileWriter.flush();
@@ -61,7 +62,7 @@ public class FileUtility extends BasicConfiguration {
     public static void createJSONDebugFile(String fileName, String responseBody) throws Exception {
         debugFileName = fileName + "[debug].json";
 
-        file = new File(FilePaths.report_json_folder + debugFileName);
+        file = new File(report_json_folder + debugFileName);
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write(responseBody);
         fileWriter.flush();

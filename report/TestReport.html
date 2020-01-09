@@ -40,22 +40,21 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
-		<!-- generateReport name -->
+		<!-- report name -->
 		<span class='report-name'>  <img src='../src/main/resources/logo.png' />  
     </span>
 		
-		<!-- generateReport headline -->
+		<!-- report headline -->
 		<span class='report-headline'></span>
 
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 7, 2020 01:23:02 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 9, 2020 04:21:50 PM</span>
 				</a>
 			</li>
 			<li>
@@ -74,7 +73,7 @@
 				
 	<section id='controls'>
 		<div class='controls grey lighten-4'>
-			<!-- test_suites toggle -->
+			<!-- test toggle -->
 			<div class='chip transparent'>
 				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
 					<i class='material-icons'>warning</i> Status
@@ -86,7 +85,7 @@
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
-			<!-- test_suites toggle -->
+			<!-- test toggle -->
 
 			<!-- category toggle -->
 			<div class='chip transparent'>
@@ -95,7 +94,6 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>RAM</a></li>
-					<li><a href='#'>UI</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -143,10 +141,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='71.429%'><span class='strong'>5</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -158,10 +156,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='46.154%'><span class='strong'>6</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='37.5%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='23.077%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='30.769%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -179,16 +177,16 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'><b>Get access token</b></span>
-						<span class='test-time'>Jan 7, 2020 01:23:02 PM</span>
+						<span class='test-time'>Jan 9, 2020 04:21:50 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 7, 2020 01:23:02 PM</span>
-	<span class='label end-time'>Jan 7, 2020 01:23:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+71ms</span>
+	<span class='label start-time'>Jan 9, 2020 04:21:50 PM</span>
+	<span class='label end-time'>Jan 9, 2020 04:21:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+117ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in RAM successfully.</i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test_suites is to verify that the user can log in RAM successfully.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>RAM</span>
@@ -206,7 +204,7 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>1:23:03 PM</td>
+					<td class='timestamp'>4:21:51 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/apps/bootstrap<br/><br/>{
   "appVersion": "1.0.0",
   "frameworkVersion": "1.0.0",
@@ -219,20 +217,20 @@
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:23:03 PM</td>
+					<td class='timestamp'>4:21:51 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
 Content-Type: application/json
-Date: Tue
-07 Jan 2020 11:23:05 GMT
+Date: Thu
+09 Jan 2020 14:21:50 GMT
 Server: nginx
 X-Flypay-Api-Cache: Yes
-X-Flypay-Request-Id: 52536bec-2284-4636-a12f-06fcc67190db
-X-Flypay-Server: ip-10-0-215-126
+X-Flypay-Request-Id: ed9ce053-25c1-465c-874d-bab32fc5fe5d
+X-Flypay-Server: ip-10-0-114-171
 X-Kong-Proxy-Latency: 0
-X-Kong-Upstream-Latency: 139
+X-Kong-Upstream-Latency: 137
 Connection: keep-alive<br/><br/><br/>{
-  "hashSessionId": "$2y$10$LUu3fKLPR9LpiaTO3zQhweIr7fDSM5ufQ1Qi.GkjadWFWgc0X.jDq",
-  "accessToken": "62bb5079fa3e2d17c20fbda32e940a4e4d205507c7bb45d0b4daa908584f873a",
+  "hashSessionId": "$2y$10$R2sSgoFeOjmNp3pMtZstduAhe/3rnMi/jtcZU7Q70GdbefrCJuRPW",
+  "accessToken": "df39653aded2d1e8baf5a815f1fa5d3cfcfbb6a8761d5da500a75b85d393c40b",
   "businessIds": [
     10,
     11,
@@ -306,16 +304,16 @@ Connection: keep-alive<br/><br/><br/>{
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'><b>Register a new user</b></span>
-						<span class='test-time'>Jan 7, 2020 01:23:03 PM</span>
+						<span class='test-time'>Jan 9, 2020 04:21:51 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 7, 2020 01:23:03 PM</span>
-	<span class='label end-time'>Jan 7, 2020 01:23:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+411ms</span>
+	<span class='label start-time'>Jan 9, 2020 04:21:51 PM</span>
+	<span class='label end-time'>Jan 9, 2020 04:21:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+509ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in RAM successfully.</i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test_suites is to verify that the user can log in RAM successfully.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>RAM</span>
@@ -333,8 +331,8 @@ Connection: keep-alive<br/><br/><br/>{
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>1:23:03 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/accessToken=62bb5079fa3e2d17c20fbda32e940a4e4d205507c7bb45d0b4daa908584f873a<br/><br/>{
+					<td class='timestamp'>4:21:52 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/accessToken=df39653aded2d1e8baf5a815f1fa5d3cfcfbb6a8761d5da500a75b85d393c40b<br/><br/>{
   "phoneNumber": 777799900,
   "pinCode": 1234,
   "credentialsType": "email",
@@ -345,24 +343,24 @@ Connection: keep-alive<br/><br/><br/>{
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>1:23:03 PM</td>
+					<td class='timestamp'>4:21:52 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br /><br />Response Code  : 409<br />Error Message  : Conflict<br /><br />Access-Control-Allow-Origin: *
 Content-Type: application/json
-Date: Tue
-07 Jan 2020 11:23:06 GMT
+Date: Thu
+09 Jan 2020 14:21:51 GMT
 Server: nginx
 X-Flypay-Api-Cache: Yes
-X-Flypay-Request-Id: b53271d8-950d-40fb-8ba1-e9091ebbe1b1
+X-Flypay-Request-Id: 1de07153-6504-4308-bc7f-fb6fe0958527
 X-Kong-Proxy-Latency: 0
-X-Kong-Upstream-Latency: 30
+X-Kong-Upstream-Latency: 59
 Content-Length: 231
 Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  ********</b></center><br />java.lang.AssertionError: expected [true] but found [false]<br /><br />{
   "code": 409001,
   "requestInfo": {
     "apiVersion": 1,
-    "requestId": "b53271d8-950d-40fb-8ba1-e9091ebbe1b1",
+    "requestId": "1de07153-6504-4308-bc7f-fb6fe0958527",
     "accessTokenStatus": "anonymous",
-    "serverTime": 1578396186
+    "serverTime": 1578579711
   },
   "error": true,
   "message": "User exists."
@@ -378,16 +376,16 @@ Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'><b>Login</b></span>
-						<span class='test-time'>Jan 7, 2020 01:23:03 PM</span>
+						<span class='test-time'>Jan 9, 2020 04:21:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 7, 2020 01:23:03 PM</span>
-	<span class='label end-time'>Jan 7, 2020 01:23:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+478ms</span>
+	<span class='label start-time'>Jan 9, 2020 04:21:52 PM</span>
+	<span class='label end-time'>Jan 9, 2020 04:21:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+503ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in RAM successfully.</i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test_suites is to verify that the user can log in RAM successfully.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>RAM</span>
@@ -405,8 +403,8 @@ Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>1:23:04 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v2/auth/login/accessToken=62bb5079fa3e2d17c20fbda32e940a4e4d205507c7bb45d0b4daa908584f873a<br/><br/>{
+					<td class='timestamp'>4:21:52 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v2/auth/login/accessToken=df39653aded2d1e8baf5a815f1fa5d3cfcfbb6a8761d5da500a75b85d393c40b<br/><br/>{
   "phoneNumber": 777799900,
   "pinCode": 1234,
   "challenge": 1234,
@@ -418,26 +416,26 @@ Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:23:04 PM</td>
+					<td class='timestamp'>4:21:52 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
 Content-Type: application/json
-Date: Tue
-07 Jan 2020 11:23:06 GMT
+Date: Thu
+09 Jan 2020 14:21:51 GMT
 Server: nginx
 X-Flypay-Api-Cache: Yes
-X-Flypay-Request-Id: 51ee069b-640b-4fae-aecf-981279c6bc7c
-X-Flypay-Server: ip-10-0-119-27
+X-Flypay-Request-Id: 5c84c998-be1a-4208-abc3-995fea6ab2c7
+X-Flypay-Server: ip-10-0-23-170
 X-Kong-Proxy-Latency: 0
-X-Kong-Upstream-Latency: 109
+X-Kong-Upstream-Latency: 136
 Connection: keep-alive<br/><br/><br/>{
   "requestInfo": {
     "apiVersion": 2,
-    "requestId": "51ee069b-640b-4fae-aecf-981279c6bc7c",
+    "requestId": "5c84c998-be1a-4208-abc3-995fea6ab2c7",
     "accessTokenStatus": "authenticated",
-    "serverTime": 1578396186
+    "serverTime": 1578579711
   },
   "firstTimeVisitEligibleLocations": [],
-  "accessToken": "62bb5079fa3e2d17c20fbda32e940a4e4d205507c7bb45d0b4daa908584f873a",
+  "accessToken": "df39653aded2d1e8baf5a815f1fa5d3cfcfbb6a8761d5da500a75b85d393c40b",
   "user": {
     "lastUpdated": 1562596322,
     "userStatus": 1,
@@ -480,16 +478,16 @@ Connection: keep-alive<br/><br/><br/>{
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'><b>Get user info</b></span>
-						<span class='test-time'>Jan 7, 2020 01:23:04 PM</span>
+						<span class='test-time'>Jan 9, 2020 04:21:52 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 7, 2020 01:23:04 PM</span>
-	<span class='label end-time'>Jan 7, 2020 01:23:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+428ms</span>
+	<span class='label start-time'>Jan 9, 2020 04:21:52 PM</span>
+	<span class='label end-time'>Jan 9, 2020 04:21:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+392ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in RAM successfully.</i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test_suites is to verify that the user can log in RAM successfully.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>RAM</span>
@@ -507,28 +505,28 @@ Connection: keep-alive<br/><br/><br/>{
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>1:23:04 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/me/accessToken=62bb5079fa3e2d17c20fbda32e940a4e4d205507c7bb45d0b4daa908584f873a<br/><br/>{}<br/><br/></pre></td>
+					<td class='timestamp'>4:21:53 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/me/accessToken=df39653aded2d1e8baf5a815f1fa5d3cfcfbb6a8761d5da500a75b85d393c40b<br/><br/>{}<br/><br/></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:23:04 PM</td>
+					<td class='timestamp'>4:21:53 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
 Content-Type: application/json
-Date: Tue
-07 Jan 2020 11:23:07 GMT
+Date: Thu
+09 Jan 2020 14:21:52 GMT
 Server: nginx
 X-Flypay-Api-Cache: Yes
-X-Flypay-Request-Id: 339a6fd4-ef94-4c19-8705-583696968dd9
-X-Flypay-Server: ip-10-0-114-171
+X-Flypay-Request-Id: b227f1c3-8331-4410-b538-75316bbb264a
+X-Flypay-Server: ip-10-0-215-126
 X-Kong-Proxy-Latency: 0
-X-Kong-Upstream-Latency: 62
+X-Kong-Upstream-Latency: 25
 Connection: keep-alive<br/><br/><br/>{
   "requestInfo": {
     "apiVersion": 1,
-    "requestId": "339a6fd4-ef94-4c19-8705-583696968dd9",
+    "requestId": "b227f1c3-8331-4410-b538-75316bbb264a",
     "accessTokenStatus": "authenticated",
-    "serverTime": 1578396187
+    "serverTime": 1578579712
   },
   "firstTimeVisitEligibleLocations": [],
   "user": {
@@ -543,159 +541,6 @@ Connection: keep-alive<br/><br/><br/>{
     "defaultCardId": 0
   }
 }<br/><br/></pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'><b>Check element</b></span>
-						<span class='test-time'>Jan 7, 2020 01:23:04 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 7, 2020 01:23:04 PM</span>
-	<span class='label end-time'>Jan 7, 2020 01:23:05 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+986ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in RAM successfully.</i></p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>UI</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:23:05 PM</td>
-					<td class='step-details'>Element exists</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:23:05 PM</td>
-					<td class='step-details'><span class='label white-text green'>| PASSED | TC_01_Fly</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'><b>Record Video</b></span>
-						<span class='test-time'>Jan 7, 2020 01:23:05 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 7, 2020 01:23:05 PM</span>
-	<span class='label end-time'>Jan 7, 2020 01:23:06 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+845ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in RAM successfully.</i></p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>UI</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:23:06 PM</td>
-					<td class='step-details'><span class='label white-text green'>| PASSED | TC_01_Fly</span></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'><b>All hyperlinks</b></span>
-						<span class='test-time'>Jan 7, 2020 01:23:06 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jan 7, 2020 01:23:06 PM</span>
-	<span class='label end-time'>Jan 7, 2020 01:23:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+204ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in RAM successfully.</i></p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>UI</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>1:23:07 PM</td>
-					<td class='step-details'><pre>java.lang.NullPointerException
-	at com.demo.test_scripts.ui.GetAllLinks.allLinks(GetAllLinks.java:49)
-	at com.demo.test_suites.TC_01_Fly.hyperlinks(TC_01_Fly.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>1:23:07 PM</td>
-					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='E:\TestLabTestNG/report/Screenshots/Failed/TC_01_Fly.png' width='10%' src='E:\TestLabTestNG/report/Screenshots/Failed/TC_01_Fly.png' data-src='E:\TestLabTestNG/report/Screenshots/Failed/TC_01_Fly.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -726,7 +571,7 @@ Connection: keep-alive<br/><br/><br/>{
 	<!-- subview right -->
 
 </div>
-<!-- test_suites view -->
+<!-- test view -->
 <div id='category-view' class='view hide'>
 
 	<section id='controls'>
@@ -778,69 +623,24 @@ Connection: keep-alive<br/><br/><br/>{
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 7, 2020 01:23:02 PM</td>
+										<td>Jan 9, 2020 04:21:50 PM</td>
 										<td class='linked' test-id='1'><b>Get access token</b></td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 7, 2020 01:23:03 PM</td>
+										<td>Jan 9, 2020 04:21:51 PM</td>
 										<td class='linked' test-id='2'><b>Register a new user</b></td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jan 7, 2020 01:23:03 PM</td>
+										<td>Jan 9, 2020 04:21:52 PM</td>
 										<td class='linked' test-id='3'><b>Login</b></td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 7, 2020 01:23:04 PM</td>
+										<td>Jan 9, 2020 04:21:52 PM</td>
 										<td class='linked' test-id='4'><b>Get user info</b></td>
 										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>UI</span>
-						<span class='category-status right'>
-							<span class='label pass'>2</span>
-							<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 7, 2020 01:23:04 PM</td>
-										<td class='linked' test-id='5'><b>Check element</b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 7, 2020 01:23:05 PM</td>
-										<td class='linked' test-id='6'><b>Record Video</b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 7, 2020 01:23:06 PM</td>
-										<td class='linked' test-id='7'><b>All hyperlinks</b></td>
-										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -859,90 +659,6 @@ Connection: keep-alive<br/><br/><br/>{
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.NullPointerException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jan 7, 2020 01:23:06 PM</td>
-                                                        <td class='linked' test-id='7'><b>All hyperlinks</b></td>
-                                                        <td><pre><pre>java.lang.NullPointerException
-	at com.demo.test_scripts.ui.GetAllLinks.allLinks(GetAllLinks.java:49)
-	at com.demo.test_suites.TC_01_Fly.hyperlinks(TC_01_Fly.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -952,31 +668,31 @@ Connection: keep-alive<br/><br/><br/>{
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>13</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 7, 2020 01:23:02 PM</div>
+					<div class='panel-lead'>Jan 9, 2020 04:21:50 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 7, 2020 01:23:07 PM</div>
+			 		<div class='panel-lead'>Jan 9, 2020 04:21:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 5s+695ms</div>
+					<div class='panel-lead'>0h 0m 2s+728ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1032,15 +748,6 @@ Connection: keep-alive<br/><br/><br/>{
 									75%
 							</td>
 						</tr>
-						<tr>
-							<td>UI</td>
-							<td>2</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									66.667%
-							</td>
-						</tr>
 					</table>
 				</div>
 			</div>
@@ -1054,22 +761,22 @@ Connection: keep-alive<br/><br/><br/>{
 
 		<script>
 			var statusGroup = {
-				passParent: 5,
-				failParent: 2,
+				passParent: 3,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 1,
 				
-				passChild: 6,
-				failChild: 3,
+				passChild: 3,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 4,
-				exceptionsChild: 3,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

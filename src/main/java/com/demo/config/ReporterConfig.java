@@ -5,9 +5,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.demo.test_properties.FilePaths;
-
-import static com.demo.config.ConsoleRunner.testNG;
+import static com.demo.test_properties.FilePaths.report_config_xml_file;
+import static com.demo.test_properties.FilePaths.report_html_file;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -50,8 +49,8 @@ public class ReporterConfig {
     }
 
     private static ExtentHtmlReporter getHtmlReporter() {
-        htmlReporter = new ExtentHtmlReporter(FilePaths.report_html_file);
-        htmlReporter.loadXMLConfig(FilePaths.report_config_xml_file);
+        htmlReporter = new ExtentHtmlReporter(report_html_file);
+        htmlReporter.loadXMLConfig(report_config_xml_file);
         htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setEncoding("UTF-8");
         return htmlReporter;
@@ -59,7 +58,7 @@ public class ReporterConfig {
 
 
     public static void startTestReport(String testName, String testDescription, String testCategory) throws Exception {
-        extent = ReporterConfig.GetExtent();
+        extent = GetExtent();
         test   = extent.createTest(
                 "<b>" + testName + "</b>",
                 "<pre>"

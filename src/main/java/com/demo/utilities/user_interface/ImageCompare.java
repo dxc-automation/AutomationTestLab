@@ -26,7 +26,7 @@ public class ImageCompare extends BasicConfiguration {
 
 
     public static void getElementScreenshot(WebElement element, String image) throws Exception {
-        textFile = element.toString();
+        textFile  = element.toString();
         File file = element.getScreenshotAs(OutputType.FILE);
         File dest = new File(FilePaths.screenshots_actual_folder + image + ".png");
         FileUtils.copyFile(file, dest);

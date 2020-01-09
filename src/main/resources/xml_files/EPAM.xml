@@ -19,9 +19,6 @@
                 <include name="newUser"/>
                 <include name="login"/>
                 <include name="userInfo"/>
-                <include name="elementExist"/>
-                <include name="record"/>
-                <include name="hyperlinks"/>
             </methods>
         </class>
     </classes>
