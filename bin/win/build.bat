@@ -1,3 +1,3 @@
-set ProjectPath=E:\TestLabTestNG
+set ProjectPath=D:\Frameworks\AutomationTestLab
 cd %ProjectPath%
 start mvn clean package -Dmaven.test.skip=true
