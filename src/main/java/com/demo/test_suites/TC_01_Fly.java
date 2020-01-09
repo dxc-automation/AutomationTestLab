@@ -6,7 +6,6 @@ import com.demo.test_scripts.api.AccessToken;
 import com.demo.test_scripts.api.Authenticate;
 import com.demo.test_scripts.api.RegisterUser;
 import com.demo.test_scripts.api.UserInfo;
-import com.demo.test_scripts.ui.ElementExist;
 import com.demo.test_scripts.ui.GetAllLinks;
 import com.demo.utilities.user_interface.ScreenRecorderUtils;
 import org.testng.annotations.Test;

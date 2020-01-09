@@ -11,7 +11,8 @@ import java.io.FileWriter;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 
-import static demo.config.HttpClientConfig.*;
+import static com.demo.utilities.web_services.HttpClientConfig.*;
+
 
 public class FileUtility extends BasicConfiguration {
 

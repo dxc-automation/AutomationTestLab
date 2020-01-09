@@ -54,8 +54,7 @@ public class ScreenRecorderUtils extends BasicConfiguration {
                 null);
     }
 
-    //*
-    *
+
     public static void startScreenRecord() throws Exception {
         screenRecorder.start();
     }
