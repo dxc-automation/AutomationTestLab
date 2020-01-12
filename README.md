@@ -1,11 +1,4 @@
-<p align="center">
-
 # Hybrid Automation Framework
-
-</p>
-
-![N|Solid](https://user-images.githubusercontent.com/48771359/72221965-28774f00-3568-11ea-9955-9d9925dcc22e.png)
-
 
 <p align="justify">
 As the name suggests, the Hybrid Testing Framework is a combination of more than one above mentioned frameworks. 
@@ -18,6 +11,11 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 ![Maven Central](https://img.shields.io/maven-central/v/io.github.bonigarcia/selenium-jupiter.svg)
 
 <br>
+
+### <i>Automation Arhitecture</i>
+![N|Solid](https://user-images.githubusercontent.com/48771359/72221965-28774f00-3568-11ea-9955-9d9925dcc22e.png)
+
+
 
 ### <i>Automation Framework</i>
 - [x] JDK
