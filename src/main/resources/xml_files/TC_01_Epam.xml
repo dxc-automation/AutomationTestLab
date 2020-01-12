@@ -16,6 +16,7 @@
                 <include name="accessToken"/>
                 <include name="newUser"/>
                 <include name="login"/>
+                <include name="addAccountInfo"/>
                 <include name="userInfo"/>
                 <include name="searchItem"/>
             </methods>

@@ -199,10 +199,8 @@ public class BasicConfiguration {
                         + "<br/>"
                         + "<br/>"
                         + "</pre>");
-            } else {
-                test.pass(MarkupHelper.createLabel("| PASSED | " + methodName, ExtentColor.GREEN));
-
-            }
+            } else if (Files.exists(file) == false){
+                test.pass(MarkupHelper.createLabel("| PASSED | " + methodName, ExtentColor.GREEN)); }
             break;
 
             case ITestResult.FAILURE:

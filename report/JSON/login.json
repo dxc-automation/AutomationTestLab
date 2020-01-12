@@ -1,12 +1,12 @@
 {
   "requestInfo": {
     "apiVersion": 2,
-    "requestId": "2ac4af16-ee63-4070-8851-7a112b58c493",
+    "requestId": "8edc88f5-28a9-4ec4-95a0-07ac5b47ebd3",
     "accessTokenStatus": "authenticated",
-    "serverTime": 1578862285
+    "serverTime": 1578869835
   },
   "firstTimeVisitEligibleLocations": [],
-  "accessToken": "f83dd8ab1349799f0f5f9930936b50e06637cabf6263f03936c3792bd1473e3c",
+  "accessToken": "679b94eb7bf7b202487c764633f3ccdfb3a35b468012691dedd467381ff1fd76",
   "user": {
     "lastUpdated": 1562596322,
     "userStatus": 1,

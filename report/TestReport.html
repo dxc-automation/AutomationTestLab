@@ -54,7 +54,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 12, 2020 10:51:23 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 13, 2020 12:57:13 AM</span>
 				</a>
 			</li>
 			<li>
@@ -81,6 +81,7 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -93,6 +94,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>API</a></li>
 					<li><a href='#'>RAM</a></li>
 					<li><a href='#'>UI</a></li>
 					<li class='divider'></li>
@@ -142,10 +144,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -157,10 +159,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='36.364%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='40%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='18.182%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='45.455%'>5</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='13.333%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='46.667%'>7</span> others
 				</div>
 			</div>
 		</div>
@@ -178,19 +180,19 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'><b>Get access token</b></span>
-						<span class='test-time'>Jan 12, 2020 10:51:23 PM</span>
+						<span class='test-time'>Jan 13, 2020 12:57:13 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 12, 2020 10:51:23 PM</span>
-	<span class='label end-time'>Jan 12, 2020 10:51:24 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+10ms</span>
+	<span class='label start-time'>Jan 13, 2020 12:57:13 AM</span>
+	<span class='label end-time'>Jan 13, 2020 12:57:14 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+291ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test_suites is to verify that the user can log in RAM successfully.</i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can receive access token.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>RAM</span>
+				<span class='category label white-text'>API</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -205,7 +207,7 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>10:51:24 PM</td>
+					<td class='timestamp'>12:57:14 AM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/apps/bootstrap<br/><br/>{
   "appVersion": "1.0.0",
   "frameworkVersion": "1.0.0",
@@ -218,20 +220,20 @@
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:51:24 PM</td>
+					<td class='timestamp'>12:57:14 AM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
 Content-Type: application/json
 Date: Sun
-12 Jan 2020 20:51:24 GMT
+12 Jan 2020 22:57:14 GMT
 Server: nginx
 X-Flypay-Api-Cache: Yes
-X-Flypay-Request-Id: d4f79a24-516e-4cb9-af02-4fde4d0f588b
-X-Flypay-Server: ip-10-0-119-27
+X-Flypay-Request-Id: fe768335-7cba-4ee9-9c73-621e892d38a9
+X-Flypay-Server: ip-10-0-20-154
 X-Kong-Proxy-Latency: 0
-X-Kong-Upstream-Latency: 142
+X-Kong-Upstream-Latency: 356
 Connection: keep-alive<br/><br/><br/>{
-  "hashSessionId": "$2y$10$ciNp5qC2jn8mrCdkZ/WKw.Yr5UP4fVuv5tmOB67v5Nw5w0nymreRS",
-  "accessToken": "f83dd8ab1349799f0f5f9930936b50e06637cabf6263f03936c3792bd1473e3c",
+  "hashSessionId": "$2y$10$oGmqm7inXtoOQEvjkydpWO34NuLGQkClROhPOfRS3A3r85dbu4hvC",
+  "accessToken": "679b94eb7bf7b202487c764633f3ccdfb3a35b468012691dedd467381ff1fd76",
   "businessIds": [
     10,
     11,
@@ -305,19 +307,19 @@ Connection: keep-alive<br/><br/><br/>{
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'><b>Register a new user</b></span>
-						<span class='test-time'>Jan 12, 2020 10:51:24 PM</span>
+						<span class='test-time'>Jan 13, 2020 12:57:14 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 12, 2020 10:51:24 PM</span>
-	<span class='label end-time'>Jan 12, 2020 10:51:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+439ms</span>
+	<span class='label start-time'>Jan 13, 2020 12:57:14 AM</span>
+	<span class='label end-time'>Jan 13, 2020 12:57:15 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+416ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test_suites is to verify that the user can log in RAM successfully.</i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that a new account can be created.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>RAM</span>
+				<span class='category label white-text'>API</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -332,8 +334,8 @@ Connection: keep-alive<br/><br/><br/>{
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>10:51:25 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/accessToken=f83dd8ab1349799f0f5f9930936b50e06637cabf6263f03936c3792bd1473e3c<br/><br/>{
+					<td class='timestamp'>12:57:15 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/accessToken=679b94eb7bf7b202487c764633f3ccdfb3a35b468012691dedd467381ff1fd76<br/><br/>{
   "phoneNumber": 777799900,
   "pinCode": 1234,
   "credentialsType": "email",
@@ -344,24 +346,24 @@ Connection: keep-alive<br/><br/><br/>{
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>10:51:25 PM</td>
+					<td class='timestamp'>12:57:15 AM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br /><br />Response Code  : 409<br />Error Message  : Conflict<br /><br />Access-Control-Allow-Origin: *
 Content-Type: application/json
 Date: Sun
-12 Jan 2020 20:51:25 GMT
+12 Jan 2020 22:57:15 GMT
 Server: nginx
 X-Flypay-Api-Cache: Yes
-X-Flypay-Request-Id: fb624dd2-ea71-4196-a196-4916901012a9
+X-Flypay-Request-Id: eeed79f1-6868-48aa-8f4f-bc7d75ee4eda
 X-Kong-Proxy-Latency: 0
-X-Kong-Upstream-Latency: 43
+X-Kong-Upstream-Latency: 26
 Content-Length: 231
 Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  ********</b></center><br />java.lang.AssertionError: expected [true] but found [false]<br /><br />{
   "code": 409001,
   "requestInfo": {
     "apiVersion": 1,
-    "requestId": "fb624dd2-ea71-4196-a196-4916901012a9",
+    "requestId": "eeed79f1-6868-48aa-8f4f-bc7d75ee4eda",
     "accessTokenStatus": "anonymous",
-    "serverTime": 1578862285
+    "serverTime": 1578869835
   },
   "error": true,
   "message": "User exists."
@@ -377,16 +379,16 @@ Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'><b>Login</b></span>
-						<span class='test-time'>Jan 12, 2020 10:51:25 PM</span>
+						<span class='test-time'>Jan 13, 2020 12:57:15 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 12, 2020 10:51:25 PM</span>
-	<span class='label end-time'>Jan 12, 2020 10:51:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+478ms</span>
+	<span class='label start-time'>Jan 13, 2020 12:57:15 AM</span>
+	<span class='label end-time'>Jan 13, 2020 12:57:15 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+529ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test_suites is to verify that the user can log in RAM successfully.</i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in successfully.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>RAM</span>
@@ -404,8 +406,8 @@ Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>10:51:25 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v2/auth/login/accessToken=f83dd8ab1349799f0f5f9930936b50e06637cabf6263f03936c3792bd1473e3c<br/><br/>{
+					<td class='timestamp'>12:57:15 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v2/auth/login/accessToken=679b94eb7bf7b202487c764633f3ccdfb3a35b468012691dedd467381ff1fd76<br/><br/>{
   "phoneNumber": 777799900,
   "pinCode": 1234,
   "challenge": 1234,
@@ -417,26 +419,26 @@ Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:51:25 PM</td>
+					<td class='timestamp'>12:57:15 AM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
 Content-Type: application/json
 Date: Sun
-12 Jan 2020 20:51:25 GMT
+12 Jan 2020 22:57:15 GMT
 Server: nginx
 X-Flypay-Api-Cache: Yes
-X-Flypay-Request-Id: 2ac4af16-ee63-4070-8851-7a112b58c493
-X-Flypay-Server: ip-10-0-221-92
+X-Flypay-Request-Id: 8edc88f5-28a9-4ec4-95a0-07ac5b47ebd3
+X-Flypay-Server: ip-10-0-215-126
 X-Kong-Proxy-Latency: 0
-X-Kong-Upstream-Latency: 111
+X-Kong-Upstream-Latency: 150
 Connection: keep-alive<br/><br/><br/>{
   "requestInfo": {
     "apiVersion": 2,
-    "requestId": "2ac4af16-ee63-4070-8851-7a112b58c493",
+    "requestId": "8edc88f5-28a9-4ec4-95a0-07ac5b47ebd3",
     "accessTokenStatus": "authenticated",
-    "serverTime": 1578862285
+    "serverTime": 1578869835
   },
   "firstTimeVisitEligibleLocations": [],
-  "accessToken": "f83dd8ab1349799f0f5f9930936b50e06637cabf6263f03936c3792bd1473e3c",
+  "accessToken": "679b94eb7bf7b202487c764633f3ccdfb3a35b468012691dedd467381ff1fd76",
   "user": {
     "lastUpdated": 1562596322,
     "userStatus": 1,
@@ -476,22 +478,22 @@ Connection: keep-alive<br/><br/><br/>{
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'><b>Get user info</b></span>
-						<span class='test-time'>Jan 12, 2020 10:51:25 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'><b>Add account info</b></span>
+						<span class='test-time'>Jan 13, 2020 12:57:15 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 12, 2020 10:51:25 PM</span>
-	<span class='label end-time'>Jan 12, 2020 10:51:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+377ms</span>
+	<span class='label start-time'>Jan 13, 2020 12:57:15 AM</span>
+	<span class='label end-time'>Jan 13, 2020 12:57:16 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+392ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test_suites is to verify that the user can log in RAM successfully.</i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the username can be changed successfully.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>RAM</span>
+				<span class='category label white-text'>API</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -506,28 +508,99 @@ Connection: keep-alive<br/><br/><br/>{
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>10:51:26 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/me/accessToken=f83dd8ab1349799f0f5f9930936b50e06637cabf6263f03936c3792bd1473e3c<br/><br/>{}<br/><br/></pre></td>
+					<td class='timestamp'>12:57:16 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/me/profile-field/accessToken=679b94eb7bf7b202487c764633f3ccdfb3a35b468012691dedd467381ff1fd76<br/><br/>{
+  "profileFields": "name",
+  "value": "Automation_Test"
+}<br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:57:16 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br /><br />Response Code  : 400<br />Error Message  : Bad Request<br /><br />Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Sun
+12 Jan 2020 22:57:16 GMT
+Server: nginx
+X-Flypay-Api-Cache: Yes
+X-Flypay-Request-Id: bfa54e54-fcc9-4e34-83ca-158b0d924d7b
+X-Kong-Proxy-Latency: 0
+X-Kong-Upstream-Latency: 51
+Content-Length: 280
+Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  ********</b></center><br />java.lang.AssertionError: expected [true] but found [false]<br /><br />{
+  "code": 400003,
+  "requestInfo": {
+    "apiVersion": 1,
+    "requestId": "bfa54e54-fcc9-4e34-83ca-158b0d924d7b",
+    "accessTokenStatus": "authenticated",
+    "serverTime": 1578869836
+  },
+  "error": true,
+  "message": "Invalid property: `profileFields`",
+  "contextData": {
+    "property": "profileFields"
+  }
+}<br /></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'><b>Get user info</b></span>
+						<span class='test-time'>Jan 13, 2020 12:57:16 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 13, 2020 12:57:16 AM</span>
+	<span class='label end-time'>Jan 13, 2020 12:57:16 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+370ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that correct user details are received.</i></p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:57:16 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/me/accessToken=679b94eb7bf7b202487c764633f3ccdfb3a35b468012691dedd467381ff1fd76<br/><br/>{}<br/><br/></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:51:26 PM</td>
+					<td class='timestamp'>12:57:16 AM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
 Content-Type: application/json
 Date: Sun
-12 Jan 2020 20:51:26 GMT
+12 Jan 2020 22:57:16 GMT
 Server: nginx
 X-Flypay-Api-Cache: Yes
-X-Flypay-Request-Id: 6dae6e84-5be2-4682-ab1f-7a99508a9102
-X-Flypay-Server: ip-10-0-221-92
+X-Flypay-Request-Id: f4c4b158-3520-461d-8b1a-9f04c4e21382
+X-Flypay-Server: ip-10-0-19-166
 X-Kong-Proxy-Latency: 0
-X-Kong-Upstream-Latency: 25
+X-Kong-Upstream-Latency: 19
 Connection: keep-alive<br/><br/><br/>{
   "requestInfo": {
     "apiVersion": 1,
-    "requestId": "6dae6e84-5be2-4682-ab1f-7a99508a9102",
+    "requestId": "f4c4b158-3520-461d-8b1a-9f04c4e21382",
     "accessTokenStatus": "authenticated",
-    "serverTime": 1578862286
+    "serverTime": 1578869836
   },
   "firstTimeVisitEligibleLocations": [],
   "user": {
@@ -550,19 +623,19 @@ Connection: keep-alive<br/><br/><br/>{
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+				<li class='test displayed active  warning' status='warning' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'><b>Check new element</b></span>
-						<span class='test-time'>Jan 12, 2020 10:51:26 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Jan 13, 2020 12:57:16 AM</span>
+						<span class='test-status right warning'>warning</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 12, 2020 10:51:26 PM</span>
-	<span class='label end-time'>Jan 12, 2020 10:51:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+783ms</span>
+	<span class='label start-time'>Jan 13, 2020 12:57:16 AM</span>
+	<span class='label end-time'>Jan 13, 2020 12:57:29 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+818ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that a element is </i></p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that a element is add and displayed properly.</i></p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>UI</span>
@@ -578,19 +651,29 @@ Connection: keep-alive<br/><br/><br/>{
 				</tr>
 			</thead>
 			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:57:19 AM</td>
+					<td class='step-details'>Home page has been opened successfully.</td>
+				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>10:51:32 PM</td>
-					<td class='step-details'>Item catalog name is: <i>Apple iPhone XR, 64GB, Red - Fully Unlocked (Renewed)</i></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>10:51:38 PM</td>
-					<td class='step-details'><b>Compare actual screenshot with screenshot from the data base has failed</b><br>Image comparison success rate    = 83.249794%<br>Number of  pixels gets varied    = 285906<br>Time(ms) for visualization check = 1476<br>Number of pixels gets matched    = 1420974<br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png'></td>
+					<td class='timestamp'>12:57:19 AM</td>
+					<td class='step-details'><b>Page Details</b><br>URL:    https://www.amazon.com/<br>Title:  Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:51:38 PM</td>
+					<td class='timestamp'>12:57:23 AM</td>
+					<td class='step-details'>Item catalog name is: <i>Apple iPhone XR, 64GB, Red - Fully Unlocked (Renewed)</i></td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>12:57:29 AM</td>
+					<td class='step-details'><b>Results from comparison needs to be checked</b><br>Image comparison success rate    = 99.95261%<br>Number of  pixels gets varied    = 809<br>Time(ms) for visualization check = 1168<br>Number of pixels gets matched    = 1706071<br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:57:29 AM</td>
 					<td class='step-details'><span class='label white-text green'>| PASSED | TC_01_Epam</span></td>
 				</tr>
 			</tbody>
@@ -650,16 +733,16 @@ Connection: keep-alive<br/><br/><br/>{
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>RAM</span>
+						<span class='category-name'>API</span>
 						<span class='category-status right'>
-							<span class='label pass'>3</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>2</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -674,23 +757,57 @@ Connection: keep-alive<br/><br/><br/>{
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 12, 2020 10:51:23 PM</td>
+										<td>Jan 13, 2020 12:57:13 AM</td>
 										<td class='linked' test-id='1'><b>Get access token</b></td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 12, 2020 10:51:24 PM</td>
+										<td>Jan 13, 2020 12:57:14 AM</td>
 										<td class='linked' test-id='2'><b>Register a new user</b></td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jan 12, 2020 10:51:25 PM</td>
-										<td class='linked' test-id='3'><b>Login</b></td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jan 13, 2020 12:57:15 AM</td>
+										<td class='linked' test-id='4'><b>Add account info</b></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jan 12, 2020 10:51:25 PM</td>
-										<td class='linked' test-id='4'><b>Get user info</b></td>
+										<td>Jan 13, 2020 12:57:16 AM</td>
+										<td class='linked' test-id='5'><b>Get user info</b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>RAM</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2020 12:57:15 AM</td>
+										<td class='linked' test-id='3'><b>Login</b></td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -702,14 +819,14 @@ Connection: keep-alive<br/><br/><br/>{
 					<div class='category-heading'>
 						<span class='category-name'>UI</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -723,9 +840,9 @@ Connection: keep-alive<br/><br/><br/>{
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 12, 2020 10:51:26 PM</td>
-										<td class='linked' test-id='5'><b>Check new element</b></td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Jan 13, 2020 12:57:16 AM</td>
+										<td class='linked' test-id='6'><b>Check new element</b></td>
+										<td><span class='test-status warning'>warning</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -753,31 +870,31 @@ Connection: keep-alive<br/><br/><br/>{
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 12, 2020 10:51:23 PM</div>
+					<div class='panel-lead'>Jan 13, 2020 12:57:13 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 12, 2020 10:51:38 PM</div>
+			 		<div class='panel-lead'>Jan 13, 2020 12:57:29 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 15s+322ms</div>
+					<div class='panel-lead'>0h 0m 16s+292ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -825,19 +942,28 @@ Connection: keep-alive<br/><br/><br/>{
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>RAM</td>
-							<td>3</td>
-							<td>1</td>
+							<td>API</td>
+							<td>2</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									75%
+									50%
+							</td>
+						</tr>
+						<tr>
+							<td>RAM</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>UI</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
+							<td>1</td>
 							<td>
 									0%
 							</td>
@@ -859,18 +985,18 @@ Connection: keep-alive<br/><br/><br/>{
 				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
-				warningParent: 0,
+				warningParent: 1,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 3,
 				
-				passChild: 4,
+				passChild: 6,
 				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
-				warningChild: 0,
+				warningChild: 1,
 				skipChild: 0,
-				infoChild: 5,
-				exceptionsChild: 2,
+				infoChild: 6,
+				exceptionsChild: 3,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

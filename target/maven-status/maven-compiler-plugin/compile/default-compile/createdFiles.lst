@@ -13,12 +13,13 @@ com\demo\utilities\web_services\HttpClientUtils.class
 com\demo\test_properties\TestData.class
 com\demo\utilities\user_interface\ImageCompare.class
 com\demo\test_scripts\api\AccessToken.class
+com\demo\test_scripts\api\AddUserInfo.class
 com\demo\utilities\user_interface\GetAllPageLinks.class
+com\demo\ui_mapping\Amazon.class
 com\demo\utilities\web_services\HttpClientConfig.class
 com\demo\config\TestNGListener.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
 com\demo\config\ReporterConfig.class
-com\demo\ui_mapping\HomePage.class
 com\demo\utilities\user_interface\ScreenRecorder.class
 com\demo\config\BasicConfiguration.class
 com\demo\config\ConsoleRunner.class

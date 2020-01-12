@@ -1,4 +1,6 @@
+D:\Frameworks\AutomationTestLab\src\main\java\com\demo\ui_mapping\Amazon.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\ImageCompare.java
+D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\AddUserInfo.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\web_services\HttpURLConnectionConfig.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\RegisterUser.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\GetAllPageLinks.java
@@ -23,4 +25,3 @@ D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\web_services\HttpClientUtils.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\ui\CheckNewElement.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\templates\GET.java
-D:\Frameworks\AutomationTestLab\src\main\java\com\demo\ui_mapping\HomePage.java

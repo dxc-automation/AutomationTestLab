@@ -10,6 +10,7 @@
       <class name="com.demo.test_suites.TC_01_Epam">
         <methods>
           <include name="generateReport"/>
+          <include name="addAccountInfo" invocation-numbers="0"/>
           <include name="browserConfig"/>
           <include name="flushReportData"/>
           <include name="cleanReportData"/>

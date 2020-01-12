@@ -31,8 +31,8 @@ public class AccessToken {
 
     private static void report() throws Exception {
         String testName        = "Get access token";
-        String testDescription = "The purpose of this test_suites is to verify that the user can log in RAM successfully.";
-        String testCategory    = "RAM";
+        String testDescription = "The purpose of this test is to verify that the user can receive access token.";
+        String testCategory    = "API";
 
         startTestReport(testName, testDescription, testCategory);
     }

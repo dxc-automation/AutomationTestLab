@@ -28,7 +28,7 @@ public class Authenticate {
 
     private static void report() throws Exception {
         String testName        = "Login";
-        String testDescription = "The purpose of this test_suites is to verify that the user can log in RAM successfully.";
+        String testDescription = "The purpose of this test is to verify that the user can log in successfully.";
         String testCategory    = "RAM";
 
         startTestReport(testName, testDescription, testCategory);
