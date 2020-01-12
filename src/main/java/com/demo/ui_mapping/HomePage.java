@@ -4,21 +4,22 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+
 import java.util.List;
 
 public class HomePage {
 
 
-    //  * * * *    L O G I N   F O R M
+    //  * * * *    A M A Z O N
 
-    @FindBy(how = How.CSS, using = "img#hplogo")
-    public WebElement google_logo;
+    @FindBy(how = How.CSS, using = "input#twotabsearchtextbox")
+    public WebElement amazon_searchbox;
 
-    @FindBy(how = How.CSS, using = "input[name=q]")
-    public WebElement google_search_input;
+    @FindBy(how = How.CSS, using = "input.nav-input")
+    public WebElement amazon_search_submit_btn;
 
-    @FindBy(how = How.CSS, using = "form#tsf div.iblpc")
-    public WebElement google_search_btn;
+    @FindBy(how = How.CSS, using = "img#landingImage")
+    public WebElement amazon_item_image;
 
     @FindBy(how = How.TAG_NAME, using = "a")
     public List<WebElement> hyperlinks;

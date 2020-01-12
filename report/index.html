@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -122,6 +122,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TC_001" title="com.demo.test_suites.TC_01_Epam" class="method navigator-link" hash-for-method="login(public void com.demo.test_suites.TC_01_Epam.login(java.lang.reflect.Method) throws java.lang.Excepti...)">login(public void com.demo.test_suites.TC_01_Epam.login(java.lang.reflect.Method) throws java.lang.Excepti...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TC_001" title="com.demo.test_suites.TC_01_Epam" class="method navigator-link" hash-for-method="searchItem(public void com.demo.test_suites.TC_01_Epam.searchItem(java.lang.reflect.Method) throws java.lang.Ex...)">searchItem(public void com.demo.test_suites.TC_01_Epam.searchItem(java.lang.reflect.Method) throws java.lang.Ex...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,7 +164,7 @@
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at org.testng.Assert.assertTrue(Assert.java:54)
 	at com.demo.test_scripts.api.RegisterUser.getNewUser(RegisterUser.java:87)
-	at com.demo.test_suites.TC_01_Epam.newUser(TC_01_Epam.java:25)
+	at com.demo.test_suites.TC_01_Epam.newUser(TC_01_Epam.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,6 +215,14 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="searchItem(public void com.demo.test_suites.TC_01_Epam.searchItem(java.lang.reflect.Method) throws java.lang.Ex...)">
+                  </a> <!-- searchItem(public void com.demo.test_suites.TC_01_Epam.searchItem(java.lang.reflect.Method) throws java.lang.Ex...) -->
+                  <span class="method-name">searchItem</span>
+                  <span class="parameters">(public void com.demo.test_suites.TC_01_Epam.searchItem(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="userInfo(public void com.demo.test_suites.TC_01_Epam.userInfo(java.lang.reflect.Method) throws java.lang.Exce...)">
                   </a> <!-- userInfo(public void com.demo.test_suites.TC_01_Epam.userInfo(java.lang.reflect.Method) throws java.lang.Exce...) -->
                   <span class="method-name">userInfo</span>
@@ -240,6 +253,7 @@
           &lt;include name=&quot;newUser&quot;/&gt;
           &lt;include name=&quot;login&quot;/&gt;
           &lt;include name=&quot;userInfo&quot;/&gt;
+          &lt;include name=&quot;searchItem&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.demo.test_suites.TC_01_Epam --&gt;
     &lt;/classes&gt;
@@ -281,28 +295,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'accessToken')
+data.setCell(0, 1, 'searchItem')
 data.setCell(0, 2, 'com.demo.test_suites.TC_01_Epam')
-data.setCell(0, 3, 1509);
+data.setCell(0, 3, 12809);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'accessToken')
 data.setCell(1, 2, 'com.demo.test_suites.TC_01_Epam')
-data.setCell(1, 3, 514);
+data.setCell(1, 3, 1212);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'newUser')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'com.demo.test_suites.TC_01_Epam')
-data.setCell(2, 3, 421);
+data.setCell(2, 3, 478);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'userInfo')
+data.setCell(3, 1, 'newUser')
 data.setCell(3, 2, 'com.demo.test_suites.TC_01_Epam')
-data.setCell(3, 3, 366);
+data.setCell(3, 3, 431);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'userInfo')
+data.setCell(4, 2, 'com.demo.test_suites.TC_01_Epam')
+data.setCell(4, 3, 378);
 window.suiteTableData['TC_001']= { tableData: data, tableDiv: 'times-div-TC_001'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-TC_001">
               </div> <!-- times-div-TC_001 -->
             </div> <!-- times-div -->
@@ -335,57 +353,65 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
-                <span class="method-start">3371 ms</span>
+                <span class="method-start">3253 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setEnvironmentConfiguration</span>
-                <span class="method-start">3380 ms</span>
+                <span class="method-start">3262 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">accessToken(public void com.demo.test_suites.TC_01_Epam.accessToken(java.lang.reflect.Method) throws java.lang.E...)</span>
-                <span class="method-start">3413 ms</span>
+                <span class="method-start">3287 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=accessToken status=SUCCESS method=TC_01_Epam.accessToken(java.lang.reflect.Method)[...)</span>
-                <span class="method-start">4923 ms</span>
+                <span class="method-start">4499 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">newUser(public void com.demo.test_suites.TC_01_Epam.newUser(java.lang.reflect.Method) throws java.lang.Excep...)</span>
-                <span class="method-start">4925 ms</span>
+                <span class="method-start">4502 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=newUser status=FAILURE method=TC_01_Epam.newUser(java.lang.reflect.Method)[pri:0, i...)</span>
-                <span class="method-start">5347 ms</span>
+                <span class="method-start">4934 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">login(public void com.demo.test_suites.TC_01_Epam.login(java.lang.reflect.Method) throws java.lang.Excepti...)</span>
-                <span class="method-start">5355 ms</span>
+                <span class="method-start">4944 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=login status=SUCCESS method=TC_01_Epam.login(java.lang.reflect.Method)[pri:0, insta...)</span>
-                <span class="method-start">5869 ms</span>
+                <span class="method-start">5422 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">userInfo(public void com.demo.test_suites.TC_01_Epam.userInfo(java.lang.reflect.Method) throws java.lang.Exce...)</span>
-                <span class="method-start">5869 ms</span>
+                <span class="method-start">5424 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=userInfo status=SUCCESS method=TC_01_Epam.userInfo(java.lang.reflect.Method)[pri:0,...)</span>
-                <span class="method-start">6236 ms</span>
+                <span class="method-start">5802 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">searchItem(public void com.demo.test_suites.TC_01_Epam.searchItem(java.lang.reflect.Method) throws java.lang.Ex...)</span>
+                <span class="method-start">5803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=searchItem status=SUCCESS method=TC_01_Epam.searchItem(java.lang.reflect.Method)[pr...)</span>
+                <span class="method-start">18612 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">flushReportData</span>
-                <span class="method-start">6237 ms</span>
+                <span class="method-start">18616 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXmlFiles</span>
-                <span class="method-start">6762 ms</span>
+                <span class="method-start">19208 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6951 ms</span>
+                <span class="method-start">19379 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

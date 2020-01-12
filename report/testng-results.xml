@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-11T22:35:40Z" name="TC_001" finished-at="2020-01-11T22:35:43Z" duration-ms="3267">
+  <suite started-at="2020-01-12T20:51:23Z" name="TC_001" finished-at="2020-01-12T20:51:39Z" duration-ms="15769">
     <groups>
     </groups>
-    <test started-at="2020-01-11T22:35:40Z" name="TC_01_Epam" finished-at="2020-01-11T22:35:43Z" duration-ms="3267">
+    <test started-at="2020-01-12T20:51:23Z" name="TC_01_Epam" finished-at="2020-01-12T20:51:39Z" duration-ms="15769">
       <class name="com.demo.test_suites.TC_01_Epam">
-        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:37Z" name="browserConfig" finished-at="2020-01-11T22:35:40Z" duration-ms="3371" status="PASS">
+        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:20Z" name="browserConfig" finished-at="2020-01-12T20:51:23Z" duration-ms="3253" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:40Z" name="cleanReportData" finished-at="2020-01-11T22:35:40Z" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:23Z" name="cleanReportData" finished-at="2020-01-12T20:51:23Z" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:40Z" name="setEnvironmentConfiguration" finished-at="2020-01-11T22:35:40Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:23Z" name="setEnvironmentConfiguration" finished-at="2020-01-12T20:51:23Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentConfiguration -->
-        <test-method signature="accessToken(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:40Z" name="accessToken" finished-at="2020-01-11T22:35:42Z" duration-ms="1509" status="PASS">
+        <test-method signature="accessToken(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:23Z" name="accessToken" finished-at="2020-01-12T20:51:24Z" duration-ms="1212" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,18 +37,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accessToken -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:42Z" name="generateReport" finished-at="2020-01-11T22:35:42Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:24Z" name="generateReport" finished-at="2020-01-12T20:51:24Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=accessToken status=SUCCESS method=TC_01_Epam.accessToken(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17] output={null}]]]>
+                <![CDATA[[TestResult name=accessToken status=SUCCESS method=TC_01_Epam.accessToken(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="newUser(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:42Z" name="newUser" finished-at="2020-01-11T22:35:42Z" duration-ms="421" status="FAIL">
+        <test-method signature="newUser(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:24Z" name="newUser" finished-at="2020-01-12T20:51:25Z" duration-ms="431" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@ at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
 at com.demo.test_scripts.api.RegisterUser.getNewUser(RegisterUser.java:87)
-at com.demo.test_suites.TC_01_Epam.newUser(TC_01_Epam.java:25)
+at com.demo.test_suites.TC_01_Epam.newUser(TC_01_Epam.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,18 +94,18 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUser -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:42Z" name="generateReport" finished-at="2020-01-11T22:35:42Z" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:25Z" name="generateReport" finished-at="2020-01-12T20:51:25Z" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=newUser status=FAILURE method=TC_01_Epam.newUser(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17] output={null}]]]>
+                <![CDATA[[TestResult name=newUser status=FAILURE method=TC_01_Epam.newUser(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="login(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:42Z" name="login" finished-at="2020-01-11T22:35:43Z" duration-ms="514" status="PASS">
+        <test-method signature="login(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:25Z" name="login" finished-at="2020-01-12T20:51:25Z" duration-ms="478" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,18 +116,18 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:43Z" name="generateReport" finished-at="2020-01-11T22:35:43Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:25Z" name="generateReport" finished-at="2020-01-12T20:51:25Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=TC_01_Epam.login(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=TC_01_Epam.login(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="userInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:43Z" name="userInfo" finished-at="2020-01-11T22:35:43Z" duration-ms="366" status="PASS">
+        <test-method signature="userInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:25Z" name="userInfo" finished-at="2020-01-12T20:51:26Z" duration-ms="378" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -138,26 +138,48 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userInfo -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:43Z" name="generateReport" finished-at="2020-01-11T22:35:43Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:26Z" name="generateReport" finished-at="2020-01-12T20:51:26Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userInfo status=SUCCESS method=TC_01_Epam.userInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17] output={null}]]]>
+                <![CDATA[[TestResult name=userInfo status=SUCCESS method=TC_01_Epam.userInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:43Z" name="flushReportData" finished-at="2020-01-11T22:35:43Z" duration-ms="413" status="PASS">
+        <test-method signature="searchItem(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:26Z" name="searchItem" finished-at="2020-01-12T20:51:38Z" duration-ms="12809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.test_suites.TC_01_Epam.searchItem(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:38Z" name="generateReport" finished-at="2020-01-12T20:51:38Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchItem status=SUCCESS method=TC_01_Epam.searchItem(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:38Z" name="flushReportData" finished-at="2020-01-12T20:51:39Z" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
-        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:44Z" name="clearXmlFiles" finished-at="2020-01-11T22:35:44Z" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:39Z" name="clearXmlFiles" finished-at="2020-01-12T20:51:39Z" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.TC_01_Epam@3ad2e17]" started-at="2020-01-11T22:35:44Z" name="tearDown" finished-at="2020-01-11T22:35:44Z" depends-on-methods="com.demo.config.BasicConfiguration.clearXmlFiles" duration-ms="675" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.TC_01_Epam@8c3619e]" started-at="2020-01-12T20:51:39Z" name="tearDown" finished-at="2020-01-12T20:51:40Z" depends-on-methods="com.demo.config.BasicConfiguration.clearXmlFiles" duration-ms="801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

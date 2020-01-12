@@ -17,6 +17,7 @@
                 <include name="newUser"/>
                 <include name="login"/>
                 <include name="userInfo"/>
+                <include name="searchItem"/>
             </methods>
         </class>
     </classes>

@@ -17,44 +17,30 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import static com.demo.config.ReporterConfig.test;
+import static com.demo.test_properties.FilePaths.screenshots_actual_folder;
+import static com.demo.test_properties.FilePaths.screenshots_buffer_folder;
+import static com.demo.test_properties.FilePaths.screenshots_expected_folder;
 
 
 public class ImageCompare extends BasicConfiguration {
 
     private static String textFile;
 
-
-
-    public static void getElementScreenshot(WebElement element, String image) throws Exception {
-        textFile  = element.toString();
-        File file = element.getScreenshotAs(OutputType.FILE);
-        File dest = new File(FilePaths.screenshots_actual_folder + image + ".png");
-        FileUtils.copyFile(file, dest);
-
-        try {
-            Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(100)).takeScreenshot(driver, element);
-            ImageIO.write(screenshot.getImage(), "png", new File(FilePaths.screenshots_actual_folder + image + ".png"));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    public static ImageCompare getImageCompare(String actualImage, String expectedImage) throws IOException {
+    public static ImageCompare imageCompare(String actualImage, String expectedImage) throws IOException {
         long start = System.currentTimeMillis();
         int q = 0;
-        File file1 = new File(FilePaths.screenshots_buffer_folder + textFile + ".txt");
+        File file1 = new File(screenshots_buffer_folder + textFile + ".txt");
 
         FileWriter fw = new FileWriter(file1.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(fw);
 
-        File fileA = new File(actualImage);
+        File fileA = new File(screenshots_actual_folder + actualImage + ".png");
         BufferedImage image = ImageIO.read(fileA);
         int width = image.getWidth(null);
         int height = image.getHeight(null);
         int[][] clr = new int[width][height];
 
-        File fileB = new File(expectedImage);
+        File fileB = new File(screenshots_expected_folder + expectedImage + ".png");
         BufferedImage images = ImageIO.read(fileB);
         int widthe = images.getWidth(null);
         int heighte = images.getHeight(null);
@@ -107,40 +93,43 @@ public class ImageCompare extends BasicConfiguration {
         long stop = System.currentTimeMillis();
 
         if (x == 100) {
-            test.pass("Image comparison successfully completed"
-                    + "<br />"
-                    + "<br />"
-                    + "Success rate = " + x + "%"
-                    + "<br />"
+            test.pass("<b>Image comparison successfully completed</b>"
+                    + "<br>"
+                    + "Image comparison success rate    = " + x + "%"
+                    + "<br>"
+                    + "Number of  pixels gets varied    = " + q
+                    + "<br>"
                     + "Time(ms) for visualization check = " + (stop - start)
-                    + "<br />"
-                    + "Number of pixels gets varied = " + q
-                    + "<br />"
-                    + "Number of pixels gets matched = " + p, MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
+                    + "<br>"
+                    + "Number of pixels gets matched    = " + p
+                    + "</br>",
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
         if (x > 98 && x < 100) {
-            test.warning("| WARNING | Results from comparison needs to be checked"
-                    + "<br />"
-                    + "<br />"
-                    + "Success rate = " + x + "%"
-                    + "<br />"
+            test.warning("<b>Results from comparison needs to be checked</b>"
+                    + "<br>"
+                    + "Image comparison success rate    = " + x + "%"
+                    + "<br>"
+                    + "Number of  pixels gets varied    = " + q
+                    + "<br>"
                     + "Time(ms) for visualization check = " + (stop - start)
-                    + "<br />"
-                    + "Number of pixels gets varied = " + q
-                    + "<br />"
-                    + "Number of pixels gets matched = " + p, MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
+                    + "<br>"
+                    + "Number of pixels gets matched    = " + p
+                    + "<br>",
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
         if (x < 98) {
-            test.fail("Compare actual screenshot with screenshot from the data base has failed"
-                    + "<br />"
-                    + "<br />"
-                    + "Success rate = " + x + "%"
-                    + "<br />"
+            test.fail("<b>Compare actual screenshot with screenshot from the data base has failed</b>"
+                    + "<br>"
+                    + "Image comparison success rate    = " + x + "%"
+                    + "<br>"
+                    + "Number of  pixels gets varied    = " + q
+                    + "<br>"
                     + "Time(ms) for visualization check = " + (stop - start)
-                    + "<br />"
-                    + "Number of pixels gets varied = " + q
-                    + "<br />"
-                    + "Number of pixels gets matched = " + p, MediaEntityBuilder.createScreenCaptureFromPath(actualImage).build());
+                    + "<br>"
+                    + "Number of pixels gets matched    = " + p
+                    + "<br>",
+                    MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
         return null;
     }
