@@ -13,7 +13,7 @@
     <test name="TC_01_Example" group-by-instances="true">
 
     <classes>
-        <class name="com.demo.test_suites.TC_01_Fly">
+        <class name="com.demo.test_suites.TC_01_Epam">
             <methods>
                 <include name="sessionID"/>
                 <include name="ramLogin"/>

@@ -38,23 +38,33 @@ public class FileUtility extends BasicConfiguration {
 
 
     public static String getFormattedJson(String responseBody) throws Exception {
-        Gson gson             = new GsonBuilder().setLenient().setPrettyPrinting().create();
-        Object jsonObject     = jsonParser.parse(responseBody);
-        String formattedJson  = gson.toJson(jsonObject);
+        try {
+            Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
+            Object jsonObject = jsonParser.parse(responseBody);
+            String formattedJson = gson.toJson(jsonObject);
+            return formattedJson;
 
-        return formattedJson;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 
 
     public static File createLogFile(String fileName, String responseBody) throws Exception {
-        File file = new File(report_json_folder + fileName);
-        FileWriter fileWriter = new FileWriter(file);
-        fileWriter.write(getFormattedJson(responseBody));
-        fileWriter.flush();
-        fileWriter.close();
+        try {
+            File file = new File(report_json_folder + fileName);
+            FileWriter fileWriter = new FileWriter(file);
+            fileWriter.write(getFormattedJson(responseBody));
+            fileWriter.flush();
+            fileWriter.close();
 
-        return file;
+            return file;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 

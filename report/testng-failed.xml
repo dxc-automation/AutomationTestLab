@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite configfailurepolicy="continue" parallel="tests" name="Failed suite [TC_001]" guice-stage="DEVELOPMENT" verbose="10">
-  <parameter name="environment" value="uat"/>
   <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="com.demo.config.TestNGListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="TC_01_Example(failed)" verbose="10">
+  <test thread-count="5" parallel="tests" name="TC_01_Epam(failed)" verbose="10">
     <classes>
-      <class name="com.demo.test_suites.TC_01_Fly">
+      <class name="com.demo.test_suites.TC_01_Epam">
         <methods>
-          <include name="report"/>
-          <include name="setup"/>
-          <include name="checkUI"/>
-          <include name="cleanTestData"/>
-          <include name="clearXml"/>
-          <include name="endReport"/>
-          <include name="getEnvironmentConfiguration"/>
+          <include name="generateReport"/>
+          <include name="browserConfig"/>
+          <include name="flushReportData"/>
+          <include name="cleanReportData"/>
           <include name="tearDown"/>
+          <include name="newUser" invocation-numbers="0"/>
+          <include name="setEnvironmentConfiguration"/>
+          <include name="clearXmlFiles"/>
         </methods>
-      </class> <!-- com.test_suites_suites.TC_01_Fly
+      </class> <!-- com.demo.test_suites.TC_01_Epam -->
     </classes>
-  </test_suites> <!-- TC_01_Example(failed) -->
+  </test> <!-- TC_01_Epam(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

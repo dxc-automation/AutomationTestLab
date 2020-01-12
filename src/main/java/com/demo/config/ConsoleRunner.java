@@ -45,7 +45,6 @@ public class ConsoleRunner {
         // Original folder + source file
         File xmlFile = new File(xml_files_folder + xml);
 
-
         try {
             TestNG testng = new TestNG();
             List<String> suites = new ArrayList<String>();

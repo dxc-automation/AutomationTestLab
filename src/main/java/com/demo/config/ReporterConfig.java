@@ -5,8 +5,9 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import static com.demo.test_properties.FilePaths.report_config_xml_file;
-import static com.demo.test_properties.FilePaths.report_html_file;
+import groovy.json.internal.Byt;
+
+import static com.demo.test_properties.FilePaths.*;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

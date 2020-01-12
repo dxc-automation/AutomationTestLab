@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 
-import static com.demo.test_properties.TestData.FLY_HOST;
+import static com.demo.test_properties.UrlPaths.FLY_HOST;
 import static com.demo.test_properties.TestData.accessToken;
 import static com.demo.test_properties.UrlPaths.ADD_USER;
 import static com.demo.config.ReporterConfig.startTestReport;

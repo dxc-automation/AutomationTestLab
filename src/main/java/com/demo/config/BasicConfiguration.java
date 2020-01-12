@@ -32,9 +32,9 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 import static com.demo.config.ConsoleRunner.xmlFile;
-import static com.demo.config.ReporterConfig.extent;
-import static com.demo.config.ReporterConfig.test;
+import static com.demo.config.ReporterConfig.*;
 import static com.demo.test_properties.FilePaths.*;
+import static com.demo.test_properties.UrlPaths.*;
 import static com.demo.test_properties.TestData.*;
 
 import static com.demo.utilities.web_services.HttpClientConfig.*;
@@ -63,7 +63,11 @@ public class BasicConfiguration {
 
     static final Logger LOG = LogManager.getLogger(BasicConfiguration.class);
 
-
+    /**
+     * Used for screenshot generating
+     * @param driver, name
+     * @throws Exception
+     */
         public static void takeScreenshot (WebDriver driver, String name){
             screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
@@ -74,8 +78,11 @@ public class BasicConfiguration {
         }
 
 
+    /**
+     * Delete all reporting files from previous tests
+     */
         @BeforeSuite
-        public void cleanReportData() throws Exception{
+        public void cleanReportData() {
             try {
             cleanDirectory(new File(report_json_folder));
             cleanDirectory(new File(screenshots_failed_folder));
@@ -87,41 +94,24 @@ public class BasicConfiguration {
         }
 
 
-
-    @Parameters({"environment"})
+    /**
+     * Used for get test data from /resources/config.properties file
+     * @throws Exception
+     */
     @BeforeSuite
-    public static void setEnvironmentConfiguration(String environment) throws Exception {
+    public static void setEnvironmentConfiguration() throws Exception {
         InputStream inputStream = new FileInputStream(config_properties_file);
         Properties properties   = new Properties();
         properties.load(inputStream);
 
-
-        // Get value of the property
-        if (environment.equals("uat")) {
-            RAM_HOST     = properties.getProperty("uat_ram_host");
-            WALLET_HOST  = properties.getProperty("uat_wallet_host");
-            TRADING_HOST = properties.getProperty("uat_trading_host");
-            username     = properties.getProperty("uat_username");
-            password     = properties.getProperty("uat_password");
-            devIx        = properties.getProperty("devIx");
-
-        } else if (environment.equals("qacore")) {
-            RAM_HOST     = properties.getProperty("qacore_ram_host");
-            WALLET_HOST  = properties.getProperty("qacore_wallet_host");
-            TRADING_HOST = properties.getProperty("qacore_trading_host");
-            username     = properties.getProperty("qacore_username");
-            password     = properties.getProperty("qacore_password");
-            devIx        = properties.getProperty("devIx");
-
-        } else if (environment.equals("fly")) {
-            FLY_HOST = properties.getProperty("fly_host");
-        }
+        AMAZON_BASE_URL = properties.getProperty("amazon_url");
+        FLY_HOST        = properties.getProperty("fly_host");
         inputStream.close();
     }
 
 
     /**
-     * Used for
+     * Used for browser configuration
      * @param browser
      * @throws Exception
      */
@@ -176,7 +166,7 @@ public class BasicConfiguration {
         }
 
     /**
-     * Collect the results from every test_scripts.
+     * Collect the results from every test
      */
     @AfterMethod(alwaysRun = true)
         public void generateReport(ITestResult result) throws Exception {
@@ -261,8 +251,11 @@ public class BasicConfiguration {
     }
 
 
+    /**
+     * Delete all previous executed XML files
+     */
         @AfterSuite
-        public void clearXmlFiles() throws Exception {
+        public void clearXmlFiles() {
             try {
                 if (xmlFile.exists()) {
                     xmlFile.delete();

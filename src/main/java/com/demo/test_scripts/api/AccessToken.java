@@ -13,6 +13,7 @@ import static com.demo.test_properties.TestData.*;
 
 import static com.demo.test_properties.UrlPaths.BOOTSTRAP;
 import static com.demo.config.ReporterConfig.*;
+import static com.demo.test_properties.UrlPaths.FLY_HOST;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 import static com.demo.utilities.web_services.HttpClientUtils.*;
 import static com.demo.utilities.FileUtility.createLogFile;
@@ -24,8 +25,7 @@ public class AccessToken {
     private static String scheme;
     private static String host;
     private static String path;
-    private static String parameterName;
-    private static String parameterValue;
+
 
     static final Logger LOG = LogManager.getLogger(AccessToken.class);
 
