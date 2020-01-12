@@ -2,103 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/win/run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/bin/win/run.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/accessToken.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/accessToken.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/login.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/login.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/newUser.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/newUser.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/userInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/userInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TC_001/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/report/jquery-1.7.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_01_Freebet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_01_Freebet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.Test1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.Test1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/TC_001/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/ConsoleRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/ConsoleRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/ReporterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/ReporterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_properties/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_properties/TestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_properties/UrlPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_properties/UrlPaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/AccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/AccessToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/Authenticate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/Authenticate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/RegisterUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/templates/GET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/templates/GET.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/templates/POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/templates/POST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/GetAllLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/GetAllPageLinks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/TC_01_Fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/TC_01_Epam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenRecorderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenRecorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/EPAM.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/Fly.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/TC_01_Epam.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/BasicConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/BasicConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ReporterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/ReporterConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_properties/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_properties/TestData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_properties/UrlPaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_properties/UrlPaths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/AccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/AccessToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/Authenticate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/Authenticate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/RegisterUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/RegisterUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/templates/GET.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/templates/GET.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/templates/POST.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/templates/POST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/ui/GetAllLinks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_suites/TC_01_Fly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ScreenRecorderUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/TC_01_Freebet.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/TC_01_Freebet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.test_suites.TC_01_Fly.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/TC_01_Freebet.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-failed.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="50">
-                <caret line="2" column="127" selection-start-line="2" selection-start-column="127" selection-end-line="2" selection-end-column="127" />
+              <first_editor relative-caret-position="75">
+                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -775,12 +679,12 @@
       <workItem from="1578741984821" duration="3265000" />
       <workItem from="1578753990426" duration="4023000" />
       <workItem from="1578777053455" duration="4659000" />
-      <workItem from="1578836953107" duration="2566000" />
+      <workItem from="1578836953107" duration="2876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120961000" />
+    <option name="totallyTimeSpent" value="121271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1223,8 +1127,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="50">
-            <caret line="2" column="127" selection-start-line="2" selection-start-column="127" selection-end-line="2" selection-end-column="127" />
+          <first_editor relative-caret-position="75">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           </first_editor>
           <second_editor />
         </state>
