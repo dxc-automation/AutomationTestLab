@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TS_01_Amazon_Elements" configfailurepolicy="continue" verbose="10" parallel="tests" thread-count="5">
+
+    <listeners>
+        <listener class-name="com.demo.config.TestNGListener"/>
+    </listeners>
+
+    <parameter name="browser"     value="chrome"/>
+
+    <test name="ID_01_NewElementCheck" group-by-instances="true">
+    <classes>
+
+        <class name="com.demo.test_suites.frontend.TS_01_Items">
+            <methods>
+                <include name="loadHomePage"/>
+                <include name="searchItem"/>
+                <include name="openItemDescription"/>
+            </methods>
+        </class>
+
+    </classes>
+</test>
+</suite>
+
+
+
+
