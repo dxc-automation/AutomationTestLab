@@ -1,14 +1,11 @@
 {
-  "code": 400003,
+  "code": 400025,
   "requestInfo": {
-    "apiVersion": 1,
-    "requestId": "bfa54e54-fcc9-4e34-83ca-158b0d924d7b",
-    "accessTokenStatus": "authenticated",
-    "serverTime": 1578869836
+    "apiVersion": 0,
+    "requestId": "0e0fcf3e-1ee9-4a24-9607-823b0a23010c",
+    "accessTokenStatus": "anonymous",
+    "serverTime": 1579175835
   },
   "error": true,
-  "message": "Invalid property: `profileFields`",
-  "contextData": {
-    "property": "profileFields"
-  }
+  "message": "Channel Id could not be found"
 }

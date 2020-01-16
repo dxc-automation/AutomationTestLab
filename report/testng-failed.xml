@@ -7,19 +7,19 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_01_Epam(failed)" verbose="10">
     <classes>
-      <class name="com.demo.test_suites.TC_01_Epam">
+      <class name="com.demo.test_suites.backend.TS_01_Login">
         <methods>
           <include name="generateReport"/>
           <include name="addAccountInfo" invocation-numbers="0"/>
+          <include name="newUser" invocation-numbers="0"/>
           <include name="browserConfig"/>
           <include name="flushReportData"/>
           <include name="cleanReportData"/>
           <include name="tearDown"/>
-          <include name="newUser" invocation-numbers="0"/>
           <include name="setEnvironmentConfiguration"/>
           <include name="clearXmlFiles"/>
         </methods>
-      </class> <!-- com.demo.test_suites.TC_01_Epam -->
+      </class> <!-- com.demo.test_suites.backend.TS_01_Login -->
     </classes>
   </test> <!-- TC_01_Epam(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

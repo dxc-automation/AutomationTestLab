@@ -30,7 +30,7 @@ public class AccessToken {
     static final Logger LOG = LogManager.getLogger(AccessToken.class);
 
     private static void report() throws Exception {
-        String testName        = "Get access token";
+        String testName        = "Get Access Token";
         String testDescription = "The purpose of this test is to verify that the user can receive access token.";
         String testCategory    = "API";
 

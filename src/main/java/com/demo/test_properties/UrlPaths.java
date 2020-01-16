@@ -13,6 +13,7 @@ public class UrlPaths {
     public final static String LOGIN         = "/v2/auth/login";
     public final static String USER_INFO     = "/v1/user/me";
     public final static String ADD_USER_INFO = "/v1/user/me/profile-field";
+    public final static String NEW_TOKEN     = "/users/v1/token";
 }
 
 

@@ -200,7 +200,8 @@ public class BasicConfiguration {
                         + "<br/>"
                         + "</pre>");
             } else if (Files.exists(file) == false){
-                test.pass(MarkupHelper.createLabel("| PASSED | " + methodName, ExtentColor.GREEN)); }
+                System.out.println("TEST PASSED");
+            }
             break;
 
             case ITestResult.FAILURE:
@@ -272,7 +273,7 @@ public class BasicConfiguration {
             driver.quit();
             }
 
-        @AfterTest
+        @AfterSuite
         public void flushReportData() {
             extent.flush();
 

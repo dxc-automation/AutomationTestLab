@@ -26,7 +26,7 @@ public class UserInfo {
     static final Logger LOG = LogManager.getLogger(UserInfo.class);
 
     private static void report() throws Exception {
-        String testName        = "Get user info";
+        String testName        = "Get User Info";
         String testDescription = "The purpose of this test is to verify that correct user details are received.";
         String testCategory    = "API";
 

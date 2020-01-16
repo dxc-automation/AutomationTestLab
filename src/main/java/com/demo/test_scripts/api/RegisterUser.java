@@ -27,7 +27,7 @@ public class RegisterUser {
     static final Logger LOG = LogManager.getLogger(RegisterUser.class);
 
     private static void report() throws Exception {
-        String testName        = "Register a new user";
+        String testName        = "Register New User";
         String testDescription = "The purpose of this test is to verify that a new account can be created.";
         String testCategory    = "API";
 
