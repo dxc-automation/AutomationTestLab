@@ -30,7 +30,7 @@
       <file leaf-file-name="TS_01_Items.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
+            <state relative-caret-position="1118">
               <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
             </state>
           </provider>
@@ -499,8 +499,8 @@
       <recent name="com.demo.test_suites" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Frameworks\AutomationTestLab\src\main\resources" />
       <recent name="D:\Frameworks\AutomationTestLab\src\main\resources\xml_files" />
+      <recent name="D:\Frameworks\AutomationTestLab\src\main\resources" />
       <recent name="E:\TestLabTestNG\src\main\resources\xml_files" />
       <recent name="$PROJECT_DIR$/src/main/resources/xml_files" />
       <recent name="$PROJECT_DIR$/src/main/resources/drivers" />
@@ -725,12 +725,12 @@
       <workItem from="1579018105312" duration="3817000" />
       <workItem from="1579105067310" duration="4962000" />
       <workItem from="1579127521199" duration="664000" />
-      <workItem from="1579175489501" duration="2835000" />
+      <workItem from="1579175489501" duration="3442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150075000" />
+    <option name="totallyTimeSpent" value="150682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1168,13 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1200,6 +1193,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
         </state>
       </provider>
     </entry>
