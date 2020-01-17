@@ -107,7 +107,8 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                        <suiteXmlFile>Amazon.xml</suiteXmlFile>
+                        <suiteXmlFile>Demo.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

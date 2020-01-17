@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TS_01_Amazon_Elements" class="navigator-link">
+              <span class="suite-name border-passed">TS_01_Amazon_Elements</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TS_01_Amazon_Elements" class="navigator-link ">
+                    <span>D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\Amazon.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TS_01_Amazon_Elements" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TS_01_Amazon_Elements" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TS_01_Amazon_Elements" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TS_01_Amazon_Elements" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TS_01_Amazon_Elements" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TS_01_Amazon_Elements" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TS_01_Amazon_Elements" class="hide-methods passed suite-TS_01_Amazon_Elements"> (hide)</a> <!-- hide-methods passed suite-TS_01_Amazon_Elements -->
+                      <a href="#" panel-name="suite-TS_01_Amazon_Elements" class="show-methods passed suite-TS_01_Amazon_Elements"> (show)</a> <!-- show-methods passed suite-TS_01_Amazon_Elements -->
+                    </span>
+                    <div class="method-list-content passed suite-TS_01_Amazon_Elements">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TS_01_Items" class="method navigator-link" hash-for-method="loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)">loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TS_01_Items" class="method navigator-link" hash-for-method="openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...)">openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TS_01_Items" class="method navigator-link" hash-for-method="searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...)">searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TS_01_Amazon_Elements -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TS_01_Amazon_Elements" class="panel TS_01_Amazon_Elements">
+          <div class="suite-TS_01_Amazon_Elements-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.test_suites.frontend.TS_01_Items</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)">
+                  </a> <!-- loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...) -->
+                  <span class="method-name">loadHomePage</span>
+                  <span class="parameters">(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...)">
+                  </a> <!-- openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...) -->
+                  <span class="method-name">openItemDescription</span>
+                  <span class="parameters">(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...)">
+                  </a> <!-- searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...) -->
+                  <span class="method-name">searchItem</span>
+                  <span class="parameters">(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TS_01_Amazon_Elements-class-passed -->
+        </div> <!-- panel TS_01_Amazon_Elements -->
+        <div panel-name="test-xml-TS_01_Amazon_Elements" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\Amazon.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; parallel=&quot;tests&quot; name=&quot;TS_01_Amazon_Elements&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.demo.config.TestNGListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ID_01_NewElementCheck&quot; group-by-instances=&quot;true&quot; verbose=&quot;10&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.demo.test_suites.frontend.TS_01_Items&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loadHomePage&quot;/&gt;
+          &lt;include name=&quot;searchItem&quot;/&gt;
+          &lt;include name=&quot;openItemDescription&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.demo.test_suites.frontend.TS_01_Items --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ID_01_NewElementCheck --&gt;
+&lt;/suite&gt; &lt;!-- TS_01_Amazon_Elements --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TS_01_Amazon_Elements" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TS_01_Amazon_Elements</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ID_01_NewElementCheck (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TS_01_Amazon_Elements" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TS_01_Amazon_Elements</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TS_01_Amazon_Elements" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TS_01_Amazon_Elements</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TS_01_Amazon_Elements');
+function tableData_TS_01_Amazon_Elements() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'openItemDescription')
+data.setCell(0, 2, 'com.demo.test_suites.frontend.TS_01_Items')
+data.setCell(0, 3, 5730);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchItem')
+data.setCell(1, 2, 'com.demo.test_suites.frontend.TS_01_Items')
+data.setCell(1, 3, 4327);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loadHomePage')
+data.setCell(2, 2, 'com.demo.test_suites.frontend.TS_01_Items')
+data.setCell(2, 3, 2535);
+window.suiteTableData['TS_01_Amazon_Elements']= { tableData: data, tableDiv: 'times-div-TS_01_Amazon_Elements'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <div id="times-div-TS_01_Amazon_Elements">
+              </div> <!-- times-div-TS_01_Amazon_Elements -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TS_01_Amazon_Elements" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TS_01_Amazon_Elements</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TS_01_Amazon_Elements" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TS_01_Amazon_Elements" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.demo.test_suites.frontend.TS_01_Items</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">browserConfig(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">cleanReportData</span>
+                <span class="method-start">3807 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">setEnvironmentConfiguration</span>
+                <span class="method-start">3821 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">report</span>
+                <span class="method-start">3868 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)</span>
+                <span class="method-start">4286 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=loadHomePage status=SUCCESS method=TS_01_Items.loadHomePage(java.lang.reflect.Metho...)</span>
+                <span class="method-start">6821 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...)</span>
+                <span class="method-start">6824 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=searchItem status=SUCCESS method=TS_01_Items.searchItem(java.lang.reflect.Method)[p...)</span>
+                <span class="method-start">11151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...)</span>
+                <span class="method-start">11153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=openItemDescription status=SUCCESS method=TS_01_Items.openItemDescription(java.lang...)</span>
+                <span class="method-start">16883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">clearXmlFiles</span>
+                <span class="method-start">16955 ms</span>
+              </div> <!-- configuration-suite after -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReportData</span>
+                <span class="method-start">16963 ms</span>
+              </div> <!-- configuration-suite after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17432 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
