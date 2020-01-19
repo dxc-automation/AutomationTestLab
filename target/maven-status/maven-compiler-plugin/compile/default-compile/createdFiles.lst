@@ -18,12 +18,12 @@ com\demo\ui_mapping\Amazon.class
 com\demo\utilities\web_services\HttpClientConfig.class
 com\demo\config\TestNGListener.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
-com\demo\test_suites\backend\TS_01_Login.class
 com\demo\config\ReporterConfig.class
 com\demo\utilities\user_interface\ScreenRecorder.class
 com\demo\config\BasicConfiguration.class
+com\demo\test_suites\backend\TC_01_Login.class
 com\demo\config\ConsoleRunner.class
+com\demo\test_suites\frontend\TC_01_Items.class
 com\demo\test_scripts\api\NewToken.class
 com\demo\test_scripts\templates\GET.class
-com\demo\test_suites\frontend\TS_01_Items.class
 com\demo\utilities\user_interface\ElementScreenshot.class

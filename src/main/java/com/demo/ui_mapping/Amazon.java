@@ -20,5 +20,14 @@ public class Amazon {
 
     @FindBy(how = How.CSS, using = "img#landingImage")
     public WebElement amazon_item_image;
+
+    @FindBy(how = How.CSS, using = "input#add-to-cart-button")
+    public WebElement amazon_add_to_cart_btn;
+
+    @FindBy(how = How.CSS, using = "div#attach-accessory-pane > div")
+    public WebElement amazon_side_panel;
+
+    @FindBy(how = How.CSS, using = "div#attachDisplayAddBaseAlert h4")
+    public WebElement amazon_side_panel_txt;
 }
 

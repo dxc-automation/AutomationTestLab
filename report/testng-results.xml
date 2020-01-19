@@ -6,7 +6,7 @@
     <groups>
     </groups>
     <test started-at="2020-01-17T10:45:46Z" name="TC_01_Epam" finished-at="2020-01-17T10:46:04Z" duration-ms="18246">
-      <class name="com.demo.test_suites.backend.TS_01_Login">
+      <class name="com.demo.test_suites.backend.TC_01_Login">
         <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:42Z" name="browserConfig" finished-at="2020-01-17T10:45:46Z" duration-ms="3355" status="PASS">
           <params>
             <param index="0">
@@ -30,7 +30,7 @@
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TS_01_Login.accessToken(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.accessToken(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -52,7 +52,7 @@
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TS_01_Login.newUser(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.newUser(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -67,7 +67,7 @@ at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
 at com.demo.test_scripts.api.RegisterUser.getNewUser(RegisterUser.java:87)
-at com.demo.test_suites.backend.TS_01_Login.newUser(TS_01_Login.java:28)
+at com.demo.test_suites.backend.TC_01_Login.newUser(TS_01_Login.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,7 +109,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TS_01_Login.login(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.login(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -131,7 +131,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TS_01_Login.addAccountInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.addAccountInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -146,7 +146,7 @@ at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
 at com.demo.test_scripts.api.NewToken.addUserInfo(NewToken.java:89)
-at com.demo.test_suites.backend.TS_01_Login.addAccountInfo(TS_01_Login.java:42)
+at com.demo.test_suites.backend.TC_01_Login.addAccountInfo(TS_01_Login.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,7 +188,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TS_01_Login.userInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.userInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -218,8 +218,8 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
-      </class> <!-- com.demo.test_suites.backend.TS_01_Login -->
-      <class name="com.demo.test_suites.frontend.TS_01_Items">
+      </class> <!-- com.demo.test_suites.backend.TC_01_Login -->
+      <class name="com.demo.test_suites.frontend.TC_01_Items">
         <test-method is-config="true" signature="report()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1]" started-at="2020-01-17T10:45:49Z" name="report" finished-at="2020-01-17T10:45:49Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -228,7 +228,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception]]>
+                  <![CDATA[public void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -250,7 +250,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception]]>
+                  <![CDATA[public void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -272,7 +272,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) throws java.lang.Exception]]>
+                  <![CDATA[public void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -290,7 +290,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-      </class> <!-- com.demo.test_suites.frontend.TS_01_Items -->
+      </class> <!-- com.demo.test_suites.frontend.TC_01_Items -->
     </test> <!-- TC_01_Epam -->
   </suite> <!-- TC_001 -->
 </testng-results>

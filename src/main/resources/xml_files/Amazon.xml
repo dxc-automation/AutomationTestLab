@@ -12,11 +12,12 @@
     <test name="ID_01_NewElementCheck" group-by-instances="true">
     <classes>
 
-        <class name="com.demo.test_suites.frontend.TS_01_Items">
+        <class name="com.demo.test_suites.frontend.TC_01_Items">
             <methods>
                 <include name="loadHomePage"/>
                 <include name="searchItem"/>
                 <include name="openItemDescription"/>
+                <include name="addItemToCart"/>
             </methods>
         </class>
 

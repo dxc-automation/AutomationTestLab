@@ -11,15 +11,17 @@
 <tr><th colspan="7">TC_001</th></tr>
 <tr><td><a href="#t0">TC_01_Epam</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">2</td><td class="num">18,246</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_01_Epam &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.demo.test_suites.backend.TS_01_Login</td><td><a href="#m0">addAccountInfo</a></td><td rowspan="1">1579257948485</td><td rowspan="1">385</td></tr><tr class="failedeven"><td><a href="#m1">newUser</a></td><td rowspan="1">1579257947605</td><td rowspan="1">387</td></tr><tr><th colspan="4">TC_01_Epam &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.demo.test_suites.backend.TS_01_Login</td><td><a href="#m2">accessToken</a></td><td rowspan="1">1579257946182</td><td rowspan="1">1418</td></tr><tr class="passedeven"><td><a href="#m3">login</a></td><td rowspan="1">1579257947998</td><td rowspan="1">485</td></tr><tr class="passedeven"><td><a href="#m4">userInfo</a></td><td rowspan="1">1579257948872</td><td rowspan="1">369</td></tr><tr class="passedodd"><td rowspan="3">com.demo.test_suites.frontend.TS_01_Items</td><td><a href="#m5">loadHomePage</a></td><td rowspan="1">1579257949245</td><td rowspan="1">2616</td></tr><tr class="passedodd"><td><a href="#m6">openItemDescription</a></td><td rowspan="1">1579257956960</td><td rowspan="1">7446</td></tr><tr class="passedodd"><td><a href="#m7">searchItem</a></td><td rowspan="1">1579257951864</td><td rowspan="1">5094</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_01_Epam &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.demo.test_suites.backend.TC_01_Login</td><td><a href="#m0">addAccountInfo</a></td><td rowspan="1">1579257948485</td><td rowspan="1">385</td></tr><tr class="failedeven"><td><a href="#m1">newUser</a></td><td rowspan="1">1579257947605</td><td rowspan="1">387</td></tr><tr><th colspan="4">TC_01_Epam &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.demo.test_suites.backend.TC_01_Login</td><td><a href="#m2">accessToken</a></td><td rowspan="1">1579257946182</td><td rowspan="1">1418</td></tr><tr class="passedeven"><td><a href="#m3">login</a></td><td rowspan="1">1579257947998</td><td rowspan="1">485</td></tr><tr class="passedeven"><td><a href="#m4">userInfo</a></td><td rowspan="1">1579257948872</td><td rowspan="1">369</td></tr><tr class="passedodd"><td rowspan="3">com.demo.test_suites.frontend.TC_01_Items</td><td><a href="#m5">loadHomePage</a></td><td rowspan="1">1579257949245</td><td rowspan="1">2616</td></tr><tr class="passedodd"><td><a href="#m6">openItemDescription</a></td><td rowspan="1">1579257956960</td><td rowspan="1">7446</td></tr><tr class="passedodd"><td><a href="#m7">searchItem</a></td><td rowspan="1">1579257951864</td><td rowspan="1">5094</td></tr></tbody>
 </table>
-<h2>TC_01_Epam</h2><h3 id="m0">com.demo.test_suites.backend.TS_01_Login#addAccountInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.test_suites.backend.TS_01_Login.addAccountInfo(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+<h2>TC_01_Epam</h2><h3 id="m0">com.demo.test_suites.backend.TS_01_Login#addAccountInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public
+	void com.demo.test_suites.backend.TC_01_Login.addAccountInfo(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError:
+	expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at org.testng.Assert.assertTrue(Assert.java:54)
 	at com.demo.test_scripts.api.NewToken.addUserInfo(NewToken.java:89)
-	at com.demo.test_suites.backend.TS_01_Login.addAccountInfo(TS_01_Login.java:42)
+	at com.demo.test_suites.backend.TC_01_Login.addAccountInfo(TS_01_Login.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -41,13 +43,15 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.demo.test_suites.backend.TS_01_Login#newUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.test_suites.backend.TS_01_Login.newUser(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+<h3 id="m1">com.demo.test_suites.backend.TS_01_Login#newUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public
+	void com.demo.test_suites.backend.TC_01_Login.newUser(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError:
+	expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at org.testng.Assert.assertTrue(Assert.java:54)
 	at com.demo.test_scripts.api.RegisterUser.getNewUser(RegisterUser.java:87)
-	at com.demo.test_suites.backend.TS_01_Login.newUser(TS_01_Login.java:28)
+	at com.demo.test_suites.backend.TC_01_Login.newUser(TS_01_Login.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,11 +73,18 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.demo.test_suites.backend.TS_01_Login#accessToken</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.test_suites.backend.TS_01_Login.accessToken(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.demo.test_suites.backend.TS_01_Login#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.test_suites.backend.TS_01_Login.login(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.demo.test_suites.backend.TS_01_Login#userInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.test_suites.backend.TS_01_Login.userInfo(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.demo.test_suites.frontend.TS_01_Items#loadHomePage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.demo.test_suites.frontend.TS_01_Items#openItemDescription</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.demo.test_suites.frontend.TS_01_Items#searchItem</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.demo.test_suites.backend.TS_01_Login#accessToken</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public
+	void com.demo.test_suites.backend.TC_01_Login.accessToken(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.demo.test_suites.backend.TS_01_Login#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public
+	void com.demo.test_suites.backend.TC_01_Login.login(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.demo.test_suites.backend.TS_01_Login#userInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public
+	void com.demo.test_suites.backend.TC_01_Login.userInfo(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.demo.test_suites.frontend.TS_01_Items#loadHomePage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public
+    void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.demo.test_suites.frontend.TS_01_Items#openItemDescription</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public
+    void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) throws
+    java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.demo.test_suites.frontend.TS_01_Items#searchItem</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public
+    void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

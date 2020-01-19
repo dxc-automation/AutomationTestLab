@@ -6,6 +6,8 @@ D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\Register
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\GetAllPageLinks.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\web_services\HttpClientConfig.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\templates\POST.java
+D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_suites\backend\TC_01_Login.java
+D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_suites\frontend\TC_01_Items.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\FileUtility.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\config\TestNGListener.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\PageScroll.java
@@ -19,8 +21,6 @@ D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\AccessTo
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_properties\UrlPaths.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\WebDriverUtils.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\config\ReporterConfig.java
-D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_suites\frontend\TS_01_Items.java
-D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_suites\backend\TS_01_Login.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\Authenticate.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\config\ConsoleRunner.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\ElementScreenshot.java

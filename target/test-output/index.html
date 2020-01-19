@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TS_01_Amazon_Elements" class="navigator-link">
-              <span class="suite-name border-passed">TS_01_Amazon_Elements</span>
+              <span class="suite-name border-failed">TS_01_Amazon_Elements</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TS_01_Amazon_Elements" class="hide-methods failed suite-TS_01_Amazon_Elements"> (hide)</a> <!-- hide-methods failed suite-TS_01_Amazon_Elements -->
+                      <a href="#" panel-name="suite-TS_01_Amazon_Elements" class="show-methods failed suite-TS_01_Amazon_Elements"> (show)</a> <!-- show-methods failed suite-TS_01_Amazon_Elements -->
+                    </span>
+                    <div class="method-list-content failed suite-TS_01_Amazon_Elements">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TC_01_Items" class="method navigator-link" hash-for-method="addItemToCart(public void com.demo.test_suites.frontend.TC_01_Items.addItemToCart(java.lang.reflect.Method) throws...)">addItemToCart(public void com.demo.test_suites.frontend.TC_01_Items.addItemToCart(java.lang.reflect.Method) throws...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TS_01_Amazon_Elements -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +116,17 @@
                     <div class="method-list-content passed suite-TS_01_Amazon_Elements">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TS_01_Items" class="method navigator-link" hash-for-method="loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)">loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TC_01_Items" class="method navigator-link" hash-for-method="loadHomePage(public void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)">loadHomePage(public void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TS_01_Items" class="method navigator-link" hash-for-method="openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...)">openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TC_01_Items" class="method navigator-link" hash-for-method="openItemDescription(public void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) ...)">openItemDescription(public void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TS_01_Items" class="method navigator-link" hash-for-method="searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...)">searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TS_01_Amazon_Elements" title="com.demo.test_suites.frontend.TC_01_Items" class="method navigator-link" hash-for-method="searchItem(public void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws ja...)">searchItem(public void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws ja...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TS_01_Amazon_Elements -->
@@ -127,34 +141,107 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TS_01_Amazon_Elements" class="panel TS_01_Amazon_Elements">
-          <div class="suite-TS_01_Amazon_Elements-class-passed">
+          <div class="suite-TS_01_Amazon_Elements-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.demo.test_suites.frontend.TS_01_Items</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.test_suites.frontend.TC_01_Items</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)">
-                  </a> <!-- loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...) -->
+                  <a name="addItemToCart(public void com.demo.test_suites.frontend.TC_01_Items.addItemToCart(java.lang.reflect.Method) throws...)">
+                  </a> <!-- addItemToCart(public void com.demo.test_suites.frontend.TC_01_Items.addItemToCart(java.lang.reflect.Method) throws...) -->
+                  <span class="method-name">addItemToCart</span>
+                  <span class="parameters">(public void com.demo.test_suites.frontend.TC_01_Items.addItemToCart(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: Proxy element for: DefaultElementLocator &apos;By.cssSelector: div#attach-accessory-pane &gt; div&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.demo.test_scripts.ui.BasicTests.addToCart(BasicTests.java:66)
+	at com.demo.test_suites.frontend.TC_01_Items.addItemToCart(TC_01_Items.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;STATIONONE-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;11.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56620}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.117, webStorageEnabled: true}
+Session ID: ed8b5774ad693a076c3ea5bec89f3d58
+*** Element info: {Using=css selector, value=Proxy element for: DefaultElementLocator &apos;By.cssSelector: div#attach-accessory-pane &gt; div&apos;}
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 22 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TS_01_Amazon_Elements-class-failed -->
+          <div class="suite-TS_01_Amazon_Elements-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.test_suites.frontend.TC_01_Items</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loadHomePage(public void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)">
+                  </a> <!-- loadHomePage(public void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws ...) -->
                   <span class="method-name">loadHomePage</span>
-                  <span class="parameters">(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <span class="parameters">(public void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...)">
-                  </a> <!-- openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...) -->
+                  <a name="openItemDescription(public void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) ...)">
+                  </a> <!-- openItemDescription(public void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) ...) -->
                   <span class="method-name">openItemDescription</span>
-                  <span class="parameters">(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <span class="parameters">(public void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...)">
-                  </a> <!-- searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...) -->
+                  <a name="searchItem(public void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws ja...)">
+                  </a> <!-- searchItem(public void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws ja...) -->
                   <span class="method-name">searchItem</span>
-                  <span class="parameters">(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <span class="parameters">(public void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,13 +262,14 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ID_01_NewElementCheck&quot; group-by-instances=&quot;true&quot; verbose=&quot;10&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.demo.test_suites.frontend.TS_01_Items&quot;&gt;
+      &lt;class name=&quot;com.demo.test_suites.frontend.TC_01_Items&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;loadHomePage&quot;/&gt;
           &lt;include name=&quot;searchItem&quot;/&gt;
           &lt;include name=&quot;openItemDescription&quot;/&gt;
+          &lt;include name=&quot;addItemToCart&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.demo.test_suites.frontend.TS_01_Items --&gt;
+      &lt;/class&gt; &lt;!-- com.demo.test_suites.frontend.TC_01_Items --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ID_01_NewElementCheck --&gt;
 &lt;/suite&gt; &lt;!-- TS_01_Amazon_Elements --&gt;
@@ -221,24 +309,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openItemDescription')
-data.setCell(0, 2, 'com.demo.test_suites.frontend.TS_01_Items')
-data.setCell(0, 3, 5695);
+data.setCell(0, 1, 'addItemToCart')
+data.setCell(0, 2, 'com.demo.test_suites.frontend.TC_01_Items')
+data.setCell(0, 3, 30609);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchItem')
-data.setCell(1, 2, 'com.demo.test_suites.frontend.TS_01_Items')
-data.setCell(1, 3, 3893);
+data.setCell(1, 1, 'openItemDescription')
+data.setCell(1, 2, 'com.demo.test_suites.frontend.TC_01_Items')
+data.setCell(1, 3, 5411);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loadHomePage')
-data.setCell(2, 2, 'com.demo.test_suites.frontend.TS_01_Items')
-data.setCell(2, 3, 2882);
+data.setCell(2, 1, 'searchItem')
+data.setCell(2, 2, 'com.demo.test_suites.frontend.TC_01_Items')
+data.setCell(2, 3, 3925);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loadHomePage')
+data.setCell(3, 2, 'com.demo.test_suites.frontend.TC_01_Items')
+data.setCell(3, 3, 2744);
 window.suiteTableData['TS_01_Amazon_Elements']= { tableData: data, tableDiv: 'times-div-TS_01_Amazon_Elements'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-TS_01_Amazon_Elements">
               </div> <!-- times-div-TS_01_Amazon_Elements -->
             </div> <!-- times-div -->
@@ -264,58 +356,68 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.test_suites.frontend.TS_01_Items</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.demo.test_suites.frontend.TC_01_Items</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">browserConfig(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
-                <span class="method-start">3321 ms</span>
+                <span class="method-start">3153 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setEnvironmentConfiguration</span>
-                <span class="method-start">3333 ms</span>
+                <span class="method-start">3164 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">report</span>
-                <span class="method-start">3369 ms</span>
+                <span class="method-start">3170 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loadHomePage(public void com.demo.test_suites.frontend.TS_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)</span>
-                <span class="method-start">3611 ms</span>
+                <span class="method-name">loadHomePage(public void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws ...)</span>
+                <span class="method-start">3342 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport([TestResult name=loadHomePage status=SUCCESS method=TS_01_Items.loadHomePage(java.lang.reflect.Metho...)</span>
-                <span class="method-start">6494 ms</span>
+                <span class="method-name">generateReport([TestResult name=loadHomePage status=SUCCESS method=TC_01_Items.loadHomePage(java.lang.reflect.Metho...)</span>
+                <span class="method-start">6086 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">searchItem(public void com.demo.test_suites.frontend.TS_01_Items.searchItem(java.lang.reflect.Method) throws ja...)</span>
-                <span class="method-start">6499 ms</span>
+                <span class="method-name">searchItem(public void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws ja...)</span>
+                <span class="method-start">6092 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport([TestResult name=searchItem status=SUCCESS method=TS_01_Items.searchItem(java.lang.reflect.Method)[p...)</span>
-                <span class="method-start">10392 ms</span>
+                <span class="method-name">generateReport([TestResult name=searchItem status=SUCCESS method=TC_01_Items.searchItem(java.lang.reflect.Method)[p...)</span>
+                <span class="method-start">10017 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">openItemDescription(public void com.demo.test_suites.frontend.TS_01_Items.openItemDescription(java.lang.reflect.Method) ...)</span>
-                <span class="method-start">10394 ms</span>
+                <span class="method-name">openItemDescription(public void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) ...)</span>
+                <span class="method-start">10018 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport([TestResult name=openItemDescription status=SUCCESS method=TS_01_Items.openItemDescription(java.lang...)</span>
-                <span class="method-start">16089 ms</span>
+                <span class="method-name">generateReport([TestResult name=openItemDescription status=SUCCESS method=TC_01_Items.openItemDescription(java.lang...)</span>
+                <span class="method-start">15429 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addItemToCart(public void com.demo.test_suites.frontend.TC_01_Items.addItemToCart(java.lang.reflect.Method) throws...)</span>
+                <span class="method-start">15430 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=addItemToCart status=FAILURE method=TC_01_Items.addItemToCart(java.lang.reflect.Met...)</span>
+                <span class="method-start">46039 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXmlFiles</span>
-                <span class="method-start">16129 ms</span>
-              </div> <!-- configuration-suite after -->
-              <div class="configuration-suite after">
-                <span class="method-name">flushReportData</span>
-                <span class="method-start">16252 ms</span>
+                <span class="method-start">46783 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16795 ms</span>
+                <span class="method-start">46974 ms</span>
+              </div> <!-- configuration-suite after -->
+              <div class="configuration-suite after">
+                <span class="method-name">flushReportData</span>
+                <span class="method-start">47766 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

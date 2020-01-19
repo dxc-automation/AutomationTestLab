@@ -8,10 +8,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import static com.demo.config.ReporterConfig.*;
 import static com.demo.test_properties.UrlPaths.*;
 import static com.demo.utilities.user_interface.ImageCompare.*;
 
@@ -21,9 +21,13 @@ public class BasicTests extends BasicConfiguration {
     private static final Logger LOG  = LogManager.getLogger(BasicTests.class);
     private static Amazon homePage   = PageFactory.initElements(driver, Amazon.class);
 
-    private static WebElement element;
+    private static WebElement itemName;
+    private static WebDriverWait wait = new WebDriverWait(driver, 30);
 
-    public static void openHomePage(String homePageTitle) throws Exception {
+
+
+    // Reusable method for open website home page
+    public static void openHomePage(String homePageTitle) {
         driver.get(AMAZON_BASE_URL);
 
         String actualPageTitle = driver.getTitle();
@@ -31,27 +35,37 @@ public class BasicTests extends BasicConfiguration {
     }
 
 
-    public static void searchElement(String iteamSearchName, String expectedItemCatalogName) throws Exception {
+    // Reusable method that will search for a item
+    public static void searchElement(String iteamSearchName, String expectedItemCatalogName) {
         homePage.amazon_searchbox.sendKeys(iteamSearchName);
         homePage.amazon_search_submit_btn.click();
 
-        element = driver.findElement(By.partialLinkText(expectedItemCatalogName));
-        String actualItemCatalogName = element.getText();
+        itemName = driver.findElement(By.partialLinkText(expectedItemCatalogName));
+        String actualItemCatalogName = itemName.getText();
         Assert.assertEquals(actualItemCatalogName, expectedItemCatalogName);
     }
 
 
+    // Reusable method that will take a screenshot and compare it with image from data base
     public static void checkItemDescription() throws Exception {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(webDriver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").toString().equals("complete"));
 
-        element.click();
+        itemName.click();
 
         String actualImage = "Item_Details_Actual";
         String expectImage = "Item_Details_Expect";
         takeScreenshot(driver, actualImage);
 
         imageCompare(actualImage, expectImage);
+    }
+
+
+
+    public static void addToCart() {
+        homePage.amazon_add_to_cart_btn.click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(String.valueOf(homePage.amazon_side_panel))));
+
+       // wait.until(ExpectedConditions.textToBePresentInElementValue(homePage.amazon_side_panel_txt, "Added to Cart"));
     }
 }
 

@@ -3,29 +3,93 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/win/jenkins.bat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Item_Details_Actual.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Item_Details_Actual.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Screenshots/Buffer/null.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Buffer/null.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Epam.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Epam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Epam.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Epam.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Example.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/TC_001/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/extent-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_suites/frontend/TS_01_Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/test_suites/frontend/TS_01_Items.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ImageCompare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ImageCompare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TS_01_Amazon_Elements/ID_01_NewElementCheck.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TS_01_Amazon_Elements/ID_01_NewElementCheck.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TS_01_Amazon_Elements/ID_01_NewElementCheck.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TS_01_Amazon_Elements/ID_01_NewElementCheck.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.test_suites.frontend.TS_01_Items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.test_suites.frontend.TS_01_Items.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.demo.test_suites.TC_01_Epam.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.demo.test_suites.TC_01_Epam.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.demo.test_suites.TS_01_Epam.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.demo.test_suites.TS_01_Epam.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.demo.test_suites.backend.TS_01_Login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.demo.test_suites.backend.TS_01_Login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.demo.test_suites.frontend.TS_01_Items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.demo.test_suites.frontend.TS_01_Items.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_01_Freebet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_01_Freebet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.Test1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.Test1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/BasicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/BasicTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/backend/TS_01_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/backend/TC_01_Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_01_Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/Amazon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/Amazon.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/Demo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/Demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/Flyt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/Flyt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JAVA_FRAMEWORK-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/BasicConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ReporterConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/TestNGListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_properties/FilePaths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_properties/TestData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_properties/UrlPaths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/AccessToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/Authenticate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/NewToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/RegisterUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/api/UserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/templates/GET.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/templates/POST.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_scripts/ui/BasicTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_suites/backend/TS_01_Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test_suites/frontend/TS_01_Items.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/ui_mapping/Amazon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ElementScreenshot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/GetAllPageLinks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ImageCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/PageScroll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ScreenRecorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/WebDriverUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpClientConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpClientUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpURLConnectionConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/TS_01_Amazon_Elements/ID_01_NewElementCheck.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/TS_01_Amazon_Elements/ID_01_NewElementCheck.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.test_suites.frontend.TS_01_Items.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/ID_01_NewElementCheck.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/TS_01_Amazon_Elements/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +107,8 @@
       <file leaf-file-name="BasicTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/BasicTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="49" column="51" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="51" />
+            <state relative-caret-position="468">
+              <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,29 +116,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TS_01_Items.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java">
+      <file leaf-file-name="TC_01_Items.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_01_Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-end-line="53" />
+            <state relative-caret-position="618">
+              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <file leaf-file-name="Amazon.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Amazon.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="17" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flyt.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Flyt.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="475">
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -118,11 +173,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Amazon.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Amazon.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="600">
+              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assertions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -164,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenRecorderUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/GetAllLinks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/GetAllLinks.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_suites/TC_01_Fly.java" />
@@ -188,7 +251,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/Amazon.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ElementScreenshot.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/Authenticate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_properties/TestData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_suites/TC_01_Epam.java" />
@@ -204,17 +266,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/CreateNewToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/NewToken.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/config/BasicConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/BasicTests.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/TC_01_Epam.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/xml_files/Amazon.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/config/ConsoleRunner.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/Flyt.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/api/UserInfo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/extent-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml_files/Amazon.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_01_Items.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/BasicTests.java" />
       </list>
     </option>
   </component>
@@ -356,15 +420,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="test_properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -393,7 +448,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="test_suites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="test_suites" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="ui_mapping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -403,7 +477,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="user_interface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -547,6 +620,35 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="TC_01_Items" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JAVA_FRAMEWORK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.test_suites.frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.demo.test_suites.frontend" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.test_suites.frontend.TC_01_Items" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="TC_02_Gorest.getUsers" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JAVA_FRAMEWORK" />
       <extension name="coverage">
@@ -576,44 +678,15 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TS_01_Items" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="JAVA_FRAMEWORK" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo.test_suites.frontend.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.demo.test_suites.frontend" />
-      <option name="MAIN_CLASS_NAME" value="com.demo.test_suites.frontend.TS_01_Items" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
     <list>
       <item itemvalue="Maven.JAVA_FRAMEWORK []" />
       <item itemvalue="TestNG.E:/TestLabTestNG/src/main/resources/xml_files/Gorest.xml" />
       <item itemvalue="TestNG.TC_02_Gorest.getUsers" />
-      <item itemvalue="TestNG.TS_01_Items" />
+      <item itemvalue="TestNG.TC_01_Items" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TS_01_Items" />
+        <item itemvalue="TestNG.TC_01_Items" />
         <item itemvalue="TestNG.TC_02_Gorest.getUsers" />
       </list>
     </recent_temporary>
@@ -691,12 +764,12 @@
       <workItem from="1579292018759" duration="599000" />
       <workItem from="1579298382950" duration="1281000" />
       <workItem from="1579353965118" duration="599000" />
-      <workItem from="1579446819826" duration="605000" />
+      <workItem from="1579446819826" duration="5112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166678000" />
+    <option name="totallyTimeSpent" value="171185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -717,6 +790,7 @@
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49581006" visible="true" weight="0.2094522" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info id="Structure" order="1" sideWeight="0.50418997" side_tool="true" weight="0.21272494" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -730,7 +804,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -945,13 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
@@ -1039,7 +1105,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/backend/TS_01_Login.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/backend/TC_01_Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
@@ -1050,13 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="110" selection-start-line="2" selection-start-column="110" selection-end-line="2" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Amazon.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -1127,13 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -1141,20 +1193,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Amazon.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_01_Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/BasicTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="49" column="51" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="51" />
+        <state relative-caret-position="468">
+          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TS_01_Items.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-end-line="53" />
+        <state relative-caret-position="600">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
         </state>
       </provider>
     </entry>
