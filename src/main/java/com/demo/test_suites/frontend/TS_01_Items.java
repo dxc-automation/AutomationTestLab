@@ -23,8 +23,8 @@ public class TS_01_Items extends BasicConfiguration {
 
     @BeforeClass
     private void report() throws Exception {
-        String testName        = "Check new element";
-        String testDescription = "The purpose of this test is to verify that a element is added and displayed properly.";
+        String testName        = "Check New Item";
+        String testDescription = "The purpose of this test is to verify that a new item is added and displayed properly.";
         String testCategory    = "UI";
 
         startTestReport(testName, testDescription, testCategory);
@@ -58,5 +58,7 @@ public class TS_01_Items extends BasicConfiguration {
     public void openItemDescription(Method method) throws Exception {
         fileName = method.getName() + ".json";
         checkItemDescription();
+
+        test.pass("<b>[STEP 3]</b> <br> Item details page was opened successfully.");
     }
 }

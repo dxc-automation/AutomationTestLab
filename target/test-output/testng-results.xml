@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-17T10:47:33Z" name="TS_01_Amazon_Elements" finished-at="2020-01-17T10:47:46Z" duration-ms="13049">
+  <suite started-at="2020-01-17T15:06:48Z" name="TS_01_Amazon_Elements" finished-at="2020-01-17T15:07:01Z" duration-ms="12731">
     <groups>
     </groups>
-    <test started-at="2020-01-17T10:47:33Z" name="ID_01_NewElementCheck" finished-at="2020-01-17T10:47:46Z" duration-ms="13049">
+    <test started-at="2020-01-17T15:06:48Z" name="ID_01_NewElementCheck" finished-at="2020-01-17T15:07:01Z" duration-ms="12731">
       <class name="com.demo.test_suites.frontend.TS_01_Items">
-        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:29Z" name="browserConfig" finished-at="2020-01-17T10:47:33Z" duration-ms="3807" status="PASS">
+        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:45Z" name="browserConfig" finished-at="2020-01-17T15:06:48Z" duration-ms="3321" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:33Z" name="cleanReportData" finished-at="2020-01-17T10:47:33Z" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:48Z" name="cleanReportData" finished-at="2020-01-17T15:06:48Z" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:33Z" name="setEnvironmentConfiguration" finished-at="2020-01-17T10:47:33Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:48Z" name="setEnvironmentConfiguration" finished-at="2020-01-17T15:06:48Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentConfiguration -->
-        <test-method is-config="true" signature="report()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:33Z" name="report" finished-at="2020-01-17T10:47:34Z" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:48Z" name="report" finished-at="2020-01-17T15:06:48Z" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method signature="loadHomePage(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:34Z" name="loadHomePage" finished-at="2020-01-17T10:47:36Z" duration-ms="2535" status="PASS">
+        <test-method signature="loadHomePage(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:48Z" name="loadHomePage" finished-at="2020-01-17T15:06:51Z" duration-ms="2882" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadHomePage -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:36Z" name="generateReport" finished-at="2020-01-17T10:47:36Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:51Z" name="generateReport" finished-at="2020-01-17T15:06:51Z" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="searchItem(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:36Z" name="searchItem" finished-at="2020-01-17T10:47:41Z" duration-ms="4327" status="PASS">
+        <test-method signature="searchItem(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:51Z" name="searchItem" finished-at="2020-01-17T15:06:55Z" duration-ms="3893" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:41Z" name="generateReport" finished-at="2020-01-17T10:47:41Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:55Z" name="generateReport" finished-at="2020-01-17T15:06:55Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="openItemDescription(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:41Z" name="openItemDescription" finished-at="2020-01-17T10:47:46Z" duration-ms="5730" status="PASS">
+        <test-method signature="openItemDescription(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:06:55Z" name="openItemDescription" finished-at="2020-01-17T15:07:01Z" duration-ms="5695" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openItemDescription -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:46Z" name="generateReport" finished-at="2020-01-17T10:47:46Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:07:01Z" name="generateReport" finished-at="2020-01-17T15:07:01Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,15 +96,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:46Z" name="clearXmlFiles" finished-at="2020-01-17T10:47:46Z" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:07:01Z" name="clearXmlFiles" finished-at="2020-01-17T15:07:01Z" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:46Z" name="flushReportData" finished-at="2020-01-17T10:47:47Z" duration-ms="469" status="PASS">
+        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:07:01Z" name="flushReportData" finished-at="2020-01-17T15:07:01Z" duration-ms="543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T10:47:47Z" name="tearDown" finished-at="2020-01-17T10:47:48Z" depends-on-methods="com.demo.config.BasicConfiguration.clearXmlFiles" duration-ms="892" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@503ecb24]" started-at="2020-01-17T15:07:01Z" name="tearDown" finished-at="2020-01-17T15:07:02Z" depends-on-methods="com.demo.config.BasicConfiguration.clearXmlFiles" duration-ms="919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -26,6 +26,12 @@ public class ImageCompare extends BasicConfiguration {
 
     private static String textFile;
 
+    /**
+     * Used for image comparison.
+     * @param actualImage   example: String actualImage = "Item_Details_Actual";
+     * @param expectedImage example: String actualImage = "Item_Details_Expected";
+     * @throws IOException
+     */
     public static ImageCompare imageCompare(String actualImage, String expectedImage) throws IOException {
         long start = System.currentTimeMillis();
         int q = 0;
@@ -94,41 +100,41 @@ public class ImageCompare extends BasicConfiguration {
 
         if (x == 100) {
             test.pass("<b>Image comparison successfully completed</b>"
-                    + "<br>"
-                    + "Image comparison success rate    = " + x + "%"
-                    + "<br>"
-                    + "Number of  pixels gets varied    = " + q
-                    + "<br>"
-                    + "Time(ms) for visualization check = " + (stop - start)
-                    + "<br>"
-                    + "Number of pixels gets matched    = " + p
-                    + "</br>",
+                            + "<br>"
+                            + "Image comparison success rate &nbsp;&nbsp; = &nbsp;" + x + "%"
+                            + "<br>"
+                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp; = &nbsp;" + q
+                            + "<br>"
+                            + "Time(ms) for visualization check = " + (stop - start)
+                            + "<br>"
+                            + "Number of pixels gets matched &nbsp; = &nbsp;" + p
+                            + "</br>",
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
         if (x > 98 && x < 100) {
             test.warning("<b>Results from comparison needs to be checked</b>"
-                    + "<br>"
-                    + "Image comparison success rate    = " + x + "%"
-                    + "<br>"
-                    + "Number of  pixels gets varied    = " + q
-                    + "<br>"
-                    + "Time(ms) for visualization check = " + (stop - start)
-                    + "<br>"
-                    + "Number of pixels gets matched    = " + p
-                    + "<br>",
+                            + "<br>"
+                            + "Image comparison success rate &nbsp;&nbsp; = &nbsp;" + x + "%"
+                            + "<br>"
+                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp; = &nbsp;" + q
+                            + "<br>"
+                            + "Time(ms) for visualization check = " + (stop - start)
+                            + "<br>"
+                            + "Number of pixels gets matched &nbsp; = &nbsp;" + p
+                            + "</br>",
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
         if (x < 98) {
             test.fail("<b>Compare actual screenshot with screenshot from the data base has failed</b>"
-                    + "<br>"
-                    + "Image comparison success rate    = " + x + "%"
-                    + "<br>"
-                    + "Number of  pixels gets varied    = " + q
-                    + "<br>"
-                    + "Time(ms) for visualization check = " + (stop - start)
-                    + "<br>"
-                    + "Number of pixels gets matched    = " + p
-                    + "<br>",
+                            + "<br>"
+                            + "Image comparison success rate &nbsp;&nbsp; = &nbsp;" + x + "%"
+                            + "<br>"
+                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp; = &nbsp;" + q
+                            + "<br>"
+                            + "Time(ms) for visualization check = " + (stop - start)
+                            + "<br>"
+                            + "Number of pixels gets matched &nbsp; = &nbsp;" + p
+                            + "</br>",
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
         return null;

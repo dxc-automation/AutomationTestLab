@@ -27,7 +27,7 @@ public class UserInfo {
 
     private static void report() throws Exception {
         String testName        = "Get User Info";
-        String testDescription = "The purpose of this test is to verify that correct user details are received.";
+        String testDescription = "The purpose of this test is to verify that the correct user details are received.";
         String testCategory    = "API";
 
         startTestReport(testName, testDescription, testCategory);
