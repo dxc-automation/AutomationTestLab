@@ -83,11 +83,24 @@ public class BasicConfiguration {
      */
         @BeforeSuite
         public void cleanReportData() {
+            File reportJsonDir = new File(report_json_folder);
+            File reportFailedDir = new File(screenshots_failed_folder);
+
             try {
-            cleanDirectory(new File(report_json_folder));
-            cleanDirectory(new File(screenshots_failed_folder));
-            cleanDirectory(new File(screenshots_actual_folder));
-            cleanDirectory(new File(screenshots_buffer_folder));
+                if (! reportJsonDir.exists()) {
+                    reportJsonDir.mkdir();
+                } else {
+                    cleanDirectory(new File(report_json_folder));
+                }
+
+                if (! reportFailedDir.exists()) {
+                    reportFailedDir.mkdir();
+                } else {
+                    cleanDirectory(new File(screenshots_failed_folder));
+                }
+
+                cleanDirectory(new File(screenshots_actual_folder));
+                cleanDirectory(new File(screenshots_buffer_folder));
         } catch (Exception e) {
                 e.printStackTrace();
             }

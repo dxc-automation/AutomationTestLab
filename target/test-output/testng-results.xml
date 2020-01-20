@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-20T15:15:03Z" name="TS_01_Amazon_Elements" finished-at="2020-01-20T15:15:06Z" duration-ms="3290">
+  <suite started-at="2020-01-20T19:28:56Z" name="TS_01_Amazon_Elements" finished-at="2020-01-20T19:29:04Z" duration-ms="8107">
     <groups>
     </groups>
-    <test started-at="2020-01-20T15:15:03Z" name="ID_01_NewElementCheck" finished-at="2020-01-20T15:15:06Z" duration-ms="3290">
+    <test started-at="2020-01-20T19:28:56Z" name="ID_01_NewElementCheck" finished-at="2020-01-20T19:29:04Z" duration-ms="8107">
       <class name="com.demo.test_suites.frontend.TC_02_CarCheck">
-        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:00Z" name="browserConfig" finished-at="2020-01-20T15:15:03Z" duration-ms="3203" status="PASS">
+        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:28:52Z" name="browserConfig" finished-at="2020-01-20T19:28:56Z" duration-ms="4180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:03Z" name="cleanReportData" finished-at="2020-01-20T15:15:03Z" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:28:56Z" name="cleanReportData" finished-at="2020-01-20T19:28:56Z" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:03Z" name="setEnvironmentConfiguration" finished-at="2020-01-20T15:15:03Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:28:56Z" name="setEnvironmentConfiguration" finished-at="2020-01-20T19:28:56Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentConfiguration -->
-        <test-method is-config="true" signature="report()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:03Z" name="report" finished-at="2020-01-20T15:15:03Z" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:28:56Z" name="report" finished-at="2020-01-20T19:28:57Z" duration-ms="396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method signature="homepage(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:03Z" name="homepage" finished-at="2020-01-20T15:15:05Z" duration-ms="1674" status="PASS">
+        <test-method signature="homepage(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:28:57Z" name="homepage" finished-at="2020-01-20T19:29:00Z" duration-ms="2865" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepage -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:05Z" name="generateReport" finished-at="2020-01-20T15:15:05Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:29:00Z" name="generateReport" finished-at="2020-01-20T19:29:00Z" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="search(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:05Z" name="search" finished-at="2020-01-20T15:15:06Z" duration-ms="1396" status="PASS">
+        <test-method signature="search(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:29:00Z" name="search" finished-at="2020-01-20T19:29:04Z" duration-ms="4774" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:06Z" name="generateReport" finished-at="2020-01-20T15:15:06Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:29:04Z" name="generateReport" finished-at="2020-01-20T19:29:04Z" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,15 +74,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:06Z" name="clearXmlFiles" finished-at="2020-01-20T15:15:07Z" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:29:04Z" name="clearXmlFiles" finished-at="2020-01-20T19:29:04Z" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:07Z" name="flushReportData" finished-at="2020-01-20T15:15:07Z" duration-ms="488" status="PASS">
+        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:29:04Z" name="flushReportData" finished-at="2020-01-20T19:29:06Z" duration-ms="1425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T15:15:07Z" name="tearDown" finished-at="2020-01-20T15:15:08Z" depends-on-methods="com.demo.config.BasicConfiguration.clearXmlFiles" duration-ms="726" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.frontend.TC_02_CarCheck@403f0a22]" started-at="2020-01-20T19:29:06Z" name="tearDown" finished-at="2020-01-20T19:29:07Z" depends-on-methods="com.demo.config.BasicConfiguration.clearXmlFiles" duration-ms="1383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
