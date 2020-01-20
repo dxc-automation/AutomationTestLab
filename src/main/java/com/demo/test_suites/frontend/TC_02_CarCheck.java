@@ -18,7 +18,7 @@ public class TC_02_CarCheck extends BasicConfiguration {
     @BeforeClass
     private void report() throws Exception {
         String testName        = "Check Search Functionality";
-        String testDescription = "The purpose of this test is to verify that a new item is added and displayed properly.";
+        String testDescription = "The purpose of this test is to verify that the search functionality is working properly and the car details are displayed correct.";
         String testCategory    = "UI";
 
         startTestReport(testName, testDescription, testCategory);
