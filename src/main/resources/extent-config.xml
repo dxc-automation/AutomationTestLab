@@ -11,7 +11,7 @@
 
     <!-- protocol for script and stylesheets -->
     <!-- defaults to https -->
-    <protocol>http</protocol>
+    <protocol>https</protocol>
 
     <!-- title of the document -->
     <documentTitle>MS2 Automation</documentTitle>
