@@ -106,6 +106,7 @@ public class BasicConfiguration {
 
         AMAZON_BASE_URL = properties.getProperty("amazon_url");
         FLY_HOST        = properties.getProperty("fly_host");
+        NEWS_BASIC_URL  = properties.getProperty("news_url");
         inputStream.close();
     }
 

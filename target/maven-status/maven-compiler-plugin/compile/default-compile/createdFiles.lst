@@ -2,11 +2,13 @@ com\demo\test_properties\UrlPaths.class
 com\demo\utilities\user_interface\WebDriverUtils.class
 com\demo\test_scripts\api\Authenticate.class
 com\demo\test_properties\FilePaths.class
+com\demo\ui_mapping\News.class
 com\demo\utilities\FileUtility.class
 com\demo\test_scripts\templates\POST.class
 com\demo\test_scripts\api\RegisterUser.class
 com\demo\utilities\user_interface\Assertions.class
 com\demo\test_scripts\api\UserInfo.class
+com\demo\test_scripts\ui\CarTest.class
 com\demo\utilities\user_interface\PageScroll.class
 com\demo\utilities\web_services\HttpClientUtils.class
 com\demo\test_scripts\ui\BasicTests.class
@@ -17,6 +19,7 @@ com\demo\utilities\user_interface\GetAllPageLinks.class
 com\demo\ui_mapping\Amazon.class
 com\demo\utilities\web_services\HttpClientConfig.class
 com\demo\config\TestNGListener.class
+com\demo\test_suites\frontend\TC_02_CarCheck.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
 com\demo\config\ReporterConfig.class
 com\demo\utilities\user_interface\ScreenRecorder.class

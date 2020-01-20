@@ -24,10 +24,14 @@ public class Amazon {
     @FindBy(how = How.CSS, using = "input#add-to-cart-button")
     public WebElement amazon_add_to_cart_btn;
 
-    @FindBy(how = How.CSS, using = "div#attach-accessory-pane > div")
+
+
+    //  * * * *    S I D E   P A N E L
+
+    @FindBy(how = How.CSS, using = "div#attach-accessory-pane.a-section")
     public WebElement amazon_side_panel;
 
-    @FindBy(how = How.CSS, using = "div#attachDisplayAddBaseAlert h4")
-    public WebElement amazon_side_panel_txt;
+    @FindBy(how = How.CSS, using = "form#attach-view-cart-button-form")
+    public WebElement amazon_side_panel_cart_btn;
 }
 

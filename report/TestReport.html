@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -54,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 19, 2020 09:35:14 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 20, 2020 05:15:03 PM</span>
 				</a>
 			</li>
 			<li>
@@ -80,7 +79,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -144,7 +143,7 @@
 					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +155,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -174,17 +173,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  warning' status='warning' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'><b>Check New Item</b></span>
-						<span class='test-time'>Jan 19, 2020 09:35:15 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'><b>Check Search Functionality</b></span>
+						<span class='test-time'>Jan 20, 2020 05:15:03 PM</span>
+						<span class='test-status right warning'>warning</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 19, 2020 09:35:15 PM</span>
-	<span class='label end-time'>Jan 19, 2020 09:35:58 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 43s+273ms</span>
+	<span class='label start-time'>Jan 20, 2020 05:15:03 PM</span>
+	<span class='label end-time'>Jan 20, 2020 05:15:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+85ms</span>
 </div>
 	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that a new item is added and displayed properly.</i></p></pre> </div>
 	<div class='test-attributes'>
@@ -204,88 +203,18 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:35:17 PM</td>
-					<td class='step-details'><b>[STEP 1]</b> <br> Home page has been opened successfully.</td>
+					<td class='timestamp'>5:15:05 PM</td>
+					<td class='step-details'>[STEP 1] Home page was opened successfully.</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>5:15:06 PM</td>
+					<td class='step-details'><b>Results from comparison needs to be checked</b><br>Image comparison success rate &nbsp;&nbsp;             = &nbsp;99.63372%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;6252<br>Time(ms) for visualization check                       = 819<br>Number of pixels gets matched &nbsp;                   = &nbsp;1700628</br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Car_Search_Actual.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Car_Search_Actual.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Car_Search_Actual.png'></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:35:21 PM</td>
-					<td class='step-details'><b>[STEP 2]</b> <br> Search item completed successfully.</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:35:27 PM</td>
-					<td class='step-details'><b>Compare actual screenshot with screenshot from the data base has failed</b><br>Image comparison success rate &nbsp;&nbsp; = &nbsp;95.96767%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp; = &nbsp;68827<br>Time(ms) for visualization check = 1242<br>Number of pixels gets matched &nbsp; = &nbsp;1638053</br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png'></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:35:27 PM</td>
-					<td class='step-details'><b>[STEP 3]</b> <br> Item details page was opened successfully.</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:35:58 PM</td>
-					<td class='step-details'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: Proxy element for: DefaultElementLocator 'By.cssSelector: div#attach-accessory-pane > div' (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.demo.test_scripts.ui.BasicTests.addToCart(BasicTests.java:66)
-	at com.demo.test_suites.frontend.TC_01_Items.addItemToCart(TC_01_Items.java:67)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=79.0.3945.117)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'STATIONONE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56620}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.117, webStorageEnabled: true}
-Session ID: ed8b5774ad693a076c3ea5bec89f3d58
-*** Element info: {Using=css selector, value=Proxy element for: DefaultElementLocator 'By.cssSelector: div#attach-accessory-pane > div'}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 22 more
-</textarea></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:35:58 PM</td>
-					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TC_01_Items.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TC_01_Items.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TC_01_Items.png'></td>
+					<td class='timestamp'>5:15:06 PM</td>
+					<td class='step-details'>[STEP 2] Search for a car has been completed successfully.</td>
 				</tr>
 			</tbody>
 		</table>
@@ -346,14 +275,14 @@ Session ID: ed8b5774ad693a076c3ea5bec89f3d58
 					<div class='category-heading'>
 						<span class='category-name'>UI</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label others'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
+							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -367,9 +296,9 @@ Session ID: ed8b5774ad693a076c3ea5bec89f3d58
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 19, 2020 09:35:15 PM</td>
-										<td class='linked' test-id='1'><b>Check New Item</b></td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Jan 20, 2020 05:15:03 PM</td>
+										<td class='linked' test-id='1'><b>Check Search Functionality</b></td>
+										<td><span class='test-status warning'>warning</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -388,122 +317,6 @@ Session ID: ed8b5774ad693a076c3ea5bec89f3d58
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Jan 19, 2020 09:35:15 PM</td>
-                                                        <td class='linked' test-id='1'><b>Check New Item</b></td>
-                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: Proxy element for: DefaultElementLocator 'By.cssSelector: div#attach-accessory-pane > div' (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.demo.test_scripts.ui.BasicTests.addToCart(BasicTests.java:66)
-	at com.demo.test_suites.frontend.TC_01_Items.addItemToCart(TC_01_Items.java:67)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=79.0.3945.117)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'STATIONONE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56620}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.117, webStorageEnabled: true}
-Session ID: ed8b5774ad693a076c3ea5bec89f3d58
-*** Element info: {Using=css selector, value=Proxy element for: DefaultElementLocator 'By.cssSelector: div#attach-accessory-pane > div'}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 22 more
-</textarea></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -519,25 +332,25 @@ Session ID: ed8b5774ad693a076c3ea5bec89f3d58
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 19, 2020 09:35:14 PM</div>
+					<div class='panel-lead'>Jan 20, 2020 05:15:03 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 19, 2020 09:35:59 PM</div>
+			 		<div class='panel-lead'>Jan 20, 2020 05:15:07 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 44s+592ms</div>
+					<div class='panel-lead'>0h 0m 3s+395ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -587,8 +400,8 @@ Session ID: ed8b5774ad693a076c3ea5bec89f3d58
 						<tr>
 							<td>UI</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
+							<td>1</td>
 							<td>
 									0%
 							</td>
@@ -607,21 +420,21 @@ Session ID: ed8b5774ad693a076c3ea5bec89f3d58
 		<script>
 			var statusGroup = {
 				passParent: 0,
-				failParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
-				warningParent: 0,
+				warningParent: 1,
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 3,
-				failChild: 3,
+				passChild: 2,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
-				warningChild: 0,
+				warningChild: 1,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 3,
+				exceptionsChild: 1,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

@@ -14,7 +14,7 @@ import org.testng.Assert;
 
 import static com.demo.test_properties.UrlPaths.*;
 import static com.demo.utilities.user_interface.ImageCompare.*;
-
+import static com.demo.utilities.user_interface.Assertions.*;
 
 public class BasicTests extends BasicConfiguration {
 
@@ -22,6 +22,8 @@ public class BasicTests extends BasicConfiguration {
     private static Amazon homePage   = PageFactory.initElements(driver, Amazon.class);
 
     private static WebElement itemName;
+    private static WebElement addedToCart;
+    private static String     elementText;
     private static WebDriverWait wait = new WebDriverWait(driver, 30);
 
 
@@ -61,11 +63,21 @@ public class BasicTests extends BasicConfiguration {
 
 
 
-    public static void addToCart() {
+    public static String addToCart() {
         homePage.amazon_add_to_cart_btn.click();
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(String.valueOf(homePage.amazon_side_panel))));
+        addedToCart = driver.findElement(By.cssSelector("h1#a-size-medium.a-text-bold"));
+        try {
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(String.valueOf(homePage.amazon_side_panel))));
+            homePage.amazon_side_panel_cart_btn.click();
 
-       // wait.until(ExpectedConditions.textToBePresentInElementValue(homePage.amazon_side_panel_txt, "Added to Cart"));
+            elementText = addedToCart.getText();
+            return elementText;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("h1#a-size-medium.a-text-bold")));
+        elementText = addedToCart.getText();
+        return elementText;
     }
 }
 

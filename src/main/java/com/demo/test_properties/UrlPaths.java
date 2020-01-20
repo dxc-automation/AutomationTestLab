@@ -6,6 +6,10 @@ public class UrlPaths {
     public static String AMAZON_BASE_URL;
 
 
+    //  * * * *    N E W S
+    public static String NEWS_BASIC_URL;
+
+
     //  * * * *    F L Y T
     public static String FLY_HOST;
     public final static String BOOTSTRAP     = "/v1/apps/bootstrap";

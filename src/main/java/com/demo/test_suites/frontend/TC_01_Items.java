@@ -56,14 +56,14 @@ public class TC_01_Items extends BasicConfiguration {
     public void openItemDescription(Method method) throws Exception {
         fileName = method.getName() + ".json";
         checkItemDescription();
-
         test.pass("<b>[STEP 3]</b> <br> Item details page was opened successfully.");
     }
 
 
     @Test
-    public void addItemToCart(Method method) throws Exception {
+    public void addItemToCart(Method method) {
         fileName = method.getName() + ".json";
         addToCart();
+        test.pass("<b>[STEP 4]</b> <br> Item was added to cart successfully.");
     }
 }

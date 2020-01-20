@@ -17,13 +17,16 @@ D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\UserInfo
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_properties\FilePaths.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\Assertions.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_properties\TestData.java
+D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\ui\CarTest.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\AccessToken.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_properties\UrlPaths.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\WebDriverUtils.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\config\ReporterConfig.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\Authenticate.java
+D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_suites\frontend\TC_02_CarCheck.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\config\ConsoleRunner.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\ElementScreenshot.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\utilities\web_services\HttpClientUtils.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\templates\GET.java
+D:\Frameworks\AutomationTestLab\src\main\java\com\demo\ui_mapping\News.java
 D:\Frameworks\AutomationTestLab\src\main\java\com\demo\test_scripts\api\NewToken.java

@@ -101,39 +101,39 @@ public class ImageCompare extends BasicConfiguration {
         if (x == 100) {
             test.pass("<b>Image comparison successfully completed</b>"
                             + "<br>"
-                            + "Image comparison success rate &nbsp;&nbsp; = &nbsp;" + x + "%"
+                            + "Image comparison success rate &nbsp;&nbsp;             = &nbsp;" + x + "%"
                             + "<br>"
-                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp; = &nbsp;" + q
+                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;" + q
                             + "<br>"
-                            + "Time(ms) for visualization check = " + (stop - start)
+                            + "Time(ms) for visualization check                       = " + (stop - start)
                             + "<br>"
-                            + "Number of pixels gets matched &nbsp; = &nbsp;" + p
+                            + "Number of pixels gets matched &nbsp;                   = &nbsp;" + p
                             + "</br>",
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
         if (x > 98 && x < 100) {
             test.warning("<b>Results from comparison needs to be checked</b>"
                             + "<br>"
-                            + "Image comparison success rate &nbsp;&nbsp; = &nbsp;" + x + "%"
+                            + "Image comparison success rate &nbsp;&nbsp;             = &nbsp;" + x + "%"
                             + "<br>"
-                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp; = &nbsp;" + q
+                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;" + q
                             + "<br>"
-                            + "Time(ms) for visualization check = " + (stop - start)
+                            + "Time(ms) for visualization check                       = " + (stop - start)
                             + "<br>"
-                            + "Number of pixels gets matched &nbsp; = &nbsp;" + p
+                            + "Number of pixels gets matched &nbsp;                   = &nbsp;" + p
                             + "</br>",
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
         if (x < 98) {
             test.fail("<b>Compare actual screenshot with screenshot from the data base has failed</b>"
                             + "<br>"
-                            + "Image comparison success rate &nbsp;&nbsp; = &nbsp;" + x + "%"
+                            + "Image comparison success rate &nbsp;&nbsp;             = &nbsp;" + x + "%"
                             + "<br>"
-                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp; = &nbsp;" + q
+                            + "Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;" + q
                             + "<br>"
-                            + "Time(ms) for visualization check = " + (stop - start)
+                            + "Time(ms) for visualization check                       = " + (stop - start)
                             + "<br>"
-                            + "Number of pixels gets matched &nbsp; = &nbsp;" + p
+                            + "Number of pixels gets matched &nbsp;                   = &nbsp;" + p
                             + "</br>",
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
         }
