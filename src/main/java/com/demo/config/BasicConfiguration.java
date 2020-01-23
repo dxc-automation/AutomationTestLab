@@ -22,6 +22,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -57,8 +58,9 @@ import static org.apache.commons.io.FileUtils.cleanDirectory;
 
 public class BasicConfiguration {
 
-    public static WebDriver driver;
-    public static File      screenshotFile;
+    public static WebDriver     driver;
+    public static WebDriverWait wait;
+    public static File          screenshotFile;
 
 
     static final Logger LOG = LogManager.getLogger(BasicConfiguration.class);

@@ -14,11 +14,10 @@ import org.testng.Assert;
 
 import static com.demo.test_properties.UrlPaths.*;
 import static com.demo.utilities.user_interface.ImageCompare.*;
-import static com.demo.utilities.user_interface.Assertions.*;
 
-public class BasicTests extends BasicConfiguration {
+public class AmazonTest extends BasicConfiguration {
 
-    private static final Logger LOG  = LogManager.getLogger(BasicTests.class);
+    private static final Logger LOG  = LogManager.getLogger(AmazonTest.class);
     private static Amazon homePage   = PageFactory.initElements(driver, Amazon.class);
 
     private static WebElement itemName;
@@ -27,11 +26,9 @@ public class BasicTests extends BasicConfiguration {
     private static WebDriverWait wait = new WebDriverWait(driver, 30);
 
 
-
     // Reusable method for open website home page
     public static void openHomePage(String homePageTitle) {
         driver.get(AMAZON_BASE_URL);
-
         String actualPageTitle = driver.getTitle();
         Assert.assertEquals(homePageTitle, actualPageTitle);
     }

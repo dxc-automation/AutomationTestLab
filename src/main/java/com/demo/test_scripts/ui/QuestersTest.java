@@ -18,7 +18,7 @@ import static com.demo.test_properties.UrlPaths.*;
 import static com.demo.utilities.user_interface.ImageCompare.imageCompare;
 
 
-public class CarTest extends BasicConfiguration {
+public class QuestersTest extends BasicConfiguration {
 
     private static News page   = PageFactory.initElements(driver, News.class);
 

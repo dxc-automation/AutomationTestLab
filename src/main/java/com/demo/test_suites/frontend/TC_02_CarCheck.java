@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
 import static com.demo.test_properties.TestData.fileName;
-import static com.demo.test_scripts.ui.CarTest.*;
+import static com.demo.test_scripts.ui.QuestersTest.*;
 
 public class TC_02_CarCheck extends BasicConfiguration {
 

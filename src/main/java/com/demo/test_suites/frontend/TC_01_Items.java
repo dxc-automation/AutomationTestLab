@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
 import static com.demo.test_properties.TestData.fileName;
-import static com.demo.test_scripts.ui.BasicTests.*;
+import static com.demo.test_scripts.ui.AmazonTest.*;
 
 
 public class TC_01_Items extends BasicConfiguration {
