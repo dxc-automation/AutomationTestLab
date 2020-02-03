@@ -1,6 +1,6 @@
 package com.demo.utilities.web_services;
 
-import com.demo.config.BasicConfiguration;
+import com.demo.config.BasicTestConfig;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.config.RequestConfig;
@@ -13,7 +13,7 @@ import java.io.File;
 import java.net.URI;
 
 
-public class HttpClientConfig extends BasicConfiguration {
+public class HttpClientConfig extends BasicTestConfig {
 
     public static  int          responseCode;
     public static  String       responseBody;

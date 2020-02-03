@@ -1,7 +1,6 @@
 package com.demo.utilities.user_interface;
 
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.demo.config.BasicConfiguration;
+import com.demo.config.BasicTestConfig;
 import com.demo.test_properties.FilePaths;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -11,16 +10,10 @@ import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-
-import static com.demo.config.ReporterConfig.test;
 
 
-public class ElementScreenshot extends BasicConfiguration {
+public class ElementScreenshot extends BasicTestConfig {
 
     private static String textFile;
 

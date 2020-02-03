@@ -1,11 +1,6 @@
 package com.demo.config;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.demo.test_properties.FilePaths;
-import com.demo.test_properties.TestData;
-import com.demo.utilities.web_services.HttpClientConfig;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -36,7 +31,6 @@ import static com.demo.config.ConsoleRunner.xmlFile;
 import static com.demo.config.ReporterConfig.*;
 import static com.demo.test_properties.FilePaths.*;
 import static com.demo.test_properties.UrlPaths.*;
-import static com.demo.test_properties.TestData.*;
 
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 import static org.apache.commons.io.FileUtils.cleanDirectory;
@@ -56,14 +50,14 @@ import static org.apache.commons.io.FileUtils.cleanDirectory;
  */
 
 
-public class BasicConfiguration {
+public class BasicTestConfig {
 
     public static WebDriver     driver;
     public static WebDriverWait wait;
     public static File          screenshotFile;
 
 
-    static final Logger LOG = LogManager.getLogger(BasicConfiguration.class);
+    static final Logger LOG = LogManager.getLogger(BasicTestConfig.class);
 
     /**
      * Used for screenshot generating

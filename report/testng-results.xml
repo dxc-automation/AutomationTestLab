@@ -210,7 +210,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:46:04Z" name="tearDown" finished-at="2020-01-17T10:46:05Z" depends-on-methods="com.demo.config.BasicConfiguration.clearXmlFiles" duration-ms="792" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:46:04Z" name="tearDown" finished-at="2020-01-17T10:46:05Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" duration-ms="792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -31,7 +31,7 @@ at java.lang.Thread.run(Unknown Source)
   <testcase name="report" time="0.397" classname="com.test_suites.examples.TC_02_Example_HttpClient.PayPal.ID_02_UserInfo">
     <error type="java.lang.NullPointerException">
         <![CDATA[java.lang.NullPointerException
-at com.demo.config.BasicConfiguration.report(BasicSetup.java:182)
+at com.demo.config.BasicTestConfig.report(BasicSetup.java:182)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

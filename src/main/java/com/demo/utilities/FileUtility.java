@@ -1,7 +1,6 @@
 package com.demo.utilities;
 
-import com.demo.config.BasicConfiguration;
-import com.demo.test_properties.FilePaths;
+import com.demo.config.BasicTestConfig;
 import com.google.gson.*;
 import okhttp3.MediaType;
 import org.json.simple.parser.JSONParser;
@@ -15,7 +14,7 @@ import static com.demo.test_properties.FilePaths.report_json_folder;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 
-public class FileUtility extends BasicConfiguration {
+public class FileUtility extends BasicTestConfig {
 
     public static final JsonParser parser     = new JsonParser();
     public static final JSONParser jsonParser = new JSONParser();

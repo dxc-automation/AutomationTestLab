@@ -1,6 +1,6 @@
 package com.demo.utilities.user_interface;
 
-import com.demo.config.BasicConfiguration;
+import com.demo.config.BasicTestConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,7 +14,7 @@ import static com.demo.test_properties.FilePaths.video_files;
 import static org.monte.media.VideoFormatKeys.*;
 
 
-public class ScreenRecorder extends BasicConfiguration {
+public class ScreenRecorder extends BasicTestConfig {
 
     private static final Logger LOG = LogManager.getLogger(ScreenRecorder.class);
     private static org.monte.screenrecorder.ScreenRecorder screenRecorder;

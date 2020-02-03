@@ -3,13 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/BasicTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/QuestersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/TC_001/TC_01_Epam.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/TC_001/TC_01_Epam.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_01_Example.ID_04_BrowseQuotes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_01_Example.ID_04_BrowseQuotes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_01_Example_URLConnection.ID_04_BrowseQuotes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_01_Example_URLConnection.ID_04_BrowseQuotes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_02_Example_HttpClient.PayPal.ID_02_UserInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.TC_02_Example_HttpClient.PayPal.ID_02_UserInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/junitreports/TEST-com.test.Test1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/junitreports/TEST-com.test.Test1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/old/TC_001/methods-not-run.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/report/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/Constructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/QuestersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/QuestersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/backend/TC_01_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/backend/TC_01_Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_01_Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_01_Items.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_02_CarCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_02_CarCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/extent-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ElementScreenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ElementScreenshot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/GetAllPageLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/GetAllPageLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenRecorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenRecorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/WebDriverUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +45,7 @@
       <file leaf-file-name="AmazonTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="300">
               <caret line="25" column="56" selection-start-line="25" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,22 +57,11 @@
       <file leaf-file-name="Constructor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/Constructor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+            <state relative-caret-position="318">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TC_01_Items.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_suites/frontend/TC_01_Items.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="38" column="44" selection-start-line="38" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -88,15 +92,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -195,9 +190,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/ui_mapping/Amazon.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonHomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/ConstructorBasic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/Constructor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/BasicTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/Constructor.java" />
       </list>
     </option>
   </component>
@@ -280,7 +275,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -416,7 +411,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -754,11 +749,12 @@
       <workItem from="1579726694287" duration="599000" />
       <workItem from="1579734878531" duration="1144000" />
       <workItem from="1579790931966" duration="3086000" />
+      <workItem from="1580761019777" duration="636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194081000" />
+    <option name="totallyTimeSpent" value="194717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,7 +782,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286052" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49408984" visible="true" weight="0.23200859" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49408984" visible="true" weight="0.23523094" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.50687623" side_tool="true" weight="0.21589689" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1116,7 +1112,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
@@ -1154,28 +1150,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/ConstructorBasic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/ConstructorBasic.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonHomePage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/AmazonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="300">
           <caret line="25" column="56" selection-start-line="25" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1185,12 +1164,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test_scripts/ui/Constructor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="318">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
           </folding>
         </state>
       </provider>

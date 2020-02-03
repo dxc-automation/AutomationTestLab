@@ -1,6 +1,6 @@
 package com.demo.test_suites.frontend;
 
-import com.demo.config.BasicConfiguration;
+import com.demo.config.BasicTestConfig;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,7 +12,7 @@ import static com.demo.config.ReporterConfig.test;
 import static com.demo.test_properties.TestData.fileName;
 import static com.demo.test_scripts.ui.QuestersTest.*;
 
-public class TC_02_CarCheck extends BasicConfiguration {
+public class TC_02_CarCheck extends BasicTestConfig {
 
 
     @BeforeClass

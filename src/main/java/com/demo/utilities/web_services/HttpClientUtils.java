@@ -1,7 +1,6 @@
 package com.demo.utilities.web_services;
 
-import com.demo.config.BasicConfiguration;
-import com.demo.utilities.FileUtility;
+import com.demo.config.BasicTestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -16,7 +15,7 @@ import static com.demo.utilities.FileUtility.getFormattedJson;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 
-public class HttpClientUtils extends BasicConfiguration {
+public class HttpClientUtils extends BasicTestConfig {
 
 
     public static HttpGet get(URI url) throws Exception {

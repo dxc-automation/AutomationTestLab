@@ -16,7 +16,7 @@ System info: host: 'BUL0000566.local', ip: 'fe80:0:0:0:10fe:824b:dc59:e547%en0',
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/qt/qkf6d8qs7ml...}, goog:chromeOptions: {debuggerAddress: localhost:53628}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
 Session ID: 864bd73db8e60b8eda7bc494b9b47522
-at com.demo.config.BasicConfiguration.report(BasicSetup.java:217)
+at com.demo.config.BasicTestConfig.report(BasicSetup.java:217)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

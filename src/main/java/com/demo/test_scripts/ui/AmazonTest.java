@@ -1,6 +1,6 @@
 package com.demo.test_scripts.ui;
 
-import com.demo.config.BasicConfiguration;
+import com.demo.config.BasicTestConfig;
 import com.demo.ui_mapping.Amazon;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,7 +15,7 @@ import org.testng.Assert;
 import static com.demo.test_properties.UrlPaths.*;
 import static com.demo.utilities.user_interface.ImageCompare.*;
 
-public class AmazonTest extends BasicConfiguration {
+public class AmazonTest extends BasicTestConfig {
 
     private static final Logger LOG  = LogManager.getLogger(AmazonTest.class);
     private static Amazon homePage   = PageFactory.initElements(driver, Amazon.class);

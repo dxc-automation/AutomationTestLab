@@ -71,22 +71,22 @@ at java.base/java.lang.Thread.run(Thread.java:834)
   <testcase classname="com.demo.test_suites.frontend.TC_01_Items" name="loadHomePage" time="2.616"/>
   <testcase classname="com.demo.test_suites.frontend.TC_01_Items" name="searchItem" time="5.094"/>
   <testcase classname="com.demo.test_suites.frontend.TC_01_Items" name="openItemDescription" time="7.446"/>
-  <testcase classname="com.demo.config.BasicConfiguration" name="@BeforeSuite browserConfig" time="0.0">
+  <testcase classname="com.demo.config.BasicTestConfig" name="@BeforeSuite browserConfig" time="0.0">
     <ignored/>
   </testcase> <!-- @BeforeSuite browserConfig -->
-  <testcase classname="com.demo.config.BasicConfiguration" name="@AfterSuite flushReportData" time="0.0">
+  <testcase classname="com.demo.config.BasicTestConfig" name="@AfterSuite flushReportData" time="0.0">
     <ignored/>
   </testcase> <!-- @AfterSuite flushReportData -->
-  <testcase classname="com.demo.config.BasicConfiguration" name="@BeforeSuite cleanReportData" time="0.0">
+  <testcase classname="com.demo.config.BasicTestConfig" name="@BeforeSuite cleanReportData" time="0.0">
     <ignored/>
   </testcase> <!-- @BeforeSuite cleanReportData -->
-  <testcase classname="com.demo.config.BasicConfiguration" name="@AfterSuite tearDown" time="0.0">
+  <testcase classname="com.demo.config.BasicTestConfig" name="@AfterSuite tearDown" time="0.0">
     <ignored/>
   </testcase> <!-- @AfterSuite tearDown -->
-  <testcase classname="com.demo.config.BasicConfiguration" name="@BeforeSuite setEnvironmentConfiguration" time="0.0">
+  <testcase classname="com.demo.config.BasicTestConfig" name="@BeforeSuite setEnvironmentConfiguration" time="0.0">
     <ignored/>
   </testcase> <!-- @BeforeSuite setEnvironmentConfiguration -->
-  <testcase classname="com.demo.config.BasicConfiguration" name="@AfterSuite clearXmlFiles" time="0.0">
+  <testcase classname="com.demo.config.BasicTestConfig" name="@AfterSuite clearXmlFiles" time="0.0">
     <ignored/>
   </testcase> <!-- @AfterSuite clearXmlFiles -->
 </testsuite> <!-- TC_01_Epam -->

@@ -1,6 +1,6 @@
 package com.demo.test_suites.frontend;
 
-import com.demo.config.BasicConfiguration;
+import com.demo.config.BasicTestConfig;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,7 +12,7 @@ import static com.demo.test_properties.TestData.fileName;
 import static com.demo.test_scripts.ui.AmazonTest.*;
 
 
-public class TC_01_Items extends BasicConfiguration {
+public class TC_01_Items extends BasicTestConfig {
 
     private static String homePageTitle;
     private static String itemSearchName;

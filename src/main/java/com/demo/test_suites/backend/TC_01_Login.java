@@ -1,6 +1,6 @@
 package com.demo.test_suites.backend;
 
-import com.demo.config.BasicConfiguration;
+import com.demo.config.BasicTestConfig;
 import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import static com.demo.test_properties.TestData.*;
@@ -11,7 +11,7 @@ import static com.demo.test_scripts.api.UserInfo.getUserInfo;
 import static com.demo.test_scripts.api.NewToken.addUserInfo;
 
 
-public class TC_01_Login extends BasicConfiguration {
+public class TC_01_Login extends BasicTestConfig {
 
     public static String catalogElement;
 

@@ -1,13 +1,7 @@
 package com.demo.utilities.user_interface;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.demo.config.BasicConfiguration;
-import com.demo.test_properties.FilePaths;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+import com.demo.config.BasicTestConfig;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -22,7 +16,7 @@ import static com.demo.test_properties.FilePaths.screenshots_buffer_folder;
 import static com.demo.test_properties.FilePaths.screenshots_expected_folder;
 
 
-public class ImageCompare extends BasicConfiguration {
+public class ImageCompare extends BasicTestConfig {
 
     private static String textFile;
 

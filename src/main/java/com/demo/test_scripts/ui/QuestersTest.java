@@ -1,24 +1,18 @@
 package com.demo.test_scripts.ui;
 
-import com.demo.config.BasicConfiguration;
-import com.demo.ui_mapping.Amazon;
+import com.demo.config.BasicTestConfig;
 import com.demo.ui_mapping.News;
-import com.demo.utilities.user_interface.WebDriverUtils.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.io.IOException;
 
-import static com.demo.config.ReporterConfig.*;
 import static com.demo.test_properties.UrlPaths.*;
 import static com.demo.utilities.user_interface.ImageCompare.imageCompare;
 
 
-public class QuestersTest extends BasicConfiguration {
+public class QuestersTest extends BasicTestConfig {
 
     private static News page   = PageFactory.initElements(driver, News.class);
 
