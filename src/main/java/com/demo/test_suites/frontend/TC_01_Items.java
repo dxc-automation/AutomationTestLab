@@ -22,7 +22,9 @@ public class TC_01_Items extends BasicTestConfig {
     @BeforeClass
     private void report() throws Exception {
         String testName        = "Check New Item";
-        String testDescription = "The purpose of this test is to verify that a new item is added and displayed properly.";
+        String testDescription = "The purpose of this test is to verify that a new item is added and displayed properly."    +
+                "For verification are used general item properties name and expected catalog name from the search results. " +
+                "Image compering for the item image that is displayed on details page.";
         String testCategory    = "UI";
 
         startTestReport(testName, testDescription, testCategory);

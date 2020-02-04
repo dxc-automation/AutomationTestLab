@@ -29,6 +29,13 @@
             </methods>
         </class>
 
+        <class name="com.demo.test_suites.frontend.TC_02_CarCheck">
+            <methods>
+                <include name="homepage"/>
+                <include name="search"/>
+            </methods>
+        </class>
+
     </classes>
 </test>
 </suite>

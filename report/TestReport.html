@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -53,7 +54,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 20, 2020 09:28:56 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 4, 2020 12:24:23 AM</span>
 				</a>
 			</li>
 			<li>
@@ -79,7 +80,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -92,6 +93,8 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>API</a></li>
+					<li><a href='#'>RAM</a></li>
 					<li><a href='#'>UI</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -140,10 +143,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='42.857%'><span class='strong'>3</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='57.143%'>4</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -155,10 +158,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='41.176%'><span class='strong'>7</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='29.412%'>5</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='29.412%'>5</span> others
 				</div>
 			</div>
 		</div>
@@ -173,17 +176,520 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  warning' status='warning' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'><b>Check Search Functionality</b></span>
-						<span class='test-time'>Jan 20, 2020 09:28:57 PM</span>
-						<span class='test-status right warning'>warning</span>
+						<span class='test-name'><b>Get Access Token</b></span>
+						<span class='test-time'>Feb 4, 2020 12:24:23 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 20, 2020 09:28:57 PM</span>
-	<span class='label end-time'>Jan 20, 2020 09:29:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+658ms</span>
+	<span class='label start-time'>Feb 4, 2020 12:24:23 AM</span>
+	<span class='label end-time'>Feb 4, 2020 12:24:26 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+712ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can receive access token.</i></p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:24:26 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/apps/bootstrap<br/><br/>{
+  "appVersion": "1.0.0",
+  "frameworkVersion": "1.0.0",
+  "platformVersion": "6.0",
+  "appId": 1,
+  "model": "LG Nexus 5X",
+  "platform": "Android",
+  "deviceToken": "07304e56c452be73ad2b51a4647d0300"
+}<br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:24:26 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Mon
+03 Feb 2020 22:24:25 GMT
+Server: nginx
+X-Flypay-Api-Cache: Yes
+X-Flypay-Request-Id: 1d90b321-71a2-41eb-83a2-c3b18a786b5b
+X-Flypay-Server: ip-10-0-118-152
+X-Kong-Proxy-Latency: 0
+X-Kong-Upstream-Latency: 138
+Connection: keep-alive<br/><br/><br/>{
+  "hashSessionId": "$2y$10$VGS7wIe13w3/4rl97cIZiuQPdT/Pn8mOHn8Hd0lxU6mAheHbJ9wLu",
+  "accessToken": "5efee3e48c7bbf400f501a026a8d5932bede0ec17add5c01714755fe6770a2d4",
+  "businessIds": [
+    10,
+    11,
+    13,
+    19,
+    9,
+    21,
+    22,
+    23,
+    25,
+    27,
+    24,
+    28,
+    29,
+    30,
+    36,
+    37,
+    38,
+    39,
+    40,
+    34,
+    15,
+    44,
+    42,
+    26,
+    46,
+    48,
+    65,
+    61,
+    58,
+    67,
+    68,
+    70,
+    75,
+    78,
+    82,
+    83,
+    95,
+    94,
+    99,
+    35,
+    57,
+    60,
+    62,
+    59,
+    101,
+    103,
+    64,
+    105,
+    104,
+    12,
+    97,
+    102,
+    49,
+    63,
+    96,
+    81,
+    1,
+    141,
+    36,
+    267
+  ]
+}<br/><br/></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'><b>Register New User</b></span>
+						<span class='test-time'>Feb 4, 2020 12:24:26 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 4, 2020 12:24:26 AM</span>
+	<span class='label end-time'>Feb 4, 2020 12:24:26 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+460ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that a new account can be created.</i></p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:24:26 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/accessToken=5efee3e48c7bbf400f501a026a8d5932bede0ec17add5c01714755fe6770a2d4<br/><br/>{
+  "phoneNumber": 777799900,
+  "pinCode": 1234,
+  "credentialsType": "email",
+  "challengeType": "pin",
+  "email": "user@email.com",
+  "countryCodeId": 221
+}<br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:24:26 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br /><br />Response Code  : 409<br />Error Message  : Conflict<br /><br />Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Mon
+03 Feb 2020 22:24:26 GMT
+Server: nginx
+X-Flypay-Api-Cache: Yes
+X-Flypay-Request-Id: 3d2031cf-5016-4116-8078-00a8341caf64
+X-Kong-Proxy-Latency: 0
+X-Kong-Upstream-Latency: 49
+Content-Length: 231
+Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  ********</b></center><br />java.lang.AssertionError: expected [true] but found [false]<br /><br />{
+  "code": 409001,
+  "requestInfo": {
+    "apiVersion": 1,
+    "requestId": "3d2031cf-5016-4116-8078-00a8341caf64",
+    "accessTokenStatus": "anonymous",
+    "serverTime": 1580768666
+  },
+  "error": true,
+  "message": "User exists."
+}<br /></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'><b>Login</b></span>
+						<span class='test-time'>Feb 4, 2020 12:24:26 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 4, 2020 12:24:26 AM</span>
+	<span class='label end-time'>Feb 4, 2020 12:24:27 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+508ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the user can log in successfully.</i></p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>RAM</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:24:27 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /v2/auth/login/accessToken=5efee3e48c7bbf400f501a026a8d5932bede0ec17add5c01714755fe6770a2d4<br/><br/>{
+  "phoneNumber": 777799900,
+  "pinCode": 1234,
+  "challenge": 1234,
+  "credentialsType": "email",
+  "challengeType": "pin",
+  "email": "user@email.com",
+  "countryCodeId": 221
+}<br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:24:27 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Mon
+03 Feb 2020 22:24:26 GMT
+Server: nginx
+X-Flypay-Api-Cache: Yes
+X-Flypay-Request-Id: 17e9acae-26c3-4b87-bb8f-d3bffeb295e7
+X-Flypay-Server: ip-10-0-22-166
+X-Kong-Proxy-Latency: 0
+X-Kong-Upstream-Latency: 121
+Connection: keep-alive<br/><br/><br/>{
+  "requestInfo": {
+    "apiVersion": 2,
+    "requestId": "17e9acae-26c3-4b87-bb8f-d3bffeb295e7",
+    "accessTokenStatus": "authenticated",
+    "serverTime": 1580768666
+  },
+  "firstTimeVisitEligibleLocations": [],
+  "accessToken": "5efee3e48c7bbf400f501a026a8d5932bede0ec17add5c01714755fe6770a2d4",
+  "user": {
+    "lastUpdated": 1562596322,
+    "userStatus": 1,
+    "dateCreated": 1528315193,
+    "wallet": [],
+    "address": {
+      "latLng": {}
+    },
+    "color": "#C43C52",
+    "credentials": [
+      {
+        "credential": "user@email.com",
+        "verified": false,
+        "type": "email",
+        "channelId": "2"
+      }
+    ],
+    "appsAgreedToTerms": [
+      1
+    ],
+    "profile": {
+      "gender": "u",
+      "mobilePhoneNumber": "7777999000",
+      "dob": 0,
+      "name": "Automation"
+    },
+    "marketingPreferences": [],
+    "userId": 2793560,
+    "defaultCardId": 0
+  }
+}<br/><br/></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'><b>Create New Access Token</b></span>
+						<span class='test-time'>Feb 4, 2020 12:24:27 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 4, 2020 12:24:27 AM</span>
+	<span class='label end-time'>Feb 4, 2020 12:24:27 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+459ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the username can be changed successfully.</i></p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:24:27 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://api.flypaythis.com<br />Path:     /users/v1/token/accessToken=5efee3e48c7bbf400f501a026a8d5932bede0ec17add5c01714755fe6770a2d4<br/><br/>{
+  "appVersion": "5.6.2",
+  "frameworkVersion": "7.3.2",
+  "platformVersion": "7.2.1",
+  "model": "HUAWEI Nexus 6P",
+  "deviceId": "10:25:ec:5f:c5:55",
+  "channelId": "1d1094bb-6340-49ca-8bee-c6746425cc48",
+  "platform": "Android"
+}<br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:24:27 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br /><br />Response Code  : 400<br />Error Message  : Bad Request<br /><br />Content-Type: application/json
+Date: Mon
+03 Feb 2020 22:24:27 GMT
+Server: nginx
+X-Flypay-Api-Cache: Yes
+X-Flypay-Request-Id: 5154b7d3-885c-4ee9-b346-886858152ebd
+X-Kong-Proxy-Latency: 0
+X-Kong-Upstream-Latency: 62
+Content-Length: 248
+Connection: keep-alive<br /><br /><br /><center><b>********  E X C E P T I O N  ********</b></center><br />java.lang.AssertionError: expected [true] but found [false]<br /><br />{
+  "code": 400025,
+  "requestInfo": {
+    "apiVersion": 0,
+    "requestId": "5154b7d3-885c-4ee9-b346-886858152ebd",
+    "accessTokenStatus": "anonymous",
+    "serverTime": 1580768667
+  },
+  "error": true,
+  "message": "Channel Id could not be found"
+}<br /></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'><b>Get User Info</b></span>
+						<span class='test-time'>Feb 4, 2020 12:24:27 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 4, 2020 12:24:27 AM</span>
+	<span class='label end-time'>Feb 4, 2020 12:24:28 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+388ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the correct user details are received.</i></p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>API</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:24:28 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://api.flypaythis.com<br />Path:     /v1/user/me/accessToken=5efee3e48c7bbf400f501a026a8d5932bede0ec17add5c01714755fe6770a2d4<br/><br/>{}<br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:24:28 AM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Mon
+03 Feb 2020 22:24:27 GMT
+Server: nginx
+X-Flypay-Api-Cache: Yes
+X-Flypay-Request-Id: a3162e56-37d1-4f74-8b5f-9a1dd1445111
+X-Flypay-Server: ip-10-0-125-248
+X-Kong-Proxy-Latency: 0
+X-Kong-Upstream-Latency: 24
+Connection: keep-alive<br/><br/><br/>{
+  "requestInfo": {
+    "apiVersion": 1,
+    "requestId": "a3162e56-37d1-4f74-8b5f-9a1dd1445111",
+    "accessTokenStatus": "authenticated",
+    "serverTime": 1580768667
+  },
+  "firstTimeVisitEligibleLocations": [],
+  "user": {
+    "lastUpdated": 1562596322,
+    "userStatus": 1,
+    "dateCreated": 1528315193,
+    "color": "#C43C52",
+    "appsAgreedToTerms": [
+      1
+    ],
+    "userId": 2793560,
+    "defaultCardId": 0
+  }
+}<br/><br/></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'><b>Check New Item</b></span>
+						<span class='test-time'>Feb 4, 2020 12:24:28 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 4, 2020 12:24:28 AM</span>
+	<span class='label end-time'>Feb 4, 2020 12:24:43 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+721ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that a new item is added and displayed properly.</i></p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>UI</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:24:31 AM</td>
+					<td class='step-details'><b>[STEP 1]</b> <br> Home page has been opened successfully.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:24:36 AM</td>
+					<td class='step-details'><b>[STEP 2]</b> <br> Search item completed successfully.</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:24:43 AM</td>
+					<td class='step-details'><b>Compare actual screenshot with screenshot from the data base has failed</b><br>Image comparison success rate &nbsp;&nbsp;             = &nbsp;95.10956%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;83474<br>Time(ms) for visualization check                       = 1631<br>Number of pixels gets matched &nbsp;                   = &nbsp;1623406</br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Item_Details_Actual.png'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:24:43 AM</td>
+					<td class='step-details'><b>[STEP 3]</b> <br> Item details page was opened successfully.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'><b>Check Search Functionality</b></span>
+						<span class='test-time'>Feb 4, 2020 12:24:43 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 4, 2020 12:24:43 AM</span>
+	<span class='label end-time'>Feb 4, 2020 12:25:06 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+467ms</span>
 </div>
 	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify><i>The purpose of this test is to verify that the search functionality is working properly and the car details are displayed correct.</i></p></pre> </div>
 	<div class='test-attributes'>
@@ -203,18 +709,71 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:28:59 PM</td>
+					<td class='timestamp'>12:25:05 AM</td>
 					<td class='step-details'>[STEP 1] Home page was opened successfully.</td>
 				</tr>
-				<tr class='log' status='warning'>
-					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
-					<td class='timestamp'>9:29:04 PM</td>
-					<td class='step-details'><b>Results from comparison needs to be checked</b><br>Image comparison success rate &nbsp;&nbsp;             = &nbsp;99.65821%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;5834<br>Time(ms) for visualization check                       = 2242<br>Number of pixels gets matched &nbsp;                   = &nbsp;1701046</br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Car_Search_Actual.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Car_Search_Actual.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Car_Search_Actual.png'></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:25:06 AM</td>
+					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"vehicleReg"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'STATIONONE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52859}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.130, webStorageEnabled: true}
+Session ID: 69bffc86044420f5c7c3e77152fde158
+*** Element info: {Using=name, value=vehicleReg}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at com.demo.test_scripts.ui.QuestersTest.carSearch(QuestersTest.java:30)
+	at com.demo.test_suites.frontend.TC_02_CarCheck.search(TC_02_CarCheck.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:29:04 PM</td>
-					<td class='step-details'>[STEP 2] Search for a car has been completed successfully.</td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>12:25:06 AM</td>
+					<td class='step-details'>FAILED ON SCREEN<img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TC_02_CarCheck.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TC_02_CarCheck.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TC_02_CarCheck.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -273,16 +832,17 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>UI</span>
+						<span class='category-name'>API</span>
 						<span class='category-status right'>
-							<span class='label others'>1</span>
+							<span class='label pass'>2</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
-							
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
 						</div>
 					
 						<div class='category-tests'>
@@ -296,9 +856,97 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 20, 2020 09:28:57 PM</td>
-										<td class='linked' test-id='1'><b>Check Search Functionality</b></td>
-										<td><span class='test-status warning'>warning</span></td>
+										<td>Feb 4, 2020 12:24:23 AM</td>
+										<td class='linked' test-id='1'><b>Get Access Token</b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 4, 2020 12:24:26 AM</td>
+										<td class='linked' test-id='2'><b>Register New User</b></td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Feb 4, 2020 12:24:27 AM</td>
+										<td class='linked' test-id='4'><b>Create New Access Token</b></td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Feb 4, 2020 12:24:27 AM</td>
+										<td class='linked' test-id='5'><b>Get User Info</b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>RAM</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Feb 4, 2020 12:24:26 AM</td>
+										<td class='linked' test-id='3'><b>Login</b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>UI</span>
+						<span class='category-status right'>
+							<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Feb 4, 2020 12:24:28 AM</td>
+										<td class='linked' test-id='6'><b>Check New Item</b></td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Feb 4, 2020 12:24:43 AM</td>
+										<td class='linked' test-id='7'><b>Check Search Functionality</b></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -317,6 +965,120 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Feb 4, 2020 12:24:43 AM</td>
+                                                        <td class='linked' test-id='7'><b>Check Search Functionality</b></td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"vehicleReg"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'STATIONONE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52859}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.130, webStorageEnabled: true}
+Session ID: 69bffc86044420f5c7c3e77152fde158
+*** Element info: {Using=name, value=vehicleReg}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at com.demo.test_scripts.ui.QuestersTest.carSearch(QuestersTest.java:30)
+	at com.demo.test_suites.frontend.TC_02_CarCheck.search(TC_02_CarCheck.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -326,31 +1088,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>17</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 20, 2020 09:28:56 PM</div>
+					<div class='panel-lead'>Feb 4, 2020 12:24:23 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 20, 2020 09:29:04 PM</div>
+			 		<div class='panel-lead'>Feb 4, 2020 12:25:07 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 8s+196ms</div>
+					<div class='panel-lead'>0h 0m 44s+109ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -398,10 +1160,28 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
+							<td>API</td>
+							<td>2</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									50%
+							</td>
+						</tr>
+						<tr>
+							<td>RAM</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
 							<td>UI</td>
 							<td>0</td>
+							<td>2</td>
 							<td>0</td>
-							<td>1</td>
 							<td>
 									0%
 							</td>
@@ -419,22 +1199,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 0,
+				passParent: 3,
+				failParent: 4,
 				fatalParent: 0,
 				errorParent: 0,
-				warningParent: 1,
+				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 4,
 				
-				passChild: 2,
-				failChild: 0,
+				passChild: 7,
+				failChild: 5,
 				fatalChild: 0,
 				errorChild: 0,
-				warningChild: 1,
+				warningChild: 0,
 				skipChild: 0,
-				infoChild: 0,
-				exceptionsChild: 1,
+				infoChild: 5,
+				exceptionsChild: 5,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

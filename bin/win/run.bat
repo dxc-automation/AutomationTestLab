@@ -1,4 +1,4 @@
 set ProjectPath=D:\Frameworks\AutomationTestLab
 cd %ProjectPath%\target
-java -cp JAVA_FRAMEWORK-1.0-jar-with-dependencies.jar org.testng.TestNG D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\News.xml
+java -cp tests.jar org.testng.TestNG D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\Demo.xml
 pause

@@ -31,7 +31,10 @@ public class AccessToken {
 
     private static void report() throws Exception {
         String testName        = "Get Access Token";
-        String testDescription = "The purpose of this test is to verify that the user can receive access token.";
+        String testDescription = "The purpose of this test is to verify that the authentication functionality" +
+                "is working as expected. POST method is used to simulate user login from mobile device "       +
+                "and verify that the server will return response with JSON body. Body should containing "      +
+                "valid accessToken, hash session ID (for current user activity log) and all available IDs.";
         String testCategory    = "API";
 
         startTestReport(testName, testDescription, testCategory);

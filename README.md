@@ -26,7 +26,12 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 
 <br>
 
-### <i>Project Classes</i>
+### <i>Supports</i>
+- [x] Execute test suite that can be a combination between front-end and back-end test scenarios as a single test. 
+      Framework structure supports full end to end testing (without performance and load). 
+- [x] Detailed parametrization for every test scenario, suite and single step. Maintanance and methods reusing are
+      easy and fast. 
+- [x]  
 
 ##### <i>com.demo.config</i>
 - [x] BasicConfiguration.class
