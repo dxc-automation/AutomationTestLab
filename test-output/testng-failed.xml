@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="JAVA_FRAMEWORK(failed)">
+    <classes>
+      <class name="com.demo.tests.frontend.TC_03_OpenHomePage">
+        <methods>
+          <include name="browserConfig"/>
+          <include name="cleanReportData"/>
+          <include name="log"/>
+          <include name="flushReportData"/>
+          <include name="tearDown"/>
+          <include name="report"/>
+          <include name="loadHomePage"/>
+          <include name="setEnvironmentConfiguration"/>
+          <include name="clearXmlFiles"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- com.demo.tests.frontend.TC_03_OpenHomePage -->
+    </classes>
+  </test> <!-- JAVA_FRAMEWORK(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

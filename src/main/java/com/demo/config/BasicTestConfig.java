@@ -1,6 +1,7 @@
 package com.demo.config;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.google.common.base.Throwables;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,8 +21,9 @@ import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-
+import java.util.Arrays;
 import java.io.*;
+import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -29,8 +31,8 @@ import java.util.Properties;
 
 import static com.demo.config.ConsoleRunner.xmlFile;
 import static com.demo.config.ReporterConfig.*;
-import static com.demo.test_properties.FilePaths.*;
-import static com.demo.test_properties.UrlPaths.*;
+import static com.demo.properties.FilePaths.*;
+import static com.demo.properties.Environments.*;
 
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 import static org.apache.commons.io.FileUtils.cleanDirectory;
@@ -43,8 +45,8 @@ import static org.apache.commons.io.FileUtils.cleanDirectory;
  *   [1]    takeScreenshot  Capture screenshot and save the file with PNG extension.
  *                          Example:            takeScreenshot(driver, "FileName");
  *   [2]    browserConfig           Launch web browser. Value must be setted in testng.xml
- *   [3]    generateReport          Describes the result of a test_scripts and print result values.
- *   [4]    finishReport    Writes test_scripts information from the started reporters to
+ *   [3]    generateReport          Describes the result of a scripts and print result values.
+ *   [4]    finishReport    Writes scripts information from the started reporters to
  *                          their output view.
  *   [5]    tearDown        Stop web driver and close the browser.
  */
@@ -79,25 +81,28 @@ public class BasicTestConfig {
      */
         @BeforeSuite
         public void cleanReportData() {
-            File reportJsonDir = new File(report_json_folder);
-            File reportFailedDir = new File(screenshots_failed_folder);
+            File reportJsonDir    = new File(report_json_folder);
+            File reportFailedDir  = new File(screenshots_failed_folder);
+            File reportActual     = new File(screenshots_actual_folder);
+            File reportBuffer     = new File(screenshots_actual_folder);
 
             try {
-                if (! reportJsonDir.exists()) {
+                if (!reportJsonDir.exists() && reportFailedDir.exists()) {
                     reportJsonDir.mkdir();
-                } else {
-                    cleanDirectory(new File(report_json_folder));
-                }
-
-                if (! reportFailedDir.exists()) {
                     reportFailedDir.mkdir();
                 } else {
+                    cleanDirectory(new File(report_json_folder));
                     cleanDirectory(new File(screenshots_failed_folder));
                 }
 
-                cleanDirectory(new File(screenshots_actual_folder));
-                cleanDirectory(new File(screenshots_buffer_folder));
-        } catch (Exception e) {
+                if (!reportActual.exists() && reportBuffer.exists()) {
+                    reportFailedDir.mkdir();
+                    reportActual.mkdir();
+                } else {
+                    cleanDirectory(new File(screenshots_failed_folder));
+                    cleanDirectory(new File(screenshots_failed_folder));
+                }
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
@@ -133,7 +138,7 @@ public class BasicTestConfig {
             if (browser.equalsIgnoreCase("chrome")) {
                 System.setProperty("webdriver.chrome.driver", chrome_driver_file);
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("test_scripts-type");
+                options.addArguments("scripts-type");
                 options.addArguments("start-maximized");
                 driver = new ChromeDriver(options);
                 LOG.info("| Chrome browser launched successfully |");
@@ -166,7 +171,7 @@ public class BasicTestConfig {
             } else if (browser.equalsIgnoreCase("none")) {
                 System.setProperty("webdriver.chrome.driver", chrome_driver_file);
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("test_scripts-type");
+                options.addArguments("scripts-type");
                 driver = new ChromeDriver(options);
 
                 Point position = new Point(-2000, 0);
@@ -247,14 +252,12 @@ public class BasicTestConfig {
                                 + "</pre>");
 
                     } else {
-
                         File fileFail;
                         fileFail = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                         FileUtils.copyFile(fileFail, new File(screenshots_failed_folder + methodName + ".png"));
 
+                        test.fail("<b>FAILED ON SCREEN</b>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png").build());
                         test.fail(throwable);
-                        //test_scripts.log(Status.ERROR, "EXCEPTION" + "<br />" + result.getThrowable());
-                        test.fail("FAILED ON SCREEN", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png").build());
                     }
         }
     }

@@ -40,22 +40,22 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 - [x] TestNGListener.class
 
 
-##### <i>com.demo.test_properties</i>
+##### <i>com.demo.properties</i>
 - [x] FilePaths.class
 - [x] TestData.class
 - [x] UrlPaths.class
 - [x] TestNGListener
 
 
-##### <i>com.demo.test_scripts.api</i>
+##### <i>com.demo.scripts.api</i>
 - [x] All API test script classes
 
-##### <i>com.demo.test_scripts.ui</i> 
+##### <i>com.demo.scripts.ui</i> 
 - [x] All UI test script classes
 
 
 <ul>
-  <li>com.demo.test_suites
+  <li>com.demo.tests
     <ul>
       <li>TC_01_Fly.class</li>
     </ul>
@@ -64,7 +64,7 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 <br>
 
 <ul>
-  <li>com.demo.ui_mapping
+  <li>com.demo.objects
     <ul>
       <li>HomePage.class</li>
     </ul>

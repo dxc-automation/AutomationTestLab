@@ -5,9 +5,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import groovy.json.internal.Byt;
 
-import static com.demo.test_properties.FilePaths.*;
+import static com.demo.properties.FilePaths.*;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -18,7 +17,7 @@ import java.net.UnknownHostException;
  *          List:
  *   [1]    ExtentReports       Print information about machine.
  *   [2]    ExtentHtmlReporter  HTML file design configuration.
- *   [3]    ExtentTest          Create a new test_scripts object.
+ *   [3]    ExtentTest          Create a new scripts object.
  */
 
 public class ReporterConfig {

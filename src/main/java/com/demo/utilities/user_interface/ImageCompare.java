@@ -11,9 +11,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import static com.demo.config.ReporterConfig.test;
-import static com.demo.test_properties.FilePaths.screenshots_actual_folder;
-import static com.demo.test_properties.FilePaths.screenshots_buffer_folder;
-import static com.demo.test_properties.FilePaths.screenshots_expected_folder;
+import static com.demo.properties.FilePaths.screenshots_actual_folder;
+import static com.demo.properties.FilePaths.screenshots_buffer_folder;
+import static com.demo.properties.FilePaths.screenshots_expected_folder;
 
 
 public class ImageCompare extends BasicTestConfig {

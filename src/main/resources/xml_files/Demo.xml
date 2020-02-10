@@ -11,7 +11,7 @@
 
     <test name="TC_01_Epam" group-by-instances="true">
     <classes>
-        <class name="com.demo.test_suites.backend.TC_01_Login">
+        <class name="com.demo.tests.backend.fly.TC_01_Login">
             <methods>
                 <include name="accessToken"/>
                 <include name="newUser"/>
@@ -21,7 +21,7 @@
             </methods>
         </class>
 
-        <class name="com.demo.test_suites.frontend.TC_01_Items">
+        <class name="com.demo.tests.frontend.TC_01_Items">
             <methods>
                 <include name="loadHomePage"/>
                 <include name="searchItem"/>
@@ -29,7 +29,7 @@
             </methods>
         </class>
 
-        <class name="com.demo.test_suites.frontend.TC_02_CarCheck">
+        <class name="com.demo.tests.frontend.TC_02_CarCheck">
             <methods>
                 <include name="homepage"/>
                 <include name="search"/>

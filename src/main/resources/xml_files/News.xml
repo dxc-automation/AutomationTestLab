@@ -12,7 +12,7 @@
     <test name="ID_01_NewElementCheck" group-by-instances="true">
     <classes>
 
-        <class name="com.demo.test_suites.frontend.TC_02_CarCheck">
+        <class name="com.demo.tests.frontend.TC_02_CarCheck">
             <methods>
                 <include name="homepage"/>
                 <include name="search"/>

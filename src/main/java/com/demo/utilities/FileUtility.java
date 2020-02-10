@@ -10,7 +10,7 @@ import java.io.FileWriter;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 
-import static com.demo.test_properties.FilePaths.report_json_folder;
+import static com.demo.properties.FilePaths.report_json_folder;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 

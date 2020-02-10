@@ -1,4 +1,4 @@
-set ProjectPath=D:\Frameworks\AutomationTestLab
-cd %ProjectPath%\target
-java -cp tests.jar org.testng.TestNG D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\Demo.xml
+set ProjectPath=D:\Frameworks\AutomationTestLab\target
+cd %ProjectPath%
+java -cp tests.jar org.testng.TestNG D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\CurrencyConvert.xml
 pause

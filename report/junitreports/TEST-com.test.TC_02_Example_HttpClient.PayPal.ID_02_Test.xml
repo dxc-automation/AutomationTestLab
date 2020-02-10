@@ -29,5 +29,5 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 ]]>
     </error>
-  </testcase> <!-- test_scripts -->
+  </testcase> <!-- scripts -->
 </testsuite> <!-- com.scriptspts.examples.TC_02_Example_HttpClient.PayPal.ID_02_Test1 -->

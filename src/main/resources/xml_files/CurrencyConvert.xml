@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TC_001" configfailurepolicy="continue" verbose="10" parallel="tests" thread-count="5">
+
+    <listeners>
+        <listener class-name="com.demo.config.TestNGListener"/>
+    </listeners>
+
+    <parameter name="browser"     value="chrome"/>
+    <test name="TC_01_Index" group-by-instances="true">
+        <classes>
+            <class name="com.demo.tests.backend.rapid.TC_01_CurrencyConvertor">
+                <methods>
+                    <include name="convert"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
+

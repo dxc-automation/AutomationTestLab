@@ -7,19 +7,45 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_01_Epam(failed)" verbose="10">
     <classes>
-      <class name="com.demo.test_suites.backend.TC_01_Login">
+      <class name="com.demo.tests.frontend.TC_02_CarCheck">
         <methods>
+          <include name="report"/>
+          <include name="browserConfig"/>
+          <include name="cleanReportData"/>
+          <include name="flushReportData"/>
+          <include name="tearDown"/>
+          <include name="search" invocation-numbers="0"/>
+          <include name="setEnvironmentConfiguration"/>
+          <include name="clearXmlFiles"/>
           <include name="generateReport"/>
+        </methods>
+      </class> <!-- com.demo.tests.frontend.TC_02_CarCheck -->
+      <class name="com.demo.tests.backend.fly.TC_01_Login">
+        <methods>
+          <include name="browserConfig"/>
+          <include name="cleanReportData"/>
+          <include name="flushReportData"/>
+          <include name="tearDown"/>
           <include name="addAccountInfo" invocation-numbers="0"/>
           <include name="newUser" invocation-numbers="0"/>
+          <include name="setEnvironmentConfiguration"/>
+          <include name="clearXmlFiles"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- com.demo.tests.backend.fly.TC_01_Login -->
+      <class name="com.demo.tests.frontend.TC_01_Items">
+        <methods>
+          <include name="report"/>
           <include name="browserConfig"/>
-          <include name="flushReportData"/>
           <include name="cleanReportData"/>
+          <include name="flushReportData"/>
+          <include name="loadHomePage" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setEnvironmentConfiguration"/>
           <include name="clearXmlFiles"/>
+          <include name="generateReport"/>
         </methods>
-      </class> <!-- com.demo.test_suites.backend.TC_01_Login -->
+      </class> <!-- com.demo.tests.frontend.TC_01_Items -->
     </classes>
   </test> <!-- TC_01_Epam(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

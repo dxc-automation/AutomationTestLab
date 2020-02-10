@@ -21,7 +21,7 @@
     <!--<reportName> <![CDATA[ <img src='../src/main/resources/logo.png' />  ]]></reportName> -->
     <reportName>Automation Test Report</reportName>
 
-    <!-- location of charts in the test_scripts view -->
+    <!-- location of charts in the scripts view -->
     <!-- top, bottom -->
     <testViewChartLocation>top</testViewChartLocation>
     <enableCategoryView>true</enableCategoryView>

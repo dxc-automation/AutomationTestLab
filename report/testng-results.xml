@@ -1,13 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="14" passed="6" failed="2" skipped="0">
+<testng-results ignored="13" total="23" passed="6" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-17T10:45:46Z" name="TC_001" finished-at="2020-01-17T10:46:04Z" duration-ms="18246">
+  <suite started-at="2020-02-06T13:54:14Z" name="TC_001" finished-at="2020-02-06T13:54:52Z" duration-ms="38047">
     <groups>
     </groups>
-    <test started-at="2020-01-17T10:45:46Z" name="TC_01_Epam" finished-at="2020-01-17T10:46:04Z" duration-ms="18246">
-      <class name="com.demo.test_suites.backend.TC_01_Login">
-        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:42Z" name="browserConfig" finished-at="2020-01-17T10:45:46Z" duration-ms="3355" status="PASS">
+    <test started-at="2020-02-06T13:54:14Z" name="TC_01_Epam" finished-at="2020-02-06T13:54:52Z" duration-ms="38047">
+      <class name="com.demo.tests.frontend.TC_02_CarCheck">
+        <test-method signature="homepage(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_02_CarCheck@34158c08]" started-at="2020-02-06T13:54:30Z" name="homepage" finished-at="2020-02-06T13:54:51Z" duration-ms="21324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.frontend.TC_02_CarCheck.homepage(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method is-config="true" signature="report()[pri:0, instance:com.demo.tests.frontend.TC_02_CarCheck@34158c08]" started-at="2020-02-06T13:54:30Z" name="report" finished-at="2020-02-06T13:54:30Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.frontend.TC_02_CarCheck@34158c08]" started-at="2020-02-06T13:54:51Z" name="generateReport" finished-at="2020-02-06T13:54:51Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homepage status=SUCCESS method=TC_02_CarCheck.homepage(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_02_CarCheck@34158c08] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method signature="search(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_02_CarCheck@34158c08]" started-at="2020-02-06T13:54:51Z" name="search" finished-at="2020-02-06T13:54:51Z" duration-ms="76" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.frontend.TC_02_CarCheck.search(java.lang.reflect.Method) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"vehicleReg"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'STATIONONE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49542}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.130, webStorageEnabled: true}
+Session ID: 29e081da02ff90a3c4af6309e9919a25
+*** Element info: {Using=name, value=vehicleReg}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"vehicleReg"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'STATIONONE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49542}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 79.0.3945.130, webStorageEnabled: true}
+Session ID: 29e081da02ff90a3c4af6309e9919a25
+*** Element info: {Using=name, value=vehicleReg}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at com.demo.scripts.ui.Questers.carSearch(Questers.java:30)
+at com.demo.tests.frontend.TC_02_CarCheck.search(TC_02_CarCheck.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.frontend.TC_02_CarCheck@34158c08]" started-at="2020-02-06T13:54:51Z" name="generateReport" finished-at="2020-02-06T13:54:52Z" duration-ms="506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=search status=FAILURE method=TC_02_CarCheck.search(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_02_CarCheck@34158c08] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- com.demo.tests.frontend.TC_02_CarCheck -->
+      <class name="com.demo.tests.frontend.TC_01_Items">
+        <test-method is-config="true" signature="report()[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3]" started-at="2020-02-06T13:54:17Z" name="report" finished-at="2020-02-06T13:54:17Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method signature="loadHomePage(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3]" started-at="2020-02-06T13:54:17Z" name="loadHomePage" finished-at="2020-02-06T13:54:20Z" duration-ms="2883" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more] but found [AmazonHomePage.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more] but found [AmazonHomePage.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.demo.scripts.ui.Amazon.load(Amazon.java:33)
+at com.demo.tests.frontend.TC_01_Items.loadHomePage(TC_01_Items.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadHomePage -->
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3]" started-at="2020-02-06T13:54:20Z" name="generateReport" finished-at="2020-02-06T13:54:21Z" duration-ms="1005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loadHomePage status=FAILURE method=TC_01_Items.loadHomePage(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method signature="searchItem(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3]" started-at="2020-02-06T13:54:21Z" name="searchItem" finished-at="2020-02-06T13:54:24Z" duration-ms="3611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3]" started-at="2020-02-06T13:54:24Z" name="generateReport" finished-at="2020-02-06T13:54:24Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchItem status=SUCCESS method=TC_01_Items.searchItem(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method signature="openItemDescription(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3]" started-at="2020-02-06T13:54:24Z" name="openItemDescription" finished-at="2020-02-06T13:54:30Z" duration-ms="5617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openItemDescription -->
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3]" started-at="2020-02-06T13:54:30Z" name="generateReport" finished-at="2020-02-06T13:54:30Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openItemDescription status=SUCCESS method=TC_01_Items.openItemDescription(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.frontend.TC_01_Items@2f16c6b3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- com.demo.tests.frontend.TC_01_Items -->
+      <class name="com.demo.tests.backend.fly.TC_01_Login">
+        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:10Z" name="browserConfig" finished-at="2020-02-06T13:54:14Z" duration-ms="3380" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,41 +248,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:46Z" name="cleanReportData" finished-at="2020-01-17T10:45:46Z" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:14Z" name="cleanReportData" finished-at="2020-02-06T13:54:14Z" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:46Z" name="setEnvironmentConfiguration" finished-at="2020-01-17T10:45:46Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:14Z" name="setEnvironmentConfiguration" finished-at="2020-02-06T13:54:14Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentConfiguration -->
-        <test-method signature="accessToken(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:46Z" name="accessToken" finished-at="2020-01-17T10:45:47Z" duration-ms="1418" status="PASS">
+        <test-method signature="accessToken(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:14Z" name="accessToken" finished-at="2020-02-06T13:54:15Z" duration-ms="1317" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.accessToken(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.tests.backend.fly.TC_01_Login.accessToken(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accessToken -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:47Z" name="generateReport" finished-at="2020-01-17T10:45:47Z" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:15Z" name="generateReport" finished-at="2020-02-06T13:54:15Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=accessToken status=SUCCESS method=TS_01_Login.accessToken(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b] output={null}]]]>
+                <![CDATA[[TestResult name=accessToken status=SUCCESS method=TC_01_Login.accessToken(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="newUser(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:47Z" name="newUser" finished-at="2020-01-17T10:45:47Z" duration-ms="387" status="FAIL">
+        <test-method signature="newUser(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:15Z" name="newUser" finished-at="2020-02-06T13:54:16Z" duration-ms="412" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.newUser(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.tests.backend.fly.TC_01_Login.newUser(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -66,8 +296,8 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.demo.test_scripts.api.RegisterUser.getNewUser(RegisterUser.java:87)
-at com.demo.test_suites.backend.TC_01_Login.newUser(TS_01_Login.java:28)
+at com.demo.scripts.api.fly.RegisterUser.getNewUser(RegisterUser.java:87)
+at com.demo.tests.backend.fly.TC_01_Login.newUser(TC_01_Login.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,44 +324,33 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newUser -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:47Z" name="generateReport" finished-at="2020-01-17T10:45:47Z" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:16Z" name="generateReport" finished-at="2020-02-06T13:54:16Z" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=newUser status=FAILURE method=TS_01_Login.newUser(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b] output={null}]]]>
+                <![CDATA[[TestResult name=newUser status=FAILURE method=TC_01_Login.newUser(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="login(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:47Z" name="login" finished-at="2020-01-17T10:45:48Z" duration-ms="485" status="PASS">
+        <test-method signature="login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:16Z" name="login" finished-at="2020-02-06T13:54:16Z" duration-ms="478" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.login(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.tests.backend.fly.TC_01_Login.login(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:48Z" name="generateReport" finished-at="2020-01-17T10:45:48Z" duration-ms="0" status="PASS">
+        <test-method signature="addAccountInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:16Z" name="addAccountInfo" finished-at="2020-02-06T13:54:16Z" duration-ms="389" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=TS_01_Login.login(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateReport -->
-        <test-method signature="addAccountInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:48Z" name="addAccountInfo" finished-at="2020-01-17T10:45:48Z" duration-ms="385" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.addAccountInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.tests.backend.fly.TC_01_Login.addAccountInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
@@ -145,8 +364,8 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.demo.test_scripts.api.NewToken.addUserInfo(NewToken.java:89)
-at com.demo.test_suites.backend.TC_01_Login.addAccountInfo(TS_01_Login.java:42)
+at com.demo.scripts.api.fly.NewToken.addUserInfo(NewToken.java:89)
+at com.demo.tests.backend.fly.TC_01_Login.addAccountInfo(TC_01_Login.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,124 +392,63 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAccountInfo -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:48Z" name="generateReport" finished-at="2020-01-17T10:45:48Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:16Z" name="generateReport" finished-at="2020-02-06T13:54:16Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addAccountInfo status=FAILURE method=TS_01_Login.addAccountInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=TC_01_Login.login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method signature="userInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:48Z" name="userInfo" finished-at="2020-01-17T10:45:49Z" duration-ms="369" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:16Z" name="generateReport" finished-at="2020-02-06T13:54:16Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.test_suites.backend.TC_01_Login.userInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[[TestResult name=addAccountInfo status=FAILURE method=TC_01_Login.addAccountInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method signature="userInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:16Z" name="userInfo" finished-at="2020-02-06T13:54:17Z" duration-ms="385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.backend.fly.TC_01_Login.userInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userInfo -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:45:49Z" name="generateReport" finished-at="2020-01-17T10:45:49Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:17Z" name="generateReport" finished-at="2020-02-06T13:54:17Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userInfo status=SUCCESS method=TS_01_Login.userInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b] output={null}]]]>
+                <![CDATA[[TestResult name=userInfo status=SUCCESS method=TC_01_Login.userInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:46:04Z" name="clearXmlFiles" finished-at="2020-01-17T10:46:04Z" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:53Z" name="clearXmlFiles" finished-at="2020-02-06T13:54:53Z" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:46:04Z" name="tearDown" finished-at="2020-01-17T10:46:05Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" duration-ms="792" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:53Z" name="tearDown" finished-at="2020-02-06T13:54:54Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.test_suites.backend.TS_01_Login@5812f68b]" started-at="2020-01-17T10:46:05Z" name="flushReportData" finished-at="2020-01-17T10:46:06Z" duration-ms="779" status="PASS">
+        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.tests.backend.TC_01_Login@336f1079]" started-at="2020-02-06T13:54:54Z" name="flushReportData" finished-at="2020-02-06T13:54:54Z" duration-ms="409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
-      </class> <!-- com.demo.test_suites.backend.TC_01_Login -->
-      <class name="com.demo.test_suites.frontend.TC_01_Items">
-        <test-method is-config="true" signature="report()[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1]" started-at="2020-01-17T10:45:49Z" name="report" finished-at="2020-01-17T10:45:49Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method signature="loadHomePage(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1]" started-at="2020-01-17T10:45:49Z" name="loadHomePage" finished-at="2020-01-17T10:45:51Z" duration-ms="2616" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                  <![CDATA[public void com.demo.test_suites.frontend.TC_01_Items.loadHomePage(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadHomePage -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1]" started-at="2020-01-17T10:45:51Z" name="generateReport" finished-at="2020-01-17T10:45:51Z" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loadHomePage status=SUCCESS method=TS_01_Items.loadHomePage(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateReport -->
-        <test-method signature="searchItem(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1]" started-at="2020-01-17T10:45:51Z" name="searchItem" finished-at="2020-01-17T10:45:56Z" duration-ms="5094" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                  <![CDATA[public void com.demo.test_suites.frontend.TC_01_Items.searchItem(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchItem -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1]" started-at="2020-01-17T10:45:56Z" name="generateReport" finished-at="2020-01-17T10:45:56Z" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchItem status=SUCCESS method=TS_01_Items.searchItem(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateReport -->
-        <test-method signature="openItemDescription(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1]" started-at="2020-01-17T10:45:56Z" name="openItemDescription" finished-at="2020-01-17T10:46:04Z" duration-ms="7446" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                  <![CDATA[public void com.demo.test_suites.frontend.TC_01_Items.openItemDescription(java.lang.reflect.Method) throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openItemDescription -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1]" started-at="2020-01-17T10:46:04Z" name="generateReport" finished-at="2020-01-17T10:46:04Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=openItemDescription status=SUCCESS method=TS_01_Items.openItemDescription(java.lang.reflect.Method)[pri:0, instance:com.demo.test_suites.frontend.TS_01_Items@4426bff1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generateReport -->
-      </class> <!-- com.demo.test_suites.frontend.TC_01_Items -->
+      </class> <!-- com.demo.tests.backend.fly.TC_01_Login -->
     </test> <!-- TC_01_Epam -->
   </suite> <!-- TC_001 -->
 </testng-results>

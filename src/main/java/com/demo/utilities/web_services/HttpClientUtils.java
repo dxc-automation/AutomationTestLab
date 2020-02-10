@@ -17,11 +17,12 @@ import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 public class HttpClientUtils extends BasicTestConfig {
 
+    public static HttpGet get;
+
 
     public static HttpGet get(URI url) throws Exception {
-        HttpGet get = new HttpGet(url);
+        get = new HttpGet(url);
         get.setHeader("Content-Type", "application/json");
-        get.setHeader("Accept", "*/*");
         get.setHeader("Connection", "keep-alive");
 
         requestMethod = get.getMethod();

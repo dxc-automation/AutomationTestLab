@@ -10,7 +10,7 @@ import java.awt.*;
 import org.monte.media.math.Rational;
 import org.monte.media.Format;
 
-import static com.demo.test_properties.FilePaths.video_files;
+import static com.demo.properties.FilePaths.video_files;
 import static org.monte.media.VideoFormatKeys.*;
 
 

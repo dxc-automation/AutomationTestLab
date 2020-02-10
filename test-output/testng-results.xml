@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-02-07T16:40:46Z" name="Default Suite" finished-at="2020-02-07T16:40:46Z" duration-ms="6">
+    <groups>
+    </groups>
+    <test started-at="2020-02-07T16:40:46Z" name="JAVA_FRAMEWORK" finished-at="2020-02-07T16:40:46Z" duration-ms="6">
+      <class name="com.demo.config.BasicTestConfig">
+        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.config.BasicTestConfig@315f43d5]" started-at="2020-02-07T16:40:46Z" name="browserConfig" finished-at="2020-02-07T16:40:46Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeSuite on method browserConfig but has not been marked @Optional or defined
+in C:\Users\StationOne\.IntelliJIdea2018.1\system\temp-testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeSuite on method browserConfig but has not been marked @Optional or defined
+in C:\Users\StationOne\.IntelliJIdea2018.1\system\temp-testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.config.BasicTestConfig@315f43d5]" started-at="2020-02-07T16:40:46Z" name="cleanReportData" finished-at="2020-02-07T16:40:46Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanReportData -->
+        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.config.BasicTestConfig@315f43d5]" started-at="2020-02-07T16:40:46Z" name="setEnvironmentConfiguration" finished-at="2020-02-07T16:40:46Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setEnvironmentConfiguration -->
+        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.config.BasicTestConfig@315f43d5]" started-at="2020-02-07T16:40:46Z" name="clearXmlFiles" finished-at="2020-02-07T16:40:46Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearXmlFiles -->
+        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.config.BasicTestConfig@315f43d5]" started-at="2020-02-07T16:40:46Z" name="flushReportData" finished-at="2020-02-07T16:40:46Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReportData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.config.BasicTestConfig@315f43d5]" started-at="2020-02-07T16:40:46Z" name="tearDown" finished-at="2020-02-07T16:40:46Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.config.BasicTestConfig -->
+    </test> <!-- JAVA_FRAMEWORK -->
+  </suite> <!-- Default Suite -->
+</testng-results>

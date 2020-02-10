@@ -1,8 +1,6 @@
 package com.demo.config;
 
 import org.testng.TestNG;
-import org.testng.xml.Parser;
-import org.testng.xml.XmlSuite;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,13 +9,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import static com.demo.test_properties.FilePaths.*;
+import static com.demo.properties.FilePaths.*;
 
 
 /**
  *  This class is used as an main class and point out TestNG
  *  framework  with  XML file.  The  original  XML  file  is
- *  located in project resources folder and after start test_scripts
+ *  located in project resources folder and after start scripts
  *  execution we copy it to the target folder.
  */
 

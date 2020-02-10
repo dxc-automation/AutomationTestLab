@@ -1,7 +1,7 @@
 package com.demo.utilities.user_interface;
 
 import com.demo.config.BasicTestConfig;
-import com.demo.test_properties.FilePaths;
+import com.demo.properties.FilePaths;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;

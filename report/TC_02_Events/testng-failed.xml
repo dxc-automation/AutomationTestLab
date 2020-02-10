@@ -8,7 +8,7 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_02_Event(failed)" verbose="10">
     <classes>
-      <class name="com.demo.test_suites.TC_02_Efbet">
+      <class name="com.demo.tests.TC_02_Efbet">
         <methods>
           <include name="generateReport"/>
           <include name="browserConfig"/>
@@ -19,7 +19,7 @@
           <include name="clearXmlFiles"/>
           <include name="eventsList" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.demo.test_suites.TC_02_Efbet -->
+      </class> <!-- com.demo.tests_Efbet -->
     </classes>
   </test> <!-- TC_02_Event(failed) -->
 </suite> <!-- Failed suite [TC_02_Events] -->
