@@ -15,20 +15,21 @@ public class LoginPage extends BasicTestConfig {
 
     public static final Logger LOG = LogManager.getLogger(LoginPage.class);
 
-    WebDriver driver;
+    final WebDriver driver;
+
+    @FindBy(how = How.CSS, using = "input#username.nmcEvmpQGs-DUsPuI4fzO")
+    public WebElement login_user_input;
+
+    @FindBy(how = How.CSS, using = "input#password.nmcEvmpQGs-DUsPuI4fzO.swuIwUNQwFAucmifmmWO4")
+    public WebElement login_pass_input;
+
+    @FindBy(how = How.CSS, using = "button._6iSTUGFRm1Pp_z-8_y0Y5.Zte1YssVqY438XSyivt7f")
+    public WebElement login_submit_btn;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=layoutContent]/main/div")
+    public WebElement login_form;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
     }
-
-    @FindBy(css = "input#username.nmcEvmpQGs-DUsPuI4fzO")
-    public static WebElement login_user_input;
-
-    @FindBy(css = "input#password.nmcEvmpQGs-DUsPuI4fzO.swuIwUNQwFAucmifmmWO4")
-    public static WebElement login_pass_input;
-
-    @FindBy(how = How.CSS, using = "button._6iSTUGFRm1Pp_z-8_y0Y5.Zte1YssVqY438XSyivt7f")
-    public static WebElement login_submit_btn;
-
-    }
+}

@@ -1,7 +1,7 @@
 package com.demo.scripts.ui;
 
 import com.demo.config.BasicTestConfig;
-import com.demo.objects.NewsHomePage;
+import com.demo.objects.News.NewsHomePage;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;

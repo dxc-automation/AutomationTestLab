@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-TC_001" class="navigator-link">
-              <span class="suite-name border-failed">TC_001</span>
+            <a href="#" class="navigator-link" panel-name="suite-TC_001">
+              <span class="suite-name border-passed">TC_001</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-TC_001" class="navigator-link ">
-                    <span>D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\CurrencyConvert.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TC_001">
+                    <span>C:\Automation\AutomationTestLab\src\main\resources\xml_files\TestCase_01.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-TC_001">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-TC_001">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-TC_001">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-TC_001">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TC_001">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-TC_001" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-TC_001">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TC_001" class="hide-methods failed suite-TC_001"> (hide)</a> <!-- hide-methods failed suite-TC_001 -->
-                      <a href="#" panel-name="suite-TC_001" class="show-methods failed suite-TC_001"> (show)</a> <!-- show-methods failed suite-TC_001 -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TC_001" class="hide-methods passed suite-TC_001"> (hide)</a> <!-- hide-methods passed suite-TC_001 -->
+                      <a href="#" panel-name="suite-TC_001" class="show-methods passed suite-TC_001"> (show)</a> <!-- show-methods passed suite-TC_001 -->
                     </span>
-                    <div class="method-list-content failed suite-TC_001">
+                    <div class="method-list-content passed suite-TC_001">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.demo.tests.backend.rapid.TC_01_CurrencyConvertor" class="method navigator-link" hash-for-method="convert(public void com.demo.tests.backend.rapid.TC_01_CurrencyConvertor.convert(java.lang.reflect.Method) t...)">convert(public void com.demo.tests.backend.rapid.TC_01_CurrencyConvertor.convert(java.lang.reflect.Method) t...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" hash-for-method="clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...)">clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-TC_001 -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" hash-for-method="loginWeb(public void com.demo.tests.TestCase_01.loginWeb(java.lang.reflect.Method) throws java.lang.Exception)">loginWeb(public void com.demo.tests.TestCase_01.loginWeb(java.lang.reflect.Method) throws java.lang.Exception)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" hash-for-method="userLogin(public void com.demo.tests.TestCase_01.userLogin(java.lang.reflect.Method) throws java.lang.Exceptio...)">userLogin(public void com.demo.tests.TestCase_01.userLogin(java.lang.reflect.Method) throws java.lang.Exceptio...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TC_001 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,72 +127,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TC_001" class="panel TC_001">
-          <div class="suite-TC_001-class-failed">
+          <div class="suite-TC_001-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.demo.tests.backend.rapid.TC_01_CurrencyConvertor</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.tests.TestCase_01</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="convert(public void com.demo.tests.backend.rapid.TC_01_CurrencyConvertor.convert(java.lang.reflect.Method) t...)">
-                  </a> <!-- convert(public void com.demo.tests.backend.rapid.TC_01_CurrencyConvertor.convert(java.lang.reflect.Method) t...) -->
-                  <span class="method-name">convert</span>
-                  <span class="parameters">(public void com.demo.tests.backend.rapid.TC_01_CurrencyConvertor.convert(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.demo.scripts.api.convertor.CurrencyRates.getRates(CurrencyRates.java:85)
-	at com.demo.tests.backend.rapid.TC_01_CurrencyConvertor.convert(TC_01_CurrencyConvertor.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-</div> <!-- stack-trace -->
+                  <a name="clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...)">
+                  </a> <!-- clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...) -->
+                  <span class="method-name">clientInfo</span>
+                  <span class="parameters">(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWeb(public void com.demo.tests.TestCase_01.loginWeb(java.lang.reflect.Method) throws java.lang.Exception)">
+                  </a> <!-- loginWeb(public void com.demo.tests.TestCase_01.loginWeb(java.lang.reflect.Method) throws java.lang.Exception) -->
+                  <span class="method-name">loginWeb</span>
+                  <span class="parameters">(public void com.demo.tests.TestCase_01.loginWeb(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userLogin(public void com.demo.tests.TestCase_01.userLogin(java.lang.reflect.Method) throws java.lang.Exceptio...)">
+                  </a> <!-- userLogin(public void com.demo.tests.TestCase_01.userLogin(java.lang.reflect.Method) throws java.lang.Exceptio...) -->
+                  <span class="method-name">userLogin</span>
+                  <span class="parameters">(public void com.demo.tests.TestCase_01.userLogin(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TC_001-class-failed -->
+          </div> <!-- suite-TC_001-class-passed -->
         </div> <!-- panel TC_001 -->
         <div panel-name="test-xml-TC_001" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\CurrencyConvert.xml</span>
+            <span class="header-content">C:\Automation\AutomationTestLab\src\main\resources\xml_files\TestCase_01.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite configfailurepolicy=&quot;continue&quot; parallel=&quot;tests&quot; name=&quot;TC_001&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;TC_001&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.demo.config.TestNGListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TC_01_Index&quot; group-by-instances=&quot;true&quot; verbose=&quot;10&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;10&quot; name=&quot;TC_01_Index&quot; parallel=&quot;tests&quot; group-by-instances=&quot;true&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.demo.tests.backend.rapid.TC_01_CurrencyConvertor&quot;&gt;
+      &lt;class name=&quot;com.demo.tests.TestCase_01&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;convert&quot;/&gt;
+          &lt;include name=&quot;userLogin&quot;/&gt;
+          &lt;include name=&quot;clientInfo&quot;/&gt;
+          &lt;include name=&quot;loginWeb&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.demo.tests.backend.rapid.TC_01_CurrencyConvertor --&gt;
+      &lt;/class&gt; &lt;!-- com.demo.tests.TestCase_01 --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TC_01_Index --&gt;
 &lt;/suite&gt; &lt;!-- TC_001 --&gt;
@@ -222,16 +221,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'convert')
-data.setCell(0, 2, 'com.demo.tests.backend.rapid.TC_01_CurrencyConvertor')
-data.setCell(0, 3, 989);
+data.setCell(0, 1, 'loginWeb')
+data.setCell(0, 2, 'com.demo.tests.TestCase_01')
+data.setCell(0, 3, 11238);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'userLogin')
+data.setCell(1, 2, 'com.demo.tests.TestCase_01')
+data.setCell(1, 3, 424);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clientInfo')
+data.setCell(2, 2, 'com.demo.tests.TestCase_01')
+data.setCell(2, 3, 237);
 window.suiteTableData['TC_001']= { tableData: data, tableDiv: 'times-div-TC_001'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 989 ms</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-TC_001">
               </div> <!-- times-div-TC_001 -->
             </div> <!-- times-div -->
@@ -257,40 +264,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.tests.backend.rapid.TC_01_CurrencyConvertor</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.demo.tests.TestCase_01</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">browserConfig(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
-                <span class="method-start">3230 ms</span>
+                <span class="method-start">6066 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setEnvironmentConfiguration</span>
-                <span class="method-start">3239 ms</span>
+                <span class="method-start">6070 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">convert(public void com.demo.tests.backend.rapid.TC_01_CurrencyConvertor.convert(java.lang.reflect.Method) t...)</span>
-                <span class="method-start">3258 ms</span>
+                <span class="method-name">userLogin(public void com.demo.tests.TestCase_01.userLogin(java.lang.reflect.Method) throws java.lang.Exceptio...)</span>
+                <span class="method-start">6077 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport([TestResult name=convert status=FAILURE method=TC_01_CurrencyConvertor.convert(java.lang.reflect.Met...)</span>
-                <span class="method-start">4247 ms</span>
+                <span class="method-name">generateReport([TestResult name=userLogin status=SUCCESS method=TestCase_01.userLogin(java.lang.reflect.Method)[pri...)</span>
+                <span class="method-start">6501 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...)</span>
+                <span class="method-start">6501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=clientInfo status=SUCCESS method=TestCase_01.clientInfo(java.lang.reflect.Method)[p...)</span>
+                <span class="method-start">6738 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginWeb(public void com.demo.tests.TestCase_01.loginWeb(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                <span class="method-start">6753 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=loginWeb status=SUCCESS method=TestCase_01.loginWeb(java.lang.reflect.Method)[pri:0...)</span>
+                <span class="method-start">17991 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXmlFiles</span>
-                <span class="method-start">4337 ms</span>
+                <span class="method-start">18008 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReportData</span>
-                <span class="method-start">4534 ms</span>
+                <span class="method-start">18016 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4980 ms</span>
+                <span class="method-start">18207 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

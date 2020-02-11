@@ -5,6 +5,7 @@ com\demo\utilities\FileUtility.class
 com\demo\tests\frontend\TC_01_Items.class
 com\demo\utilities\user_interface\Assertions.class
 com\demo\scripts\api\fly\NewToken.class
+com\demo\tests\TestCase_01.class
 com\demo\scripts\templates\POST.class
 com\demo\utilities\user_interface\PageScroll.class
 com\demo\utilities\web_services\HttpClientUtils.class
@@ -12,7 +13,7 @@ com\demo\objects\Degiro\LoginPage.class
 com\demo\utilities\user_interface\ImageCompare.class
 com\demo\scripts\api\fly\RegisterUser.class
 com\demo\scripts\api\fly\AccessToken.class
-com\demo\objects\AmazonHomePage.class
+com\demo\scripts\api\degiro\Login.class
 com\demo\utilities\user_interface\GetAllPageLinks.class
 com\demo\scripts\templates\GET.class
 com\demo\utilities\web_services\HttpClientConfig.class
@@ -20,7 +21,7 @@ com\demo\scripts\ui\Questers.class
 com\demo\config\TestNGListener.class
 com\demo\scripts\api\fly\UserInfo.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
-com\demo\objects\NewsHomePage.class
+com\demo\objects\News\NewsHomePage.class
 com\demo\config\ReporterConfig.class
 com\demo\utilities\user_interface\ScreenRecorder.class
 com\demo\config\BasicTestConfig.class
@@ -28,8 +29,11 @@ com\demo\config\ConsoleRunner.class
 com\demo\properties\Environments.class
 com\demo\properties\FilePaths.class
 com\demo\scripts\ui\Amazon.class
+com\demo\scripts\ui\Degiro.class
+com\demo\objects\Amazon\AmazonHomePage.class
 com\demo\scripts\api\fly\Authenticate.class
 com\demo\utilities\user_interface\ElementScreenshot.class
 com\demo\scripts\api\convertor\CurrencyRates.class
+com\demo\scripts\api\degiro\ClientInfo.class
 com\demo\properties\TestData.class
 com\demo\tests\backend\fly\TC_01_Login.class

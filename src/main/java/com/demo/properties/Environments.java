@@ -9,11 +9,20 @@ public class Environments {
 
 
 
-    //  * * * *    P A T H
-    public final static String test_wb_internal_login  = "/login/secure/config";
-    public final static String test_degiro_login       = "/login/uk";
-    public final static String test_wb_internal_web    = "/pa_s/secure/settings/web";
-    public final static String test_degiro_messages    = "/i18n/messages_en_GB";
+    //  * * * *    D E G I R O   H O S T S
+    public final static String INTERNAL_HOST = "internal.degiro.eu";
+    public final static String WEB_TEST_HOST = "test-webtrader.internal.degiro.eu";
+
+
+    //  * * * *    D E G I R O   P A T H S
+    public final static String INTERNAL_LOGIN        = "/login/secure/login";
+    public final static String INTERNAL_CONFIG       = "/login/secure/config";
+    public final static String INTERNAL_STOCKS       = "/dgproductsearch/secure/v5/stocks";
+    public final static String INTERNAL_ACCOUNT_INFO = "/dgtrading/secure/v5/account/info/";
+    public final static String INTERNAL_CLIENT_INFO  = "/paservice/secure/client";
+
+    public final static String WEB_LOGIN             = "/login/ie#/login";
+
 
 
 
