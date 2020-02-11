@@ -14,6 +14,10 @@ public class Environments {
     public final static String WEB_TEST_HOST = "test-webtrader.internal.degiro.eu";
 
 
+    public final static String TEST_HOST     = "https://trader.degiro.nl/login/uk";
+
+
+
     //  * * * *    D E G I R O   P A T H S
     public final static String INTERNAL_LOGIN        = "/login/secure/login";
     public final static String INTERNAL_CONFIG       = "/login/secure/config";

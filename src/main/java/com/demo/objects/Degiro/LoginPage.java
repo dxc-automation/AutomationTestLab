@@ -26,7 +26,7 @@ public class LoginPage extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "button._6iSTUGFRm1Pp_z-8_y0Y5.Zte1YssVqY438XSyivt7f")
     public WebElement login_submit_btn;
 
-    @FindBy(how = How.XPATH, using = "//*[@id=layoutContent]/main/div")
+    @FindBy(how = How.CSS, using = "form[id=loginForm][name=loginForm]")
     public WebElement login_form;
 
     public LoginPage(WebDriver driver) {

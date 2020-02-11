@@ -22,20 +22,22 @@ import static com.demo.config.ReporterConfig.test;
 import static com.demo.properties.Environments.*;
 import static com.demo.properties.TestData.*;
 import static com.demo.utilities.user_interface.ElementScreenshot.*;
+import static com.demo.utilities.user_interface.ImageCompare.imageCompare;
 
 public class Degiro extends BasicTestConfig {
 
 
-
-    static final Logger LOG = LogManager.getLogger(Degiro.class);
+    private static LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+    static final   Logger LOG = LogManager.getLogger(Degiro.class);
 
     private static void report() throws Exception {
-        String testName = "Login WEB";
-        String testDescription = "The purpose of this test is to verify that the authentication functionality" +
-                "is working as expected. POST method is used to simulate user login from mobile device " +
-                "and verify that the server will return response with JSON body. Body should containing " +
-                "valid accessToken, hash session ID (for current user activity log) and all available IDs.";
-        String testCategory = "API";
+        String testName = "<b>[TEST] Account Login</b>";
+        String testDescription = "The purpose of this test is to verify that the login functionality is working as expected" +
+                "<br><b>*** STEPS DESCRIPTION ***</b><br>" +
+                "[1] Check that the login page can be opened and displayed with correct title.<br>" +
+                "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
+                "[3] Check login with valid credentials. ";
+        String testCategory = "Frontend";
 
         startTestReport(testName, testDescription, testCategory);
     }
@@ -44,20 +46,20 @@ public class Degiro extends BasicTestConfig {
     public static void secureLoginWeb() throws Exception {
         report();
         wait = new WebDriverWait(driver, 10);
-
-        LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-
         String url = "https://" + INTERNAL_HOST + WEB_LOGIN;
-        driver.get(url);
+        driver.get(TEST_HOST);
+
+        String pageTitle = driver.getTitle();
+        Assert.assertEquals(pageTitle, "Login DEGIRO");
         test.pass("<b>[STEP 1]</b> Login page was opened successfully");
 
-        try {
-            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(String.valueOf(loginPage.login_form))));
-            String formImg = "LoginForm";
-            elementScreenshot(loginPage.login_form, formImg);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Thread.sleep(300);
+       // WebElement form = loginPage.login_form;
+        String actualImage = "LoginForm_Actual";
+        String expectImage = "LoginForm._Expected";
+        elementScreenshot(loginPage.login_form, actualImage);
+
+        imageCompare(actualImage, expectImage);
 
         loginPage.login_user_input.sendKeys(INTERNAL_USER);
         loginPage.login_pass_input.sendKeys(INTERNAL_PASS);

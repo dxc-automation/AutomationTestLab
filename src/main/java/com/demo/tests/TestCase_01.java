@@ -12,13 +12,13 @@ import static com.demo.scripts.ui.Degiro.*;
 
 public class TestCase_01 extends BasicTestConfig {
 
-    @Test
+    @Test(enabled = false)
     public void userLogin(Method method) throws Exception {
         fileName = method.getName() + ".json";
         secureLogin(fileName);
     }
 
-    @Test
+    @Test(enabled = false)
     public void clientInfo(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getClientInfo(fileName);
