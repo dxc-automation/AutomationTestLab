@@ -14,7 +14,8 @@
                 <methods>
                     <include name="userLogin"/>
                     <include name="clientInfo"/>
-                    <include name="loginWeb"/>
+                    <include name="productsPopular"/>
+                    <include name="products"/>
                 </methods>
             </class>
         </classes>

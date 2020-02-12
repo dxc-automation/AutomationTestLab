@@ -26,6 +26,7 @@ public class Environments {
     public final static String INTERNAL_CLIENT_INFO  = "/paservice/secure/client";
 
     public final static String WEB_LOGIN             = "/login/ie#/login";
+    public final static String WEB_MARKETS           = "/trader4/#/markets";
 
 
 

@@ -7,7 +7,7 @@
   </listeners>
   <test thread-count="5" parallel="tests" name="TC_01_Epam(failed)" verbose="10">
     <classes>
-      <class name="com.demo.tests.frontend.TC_02_CarCheck">
+      <class name="com.demo.tests.TestCase_03">
         <methods>
           <include name="report"/>
           <include name="browserConfig"/>
@@ -19,8 +19,8 @@
           <include name="clearXmlFiles"/>
           <include name="generateReport"/>
         </methods>
-      </class> <!-- com.demo.tests.frontend.TC_02_CarCheck -->
-      <class name="com.demo.tests.backend.fly.TC_01_Login">
+      </class> <!-- com.demo.tests.TestCase_03>
+      <class name="com.demo.tests.TestCase_04">
         <methods>
           <include name="browserConfig"/>
           <include name="cleanReportData"/>
@@ -32,8 +32,8 @@
           <include name="clearXmlFiles"/>
           <include name="generateReport"/>
         </methods>
-      </class> <!-- com.demo.tests.backend.fly.TC_01_Login -->
-      <class name="com.demo.tests.frontend.TC_01_Items">
+      </class> <!-- com.demo.tests.TestCase_04 -->
+      <class name="com.demo.tests.TestCase_02">
         <methods>
           <include name="report"/>
           <include name="browserConfig"/>
@@ -45,7 +45,7 @@
           <include name="clearXmlFiles"/>
           <include name="generateReport"/>
         </methods>
-      </class> <!-- com.demo.tests.frontend.TC_01_Items -->
+      </class> <!-- com.demo.tests.TestCase_02 -->
     </classes>
   </test> <!-- TC_01_Epam(failed) -->
 </suite> <!-- Failed suite [TC_001] -->

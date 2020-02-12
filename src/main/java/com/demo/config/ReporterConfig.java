@@ -64,7 +64,7 @@ public class ReporterConfig {
                 "<pre>"
                         + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
                         + "<p align=justify>"
-                        + "<i>" + testDescription + "</i>"
+                        + testDescription
                         + "</p>"
                         + "</pre>");
 

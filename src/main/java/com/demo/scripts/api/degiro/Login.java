@@ -30,12 +30,13 @@ public class Login {
     static final Logger LOG = LogManager.getLogger(Login.class);
 
     private static void report() throws Exception {
-        String testName        = "Login";
-        String testDescription = "The purpose of this test is to verify that the authentication functionality" +
-                "is working as expected. POST method is used to simulate user login from mobile device "       +
-                "and verify that the server will return response with JSON body. Body should containing "      +
-                "valid accessToken, hash session ID (for current user activity log) and all available IDs.";
-        String testCategory    = "API";
+        String testName        = "<b>[POST] Login</b>";
+        String testCategory    = "Frontend";
+        String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
+                "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
+                "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
+                "[3] Check login with valid credentials.";
 
         startTestReport(testName, testDescription, testCategory);
     }
@@ -81,7 +82,7 @@ public class Login {
                 + "<br />"
                 + "Host:     " + scheme + "://" + host
                 + "<br />"
-                + "Path:     " + path
+                + "Path:     " + path + "/" + url.getQuery()
                 + "<br/>"
                 + "<br/>"
                 + getFormattedJson(jsonPostData.toString())

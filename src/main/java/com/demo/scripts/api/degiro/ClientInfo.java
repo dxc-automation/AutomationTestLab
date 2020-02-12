@@ -30,9 +30,13 @@ public class ClientInfo {
     static final Logger LOG = LogManager.getLogger(ClientInfo.class);
 
     private static void report() throws Exception {
-        String testName = "Get Currency Rates";
-        String testDescription = "The purpose of this test is to verify that the correct user details are received.";
-        String testCategory = "API";
+        String testName        = "<b>[GET] Account Info</b>";
+        String testCategory    = "Frontend";
+        String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
+                "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
+                "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
+                "[3] Check login with valid credentials.";
 
         startTestReport(testName, testDescription, testCategory);
     }

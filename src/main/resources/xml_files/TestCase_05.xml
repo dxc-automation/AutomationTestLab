@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TC_001" configfailurepolicy="continue" verbose="10" parallel="tests" thread-count="5">
+
+    <listeners>
+        <listener class-name="com.demo.config.TestNGListener"/>
+    </listeners>
+
+    <parameter name="browser"     value="chrome"/>
+
+    <test name="TC_01_Epam" group-by-instances="true">
+    <classes>
+        <class name="com.demo.tests.TestCase_04">
+            <methods>
+                <include name="accessToken"/>
+                <include name="newUser"/>
+                <include name="login"/>
+                <include name="addAccountInfo"/>
+                <include name="userInfo"/>
+            </methods>
+        </class>
+
+        <class name="com.demo.tests.TestCase_02">
+            <methods>
+                <include name="loadHomePage"/>
+                <include name="searchItem"/>
+                <include name="openItemDescription"/>
+            </methods>
+        </class>
+
+        <class name="com.demo.tests.TestCase_03">
+            <methods>
+                <include name="homepage"/>
+                <include name="search"/>
+            </methods>
+        </class>
+
+    </classes>
+</test>
+</suite>
+
+
+
+
