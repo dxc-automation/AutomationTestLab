@@ -23,6 +23,11 @@ public class TestData {
     public static String bankIban;
     public static String bankStatus;
 
+    public static double productPrice;
+    public static int    productId;
+    public static String confirmationId;
+    public static String orderId;
+
 
 
     //  * * * *    F L Y T    A P I

@@ -1,36 +1,34 @@
-package com.demo.scripts.api.degiro;
+package com.demo.scripts.api.degiro.orders;
 
-import com.jayway.jsonpath.JsonPath;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
 import static com.demo.properties.Environments.*;
-import static com.demo.properties.TestData.*;
+import static com.demo.properties.TestData.intAccount;
+import static com.demo.properties.TestData.sessionID;
 import static com.demo.utilities.FileUtility.createLogFile;
 import static com.demo.utilities.FileUtility.getFormattedJson;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 import static com.demo.utilities.web_services.HttpClientUtils.get;
 import static com.demo.utilities.web_services.HttpClientUtils.getClosableHttpClientResponseDetails;
 
-public class ClientInfo {
+public class TransactionHistory {
 
 
+    private static String scheme;
     private static String host;
     private static String path;
-    private static String scheme;
+    private static String status;
 
-    static final Logger LOG = LogManager.getLogger(ClientInfo.class);
+
+    static final Logger LOG = LogManager.getLogger(TransactionHistory.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[GET] Account Info</b>";
+        String testName        = "<b>[GET] Orders History</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                 "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
@@ -42,20 +40,26 @@ public class ClientInfo {
     }
 
 
-    public static void getClientInfo(String fileName) throws Exception {
+
+
+    public static void getTransactionsHistory(String fileName, String fromDate, String toDate) throws Exception {
         report();
 
         scheme = "https";
         host   = INTERNAL_HOST;
-        path   = INTERNAL_CLIENT_INFO;
+        path   = INTERNAL_CASH_HISTORY;
 
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
                 .setPath(path)
+                .addParameter("intAccount", String.valueOf(intAccount))
                 .addParameter("sessionId", sessionID)
+                .addParameter("fromDate", fromDate)
+                .addParameter("toDate", toDate)
                 .build();
-        
+
+
         response = closeableHttpClient().execute(get(url));
         getClosableHttpClientResponseDetails(response);
 
@@ -72,44 +76,12 @@ public class ClientInfo {
                 + "Path:     " + path + "/" + url.getQuery()
                 + "<br/>"
                 + "<br/>"
+                + "<br/>"
                 + "</pre>");
 
         createLogFile(fileName, getFormattedJson(responseBody));
+
         Assert.assertTrue(responseCode > 199 && responseCode < 300);
-
-        try {
-            accountId     = JsonPath.read(responseStringEntity, "$.data.id");
-            intAccount    = JsonPath.read(responseStringEntity, "$.data.intAccount");
-            bankAccountId = JsonPath.read(responseStringEntity, "$.data.bankAccount.bankAccountId");
-            bankBic       = JsonPath.read(responseStringEntity, "$.data.bankAccount.bic");
-            bankIban      = JsonPath.read(responseStringEntity, "$.data.bankAccount.iban");
-            bankStatus    = JsonPath.read(responseStringEntity, "$.data.bankAccount.status");
-
-            test.pass("<pre>"
-                    + "<br/>"
-                    + "<b>*** USER DETAILS ***</b>"
-                    + "<br />"
-                    + "User    ID: " + accountId
-                    + "<br />"
-                    + "Account ID: " + intAccount
-                    + "<br/>"
-                    + "<br/>"
-                    + "<b>*** BANK DETAILS ***</b>"
-                    + "<br/>"
-                    + "ID:     " + bankAccountId
-                    + "<br/>"
-                    + "BIC:    " + bankBic
-                    + "<br/>"
-                    + "IBAN:   " + bankIban
-                    + "<br/>"
-                    + "Status: " + bankStatus
-                    + "<br/>"
-                    + "<br/>"
-                    + "</pre>");
-        } catch (Exception e) {
-            e.printStackTrace();
-            test.warning("Check the values from the response body");
-        }
-
     }
+
 }

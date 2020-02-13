@@ -1,23 +1,22 @@
-package com.demo.scripts.api.degiro;
+package com.demo.scripts.api.degiro.products;
 
-import com.jayway.jsonpath.JsonPath;
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.http.entity.StringEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.json.simple.JSONObject;
 import org.testng.Assert;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
 import static com.demo.properties.Environments.*;
-import static com.demo.properties.TestData.*;
+import static com.demo.properties.TestData.intAccount;
+import static com.demo.properties.TestData.sessionID;
 import static com.demo.utilities.FileUtility.createLogFile;
 import static com.demo.utilities.FileUtility.getFormattedJson;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
-import static com.demo.utilities.web_services.HttpClientUtils.*;
+import static com.demo.utilities.web_services.HttpClientUtils.get;
+import static com.demo.utilities.web_services.HttpClientUtils.getClosableHttpClientResponseDetails;
 
-public class Stocks {
+public class Trackers {
 
 
     private static String scheme;
@@ -26,10 +25,10 @@ public class Stocks {
     private static String status;
 
 
-    static final Logger LOG = LogManager.getLogger(Stocks.class);
+    static final Logger LOG = LogManager.getLogger(Trackers.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[GET] Stocks</b>";
+        String testName        = "<b>[GET] Exchange Traded Funds List </b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                 "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
@@ -43,12 +42,12 @@ public class Stocks {
 
 
 
-    public static void getStocks(String fileName, int limit, boolean onlyPopular, boolean requireTotal) throws Exception {
+    public static void getEtfs(String fileName, int limit, boolean onlyPopular, boolean requireTotal) throws Exception {
         report();
 
         scheme = "https";
         host   = INTERNAL_HOST;
-        path   = INTERNAL_STOCKS;
+        path   = INTERNAL_ETF;
 
         url = new URIBuilder()
                 .setScheme(scheme)
@@ -60,6 +59,8 @@ public class Stocks {
                 .addParameter("limit", String.valueOf(limit))
                 .addParameter("popularOnly", String.valueOf(onlyPopular))
                 .addParameter("requireTotal", String.valueOf(requireTotal))
+                .addParameter("sortColumns", "name")
+                .addParameter("sortTypes", "asc")
                 .build();
 
 

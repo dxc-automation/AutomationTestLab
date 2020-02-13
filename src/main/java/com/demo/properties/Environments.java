@@ -1,32 +1,38 @@
 package com.demo.properties;
 
+
 public class Environments {
 
-
-    //  * * * *    H O S T
-    public final static String CURRENCY_CALC_HOST   = "currency-converter5.p.rapidapi.com";
-    public final static String CURRENCY_CALC_PATH   = "/currency/historical/";
-
-
-
-    //  * * * *    D E G I R O   H O S T S
+    //***** HOSTS
     public final static String INTERNAL_HOST = "internal.degiro.eu";
     public final static String WEB_TEST_HOST = "test-webtrader.internal.degiro.eu";
-
-
     public final static String TEST_HOST     = "https://trader.degiro.nl/login/uk";
 
 
+    //***** LOGIN
+    public final static String INTERNAL_LOGIN                = "/login/secure/login";
+    public final static String INTERNAL_CONFIG               = "/login/secure/config";
 
-    //  * * * *    D E G I R O   P A T H S
-    public final static String INTERNAL_LOGIN        = "/login/secure/login";
-    public final static String INTERNAL_CONFIG       = "/login/secure/config";
-    public final static String INTERNAL_STOCKS       = "/dgproductsearch/secure/v5/stocks";
-    public final static String INTERNAL_ACCOUNT_INFO = "/dgtrading/secure/v5/account/info/";
-    public final static String INTERNAL_CLIENT_INFO  = "/paservice/secure/client";
 
-    public final static String WEB_LOGIN             = "/login/ie#/login";
-    public final static String WEB_MARKETS           = "/trader4/#/markets";
+    //***** PRODUCTS
+    public final static String INTERNAL_STOCKS               = "/dgproductsearch/secure/v5/stocks";
+    public final static String INTERNAL_FUNDS                = "/dgproductsearch/secure/v5/funds";
+    public final static String INTERNAL_BONDS                = "/dgproductsearch/secure/v5/bonds";
+    public final static String INTERNAL_ETF                  = "/dgproductsearch/secure/v5/etfs";
+
+    public final static String INTERNAL_CASH_HISTORY         = "/reporting/secure/v6/accountoverview";
+    public final static String INTERNAL_ORDER_HISTORY        = "/reporting/secure/v4/order-history";
+
+    public final static String INTERNAL_CURRENCY_EXC         = "/dgtrading/secure/v5/checkOrder";
+    public final static String INTERNAL_CURRENCY_EXC_CONFIRM = "/dgtrading/secure/v5/order/";
+    public final static String INTERNAL_ACCOUNT_INFO         = "/dgtrading/secure/v5/account/info/";
+    public final static String INTERNAL_CLIENT_INFO          = "/paservice/secure/client";
+    public final static String INTERNAL_REAL_QUOTES          = "/paservice/secure/settings/vwdModules";
+
+    public final static String WEB_LOGIN              = "/login/ie#/login";
+    public final static String WEB_MARKETS            = "/trader4/#/markets";
+
+
 
 
 
@@ -47,6 +53,11 @@ public class Environments {
     public final static String USER_INFO     = "/v1/user/me";
     public final static String ADD_USER_INFO = "/v1/user/me/profile-field";
     public final static String NEW_TOKEN     = "/users/v1/token";
+
+
+    //  * * * *    H O S T
+    public final static String CURRENCY_CALC_HOST   = "currency-converter5.p.rapidapi.com";
+    public final static String CURRENCY_CALC_PATH   = "/currency/historical/";
 }
 
 
