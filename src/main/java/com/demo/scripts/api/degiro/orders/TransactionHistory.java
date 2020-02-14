@@ -46,8 +46,8 @@ public class TransactionHistory {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_CASH_HISTORY;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_CASH_HISTORY;
 
         url = new URIBuilder()
                 .setScheme(scheme)

@@ -46,8 +46,8 @@ public class OrdersHistory {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_ORDER_HISTORY;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_ORDER_HISTORY;
 
         url = new URIBuilder()
                 .setScheme(scheme)

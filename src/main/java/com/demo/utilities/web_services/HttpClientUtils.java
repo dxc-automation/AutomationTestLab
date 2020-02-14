@@ -56,15 +56,4 @@ public class HttpClientUtils extends BasicTestConfig {
                             .replace("[", "")
                             .replace("]", "");
     }
-
-
-
-
-    public static JSONObject checkDisplayed(JSONArray markets, JSONObject[] jsonObjects) {
-        for ( JSONObject object : jsonObjects) {
-            if (object.getBoolean("displayed") == true);
-            return object;
-        }
-        return null;
-    }
 }

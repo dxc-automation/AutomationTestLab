@@ -48,8 +48,8 @@ public class Login {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_LOGIN;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_LOGIN;
 
         url = new URIBuilder()
                 .setScheme(scheme)

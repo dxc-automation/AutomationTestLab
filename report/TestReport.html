@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -54,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 12, 2020 06:22:21 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 14, 2020 07:48:23 PM</span>
 				</a>
 			</li>
 			<li>
@@ -93,7 +92,6 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>API</a></li>
 					<li><a href='#'>Frontend</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -142,10 +140,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>6</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -157,10 +155,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>5</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>12</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='30%'>3</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='10%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='30%'>6</span> others
 				</div>
 			</div>
 		</div>
@@ -177,20 +175,20 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'><b><b>[TEST] Secured Login</b></b></span>
-						<span class='test-time'>Feb 12, 2020 06:22:21 PM</span>
+						<span class='test-name'><b><b>[POST] Login</b></b></span>
+						<span class='test-time'>Feb 14, 2020 07:48:23 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 12, 2020 06:22:21 PM</span>
-	<span class='label end-time'>Feb 12, 2020 06:22:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+581ms</span>
+	<span class='label start-time'>Feb 14, 2020 07:48:23 PM</span>
+	<span class='label end-time'>Feb 14, 2020 07:48:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+438ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the authentication functionalityis working as expected. POST method is used to simulate user login from mobile device and verify that the server will return response with JSON body. Body should containing valid accessToken, hash session ID (for current user activity log) and all available IDs.</p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>API</span>
+				<span class='category label white-text'>Frontend</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -205,7 +203,7 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:22:21 PM</td>
+					<td class='timestamp'>7:48:23 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://internal.degiro.eu<br />Path:     /login/secure/login/null<br/><br/>{
   "password": "Test_web2020",
   "isPassCodeReset": false,
@@ -215,20 +213,20 @@
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:22:21 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center><br /><br />Session ID:   14937BDD80B6019F734ADAF56DBC0DF8.helpdeskTWS2<br /><br/></pre></td>
+					<td class='timestamp'>7:48:23 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center><br /><br />Session ID:   15841B06DB63B7A39D1DD9063523E454.helpdeskTWS2<br /><br/></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:22:21 PM</td>
+					<td class='timestamp'>7:48:23 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Server: nginx
-Date: Wed
-12 Feb 2020 16:22:21 GMT
+Date: Fri
+14 Feb 2020 17:48:23 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Vary: Accept-Encoding
-Set-Cookie: JSESSIONID=14937BDD80B6019F734ADAF56DBC0DF8.helpdeskTWS2; Path=/; HttpOnly
+Set-Cookie: JSESSIONID=15841B06DB63B7A39D1DD9063523E454.helpdeskTWS2; Path=/; HttpOnly
 Cache-Control: no-cache
 no-store
 must-revalidate
@@ -238,7 +236,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
   "redirectUrl": "https://internal.degiro.eu/trader4/",
   "statusText": "success",
   "isPassCodeEnabled": true,
-  "sessionId": "14937BDD80B6019F734ADAF56DBC0DF8.helpdeskTWS2",
+  "sessionId": "15841B06DB63B7A39D1DD9063523E454.helpdeskTWS2",
   "locale": "en_IE",
   "status": 0
 }<br/><br/></pre></td>
@@ -252,20 +250,20 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'><b><b>[TEST] Get Account Info</b></b></span>
-						<span class='test-time'>Feb 12, 2020 06:22:21 PM</span>
+						<span class='test-name'><b><b>[GET] Account Info</b></b></span>
+						<span class='test-time'>Feb 14, 2020 07:48:23 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 12, 2020 06:22:21 PM</span>
-	<span class='label end-time'>Feb 12, 2020 06:22:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+307ms</span>
+	<span class='label start-time'>Feb 14, 2020 07:48:23 PM</span>
+	<span class='label end-time'>Feb 14, 2020 07:48:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+222ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the correct user details are received.</p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>API</span>
+				<span class='category label white-text'>Frontend</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -280,20 +278,20 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:22:21 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://internal.degiro.eu<br />Path:     /paservice/secure/client/sessionId=14937BDD80B6019F734ADAF56DBC0DF8.helpdeskTWS2<br/><br/></pre></td>
+					<td class='timestamp'>7:48:23 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://internal.degiro.eu<br />Path:     /paservice/secure/client/sessionId=15841B06DB63B7A39D1DD9063523E454.helpdeskTWS2<br/><br/></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:22:21 PM</td>
+					<td class='timestamp'>7:48:23 PM</td>
 					<td class='step-details'><pre><br/><b>*** USER DETAILS ***</b><br />User    ID: 463421<br />Account ID: 161017595<br/><br/><b>*** BANK DETAILS ***</b><br/>ID:     469450<br/>BIC:    ABNANL2A<br/>IBAN:   NL14ABNA0411232584<br/>Status: VERIFIED<br/><br/></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:22:21 PM</td>
+					<td class='timestamp'>7:48:23 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Server: nginx
-Date: Wed
-12 Feb 2020 16:22:21 GMT
+Date: Fri
+14 Feb 2020 17:48:23 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -373,19 +371,19 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'><b><b>[TEST] Popular Products</b></b></span>
-						<span class='test-time'>Feb 12, 2020 06:22:21 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'><b><b>[WEB] Account Login</b></b></span>
+						<span class='test-time'>Feb 14, 2020 07:48:23 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 12, 2020 06:22:21 PM</span>
-	<span class='label end-time'>Feb 12, 2020 06:22:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+378ms</span>
+	<span class='label start-time'>Feb 14, 2020 07:48:23 PM</span>
+	<span class='label end-time'>Feb 14, 2020 07:48:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+488ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials. </p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>Frontend</span>
@@ -401,67 +399,20 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:22:22 PM</td>
-					<td class='step-details'><b>FAILED ON SCREEN</b><img data-featherlight='C:\Automation\AutomationTestLab/report/Screenshots/Failed/TestCase_01.png' width='10%' src='C:\Automation\AutomationTestLab/report/Screenshots/Failed/TestCase_01.png' data-src='C:\Automation\AutomationTestLab/report/Screenshots/Failed/TestCase_01.png'></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:48:24 PM</td>
+					<td class='step-details'><b>[STEP 1]</b> Login page was opened successfully</td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>6:22:22 PM</td>
-					<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"._36CbGFJLG6WzVjeXIpURvd[data-id=marketsMenuItem]"}
-  (Session info: chrome=80.0.3987.87)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'QAIT006', ip: '172.18.4.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\PPopov\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56405}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.87, webStorageEnabled: true}
-Session ID: 5b2eba3ece765bb9f12e3c20e4db8eee
-*** Element info: {Using=css selector, value=._36CbGFJLG6WzVjeXIpURvd[data-id=marketsMenuItem]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at com.demo.scripts.ui.degiro.PopularProducts.checkFormVisualization(PopularProducts.java:61)
-	at com.demo.tests.TestCase_01.productsPopular(TestCase_01.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:48:25 PM</td>
+					<td class='step-details'><b>Image comparison successfully completed</b><br>Image comparison success rate &nbsp;&nbsp;             = &nbsp;100.0%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;0<br>Time(ms) for visualization check                       = 85<br>Number of pixels gets matched &nbsp;                   = &nbsp;132260</br><img data-featherlight='C:\Automation\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png' width='10%' src='C:\Automation\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png' data-src='C:\Automation\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:48:25 PM</td>
+					<td class='step-details'><b>[STEP 2]</b> Account login successfully</td>
 				</tr>
 			</tbody>
 		</table>
@@ -472,20 +423,65 @@ Session ID: 5b2eba3ece765bb9f12e3c20e4db8eee
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'><b><b>[TEST] Get Stocks</b></b></span>
-						<span class='test-time'>Feb 12, 2020 06:22:22 PM</span>
+						<span class='test-name'><b><b>[WEB] Popular Products</b></b></span>
+						<span class='test-time'>Feb 14, 2020 07:48:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 12, 2020 06:22:22 PM</span>
-	<span class='label end-time'>Feb 12, 2020 06:22:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+235ms</span>
+	<span class='label start-time'>Feb 14, 2020 07:48:26 PM</span>
+	<span class='label end-time'>Feb 14, 2020 07:48:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+77ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the authentication functionalityis working as expected. POST method is used to simulate user login from mobile device and verify that the server will return response with JSON body. Body should containing valid accessToken, hash session ID (for current user activity log) and all available IDs.</p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>API</span>
+				<span class='category label white-text'>Frontend</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:48:26 PM</td>
+					<td class='step-details'><b>[STEP 1]</b> Markets page was opened successfully</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:48:27 PM</td>
+					<td class='step-details'><b>POPULAR PRODUCTS</b><br><img data-featherlight='C:\Automation\AutomationTestLab/report/Screenshots/Actual/PopularProductsForm_Actual.png' width='10%' src='C:\Automation\AutomationTestLab/report/Screenshots/Actual/PopularProductsForm_Actual.png' data-src='C:\Automation\AutomationTestLab/report/Screenshots/Actual/PopularProductsForm_Actual.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'><b><b>[GET] Stocks List</b></b></span>
+						<span class='test-time'>Feb 14, 2020 07:48:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 14, 2020 07:48:27 PM</span>
+	<span class='label end-time'>Feb 14, 2020 07:48:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+198ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Frontend</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -500,15 +496,15 @@ Session ID: 5b2eba3ece765bb9f12e3c20e4db8eee
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>6:22:22 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://internal.degiro.eu<br />Path:     /dgproductsearch/secure/v5/stocks/intAccount=161017595&sessionId=14937BDD80B6019F734ADAF56DBC0DF8.helpdeskTWS2&offset=0&limit=100&popularOnly=true&requireTotal=true<br/><br/><br/></pre></td>
+					<td class='timestamp'>7:48:27 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://internal.degiro.eu<br />Path:     /dgproductsearch/secure/v5/stocks/intAccount=161017595&sessionId=15841B06DB63B7A39D1DD9063523E454.helpdeskTWS2&offset=0&limit=100&popularOnly=true&requireTotal=true<br/><br/><br/></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>6:22:22 PM</td>
+					<td class='timestamp'>7:48:27 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Server: nginx
-Date: Wed
-12 Feb 2020 16:22:22 GMT
+Date: Fri
+14 Feb 2020 17:48:27 GMT
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -524,7 +520,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
   "products": [
     {
       "symbol": "V",
-      "closePriceDate": "2020-02-11",
+      "closePriceDate": "2020-02-13",
       "qualitySwitchableSecondary": false,
       "trailingStopOrderAllowed": false,
       "sellAmountAllowed": false,
@@ -571,7 +567,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
       "vwdIdentifierType": "vwdkey",
       "stopLimitOrderAllowed": true,
       "gtcAllowed": true,
-      "closePrice": 203.94,
+      "closePrice": 207.4,
       "vwdIdentifierTypeSecondary": "issueid",
       "category": "A",
       "isin": "US92826C8394",
@@ -579,7 +575,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
     },
     {
       "symbol": "NOKIA",
-      "closePriceDate": "2020-02-11",
+      "closePriceDate": "2020-02-13",
       "qualitySwitchableSecondary": true,
       "trailingStopOrderAllowed": false,
       "sellAmountAllowed": false,
@@ -626,7 +622,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
       "vwdIdentifierType": "issueid",
       "stopLimitOrderAllowed": true,
       "gtcAllowed": true,
-      "closePrice": 4.06,
+      "closePrice": 4.016,
       "vwdIdentifierTypeSecondary": "issueid",
       "category": "B",
       "isin": "FI0009000681",
@@ -634,7 +630,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
     },
     {
       "symbol": "KO",
-      "closePriceDate": "2020-02-11",
+      "closePriceDate": "2020-02-13",
       "qualitySwitchableSecondary": false,
       "trailingStopOrderAllowed": false,
       "sellAmountAllowed": false,
@@ -681,7 +677,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
       "vwdIdentifierType": "vwdkey",
       "stopLimitOrderAllowed": true,
       "gtcAllowed": true,
-      "closePrice": 59.59,
+      "closePrice": 59.61,
       "vwdIdentifierTypeSecondary": "issueid",
       "category": "A",
       "isin": "US1912161007",
@@ -689,7 +685,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
     },
     {
       "symbol": "PHIA",
-      "closePriceDate": "2020-02-11",
+      "closePriceDate": "2020-02-13",
       "qualitySwitchableSecondary": false,
       "trailingStopOrderAllowed": false,
       "sellAmountAllowed": false,
@@ -736,7 +732,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
       "vwdIdentifierType": "issueid",
       "stopLimitOrderAllowed": true,
       "gtcAllowed": true,
-      "closePrice": 44.605,
+      "closePrice": 44.7,
       "vwdIdentifierTypeSecondary": "issueid",
       "category": "A",
       "isin": "NL0000009538",
@@ -745,7 +741,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
     },
     {
       "symbol": "TMUS",
-      "closePriceDate": "2020-02-11",
+      "closePriceDate": "2020-02-13",
       "qualitySwitchableSecondary": true,
       "trailingStopOrderAllowed": false,
       "sellAmountAllowed": false,
@@ -792,7 +788,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
       "vwdIdentifierType": "vwdkey",
       "stopLimitOrderAllowed": true,
       "gtcAllowed": true,
-      "closePrice": 94.49,
+      "closePrice": 95.14,
       "vwdIdentifierTypeSecondary": "issueid",
       "category": "A",
       "isin": "US8725901040",
@@ -800,7 +796,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
     },
     {
       "symbol": "SAF",
-      "closePriceDate": "2020-02-11",
+      "closePriceDate": "2020-02-13",
       "qualitySwitchableSecondary": false,
       "trailingStopOrderAllowed": false,
       "sellAmountAllowed": false,
@@ -847,7 +843,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
       "vwdIdentifierType": "issueid",
       "stopLimitOrderAllowed": true,
       "gtcAllowed": true,
-      "closePrice": 149.55,
+      "closePrice": 145.2,
       "vwdIdentifierTypeSecondary": "issueid",
       "category": "A",
       "isin": "FR0000073272",
@@ -856,7 +852,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
     },
     {
       "symbol": "CRG",
-      "closePriceDate": "2020-02-11",
+      "closePriceDate": "2020-02-13",
       "trailingStopOrderAllowed": false,
       "sellAmountAllowed": false,
       "vwdId": "955001216",
@@ -904,7 +900,7 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
     },
     {
       "symbol": "IRES",
-      "closePriceDate": "2020-02-11",
+      "closePriceDate": "2020-02-13",
       "trailingStopOrderAllowed": false,
       "sellAmountAllowed": false,
       "vwdId": "955005439",
@@ -945,13 +941,382 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
       "vwdIdentifierType": "issueid",
       "stopLimitOrderAllowed": true,
       "gtcAllowed": true,
-      "closePrice": 1.508,
+      "closePrice": 1.518,
       "category": "C",
       "isin": "IE00BJ34P519",
       "qualitySwitchable": false
     }
   ]
 }<br/><br/></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'><b><b>[GET] Products From Markets Page</b></b></span>
+						<span class='test-time'>Feb 14, 2020 07:48:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 14, 2020 07:48:27 PM</span>
+	<span class='label end-time'>Feb 14, 2020 07:48:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+183ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Frontend</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>7:48:27 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://internal.degiro.eu<br />Path:     /paservice/secure/settings/web/intAccount=161017595&sessionId=15841B06DB63B7A39D1DD9063523E454.helpdeskTWS2<br/><br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:48:27 PM</td>
+					<td class='step-details'><pre><br><center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center><br><br>Currency: EUR/USD<br>ID:       705366<br></pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>7:48:27 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Server: nginx
+Date: Fri
+14 Feb 2020 17:48:27 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Cache-Control: no-cache
+no-store
+must-revalidate
+Pragma: no-cache
+Expires: 0
+Access-Control-Allow-Credentials: true<br/><br/><br/>{
+  "data": {
+    "defaultOptionExchangeId": 5,
+    "defaultEtfExchangeId": -1,
+    "marketPageChartIndex": {
+      "country": "EU",
+      "name": "Europe 50",
+      "vwdId": "11138355.MS,I",
+      "closePrice": 3846.74,
+      "id": 4836600
+    },
+    "defaultOptionCountryId": -1,
+    "defaultFutureExchangeId": 2,
+    "marketPageCurrencies": [
+      {
+        "fromCountry": "EU",
+        "name": "EUR/USD",
+        "vwdId": "190143785",
+        "id": 705366,
+        "toCountry": "US"
+      },
+      {
+        "fromCountry": "EU",
+        "name": "EUR/GBP",
+        "vwdId": "190163000",
+        "id": 714324,
+        "toCountry": "GB"
+      },
+      {
+        "fromCountry": "GB",
+        "name": "GBP/USD",
+        "vwdId": "190015673",
+        "id": 1788982,
+        "toCountry": "US"
+      },
+      {
+        "fromCountry": "GB",
+        "name": "GBP/JPY",
+        "vwdId": "190015867",
+        "id": 12153968,
+        "toCountry": "JP"
+      },
+      {
+        "fromCountry": "EU",
+        "name": "EUR/CAD",
+        "vwdId": "190168883",
+        "id": 841089,
+        "toCountry": "CA"
+      }
+    ],
+    "defaultLeveragedUnderlyingId": -1,
+    "defaultBondIssuerType": 0,
+    "defaultCfdExchangeId": 384,
+    "defaultFutureCountryId": -1,
+    "defaultFundIssuerId": -1,
+    "thousandDelimiter": ",",
+    "marketPageIndices": [
+      {
+        "country": "EU",
+        "name": "Europe 50",
+        "vwdId": "11138355.MS,I",
+        "closePrice": 3846.74,
+        "id": 4836600
+      },
+      {
+        "country": "GB",
+        "name": "UK 100",
+        "vwdId": "11138356.MS,I",
+        "closePrice": 7452.03,
+        "id": 11138356
+      },
+      {
+        "country": "US",
+        "name": "USA 500",
+        "vwdId": "11138354.MS,I",
+        "closePrice": 3373.94,
+        "id": 1796639
+      },
+      {
+        "country": "US",
+        "name": "USA TECH 100",
+        "vwdId": "11138349.MS,I",
+        "closePrice": 9595.702,
+        "id": 12153880
+      },
+      {
+        "country": "FR",
+        "name": "CAC 40",
+        "vwdId": "360015511",
+        "closePrice": 6093.14,
+        "id": 4824940
+      },
+      {
+        "country": "DE",
+        "name": "Germany 30",
+        "vwdId": "11138343.MS,I",
+        "closePrice": 13745.43,
+        "id": 900830
+      },
+      {
+        "country": "NL",
+        "name": "AEX",
+        "vwdId": "12272",
+        "closePrice": 629.14,
+        "id": 1037624
+      },
+      {
+        "country": "ES",
+        "name": "Spain 35",
+        "vwdId": "11138348.MS,I",
+        "closePrice": 9909.8,
+        "id": 4626845
+      },
+      {
+        "country": "IT",
+        "name": "Italy 40",
+        "vwdId": "11138345.MS,I",
+        "closePrice": 24887.0,
+        "id": 11138345
+      },
+      {
+        "country": "US",
+        "name": "USA 30",
+        "vwdId": "11138344.MS,I",
+        "closePrice": 29423.31,
+        "id": 4836603
+      }
+    ],
+    "defaultFutureUnderlyingIsin": "-1",
+    "marketMoversIndexIds": [
+      12,
+      14,
+      122001,
+      9,
+      113001,
+      113003,
+      6,
+      5,
+      10,
+      1,
+      18,
+      4,
+      17,
+      11,
+      105001
+    ],
+    "defaultStockCountryId": 963,
+    "defaultLeveragedShortLong": -1,
+    "defaultWarrantUnderlyingName": "-1",
+    "defaultWarrantIssuerName": "-1",
+    "defaultLeveragedPopularOnly": false,
+    "defaultBondExchangeId": -1,
+    "defaultEtfPopularOnly": false,
+    "defaultOptionUnderlyingIsin": "-1",
+    "decimalDelimiter": ".",
+    "defaultStockListType": "index",
+    "marketPageFutures": [
+      {
+        "country": "EU",
+        "name": "EURO STOXX 50",
+        "vwdId": "91436370",
+        "id": 14490433
+      },
+      {
+        "country": "DE",
+        "name": "DAX",
+        "vwdId": "507943032",
+        "id": 16134995
+      },
+      {
+        "country": "ES",
+        "name": "IBEX 35",
+        "vwdId": "956450047",
+        "id": 16685109
+      },
+      {
+        "country": "FR",
+        "name": "CAC 40",
+        "vwdId": "509060097",
+        "id": 16669350
+      },
+      {
+        "country": "US",
+        "name": "S\u0026P 500 E-mini",
+        "vwdId": "ES.CMEM.003,F",
+        "id": 15393401
+      }
+    ],
+    "defaultMarketMoversIndexId": 9,
+    "defaultStockListId": 114005,
+    "defaultEtfFeeType": -1,
+    "defaultLeveragedExchangeId": -1,
+    "defaultFundFeeType": -1,
+    "defaultLeveragedIssuerId": -1,
+    "defaultEtfIssuerId": -1
+  }
+}<br/><br/></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'><b><b>[GET] Currency Details</b></b></span>
+						<span class='test-time'>Feb 14, 2020 07:48:27 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 14, 2020 07:48:27 PM</span>
+	<span class='label end-time'>Feb 14, 2020 07:48:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+295ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Frontend</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>7:48:28 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://charting.vwdservices.com<br />Path:     /hchart/v1/deGiro/data.js/null<br/><br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:28 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br /><br />Response Code  : 404<br />Error Message  : Not Found<br /><br />Cache-Control: private,no-transform
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri
+14 Feb 2020 17:48:28 GMT
+Content-Length: 387<br /><br /><br /><center><b>********  E X C E P T I O N  ********</b></center><br />java.lang.AssertionError: expected [true] but found [false]<br /><br />null<br /></pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'><b><b>[POST] Currency Transaction</b></b></span>
+						<span class='test-time'>Feb 14, 2020 07:48:28 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 14, 2020 07:48:28 PM</span>
+	<span class='label end-time'>Feb 14, 2020 07:48:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+215ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Frontend</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>7:48:28 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://internal.degiro.eu<br />Path:     /dgtrading/secure/v5/checkOrder/intAccount=161017595&sessionId=15841B06DB63B7A39D1DD9063523E454.helpdeskTWS2<br/><br/>{
+  "orderType": 1,
+  "buySell": "buy",
+  "size": 1,
+  "productId": 0,
+  "price": 0.0,
+  "timeType": 1
+}<br/><br/></pre></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>7:48:28 PM</td>
+					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br /><br />Response Code  : 401<br />Error Message  : Unauthorized<br /><br />Server: nginx
+Date: Fri
+14 Feb 2020 17:48:28 GMT
+Content-Type: text/html;charset=utf-8
+Content-Length: 768
+Connection: keep-alive
+Content-Language: en
+Access-Control-Allow-Credentials: true<br /><br /><br /><center><b>********  E X C E P T I O N  ********</b></center><br />java.lang.AssertionError: expected [true] but found [false]<br /><br />null<br /></pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -1010,59 +1375,16 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>API</span>
-						<span class='category-status right'>
-							<span class='label pass'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 12, 2020 06:22:21 PM</td>
-										<td class='linked' test-id='1'><b><b>[TEST] Secured Login</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 12, 2020 06:22:21 PM</td>
-										<td class='linked' test-id='2'><b><b>[TEST] Get Account Info</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 12, 2020 06:22:22 PM</td>
-										<td class='linked' test-id='4'><b><b>[TEST] Get Stocks</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>Frontend</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>6</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -1077,8 +1399,43 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 12, 2020 06:22:21 PM</td>
-										<td class='linked' test-id='3'><b><b>[TEST] Popular Products</b></b></td>
+										<td>Feb 14, 2020 07:48:23 PM</td>
+										<td class='linked' test-id='1'><b><b>[POST] Login</b></b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 14, 2020 07:48:23 PM</td>
+										<td class='linked' test-id='2'><b><b>[GET] Account Info</b></b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 14, 2020 07:48:23 PM</td>
+										<td class='linked' test-id='3'><b><b>[WEB] Account Login</b></b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 14, 2020 07:48:26 PM</td>
+										<td class='linked' test-id='4'><b><b>[WEB] Popular Products</b></b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 14, 2020 07:48:27 PM</td>
+										<td class='linked' test-id='5'><b><b>[GET] Stocks List</b></b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 14, 2020 07:48:27 PM</td>
+										<td class='linked' test-id='6'><b><b>[GET] Products From Markets Page</b></b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Feb 14, 2020 07:48:27 PM</td>
+										<td class='linked' test-id='7'><b><b>[GET] Currency Details</b></b></td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Feb 14, 2020 07:48:28 PM</td>
+										<td class='linked' test-id='8'><b><b>[POST] Currency Transaction</b></b></td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -1098,119 +1455,6 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Feb 12, 2020 06:22:21 PM</td>
-                                                        <td class='linked' test-id='3'><b><b>[TEST] Popular Products</b></b></td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"._36CbGFJLG6WzVjeXIpURvd[data-id=marketsMenuItem]"}
-  (Session info: chrome=80.0.3987.87)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'QAIT006', ip: '172.18.4.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\PPopov\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56405}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.87, webStorageEnabled: true}
-Session ID: 5b2eba3ece765bb9f12e3c20e4db8eee
-*** Element info: {Using=css selector, value=._36CbGFJLG6WzVjeXIpURvd[data-id=marketsMenuItem]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at com.demo.scripts.ui.degiro.PopularProducts.checkFormVisualization(PopularProducts.java:61)
-	at com.demo.tests.TestCase_01.productsPopular(TestCase_01.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -1220,31 +1464,31 @@ Session ID: 5b2eba3ece765bb9f12e3c20e4db8eee
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 12, 2020 06:22:21 PM</div>
+					<div class='panel-lead'>Feb 14, 2020 07:48:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 12, 2020 06:22:22 PM</div>
+			 		<div class='panel-lead'>Feb 14, 2020 07:48:29 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 1s+624ms</div>
+					<div class='panel-lead'>0h 0m 6s+142ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1292,21 +1536,12 @@ Session ID: 5b2eba3ece765bb9f12e3c20e4db8eee
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>API</td>
-							<td>3</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
 							<td>Frontend</td>
-							<td>0</td>
-							<td>1</td>
+							<td>6</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									0%
+									75%
 							</td>
 						</tr>
 					</table>
@@ -1322,21 +1557,21 @@ Session ID: 5b2eba3ece765bb9f12e3c20e4db8eee
 
 		<script>
 			var statusGroup = {
-				passParent: 3,
-				failParent: 1,
+				passParent: 6,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 2,
 				
-				passChild: 5,
+				passChild: 12,
 				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 3,
+				infoChild: 6,
 				exceptionsChild: 2,
 				
 				passGrandChild: 0,

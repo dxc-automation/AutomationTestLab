@@ -10,8 +10,8 @@ import org.testng.Assert;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
-import static com.demo.properties.Environments.INTERNAL_CURRENCY_EXC;
-import static com.demo.properties.Environments.INTERNAL_HOST;
+import static com.demo.properties.Environments.INT_TEST_CURRENCY_EXC;
+import static com.demo.properties.Environments.INT_TEST_HOST;
 import static com.demo.properties.TestData.*;
 import static com.demo.utilities.FileUtility.createLogFile;
 import static com.demo.utilities.FileUtility.getFormattedJson;
@@ -49,8 +49,8 @@ public class CurrencyTransactionConfirmation {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_CURRENCY_EXC + confirmationId;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_CURRENCY_EXC + confirmationId;
 
         url = new URIBuilder()
                 .setScheme(scheme)

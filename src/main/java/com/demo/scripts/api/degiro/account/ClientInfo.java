@@ -42,8 +42,8 @@ public class ClientInfo {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_CLIENT_INFO;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_CLIENT_INFO;
 
         url = new URIBuilder()
                 .setScheme(scheme)

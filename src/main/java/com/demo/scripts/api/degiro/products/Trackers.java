@@ -46,8 +46,8 @@ public class Trackers {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_ETF;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_ETF;
 
         url = new URIBuilder()
                 .setScheme(scheme)

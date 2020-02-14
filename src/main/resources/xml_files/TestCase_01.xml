@@ -16,6 +16,9 @@
                     <include name="clientInfo"/>
                     <include name="productsPopular"/>
                     <include name="products"/>
+                    <include name="marketsPageProducts"/>
+                    <include name="currencyInfo"/>
+                    <include name="convertCurrency"/>
                 </methods>
             </class>
         </classes>

@@ -44,8 +44,8 @@ public class Stocks {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_STOCKS;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_STOCKS;
 
         url = new URIBuilder()
                 .setScheme(scheme)

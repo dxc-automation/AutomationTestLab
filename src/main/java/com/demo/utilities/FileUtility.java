@@ -16,12 +16,11 @@ import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 public class FileUtility extends BasicTestConfig {
 
-    public static final JsonParser parser     = new JsonParser();
+    public static final JsonParser parser = new JsonParser();
     public static final JSONParser jsonParser = new JSONParser();
-    public static final Gson       gson       = new Gson();
-    public static       String     debugFileName;
-    public static final MediaType  MediaTypeJSON = MediaType.parse("application/json; charset=utf-8");
-
+    public static final Gson gson = new Gson();
+    public static String debugFileName;
+    public static final MediaType MediaTypeJSON = MediaType.parse("application/json; charset=utf-8");
 
 
     public static Timestamp getTime(Long timestamp) throws Exception {
@@ -50,7 +49,6 @@ public class FileUtility extends BasicTestConfig {
     }
 
 
-
     public static File createLogFile(String fileName, String responseBody) throws Exception {
         try {
             File file = new File(report_json_folder + fileName);
@@ -67,16 +65,17 @@ public class FileUtility extends BasicTestConfig {
     }
 
 
-
-    public static void createJSONDebugFile(String fileName, String responseBody) throws Exception {
-        debugFileName = fileName + "[debug].json";
-
-        file = new File(report_json_folder + debugFileName);
-        FileWriter fileWriter = new FileWriter(file);
-        fileWriter.write(responseBody);
-        fileWriter.flush();
-        fileWriter.close();
-
-        return;
+    public static File createDebugFile(String fileName, String responseBody) throws Exception {
+        try {
+            File file = new File(report_json_folder + fileName);
+            FileWriter fileWriter = new FileWriter(file);
+            fileWriter.write(responseBody);
+            fileWriter.flush();
+            fileWriter.close();
+            return file;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

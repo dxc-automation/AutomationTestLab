@@ -5,10 +5,12 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-import static com.demo.properties.TestData.fileName;
+import static com.demo.properties.TestData.*;
 import static com.demo.scripts.api.degiro.account.Login.secureLogin;
 import static com.demo.scripts.api.degiro.account.ClientInfo.getClientInfo;
 import static com.demo.scripts.api.degiro.products.Stocks.getStocks;
+import static com.demo.scripts.api.degiro.products.MarketPageProducts.getMarketsPageProdocts;
+import static com.demo.scripts.api.degiro.products.Currency.getCurrencyDetails;
 import static com.demo.scripts.api.degiro.orders.CurrencyTransaction.*;
 import static com.demo.scripts.ui.degiro.PopularProducts.checkFormVisualization;
 
@@ -36,6 +38,18 @@ public class TestCase_01 extends BasicTestConfig {
     public void products(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getStocks(fileName, 100, true, true);
+    }
+
+    @Test
+    public void marketsPageProducts(Method method) throws Exception {
+        fileName = method.getName() + ".json";
+        getMarketsPageProdocts(fileName);
+    }
+
+    @Test
+    public void currencyInfo(Method method) throws Exception {
+        fileName = method.getName() + ".json";
+        getCurrencyDetails(fileName, EUR_CAD);
     }
 
     @Test

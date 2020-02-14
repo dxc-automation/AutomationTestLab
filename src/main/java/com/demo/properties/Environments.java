@@ -4,30 +4,34 @@ package com.demo.properties;
 public class Environments {
 
     //***** HOSTS
-    public final static String INTERNAL_HOST = "internal.degiro.eu";
-    public final static String WEB_TEST_HOST = "test-webtrader.internal.degiro.eu";
-    public final static String TEST_HOST     = "https://trader.degiro.nl/login/uk";
+    public final static String INT_TEST_HOST    = "internal.degiro.eu";
+    public final static String WEB_TEST_HOST    = "test-webtrader.internal.degiro.eu";
+    public final static String TEST_HOST        = "trader.degiro.nl";
+    public final static String VWD_SERVICE_HOST = "charting.vwdservices.com";
 
 
     //***** LOGIN
-    public final static String INTERNAL_LOGIN                = "/login/secure/login";
-    public final static String INTERNAL_CONFIG               = "/login/secure/config";
+    public final static String INT_TEST_LOGIN  = "/login/secure/login";
+    public final static String INT_TEST_CONFIG = "/login/secure/config";
 
 
     //***** PRODUCTS
-    public final static String INTERNAL_STOCKS               = "/dgproductsearch/secure/v5/stocks";
-    public final static String INTERNAL_FUNDS                = "/dgproductsearch/secure/v5/funds";
-    public final static String INTERNAL_BONDS                = "/dgproductsearch/secure/v5/bonds";
-    public final static String INTERNAL_ETF                  = "/dgproductsearch/secure/v5/etfs";
+    public final static String INT_TEST_STOCKS = "/dgproductsearch/secure/v5/stocks";
+    public final static String INT_TEST_FUNDS  = "/dgproductsearch/secure/v5/funds";
+    public final static String INT_TEST_BONDS  = "/dgproductsearch/secure/v5/bonds";
+    public final static String INT_TEST_ETF    = "/dgproductsearch/secure/v5/etfs";
 
-    public final static String INTERNAL_CASH_HISTORY         = "/reporting/secure/v6/accountoverview";
-    public final static String INTERNAL_ORDER_HISTORY        = "/reporting/secure/v4/order-history";
+    public final static String INT_TEST_MARKETS_PAGE = "/paservice/secure/settings/web";
 
-    public final static String INTERNAL_CURRENCY_EXC         = "/dgtrading/secure/v5/checkOrder";
-    public final static String INTERNAL_CURRENCY_EXC_CONFIRM = "/dgtrading/secure/v5/order/";
-    public final static String INTERNAL_ACCOUNT_INFO         = "/dgtrading/secure/v5/account/info/";
-    public final static String INTERNAL_CLIENT_INFO          = "/paservice/secure/client";
-    public final static String INTERNAL_REAL_QUOTES          = "/paservice/secure/settings/vwdModules";
+    public final static String INT_TEST_CASH_HISTORY  = "/reporting/secure/v6/accountoverview";
+    public final static String INT_TEST_ORDER_HISTORY = "/reporting/secure/v4/order-history";
+
+    public final static String INT_TEST_CURRENCY_EXC         = "/dgtrading/secure/v5/checkOrder";
+    public final static String INT_TEST_CURRENCY_EXC_CONFIRM = "/dgtrading/secure/v5/order/";
+    public final static String INT_TEST_ACCOUNT_INFO         = "/dgtrading/secure/v5/account/info/";
+    public final static String INT_TEST_CLIENT_INFO          = "/paservice/secure/client";
+    public final static String INT_TEST_REAL_QUOTES          = "/paservice/secure/settings/vwdModules";
+    public final static String INT_TEST_CURRENCY             = "/hchart/v1/deGiro/data.js";
 
     public final static String WEB_LOGIN              = "/login/ie#/login";
     public final static String WEB_MARKETS            = "/trader4/#/markets";

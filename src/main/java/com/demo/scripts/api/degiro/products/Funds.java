@@ -46,8 +46,8 @@ public class Funds {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_FUNDS;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_FUNDS;
 
         url = new URIBuilder()
                 .setScheme(scheme)

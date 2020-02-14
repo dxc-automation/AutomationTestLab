@@ -11,9 +11,10 @@
         <methods>
           <include name="browserConfig"/>
           <include name="cleanReportData"/>
+          <include name="convertCurrency" invocation-numbers="0"/>
           <include name="flushReportData"/>
           <include name="tearDown"/>
-          <include name="productsPopular" invocation-numbers="0"/>
+          <include name="currencyInfo" invocation-numbers="0"/>
           <include name="setEnvironmentConfiguration"/>
           <include name="clearXmlFiles"/>
           <include name="generateReport"/>

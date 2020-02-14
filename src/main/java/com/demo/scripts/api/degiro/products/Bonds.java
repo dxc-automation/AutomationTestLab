@@ -46,8 +46,8 @@ public class Bonds {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_BONDS;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_BONDS;
 
         url = new URIBuilder()
                 .setScheme(scheme)

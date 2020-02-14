@@ -48,13 +48,15 @@ public class CurrencyTransaction {
         report();
 
         scheme = "https";
-        host   = INTERNAL_HOST;
-        path   = INTERNAL_CURRENCY_EXC;
+        host   = INT_TEST_HOST;
+        path   = INT_TEST_CURRENCY_EXC;
 
         url = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
                 .setPath(path)
+                .addParameter("intAccount", String.valueOf(intAccount))
+                .addParameter("sessionId", sessionID)
                 .build();
 
 
