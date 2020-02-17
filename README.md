@@ -13,8 +13,7 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 <br>
 
 ### <i>Automation Arhitecture</i>
-![N|Solid](https://user-images.githubusercontent.com/48771359/72221965-28774f00-3568-11ea-9955-9d9925dcc22e.png)
-
+![Copy of Untitled Diagram](https://user-images.githubusercontent.com/48771359/74692786-7af3fd00-51f1-11ea-82c4-878896fc610d.png)
 
 
 ### <i>Automation Framework</i>
