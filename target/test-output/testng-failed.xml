@@ -14,7 +14,6 @@
           <include name="convertCurrency" invocation-numbers="0"/>
           <include name="flushReportData"/>
           <include name="tearDown"/>
-          <include name="currencyInfo" invocation-numbers="0"/>
           <include name="setEnvironmentConfiguration"/>
           <include name="clearXmlFiles"/>
           <include name="generateReport"/>

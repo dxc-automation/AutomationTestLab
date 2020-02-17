@@ -3,56 +3,48 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/currencyInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/currencyInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/marketsPageProducts.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/marketsPageProducts.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/products.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/userLogin.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/userLogin.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/PopularProductsForm_Actual.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/PopularProductsForm_Actual.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Screenshots/Failed/TestCase_01.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/ClientInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/ClientInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransactionConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransactionConfirmation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/OrdersHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/OrdersHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/TransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/TransactionHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Bonds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Bonds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Funds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Funds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/MarketPageProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/MarketPageProducts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Stocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Stocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Trackers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Trackers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/settings/RealTimeQuotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/settings/RealTimeQuotes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/archive-tmp/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/Environments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/Environments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/TestData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/ClientInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/Stocks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/BasicTestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/BasicTestConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/account/ClientInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/account/ClientInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/account/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/account/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/CurrencyTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/CurrencyTransaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/templates/GET.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/templates/POST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/CurrencyTransactionConfirmation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/CurrencyTransactionConfirmation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/OrdersHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/OrdersHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/TransactionHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/TransactionHistory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/Currency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/MarketPageProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/MarketPageProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/SearchProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/SearchProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/Stocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/Stocks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpClientUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpClientUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/TC_01_Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TC_001/TC_01_Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/TC_01_Index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TC_001/TC_01_Index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TC_001/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_01.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/testng-failed.xml" afterDir="false" />
@@ -75,10 +67,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Currency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+            <state relative-caret-position="579">
+              <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,19 +79,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            <state relative-caret-position="231">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Currency.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/ClientInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="71" column="41" lean-forward="true" selection-start-line="71" selection-end-line="72" />
+            <state relative-caret-position="336">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -107,8 +99,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="495">
+              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,37 +118,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="987">
+              <caret line="228" column="82" selection-start-line="228" selection-start-column="82" selection-end-line="228" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state relative-caret-position="620">
+              <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,11 +144,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/MarketPageProducts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
+            <state relative-caret-position="348">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Stocks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -201,11 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/basic/GetMarketsData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/basic/MarketData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/basic/General.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/basic/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/basic/Messages.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/backend/degiro/TC_01_Login.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/Degiro.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java" />
@@ -214,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/backend/rapid/TC_01_CurrencyConvertor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/CurrencyConvert.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/convertor/CurrencyRates.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/objects/Degiro/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/config/ReporterConfig.java" />
@@ -240,18 +235,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/GET_Trackers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/GET_OrdersHistory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/GetTransactionHistory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransactionConfirmation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransaction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/MarketPageProducts.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Currencies.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/ClientInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransactionConfirmation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/OrdersHistory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/TransactionHistory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/MarketPageProducts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Stocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Currency.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" />
       </list>
     </option>
   </component>
@@ -340,8 +341,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -374,6 +373,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -458,6 +466,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="degiro" type="462c0819:PsiDirectoryNode" />
+              <item name="settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -507,6 +527,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -519,7 +541,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581702543339" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581942363318" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -863,8 +885,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4917647" visible="true" weight="0.2544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4917647" visible="true" weight="0.25706667" />
       <window_info id="Structure" order="1" sideWeight="0.5082353" side_tool="true" weight="0.19280344" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1043,16 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/ReporterConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1197">
@@ -1145,13 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/ClientInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/Degiro/General.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1184,13 +1190,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Stocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Bonds.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1205,51 +1204,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/TransactionHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/OrdersHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransactionConfirmation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1148">
-          <caret line="104" column="51" selection-start-line="104" selection-start-column="51" selection-end-line="104" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="98" column="29" selection-start-line="94" selection-start-column="8" selection-end-line="108" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
+        <state relative-caret-position="756">
           <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1261,13 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1292,10 +1242,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="399">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/CurrencyTransactionConfirmation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/OrdersHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/TransactionHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/MarketPageProducts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Stocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
@@ -1306,10 +1301,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/MarketPageProducts.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/ClientInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
+        <state relative-caret-position="336">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="228" column="82" selection-start-line="228" selection-start-column="82" selection-end-line="228" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1318,8 +1327,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/Currency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="71" column="41" lean-forward="true" selection-start-line="71" selection-end-line="72" />
+        <state relative-caret-position="579">
+          <caret line="76" column="54" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="85" column="54" selection-start-line="85" selection-start-column="54" selection-end-line="85" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

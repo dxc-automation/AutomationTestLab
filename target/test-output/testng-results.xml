@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="TC_001" duration-ms="5428" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:28Z">
+  <suite name="TC_001" duration-ms="5369" started-at="2020-02-17T12:29:48Z" finished-at="2020-02-17T12:29:54Z">
     <groups>
     </groups>
-    <test name="TC_01_Index" duration-ms="5428" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:28Z">
+    <test name="TC_01_Index" duration-ms="5369" started-at="2020-02-17T12:29:48Z" finished-at="2020-02-17T12:29:54Z">
       <class name="com.demo.tests.TestCase_01">
-        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="browserConfig" is-config="true" duration-ms="6067" started-at="2020-02-14T17:48:17Z" finished-at="2020-02-14T17:48:23Z">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="browserConfig" is-config="true" duration-ms="5887" started-at="2020-02-17T12:29:42Z" finished-at="2020-02-17T12:29:48Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="cleanReportData" is-config="true" duration-ms="6" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:23Z">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="cleanReportData" is-config="true" duration-ms="6" started-at="2020-02-17T12:29:48Z" finished-at="2020-02-17T12:29:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method status="PASS" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="setEnvironmentConfiguration" is-config="true" duration-ms="1" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:23Z">
+        <test-method status="PASS" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="setEnvironmentConfiguration" is-config="true" duration-ms="1" started-at="2020-02-17T12:29:48Z" finished-at="2020-02-17T12:29:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentConfiguration -->
-        <test-method status="PASS" signature="userLogin(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="userLogin" duration-ms="506" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:23Z">
+        <test-method status="PASS" signature="userLogin(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="userLogin" duration-ms="510" started-at="2020-02-17T12:29:48Z" finished-at="2020-02-17T12:29:49Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userLogin -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:23Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-02-17T12:29:49Z" finished-at="2020-02-17T12:29:49Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="clientInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="clientInfo" duration-ms="220" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:23Z">
+        <test-method status="PASS" signature="clientInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="clientInfo" duration-ms="226" started-at="2020-02-17T12:29:49Z" finished-at="2020-02-17T12:29:49Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clientInfo -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:23Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-02-17T12:29:49Z" finished-at="2020-02-17T12:29:49Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="productsPopular(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="productsPopular" duration-ms="3794" started-at="2020-02-14T17:48:23Z" finished-at="2020-02-14T17:48:27Z">
+        <test-method status="PASS" signature="productsPopular(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="productsPopular" duration-ms="3571" started-at="2020-02-17T12:29:49Z" finished-at="2020-02-17T12:29:53Z">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productsPopular -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-02-14T17:48:27Z" finished-at="2020-02-14T17:48:27Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-02-17T12:29:53Z" finished-at="2020-02-17T12:29:53Z">
           <params>
             <param index="0">
               <value>
@@ -92,7 +92,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="products(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="products" duration-ms="197" started-at="2020-02-14T17:48:27Z" finished-at="2020-02-14T17:48:27Z">
+        <test-method status="PASS" signature="products(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="products" duration-ms="223" started-at="2020-02-17T12:29:53Z" finished-at="2020-02-17T12:29:53Z">
           <params>
             <param index="0">
               <value>
@@ -103,7 +103,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- products -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-02-14T17:48:27Z" finished-at="2020-02-14T17:48:27Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-02-17T12:29:53Z" finished-at="2020-02-17T12:29:53Z">
           <params>
             <param index="0">
               <value>
@@ -114,7 +114,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="marketsPageProducts(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="marketsPageProducts" duration-ms="181" started-at="2020-02-14T17:48:27Z" finished-at="2020-02-14T17:48:27Z">
+        <test-method status="PASS" signature="marketsPageProducts(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="marketsPageProducts" duration-ms="195" started-at="2020-02-17T12:29:53Z" finished-at="2020-02-17T12:29:53Z">
           <params>
             <param index="0">
               <value>
@@ -125,7 +125,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- marketsPageProducts -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-02-14T17:48:27Z" finished-at="2020-02-14T17:48:27Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-02-17T12:29:53Z" finished-at="2020-02-17T12:29:53Z">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="FAIL" signature="currencyInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="currencyInfo" duration-ms="291" started-at="2020-02-14T17:48:27Z" finished-at="2020-02-14T17:48:28Z">
+        <test-method status="PASS" signature="currencyInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="currencyInfo" duration-ms="390" started-at="2020-02-17T12:29:53Z" finished-at="2020-02-17T12:29:53Z">
           <params>
             <param index="0">
               <value>
@@ -144,56 +144,21 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.demo.scripts.api.degiro.products.Currency.getCurrencyDetails(Currency.java:89)
-at com.demo.tests.TestCase_01.currencyInfo(TestCase_01.java:52)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- currencyInfo -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="5" started-at="2020-02-14T17:48:28Z" finished-at="2020-02-14T17:48:28Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-02-17T12:29:53Z" finished-at="2020-02-17T12:29:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=currencyInfo status=FAILURE method=TestCase_01.currencyInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414] output={null}]]]>
+                <![CDATA[[TestResult name=currencyInfo status=SUCCESS method=TestCase_01.currencyInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="FAIL" signature="convertCurrency(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="convertCurrency" duration-ms="215" started-at="2020-02-14T17:48:28Z" finished-at="2020-02-14T17:48:28Z">
+        <test-method status="FAIL" signature="convertCurrency(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="convertCurrency" duration-ms="230" started-at="2020-02-17T12:29:53Z" finished-at="2020-02-17T12:29:54Z">
           <params>
             <param index="0">
               <value>
@@ -211,7 +176,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.demo.scripts.api.degiro.orders.CurrencyTransaction.currencyTransaction(CurrencyTransaction.java:112)
+at com.demo.scripts.api.degiro.orders.CurrencyTransaction.currencyTransaction(CurrencyTransaction.java:111)
 at com.demo.tests.TestCase_01.convertCurrency(TestCase_01.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -239,7 +204,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- convertCurrency -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="0" started-at="2020-02-14T17:48:28Z" finished-at="2020-02-14T17:48:28Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="generateReport" is-config="true" duration-ms="6" started-at="2020-02-17T12:29:54Z" finished-at="2020-02-17T12:29:54Z">
           <params>
             <param index="0">
               <value>
@@ -250,15 +215,15 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="clearXmlFiles" is-config="true" duration-ms="11" started-at="2020-02-14T17:48:28Z" finished-at="2020-02-14T17:48:28Z">
+        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="clearXmlFiles" is-config="true" duration-ms="10" started-at="2020-02-17T12:29:54Z" finished-at="2020-02-17T12:29:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="tearDown" is-config="true" duration-ms="676" started-at="2020-02-14T17:48:28Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" finished-at="2020-02-14T17:48:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="tearDown" is-config="true" duration-ms="620" started-at="2020-02-17T12:29:54Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" finished-at="2020-02-17T12:29:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="flushReportData" is-config="true" duration-ms="173" started-at="2020-02-14T17:48:29Z" finished-at="2020-02-14T17:48:29Z">
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01@5c909414]" name="flushReportData" is-config="true" duration-ms="175" started-at="2020-02-17T12:29:54Z" finished-at="2020-02-17T12:29:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->

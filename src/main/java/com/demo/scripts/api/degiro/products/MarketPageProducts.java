@@ -60,6 +60,7 @@ public class MarketPageProducts {
 
         response = closeableHttpClient().execute(get(url));
         getClosableHttpClientResponseDetails(response);
+        createLogFile(fileName, getFormattedJson(responseBody));
 
 
         test.info("<pre>"
@@ -77,7 +78,6 @@ public class MarketPageProducts {
                 + "<br/>"
                 + "</pre>");
 
-        createLogFile(fileName, getFormattedJson(responseBody));
         Assert.assertTrue(responseCode > 199 && responseCode < 300);
 
         try {

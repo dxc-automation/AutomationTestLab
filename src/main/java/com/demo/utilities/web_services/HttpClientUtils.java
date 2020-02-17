@@ -8,11 +8,15 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.io.FileReader;
 import java.net.URI;
 import java.util.Arrays;
 
-import static com.demo.utilities.FileUtility.getFormattedJson;
+import static com.demo.utilities.FileUtility.*;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
+import static com.demo.properties.FilePaths.report_json_folder;
+import static com.demo.properties.TestData.fileName;
 
 
 public class HttpClientUtils extends BasicTestConfig {
@@ -20,8 +24,9 @@ public class HttpClientUtils extends BasicTestConfig {
     public static HttpGet get;
 
 
-    public static HttpGet get(URI url) throws Exception {
-        get = new HttpGet(url);
+    public static HttpGet get(URI url) {
+        String address = url.toString();
+        get = new HttpGet(address);
         get.setHeader("Content-Type", "application/json");
         get.setHeader("Connection", "keep-alive");
 
@@ -32,8 +37,9 @@ public class HttpClientUtils extends BasicTestConfig {
 
 
 
-    public static HttpPost post(StringEntity entity, URI url) throws Exception {
-        HttpPost post = new HttpPost(url);
+    public static HttpPost post(StringEntity entity, URI url) {
+        String address = url.toString();
+        HttpPost post = new HttpPost(address);
         post.setHeader("Content-Type", "application/json");
         post.setHeader("Accept", "*/*");
         post.setHeader("Connection", "keep-alive");

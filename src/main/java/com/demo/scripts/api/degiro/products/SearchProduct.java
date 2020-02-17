@@ -63,6 +63,7 @@ public class SearchProduct {
 
         response = closeableHttpClient().execute(get(url));
         getClosableHttpClientResponseDetails(response);
+        createLogFile(fileName, getFormattedJson(responseBody));
 
 
         test.info("<pre>"
@@ -80,7 +81,6 @@ public class SearchProduct {
                 + "<br/>"
                 + "</pre>");
 
-        createLogFile(fileName, getFormattedJson(responseBody));
 
         Assert.assertTrue(responseCode > 199 && responseCode < 300);
     }

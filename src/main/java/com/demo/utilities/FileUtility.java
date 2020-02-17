@@ -3,14 +3,16 @@ package com.demo.utilities;
 import com.demo.config.BasicTestConfig;
 import com.google.gson.*;
 import okhttp3.MediaType;
+import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
-import java.io.File;
-import java.io.FileWriter;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
 
 import static com.demo.properties.FilePaths.report_json_folder;
+import static com.demo.properties.TestData.fileName;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 
@@ -35,10 +37,18 @@ public class FileUtility extends BasicTestConfig {
     }
 
 
-    public static String getFormattedJson(String responseBody) throws Exception {
+    public static String readJsonResponseFile() throws ParseException, IOException {
+            Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
+            Object jsonObject    = parser.parse(new FileReader(report_json_folder + fileName)).toString();
+            String formattedJson = gson.toJson(jsonObject);
+            return formattedJson;
+    }
+
+
+    public static String getFormattedJson(String responseBody) {
         try {
             Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
-            Object jsonObject = jsonParser.parse(responseBody);
+            Object jsonObject    = jsonParser.parse(responseBody);
             String formattedJson = gson.toJson(jsonObject);
             return formattedJson;
 
@@ -49,7 +59,7 @@ public class FileUtility extends BasicTestConfig {
     }
 
 
-    public static File createLogFile(String fileName, String responseBody) throws Exception {
+    public static File createLogFile(String fileName, String responseBody) {
         try {
             File file = new File(report_json_folder + fileName);
             FileWriter fileWriter = new FileWriter(file);
@@ -65,11 +75,15 @@ public class FileUtility extends BasicTestConfig {
     }
 
 
-    public static File createDebugFile(String fileName, String responseBody) throws Exception {
+    public static File createDebugFile(String fileName, String responseBody) {
         try {
+            String response = responseBody
+                    .replace("vwd.hchart.seriesRequestManager.sync_response(", "")
+                    .replace(")", "");
+
             File file = new File(report_json_folder + fileName);
             FileWriter fileWriter = new FileWriter(file);
-            fileWriter.write(responseBody);
+            fileWriter.write(getFormattedJson(response));
             fileWriter.flush();
             fileWriter.close();
             return file;

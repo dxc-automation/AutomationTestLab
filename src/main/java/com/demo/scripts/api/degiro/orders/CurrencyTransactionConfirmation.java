@@ -74,6 +74,7 @@ public class CurrencyTransactionConfirmation {
 
         response = closeableHttpClient().execute(post(entity, url));
         getClosableHttpClientResponseDetails(response);
+        createLogFile(fileName, getFormattedJson(responseBody));
 
 
         test.info("<pre>"
@@ -93,7 +94,6 @@ public class CurrencyTransactionConfirmation {
                 + "<br/>"
                 + "</pre>");
 
-        createLogFile(fileName, getFormattedJson(responseBody));
 
         try {
             orderId = JsonPath.read(responseStringEntity, "$..orderId");

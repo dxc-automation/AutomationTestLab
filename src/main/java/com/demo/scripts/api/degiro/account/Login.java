@@ -71,6 +71,8 @@ public class Login {
 
         response = closeableHttpClient().execute(post(entity, url));
         getClosableHttpClientResponseDetails(response);
+        createLogFile(fileName, getFormattedJson(responseBody));
+
 
 
         test.info("<pre>"
@@ -89,8 +91,6 @@ public class Login {
                 + "<br/>"
                 + "<br/>"
                 + "</pre>");
-
-        createLogFile(fileName, getFormattedJson(responseBody));
 
         try {
             sessionID = JsonPath.read(responseStringEntity, "$.sessionId");

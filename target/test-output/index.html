@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" hash-for-method="convertCurrency(public void com.demo.tests.TestCase_01.convertCurrency(java.lang.reflect.Method) throws java.lang.Ex...)">convertCurrency(public void com.demo.tests.TestCase_01.convertCurrency(java.lang.reflect.Method) throws java.lang.Ex...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" hash-for-method="currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...)">currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-TC_001 -->
@@ -122,6 +117,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" hash-for-method="clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...)">clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" hash-for-method="currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...)">currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -173,45 +173,8 @@
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.demo.scripts.api.degiro.orders.CurrencyTransaction.currencyTransaction(CurrencyTransaction.java:112)
+	at com.demo.scripts.api.degiro.orders.CurrencyTransaction.currencyTransaction(CurrencyTransaction.java:111)
 	at com.demo.tests.TestCase_01.convertCurrency(TestCase_01.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...)">
-                  </a> <!-- currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...) -->
-                  <span class="method-name">currencyInfo</span>
-                  <span class="parameters">(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.demo.scripts.api.degiro.products.Currency.getCurrencyDetails(Currency.java:89)
-	at com.demo.tests.TestCase_01.currencyInfo(TestCase_01.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -250,6 +213,14 @@
                   </a> <!-- clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...) -->
                   <span class="method-name">clientInfo</span>
                   <span class="parameters">(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...)">
+                  </a> <!-- currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...) -->
+                  <span class="method-name">currencyInfo</span>
+                  <span class="parameters">(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -356,31 +327,31 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'productsPopular')
 data.setCell(0, 2, 'com.demo.tests.TestCase_01')
-data.setCell(0, 3, 3794);
+data.setCell(0, 3, 3571);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'userLogin')
 data.setCell(1, 2, 'com.demo.tests.TestCase_01')
-data.setCell(1, 3, 506);
+data.setCell(1, 3, 510);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'currencyInfo')
 data.setCell(2, 2, 'com.demo.tests.TestCase_01')
-data.setCell(2, 3, 291);
+data.setCell(2, 3, 390);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clientInfo')
+data.setCell(3, 1, 'convertCurrency')
 data.setCell(3, 2, 'com.demo.tests.TestCase_01')
-data.setCell(3, 3, 220);
+data.setCell(3, 3, 230);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'convertCurrency')
+data.setCell(4, 1, 'clientInfo')
 data.setCell(4, 2, 'com.demo.tests.TestCase_01')
-data.setCell(4, 3, 215);
+data.setCell(4, 3, 226);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'products')
 data.setCell(5, 2, 'com.demo.tests.TestCase_01')
-data.setCell(5, 3, 197);
+data.setCell(5, 3, 223);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'marketsPageProducts')
 data.setCell(6, 2, 'com.demo.tests.TestCase_01')
-data.setCell(6, 3, 181);
+data.setCell(6, 3, 195);
 window.suiteTableData['TC_001']= { tableData: data, tableDiv: 'times-div-TC_001'}
 return data;
 }
@@ -418,83 +389,81 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
-                <span class="method-start">6067 ms</span>
+                <span class="method-start">5887 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setEnvironmentConfiguration</span>
-                <span class="method-start">6073 ms</span>
+                <span class="method-start">5893 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">userLogin(public void com.demo.tests.TestCase_01.userLogin(java.lang.reflect.Method) throws java.lang.Exceptio...)</span>
-                <span class="method-start">6080 ms</span>
+                <span class="method-start">5900 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=userLogin status=SUCCESS method=TestCase_01.userLogin(java.lang.reflect.Method)[pri...)</span>
-                <span class="method-start">6586 ms</span>
+                <span class="method-start">6410 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">clientInfo(public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Excepti...)</span>
-                <span class="method-start">6588 ms</span>
+                <span class="method-start">6412 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=clientInfo status=SUCCESS method=TestCase_01.clientInfo(java.lang.reflect.Method)[p...)</span>
-                <span class="method-start">6808 ms</span>
+                <span class="method-start">6638 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">productsPopular(public void com.demo.tests.TestCase_01.productsPopular(java.lang.reflect.Method) throws java.lang.Ex...)</span>
-                <span class="method-start">6812 ms</span>
+                <span class="method-start">6639 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=productsPopular status=SUCCESS method=TestCase_01.productsPopular(java.lang.reflect...)</span>
-                <span class="method-start">10606 ms</span>
+                <span class="method-start">10210 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">products(public void com.demo.tests.TestCase_01.products(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                <span class="method-start">10607 ms</span>
+                <span class="method-start">10213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=products status=SUCCESS method=TestCase_01.products(java.lang.reflect.Method)[pri:0...)</span>
-                <span class="method-start">10804 ms</span>
+                <span class="method-start">10436 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">marketsPageProducts(public void com.demo.tests.TestCase_01.marketsPageProducts(java.lang.reflect.Method) throws java.lan...)</span>
-                <span class="method-start">10806 ms</span>
+                <span class="method-start">10438 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=marketsPageProducts status=SUCCESS method=TestCase_01.marketsPageProducts(java.lang...)</span>
-                <span class="method-start">10988 ms</span>
+                <span class="method-start">10633 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">currencyInfo(public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Excep...)</span>
-                <span class="method-start">10989 ms</span>
+                <span class="method-start">10636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport([TestResult name=currencyInfo status=FAILURE method=TestCase_01.currencyInfo(java.lang.reflect.Metho...)</span>
-                <span class="method-start">11280 ms</span>
+                <span class="method-name">generateReport([TestResult name=currencyInfo status=SUCCESS method=TestCase_01.currencyInfo(java.lang.reflect.Metho...)</span>
+                <span class="method-start">11026 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">convertCurrency(public void com.demo.tests.TestCase_01.convertCurrency(java.lang.reflect.Method) throws java.lang.Ex...)</span>
-                <span class="method-start">11285 ms</span>
+                <span class="method-start">11028 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=convertCurrency status=FAILURE method=TestCase_01.convertCurrency(java.lang.reflect...)</span>
-                <span class="method-start">11501 ms</span>
+                <span class="method-start">11258 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXmlFiles</span>
-                <span class="method-start">11538 ms</span>
+                <span class="method-start">11294 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11549 ms</span>
+                <span class="method-start">11304 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReportData</span>
-                <span class="method-start">12225 ms</span>
+                <span class="method-start">11925 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

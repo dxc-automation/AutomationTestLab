@@ -69,11 +69,12 @@ public class Currency {
                 .addParameter("userToken", "463421")
                 .addParameter("tz", "Europe/Dublin")
                 .build();
-        String add = url.toASCIIString();
-        HttpGet get1 = new HttpGet(add);
 
-        response = closeableHttpClient().execute(get1);
+
+
+        response = closeableHttpClient().execute(get(url));
         getClosableHttpClientResponseDetails(response);
+        createDebugFile(fileName, responseStringEntity);
 
 
         test.info("<pre>"
@@ -91,7 +92,6 @@ public class Currency {
                 + "<br/>"
                 + "</pre>");
 
-        createDebugFile(fileName, responseStringEntity);
         Assert.assertTrue(responseCode > 199 && responseCode < 300);
     }
 

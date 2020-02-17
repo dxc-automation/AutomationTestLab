@@ -6,7 +6,7 @@
       "country": "EU",
       "name": "Europe 50",
       "vwdId": "11138355.MS,I",
-      "closePrice": 3846.74,
+      "closePrice": 3840.97,
       "id": 4836600
     },
     "defaultOptionCountryId": -1,
@@ -59,70 +59,70 @@
         "country": "EU",
         "name": "Europe 50",
         "vwdId": "11138355.MS,I",
-        "closePrice": 3846.74,
+        "closePrice": 3840.97,
         "id": 4836600
       },
       {
         "country": "GB",
         "name": "UK 100",
         "vwdId": "11138356.MS,I",
-        "closePrice": 7452.03,
+        "closePrice": 7409.13,
         "id": 11138356
       },
       {
         "country": "US",
         "name": "USA 500",
         "vwdId": "11138354.MS,I",
-        "closePrice": 3373.94,
+        "closePrice": 3380.16,
         "id": 1796639
       },
       {
         "country": "US",
         "name": "USA TECH 100",
         "vwdId": "11138349.MS,I",
-        "closePrice": 9595.702,
+        "closePrice": 9623.58,
         "id": 12153880
       },
       {
         "country": "FR",
         "name": "CAC 40",
         "vwdId": "360015511",
-        "closePrice": 6093.14,
+        "closePrice": 6069.35,
         "id": 4824940
       },
       {
         "country": "DE",
         "name": "Germany 30",
         "vwdId": "11138343.MS,I",
-        "closePrice": 13745.43,
+        "closePrice": 13744.21,
         "id": 900830
       },
       {
         "country": "NL",
         "name": "AEX",
         "vwdId": "12272",
-        "closePrice": 629.14,
+        "closePrice": 629.23,
         "id": 1037624
       },
       {
         "country": "ES",
         "name": "Spain 35",
         "vwdId": "11138348.MS,I",
-        "closePrice": 9909.8,
+        "closePrice": 9956.8,
         "id": 4626845
       },
       {
         "country": "IT",
         "name": "Italy 40",
         "vwdId": "11138345.MS,I",
-        "closePrice": 24887.0,
+        "closePrice": 24852.0,
         "id": 11138345
       },
       {
         "country": "US",
         "name": "USA 30",
         "vwdId": "11138344.MS,I",
-        "closePrice": 29423.31,
+        "closePrice": 29398.08,
         "id": 4836603
       }
     ],

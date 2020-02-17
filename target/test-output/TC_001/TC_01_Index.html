@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TC_01_Index</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 14 19:48:23 EET 2020</td>
+<td>Started on:</td><td>Mon Feb 17 14:29:48 EET 2020</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5428 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5369 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -81,7 +81,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.demo.scripts.api.degiro.orders.CurrencyTransaction.currencyTransaction(CurrencyTransaction.java:112)
+	at com.demo.scripts.api.degiro.orders.CurrencyTransaction.currencyTransaction(CurrencyTransaction.java:111)
 	at com.demo.tests.TestCase_01.convertCurrency(TestCase_01.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -103,74 +103,14 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace535577869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace535577869'><pre>java.lang.AssertionError: expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1056877463", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1056877463'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.demo.scripts.api.degiro.orders.CurrencyTransaction.currencyTransaction(CurrencyTransaction.java:112)
+	at com.demo.scripts.api.degiro.orders.CurrencyTransaction.currencyTransaction(CurrencyTransaction.java:111)
 	at com.demo.tests.TestCase_01.convertCurrency(TestCase_01.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.demo.tests.TestCase_01@5c909414</td></tr>
-<tr>
-<td title='com.demo.tests.TestCase_01.currencyInfo()'><b>currencyInfo</b><br>Test class: com.demo.tests.TestCase_01<br>Parameters: public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.demo.scripts.api.degiro.products.Currency.getCurrencyDetails(Currency.java:89)
-	at com.demo.tests.TestCase_01.currencyInfo(TestCase_01.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace289274046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace289274046'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.demo.scripts.api.degiro.products.Currency.getCurrencyDetails(Currency.java:89)
-	at com.demo.tests.TestCase_01.currencyInfo(TestCase_01.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -204,6 +144,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.demo.tests.TestCase_01.clientInfo()'><b>clientInfo</b><br>Test class: com.demo.tests.TestCase_01<br>Parameters: public void com.demo.tests.TestCase_01.clientInfo(java.lang.reflect.Method) throws java.lang.Exception</td>
+<td></td>
+<td>0</td>
+<td>com.demo.tests.TestCase_01@5c909414</td></tr>
+<tr>
+<td title='com.demo.tests.TestCase_01.currencyInfo()'><b>currencyInfo</b><br>Test class: com.demo.tests.TestCase_01<br>Parameters: public void com.demo.tests.TestCase_01.currencyInfo(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
 <td>0</td>
 <td>com.demo.tests.TestCase_01@5c909414</td></tr>
