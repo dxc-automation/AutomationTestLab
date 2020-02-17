@@ -51,15 +51,19 @@ public class HttpClientUtils extends BasicTestConfig {
 
 
     public static void getClosableHttpClientResponseDetails(CloseableHttpResponse response) throws Exception {
-        responseEntity       = response.getEntity();
-        responseStringEntity = EntityUtils.toString(responseEntity, "UTF-8");
-        responseBody         = getFormattedJson(responseStringEntity);
-        responseCode         = response.getStatusLine().getStatusCode();
-        responseMsg          = response.getStatusLine().getReasonPhrase();
-        responseHeaders      = Arrays.asList(response.getAllHeaders())
-                            .toString()
-                            .replace(", ", "\n")
-                            .replace("[", "")
-                            .replace("]", "");
+        try {
+            responseEntity = response.getEntity();
+            responseStringEntity = EntityUtils.toString(responseEntity, "UTF-8");
+            responseBody = getFormattedJson(responseStringEntity);
+            responseCode = response.getStatusLine().getStatusCode();
+            responseMsg = response.getStatusLine().getReasonPhrase();
+            responseHeaders = Arrays.asList(response.getAllHeaders())
+                    .toString()
+                    .replace(", ", "\n")
+                    .replace("[", "")
+                    .replace("]", "");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

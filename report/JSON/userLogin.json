@@ -1,8 +1,8 @@
 {
-  "isPassCodeEnabled": true,
-  "locale": "en_IE",
   "redirectUrl": "https://internal.degiro.eu/trader4/",
-  "sessionId": "A814C8BA490E39A587EACE7DDE54BF08.helpdeskTWS2",
-  "status": 0,
-  "statusText": "success"
+  "statusText": "success",
+  "isPassCodeEnabled": true,
+  "sessionId": "515DB0C3460701F4C2786043BF27384F.helpdeskTWS2",
+  "locale": "en_IE",
+  "status": 0
 }

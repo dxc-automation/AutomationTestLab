@@ -21,7 +21,6 @@ public class FileUtility extends BasicTestConfig {
     public static final JsonParser parser = new JsonParser();
     public static final JSONParser jsonParser = new JSONParser();
     public static final Gson gson = new Gson();
-    public static String debugFileName;
     public static final MediaType MediaTypeJSON = MediaType.parse("application/json; charset=utf-8");
 
 
@@ -53,7 +52,7 @@ public class FileUtility extends BasicTestConfig {
     public static String getFormattedJson(String responseBody) {
         try {
             Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
-            Object jsonObject    = parser.parse(responseBody);
+            Object jsonObject    = jsonParser.parse(responseBody);
             String formattedJson = gson.toJson(jsonObject);
             return formattedJson;
 

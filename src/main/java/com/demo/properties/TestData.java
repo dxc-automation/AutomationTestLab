@@ -34,8 +34,10 @@ public class TestData {
     public static String confirmationId;
     public static String orderId;
 
+    public static String currencyConvertName;
     public static String currencyName;
     public static int    currencyId;
+    public static String currencyLastPrice;
 
 
 

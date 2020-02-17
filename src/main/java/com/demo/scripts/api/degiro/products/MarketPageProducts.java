@@ -88,10 +88,10 @@ public class MarketPageProducts {
                     + "<br>"
                     + "<center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center>"
                     + "<br>"
-                    + "<br>"
-                    + "Currency: " + currencyName
+                    + "CurrencyInfo: " + currencyName
                     + "<br>"
                     + "ID:       " + currencyId
+                    + "<br>"
                     + "<br>"
                     + "</pre>");
         } catch (Exception e) {

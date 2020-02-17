@@ -12,7 +12,6 @@ com\demo\utilities\user_interface\ImageCompare.class
 com\demo\scripts\api\fly\RegisterUser.class
 com\demo\tests\TestCase_05.class
 com\demo\utilities\user_interface\GetAllPageLinks.class
-com\demo\scripts\api\degiro\products\Currency.class
 com\demo\utilities\web_services\HttpClientConfig.class
 com\demo\scripts\api\fly\UserInfo.class
 com\demo\objects\News\NewsHomePage.class
@@ -39,6 +38,7 @@ com\demo\scripts\api\degiro\orders\OrdersHistory.class
 com\demo\scripts\api\degiro\products\MarketPageProducts.class
 com\demo\scripts\api\fly\AccessToken.class
 com\demo\tests\TestCase_04.class
+com\demo\scripts\api\degiro\products\CurrencyInfo.class
 com\demo\config\TestNGListener.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
 com\demo\config\BasicTestConfig.class

@@ -26,6 +26,7 @@ C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\web_services\Ht
 C:\Automation\AutomationTestLab\src\main\java\com\demo\tests\TestCase_02.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\objects\Amazon\AmazonHomePage.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\WebDriverUtils.java
+C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\degiro\products\CurrencyInfo.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\degiro\products\Funds.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\properties\TestData.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\PageScroll.java
@@ -41,7 +42,6 @@ C:\Automation\AutomationTestLab\src\main\java\com\demo\objects\News\NewsHomePage
 C:\Automation\AutomationTestLab\src\main\java\com\demo\config\TestNGListener.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\fly\AccessToken.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\fly\Authenticate.java
-C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\degiro\products\Currency.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\config\BasicTestConfig.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\tests\TestCase_04.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\ImageCompare.java

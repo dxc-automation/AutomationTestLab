@@ -31,7 +31,7 @@ public class CurrencyTransactionConfirmation {
     static final Logger LOG = LogManager.getLogger(CurrencyTransactionConfirmation.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[POST] Currency Transaction</b>";
+        String testName        = "<b>[POST] CurrencyInfo Transaction</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                 "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +

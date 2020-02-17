@@ -30,7 +30,7 @@ public class CurrencyTransaction {
     static final Logger LOG = LogManager.getLogger(CurrencyTransaction.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[POST] Currency Transaction</b>";
+        String testName        = "<b>[POST] CurrencyInfo Transaction</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                 "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
@@ -66,8 +66,8 @@ public class CurrencyTransaction {
         jsonPostData.put("buySell", orderType);
         jsonPostData.put("timeType", 1);
         jsonPostData.put("orderType", 1);
-        jsonPostData.put("price", productPrice);
-        jsonPostData.put("productId", productId);
+        jsonPostData.put("price", currencyLastPrice);
+        jsonPostData.put("productId", currencyId);
 
         StringEntity entity = new StringEntity(jsonPostData.toString());
 

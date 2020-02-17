@@ -10,7 +10,7 @@ import static com.demo.scripts.api.degiro.account.Login.secureLogin;
 import static com.demo.scripts.api.degiro.account.ClientInfo.getClientInfo;
 import static com.demo.scripts.api.degiro.products.Stocks.getStocks;
 import static com.demo.scripts.api.degiro.products.MarketPageProducts.getMarketsPageProdocts;
-import static com.demo.scripts.api.degiro.products.Currency.getCurrencyDetails;
+import static com.demo.scripts.api.degiro.products.CurrencyInfo.getCurrencyDetails;
 import static com.demo.scripts.api.degiro.orders.CurrencyTransaction.*;
 import static com.demo.scripts.ui.degiro.PopularProducts.checkFormVisualization;
 
