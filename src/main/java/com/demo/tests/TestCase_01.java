@@ -16,43 +16,43 @@ import static com.demo.scripts.ui.degiro.PopularProducts.checkFormVisualization;
 
 public class TestCase_01 extends BasicTestConfig {
 
-    @Test
+    @Test(enabled = false)
     public void userLogin(Method method) throws Exception {
         fileName = method.getName() + ".json";
         secureLogin(fileName);
     }
 
-    @Test
+    @Test(enabled = false)
     public void clientInfo(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getClientInfo(fileName);
     }
 
-    @Test
+    @Test(enabled = false)
     public void productsPopular(Method method) throws Exception {
         fileName = method.getName() + ".json";
         checkFormVisualization();
     }
 
-    @Test
+    @Test(enabled = false)
     public void products(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getStocks(fileName, 100, true, true);
     }
 
-    @Test
+    @Test(enabled = false)
     public void marketsPageProducts(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getMarketsPageProdocts(fileName);
     }
 
-    @Test
+    @Test(enabled = true)
     public void currencyInfo(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getCurrencyDetails(fileName, EUR_CAD);
     }
 
-    @Test
+    @Test(enabled = false)
     public void convertCurrency(Method method) throws Exception {
         fileName = method.getName() + ".json";
         currencyTransaction(fileName, 1, "buy");

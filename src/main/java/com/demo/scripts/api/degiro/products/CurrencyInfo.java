@@ -91,11 +91,14 @@ public class CurrencyInfo {
                 + "<br/>"
                 + "</pre>");
 
-        JSONObject object = (JSONObject) jsonParser.parse(new FileReader(report_json_folder + fileName));
+        Object object = jsonParser.parse(new FileReader(report_json_folder + fileName));
+        JSONObject jsonObject = (JSONObject) object;
 
         try {
-            currencyConvertName  = JsonPath.read(object, "$..name");
-            currencyLastPrice = JsonPath.read(object, "$..lastPrice");
+            net.minidev.json.JSONArray currencyArray  = JsonPath.read(jsonObject.toString(), "$..name");
+            net.minidev.json.JSONArray currencyLastPriceArray    = JsonPath.read(jsonObject.toString(), "$..lastPrice");
+            currencyConvertName = currencyArray.get(0).toString();
+            currencyLastPrice = currencyLastPriceArray.get(0).toString();
 
         test.info("<pre>"
                 + "<br>"

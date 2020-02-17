@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 17, 2020 07:34:05 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 17, 2020 09:46:30 PM</span>
 				</a>
 			</li>
 			<li>
@@ -79,8 +79,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -141,10 +139,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>6</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +154,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='61.905%'><span class='strong'>13</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='4.762%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>7</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -176,1056 +174,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'><b><b>[POST] Login</b></b></span>
-						<span class='test-time'>Feb 17, 2020 07:34:05 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 17, 2020 07:34:05 PM</span>
-	<span class='label end-time'>Feb 17, 2020 07:34:05 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+373ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>7:34:05 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://internal.degiro.eu<br />Path:     /login/secure/login/null<br/><br/>{
-  "password": "Test_web2020",
-  "isPassCodeReset": false,
-  "isRedirectToMobile": false,
-  "username": "dgtraderie"
-}<br/><br/></pre></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:05 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center><br /><br />Session ID:   515DB0C3460701F4C2786043BF27384F.helpdeskTWS2<br /><br/></pre></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:05 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Server: nginx
-Date: Mon
-17 Feb 2020 17:34:05 GMT
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-Set-Cookie: JSESSIONID=515DB0C3460701F4C2786043BF27384F.helpdeskTWS2; Path=/; HttpOnly
-Cache-Control: no-cache
-no-store
-must-revalidate
-Pragma: no-cache
-Expires: 0
-Access-Control-Allow-Credentials: true<br/><br/><br/>{
-  "redirectUrl": "https://internal.degiro.eu/trader4/",
-  "statusText": "success",
-  "isPassCodeEnabled": true,
-  "sessionId": "515DB0C3460701F4C2786043BF27384F.helpdeskTWS2",
-  "locale": "en_IE",
-  "status": 0
-}<br/><br/></pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'><b><b>[GET] Account Info</b></b></span>
-						<span class='test-time'>Feb 17, 2020 07:34:05 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 17, 2020 07:34:05 PM</span>
-	<span class='label end-time'>Feb 17, 2020 07:34:06 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+216ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>7:34:06 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://internal.degiro.eu<br />Path:     /paservice/secure/client/sessionId=515DB0C3460701F4C2786043BF27384F.helpdeskTWS2<br/><br/></pre></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:06 PM</td>
-					<td class='step-details'><pre><br/><b>*** USER DETAILS ***</b><br />User    ID: 463421<br />Account ID: 161017595<br/><br/><b>*** BANK DETAILS ***</b><br/>ID:     469450<br/>BIC:    ABNANL2A<br/>IBAN:   NL14ABNA0411232584<br/>Status: VERIFIED<br/><br/></pre></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:06 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Server: nginx
-Date: Mon
-17 Feb 2020 17:34:06 GMT
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-Cache-Control: no-cache
-no-store
-must-revalidate
-Pragma: no-cache
-Expires: 0
-Access-Control-Allow-Credentials: true<br/><br/><br/>{
-  "data": {
-    "cellphoneNumber": "+31205353493",
-    "secondContact": {
-      "firstName": "Henricus Johannes Joseph Maria",
-      "lastName": "Schoofs",
-      "placeOfBirth": "Veldhoven",
-      "nationality": "NL",
-      "gender": "MALE",
-      "countryOfBirth": "NL",
-      "displayName": "Henricus Johannes Joseph Maria Schoofs",
-      "dateOfBirth": "1943-03-17"
-    },
-    "contractType": "CORPORATE",
-    "displayName": "Stichting DeGiro",
-    "isAmClientActive": false,
-    "language": "en",
-    "isIskClient": false,
-    "locale": "en_IE",
-    "isAllocationAvailable": false,
-    "clientRole": "basic",
-    "company": {
-      "registrationNumber": "34342820",
-      "name": "Stichting DeGiro"
-    },
-    "id": 463421,
-    "email": "testing@degiro.nl",
-    "bankAccount": {
-      "bankAccountId": 469450,
-      "iban": "NL14ABNA0411232584",
-      "bic": "ABNANL2A",
-      "status": "VERIFIED"
-    },
-    "memberCode": "A0A425F1",
-    "address": {
-      "streetAddressNumber": "1",
-      "zip": "1096HA",
-      "country": "NL",
-      "streetAddress": "Amstelplein",
-      "city": "Amsterdam",
-      "streetAddressExt": "."
-    },
-    "intAccount": 161017595,
-    "effectiveClientRole": "basic",
-    "canUpgrade": true,
-    "firstContact": {
-      "firstName": "Melvin Sebastiaan",
-      "lastName": "Huisman",
-      "placeOfBirth": "Leeuwarden",
-      "nationality": "NL",
-      "gender": "MALE",
-      "countryOfBirth": "NL",
-      "displayName": "Melvin Sebastiaan Huisman",
-      "dateOfBirth": "1976-08-03"
-    },
-    "isCollectivePortfolio": false,
-    "phoneNumber": "31205353493",
-    "culture": "IE",
-    "isWithdrawalAvailable": true,
-    "username": "DGTraderIE"
-  }
-}<br/><br/></pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'><b><b>[WEB] Account Login</b></b></span>
-						<span class='test-time'>Feb 17, 2020 07:34:06 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 17, 2020 07:34:06 PM</span>
-	<span class='label end-time'>Feb 17, 2020 07:34:07 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+435ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:06 PM</td>
-					<td class='step-details'><b>[STEP 1]</b> Login page was opened successfully</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:07 PM</td>
-					<td class='step-details'><b>Image comparison successfully completed</b><br>Image comparison success rate &nbsp;&nbsp;             = &nbsp;100.0%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;0<br>Time(ms) for visualization check                       = 82<br>Number of pixels gets matched &nbsp;                   = &nbsp;132260</br><img data-featherlight='C:\Automation\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png' width='10%' src='C:\Automation\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png' data-src='C:\Automation\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png'></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:07 PM</td>
-					<td class='step-details'><b>[STEP 2]</b> Account login successfully</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'><b><b>[WEB] Popular Products</b></b></span>
-						<span class='test-time'>Feb 17, 2020 07:34:08 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 17, 2020 07:34:08 PM</span>
-	<span class='label end-time'>Feb 17, 2020 07:34:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+94ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:08 PM</td>
-					<td class='step-details'><b>[STEP 1]</b> Markets page was opened successfully</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:09 PM</td>
-					<td class='step-details'><b>POPULAR PRODUCTS</b><br><img data-featherlight='C:\Automation\AutomationTestLab/report/Screenshots/Actual/PopularProductsForm_Actual.png' width='10%' src='C:\Automation\AutomationTestLab/report/Screenshots/Actual/PopularProductsForm_Actual.png' data-src='C:\Automation\AutomationTestLab/report/Screenshots/Actual/PopularProductsForm_Actual.png'></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'><b><b>[GET] Stocks List</b></b></span>
-						<span class='test-time'>Feb 17, 2020 07:34:09 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 17, 2020 07:34:09 PM</span>
-	<span class='label end-time'>Feb 17, 2020 07:34:09 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+215ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>7:34:09 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://internal.degiro.eu<br />Path:     /dgproductsearch/secure/v5/stocks/intAccount=161017595&sessionId=515DB0C3460701F4C2786043BF27384F.helpdeskTWS2&offset=0&limit=100&popularOnly=true&requireTotal=true<br/><br/><br/></pre></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:09 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Server: nginx
-Date: Mon
-17 Feb 2020 17:34:09 GMT
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-Cache-Control: no-cache
-no-store
-must-revalidate
-Pragma: no-cache
-Expires: 0
-Access-Control-Allow-Credentials: true<br/><br/><br/>{
-  "total": 8,
-  "offset": 0,
-  "products": [
-    {
-      "symbol": "V",
-      "closePriceDate": "2020-02-14",
-      "qualitySwitchableSecondary": false,
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "vwdId": "V.BATS,E",
-      "vwdModuleId": 31,
-      "feedQuality": "BT",
-      "joinOrderAllowed": false,
-      "qualitySwitchFree": false,
-      "orderBookDepth": 0,
-      "qualitySwitchFreeSecondary": false,
-      "contractSize": 1.0,
-      "currency": "USD",
-      "id": "331860",
-      "productType": "STOCK",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "vwdModuleIdSecondary": 10,
-      "orderBookDepthSecondary": 0,
-      "isFund": false,
-      "productTypeId": 1,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "676",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "vwdIdSecondary": "330190183",
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "feedQualitySecondary": "D15",
-      "name": "Visa Inc",
-      "tradable": true,
-      "vwdIdentifierType": "vwdkey",
-      "stopLimitOrderAllowed": true,
-      "gtcAllowed": true,
-      "closePrice": 210.29,
-      "vwdIdentifierTypeSecondary": "issueid",
-      "category": "A",
-      "isin": "US92826C8394",
-      "qualitySwitchable": false
-    },
-    {
-      "symbol": "NOKIA",
-      "closePriceDate": "2020-02-14",
-      "qualitySwitchableSecondary": true,
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "vwdId": "955000571",
-      "vwdModuleId": 2,
-      "feedQuality": "CX",
-      "joinOrderAllowed": false,
-      "qualitySwitchFree": false,
-      "orderBookDepth": 0,
-      "qualitySwitchFreeSecondary": false,
-      "contractSize": 1.0,
-      "currency": "EUR",
-      "id": "331761",
-      "productType": "STOCK",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "vwdModuleIdSecondary": 15,
-      "orderBookDepthSecondary": 0,
-      "isFund": false,
-      "productTypeId": 1,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "1001",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "vwdIdSecondary": "170016441",
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "feedQualitySecondary": "D15",
-      "name": "Nokia Corporation",
-      "tradable": true,
-      "vwdIdentifierType": "issueid",
-      "stopLimitOrderAllowed": true,
-      "gtcAllowed": true,
-      "closePrice": 3.942,
-      "vwdIdentifierTypeSecondary": "issueid",
-      "category": "B",
-      "isin": "FI0009000681",
-      "qualitySwitchable": false
-    },
-    {
-      "symbol": "KO",
-      "closePriceDate": "2020-02-14",
-      "qualitySwitchableSecondary": false,
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "vwdId": "KO.BATS,E",
-      "vwdModuleId": 31,
-      "feedQuality": "BT",
-      "joinOrderAllowed": false,
-      "qualitySwitchFree": false,
-      "orderBookDepth": 0,
-      "qualitySwitchFreeSecondary": false,
-      "contractSize": 1.0,
-      "currency": "USD",
-      "id": "331829",
-      "productType": "STOCK",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "vwdModuleIdSecondary": 10,
-      "orderBookDepthSecondary": 0,
-      "isFund": false,
-      "productTypeId": 1,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "676",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "vwdIdSecondary": "330016321",
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "feedQualitySecondary": "D15",
-      "name": "Coca-Cola",
-      "tradable": true,
-      "vwdIdentifierType": "vwdkey",
-      "stopLimitOrderAllowed": true,
-      "gtcAllowed": true,
-      "closePrice": 59.95,
-      "vwdIdentifierTypeSecondary": "issueid",
-      "category": "A",
-      "isin": "US1912161007",
-      "qualitySwitchable": false
-    },
-    {
-      "symbol": "TMUS",
-      "closePriceDate": "2020-02-14",
-      "qualitySwitchableSecondary": true,
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "vwdId": "TMUS.BATS,E",
-      "vwdModuleId": 31,
-      "feedQuality": "BT",
-      "joinOrderAllowed": false,
-      "qualitySwitchFree": false,
-      "orderBookDepth": 0,
-      "qualitySwitchFreeSecondary": false,
-      "contractSize": 1.0,
-      "currency": "USD",
-      "id": "8267043",
-      "productType": "STOCK",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "vwdModuleIdSecondary": 21,
-      "orderBookDepthSecondary": 0,
-      "isFund": false,
-      "productTypeId": 1,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "663",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "vwdIdSecondary": "350013692",
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "feedQualitySecondary": "D15",
-      "name": "T-Mobile US",
-      "tradable": true,
-      "vwdIdentifierType": "vwdkey",
-      "stopLimitOrderAllowed": true,
-      "gtcAllowed": true,
-      "closePrice": 96.48,
-      "vwdIdentifierTypeSecondary": "issueid",
-      "category": "A",
-      "isin": "US8725901040",
-      "qualitySwitchable": false
-    },
-    {
-      "symbol": "PHIA",
-      "closePriceDate": "2020-02-14",
-      "qualitySwitchableSecondary": false,
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "vwdId": "11783",
-      "vwdModuleId": 1,
-      "feedQuality": "R",
-      "joinOrderAllowed": false,
-      "qualitySwitchFree": false,
-      "orderBookDepth": 0,
-      "qualitySwitchFreeSecondary": false,
-      "contractSize": 1.0,
-      "currency": "EUR",
-      "id": "92171",
-      "productType": "STOCK",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "vwdModuleIdSecondary": 2,
-      "orderBookDepthSecondary": 0,
-      "isFund": false,
-      "productTypeId": 1,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "200",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "vwdIdSecondary": "955000617",
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "feedQualitySecondary": "CX",
-      "name": "Philips Koninklijke",
-      "tradable": true,
-      "vwdIdentifierType": "issueid",
-      "stopLimitOrderAllowed": true,
-      "gtcAllowed": true,
-      "closePrice": 44.55,
-      "vwdIdentifierTypeSecondary": "issueid",
-      "category": "A",
-      "isin": "NL0000009538",
-      "strikePrice": -1.0E-4,
-      "qualitySwitchable": false
-    },
-    {
-      "symbol": "SAF",
-      "closePriceDate": "2020-02-14",
-      "qualitySwitchableSecondary": false,
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "vwdId": "360114909",
-      "vwdModuleId": 1,
-      "feedQuality": "R",
-      "joinOrderAllowed": false,
-      "qualitySwitchFree": false,
-      "orderBookDepth": 0,
-      "qualitySwitchFreeSecondary": false,
-      "contractSize": 1.0,
-      "currency": "EUR",
-      "id": "64879",
-      "productType": "STOCK",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "vwdModuleIdSecondary": 2,
-      "orderBookDepthSecondary": 0,
-      "isFund": false,
-      "productTypeId": 1,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "710",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "vwdIdSecondary": "955000692",
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "feedQualitySecondary": "CX",
-      "name": "Safran",
-      "tradable": true,
-      "vwdIdentifierType": "issueid",
-      "stopLimitOrderAllowed": true,
-      "gtcAllowed": true,
-      "closePrice": 145.0,
-      "vwdIdentifierTypeSecondary": "issueid",
-      "category": "A",
-      "isin": "FR0000073272",
-      "strikePrice": -1.0E-4,
-      "qualitySwitchable": false
-    },
-    {
-      "symbol": "CRG",
-      "closePriceDate": "2020-02-14",
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "vwdId": "955001216",
-      "vwdModuleId": 2,
-      "feedQuality": "CX",
-      "joinOrderAllowed": false,
-      "qualitySwitchFree": false,
-      "orderBookDepth": 0,
-      "contractSize": 1.0,
-      "currency": "EUR",
-      "id": "331720",
-      "productType": "STOCK",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "isFund": false,
-      "productTypeId": 1,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "384",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "name": "CRH PLC ORD",
-      "tradable": true,
-      "vwdIdentifierType": "issueid",
-      "stopLimitOrderAllowed": true,
-      "gtcAllowed": true,
-      "closePrice": 35.77,
-      "category": "A",
-      "isin": "IE0001827041",
-      "qualitySwitchable": false
-    },
-    {
-      "symbol": "IRES",
-      "closePriceDate": "2020-02-14",
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "vwdId": "955005439",
-      "vwdModuleId": 2,
-      "feedQuality": "CX",
-      "joinOrderAllowed": false,
-      "qualitySwitchFree": false,
-      "orderBookDepth": 0,
-      "contractSize": 1.0,
-      "currency": "EUR",
-      "id": "5029637",
-      "productType": "STOCK",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "isFund": false,
-      "productTypeId": 1,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "384",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS",
-        "STOPLIMIT"
-      ],
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "name": "IRISH RESIDENTIAL PROP",
-      "tradable": true,
-      "vwdIdentifierType": "issueid",
-      "stopLimitOrderAllowed": true,
-      "gtcAllowed": true,
-      "closePrice": 1.56,
-      "category": "C",
-      "isin": "IE00BJ34P519",
-      "qualitySwitchable": false
-    }
-  ]
-}<br/><br/></pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'><b><b>[GET] Products From Markets Page</b></b></span>
-						<span class='test-time'>Feb 17, 2020 07:34:09 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 17, 2020 07:34:09 PM</span>
-	<span class='label end-time'>Feb 17, 2020 07:34:10 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+186ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>7:34:10 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://internal.degiro.eu<br />Path:     /paservice/secure/settings/web/intAccount=161017595&sessionId=515DB0C3460701F4C2786043BF27384F.helpdeskTWS2<br/><br/><br/></pre></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:10 PM</td>
-					<td class='step-details'><pre><br><center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center><br>CurrencyInfo: EUR/USD<br>ID:       705366<br><br></pre></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:10 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Server: nginx
-Date: Mon
-17 Feb 2020 17:34:10 GMT
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-Cache-Control: no-cache
-no-store
-must-revalidate
-Pragma: no-cache
-Expires: 0
-Access-Control-Allow-Credentials: true<br/><br/><br/>{
-  "data": {
-    "defaultOptionExchangeId": 5,
-    "defaultEtfExchangeId": -1,
-    "marketPageChartIndex": {
-      "country": "EU",
-      "name": "Europe 50",
-      "vwdId": "11138355.MS,I",
-      "closePrice": 3840.97,
-      "id": 4836600
-    },
-    "defaultOptionCountryId": -1,
-    "defaultFutureExchangeId": 2,
-    "marketPageCurrencies": [
-      {
-        "fromCountry": "EU",
-        "name": "EUR/USD",
-        "vwdId": "190143785",
-        "id": 705366,
-        "toCountry": "US"
-      },
-      {
-        "fromCountry": "EU",
-        "name": "EUR/GBP",
-        "vwdId": "190163000",
-        "id": 714324,
-        "toCountry": "GB"
-      },
-      {
-        "fromCountry": "GB",
-        "name": "GBP/USD",
-        "vwdId": "190015673",
-        "id": 1788982,
-        "toCountry": "US"
-      },
-      {
-        "fromCountry": "GB",
-        "name": "GBP/JPY",
-        "vwdId": "190015867",
-        "id": 12153968,
-        "toCountry": "JP"
-      },
-      {
-        "fromCountry": "EU",
-        "name": "EUR/CAD",
-        "vwdId": "190168883",
-        "id": 841089,
-        "toCountry": "CA"
-      }
-    ],
-    "defaultLeveragedUnderlyingId": -1,
-    "defaultBondIssuerType": 0,
-    "defaultCfdExchangeId": 384,
-    "defaultFutureCountryId": -1,
-    "defaultFundIssuerId": -1,
-    "thousandDelimiter": ",",
-    "marketPageIndices": [
-      {
-        "country": "EU",
-        "name": "Europe 50",
-        "vwdId": "11138355.MS,I",
-        "closePrice": 3840.97,
-        "id": 4836600
-      },
-      {
-        "country": "GB",
-        "name": "UK 100",
-        "vwdId": "11138356.MS,I",
-        "closePrice": 7409.13,
-        "id": 11138356
-      },
-      {
-        "country": "US",
-        "name": "USA 500",
-        "vwdId": "11138354.MS,I",
-        "closePrice": 3380.16,
-        "id": 1796639
-      },
-      {
-        "country": "US",
-        "name": "USA TECH 100",
-        "vwdId": "11138349.MS,I",
-        "closePrice": 9623.58,
-        "id": 12153880
-      },
-      {
-        "country": "FR",
-        "name": "CAC 40",
-        "vwdId": "360015511",
-        "closePrice": 6069.35,
-        "id": 4824940
-      },
-      {
-        "country": "DE",
-        "name": "Germany 30",
-        "vwdId": "11138343.MS,I",
-        "closePrice": 13744.21,
-        "id": 900830
-      },
-      {
-        "country": "NL",
-        "name": "AEX",
-        "vwdId": "12272",
-        "closePrice": 629.23,
-        "id": 1037624
-      },
-      {
-        "country": "ES",
-        "name": "Spain 35",
-        "vwdId": "11138348.MS,I",
-        "closePrice": 9956.8,
-        "id": 4626845
-      },
-      {
-        "country": "IT",
-        "name": "Italy 40",
-        "vwdId": "11138345.MS,I",
-        "closePrice": 24852.0,
-        "id": 11138345
-      },
-      {
-        "country": "US",
-        "name": "USA 30",
-        "vwdId": "11138344.MS,I",
-        "closePrice": 29398.08,
-        "id": 4836603
-      }
-    ],
-    "defaultFutureUnderlyingIsin": "-1",
-    "marketMoversIndexIds": [
-      12,
-      14,
-      122001,
-      9,
-      113001,
-      113003,
-      6,
-      5,
-      10,
-      1,
-      18,
-      4,
-      17,
-      11,
-      105001
-    ],
-    "defaultStockCountryId": 963,
-    "defaultLeveragedShortLong": -1,
-    "defaultWarrantUnderlyingName": "-1",
-    "defaultWarrantIssuerName": "-1",
-    "defaultLeveragedPopularOnly": false,
-    "defaultBondExchangeId": -1,
-    "defaultEtfPopularOnly": false,
-    "defaultOptionUnderlyingIsin": "-1",
-    "decimalDelimiter": ".",
-    "defaultStockListType": "index",
-    "marketPageFutures": [
-      {
-        "country": "EU",
-        "name": "EURO STOXX 50",
-        "vwdId": "91436370",
-        "id": 14490433
-      },
-      {
-        "country": "DE",
-        "name": "DAX",
-        "vwdId": "507943032",
-        "id": 16134995
-      },
-      {
-        "country": "ES",
-        "name": "IBEX 35",
-        "vwdId": "956450047",
-        "id": 16685109
-      },
-      {
-        "country": "FR",
-        "name": "CAC 40",
-        "vwdId": "509060097",
-        "id": 16669350
-      },
-      {
-        "country": "US",
-        "name": "S\u0026P 500 E-mini",
-        "vwdId": "ES.CMEM.003,F",
-        "id": 15393401
-      }
-    ],
-    "defaultMarketMoversIndexId": 9,
-    "defaultStockListId": 114005,
-    "defaultEtfFeeType": -1,
-    "defaultLeveragedExchangeId": -1,
-    "defaultFundFeeType": -1,
-    "defaultLeveragedIssuerId": -1,
-    "defaultEtfIssuerId": -1
-  }
-}<br/><br/></pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  warning' status='warning' bdd='false' test-id='7'>
-					<div class='test-heading'>
 						<span class='test-name'><b><b>[GET] CurrencyInfo Details</b></b></span>
-						<span class='test-time'>Feb 17, 2020 07:34:10 PM</span>
-						<span class='test-status right warning'>warning</span>
+						<span class='test-time'>Feb 17, 2020 09:46:30 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 17, 2020 07:34:10 PM</span>
-	<span class='label end-time'>Feb 17, 2020 07:34:10 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+485ms</span>
+	<span class='label start-time'>Feb 17, 2020 09:46:30 PM</span>
+	<span class='label end-time'>Feb 17, 2020 09:46:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+155ms</span>
 </div>
 	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
 	<div class='test-attributes'>
@@ -1245,57 +202,57 @@ Access-Control-Allow-Credentials: true<br/><br/><br/>{
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>7:34:10 PM</td>
+					<td class='timestamp'>9:46:31 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   GET<br />Host:     https://charting.vwdservices.com<br />Path:     /hchart/v1/deGiro/data.js/requestid=0&resolution=PT1M&culture=en-US&period=P1D&series=issueid:190168883&series=price:issueid:190168883&format=json&callback=vwd.hchart.seriesRequestManager.sync_response&userToken=463421&tz=Europe/Dublin<br/><br/><br/></pre></td>
 				</tr>
-				<tr class='log' status='warning'>
-					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
-					<td class='timestamp'>7:34:10 PM</td>
-					<td class='step-details'>net.minidev.json.JSONArray cannot be cast to org.json.simple.JSONArray</td>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:46:31 PM</td>
+					<td class='step-details'><pre><br><center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center><br>Currency: EUR/CAD<br>Price:    1.433905<br><br></pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>7:34:10 PM</td>
+					<td class='timestamp'>9:46:31 PM</td>
 					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br/><br/>Response Code    : 200<br/>Response Message : OK<br/><br/>Cache-Control: public,no-transform
 Content-Type: application/x-javascript; charset=utf-8
 Expires: Mon
-17 Feb 2020 17:34:10 GMT
+17 Feb 2020 19:46:32 GMT
 Last-Modified: Mon
-17 Feb 2020 17:34:10 GMT
+17 Feb 2020 19:46:32 GMT
 Vary: *
 Server: Microsoft-IIS/7.5
 X-AspNet-Version: 4.0.30319
 X-Powered-By: ASP.NET
 Date: Mon
-17 Feb 2020 17:34:10 GMT<br/><br/><br/>{
+17 Feb 2020 19:46:32 GMT<br/><br/><br/>{
   "requestid": "0",
   "series": [
     {
-      "expires": "2020-02-17T18:34:10.4806068+01:00",
+      "expires": "2020-02-17T20:46:32.9102101+01:00",
       "data": {
-        "lastTime": "2020-02-17T17:34:01",
+        "lastTime": "2020-02-17T19:46:22",
         "highTime": "2020-02-17T09:13:23",
-        "windowTrend": -0.00183,
+        "windowTrend": -0.00157,
         "openPrice": 1.436115,
         "windowPreviousCloseTime": "2020-02-16T22:59:07",
         "alfa": "CADEU2",
         "type": "VAL",
-        "relDiff": -0.00183,
+        "relDiff": -0.00157,
         "cumulativeVolume": 0.0,
         "windowHighTime": "2020-02-17T09:13:00",
-        "lowPrice": 1.43305,
+        "lowPrice": 1.432675,
         "tradingStartTime": "05:15:00",
         "highPrice": 1.436295,
         "closeTime": "2020-02-16T23:00:00",
         "currency": "CAD",
-        "windowEnd": "2020-02-17T17:34:01",
+        "windowEnd": "2020-02-17T19:46:22",
         "windowFirst": "2020-02-17T00:00:00",
         "openTime": "2020-02-16T23:00:00",
         "identifier": "issueid:190168883",
         "issueId": 190168883,
         "windowStart": "2020-02-17T00:00:00",
-        "windowLast": "2020-02-17T17:34:00",
-        "windowLowPrice": 1.43305,
+        "windowLast": "2020-02-17T19:46:00",
+        "windowLowPrice": 1.432675,
         "previousCloseTime": "2020-02-16T22:59:07",
         "windowOpenTime": "2020-02-17T00:00:00",
         "tradingEndTime": "22:30:00",
@@ -1305,23 +262,23 @@ Date: Mon
         "windowHighPrice": 1.436295,
         "windowOpenPrice": 1.43596,
         "highPriceP1Y": 1.5223,
-        "lowPriceP1Y": 1.4348,
+        "lowPriceP1Y": 1.4327,
         "tradingAddedTime": "00:02:00",
         "name": "EUR/CAD",
         "windowPreviousClosePrice": 1.436155,
-        "absDiff": -0.002635,
+        "absDiff": -0.00225,
         "closePrice": 1.436115,
-        "windowLowTime": "2020-02-17T13:11:00",
+        "windowLowTime": "2020-02-17T17:58:00",
         "isin": "EU0009654664",
-        "lowTime": "2020-02-17T13:11:27",
-        "lastPrice": 1.43352
+        "lowTime": "2020-02-17T17:58:04",
+        "lastPrice": 1.433905
       },
       "id": "issueid:190168883",
       "type": "object"
     },
     {
       "times": "2020-02-17T00:00:00/PT1M",
-      "expires": "2020-02-17T18:34:10.4856038+01:00",
+      "expires": "2020-02-17T20:46:32.9152111+01:00",
       "data": [
         [
           0,
@@ -4496,10 +3453,6 @@ Date: Mon
           1.4331
         ],
         [
-          791,
-          1.4331
-        ],
-        [
           792,
           1.4332
         ],
@@ -5301,10 +4254,6 @@ Date: Mon
         ],
         [
           992,
-          1.4331
-        ],
-        [
-          992,
           1.4332
         ],
         [
@@ -5554,6 +4503,538 @@ Date: Mon
         [
           1054,
           1.4335
+        ],
+        [
+          1055,
+          1.4335
+        ],
+        [
+          1056,
+          1.4334
+        ],
+        [
+          1057,
+          1.4333
+        ],
+        [
+          1058,
+          1.4334
+        ],
+        [
+          1059,
+          1.4334
+        ],
+        [
+          1060,
+          1.4333
+        ],
+        [
+          1061,
+          1.4333
+        ],
+        [
+          1062,
+          1.4332
+        ],
+        [
+          1063,
+          1.4332
+        ],
+        [
+          1064,
+          1.4332
+        ],
+        [
+          1065,
+          1.433
+        ],
+        [
+          1066,
+          1.433
+        ],
+        [
+          1067,
+          1.4331
+        ],
+        [
+          1068,
+          1.4331
+        ],
+        [
+          1069,
+          1.4331
+        ],
+        [
+          1070,
+          1.433
+        ],
+        [
+          1071,
+          1.433
+        ],
+        [
+          1072,
+          1.4328
+        ],
+        [
+          1073,
+          1.4328
+        ],
+        [
+          1074,
+          1.4329
+        ],
+        [
+          1075,
+          1.4328
+        ],
+        [
+          1076,
+          1.4328
+        ],
+        [
+          1077,
+          1.4328
+        ],
+        [
+          1078,
+          1.4327
+        ],
+        [
+          1078,
+          1.4329
+        ],
+        [
+          1079,
+          1.4331
+        ],
+        [
+          1080,
+          1.4331
+        ],
+        [
+          1081,
+          1.4332
+        ],
+        [
+          1082,
+          1.4334
+        ],
+        [
+          1083,
+          1.4334
+        ],
+        [
+          1084,
+          1.4334
+        ],
+        [
+          1085,
+          1.4333
+        ],
+        [
+          1086,
+          1.4335
+        ],
+        [
+          1087,
+          1.4337
+        ],
+        [
+          1088,
+          1.4335
+        ],
+        [
+          1089,
+          1.4336
+        ],
+        [
+          1090,
+          1.4336
+        ],
+        [
+          1091,
+          1.4334
+        ],
+        [
+          1092,
+          1.4334
+        ],
+        [
+          1093,
+          1.4334
+        ],
+        [
+          1094,
+          1.4335
+        ],
+        [
+          1095,
+          1.4334
+        ],
+        [
+          1096,
+          1.4334
+        ],
+        [
+          1097,
+          1.4335
+        ],
+        [
+          1098,
+          1.4335
+        ],
+        [
+          1099,
+          1.4335
+        ],
+        [
+          1100,
+          1.4335
+        ],
+        [
+          1101,
+          1.4335
+        ],
+        [
+          1102,
+          1.4334
+        ],
+        [
+          1103,
+          1.4335
+        ],
+        [
+          1104,
+          1.4333
+        ],
+        [
+          1105,
+          1.4334
+        ],
+        [
+          1106,
+          1.4334
+        ],
+        [
+          1107,
+          1.4333
+        ],
+        [
+          1108,
+          1.4335
+        ],
+        [
+          1109,
+          1.4334
+        ],
+        [
+          1110,
+          1.4333
+        ],
+        [
+          1111,
+          1.4333
+        ],
+        [
+          1112,
+          1.4333
+        ],
+        [
+          1113,
+          1.4333
+        ],
+        [
+          1114,
+          1.4334
+        ],
+        [
+          1115,
+          1.4335
+        ],
+        [
+          1116,
+          1.4336
+        ],
+        [
+          1117,
+          1.4335
+        ],
+        [
+          1118,
+          1.4335
+        ],
+        [
+          1119,
+          1.4336
+        ],
+        [
+          1120,
+          1.4333
+        ],
+        [
+          1121,
+          1.4335
+        ],
+        [
+          1122,
+          1.4335
+        ],
+        [
+          1123,
+          1.4335
+        ],
+        [
+          1124,
+          1.4335
+        ],
+        [
+          1125,
+          1.4336
+        ],
+        [
+          1126,
+          1.4336
+        ],
+        [
+          1127,
+          1.4335
+        ],
+        [
+          1128,
+          1.4335
+        ],
+        [
+          1129,
+          1.4336
+        ],
+        [
+          1130,
+          1.4335
+        ],
+        [
+          1131,
+          1.4336
+        ],
+        [
+          1132,
+          1.4335
+        ],
+        [
+          1133,
+          1.4336
+        ],
+        [
+          1134,
+          1.4336
+        ],
+        [
+          1135,
+          1.4337
+        ],
+        [
+          1136,
+          1.4338
+        ],
+        [
+          1137,
+          1.4336
+        ],
+        [
+          1138,
+          1.4336
+        ],
+        [
+          1139,
+          1.4336
+        ],
+        [
+          1140,
+          1.4338
+        ],
+        [
+          1141,
+          1.4338
+        ],
+        [
+          1142,
+          1.4338
+        ],
+        [
+          1143,
+          1.4338
+        ],
+        [
+          1144,
+          1.4337
+        ],
+        [
+          1145,
+          1.4339
+        ],
+        [
+          1146,
+          1.434
+        ],
+        [
+          1147,
+          1.4339
+        ],
+        [
+          1148,
+          1.4337
+        ],
+        [
+          1149,
+          1.4335
+        ],
+        [
+          1150,
+          1.4336
+        ],
+        [
+          1151,
+          1.4337
+        ],
+        [
+          1152,
+          1.4338
+        ],
+        [
+          1153,
+          1.4337
+        ],
+        [
+          1154,
+          1.4338
+        ],
+        [
+          1155,
+          1.4338
+        ],
+        [
+          1156,
+          1.4337
+        ],
+        [
+          1157,
+          1.4338
+        ],
+        [
+          1158,
+          1.4338
+        ],
+        [
+          1159,
+          1.4338
+        ],
+        [
+          1160,
+          1.4338
+        ],
+        [
+          1161,
+          1.4339
+        ],
+        [
+          1162,
+          1.4338
+        ],
+        [
+          1163,
+          1.4339
+        ],
+        [
+          1164,
+          1.434
+        ],
+        [
+          1165,
+          1.434
+        ],
+        [
+          1166,
+          1.434
+        ],
+        [
+          1167,
+          1.4341
+        ],
+        [
+          1168,
+          1.434
+        ],
+        [
+          1169,
+          1.434
+        ],
+        [
+          1170,
+          1.4339
+        ],
+        [
+          1171,
+          1.4339
+        ],
+        [
+          1172,
+          1.4339
+        ],
+        [
+          1173,
+          1.4339
+        ],
+        [
+          1174,
+          1.4339
+        ],
+        [
+          1175,
+          1.4339
+        ],
+        [
+          1176,
+          1.4339
+        ],
+        [
+          1177,
+          1.4339
+        ],
+        [
+          1178,
+          1.4339
+        ],
+        [
+          1179,
+          1.4339
+        ],
+        [
+          1180,
+          1.4339
+        ],
+        [
+          1181,
+          1.4339
+        ],
+        [
+          1182,
+          1.434
+        ],
+        [
+          1183,
+          1.434
+        ],
+        [
+          1184,
+          1.4339
+        ],
+        [
+          1185,
+          1.4338
+        ],
+        [
+          1186,
+          1.4338
         ]
       ],
       "id": "price:issueid:190168883",
@@ -5561,67 +5042,9 @@ Date: Mon
     }
   ],
   "start": "2020-02-17T00:00:00",
-  "end": "2020-02-17T17:34:01",
+  "end": "2020-02-17T19:46:22",
   "resolution": "PT1M"
 }<br/><br/></pre></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'><b><b>[POST] CurrencyInfo Transaction</b></b></span>
-						<span class='test-time'>Feb 17, 2020 07:34:10 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Feb 17, 2020 07:34:10 PM</span>
-	<span class='label end-time'>Feb 17, 2020 07:34:10 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+257ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>7:34:10 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center><br /><br />Method:   POST<br />Host:     https://internal.degiro.eu<br />Path:     /dgtrading/secure/v5/checkOrder/intAccount=161017595&sessionId=515DB0C3460701F4C2786043BF27384F.helpdeskTWS2<br/><br/>{
-  "orderType": 1,
-  "buySell": "buy",
-  "size": 1,
-  "productId": 705366,
-  "timeType": 1
-}<br/><br/></pre></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>7:34:10 PM</td>
-					<td class='step-details'><pre><br/><center><b>* * * * * * * *    R E S P O N S E    * * * * * * * *</b></center><br /><br />Response Code  : 401<br />Error Message  : Unauthorized<br /><br />Server: nginx
-Date: Mon
-17 Feb 2020 17:34:10 GMT
-Content-Type: text/html;charset=utf-8
-Content-Length: 768
-Connection: keep-alive
-Content-Language: en
-Access-Control-Allow-Credentials: true<br /><br /><br /><center><b>********  E X C E P T I O N  ********</b></center><br />java.lang.AssertionError: expected [true] but found [false]<br /><br />null<br /></pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -5682,16 +5105,14 @@ Access-Control-Allow-Credentials: true<br /><br /><br /><center><b>********  E X
 					<div class='category-heading'>
 						<span class='category-name'>Frontend</span>
 						<span class='category-status right'>
-							<span class='label pass'>6</span>
-							<span class='label fail'>1</span>
-							<span class='label others'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 6</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
 						</div>
 					
 						<div class='category-tests'>
@@ -5705,44 +5126,9 @@ Access-Control-Allow-Credentials: true<br /><br /><br /><center><b>********  E X
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 17, 2020 07:34:05 PM</td>
-										<td class='linked' test-id='1'><b><b>[POST] Login</b></b></td>
+										<td>Feb 17, 2020 09:46:30 PM</td>
+										<td class='linked' test-id='1'><b><b>[GET] CurrencyInfo Details</b></b></td>
 										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 17, 2020 07:34:05 PM</td>
-										<td class='linked' test-id='2'><b><b>[GET] Account Info</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 17, 2020 07:34:06 PM</td>
-										<td class='linked' test-id='3'><b><b>[WEB] Account Login</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 17, 2020 07:34:08 PM</td>
-										<td class='linked' test-id='4'><b><b>[WEB] Popular Products</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 17, 2020 07:34:09 PM</td>
-										<td class='linked' test-id='5'><b><b>[GET] Stocks List</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 17, 2020 07:34:09 PM</td>
-										<td class='linked' test-id='6'><b><b>[GET] Products From Markets Page</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 17, 2020 07:34:10 PM</td>
-										<td class='linked' test-id='7'><b><b>[GET] CurrencyInfo Details</b></b></td>
-										<td><span class='test-status warning'>warning</span></td>
-									</tr>
-									<tr>
-										<td>Feb 17, 2020 07:34:10 PM</td>
-										<td class='linked' test-id='8'><b><b>[POST] CurrencyInfo Transaction</b></b></td>
-										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -5770,31 +5156,31 @@ Access-Control-Allow-Credentials: true<br /><br /><br /><center><b>********  E X
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 17, 2020 07:34:05 PM</div>
+					<div class='panel-lead'>Feb 17, 2020 09:46:30 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 17, 2020 07:34:11 PM</div>
+			 		<div class='panel-lead'>Feb 17, 2020 09:46:32 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 6s+120ms</div>
+					<div class='panel-lead'>0h 0m 2s+281ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -5808,19 +5194,19 @@ Access-Control-Allow-Credentials: true<br /><br /><br /><center><b>********  E X
 						</tr>
 							<tr>
 								<td>Local Host</td>
-								<td>172.18.4.214</td>
+								<td>192.168.56.1</td>
 							</tr>
 							<tr>
 								<td>Host Name</td>
-								<td>QAIT006</td>
+								<td>StationOne-PC</td>
 							</tr>
 							<tr>
 								<td>OS</td>
-								<td>Windows 10</td>
+								<td>Windows 7</td>
 							</tr>
 							<tr>
 								<td>OS Version</td>
-								<td>10.0</td>
+								<td>6.1</td>
 							</tr>
 							<tr>
 								<td>OS Arch</td>
@@ -5843,11 +5229,11 @@ Access-Control-Allow-Credentials: true<br /><br /><br /><center><b>********  E X
 						</tr>
 						<tr>
 							<td>Frontend</td>
-							<td>6</td>
 							<td>1</td>
-							<td>1</td>
+							<td>0</td>
+							<td>0</td>
 							<td>
-									75%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -5863,22 +5249,22 @@ Access-Control-Allow-Credentials: true<br /><br /><br /><center><b>********  E X
 
 		<script>
 			var statusGroup = {
-				passParent: 6,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
-				warningParent: 1,
+				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 0,
 				
-				passChild: 13,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
-				warningChild: 1,
+				warningChild: 0,
 				skipChild: 0,
-				infoChild: 6,
-				exceptionsChild: 2,
+				infoChild: 2,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

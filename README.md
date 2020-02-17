@@ -18,20 +18,33 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 
 
 ### <i>Automation Framework</i>
-- [x] JDK
-- [x] Selenium WebDriver
-- [x] Apache HttpClient
-- [x] TestNG
-- [x] Maven
+- [x] Config       - <i>Responsible for loading the configurations from properties files, Initializing the 
+                     WebDriver, Implicit Waits, Extent Reports and also to create the object of FileInputStream 
+                     which is responsible for pointing towards the file from which the data should be read.</i><br><br>
+- [x] Utilities    - <i>Stores and handles the functions (The code which is repetitive in nature such as waits, actions, capturing 
+                     screenshots, accessing excels, sending email etc.,) which can be commonly used across the entire framework. The 
+                     reason behind creating utility class is to achieve reusability.</i><br><br>
+- [x] Test Data    - <i>Stores all test variables that are used in tests. All the details which change as per the environment and 
+                     authorization such as URL, Login Credentials are kept in separate classes. Keeping these details in a 
+                     separate files makes easy to maintain.</i><br><br>
+- [x] Test Scripts - <i>Creating test cases takes less effort because test scripts for different modules can be reused. There 
+                     are two test method types. Those two types are responsible for front-end and back-end tests.</i><br><br> 
+- [x] Test Cases   - <i>These classes contains @Test annotations used for calling test methods with different test values.</i><br><br>
+- [x] TestNG       - <i>XML files that representing test suites that are created in test cases classes.</i><br><br>
+ 
 
 <br>
 
-### <i>Supports</i>
+### <i>Advantages</i>
 - [x] Execute test suite that can be a combination between front-end and back-end test scenarios as a single test. 
-      Framework structure supports full end to end testing (without performance and load). 
-- [x] Detailed parametrization for every test scenario, suite and single step. Maintanance and methods reusing are
-      easy and fast. 
-- [x]  
+      Framework structure supports full end to end testing (without performance and load). Extended framework 
+      structure improves efficiency of every automated test. 
+- [x] Test coverage and high code re-usability are improved by separated test methods. A single test scenario can be 
+      re executed with multiple test data. This methodology reduces the number of test code required to test scenarios
+      and data is easier to modify.  
+- [x] Framework provides the fastest way to generate a test suite. Test methods that calls different actions like
+      <i>login, get products list, place order, etc.</i> provides structure that requires less coding as it covers 
+      all the possible combination of test scenarios.
 
 ##### <i>com.demo.config</i>
 - [x] BasicConfiguration.class
