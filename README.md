@@ -32,7 +32,7 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 - [x] TestNG       - <i>XML files that representing test suites that are created in test cases classes.</i><br><br>
  
 
-<br>
+<br><br><br>
 
 ### <i>Advantages</i>
 - [x] Execute test suite that can be a combination between front-end and back-end test scenarios as a single test. 
@@ -45,86 +45,10 @@ The best thing about such a setup is that it leverages the benefits of all kinds
       <i>login, get products list, place order, etc.</i> provides structure that requires less coding as it covers 
       all the possible combination of test scenarios.
 
-##### <i>com.demo.config</i>
-- [x] BasicConfiguration.class
-- [x] ConsoleRunner.class
-- [x] ReporterConfig.class
-- [x] TestNGListener.class
+<br><br><br>
 
 
-##### <i>com.demo.properties</i>
-- [x] FilePaths.class
-- [x] TestData.class
-- [x] UrlPaths.class
-- [x] TestNGListener
-
-
-##### <i>com.demo.scripts.api</i>
-- [x] All API test script classes
-
-##### <i>com.demo.scripts.ui</i> 
-- [x] All UI test script classes
-
-
-<ul>
-  <li>com.demo.tests
-    <ul>
-      <li>TC_01_Fly.class</li>
-    </ul>
-  </li>
-</ul> 
-<br>
-
-<ul>
-  <li>com.demo.objects
-    <ul>
-      <li>HomePage.class</li>
-    </ul>
-  </li>
-</ul> 
-<br>
-
-<ul>
-  <li>com.demo.utilities
-    <ul>
-      <li>com.demo.utilities.user_interface</li>
-      <li>com.demo.utilities.web_services</li>
-    </ul>
-  </li>
-</ul> 
-<br>
-</ul>
-
-
-<br> 
-
-#### <i>Architecture Components</i>
-
-
-
-| Path | Content Description |
-| ------- | ----------- | 
-| /bin | Contains batch files which contains scripts for quick project packaging and test execution. | 
-| /lib | Contains all additional libraries. | 
-| /report | All generated report files are here. | 
-| /report/JSON</code> | In case when testing APIs after every request we save the response body here. |
-| /report/TestReport.html | General report file that is created after test suite execution. |
-| /src/main/java/com/demo/config |  
- 
- 
- with scripts for quick project packaging <code>mvn clean package -Dmaven.test.skip=true</code>. 
-which contains the binary output of your project, along its the unpacked dependencies. 
-This built-in descriptor produces an assembly with the classifier jar-with-dependencies using the JAR archive format.
- assembled archive contains the binary JAR <code>mvn clean package -Dmaven.test.skip=true</code>  
-
-
-
-
-
-
-<i><q>.sh</q></i> for MacOS and <i><q>.bat</q></i> files for windows   |
-
-
+#### <i>Build & Execute</i>
 
 <p align="justify">
 All in one means that the code for all tests is in one project. Combination between different tests and creating test 
