@@ -1,62 +1,62 @@
 {
   "data": {
-    "cellphoneNumber": "+31205353493",
-    "secondContact": {
-      "firstName": "Henricus Johannes Joseph Maria",
-      "lastName": "Schoofs",
-      "placeOfBirth": "Veldhoven",
-      "nationality": "NL",
-      "gender": "MALE",
-      "countryOfBirth": "NL",
-      "displayName": "Henricus Johannes Joseph Maria Schoofs",
-      "dateOfBirth": "1943-03-17"
-    },
-    "contractType": "CORPORATE",
-    "displayName": "Stichting DeGiro",
-    "isAmClientActive": false,
-    "language": "en",
-    "isIskClient": false,
-    "locale": "en_IE",
-    "isAllocationAvailable": false,
-    "clientRole": "basic",
-    "company": {
-      "registrationNumber": "34342820",
-      "name": "Stichting DeGiro"
-    },
     "id": 463421,
-    "email": "testing@degiro.nl",
-    "bankAccount": {
-      "bankAccountId": 469450,
-      "iban": "NL14ABNA0411232584",
-      "bic": "ABNANL2A",
-      "status": "VERIFIED"
-    },
-    "memberCode": "A0A425F1",
-    "address": {
-      "streetAddressNumber": "1",
-      "zip": "1096HA",
-      "country": "NL",
-      "streetAddress": "Amstelplein",
-      "city": "Amsterdam",
-      "streetAddressExt": "."
-    },
     "intAccount": 161017595,
+    "clientRole": "basic",
     "effectiveClientRole": "basic",
-    "canUpgrade": true,
+    "contractType": "CORPORATE",
+    "username": "DGTraderIE",
+    "displayName": "Stichting DeGiro",
+    "email": "testing@degiro.nl",
     "firstContact": {
       "firstName": "Melvin Sebastiaan",
       "lastName": "Huisman",
-      "placeOfBirth": "Leeuwarden",
+      "displayName": "Melvin Sebastiaan Huisman",
       "nationality": "NL",
       "gender": "MALE",
-      "countryOfBirth": "NL",
-      "displayName": "Melvin Sebastiaan Huisman",
-      "dateOfBirth": "1976-08-03"
+      "dateOfBirth": "1976-08-03",
+      "placeOfBirth": "Leeuwarden",
+      "countryOfBirth": "NL"
     },
-    "isCollectivePortfolio": false,
+    "secondContact": {
+      "firstName": "Henricus Johannes Joseph Maria",
+      "lastName": "Schoofs",
+      "displayName": "Henricus Johannes Joseph Maria Schoofs",
+      "nationality": "NL",
+      "gender": "MALE",
+      "dateOfBirth": "1943-03-17",
+      "placeOfBirth": "Veldhoven",
+      "countryOfBirth": "NL"
+    },
+    "address": {
+      "streetAddress": "Amstelplein",
+      "streetAddressNumber": "1",
+      "streetAddressExt": ".",
+      "zip": "1096HA",
+      "city": "Amsterdam",
+      "country": "NL"
+    },
     "phoneNumber": "31205353493",
+    "cellphoneNumber": "+31205353493",
+    "locale": "en_IE",
+    "language": "en",
     "culture": "IE",
+    "company": {
+      "name": "Stichting DeGiro",
+      "registrationNumber": "34342820"
+    },
+    "bankAccount": {
+      "bankAccountId": 469450,
+      "bic": "ABNANL2A",
+      "iban": "NL14ABNA0411232584",
+      "status": "VERIFIED"
+    },
+    "memberCode": "A0A425F1",
     "isWithdrawalAvailable": true,
-    "username": "DGTraderIE"
+    "isAllocationAvailable": false,
+    "isIskClient": false,
+    "isCollectivePortfolio": false,
+    "isAmClientActive": false,
+    "canUpgrade": true
   }
 }

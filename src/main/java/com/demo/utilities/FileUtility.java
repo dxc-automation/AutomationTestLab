@@ -37,18 +37,23 @@ public class FileUtility extends BasicTestConfig {
     }
 
 
-    public static String readJsonResponseFile() throws ParseException, IOException {
+    public static String readJsonResponseFile() {
+        try {
             Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
-            Object jsonObject    = parser.parse(new FileReader(report_json_folder + fileName)).toString();
-            String formattedJson = gson.toJson(jsonObject);
+            Object object = jsonParser.parse(new FileReader(report_json_folder + fileName));
+            String formattedJson = gson.toJson(object);
             return formattedJson;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 
     public static String getFormattedJson(String responseBody) {
         try {
             Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
-            Object jsonObject    = jsonParser.parse(responseBody);
+            Object jsonObject    = parser.parse(responseBody);
             String formattedJson = gson.toJson(jsonObject);
             return formattedJson;
 

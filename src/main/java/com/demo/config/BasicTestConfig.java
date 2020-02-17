@@ -213,7 +213,7 @@ public class BasicTestConfig {
                         + "<br/>"
                         + "<br/>"
                         + "<br/>"
-                        + responseBody
+                        + readJsonResponseFile()
                         + "<br/>"
                         + "<br/>"
                         + "</pre>");
@@ -250,7 +250,7 @@ public class BasicTestConfig {
                                 + throwable
                                 + "<br />"
                                 + "<br />"
-                                + responseBody
+                                + readJsonResponseFile()
                                 + "<br />"
                                 + "</pre>");
 

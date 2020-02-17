@@ -1,132 +1,6 @@
 {
   "data": {
-    "defaultOptionExchangeId": 5,
-    "defaultEtfExchangeId": -1,
-    "marketPageChartIndex": {
-      "country": "EU",
-      "name": "Europe 50",
-      "vwdId": "11138355.MS,I",
-      "closePrice": 3840.97,
-      "id": 4836600
-    },
-    "defaultOptionCountryId": -1,
-    "defaultFutureExchangeId": 2,
-    "marketPageCurrencies": [
-      {
-        "fromCountry": "EU",
-        "name": "EUR/USD",
-        "vwdId": "190143785",
-        "id": 705366,
-        "toCountry": "US"
-      },
-      {
-        "fromCountry": "EU",
-        "name": "EUR/GBP",
-        "vwdId": "190163000",
-        "id": 714324,
-        "toCountry": "GB"
-      },
-      {
-        "fromCountry": "GB",
-        "name": "GBP/USD",
-        "vwdId": "190015673",
-        "id": 1788982,
-        "toCountry": "US"
-      },
-      {
-        "fromCountry": "GB",
-        "name": "GBP/JPY",
-        "vwdId": "190015867",
-        "id": 12153968,
-        "toCountry": "JP"
-      },
-      {
-        "fromCountry": "EU",
-        "name": "EUR/CAD",
-        "vwdId": "190168883",
-        "id": 841089,
-        "toCountry": "CA"
-      }
-    ],
-    "defaultLeveragedUnderlyingId": -1,
-    "defaultBondIssuerType": 0,
-    "defaultCfdExchangeId": 384,
-    "defaultFutureCountryId": -1,
-    "defaultFundIssuerId": -1,
-    "thousandDelimiter": ",",
-    "marketPageIndices": [
-      {
-        "country": "EU",
-        "name": "Europe 50",
-        "vwdId": "11138355.MS,I",
-        "closePrice": 3840.97,
-        "id": 4836600
-      },
-      {
-        "country": "GB",
-        "name": "UK 100",
-        "vwdId": "11138356.MS,I",
-        "closePrice": 7409.13,
-        "id": 11138356
-      },
-      {
-        "country": "US",
-        "name": "USA 500",
-        "vwdId": "11138354.MS,I",
-        "closePrice": 3380.16,
-        "id": 1796639
-      },
-      {
-        "country": "US",
-        "name": "USA TECH 100",
-        "vwdId": "11138349.MS,I",
-        "closePrice": 9623.58,
-        "id": 12153880
-      },
-      {
-        "country": "FR",
-        "name": "CAC 40",
-        "vwdId": "360015511",
-        "closePrice": 6069.35,
-        "id": 4824940
-      },
-      {
-        "country": "DE",
-        "name": "Germany 30",
-        "vwdId": "11138343.MS,I",
-        "closePrice": 13744.21,
-        "id": 900830
-      },
-      {
-        "country": "NL",
-        "name": "AEX",
-        "vwdId": "12272",
-        "closePrice": 629.23,
-        "id": 1037624
-      },
-      {
-        "country": "ES",
-        "name": "Spain 35",
-        "vwdId": "11138348.MS,I",
-        "closePrice": 9956.8,
-        "id": 4626845
-      },
-      {
-        "country": "IT",
-        "name": "Italy 40",
-        "vwdId": "11138345.MS,I",
-        "closePrice": 24852.0,
-        "id": 11138345
-      },
-      {
-        "country": "US",
-        "name": "USA 30",
-        "vwdId": "11138344.MS,I",
-        "closePrice": 29398.08,
-        "id": 4836603
-      }
-    ],
-    "defaultFutureUnderlyingIsin": "-1",
+    "defaultMarketMoversIndexId": 9,
     "marketMoversIndexIds": [
       12,
       14,
@@ -144,16 +18,85 @@
       11,
       105001
     ],
-    "defaultStockCountryId": 963,
-    "defaultLeveragedShortLong": -1,
-    "defaultWarrantUnderlyingName": "-1",
-    "defaultWarrantIssuerName": "-1",
-    "defaultLeveragedPopularOnly": false,
-    "defaultBondExchangeId": -1,
-    "defaultEtfPopularOnly": false,
-    "defaultOptionUnderlyingIsin": "-1",
-    "decimalDelimiter": ".",
-    "defaultStockListType": "index",
+    "marketPageChartIndex": {
+      "closePrice": 3840.9700,
+      "country": "EU",
+      "name": "Europe 50",
+      "vwdId": "11138355.MS,I",
+      "id": 4836600
+    },
+    "marketPageIndices": [
+      {
+        "closePrice": 3840.9700,
+        "country": "EU",
+        "name": "Europe 50",
+        "vwdId": "11138355.MS,I",
+        "id": 4836600
+      },
+      {
+        "closePrice": 7409.1300,
+        "country": "GB",
+        "name": "UK 100",
+        "vwdId": "11138356.MS,I",
+        "id": 11138356
+      },
+      {
+        "closePrice": 3380.1600,
+        "country": "US",
+        "name": "USA 500",
+        "vwdId": "11138354.MS,I",
+        "id": 1796639
+      },
+      {
+        "closePrice": 9623.5800,
+        "country": "US",
+        "name": "USA TECH 100",
+        "vwdId": "11138349.MS,I",
+        "id": 12153880
+      },
+      {
+        "closePrice": 6069.3500,
+        "country": "FR",
+        "name": "CAC 40",
+        "vwdId": "360015511",
+        "id": 4824940
+      },
+      {
+        "closePrice": 13744.2100,
+        "country": "DE",
+        "name": "Germany 30",
+        "vwdId": "11138343.MS,I",
+        "id": 900830
+      },
+      {
+        "closePrice": 629.2300,
+        "country": "NL",
+        "name": "AEX",
+        "vwdId": "12272",
+        "id": 1037624
+      },
+      {
+        "closePrice": 9956.8000,
+        "country": "ES",
+        "name": "Spain 35",
+        "vwdId": "11138348.MS,I",
+        "id": 4626845
+      },
+      {
+        "closePrice": 24852.0000,
+        "country": "IT",
+        "name": "Italy 40",
+        "vwdId": "11138345.MS,I",
+        "id": 11138345
+      },
+      {
+        "closePrice": 29398.0800,
+        "country": "US",
+        "name": "USA 30",
+        "vwdId": "11138344.MS,I",
+        "id": 4836603
+      }
+    ],
     "marketPageFutures": [
       {
         "country": "EU",
@@ -186,12 +129,69 @@
         "id": 15393401
       }
     ],
-    "defaultMarketMoversIndexId": 9,
+    "marketPageCurrencies": [
+      {
+        "fromCountry": "EU",
+        "toCountry": "US",
+        "name": "EUR/USD",
+        "vwdId": "190143785",
+        "id": 705366
+      },
+      {
+        "fromCountry": "EU",
+        "toCountry": "GB",
+        "name": "EUR/GBP",
+        "vwdId": "190163000",
+        "id": 714324
+      },
+      {
+        "fromCountry": "GB",
+        "toCountry": "US",
+        "name": "GBP/USD",
+        "vwdId": "190015673",
+        "id": 1788982
+      },
+      {
+        "fromCountry": "GB",
+        "toCountry": "JP",
+        "name": "GBP/JPY",
+        "vwdId": "190015867",
+        "id": 12153968
+      },
+      {
+        "fromCountry": "EU",
+        "toCountry": "CA",
+        "name": "EUR/CAD",
+        "vwdId": "190168883",
+        "id": 841089
+      }
+    ],
+    "defaultStockCountryId": 963,
+    "defaultStockListType": "index",
     "defaultStockListId": 114005,
-    "defaultEtfFeeType": -1,
+    "defaultOptionExchangeId": 5,
+    "defaultOptionCountryId": -1,
+    "defaultOptionUnderlyingIsin": "-1",
+    "defaultFutureExchangeId": 2,
+    "defaultFutureCountryId": -1,
+    "defaultFutureUnderlyingIsin": "-1",
     "defaultLeveragedExchangeId": -1,
-    "defaultFundFeeType": -1,
+    "defaultLeveragedShortLong": -1,
     "defaultLeveragedIssuerId": -1,
-    "defaultEtfIssuerId": -1
+    "defaultLeveragedUnderlyingId": -1,
+    "defaultLeveragedPopularOnly": false,
+    "defaultBondIssuerType": 0,
+    "defaultBondExchangeId": -1,
+    "defaultFundFeeType": -1,
+    "defaultFundIssuerId": -1,
+    "defaultEtfExchangeId": -1,
+    "defaultEtfFeeType": -1,
+    "defaultEtfIssuerId": -1,
+    "defaultEtfPopularOnly": false,
+    "defaultCfdExchangeId": 384,
+    "defaultWarrantUnderlyingName": "-1",
+    "defaultWarrantIssuerName": "-1",
+    "decimalDelimiter": ".",
+    "thousandDelimiter": ","
   }
 }
