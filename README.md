@@ -15,6 +15,7 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 ### <i>Automation Arhitecture</i>
 ![Copy of Untitled Diagram](https://user-images.githubusercontent.com/48771359/74692786-7af3fd00-51f1-11ea-82c4-878896fc610d.png)
 
+<br><br><br>
 
 ### <i>Automation Framework</i>
 - [x] Config       - <i>Responsible for loading the configurations from properties files, Initializing the 
