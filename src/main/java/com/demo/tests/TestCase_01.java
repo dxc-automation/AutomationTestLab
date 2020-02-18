@@ -11,36 +11,38 @@ import static com.demo.scripts.api.degiro.account.ClientInfo.getClientInfo;
 import static com.demo.scripts.api.degiro.products.Stocks.getStocks;
 import static com.demo.scripts.api.degiro.products.MarketPageProducts.getMarketsPageProdocts;
 import static com.demo.scripts.api.degiro.products.CurrencyInfo.getCurrencyDetails;
-import static com.demo.scripts.api.degiro.orders.CurrencyTransaction.*;
+import static com.demo.scripts.api.degiro.orders.Order.*;
+import static com.demo.scripts.api.degiro.orders.OrderConfirmation.*;
+import static com.demo.scripts.api.degiro.orders.OrdersHistory.*;
 import static com.demo.scripts.ui.degiro.PopularProducts.checkFormVisualization;
 
 public class TestCase_01 extends BasicTestConfig {
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void userLogin(Method method) throws Exception {
         fileName = method.getName() + ".json";
         secureLogin(fileName);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void clientInfo(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getClientInfo(fileName);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void productsPopular(Method method) throws Exception {
         fileName = method.getName() + ".json";
         checkFormVisualization();
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void products(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getStocks(fileName, 100, true, true);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void marketsPageProducts(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getMarketsPageProdocts(fileName);
@@ -52,9 +54,21 @@ public class TestCase_01 extends BasicTestConfig {
         getCurrencyDetails(fileName, EUR_CAD);
     }
 
-    @Test(enabled = false)
-    public void convertCurrency(Method method) throws Exception {
+    @Test(enabled = true)
+    public void order(Method method) throws Exception {
         fileName = method.getName() + ".json";
-        currencyTransaction(fileName, 1, "buy");
+        placeOrder(fileName, 1, 2, "buy");
+    }
+
+    @Test(enabled = true)
+    public void orderConfirmation(Method method) throws Exception {
+        fileName = method.getName() + ".json";
+        getOrderConfirmation(fileName, 1, 2, "buy");
+    }
+
+    @Test(enabled = true)
+    public void ordersHistory(Method method) throws Exception {
+        fileName = method.getName() + ".json";
+        getOrdersHistory(fileName, "17/02/2020", "18/02/2020");
     }
 }

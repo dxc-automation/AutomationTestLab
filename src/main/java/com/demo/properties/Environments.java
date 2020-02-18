@@ -1,5 +1,8 @@
 package com.demo.properties;
 
+import static com.demo.properties.TestData.*;
+
+
 
 public class Environments {
 
@@ -21,20 +24,20 @@ public class Environments {
     public final static String INT_TEST_BONDS  = "/dgproductsearch/secure/v5/bonds";
     public final static String INT_TEST_ETF    = "/dgproductsearch/secure/v5/etfs";
 
-    public final static String INT_TEST_MARKETS_PAGE = "/paservice/secure/settings/web";
+    public final static String INT_TEST_MARKETS_PAGE   = "/paservice/secure/settings/web";
 
-    public final static String INT_TEST_CASH_HISTORY  = "/reporting/secure/v6/accountoverview";
-    public final static String INT_TEST_ORDER_HISTORY = "/reporting/secure/v4/order-history";
+    public final static String INT_TEST_CASH_HISTORY   = "/reporting/secure/v6/accountoverview";
+    public final static String INT_TEST_ORDER_HISTORY  = "/reporting/secure/v4/order-history";
 
-    public final static String INT_TEST_CURRENCY_EXC         = "/dgtrading/secure/v5/checkOrder";
-    public final static String INT_TEST_CURRENCY_EXC_CONFIRM = "/dgtrading/secure/v5/order/";
-    public final static String INT_TEST_ACCOUNT_INFO         = "/dgtrading/secure/v5/account/info/";
-    public final static String INT_TEST_CLIENT_INFO          = "/paservice/secure/client";
-    public final static String INT_TEST_REAL_QUOTES          = "/paservice/secure/settings/vwdModules";
-    public final static String INT_TEST_CURRENCY             = "/hchart/v1/deGiro/data.js";
+    public final static String INT_ORDER               = "/dgtrading/secure/v5/checkOrder;jsessionid=";
+    public final static String INT_ORDER_CONFIRMATION  = "/dgtrading/secure/v5/order/";
+    public final static String INT_TEST_ACCOUNT_INFO   = "/dgtrading/secure/v5/account/info/";
+    public final static String INT_TEST_CLIENT_INFO    = "/paservice/secure/client";
+    public final static String INT_TEST_REAL_QUOTES    = "/paservice/secure/settings/vwdModules";
+    public final static String INT_TEST_CURRENCY       = "/hchart/v1/deGiro/data.js";
 
-    public final static String WEB_LOGIN              = "/login/ie#/login";
-    public final static String WEB_MARKETS            = "/trader4/#/markets";
+    public final static String WEB_LOGIN               = "/login/ie#/login";
+    public final static String WEB_MARKETS             = "/trader4/#/markets";
 
 
 

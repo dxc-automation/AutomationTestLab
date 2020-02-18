@@ -18,7 +18,9 @@
                     <include name="products"/>
                     <include name="marketsPageProducts"/>
                     <include name="currencyInfo"/>
-                    <include name="convertCurrency"/>
+                    <include name="order"/>
+                    <include name="orderConfirmation"/>
+                    <include name="ordersHistory"/>
                 </methods>
             </class>
         </classes>

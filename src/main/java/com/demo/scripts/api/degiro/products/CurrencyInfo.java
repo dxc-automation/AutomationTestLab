@@ -1,10 +1,10 @@
 package com.demo.scripts.api.degiro.products;
 
 import com.jayway.jsonpath.JsonPath;
+import net.minidev.json.JSONArray;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 
@@ -91,16 +91,17 @@ public class CurrencyInfo {
                 + "<br/>"
                 + "</pre>");
 
-        Object object = jsonParser.parse(new FileReader(report_json_folder + fileName));
-        JSONObject jsonObject = (JSONObject) object;
 
         try {
-            net.minidev.json.JSONArray currencyArray  = JsonPath.read(jsonObject.toString(), "$..name");
-            net.minidev.json.JSONArray currencyLastPriceArray    = JsonPath.read(jsonObject.toString(), "$..lastPrice");
-            currencyConvertName = currencyArray.get(0).toString();
-            currencyLastPrice = currencyLastPriceArray.get(0).toString();
+            Object object                    = jsonParser.parse(new FileReader(report_json_folder + fileName));
+            JSONObject jsonObject            = (JSONObject) object;
+            JSONArray currencyArray          = JsonPath.read(jsonObject.toString(), "$..name");
+            JSONArray currencyLastPriceArray = JsonPath.read(jsonObject.toString(), "$..lastPrice");
 
-        test.info("<pre>"
+            currencyConvertName = currencyArray.get(0).toString();
+            currencyLastPrice   = currencyLastPriceArray.get(0).toString();
+
+            test.info("<pre>"
                 + "<br>"
                 + "<center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center>"
                 + "<br>"

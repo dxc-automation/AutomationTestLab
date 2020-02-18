@@ -36,7 +36,6 @@ public class TestData {
 
     public static String currencyConvertName;
     public static String currencyName;
-    public static int    currencyId;
     public static String currencyLastPrice;
 
 

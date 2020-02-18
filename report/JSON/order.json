@@ -1,0 +1,17 @@
+{
+  "data": {
+    "transactionFees": [
+      {
+        "amount": 0.0,
+        "currency": "USD",
+        "id": 1
+      },
+      {
+        "amount": 10.0,
+        "currency": "EUR",
+        "id": 3
+      }
+    ],
+    "confirmationId": "9270f068-8f38-435d-bd24-8615a96d6328"
+  }
+}

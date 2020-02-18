@@ -82,7 +82,7 @@ public class MarketPageProducts {
 
         try {
             currencyName = JsonPath.read(responseStringEntity, "$.data.marketPageCurrencies[0].name");
-            currencyId   = JsonPath.read(responseStringEntity, "$.data.marketPageCurrencies[0].id");
+            productId    = JsonPath.read(responseStringEntity, "$.data.marketPageCurrencies[0].id");
 
             test.pass("<pre>"
                     + "<br>"
@@ -90,7 +90,7 @@ public class MarketPageProducts {
                     + "<br>"
                     + "CurrencyInfo: " + currencyName
                     + "<br>"
-                    + "ID:       " + currencyId
+                    + "ID:           " + productId
                     + "<br>"
                     + "<br>"
                     + "</pre>");

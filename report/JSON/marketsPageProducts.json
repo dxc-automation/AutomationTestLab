@@ -1,0 +1,197 @@
+{
+  "data": {
+    "defaultOptionExchangeId": 5,
+    "defaultEtfExchangeId": -1,
+    "marketPageChartIndex": {
+      "country": "EU",
+      "name": "Europe 50",
+      "vwdId": "11138355.MS,I",
+      "closePrice": 3853.27,
+      "id": 4836600
+    },
+    "defaultOptionCountryId": -1,
+    "defaultFutureExchangeId": 2,
+    "marketPageCurrencies": [
+      {
+        "fromCountry": "EU",
+        "name": "EUR/USD",
+        "vwdId": "190143785",
+        "id": 705366,
+        "toCountry": "US"
+      },
+      {
+        "fromCountry": "EU",
+        "name": "EUR/GBP",
+        "vwdId": "190163000",
+        "id": 714324,
+        "toCountry": "GB"
+      },
+      {
+        "fromCountry": "GB",
+        "name": "GBP/USD",
+        "vwdId": "190015673",
+        "id": 1788982,
+        "toCountry": "US"
+      },
+      {
+        "fromCountry": "GB",
+        "name": "GBP/JPY",
+        "vwdId": "190015867",
+        "id": 12153968,
+        "toCountry": "JP"
+      },
+      {
+        "fromCountry": "EU",
+        "name": "EUR/CAD",
+        "vwdId": "190168883",
+        "id": 841089,
+        "toCountry": "CA"
+      }
+    ],
+    "defaultLeveragedUnderlyingId": -1,
+    "defaultBondIssuerType": 0,
+    "defaultCfdExchangeId": 384,
+    "defaultFutureCountryId": -1,
+    "defaultFundIssuerId": -1,
+    "thousandDelimiter": ",",
+    "marketPageIndices": [
+      {
+        "country": "EU",
+        "name": "Europe 50",
+        "vwdId": "11138355.MS,I",
+        "closePrice": 3853.27,
+        "id": 4836600
+      },
+      {
+        "country": "GB",
+        "name": "UK 100",
+        "vwdId": "11138356.MS,I",
+        "closePrice": 7433.25,
+        "id": 11138356
+      },
+      {
+        "country": "US",
+        "name": "USA 500",
+        "vwdId": "11138354.MS,I",
+        "closePrice": 3380.16,
+        "id": 1796639
+      },
+      {
+        "country": "US",
+        "name": "USA TECH 100",
+        "vwdId": "11138349.MS,I",
+        "closePrice": 9623.58,
+        "id": 12153880
+      },
+      {
+        "country": "FR",
+        "name": "CAC 40",
+        "vwdId": "360015511",
+        "closePrice": 6085.95,
+        "id": 4824940
+      },
+      {
+        "country": "DE",
+        "name": "Germany 30",
+        "vwdId": "11138343.MS,I",
+        "closePrice": 13783.89,
+        "id": 900830
+      },
+      {
+        "country": "NL",
+        "name": "AEX",
+        "vwdId": "12272",
+        "closePrice": 629.17,
+        "id": 1037624
+      },
+      {
+        "country": "ES",
+        "name": "Spain 35",
+        "vwdId": "11138348.MS,I",
+        "closePrice": 10022.2,
+        "id": 4626845
+      },
+      {
+        "country": "IT",
+        "name": "Italy 40",
+        "vwdId": "11138345.MS,I",
+        "closePrice": 25097.0,
+        "id": 11138345
+      },
+      {
+        "country": "US",
+        "name": "USA 30",
+        "vwdId": "11138344.MS,I",
+        "closePrice": 29398.08,
+        "id": 4836603
+      }
+    ],
+    "defaultFutureUnderlyingIsin": "-1",
+    "marketMoversIndexIds": [
+      12,
+      14,
+      122001,
+      9,
+      113001,
+      113003,
+      6,
+      5,
+      10,
+      1,
+      18,
+      4,
+      17,
+      11,
+      105001
+    ],
+    "defaultStockCountryId": 963,
+    "defaultLeveragedShortLong": -1,
+    "defaultWarrantUnderlyingName": "-1",
+    "defaultWarrantIssuerName": "-1",
+    "defaultLeveragedPopularOnly": false,
+    "defaultBondExchangeId": -1,
+    "defaultEtfPopularOnly": false,
+    "defaultOptionUnderlyingIsin": "-1",
+    "decimalDelimiter": ".",
+    "defaultStockListType": "index",
+    "marketPageFutures": [
+      {
+        "country": "EU",
+        "name": "EURO STOXX 50",
+        "vwdId": "91436370",
+        "id": 14490433
+      },
+      {
+        "country": "DE",
+        "name": "DAX",
+        "vwdId": "507943032",
+        "id": 16134995
+      },
+      {
+        "country": "ES",
+        "name": "IBEX 35",
+        "vwdId": "956450047",
+        "id": 16685109
+      },
+      {
+        "country": "FR",
+        "name": "CAC 40",
+        "vwdId": "509060097",
+        "id": 16669350
+      },
+      {
+        "country": "US",
+        "name": "S\u0026P 500 E-mini",
+        "vwdId": "ES.CMEM.003,F",
+        "id": 15393401
+      }
+    ],
+    "defaultMarketMoversIndexId": 9,
+    "defaultStockListId": 114005,
+    "defaultEtfFeeType": -1,
+    "defaultLeveragedExchangeId": -1,
+    "defaultFundFeeType": -1,
+    "defaultLeveragedIssuerId": -1,
+    "defaultEtfIssuerId": -1
+  }
+}

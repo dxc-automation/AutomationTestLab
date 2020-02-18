@@ -1,6 +1,5 @@
 com\demo\utilities\user_interface\WebDriverUtils.class
 com\demo\scripts\ui\questers\Questers.class
-com\demo\scripts\api\degiro\orders\CurrencyTransaction.class
 com\demo\utilities\user_interface\Assertions.class
 com\demo\scripts\api\degiro\orders\TransactionHistory.class
 com\demo\tests\TestCase_02.class
@@ -13,6 +12,8 @@ com\demo\scripts\api\fly\RegisterUser.class
 com\demo\tests\TestCase_05.class
 com\demo\utilities\user_interface\GetAllPageLinks.class
 com\demo\utilities\web_services\HttpClientConfig.class
+com\demo\scripts\api\degiro\orders\Order.class
+com\demo\scripts\api\degiro\orders\OrderConfirmation.class
 com\demo\scripts\api\fly\UserInfo.class
 com\demo\objects\News\NewsHomePage.class
 com\demo\config\ReporterConfig.class
@@ -47,7 +48,6 @@ com\demo\properties\FilePaths.class
 com\demo\tests\TestCase_03.class
 com\demo\objects\Degiro\MarketsPage.class
 com\demo\scripts\api\fly\Authenticate.class
-com\demo\scripts\api\degiro\orders\CurrencyTransactionConfirmation.class
 com\demo\utilities\user_interface\ElementScreenshot.class
 com\demo\scripts\api\degiro\products\Trackers.class
 com\demo\properties\TestData.class

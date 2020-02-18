@@ -38,8 +38,7 @@ public class HttpClientUtils extends BasicTestConfig {
 
 
     public static HttpPost post(StringEntity entity, URI url) {
-        String address = url.toString();
-        HttpPost post = new HttpPost(address);
+        HttpPost post = new HttpPost(url);
         post.setHeader("Content-Type", "application/json");
         post.setHeader("Accept", "*/*");
         post.setHeader("Connection", "keep-alive");
@@ -56,7 +55,7 @@ public class HttpClientUtils extends BasicTestConfig {
             responseStringEntity = EntityUtils.toString(responseEntity, "UTF-8");
             responseBody = getFormattedJson(responseStringEntity);
             responseCode = response.getStatusLine().getStatusCode();
-            responseMsg = response.getStatusLine().getReasonPhrase();
+            responseMsg  = response.getStatusLine().getReasonPhrase();
             responseHeaders = Arrays.asList(response.getAllHeaders())
                     .toString()
                     .replace(", ", "\n")

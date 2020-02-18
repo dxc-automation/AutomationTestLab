@@ -64,7 +64,6 @@ public class Stocks {
         getClosableHttpClientResponseDetails(response);
         createLogFile(fileName, getFormattedJson(responseBody));
 
-
         test.info("<pre>"
                 + "<br/>"
                 + "<center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center>"
