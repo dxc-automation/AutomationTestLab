@@ -16,7 +16,7 @@ import static com.demo.utilities.web_services.HttpClientConfig.*;
 import static com.demo.utilities.web_services.HttpClientUtils.get;
 import static com.demo.utilities.web_services.HttpClientUtils.getClosableHttpClientResponseDetails;
 
-public class Funds {
+public class SearchTrackers {
 
 
     private static String scheme;
@@ -25,13 +25,13 @@ public class Funds {
     private static String status;
 
 
-    static final Logger LOG = LogManager.getLogger(Funds.class);
+    static final Logger LOG = LogManager.getLogger(SearchTrackers.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[GET] Investment Funds List</b>";
-        String testCategory    = "Frontend";
+        String testName        = "<b>[GET] Exchange Traded Funds List</b>";
+        String testCategory    = "API";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
-                "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>"                                                       +
                 "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                 "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                 "[3] Check login with valid credentials.";
@@ -42,12 +42,12 @@ public class Funds {
 
 
 
-    public static void getFunds(String fileName, int limit, boolean requireTotal) throws Exception {
+    public static void getEtfs(String fileName, int limit, boolean onlyPopular, boolean requireTotal) throws Exception {
         report();
 
         scheme = "https";
         host   = INT_TEST_HOST;
-        path   = INT_TEST_FUNDS;
+        path   = INT_TEST_ETF;
 
         url = new URIBuilder()
                 .setScheme(scheme)
@@ -57,9 +57,10 @@ public class Funds {
                 .addParameter("sessionId", sessionID)
                 .addParameter("offset", "0")
                 .addParameter("limit", String.valueOf(limit))
+                .addParameter("popularOnly", String.valueOf(onlyPopular))
+                .addParameter("requireTotal", String.valueOf(requireTotal))
                 .addParameter("sortColumns", "name")
                 .addParameter("sortTypes", "asc")
-                .addParameter("requireTotal", String.valueOf(requireTotal))
                 .build();
 
 

@@ -30,10 +30,10 @@ public class Login {
     static final Logger LOG = LogManager.getLogger(Login.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[POST] Login</b>";
-        String testCategory    = "Frontend";
+        String testName        = "<b>[POST] Account Login</b>";
+        String testCategory    = "API";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
-                "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>"                                                       +
                 "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                 "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                 "[3] Check login with valid credentials.";
@@ -97,7 +97,7 @@ public class Login {
             status    = JsonPath.read(responseStringEntity, "$.statusText");
             test.pass("<pre>"
                     + "<br/>"
-                    + "<center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center>"
+                    + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
                     + "<br />"
                     + "<br />"
                     + "Session ID:   " + sessionID

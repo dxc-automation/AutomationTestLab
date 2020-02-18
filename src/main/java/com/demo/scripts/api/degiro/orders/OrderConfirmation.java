@@ -34,7 +34,7 @@ public class OrderConfirmation {
         String testName        = "<b>[POST] Order Confirmation</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
-                "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>"                                                       +
                 "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                 "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                 "[3] Check login with valid credentials.";
@@ -101,7 +101,7 @@ public class OrderConfirmation {
             orderId = JsonPath.read(responseStringEntity, "$..orderId");
             test.pass("<pre>"
                     + "<br/>"
-                    + "<center><b>* * * * * * * *    INFORMATION    * * * * * * * *</b></center>"
+                    + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
                     + "<br />"
                     + "<br />"
                     + "Your order ID is " + orderId

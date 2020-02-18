@@ -27,9 +27,9 @@ public class ClientInfo {
 
     private static void report() throws Exception {
         String testName        = "<b>[GET] Account Info</b>";
-        String testCategory    = "Frontend";
-        String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
-                "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+        String testCategory    = "API";
+        String testDescription = "The purpose of this test is to verify that the server can return user details from data base."              +
+                "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>"                                                       +
                 "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                 "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                 "[3] Check login with valid credentials.";

@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 import static com.demo.properties.TestData.*;
 import static com.demo.scripts.api.degiro.account.Login.secureLogin;
 import static com.demo.scripts.api.degiro.account.ClientInfo.getClientInfo;
-import static com.demo.scripts.api.degiro.products.Stocks.getStocks;
+import static com.demo.scripts.api.degiro.products.SearchStocks.getStocks;
 import static com.demo.scripts.api.degiro.products.MarketPageProducts.getMarketsPageProdocts;
 import static com.demo.scripts.api.degiro.products.CurrencyInfo.getCurrencyDetails;
 import static com.demo.scripts.api.degiro.orders.Order.*;
