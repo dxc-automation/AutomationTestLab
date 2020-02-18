@@ -16,6 +16,7 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 ![Copy of Untitled Diagram](https://user-images.githubusercontent.com/48771359/74692786-7af3fd00-51f1-11ea-82c4-878896fc610d.png)
 
 <br><br><br>
+*****
 
 ### <i>Automation Framework</i>
 - [x] Config       - <i>Responsible for loading the configurations from properties files, Initializing the 
@@ -33,7 +34,8 @@ The best thing about such a setup is that it leverages the benefits of all kinds
 - [x] TestNG       - <i>XML files that representing test suites that are created in test cases classes.</i><br><br>
  
 
-<br><br><br>
+<br><br><br> 
+*****
 
 ### <i>Advantages</i>
 - [x] Execute test suite that can be a combination between front-end and back-end test scenarios as a single test. 
