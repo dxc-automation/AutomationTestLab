@@ -88,7 +88,7 @@ public class MarketPageProducts {
                     + "<br>"
                     + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
                     + "<br>"
-                    + "CurrencyInfo: " + currencyName
+                    + "SearchProductVWDServices: " + currencyName
                     + "<br>"
                     + "ID:           " + productId
                     + "<br>"

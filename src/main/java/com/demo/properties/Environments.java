@@ -14,15 +14,16 @@ public class Environments {
 
 
     //***** LOGIN
-    public final static String INT_TEST_LOGIN  = "/login/secure/login";
-    public final static String INT_TEST_CONFIG = "/login/secure/config";
+    public final static String INT_LOGIN = "/login/secure/login";
+    public final static String INT_CONFIG = "/login/secure/config";
 
 
     //***** PRODUCTS
-    public final static String INT_TEST_STOCKS = "/dgproductsearch/secure/v5/stocks";
-    public final static String INT_TEST_FUNDS  = "/dgproductsearch/secure/v5/funds";
-    public final static String INT_TEST_BONDS  = "/dgproductsearch/secure/v5/bonds";
-    public final static String INT_TEST_ETF    = "/dgproductsearch/secure/v5/etfs";
+    public final static String INT_SEARCH        = "/dgproductsearch/secure/v5/products/lookup";
+    public final static String INT_SEARCH_STOCKS = "/dgproductsearch/secure/v5/stocks";
+    public final static String INT_SEARCH_FUNDS  = "/dgproductsearch/secure/v5/funds";
+    public final static String INT_SEARCH_BONDS  = "/dgproductsearch/secure/v5/bonds";
+    public final static String INT_SEARCH_ETF    = "/dgproductsearch/secure/v5/etfs";
 
     public final static String INT_TEST_MARKETS_PAGE   = "/paservice/secure/settings/web";
 

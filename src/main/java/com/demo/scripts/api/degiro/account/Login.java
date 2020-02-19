@@ -49,7 +49,7 @@ public class Login {
 
         scheme = "https";
         host   = INT_TEST_HOST;
-        path   = INT_TEST_LOGIN;
+        path   = INT_LOGIN;
 
         url = new URIBuilder()
                 .setScheme(scheme)

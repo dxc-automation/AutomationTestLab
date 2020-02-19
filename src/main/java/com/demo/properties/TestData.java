@@ -6,6 +6,20 @@ public class TestData {
     public final static String INTERNAL_USER = "dgtraderie";
     public final static String INTERNAL_PASS = "Test_web2020";
 
+
+    //  * * * *    P R O D U C T   T Y P E   ID
+    public final static int BONDS     = 2;
+    public final static int OPTIONS   = 18;
+    public final static int FUTURES   = 7;
+    public final static int STOCKS    = 1;
+    public final static int TRACKERS  = 131;
+    public final static int LEVERAGED = 14;
+    public final static int WARRANTS  = 8;
+    public final static int CURRENCY  = 3;
+    public final static int FUNDS     = 13;
+
+
+
     public final static String GBP_JPY = "190021778";
     public final static String EUR_CAD = "190168883";
     public final static String EUR_GBP = "190163000";
@@ -31,6 +45,7 @@ public class TestData {
 
     public static double productPrice;
     public static int    productId;
+    public static int    productIssueId;
     public static String confirmationId;
     public static String orderId;
 

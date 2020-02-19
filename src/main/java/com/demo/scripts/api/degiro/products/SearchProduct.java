@@ -43,7 +43,7 @@ public class SearchProduct {
 
 
 
-    public static void getTransactionsHistory(String fileName, String fromDate, String toDate) throws Exception {
+    public static void searchProductDetails(String fileName, String productType, int offset, int limit, String searchText) throws Exception {
         report();
 
         scheme = "https";
@@ -54,10 +54,12 @@ public class SearchProduct {
                 .setScheme(scheme)
                 .setHost(host)
                 .setPath(path)
-                .addParameter("intAccount", String.valueOf(intAccount))
-                .addParameter("sessionId", sessionID)
-                .addParameter("fromDate", fromDate)
-                .addParameter("toDate", toDate)
+                .setParameter("intAccount",    String.valueOf(intAccount))
+                .setParameter("sessionId",     sessionID)
+                .setParameter("productTypeId", productType)
+                .setParameter("offset",        String.valueOf(offset))
+                .setParameter("limit",         String.valueOf(limit))
+                .setParameter("searchText",    searchText)
                 .build();
 
 

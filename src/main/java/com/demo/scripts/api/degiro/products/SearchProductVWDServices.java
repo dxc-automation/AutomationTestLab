@@ -20,7 +20,7 @@ import static com.demo.utilities.web_services.HttpClientConfig.*;
 import static com.demo.utilities.web_services.HttpClientUtils.get;
 import static com.demo.utilities.web_services.HttpClientUtils.getClosableHttpClientResponseDetails;
 
-public class CurrencyInfo {
+public class SearchProductVWDServices {
 
 
     private static String scheme;
@@ -28,10 +28,10 @@ public class CurrencyInfo {
     private static String path;
 
 
-    static final Logger LOG = LogManager.getLogger(CurrencyInfo.class);
+    static final Logger LOG = LogManager.getLogger(SearchProductVWDServices.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[GET] CurrencyInfo Details</b>";
+        String testName        = "<b>[GET] SearchProductVWDServices Details</b>";
         String testCategory    = "API";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                 "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>"                                                       +
@@ -45,7 +45,7 @@ public class CurrencyInfo {
 
 
 
-    public static void getCurrencyDetails(String fileName, String currency) throws Exception {
+    public static void getProductDetail(String fileName, String issueid) throws Exception {
         report();
 
         scheme = "https";
@@ -56,16 +56,16 @@ public class CurrencyInfo {
                 .setScheme(scheme)
                 .setHost(host)
                 .setPath(path)
-                .addParameter("requestid", "0")
+                .addParameter("requestid",  "0")
                 .addParameter("resolution", "PT1M")
-                .addParameter("culture", "en-US")
-                .addParameter("period", "P1D")
-                .addParameter("series", "issueid:" + currency)
-                .addParameter("series", "price:issueid:" + currency)
-                .addParameter("format", "json")
-                .addParameter("callback", "vwd.hchart.seriesRequestManager.sync_response")
-                .addParameter("userToken", "463421")
-                .addParameter("tz", "Europe/Dublin")
+                .addParameter("culture",    "en-US")
+                .addParameter("period",     "P1D")
+                .addParameter("series",     "issueid:"       + issueid)
+                .addParameter("series",     "price:issueid:" + issueid)
+                .addParameter("format",     "json")
+                .addParameter("callback",   "vwd.hchart.seriesRequestManager.sync_response")
+                .addParameter("userToken",  "463421")
+                .addParameter("tz",         "Europe/Dublin")
                 .build();
 
 

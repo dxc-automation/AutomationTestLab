@@ -10,7 +10,7 @@ import static com.demo.scripts.api.degiro.account.Login.secureLogin;
 import static com.demo.scripts.api.degiro.account.ClientInfo.getClientInfo;
 import static com.demo.scripts.api.degiro.products.SearchStocks.getStocks;
 import static com.demo.scripts.api.degiro.products.MarketPageProducts.getMarketsPageProdocts;
-import static com.demo.scripts.api.degiro.products.CurrencyInfo.getCurrencyDetails;
+import static com.demo.scripts.api.degiro.products.SearchProductVWDServices.getProductDetail;
 import static com.demo.scripts.api.degiro.orders.Order.*;
 import static com.demo.scripts.api.degiro.orders.OrderConfirmation.*;
 import static com.demo.scripts.api.degiro.orders.OrdersHistory.*;
@@ -51,7 +51,7 @@ public class TestCase_01 extends BasicTestConfig {
     @Test(enabled = true)
     public void currencyInfo(Method method) throws Exception {
         fileName = method.getName() + ".json";
-        getCurrencyDetails(fileName, EUR_CAD);
+        getProductDetail(fileName, EUR_CAD);
     }
 
     @Test(enabled = true)

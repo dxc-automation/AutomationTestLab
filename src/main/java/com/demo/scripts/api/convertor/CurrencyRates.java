@@ -33,7 +33,7 @@ public class CurrencyRates {
     static final Logger LOG = LogManager.getLogger(CurrencyRates.class);
 
     private static void report() throws Exception {
-        String testName = "Get CurrencyInfo Rates";
+        String testName = "Get SearchProductVWDServices Rates";
         String testDescription = "The purpose of this test is to verify that the correct user details are received.";
         String testCategory = "API";
 
