@@ -3,29 +3,15 @@ package com.demo.scripts.ui.degiro;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.Degiro.General;
-import com.demo.objects.Degiro.LoginPage;
 import com.demo.objects.Degiro.MarketsPage;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.junit.Before;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
-import static com.demo.properties.Environments.*;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
-import static com.demo.properties.TestData.INTERNAL_PASS;
-import static com.demo.properties.TestData.INTERNAL_USER;
-import static com.demo.scripts.ui.degiro.Login.secureLoginWeb;
+import static com.demo.scripts.ui.degiro.UserLogin.secureLoginWeb;
 import static com.demo.utilities.user_interface.ElementScreenshot.elementScreenshot;
-import static com.demo.utilities.user_interface.ImageCompare.imageCompare;
 
 public class PopularProducts extends BasicTestConfig {
 
@@ -52,7 +38,7 @@ public class PopularProducts extends BasicTestConfig {
         wait.until(ExpectedConditions.visibilityOf(general.quick_search_input));
 
         report();
-        general.sidenavigation_market_btn.click();
+        general.side_navigation_market_btn.click();
         test.pass("<b>[STEP 1]</b> Markets page was opened successfully");
 
         Thread.sleep(500);

@@ -27,7 +27,7 @@ public class Authenticate {
     static final Logger LOG = LogManager.getLogger(Authenticate.class);
 
     private static void report() throws Exception {
-        String testName        = "Login";
+        String testName        = "UserLogin";
         String testDescription = "The purpose of this test is to verify that the user can log in successfully.";
         String testCategory    = "RAM";
 

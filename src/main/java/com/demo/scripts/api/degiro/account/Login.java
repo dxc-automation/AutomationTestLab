@@ -30,7 +30,7 @@ public class Login {
     static final Logger LOG = LogManager.getLogger(Login.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[POST] Account Login</b>";
+        String testName        = "<b>[POST] Account UserLogin</b>";
         String testCategory    = "API";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                 "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>"                                                       +
