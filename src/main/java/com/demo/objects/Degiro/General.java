@@ -21,7 +21,7 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "._36CbGFJLG6WzVjeXIpURvd[data-id=marketsMenuItem]")
     public WebElement side_navigation_market_btn;
 
-    @FindBy(how = How.CSS, using = "a._19dFdjzCl1LYGUAL1nstT3._6DDjS5PjnOm1xwmv0r_gn")
+    @FindBy(how = How.CSS, using = "._36CbGFJLG6WzVjeXIpURvd[data-id=activityMenuItem]")
     public WebElement side_navigation_activity_btn;
 
 
@@ -29,7 +29,7 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "input[name=quickSearchInput][type=text]")
     public WebElement quick_search_input;
 
-    @FindBy(how = How.CSS, using = "span.._36tEXtle5kyKklPBXHPSvg.")
+    @FindBy(how = How.CSS, using = "span[data-field=availableToSpend][data-id=totalPortfolio]")
     public WebElement account_content_available_to_spend;
 
 

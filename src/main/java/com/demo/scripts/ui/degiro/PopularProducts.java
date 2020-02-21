@@ -16,7 +16,7 @@ import static com.demo.utilities.user_interface.ElementScreenshot.elementScreens
 public class PopularProducts extends BasicTestConfig {
 
     private static MarketsPage marketsPage = PageFactory.initElements(driver, MarketsPage.class);
-    private static General general         = PageFactory.initElements(driver, General.class);
+    private static General     general     = PageFactory.initElements(driver, General.class);
 
     private static void report() throws Exception {
         String testName        = "<b>[WEB] Popular Products</b>";
@@ -33,11 +33,10 @@ public class PopularProducts extends BasicTestConfig {
 
 
 
-    public static void checkFormVisualization() throws Exception {
-        secureLoginWeb();
-        wait.until(ExpectedConditions.visibilityOf(general.quick_search_input));
-
+    public static void checkPopularProducts() throws Exception {
         report();
+
+        wait.until(ExpectedConditions.visibilityOf(general.quick_search_input));
         general.side_navigation_market_btn.click();
         test.pass("<b>[STEP 1]</b> Markets page was opened successfully");
 

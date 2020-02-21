@@ -1,5 +1,6 @@
 com\demo\utilities\user_interface\WebDriverUtils.class
 com\demo\scripts\ui\questers\Questers.class
+com\demo\scripts\ui\degiro\ActivityOrdersHistory.class
 com\demo\utilities\user_interface\Assertions.class
 com\demo\scripts\api\degiro\orders\TransactionHistory.class
 com\demo\tests\TestCase_02.class
@@ -7,7 +8,6 @@ com\demo\scripts\api\fly\NewToken.class
 com\demo\utilities\web_services\HttpClientUtils.class
 com\demo\objects\Degiro\LoginPage.class
 com\demo\scripts\api\degiro\account\Login.class
-com\demo\scripts\ui\degiro\UserAmount.class
 com\demo\utilities\user_interface\ImageCompare.class
 com\demo\scripts\api\fly\RegisterUser.class
 com\demo\tests\TestCase_05.class
@@ -17,6 +17,7 @@ com\demo\scripts\api\degiro\orders\Order.class
 com\demo\scripts\api\degiro\orders\OrderConfirmation.class
 com\demo\scripts\api\fly\UserInfo.class
 com\demo\objects\News\NewsHomePage.class
+com\demo\utilities\user_interface\HandleTable.class
 com\demo\config\ReporterConfig.class
 com\demo\utilities\user_interface\ScreenRecorder.class
 com\demo\scripts\api\degiro\account\ClientInfo.class
@@ -29,6 +30,7 @@ com\demo\objects\Degiro\General.class
 com\demo\utilities\FileUtility.class
 com\demo\scripts\ui\amazon\Amazon.class
 com\demo\scripts\api\degiro\settings\RealTimeQuotes.class
+com\demo\objects\Degiro\ActivityOrdersPage.class
 com\demo\tests\TestCase_01.class
 com\demo\scripts\api\degiro\products\SearchProduct.class
 com\demo\scripts\api\degiro\products\SearchProductVWDServices.class
@@ -40,6 +42,7 @@ com\demo\tests\TestCase_04.class
 com\demo\scripts\ui\degiro\UserLogin.class
 com\demo\config\TestNGListener.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
+com\demo\scripts\ui\degiro\UserAccountBalance.class
 com\demo\config\BasicTestConfig.class
 com\demo\config\ConsoleRunner.class
 com\demo\properties\FilePaths.class

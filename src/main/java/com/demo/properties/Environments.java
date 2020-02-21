@@ -14,7 +14,7 @@ public class Environments {
 
 
     //***** LOGIN
-    public final static String INT_LOGIN = "/login/secure/login";
+    public final static String INT_LOGIN  = "/login/secure/login";
     public final static String INT_CONFIG = "/login/secure/config";
 
 

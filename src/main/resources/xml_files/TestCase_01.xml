@@ -12,14 +12,10 @@
         <classes>
             <class name="com.demo.tests.TestCase_01">
                 <methods>
-                    <include name="userLogin"/>
-                    <include name="clientInfo"/>
-                    <include name="productsPopular"/>
-                    <include name="marketsPageProducts"/>
-                    <include name="currencyInfo"/>
-                    <include name="order"/>
-                    <include name="orderConfirmation"/>
-                    <include name="ordersHistory"/>
+                    <include name="web_user_login"/>
+                    <include name="web_user_balance"/>
+                    <include name="web_user_orders_history"/>
+                    <include name="web_check_popular_products"/>
                 </methods>
             </class>
         </classes>

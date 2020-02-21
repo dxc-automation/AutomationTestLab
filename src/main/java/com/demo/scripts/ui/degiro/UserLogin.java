@@ -19,7 +19,7 @@ public class UserLogin extends BasicTestConfig {
 
 
     private static void report() throws Exception {
-        String testName        = "<b>[WEB] Account UserLogin</b>";
+        String testName        = "<b>[WEB] Account Login</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                                  "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
@@ -44,11 +44,9 @@ public class UserLogin extends BasicTestConfig {
         test.pass("<b>[STEP 1]</b> UserLogin page was opened successfully");
 
         Thread.sleep(300);
-        String actualImage = "LoginForm_Actual";
-        String expectImage = "LoginForm._Expected";
-        elementScreenshot(loginPage.login_form, actualImage);
+        elementScreenshot(loginPage.login_form, "LoginForm_Actual");
 
-        imageCompare(actualImage, expectImage);
+        imageCompare("LoginForm_Actual", "LoginForm_Expected");
 
         loginPage.login_user_input.sendKeys(INTERNAL_USER);
         loginPage.login_pass_input.sendKeys(INTERNAL_PASS);
