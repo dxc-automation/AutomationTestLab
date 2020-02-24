@@ -21,7 +21,7 @@ public class UserLogin extends BasicTestConfig {
     private static void report() throws Exception {
         String testName        = "<b>[WEB] Account Login</b>";
         String testCategory    = "Frontend";
-        String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
+        String testDescription = "The purpose of this test is to verify that the login functionality is working as expected."              +
                                  "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
                                  "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                                  "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
@@ -41,7 +41,7 @@ public class UserLogin extends BasicTestConfig {
         String pageTitle = driver.getTitle();
         boolean title = pageTitle.contains("DEGIRO");
         Assert.assertTrue(title);
-        test.pass("<b>[STEP 1]</b> UserLogin page was opened successfully");
+        test.pass("<b>[STEP 1]</b> User Login page was opened successfully");
 
         Thread.sleep(300);
         elementScreenshot(loginPage.login_form, "LoginForm_Actual");

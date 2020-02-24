@@ -16,9 +16,9 @@ public class UserAccountBalance extends BasicTestConfig {
 
 
     private static void report() throws Exception {
-        String testName        = "<b>[WEB] User Amount</b>";
+        String testName        = "<b>[WEB] User Balance</b>";
         String testCategory    = "Frontend";
-        String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
+        String testDescription = "The purpose of this test is to verify that the user balance is displayed."              +
                                  "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
                                  "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                                  "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
@@ -38,6 +38,6 @@ public class UserAccountBalance extends BasicTestConfig {
 
         wait.until(ExpectedConditions.visibilityOf(general.account_content_available_to_spend));
         String amountToSpend = general.account_content_available_to_spend.getText();
-        test.info("Account Balance = " + amountToSpend);
+        test.info("Account available to trade = " + amountToSpend.substring(1));
     }
 }

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TC_001" duration-ms="6334" started-at="2020-02-21T17:11:19Z" finished-at="2020-02-21T17:11:25Z">
+  <suite name="TC_001" duration-ms="5166" started-at="2020-02-24T13:03:52Z" finished-at="2020-02-24T13:03:57Z">
     <groups>
     </groups>
-    <test name="TC_01_Index" duration-ms="6334" started-at="2020-02-21T17:11:19Z" finished-at="2020-02-21T17:11:25Z">
+    <test name="TC_01_Index" duration-ms="5166" started-at="2020-02-24T13:03:52Z" finished-at="2020-02-24T13:03:57Z">
       <class name="com.demo.tests.TestCase_01">
-        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="browserConfig" is-config="true" duration-ms="6455" started-at="2020-02-21T17:11:13Z" finished-at="2020-02-21T17:11:19Z">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="browserConfig" is-config="true" duration-ms="6599" started-at="2020-02-24T13:03:45Z" finished-at="2020-02-24T13:03:52Z">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="cleanReportData" is-config="true" duration-ms="4" started-at="2020-02-21T17:11:19Z" finished-at="2020-02-21T17:11:19Z">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="cleanReportData" is-config="true" duration-ms="8" started-at="2020-02-24T13:03:52Z" finished-at="2020-02-24T13:03:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method status="PASS" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="setEnvironmentConfiguration" is-config="true" duration-ms="0" started-at="2020-02-21T17:11:19Z" finished-at="2020-02-21T17:11:19Z">
+        <test-method status="PASS" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="setEnvironmentConfiguration" is-config="true" duration-ms="0" started-at="2020-02-24T13:03:52Z" finished-at="2020-02-24T13:03:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentConfiguration -->
-        <test-method status="PASS" signature="web_user_login()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="web_user_login" duration-ms="6332" started-at="2020-02-21T17:11:19Z" finished-at="2020-02-21T17:11:25Z">
+        <test-method status="PASS" signature="web_user_login()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="web_user_login" duration-ms="5162" started-at="2020-02-24T13:03:52Z" finished-at="2020-02-24T13:03:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_user_login -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-02-21T17:11:25Z" finished-at="2020-02-21T17:11:25Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-02-24T13:03:57Z" finished-at="2020-02-24T13:03:57Z">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="clearXmlFiles" is-config="true" duration-ms="7" started-at="2020-02-21T17:11:25Z" finished-at="2020-02-21T17:11:25Z">
+        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="clearXmlFiles" is-config="true" duration-ms="7" started-at="2020-02-24T13:03:57Z" finished-at="2020-02-24T13:03:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="tearDown" is-config="true" duration-ms="628" started-at="2020-02-21T17:11:25Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" finished-at="2020-02-21T17:11:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="tearDown" is-config="true" duration-ms="614" started-at="2020-02-24T13:03:57Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" finished-at="2020-02-24T13:03:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="flushReportData" is-config="true" duration-ms="178" started-at="2020-02-21T17:11:26Z" finished-at="2020-02-21T17:11:26Z">
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01@4b14c583]" name="flushReportData" is-config="true" duration-ms="178" started-at="2020-02-24T13:03:57Z" finished-at="2020-02-24T13:03:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
