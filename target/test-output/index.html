@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-TC_001">
+            <a href="#" panel-name="suite-TC_001" class="navigator-link">
               <span class="suite-name border-passed">TC_001</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-TC_001">
-                    <span>C:\Automation\AutomationTestLab\src\main\resources\xml_files\TestCase_01.xml</span>
+                  <a href="#" panel-name="test-xml-TC_001" class="navigator-link ">
+                    <span>D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\TestCase_01.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-TC_001">
+                  <a href="#" panel-name="testlist-TC_001" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-TC_001">
+                  <a href="#" panel-name="group-TC_001" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-TC_001">
+                  <a href="#" panel-name="times-TC_001" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-TC_001">
+                  <a href="#" panel-name="reporter-TC_001" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-TC_001">
+                  <a href="#" panel-name="ignored-methods-TC_001" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-TC_001">
+                  <a href="#" panel-name="chronological-TC_001" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,8 +101,8 @@
                     </span>
                     <div class="method-list-content passed suite-TC_001">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" hash-for-method="web_user_login">web_user_login</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" class="method navigator-link" hash-for-method="web_user_login">web_user_login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TC_001 -->
@@ -135,18 +135,19 @@
         </div> <!-- panel TC_001 -->
         <div panel-name="test-xml-TC_001" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Automation\AutomationTestLab\src\main\resources\xml_files\TestCase_01.xml</span>
+            <span class="header-content">D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\TestCase_01.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;TC_001&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; parallel=&quot;tests&quot; name=&quot;TC_001&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot;&gt;
+  &lt;parameter name=&quot;environment&quot; value=&quot;production&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.demo.config.TestNGListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;10&quot; name=&quot;TC_01_Index&quot; parallel=&quot;tests&quot; group-by-instances=&quot;true&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TC_01_Index&quot; group-by-instances=&quot;true&quot; verbose=&quot;10&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.demo.tests.TestCase_01&quot;&gt;
         &lt;methods&gt;
@@ -199,12 +200,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'web_user_login')
 data.setCell(0, 2, 'com.demo.tests.TestCase_01')
-data.setCell(0, 3, 5162);
+data.setCell(0, 3, 13770);
 window.suiteTableData['TC_001']= { tableData: data, tableDiv: 'times-div-TC_001'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-TC_001">
               </div> <!-- times-div-TC_001 -->
             </div> <!-- times-div -->
@@ -256,31 +257,35 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
-                <span class="method-start">6599 ms</span>
+                <span class="method-start">3205 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">setEnvironment(production)</span>
+                <span class="method-start">3212 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setEnvironmentConfiguration</span>
-                <span class="method-start">6607 ms</span>
+                <span class="method-start">3213 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">web_user_login</span>
-                <span class="method-start">6609 ms</span>
+                <span class="method-start">3237 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=web_user_login status=SUCCESS method=TestCase_01.web_user_login()[pri:0, instance:c...)</span>
-                <span class="method-start">11772 ms</span>
+                <span class="method-start">17008 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXmlFiles</span>
-                <span class="method-start">11790 ms</span>
+                <span class="method-start">17155 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11797 ms</span>
+                <span class="method-start">17380 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReportData</span>
-                <span class="method-start">12411 ms</span>
+                <span class="method-start">18240 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

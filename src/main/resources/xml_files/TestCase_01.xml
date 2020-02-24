@@ -8,6 +8,7 @@
     </listeners>
 
     <parameter name="browser"     value="chrome"/>
+    <parameter name="environment" value="production"/>
     <test name="TC_01_Index" group-by-instances="true">
         <classes>
             <class name="com.demo.tests.TestCase_01">

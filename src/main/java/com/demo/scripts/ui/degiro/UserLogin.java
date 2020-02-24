@@ -13,6 +13,7 @@ import static com.demo.properties.TestData.*;
 import static com.demo.utilities.user_interface.ElementScreenshot.*;
 import static com.demo.utilities.user_interface.ImageCompare.imageCompare;
 
+
 public class UserLogin extends BasicTestConfig {
 
     private static LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
@@ -35,7 +36,7 @@ public class UserLogin extends BasicTestConfig {
     public static void secureLoginWeb() throws Exception {
         report();
         wait = new WebDriverWait(driver, 10);
-        String url = "https://" + INT_TEST_HOST + WEB_LOGIN;
+        String url = "https://" + HOST + WEB_LOGIN;
         driver.get(url);
 
         String pageTitle = driver.getTitle();

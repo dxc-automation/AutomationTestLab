@@ -9,6 +9,7 @@ com\demo\utilities\web_services\HttpClientUtils.class
 com\demo\objects\Degiro\LoginPage.class
 com\demo\scripts\api\degiro\account\Login.class
 com\demo\utilities\user_interface\ImageCompare.class
+com\demo\utilities\user_interface\SpecializedScreenRecorder.class
 com\demo\scripts\api\fly\RegisterUser.class
 com\demo\tests\TestCase_05.class
 com\demo\utilities\user_interface\GetAllPageLinks.class
@@ -19,7 +20,6 @@ com\demo\scripts\api\fly\UserInfo.class
 com\demo\objects\News\NewsHomePage.class
 com\demo\utilities\user_interface\HandleTable.class
 com\demo\config\ReporterConfig.class
-com\demo\utilities\user_interface\ScreenRecorder.class
 com\demo\scripts\api\degiro\account\ClientInfo.class
 com\demo\properties\Environments.class
 com\demo\objects\Amazon\AmazonHomePage.class
@@ -30,6 +30,7 @@ com\demo\objects\Degiro\General.class
 com\demo\utilities\FileUtility.class
 com\demo\scripts\ui\amazon\Amazon.class
 com\demo\scripts\api\degiro\settings\RealTimeQuotes.class
+com\demo\utilities\user_interface\VideoRecord.class
 com\demo\objects\Degiro\ActivityOrdersPage.class
 com\demo\tests\TestCase_01.class
 com\demo\scripts\api\degiro\products\SearchProduct.class
@@ -42,12 +43,12 @@ com\demo\tests\TestCase_04.class
 com\demo\scripts\ui\degiro\UserLogin.class
 com\demo\config\TestNGListener.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
-com\demo\scripts\ui\degiro\UserAccountBalance.class
 com\demo\config\BasicTestConfig.class
 com\demo\config\ConsoleRunner.class
 com\demo\properties\FilePaths.class
 com\demo\tests\TestCase_03.class
 com\demo\objects\Degiro\MarketsPage.class
 com\demo\scripts\api\fly\Authenticate.class
+com\demo\scripts\ui\degiro\UserBalance.class
 com\demo\utilities\user_interface\ElementScreenshot.class
 com\demo\properties\TestData.class

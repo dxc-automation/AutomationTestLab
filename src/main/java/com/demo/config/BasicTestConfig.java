@@ -88,6 +88,7 @@ public class BasicTestConfig {
             File reportFailedDir  = new File(screenshots_failed_folder);
             File reportActual     = new File(screenshots_actual_folder);
             File reportBuffer     = new File(screenshots_actual_folder);
+            File reportVideos     = new File(video_files);
 
             try {
                 if (!reportJsonDir.exists() && reportFailedDir.exists()) {
@@ -96,14 +97,16 @@ public class BasicTestConfig {
                 } else {
                     cleanDirectory(new File(report_json_folder));
                     cleanDirectory(new File(screenshots_failed_folder));
-                }
-
-                if (!reportActual.exists() && reportBuffer.exists()) {
+                } if (!reportActual.exists() && reportBuffer.exists()) {
                     reportFailedDir.mkdir();
                     reportActual.mkdir();
                 } else {
                     cleanDirectory(new File(screenshots_failed_folder));
                     cleanDirectory(new File(screenshots_failed_folder));
+                } if (!reportVideos.exists()) {
+                    reportVideos.mkdir();
+                } else {
+                    cleanDirectory(new File(video_files));
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -125,6 +128,21 @@ public class BasicTestConfig {
         FLY_HOST        = properties.getProperty("fly_host");
         NEWS_BASIC_URL  = properties.getProperty("news_url");
         inputStream.close();
+    }
+
+
+
+
+    @Parameters({"environment"})
+    @BeforeSuite
+    public void setEnvironment(String environment) {
+        if (environment.equalsIgnoreCase("internal")) {
+            HOST = "internal.degiro.eu";
+        } else if (environment.equalsIgnoreCase("web-trader")) {
+            HOST = "test-webtrader.internal.degiro.eu";
+        } else if (environment.equalsIgnoreCase("production")) {
+            HOST = "trader.degiro.nl";
+        }
     }
 
 

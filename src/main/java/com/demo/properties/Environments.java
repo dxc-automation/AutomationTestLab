@@ -7,6 +7,7 @@ import static com.demo.properties.TestData.*;
 public class Environments {
 
     //***** HOSTS
+    public static       String HOST;
     public final static String INT_TEST_HOST    = "internal.degiro.eu";
     public final static String WEB_TEST_HOST    = "test-webtrader.internal.degiro.eu";
     public final static String TEST_HOST        = "trader.degiro.nl";

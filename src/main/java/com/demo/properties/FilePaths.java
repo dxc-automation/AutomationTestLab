@@ -23,7 +23,7 @@ public class FilePaths {
     public final static String screenshots_actual_folder   = path + "/report/Screenshots/Actual/";
     public final static String screenshots_buffer_folder   = path + "/report/Screenshots/Buffer/";
     public final static String screenshots_expected_folder = path + "/report/Screenshots/Expected/";
-    public final static String video_files                 = path + "/report/";
+    public final static String video_files                 = path + "/report/video/";
 
     public final static String config_properties_file      = path + "/src/main/resources/config.properties";
     public final static String chrome_driver_file          = path + "/src/main/resources/drivers/chromedriver.exe";
