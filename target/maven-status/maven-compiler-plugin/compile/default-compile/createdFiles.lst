@@ -11,7 +11,6 @@ com\demo\scripts\api\degiro\account\Login.class
 com\demo\utilities\user_interface\ImageCompare.class
 com\demo\utilities\user_interface\SpecializedScreenRecorder.class
 com\demo\scripts\api\fly\RegisterUser.class
-com\demo\tests\TestCase_05.class
 com\demo\utilities\user_interface\GetAllPageLinks.class
 com\demo\utilities\web_services\HttpClientConfig.class
 com\demo\scripts\api\degiro\orders\Order.class
@@ -23,9 +22,7 @@ com\demo\config\ReporterConfig.class
 com\demo\scripts\api\degiro\account\ClientInfo.class
 com\demo\properties\Environments.class
 com\demo\objects\Amazon\AmazonHomePage.class
-com\demo\scripts\api\convertor\CurrencyRates.class
 com\demo\utilities\user_interface\Assertions$1.class
-com\demo\scripts\ui\degiro\PopularProducts.class
 com\demo\objects\Degiro\General.class
 com\demo\utilities\FileUtility.class
 com\demo\scripts\ui\amazon\Amazon.class
@@ -38,11 +35,13 @@ com\demo\scripts\api\degiro\products\SearchProductVWDServices.class
 com\demo\utilities\user_interface\PageScroll.class
 com\demo\scripts\api\degiro\orders\OrdersHistory.class
 com\demo\scripts\api\degiro\products\MarketPageProducts.class
+com\demo\scripts\ui\degiro\MarketPopularProducts.class
 com\demo\scripts\api\fly\AccessToken.class
 com\demo\tests\TestCase_04.class
 com\demo\scripts\ui\degiro\UserLogin.class
 com\demo\config\TestNGListener.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
+com\demo\scripts\api\degiro\products\SearchProductStocks.class
 com\demo\config\BasicTestConfig.class
 com\demo\config\ConsoleRunner.class
 com\demo\properties\FilePaths.class

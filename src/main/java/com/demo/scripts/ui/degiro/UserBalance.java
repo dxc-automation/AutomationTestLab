@@ -6,6 +6,7 @@ import com.demo.objects.Degiro.General;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Parameters;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.scripts.ui.degiro.UserLogin.secureLoginWeb;

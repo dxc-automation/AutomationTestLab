@@ -48,7 +48,7 @@ public class Login {
         report();
 
         scheme = "https";
-        host   = INT_TEST_HOST;
+        host   = HOST;
         path   = INT_LOGIN;
 
         url = new URIBuilder()
@@ -60,8 +60,8 @@ public class Login {
 
 
         JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("username", INTERNAL_USER);
-        jsonPostData.put("password", INTERNAL_PASS);
+        jsonPostData.put("username", USER);
+        jsonPostData.put("password", PASS);
         jsonPostData.put("isPassCodeReset", false);
         jsonPostData.put("isRedirectToMobile", false);
         jsonPostData.put("queryParams", null);

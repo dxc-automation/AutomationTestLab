@@ -1,11 +1,10 @@
 package com.demo.config;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.google.common.base.Throwables;
+import com.demo.properties.TestData;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.json.JSONObject;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
@@ -22,9 +21,8 @@ import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import java.util.Arrays;
+
 import java.io.*;
-import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -34,7 +32,7 @@ import static com.demo.config.ConsoleRunner.xmlFile;
 import static com.demo.config.ReporterConfig.*;
 import static com.demo.properties.FilePaths.*;
 import static com.demo.properties.Environments.*;
-import static com.demo.properties.TestData.fileName;
+import static com.demo.properties.TestData.*;
 import static com.demo.utilities.FileUtility.*;
 
 import static com.demo.utilities.web_services.HttpClientConfig.*;
@@ -136,12 +134,19 @@ public class BasicTestConfig {
     @Parameters({"environment"})
     @BeforeSuite
     public void setEnvironment(String environment) {
-        if (environment.equalsIgnoreCase("internal")) {
+        TestData.env = environment;
+        if (TestData.env.equalsIgnoreCase("internal")) {
             HOST = "internal.degiro.eu";
-        } else if (environment.equalsIgnoreCase("web-trader")) {
+            USER = "dgtraderie";
+            PASS = "Test_web2020";
+        } else if (TestData.env.equalsIgnoreCase("web-trader")) {
             HOST = "test-webtrader.internal.degiro.eu";
-        } else if (environment.equalsIgnoreCase("production")) {
+            USER = "web2879nl";
+            PASS = "Test600";
+        } else if (TestData.env.equalsIgnoreCase("production")) {
             HOST = "trader.degiro.nl";
+            USER = "dgtraderie";
+            PASS = "Test_web2020";
         }
     }
 

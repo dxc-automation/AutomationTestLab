@@ -1,6 +1,5 @@
 package com.demo.scripts.api.degiro.orders;
 
-import com.demo.properties.TestData;
 import com.jayway.jsonpath.JsonPath;
 import net.minidev.json.JSONArray;
 import org.apache.http.client.utils.URIBuilder;
@@ -47,12 +46,12 @@ public class Order {
 
 
 
-    public static void placeOrder(String fileName, int amount, int price, String buySell) throws Exception {
+    public static void placeOrder(String fileName, int amount, double price, String buySell) throws Exception {
         report();
 
         scheme = "https";
-        host   = INT_TEST_HOST;
-        path   = INT_ORDER + sessionID;
+        host   = HOST;
+        path   = setPlaceOrderPath() + sessionID;
 
         url = new URIBuilder()
                 .setScheme(scheme)
@@ -63,7 +62,7 @@ public class Order {
                 .build();
 
 
-        String productID = String.valueOf(TestData.productId);
+        String productID = String.valueOf(productId);
 
         JSONObject jsonPostData = new JSONObject();
         jsonPostData.put("size",      amount);

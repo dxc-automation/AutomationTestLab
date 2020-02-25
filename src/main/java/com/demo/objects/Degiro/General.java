@@ -28,7 +28,7 @@ public class General extends BasicTestConfig {
 
 
     //  Account Summary
-    @FindBy(how = How.CSS, using = "span[data-field=availableToSpend][data-id=totalPortfolio]")
+    @FindBy(how = How.CSS, using = "span[data-id=totalPortfolio]")
     public WebElement account_content_available_to_spend;
 
     @FindBy(how = How.CSS, using = "span[data-id=totalPortfolio][data-field=total]")

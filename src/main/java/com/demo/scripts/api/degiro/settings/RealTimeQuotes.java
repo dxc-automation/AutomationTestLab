@@ -41,7 +41,7 @@ public class RealTimeQuotes {
         report();
 
         scheme = "https";
-        host   = INT_TEST_HOST;
+        host   = HOST;
         path   = INT_TEST_REAL_QUOTES;
 
         url = new URIBuilder()

@@ -1,0 +1,3534 @@
+{
+  "total": 93,
+  "offset": 0,
+  "products": [
+    {
+      "symbol": "III",
+      "closePriceDate": "2020-01-28",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838065",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "3I GRP.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1100.0,
+      "category": "D",
+      "isin": "GB00B1YW4409"
+    },
+    {
+      "symbol": "ABF",
+      "closePriceDate": "2017-09-11",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838041",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "A.B.FOOD",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 3099.0,
+      "category": "D",
+      "isin": "GB0006731235"
+    },
+    {
+      "symbol": "ADN",
+      "closePriceDate": "2015-09-03",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1451056",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ABDN.ASSET.MAN.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 312.8,
+      "category": "D",
+      "isin": "GB0000031285"
+    },
+    {
+      "symbol": "ADM",
+      "closePriceDate": "2019-09-12",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838196",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ADMIRAL GRP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2101.0,
+      "category": "D",
+      "isin": "GB00B02J6398"
+    },
+    {
+      "symbol": "AAL",
+      "closePriceDate": "2019-08-23",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837932",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ANGLO AMERICAN",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1668.0,
+      "category": "D",
+      "isin": "GB00B1XZS820"
+    },
+    {
+      "symbol": "ANTO",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837963",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ANTOFAGASTA",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 818.5,
+      "category": "D",
+      "isin": "GB0000456144"
+    },
+    {
+      "symbol": "ARM",
+      "closePriceDate": "2015-04-22",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838017",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ARM HLDGS.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1202.0,
+      "category": "D",
+      "isin": "GB0000595859"
+    },
+    {
+      "symbol": "AHT",
+      "closePriceDate": "2015-01-27",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838137",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ASHTEAD GRP.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1107.0,
+      "category": "D",
+      "isin": "GB0000536739"
+    },
+    {
+      "symbol": "AZN",
+      "closePriceDate": "2015-06-02",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837937",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ASTRAZENECA",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 4360.0,
+      "category": "D",
+      "isin": "GB0009895292"
+    },
+    {
+      "symbol": "AV.",
+      "closePriceDate": "2017-07-24",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837941",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "AVIVA",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 525.5,
+      "category": "D",
+      "isin": "GB0002162385"
+    },
+    {
+      "symbol": "BAB",
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "joinOrderAllowed": false,
+      "name": "BABCOCK INTL",
+      "tradable": true,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "stopLimitOrderAllowed": false,
+      "id": "1451109",
+      "gtcAllowed": false,
+      "category": "D",
+      "isin": "GB0009697037",
+      "productType": "STOCK",
+      "marketAllowed": true
+    },
+    {
+      "symbol": "BA.",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837942",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BAE SYS.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 411.5,
+      "category": "D",
+      "isin": "GB0002634946"
+    },
+    {
+      "symbol": "BARC",
+      "closePriceDate": "2016-06-14",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837936",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BARCLAYS",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 159.7,
+      "category": "D",
+      "isin": "GB0031348658"
+    },
+    {
+      "symbol": "BG.",
+      "closePriceDate": "2016-01-05",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837974",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BG GRP.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 975.2,
+      "category": "D",
+      "isin": "GB0008762899"
+    },
+    {
+      "symbol": "BLT",
+      "closePriceDate": "2017-07-20",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837926",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BHP BILLITON",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1316.5,
+      "category": "D",
+      "isin": "GB0000566504"
+    },
+    {
+      "symbol": "BP.",
+      "closePriceDate": "2019-12-19",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837924",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 483.65,
+      "category": "D",
+      "isin": "GB0007980591"
+    },
+    {
+      "symbol": "BATS",
+      "closePriceDate": "2015-06-15",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837934",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BR.AMER.TOB.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 3416.0,
+      "category": "D",
+      "isin": "GB0002875804"
+    },
+    {
+      "symbol": "BLND",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838042",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BR.LAND",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 666.0,
+      "category": "D",
+      "isin": "GB0001367019"
+    },
+    {
+      "symbol": "BSY",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837946",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BSKYB",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 927.5,
+      "category": "D",
+      "isin": "GB0001411924"
+    },
+    {
+      "symbol": "BT.A",
+      "closePriceDate": "2015-03-20",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838009",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BT GROUP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 465.0,
+      "category": "D",
+      "isin": "GB0030913577"
+    },
+    {
+      "symbol": "BNZL",
+      "closePriceDate": "2014-03-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838048",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BUNZL",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1587.0,
+      "category": "D",
+      "isin": "GB00B0744B38"
+    },
+    {
+      "symbol": "BRBY",
+      "closePriceDate": "2017-04-12",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837949",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BURBERRY GRP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1769.0,
+      "category": "D",
+      "isin": "GB0031743007"
+    },
+    {
+      "symbol": "CPI",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838055",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "CAPITA GROUP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1103.0,
+      "category": "D",
+      "isin": "GB00B23K0M20"
+    },
+    {
+      "symbol": "CCL",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837983",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "CARNIVAL",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2343.0,
+      "category": "D",
+      "isin": "GB0031215220"
+    },
+    {
+      "symbol": "CPW",
+      "closePriceDate": "2014-03-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1174196",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "CARPHONE",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 336.7,
+      "category": "D",
+      "isin": "GB00B4Y7R145"
+    },
+    {
+      "symbol": "CNA",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837943",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "CENTRICA",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 332.5,
+      "category": "D",
+      "isin": "GB00B033F229"
+    },
+    {
+      "symbol": "CCH",
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "joinOrderAllowed": false,
+      "name": "COCACOLA HBC AG",
+      "tradable": true,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "stopLimitOrderAllowed": false,
+      "id": "4662383",
+      "gtcAllowed": false,
+      "category": "D",
+      "isin": "CH0198251305",
+      "productType": "STOCK",
+      "marketAllowed": true
+    },
+    {
+      "symbol": "CRH",
+      "closePriceDate": "2014-03-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "4662398",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "CRH",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1665.0,
+      "category": "D",
+      "isin": "IE0001827041"
+    },
+    {
+      "symbol": "DGE",
+      "closePriceDate": "2014-08-20",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "322077",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "DIAGEO",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1750.0,
+      "category": "D",
+      "isin": "GB0002374006"
+    },
+    {
+      "symbol": "DLG",
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "joinOrderAllowed": false,
+      "name": "DIRECT LINE",
+      "tradable": true,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "stopLimitOrderAllowed": false,
+      "id": "4662411",
+      "gtcAllowed": false,
+      "category": "D",
+      "isin": "GB00B89W0M42",
+      "productType": "STOCK",
+      "marketAllowed": true
+    },
+    {
+      "symbol": "EZJ",
+      "closePriceDate": "2020-01-30",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1526685",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "EASYJET",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1377.0,
+      "category": "D",
+      "isin": "GB00B7KR2P84"
+    },
+    {
+      "symbol": "EXPN",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838003",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "EXPERIAN",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1054.0,
+      "category": "D",
+      "isin": "GB00B19NLV48"
+    },
+    {
+      "symbol": "FRES",
+      "closePriceDate": "2017-09-11",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837985",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "FRESNILLO",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1603.0,
+      "category": "D",
+      "isin": "GB00B2QPKJ12"
+    },
+    {
+      "symbol": "GFS",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838109",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "G4S",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 234.8,
+      "category": "D",
+      "isin": "GB00B01FLG62"
+    },
+    {
+      "symbol": "GKN",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837996",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "GKN",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 383.0,
+      "category": "D",
+      "isin": "GB0030646508"
+    },
+    {
+      "symbol": "GSK",
+      "closePriceDate": "2016-11-08",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837933",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "GLAXOSMITHKLINE",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1556.0,
+      "category": "D",
+      "isin": "GB0009252882"
+    },
+    {
+      "symbol": "GLEN",
+      "closePriceDate": "2015-11-05",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1447000",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "GLENCORE XSTRA",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 121.0,
+      "category": "D",
+      "isin": "JE00B4T3BW64"
+    },
+    {
+      "symbol": "HMSO",
+      "closePriceDate": "2017-02-21",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838027",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "HAMMERSON",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 584.5,
+      "category": "D",
+      "isin": "GB0004065016"
+    },
+    {
+      "symbol": "HL.",
+      "closePriceDate": "2017-02-21",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838088",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "HARGREAVES LANS",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1324.0,
+      "category": "D",
+      "isin": "GB00B1VZ0M25"
+    },
+    {
+      "symbol": "HSBA",
+      "closePriceDate": "2015-09-02",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837927",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "HSBC HLDGS.UK",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 500.3,
+      "category": "D",
+      "isin": "GB0005405286"
+    },
+    {
+      "symbol": "IMT",
+      "closePriceDate": "2015-01-27",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838078",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "IMP.TOBACCO GRP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 3081.0,
+      "category": "D",
+      "isin": "GB0004544929"
+    },
+    {
+      "symbol": "ITRK",
+      "closePriceDate": "2017-09-11",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838037",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "INTERTEK GROUP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 5090.0,
+      "category": "D",
+      "isin": "GB0031638363"
+    },
+    {
+      "symbol": "IAG",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837966",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "INTL CONSOL AIR",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 418.3,
+      "category": "D",
+      "isin": "ES0177542018"
+    },
+    {
+      "symbol": "INTU",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837986",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "INTU PROPERTIES",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 308.5,
+      "category": "D",
+      "isin": "GB0006834344"
+    },
+    {
+      "symbol": "ITV",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837999",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ITV",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 195.0,
+      "category": "D",
+      "isin": "GB0033986497"
+    },
+    {
+      "symbol": "JMAT",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "4662567",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "JOHNSON MATTHEY",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 3187.0,
+      "category": "D",
+      "isin": "GB00B70FPS60"
+    },
+    {
+      "symbol": "KGF",
+      "closePriceDate": "2015-09-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837960",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "KINGFISHER",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 351.2,
+      "category": "D",
+      "isin": "GB0033195214"
+    },
+    {
+      "symbol": "LAND",
+      "closePriceDate": "2017-09-11",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837971",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "LAND SECS.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1004.0,
+      "category": "D",
+      "isin": "GB0031809436"
+    },
+    {
+      "symbol": "LGEN",
+      "closePriceDate": "2020-02-11",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837972",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "LEGAL\u0026GEN.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 310.0,
+      "category": "C",
+      "isin": "GB0005603997"
+    },
+    {
+      "symbol": "LLOY",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837957",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "LLOYDS GRP.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 79.11,
+      "category": "D",
+      "isin": "GB0008706128"
+    },
+    {
+      "symbol": "LSE",
+      "closePriceDate": "2014-03-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1451567",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "LON.STK.EXCH",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1977.0,
+      "category": "D",
+      "isin": "GB00B0SWJX34"
+    },
+    {
+      "symbol": "MKS",
+      "closePriceDate": "2015-05-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837953",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "MARKS \u0026 SP.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 581.0,
+      "category": "D",
+      "isin": "GB0031274896"
+    },
+    {
+      "symbol": "MGGT",
+      "closePriceDate": "2014-03-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837997",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "MEGGITT",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 465.3,
+      "category": "D",
+      "isin": "GB0005758098"
+    },
+    {
+      "symbol": "MNDI",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1451579",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "MONDI",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1066.0,
+      "category": "D",
+      "isin": "GB00B1CRLC47"
+    },
+    {
+      "symbol": "MRW",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837945",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "MORRISON (WM)",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 210.3,
+      "category": "D",
+      "isin": "GB0006043169"
+    },
+    {
+      "symbol": "NG.",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838271",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "NATIONAL GRID",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 818.5,
+      "category": "D",
+      "isin": "GB00B08SNH34"
+    },
+    {
+      "symbol": "NXT",
+      "closePriceDate": "2017-07-19",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837947",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "NEXT",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 3675.0,
+      "category": "D",
+      "isin": "GB0032089863"
+    },
+    {
+      "symbol": "OML",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1532541",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "OLD MUTUAL",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 197.8,
+      "category": "D",
+      "isin": "GB00B77J0862"
+    },
+    {
+      "symbol": "PSON",
+      "closePriceDate": "2017-02-21",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837995",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "PEARSON",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 643.0,
+      "category": "D",
+      "isin": "GB0006776081"
+    },
+    {
+      "symbol": "PSN",
+      "closePriceDate": "2017-02-24",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1451775",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "PERSIMMON",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2029.0,
+      "category": "D",
+      "isin": "GB0006825383"
+    },
+    {
+      "symbol": "PFC",
+      "closePriceDate": "2015-04-02",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837958",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "PETROFAC",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 960.0,
+      "category": "D",
+      "isin": "GB00B0H2K534"
+    },
+    {
+      "symbol": "PRU",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837929",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "PRUDENTIAL",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1331.5,
+      "category": "D",
+      "isin": "GB0007099541"
+    },
+    {
+      "symbol": "RRS",
+      "closePriceDate": "2014-07-14",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838087",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "RANDGOLD RES.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 5080.0,
+      "category": "D",
+      "isin": "GB00B01C3S32"
+    },
+    {
+      "symbol": "RDSA",
+      "closePriceDate": "2017-05-05",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837930",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "RDS \u0027A\u0027",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2065.5,
+      "category": "D",
+      "isin": "GB00B03MLX29"
+    },
+    {
+      "symbol": "RDSB",
+      "closePriceDate": "2017-07-20",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837931",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "RDS \u0027B\u0027",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2113.5,
+      "category": "D",
+      "isin": "GB00B03MM408"
+    },
+    {
+      "symbol": "RB.",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837979",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "RECKITT BEN. GP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 4875.0,
+      "category": "D",
+      "isin": "GB00B24CGK77"
+    },
+    {
+      "symbol": "REL",
+      "closePriceDate": "2014-07-10",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837991",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "REED ELSEVIER",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 916.5,
+      "category": "D",
+      "isin": "GB00B2B0DG97"
+    },
+    {
+      "symbol": "RSL",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838093",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "RESOLUTION",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 322.0,
+      "category": "D",
+      "isin": "GG00B62W2327"
+    },
+    {
+      "symbol": "RIO",
+      "closePriceDate": "2015-11-05",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837928",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "RIO TINTO",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2297.5,
+      "category": "D",
+      "isin": "GB0007188757"
+    },
+    {
+      "symbol": "RR.",
+      "closePriceDate": "2017-02-21",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838021",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ROLLS-ROYCE HLG",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 731.0,
+      "category": "D",
+      "isin": "GB00B63H8491"
+    },
+    {
+      "symbol": "RBS",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "4662661",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ROYAL BANK SCOT",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 307.8,
+      "category": "D",
+      "isin": "GB00B7T77214"
+    },
+    {
+      "symbol": "SAB",
+      "closePriceDate": "2016-10-04",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "322078",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SABMILLER",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 4496.5,
+      "category": "D",
+      "isin": "GB0004835483"
+    },
+    {
+      "symbol": "SGE",
+      "closePriceDate": "2013-08-19",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "4662691",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SAGE GRP.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 356.5,
+      "category": "D",
+      "isin": "GB00B8C3BL03"
+    },
+    {
+      "symbol": "SBRY",
+      "closePriceDate": "2015-06-24",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838015",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SAINSBURY(J)",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 275.7,
+      "category": "D",
+      "isin": "GB00B019KW72"
+    },
+    {
+      "symbol": "SDR",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837964",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SCHRODERS",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2608.0,
+      "category": "D",
+      "isin": "GB0002405495"
+    },
+    {
+      "symbol": "SVT",
+      "closePriceDate": "2016-12-06",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838032",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SEVERN TRENT",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2071.0,
+      "category": "D",
+      "isin": "GB00B1FH8J72"
+    },
+    {
+      "symbol": "SHP",
+      "closePriceDate": "2015-03-20",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837969",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SHIRE",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 5700.0,
+      "category": "D",
+      "isin": "JE00B2QKY057"
+    },
+    {
+      "symbol": "SN.",
+      "closePriceDate": "2015-03-20",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837984",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SMITH\u0026NEPHEW",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1150.0,
+      "category": "D",
+      "isin": "GB0009223206"
+    },
+    {
+      "symbol": "SMIN",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838008",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SMITHS GROUP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1288.0,
+      "category": "D",
+      "isin": "GB00B1WY2338"
+    },
+    {
+      "symbol": "SPD",
+      "closePriceDate": "2015-06-24",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838132",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SPORTSDIRECT",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 726.5,
+      "category": "D",
+      "isin": "GB00B1QH8P22"
+    },
+    {
+      "symbol": "SSE",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837940",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "SSE",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1498.0,
+      "category": "D",
+      "isin": "GB0007908733"
+    },
+    {
+      "symbol": "STJ",
+      "closePriceDate": "2014-03-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838247",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "ST.JAMES\u0027S PLAC",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 830.0,
+      "category": "D",
+      "isin": "GB0007669376"
+    },
+    {
+      "symbol": "STAN",
+      "closePriceDate": "2015-07-08",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837935",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "STAND.CHART.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 983.8,
+      "category": "D",
+      "isin": "GB0004082847"
+    },
+    {
+      "symbol": "SL.",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837977",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "STD LIFE",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 373.8,
+      "category": "D",
+      "isin": "GB00B16KPT44"
+    },
+    {
+      "symbol": "TSCO",
+      "closePriceDate": "2016-11-08",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838007",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "TESCO",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 201.2,
+      "category": "D",
+      "isin": "GB0008847096"
+    },
+    {
+      "symbol": "TPK",
+      "closePriceDate": "2014-03-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "1451889",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "TRAVIS PERKINS",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1897.0,
+      "category": "D",
+      "isin": "GB0007739609"
+    },
+    {
+      "symbol": "TT.",
+      "closePriceDate": "2014-03-18",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838118",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "TUI TRAVEL",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 440.6,
+      "category": "D",
+      "isin": "GB00B1Z7RQ77"
+    },
+    {
+      "symbol": "TLW",
+      "closePriceDate": "2015-03-10",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837938",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "TULLOW OIL",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 324.0,
+      "category": "D",
+      "isin": "GB0001500809"
+    },
+    {
+      "symbol": "ULVR",
+      "closePriceDate": "2017-02-20",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837962",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "UNILEVER",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 3534.0,
+      "category": "D",
+      "isin": "GB00B10RZP78"
+    },
+    {
+      "symbol": "UU.",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "838029",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "UTD. UTILITIES",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 798.5,
+      "category": "D",
+      "isin": "GB00B39J2M42"
+    },
+    {
+      "symbol": "WEIR",
+      "closePriceDate": "2014-03-25",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837988",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "WEIR GRP.",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 2513.0,
+      "category": "D",
+      "isin": "GB0009465807"
+    },
+    {
+      "symbol": "WTB",
+      "closePriceDate": "2015-01-27",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "837987",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "WHITBREAD",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 5005.0,
+      "category": "D",
+      "isin": "GB00B1KJJ408"
+    },
+    {
+      "symbol": "WPP",
+      "closePriceDate": "2013-08-19",
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "GBX",
+      "id": "4662842",
+      "productType": "STOCK",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY"
+      ],
+      "isFund": false,
+      "productTypeId": 1,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "1570",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "WPP",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": false,
+      "closePrice": 1170.0,
+      "category": "D",
+      "isin": "JE00B8KF9B49"
+    }
+  ]
+}

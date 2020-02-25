@@ -8,7 +8,7 @@
     </listeners>
 
     <parameter name="browser"     value="chrome"/>
-    <parameter name="environment" value="production"/>
+    <parameter name="environment" value="web-trader"/>
     <test name="TC_01_Index" group-by-instances="true">
         <classes>
             <class name="com.demo.tests.TestCase_01">
@@ -17,6 +17,12 @@
                     <include name="web_user_balance"/>
                     <include name="web_user_orders_history"/>
                     <include name="web_check_popular_products"/>
+                    <include name="api_user_login"/>
+                    <include name="api_get_client_info"/>
+                    <include name="api_search_stocks"/>
+                    <include name="api_place_order"/>
+                    <include name="api_order_confirmation"/>
+                    <include name="api_get_orders_history"/>
                 </methods>
             </class>
         </classes>

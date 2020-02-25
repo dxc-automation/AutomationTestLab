@@ -1,5 +1,6 @@
 package com.demo.scripts.api.degiro.products;
 
+import com.jayway.jsonpath.JsonPath;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -7,12 +8,10 @@ import org.testng.Assert;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
-import static com.demo.properties.Environments.INT_TEST_CASH_HISTORY;
-import static com.demo.properties.Environments.INT_TEST_HOST;
-import static com.demo.properties.TestData.intAccount;
-import static com.demo.properties.TestData.sessionID;
-import static com.demo.utilities.FileUtility.createLogFile;
-import static com.demo.utilities.FileUtility.getFormattedJson;
+import static com.demo.properties.Environments.*;
+import static com.demo.properties.TestData.*;
+import static com.demo.properties.TestData.currencyLastPrice;
+import static com.demo.utilities.FileUtility.*;
 import static com.demo.utilities.web_services.HttpClientConfig.*;
 import static com.demo.utilities.web_services.HttpClientUtils.get;
 import static com.demo.utilities.web_services.HttpClientUtils.getClosableHttpClientResponseDetails;
@@ -29,7 +28,7 @@ public class SearchProduct {
     static final Logger LOG = LogManager.getLogger(SearchProduct.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[GET] Orders History</b>";
+        String testName        = "<b>[GET] Search Product</b>";
         String testCategory    = "API";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                 "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>"                                                       +
@@ -43,12 +42,13 @@ public class SearchProduct {
 
 
 
-    public static void searchProductDetails(String fileName, String productType, int offset, int limit, String searchText) throws Exception {
+    public static void searchProduct(String fileName, int productTypeId, int offset, int limit, String searchText) throws Exception {
         report();
 
         scheme = "https";
-        host   = INT_TEST_HOST;
-        path   = INT_TEST_CASH_HISTORY;
+        host   = HOST;
+        path   = setProductSearchPath();
+
 
         url = new URIBuilder()
                 .setScheme(scheme)
@@ -56,7 +56,7 @@ public class SearchProduct {
                 .setPath(path)
                 .setParameter("intAccount",    String.valueOf(intAccount))
                 .setParameter("sessionId",     sessionID)
-                .setParameter("productTypeId", productType)
+                .setParameter("productTypeId", String.valueOf(productTypeId))
                 .setParameter("offset",        String.valueOf(offset))
                 .setParameter("limit",         String.valueOf(limit))
                 .setParameter("searchText",    searchText)
@@ -82,6 +82,26 @@ public class SearchProduct {
                 + "<br/>"
                 + "<br/>"
                 + "</pre>");
+
+
+        try {
+            productId = JsonPath.read(responseStringEntity, "");
+
+            test.info("<pre>"
+                    + "<br>"
+                    + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
+                    + "<br>"
+                    + "Currency: " + currencyConvertName
+                    + "<br>"
+                    + "Price:    " + currencyLastPrice
+                    + "<br>"
+                    + "<br>"
+                    + "</pre>");
+        } catch (Exception e) {
+            String ex = e.getLocalizedMessage();
+            test.warning(ex);
+            e.printStackTrace();
+        }
 
 
         Assert.assertTrue(responseCode > 199 && responseCode < 300);

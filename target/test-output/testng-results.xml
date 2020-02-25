@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="1" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-24T20:36:26Z" name="TC_001" finished-at="2020-02-24T20:36:40Z" duration-ms="13782">
+  <suite name="TC_001" duration-ms="18409" started-at="2020-02-25T17:58:13Z" finished-at="2020-02-25T17:58:32Z">
     <groups>
     </groups>
-    <test started-at="2020-02-24T20:36:26Z" name="TC_01_Index" finished-at="2020-02-24T20:36:40Z" duration-ms="13782">
+    <test name="TC_01_Index" duration-ms="18409" started-at="2020-02-25T17:58:13Z" finished-at="2020-02-25T17:58:32Z">
       <class name="com.demo.tests.TestCase_01">
-        <test-method is-config="true" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:23Z" name="browserConfig" finished-at="2020-02-24T20:36:26Z" duration-ms="3205" status="PASS">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="browserConfig" is-config="true" duration-ms="7609" started-at="2020-02-25T17:58:06Z" finished-at="2020-02-25T17:58:13Z">
           <params>
             <param index="0">
               <value>
@@ -18,49 +18,181 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method is-config="true" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:26Z" name="cleanReportData" finished-at="2020-02-24T20:36:26Z" duration-ms="7" status="PASS">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="cleanReportData" is-config="true" duration-ms="8" started-at="2020-02-25T17:58:13Z" finished-at="2020-02-25T17:58:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method is-config="true" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:26Z" name="setEnvironment" finished-at="2020-02-24T20:36:26Z" duration-ms="1" status="PASS">
+        <test-method status="PASS" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="setEnvironment" is-config="true" duration-ms="0" started-at="2020-02-25T17:58:13Z" finished-at="2020-02-25T17:58:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[production]]>
+                <![CDATA[web-trader]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironment -->
-        <test-method is-config="true" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:26Z" name="setEnvironmentConfiguration" finished-at="2020-02-24T20:36:26Z" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="setEnvironmentConfiguration()[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="setEnvironmentConfiguration" is-config="true" duration-ms="1" started-at="2020-02-25T17:58:13Z" finished-at="2020-02-25T17:58:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentConfiguration -->
-        <test-method signature="web_user_login()[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:26Z" name="web_user_login" finished-at="2020-02-24T20:36:40Z" duration-ms="13770" status="PASS">
+        <test-method status="PASS" signature="web_user_login()[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="web_user_login" duration-ms="14568" started-at="2020-02-25T17:58:13Z" finished-at="2020-02-25T17:58:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_user_login -->
-        <test-method is-config="true" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:40Z" name="generateReport" finished-at="2020-02-24T20:36:40Z" duration-ms="1" status="PASS">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-02-25T17:58:28Z" finished-at="2020-02-25T17:58:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=web_user_login status=SUCCESS method=TestCase_01.web_user_login()[pri:0, instance:com.demo.tests.TestCase_01@16414e40] output={null}]]]>
+                <![CDATA[[TestResult name=web_user_login status=SUCCESS method=TestCase_01.web_user_login()[pri:0, instance:com.demo.tests.TestCase_01@4690b489] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method is-config="true" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:40Z" name="clearXmlFiles" finished-at="2020-02-24T20:36:40Z" duration-ms="225" status="PASS">
+        <test-method status="PASS" signature="api_user_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="api_user_login" duration-ms="435" started-at="2020-02-25T17:58:28Z" finished-at="2020-02-25T17:58:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.api_user_login(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_user_login -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-02-25T17:58:28Z" finished-at="2020-02-25T17:58:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=api_user_login status=SUCCESS method=TestCase_01.api_user_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="api_get_client_info(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="api_get_client_info" duration-ms="211" started-at="2020-02-25T17:58:28Z" finished-at="2020-02-25T17:58:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.api_get_client_info(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_get_client_info -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-02-25T17:58:28Z" finished-at="2020-02-25T17:58:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=api_get_client_info status=SUCCESS method=TestCase_01.api_get_client_info(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="api_search_stocks(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="api_search_stocks" duration-ms="264" started-at="2020-02-25T17:58:28Z" finished-at="2020-02-25T17:58:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.api_search_stocks(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_search_stocks -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="generateReport" is-config="true" duration-ms="10" started-at="2020-02-25T17:58:29Z" finished-at="2020-02-25T17:58:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=api_search_stocks status=SUCCESS method=TestCase_01.api_search_stocks(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="api_place_order(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="api_place_order" duration-ms="1312" started-at="2020-02-25T17:58:29Z" finished-at="2020-02-25T17:58:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.api_place_order(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_place_order -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="generateReport" is-config="true" duration-ms="0" started-at="2020-02-25T17:58:30Z" finished-at="2020-02-25T17:58:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=api_place_order status=SUCCESS method=TestCase_01.api_place_order(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="api_order_confirmation(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="api_order_confirmation" duration-ms="1251" started-at="2020-02-25T17:58:30Z" finished-at="2020-02-25T17:58:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.api_order_confirmation(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_order_confirmation -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-02-25T17:58:31Z" finished-at="2020-02-25T17:58:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=api_order_confirmation status=SUCCESS method=TestCase_01.api_order_confirmation(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="api_get_orders_history(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="api_get_orders_history" duration-ms="327" started-at="2020-02-25T17:58:31Z" finished-at="2020-02-25T17:58:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.api_get_orders_history(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- api_get_orders_history -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="generateReport" is-config="true" duration-ms="14" started-at="2020-02-25T17:58:32Z" finished-at="2020-02-25T17:58:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=api_get_orders_history status=SUCCESS method=TestCase_01.api_get_orders_history(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@4690b489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="clearXmlFiles" is-config="true" duration-ms="12" started-at="2020-02-25T17:58:32Z" finished-at="2020-02-25T17:58:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:40Z" name="tearDown" finished-at="2020-02-24T20:36:41Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" duration-ms="860" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="tearDown" is-config="true" duration-ms="704" started-at="2020-02-25T17:58:32Z" depends-on-methods="com.demo.config.BasicTestConfig.clearXmlFiles" finished-at="2020-02-25T17:58:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01@16414e40]" started-at="2020-02-24T20:36:41Z" name="flushReportData" finished-at="2020-02-24T20:36:41Z" duration-ms="478" status="PASS">
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01@4690b489]" name="flushReportData" is-config="true" duration-ms="202" started-at="2020-02-25T17:58:32Z" finished-at="2020-02-25T17:58:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->

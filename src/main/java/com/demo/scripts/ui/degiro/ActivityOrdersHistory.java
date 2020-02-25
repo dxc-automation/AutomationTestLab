@@ -10,9 +10,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
+import static com.demo.properties.Environments.HOST;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
 import static com.demo.utilities.user_interface.ElementScreenshot.*;
 import static com.demo.utilities.user_interface.HandleTable.*;
+import static com.demo.properties.TestData.*;
+
 
 
 public class ActivityOrdersHistory extends BasicTestConfig {
@@ -37,19 +40,24 @@ public class ActivityOrdersHistory extends BasicTestConfig {
 
     public static void checkUserOrdersHistory() throws Exception {
         report();
-        wait = new WebDriverWait(driver, 10);
+        try {
+            wait = new WebDriverWait(driver, 10);
 
-        wait.until(ExpectedConditions.visibilityOf(general.quick_search_input));
-        general.side_navigation_activity_btn.click();
+            wait.until(ExpectedConditions.visibilityOf(general.quick_search_input));
+            general.side_navigation_activity_btn.click();
 
-        wait.until(ExpectedConditions.visibilityOf(general.account_content_available_to_spend));
-        activityOrdersPage.orders_hitory_btn.click();
+            wait.until(ExpectedConditions.visibilityOf(general.account_content_available_to_spend));
+            activityOrdersPage.orders_hitory_btn.click();
 
-        wait.until(ExpectedConditions.visibilityOf(activityOrdersPage.orders_history_table));
-        elementScreenshot(activityOrdersPage.orders_history_table, "OrdersHistory_Actual");
+            wait.until(ExpectedConditions.visibilityOf(activityOrdersPage.orders_history_table));
+            elementScreenshot(activityOrdersPage.orders_history_table, "OrdersHistory_Actual");
 
-        test.pass("<b>ORDERS HISTORY</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "OrdersHistory_Actual" + ".png").build());
+            test.pass("<b>ORDERS HISTORY</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "OrdersHistory_Actual" + ".png").build());
 
-        handleWebTable(activityOrdersPage.orders_history_table);
+            handleWebTable(activityOrdersPage.orders_history_table);
+        } catch (Exception e) {
+            e.printStackTrace();
+            test.warning("Orders history are not available for <b>https://" + HOST + "</b>");
+        }
     }
 }

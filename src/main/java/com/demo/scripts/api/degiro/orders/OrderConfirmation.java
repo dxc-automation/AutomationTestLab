@@ -45,12 +45,12 @@ public class OrderConfirmation {
 
 
 
-    public static void getOrderConfirmation(String fileName, int amount, int price, String buySell) throws Exception {
+    public static void getOrderConfirmation(String fileName, int amount, double price, String buySell) throws Exception {
         report();
 
         scheme = "https";
-        host   = INT_TEST_HOST;
-        path   = INT_ORDER_CONFIRMATION + confirmationId + ";jsessionid=" + sessionID;
+        host   = HOST;
+        path   = setOrderConfirmationPath() + confirmationId + ";jsessionid=" + sessionID;
 
         url = new URIBuilder()
                 .setScheme(scheme)

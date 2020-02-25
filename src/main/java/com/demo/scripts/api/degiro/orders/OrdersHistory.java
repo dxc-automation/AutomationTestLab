@@ -46,7 +46,7 @@ public class OrdersHistory {
         report();
 
         scheme = "https";
-        host   = INT_TEST_HOST;
+        host   = HOST;
         path   = INT_TEST_ORDER_HISTORY;
 
         url = new URIBuilder()

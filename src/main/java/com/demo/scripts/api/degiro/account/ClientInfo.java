@@ -37,13 +37,12 @@ public class ClientInfo {
         startTestReport(testName, testDescription, testCategory);
     }
 
-
     public static void getClientInfo(String fileName) throws Exception {
         report();
 
         scheme = "https";
-        host   = INT_TEST_HOST;
-        path   = INT_TEST_CLIENT_INFO;
+        host   = HOST;
+        path   = setClientInfoPath();
 
         url = new URIBuilder()
                 .setScheme(scheme)

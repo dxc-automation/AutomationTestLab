@@ -49,9 +49,12 @@ public class UserLogin extends BasicTestConfig {
 
         imageCompare("LoginForm_Actual", "LoginForm_Expected");
 
-        loginPage.login_user_input.sendKeys(INTERNAL_USER);
-        loginPage.login_pass_input.sendKeys(INTERNAL_PASS);
+        loginPage.login_user_input.sendKeys(USER);
+        loginPage.login_pass_input.sendKeys(PASS);
         loginPage.login_submit_btn.click();
         test.pass("<b>[STEP 2]</b> Account login successfully");
+        test.info(  "URL: <i>"      + url +  "</i><br>" +
+                    "Username: <i>" + USER + "</i><br>" +
+                    "Password: <i>" + PASS + "</i>");
     }
 }

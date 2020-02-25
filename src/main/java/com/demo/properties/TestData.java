@@ -3,8 +3,8 @@ package com.demo.properties;
 public class TestData {
 
 
-    public final static String INTERNAL_USER = "dgtraderie";
-    public final static String INTERNAL_PASS = "Test_web2020";
+    public static String USER;
+    public static String PASS;
 
 
     //  * * * *    P R O D U C T   T Y P E   ID
@@ -29,6 +29,7 @@ public class TestData {
 
     //  * * * *    S Y S T E M
     public static String fileName;
+    public static String env;
 
 
 
@@ -44,7 +45,12 @@ public class TestData {
     public static String bankStatus;
 
     public static double productPrice;
-    public static int    productId;
+    public static String productId;
+    public static String productName;
+    public static String productCategory;
+    public static String productCurrency;
+    public static String productType;
+    public static String productIsin;
     public static int    productIssueId;
     public static String confirmationId;
     public static String orderId;

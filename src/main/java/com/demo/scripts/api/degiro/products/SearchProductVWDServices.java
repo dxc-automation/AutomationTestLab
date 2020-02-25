@@ -31,7 +31,7 @@ public class SearchProductVWDServices {
     static final Logger LOG = LogManager.getLogger(SearchProductVWDServices.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[GET] SearchProductVWDServices Details</b>";
+        String testName        = "<b>[GET] Search Product VWD Services</b>";
         String testCategory    = "API";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected"              +
                 "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>"                                                       +

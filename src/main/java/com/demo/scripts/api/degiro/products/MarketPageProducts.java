@@ -46,7 +46,7 @@ public class MarketPageProducts {
         report();
 
         scheme = "https";
-        host   = INT_TEST_HOST;
+        host   = HOST;
         path   = INT_TEST_MARKETS_PAGE;
 
         url = new URIBuilder()
@@ -88,9 +88,9 @@ public class MarketPageProducts {
                     + "<br>"
                     + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
                     + "<br>"
-                    + "SearchProductVWDServices: " + currencyName
+                    + "Product: " + currencyName
                     + "<br>"
-                    + "ID:           " + productId
+                    + "ID:      " + productId
                     + "<br>"
                     + "<br>"
                     + "</pre>");
