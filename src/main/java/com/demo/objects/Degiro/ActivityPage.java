@@ -8,13 +8,27 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class ActivityOrdersPage extends BasicTestConfig {
+public class ActivityPage extends BasicTestConfig {
 
-    public static final Logger LOG = LogManager.getLogger(ActivityOrdersPage.class);
-    public ActivityOrdersPage(WebDriver driver) {
+    public static final Logger LOG = LogManager.getLogger(ActivityPage.class);
+    public ActivityPage(WebDriver driver) {
         this.driver = driver;
     }
     final WebDriver driver;
+
+
+    //  *****   Tab Menu Panel
+
+    @FindBy(how = How.CSS, using = "div[role=tabpanel]")
+    public WebElement activity_tab_menu;
+
+    @FindBy(how = How.CSS,using = "a[href=#/orders/open]")
+    public WebElement activity_tab_menu_orders_btn;
+
+    @FindBy(how = How.CSS,using = "a[href=#/transactions]")
+    public WebElement activity_tab_menu_transactions_btn;
+
+
 
 
 

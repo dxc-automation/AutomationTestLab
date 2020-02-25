@@ -14,7 +14,6 @@ import java.util.List;
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
-import static com.demo.scripts.ui.degiro.UserLogin.secureLoginWeb;
 import static com.demo.utilities.user_interface.ElementScreenshot.elementScreenshot;
 
 public class MarketPopularProducts extends BasicTestConfig {

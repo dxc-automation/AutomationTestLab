@@ -38,6 +38,7 @@ public class TestData {
     public static String sessionID;
     public static int    accountId;
     public static int    intAccount;
+    public static String accountAvailableBalance;
 
     public static int    bankAccountId;
     public static String bankBic;
