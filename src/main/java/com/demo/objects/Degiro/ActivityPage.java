@@ -30,7 +30,15 @@ public class ActivityPage extends BasicTestConfig {
 
 
 
+    //  *****   Transactions
 
+    @FindBy(how = How.CSS, using = "div[aria-live=polite]")
+    public WebElement transactions_history_table;
+
+
+
+
+    //  *****   Orders
 
     @FindBy(how = How.CSS, using = "button[data-id='/orders/history']")
     public WebElement orders_hitory_btn;

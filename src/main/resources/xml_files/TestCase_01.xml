@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TC_001" configfailurepolicy="continue" verbose="10" parallel="tests" thread-count="5">
+<suite name="TC_001" configfailurepolicy="continue" verbose="10"  thread-count="5">
+    <parameter name="browser"     value="chrome"/>
 
     <listeners>
         <listener class-name="com.demo.config.TestNGListener"/>
     </listeners>
 
-    <parameter name="browser"     value="chrome"/>
-    <parameter name="environment" value="web-trader"/>
-    <test name="TC_01_Index" group-by-instances="true">
+
+    <test name="TC_01">
+        <parameter name="environment" value="web-trader"/>
         <classes>
-            <class name="com.demo.tests.TestCase_01">
+            <class name="com.demo.tests.TestCase_01_PlaceOrder">
                 <methods>
-                    <include name="web_user_login"/>
-                    <include name="web_user_balance"/>
-                    <include name="web_user_orders_history"/>
-                    <include name="web_check_popular_products"/>
+                    <include name="web_test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="TC_02">
+        <parameter name="environment" value="web-trader"/>
+        <classes>
+            <class name="com.demo.tests.TestCase_01_PlaceOrder">
+                <methods>
                     <include name="api_user_login"/>
                     <include name="api_get_client_info"/>
                     <include name="api_search_stocks"/>

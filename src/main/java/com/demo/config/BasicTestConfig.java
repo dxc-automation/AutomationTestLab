@@ -132,7 +132,7 @@ public class BasicTestConfig {
 
 
     @Parameters({"environment"})
-    @BeforeSuite
+    @BeforeTest
     public void setEnvironment(String environment) {
         TestData.env = environment;
         if (TestData.env.equalsIgnoreCase("internal")) {
@@ -157,7 +157,7 @@ public class BasicTestConfig {
      * @throws Exception
      */
         @Parameters({"browser"})
-        @BeforeSuite
+        @BeforeTest
         public void browserConfig(String browser) throws Exception {
             DesiredCapabilities capability = new DesiredCapabilities();
 
@@ -166,6 +166,7 @@ public class BasicTestConfig {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("scripts-type");
                 options.addArguments("start-maximized");
+                options.addArguments("--incognito");
                 driver = new ChromeDriver(options);
                 LOG.info("| Chrome browser launched successfully |");
 
@@ -307,15 +308,15 @@ public class BasicTestConfig {
 
 
         //  Stop web driver
-        @AfterSuite(dependsOnMethods = "clearXmlFiles")
+        @AfterTest
         public void tearDown () {
-            driver.quit();
+            driver.close();
             }
 
-        @AfterSuite
+        @AfterSuite(alwaysRun = true)
         public void flushReportData() {
             extent.flush();
-
+            driver.quit();
         }
 }
 

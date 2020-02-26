@@ -28,7 +28,7 @@ public class General extends BasicTestConfig {
 
 
     //  Account Summary
-    @FindBy(how = How.CSS, using = "div.uXGVkHZqLKd_AC2KuwdPT _3Bj3u2ResAcPNyYzzn7QNc")
+    @FindBy(how = How.CSS, using = "div.uXGVkHZqLKd_AC2KuwdPT")
     public WebElement account_content_form;
 
     @FindBy(how = How.CSS, using = "span[data-id=totalPortfolio]")
