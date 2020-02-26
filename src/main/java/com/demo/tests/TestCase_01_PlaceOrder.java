@@ -23,15 +23,18 @@ import static com.demo.scripts.ui.degiro.ActivityTransactionsHistory.checkUserTr
 public class TestCase_01_PlaceOrder extends BasicTestConfig {
     VideoRecord videoReord = new VideoRecord();
 
-
     @Test(enabled = true)
     public void web_test() throws Exception {
+        //  start screen recorder
         videoReord.startRecording();
+
         secureLoginWeb();
         getUserAmount();
         checkUserOrdersHistory();
         checkPopularProducts();
         checkUserTransactionsHistory();
+
+        //  stop screen recorder
         videoReord.stopRecording();
     }
 
@@ -41,6 +44,7 @@ public class TestCase_01_PlaceOrder extends BasicTestConfig {
         fileName = method.getName() + ".json";
         secureLogin(fileName);
     }
+
 
 
     @Test(enabled = true)
@@ -53,6 +57,7 @@ public class TestCase_01_PlaceOrder extends BasicTestConfig {
     @Test(enabled = true)
     public void api_search_stocks(Method method) throws Exception {
         fileName = method.getName() + ".json";
+
         if (env.equalsIgnoreCase("web-trader")) {
             searchStocks(fileName, "etfs", 100, false);
 
