@@ -13,6 +13,7 @@ public class Environments extends BasicTestConfig {
     private static String CLIENT_INFO;
     private static String ORDER;
     private static String ORDER_CONFIRMATION;
+    private static String TRANSACTIONS_HISTORY;
 
 
 
@@ -21,9 +22,16 @@ public class Environments extends BasicTestConfig {
     public final static String VWD_SERVICE_HOST = "charting.vwdservices.com";
 
 
+    //***** PAGES
+    public final static String TRANSACTIONS_PAGE       = "/trader4/#/transactions";
+    public final static String ORDERS_OUTSTANDING_PAGE = "/trader4/#/orders/open";
+    public final static String ORDERS_HISTORY_PAGE     = "/trader4/#/orders/history";
+    public final static String ACCOUNT_OVERVIEW_PAGE   = "/trader4/#/account-overview";
+
+
     //***** LOGIN
     public final static String INT_LOGIN  = "/login/secure/login";
-    public final static String CONFIG = "/login/secure/config";
+    public final static String CONFIG     = "/login/secure/config";
 
 
     //***** PRODUCTS
@@ -32,14 +40,24 @@ public class Environments extends BasicTestConfig {
     public final static String INT_TEST_ORDER_HISTORY  = "/reporting/secure/v4/order-history";
     public final static String INT_TEST_REAL_QUOTES    = "/paservice/secure/settings/vwdModules";
     public final static String INT_TEST_CURRENCY       = "/hchart/v1/deGiro/data.js";
-
-    public final static String TEST_SEARCH_PRODUCTS = "/productsnew/secure/v5/";
+    public final static String TEST_SEARCH_PRODUCTS    = "/productsnew/secure/v5/";
 
     public final static String WEB_LOGIN               = "/login/ie#/login";
     public final static String WEB_MARKETS             = "/trader4/#/markets";
 
 
 
+
+    public  static String setTransactionsHistoryPath() {
+        if (env.equalsIgnoreCase("internal")) {
+            TRANSACTIONS_HISTORY = "/reporting/secure/v4/transactions";
+        } else if (env.equalsIgnoreCase("web-trader")) {
+            TRANSACTIONS_HISTORY = "/DGReportingWeb/secure/v4/transactions";
+        } else if (env.equalsIgnoreCase("production")) {
+            TRANSACTIONS_HISTORY = "/reporting/secure/v4/transactions";
+        }
+        return TRANSACTIONS_HISTORY;
+    }
 
 
 
@@ -88,27 +106,6 @@ public class Environments extends BasicTestConfig {
         }
         return PRODUCT_SEARCH;
     }
-
-
-
-
-    //  * * * *    A M A Z O N
-    public static String AMAZON_BASE_URL;
-
-
-    //  * * * *    N E W S
-    public static String NEWS_BASIC_URL;
-
-
-    //  * * * *    F L Y T
-    public static String FLY_HOST;
-    public final static String BOOTSTRAP     = "/v1/apps/bootstrap";
-    public final static String ADD_USER      = "/v1/user";
-    public final static String LOGIN         = "/v2/auth/login";
-    public final static String USER_INFO     = "/v1/user/me";
-    public final static String ADD_USER_INFO = "/v1/user/me/profile-field";
-    public final static String NEW_TOKEN     = "/users/v1/token";
-
 }
 
 

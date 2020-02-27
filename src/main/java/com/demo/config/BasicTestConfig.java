@@ -112,24 +112,6 @@ public class BasicTestConfig {
         }
 
 
-    /**
-     * Used for get test data from /resources/config.properties file
-     * @throws Exception
-     */
-    @BeforeSuite
-    public static void setEnvironmentConfiguration() throws Exception {
-        InputStream inputStream = new FileInputStream(config_properties_file);
-        Properties properties   = new Properties();
-        properties.load(inputStream);
-
-        AMAZON_BASE_URL = properties.getProperty("amazon_url");
-        FLY_HOST        = properties.getProperty("fly_host");
-        NEWS_BASIC_URL  = properties.getProperty("news_url");
-        inputStream.close();
-    }
-
-
-
 
     @Parameters({"environment"})
     @BeforeTest
@@ -157,7 +139,7 @@ public class BasicTestConfig {
      * @throws Exception
      */
         @Parameters({"browser"})
-        @BeforeTest
+        @BeforeSuite
         public void browserConfig(String browser) throws Exception {
             DesiredCapabilities capability = new DesiredCapabilities();
 
@@ -307,15 +289,11 @@ public class BasicTestConfig {
         }
 
 
-        //  Stop web driver
-        @AfterTest
-        public void tearDown () {
-            driver.close();
-            }
 
         @AfterSuite(alwaysRun = true)
         public void flushReportData() {
             extent.flush();
+            driver.close();
             driver.quit();
         }
 }

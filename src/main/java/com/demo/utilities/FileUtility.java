@@ -10,6 +10,8 @@ import org.json.simple.parser.ParseException;
 import java.io.*;
 import java.lang.reflect.Method;
 import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import static com.demo.properties.FilePaths.report_json_folder;
 import static com.demo.properties.TestData.fileName;
@@ -18,10 +20,20 @@ import static com.demo.utilities.web_services.HttpClientConfig.*;
 
 public class FileUtility extends BasicTestConfig {
 
-    public static final JsonParser parser = new JsonParser();
+    public static final JsonParser parser     = new JsonParser();
     public static final JSONParser jsonParser = new JSONParser();
     public static final Gson gson = new Gson();
     public static final MediaType MediaTypeJSON = MediaType.parse("application/json; charset=utf-8");
+
+    private static String date;
+
+
+    public static String getDate() {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate localDate = LocalDate.now();
+        date = dateTimeFormatter.format(localDate);
+        return date;
+    }
 
 
     public static Timestamp getTime(Long timestamp) throws Exception {

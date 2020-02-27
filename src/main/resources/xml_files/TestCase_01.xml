@@ -14,13 +14,17 @@
         <listener class-name="com.demo.config.TestNGListener"/>
     </listeners>
 
-
     <test name="TC_01">
         <parameter name="environment" value="web-trader"/>
         <classes>
-            <class name="com.demo.tests.TestCase_01_PlaceOrder">
+            <class name="com.demo.tests.TestCase_01">
                 <methods>
-                    <include name="api_user_login"/>
+                    <include name="loginUser"/>
+                    <include name="checkUserInfo"/>
+                    <include name="searchForProduct"/>
+                    <include name="putOrder"/>
+                    <include name="confirmOrder"/>
+                    <include name="checkTransactionActivities"/>
                 </methods>
             </class>
         </classes>
@@ -30,18 +34,15 @@
     <test name="TC_02">
         <parameter name="environment" value="web-trader"/>
         <classes>
-            <class name="com.demo.tests.TestCase_01_PlaceOrder">
+            <class name="com.demo.tests.TestCase_01">
                 <methods>
-                    <include name="api_user_login"/>
-                    <include name="api_get_client_info"/>
-                    <include name="api_search_stocks"/>
-                    <include name="api_place_order"/>
-                    <include name="api_order_confirmation"/>
-                    <include name="api_get_orders_history"/>
+                    <include name="web_test"/>
                 </methods>
             </class>
         </classes>
     </test>
+
+
 </suite>
 
 
