@@ -11,6 +11,7 @@ com\demo\tests\TestCase_01.class
 com\demo\utilities\user_interface\PageScroll.class
 com\demo\utilities\web_services\HttpClientUtils.class
 com\demo\scripts\api\account\ClientInfo.class
+com\demo\scripts\ui\Search.class
 com\demo\utilities\user_interface\ImageCompare.class
 com\demo\utilities\user_interface\SpecializedScreenRecorder.class
 com\demo\scripts\api\account\Login.class

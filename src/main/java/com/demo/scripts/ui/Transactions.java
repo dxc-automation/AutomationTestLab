@@ -20,7 +20,6 @@ import static com.demo.utilities.user_interface.HandleTable.handleWebTable;
 
 public class Transactions extends BasicTestConfig {
 
-    private static General           general = PageFactory.initElements(driver, General.class);
     private static ActivityPage activityPage = PageFactory.initElements(driver, ActivityPage.class);
 
 

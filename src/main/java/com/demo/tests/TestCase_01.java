@@ -1,6 +1,7 @@
 package com.demo.tests;
 
 import com.demo.config.BasicTestConfig;
+import com.demo.scripts.ui.Search;
 import com.demo.utilities.user_interface.VideoRecord;
 import org.testng.annotations.Test;
 
@@ -16,6 +17,7 @@ import static com.demo.scripts.api.orders.place.Order.*;
 import static com.demo.scripts.api.orders.place.OrderConfirmation.*;
 import static com.demo.scripts.api.orders.history.TransactionHistory.*;
 import static com.demo.scripts.ui.UserLogin.secureLoginWeb;
+import static com.demo.scripts.ui.Search.*;
 import static com.demo.scripts.ui.Transactions.checkUserTransactionsHistory;
 
 public class TestCase_01 extends BasicTestConfig {
@@ -29,6 +31,7 @@ public class TestCase_01 extends BasicTestConfig {
         secureLoginWeb();
         getUserAmount();
         checkUserTransactionsHistory();
+        checkSearchProduct("Telefonica");
 
         //  stop screen recorder
         videoReord.stopRecording();

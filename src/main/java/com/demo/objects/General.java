@@ -18,6 +18,23 @@ public class General extends BasicTestConfig {
 
 
 
+    //  Place Order Side Panel
+    @FindBy(how = How.CSS, using = "button[data-name=commonOrderButton]")
+    public WebElement palace_order_btn;
+
+    @FindBy(how = How.CSS, using = "section[data-name=sideInformationPanel]")
+    public WebElement place_order_side_panel;
+
+    @FindBy(how = How.CSS, using = "input[name=productSearchInput]")
+    public WebElement place_order_search_field;
+
+    @FindBy(how = How.CSS, using = "span[data-name=productType]")
+    public WebElement place_order_search_result_shares;
+
+
+
+
+
     //  Side Navigation Menu
     @FindBy(how = How.CSS, using = "._36CbGFJLG6WzVjeXIpURvd[data-id=marketsMenuItem]")
     public WebElement side_navigation_market_btn;
