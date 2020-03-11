@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TC_001" configfailurepolicy="continue" verbose="10"  thread-count="5">
+<suite name="TC_001" configfailurepolicy="continue" thread-count="1">
     <!--    ENVIRONMENTS    -->
     <!--    [1] internal    -->
     <!--    [2] web-trader  -->
@@ -19,7 +19,10 @@
         <classes>
             <class name="com.demo.tests.TestCase_01">
                 <methods>
-                    <include name="web_test"/>
+                    <include name="web_login"/>
+                    <include name="web_user_amount"/>
+                    <include name="web_user_transactions"/>
+                    <include name="web_search_product"/>
                 </methods>
             </class>
         </classes>

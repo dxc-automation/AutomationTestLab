@@ -31,6 +31,9 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "span[data-name=productType]")
     public WebElement place_order_search_result_shares;
 
+    @FindBy(how = How.CSS, using = "span[data-name=productName]")
+    public WebElement place_order_search_result1;
+
 
 
 

@@ -1,4 +1,4 @@
-package com.demo.scripts.ui;
+package com.demo.scripts.ui.degiro;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
@@ -22,7 +22,7 @@ public class UserBalance extends BasicTestConfig {
         String testName        = "<b>[WEB] User Balance</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the user balance is displayed."  +
-                                 "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                                 "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
                                  "[1] Wait until account available to trade balance is displayed.<br>"        +
                                  "[2] Check that the account summary for is displayed.<br>"                   +
                                  "[3] Get displayed available and total user balance.<br>"                    +

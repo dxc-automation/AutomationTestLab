@@ -1,13 +1,15 @@
 package com.demo.utilities.user_interface;
 
+import com.demo.config.BasicTestConfig;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.testng.Assert;
 
 import static com.demo.config.BasicTestConfig.wait;
 
-public class Assertions {
+public class Assertions extends BasicTestConfig {
 
 
     public static boolean elementExistsAssertion(WebElement element) {
@@ -25,5 +27,11 @@ public class Assertions {
             }
         });
         return false;
+    }
+
+    public static void checkPageTitle(String expectedPageTitle) {
+        String pageTitle   = driver.getTitle();
+        boolean checkTitle = pageTitle.contains(expectedPageTitle);
+        Assert.assertTrue(checkTitle);
     }
 }

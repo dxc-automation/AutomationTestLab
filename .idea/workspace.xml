@@ -124,72 +124,33 @@
     <favorites_list name="JAVA_FRAMEWORK" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="General.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/General.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="BasicTestConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="230" column="13" selection-start-line="230" selection-start-column="13" selection-end-line="230" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsoleRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/ConsoleRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="575">
-              <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+              <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Search.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Search.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageCompare.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageCompare.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="107" column="123" selection-start-line="107" selection-start-column="123" selection-end-line="107" selection-end-column="123" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserLogin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-411">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCase_01.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Test.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="643">
+              <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -197,8 +158,8 @@
       <file leaf-file-name="TestCase_01.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="550">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,20 +167,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <file leaf-file-name="TestNGListener.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state relative-caret-position="-125">
+              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PopularProducts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/PopularProducts.java">
+      <file leaf-file-name="TestCase_Takeaway.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_Takeaway.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="21" column="37" selection-start-line="21" selection-end-line="22" />
+            <state relative-caret-position="300">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchRestaurant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchRestaurant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenHomePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/OpenHomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchNearestRestaurant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchNearestRestaurant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1075">
+              <caret line="57" column="62" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserLogin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="770">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -255,24 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenVideoRecorder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/MonteScreenRecorder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/SpetzializedScreenRecorder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/SpecializedScreenRecorder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenRecorder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenRecorder" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/VideoRecord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/PopularProducts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/objects/Degiro/ActivityOrdersPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/OrdersHistory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/TransactionHistory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/settings/RealTimeQuotes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProductVWDServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/ClientInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/OrderConfirmation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/MarketPopularProducts.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserBalance.java" />
@@ -295,17 +289,35 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/objects/Degiro/ActivityPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/TEST_SearchProduct.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/TEST_SearchProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/dsa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Orders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/PopularProducts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserBalance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/objects/General.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml_files/Test.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Search.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/objects/ActivityPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/xml_files/Test.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/dsa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/objects/General.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Search.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/TakeawayOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/TakeawayOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/AlertHandling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/objects/TakeawayHomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/TakeawayHomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/PageObjects.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchNearestRestaurant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_Takeaway.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_Takeaway.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchRestaurant.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/OpenHomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java" />
       </list>
     </option>
   </component>
@@ -394,7 +406,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -444,15 +455,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -472,18 +474,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -494,6 +485,7 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="takeaway" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -542,8 +534,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -567,18 +560,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.demo.scripts.ui.takeaway" />
+      <recent name="com.demo.scripts.ui.degiro" />
       <recent name="com.demo.objects" />
       <recent name="com.demo.scripts.api" />
       <recent name="com.demo.scripts.ui" />
-      <recent name="com.demo.tests" />
-      <recent name="com.demo.tests.backend" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.demo.scripts.ui" />
-      <recent name="com.demo.scripts.ui.degiro" />
-      <recent name="com.demo.scripts.api.degiro.products" />
+      <recent name="com.demo.scripts.ui.takeaway" />
       <recent name="com.demo.utilities.user_interface" />
-      <recent name="com.demo.objects.Degiro" />
+      <recent name="com.demo.tests" />
+      <recent name="com.demo.scripts.ui" />
+      <recent name="com.demo.objects" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Frameworks\AutomationTestLab\src\main\resources\xml_files" />
@@ -910,7 +903,13 @@
       <workItem from="1583168629395" duration="235000" />
       <workItem from="1583170954203" duration="696000" />
       <workItem from="1583177487736" duration="1811000" />
-      <workItem from="1583245334288" duration="8956000" />
+      <workItem from="1583245334288" duration="9660000" />
+      <workItem from="1583338274517" duration="5679000" />
+      <workItem from="1583359460308" duration="4233000" />
+      <workItem from="1583416093449" duration="22344000" />
+      <workItem from="1583503306971" duration="79000" />
+      <workItem from="1583504877119" duration="39000" />
+      <workItem from="1583967254166" duration="2673000" />
     </task>
     <servers />
   </component>
@@ -926,7 +925,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296037000" />
+    <option name="totallyTimeSpent" value="331788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -944,7 +943,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="2" />
+      <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39647058" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32921588" />
@@ -952,15 +951,15 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3282353" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4911111" visible="true" weight="0.20676692" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.17615467" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info id="Structure" order="1" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
+      <window_info id="Structure" order="0" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
+      <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="6" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
+      <window_info id="Favorites" order="5" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.3888889" />
       <window_info anchor="bottom" id="SOQL Query" order="7" />
       <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.7472067" />
@@ -978,35 +977,41 @@
       <window_info anchor="bottom" id="Anonymous Apex" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="12" weight="0.7472067" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info id="Image Layers" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49408984" visible="true" weight="0.18743287" />
-      <window_info id="Structure" order="1" sideWeight="0.50687623" side_tool="true" weight="0.21589689" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286052" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32960895" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286052" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.39834514" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50064266" side_tool="true" weight="0.39944133" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32921588" />
-      <window_info id="Favorites" order="6" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="5" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32960895" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="JSON Utils" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39647058" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="9" />
+      <window_info anchor="bottom" id="Log Analyzer" order="10" weight="0.66444445" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.7472067" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3282353" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32921588" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
+      <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.16917293" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
+      <window_info anchor="bottom" id="SOQL Query" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info id="Structure" order="0" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32666665" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.3888889" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1039,38 +1044,12 @@
     <state x="-251" y="1232" width="670" height="676" key="search.everywhere.popup/-636.1103.1440.805/-1920.23.1920.1057/0.23.1920.1057@-636.1103.1440.805" timestamp="1575040282659" />
     <state x="-251" y="1232" width="670" height="678" key="search.everywhere.popup/-636.1103.1440.807/-1920.23.1920.1057/0.23.1920.1057@-636.1103.1440.807" timestamp="1575299135440" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1134">
-            <caret line="54" selection-start-line="54" selection-end-line="54" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/web_services/HttpClientUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/fly/AccessToken.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchFunds.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchTrackers.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchBonds.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchStocks.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/convertor/CurrencyRates.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_02.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/stephenc/monte/monte-screen-recorder/0.7.7.0/monte-screen-recorder-0.7.7.0.jar!/org/monte/media/FormatKeys.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/LoginPage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_02.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ScreenVideoRecorder.java" />
@@ -1083,7 +1062,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/SpecializedScreenRecorder.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/VideoRecord.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/HandleTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1103,27 +1081,45 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/settings/RealTimeQuotes.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/VWD_SearchProduct.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/ClientInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserBalance.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/place/OrderConfirmation.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1113">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/ConsoleRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/SearchProductEtfs.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/settings/MarketPageProducts.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/place/Order.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/TEST_SearchProduct.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/INT_SearchProduct.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/history/TransactionHistory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/dsa.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="262">
+            <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserBalance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/VideoRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1131,118 +1127,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/history/TransactionHistory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="525">
+          <caret line="24" column="157" selection-start-line="24" selection-start-column="157" selection-end-line="24" selection-end-column="157" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/ActivityPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1132">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2018">
-          <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/PopularProducts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="21" column="37" selection-start-line="21" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Test.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        <state relative-caret-position="75">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/dsa.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/PopularProducts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="325">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/Login.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/ActivityPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+        <state relative-caret-position="450">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Transactions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-411">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="250">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/General.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+        <state relative-caret-position="25">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Search.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+        <state relative-caret-position="300">
+          <caret line="52" column="44" selection-start-line="52" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/AlertHandling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/PageObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_Takeaway.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="69" column="54" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_Takeaway.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1251,8 +1267,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="107" column="123" selection-start-line="107" selection-start-column="123" selection-end-line="107" selection-end-column="123" />
+        <state relative-caret-position="643">
+          <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchRestaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchNearestRestaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="57" column="62" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/OpenHomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/ConsoleRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="230" column="13" selection-start-line="230" selection-start-column="13" selection-end-line="230" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

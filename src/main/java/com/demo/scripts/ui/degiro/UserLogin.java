@@ -1,4 +1,4 @@
-package com.demo.scripts.ui;
+package com.demo.scripts.ui.degiro;
 
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.LoginPage;
@@ -23,7 +23,7 @@ public class UserLogin extends BasicTestConfig {
         String testName        = "<b>[WEB] Account Login</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected."              +
-                                 "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                                 "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
                                  "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                                  "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                                  "[3] Check login with valid credentials.";

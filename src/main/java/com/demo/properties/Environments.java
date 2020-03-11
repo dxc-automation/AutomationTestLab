@@ -2,8 +2,7 @@ package com.demo.properties;
 
 import com.demo.config.BasicTestConfig;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
-
+import static com.demo.utilities.FileUtility.getDate;
 import static com.demo.properties.TestData.*;
 
 
@@ -23,7 +22,7 @@ public class Environments extends BasicTestConfig {
 
 
     //***** PAGES
-    public final static String TRANSACTIONS_PAGE       = "/trader4/#/transactions";
+    public final static String TRANSACTIONS_PAGE       = "/trader4/#/transactions?fromDate=2020-02-04&toDate=" + getDate() + "&groupTransactionsByOrder=false";
     public final static String ORDERS_OUTSTANDING_PAGE = "/trader4/#/orders/open";
     public final static String ORDERS_HISTORY_PAGE     = "/trader4/#/orders/history";
     public final static String ACCOUNT_OVERVIEW_PAGE   = "/trader4/#/account-overview";

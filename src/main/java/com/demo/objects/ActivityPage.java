@@ -24,15 +24,24 @@ public class ActivityPage extends BasicTestConfig {
     @FindBy(how = How.CSS,using = "a[href=#/orders/open]")
     public WebElement activity_tab_menu_orders_btn;
 
-    @FindBy(how = How.LINK_TEXT, using = "Transactions")
+    @FindBy(how = How.CSS, using = "a[href=#/transactions]")
     public WebElement activity_tab_menu_transactions_btn;
 
 
 
-    //  *****   Transactions
-    @FindBy(how = How.CSS, using = "div[aria-live=polite]")
+    //  *****   Transactions Table
+    @FindBy(how = How.CSS, using = "table._3QuQRAgUeF2pqrF7IRP6nC")
     public WebElement transactions_history_table;
 
+    @FindBy(how = How.CSS, using = "i[data-name=icon]")
+    public WebElement transactions_history_table_details_row1;
+
+
+
+
+
+
+    //  *****   Transactions Side Panel
     @FindBy(how = How.CSS, using = "section[data-name=sideInformationPanel]")
     public WebElement transactions_details_side_panel;
 

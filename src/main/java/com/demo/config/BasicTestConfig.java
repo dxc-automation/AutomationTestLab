@@ -67,10 +67,10 @@ public class BasicTestConfig {
      * @param driver, name
      * @throws Exception
      */
-        public static void takeScreenshot (WebDriver driver, String name){
+        public static void takeScreenshot (WebDriver driver, String imageName){
             screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             try {
-                FileUtils.copyFile(screenshotFile, new File(screenshots_actual_folder + name + ".png"));
+                FileUtils.copyFile(screenshotFile, new File(screenshots_actual_folder + imageName + ".png"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -145,9 +145,12 @@ public class BasicTestConfig {
 
             if (browser.equalsIgnoreCase("chrome")) {
                 System.setProperty("webdriver.chrome.driver", chrome_driver_file);
+
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("scripts-type");
                 options.addArguments("start-maximized");
+                options.addArguments("--disable-search-geolocation-disclosure");
+                options.addArguments("--disable-popup-blocking");
                 options.addArguments("--incognito");
                 driver = new ChromeDriver(options);
                 LOG.info("| Chrome browser launched successfully |");
@@ -265,8 +268,9 @@ public class BasicTestConfig {
                         fileFail = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                         FileUtils.copyFile(fileFail, new File(screenshots_failed_folder + methodName + ".png"));
 
-                        test.fail("<b>FAILED ON SCREEN</b>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png").build());
+                        test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png", "<br>" + throwable).build());
                         test.fail(throwable);
+                        System.out.println("\n" + throwable);
                     }
         }
     }

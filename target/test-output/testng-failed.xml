@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" name="Failed suite [TC_001]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.demo.config.TestNGListener"/>
+  </listeners>
+  <test thread-count="1" name="TC_02(failed)">
+    <parameter name="environment" value="production"/>
+    <classes>
+      <class name="com.demo.tests.TestCase_Takeaway">
+        <methods>
+          <include name="selectRestaurant"/>
+          <include name="browserConfig"/>
+          <include name="cleanReportData"/>
+          <include name="flushReportData"/>
+          <include name="setEnvironment"/>
+          <include name="clearXmlFiles"/>
+          <include name="generateReport"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- com.demo.tests.TestCase_Takeaway -->
+    </classes>
+  </test> <!-- TC_02(failed) -->
+</suite> <!-- Failed suite [TC_001] -->

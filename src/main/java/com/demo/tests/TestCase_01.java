@@ -1,7 +1,6 @@
 package com.demo.tests;
 
 import com.demo.config.BasicTestConfig;
-import com.demo.scripts.ui.Search;
 import com.demo.utilities.user_interface.VideoRecord;
 import org.testng.annotations.Test;
 
@@ -9,33 +8,58 @@ import java.lang.reflect.Method;
 
 import static com.demo.properties.TestData.*;
 import static com.demo.scripts.api.account.Login.secureLogin;
-import static com.demo.scripts.ui.UserBalance.*;
+import static com.demo.scripts.ui.degiro.UserBalance.*;
 import static com.demo.scripts.api.account.ClientInfo.getClientInfo;
 import static com.demo.scripts.api.products.TEST_SearchProduct.searchStocks;
 import static com.demo.scripts.api.products.INT_SearchProduct.searchProduct;
 import static com.demo.scripts.api.orders.place.Order.*;
 import static com.demo.scripts.api.orders.place.OrderConfirmation.*;
 import static com.demo.scripts.api.orders.history.TransactionHistory.*;
-import static com.demo.scripts.ui.UserLogin.secureLoginWeb;
-import static com.demo.scripts.ui.Search.*;
-import static com.demo.scripts.ui.Transactions.checkUserTransactionsHistory;
+import static com.demo.scripts.ui.degiro.UserLogin.secureLoginWeb;
+import static com.demo.scripts.ui.degiro.Search.*;
+import static com.demo.scripts.ui.degiro.Transactions.checkUserTransactionsHistory;
 
 public class TestCase_01 extends BasicTestConfig {
     VideoRecord videoReord = new VideoRecord();
 
     @Test(description = "WEB")
-    public void web_test() throws Exception {
+    public void web_login() throws Exception {
         //  start screen recorder
         videoReord.startRecording();
-
         secureLoginWeb();
-        getUserAmount();
-        checkUserTransactionsHistory();
-        checkSearchProduct("Telefonica");
-
-        //  stop screen recorder
         videoReord.stopRecording();
     }
+
+
+    @Test(description = "WEB")
+    public void web_user_amount() throws Exception {
+        videoReord.startRecording();
+        getUserAmount();
+        videoReord.stopRecording();
+    }
+
+
+    @Test(description = "WEB")
+    public void web_user_transactions() throws Exception {
+        checkUserTransactionsHistory();
+    }
+
+
+    @Test(description = "WEB")
+    public void web_search_product() throws Exception {
+        checkSearchProduct("Telefonica");
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
     @Test(description = "API")

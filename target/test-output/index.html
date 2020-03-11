@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TC_001" class="navigator-link">
-              <span class="suite-name border-passed">TC_001</span>
+              <span class="suite-name border-failed">TC_001</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-TC_001" class="navigator-link ">
-                    <span>D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\Test.xml</span>
+                    <span>D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\TestCase_Takeaway.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TC_001" class="hide-methods failed suite-TC_001"> (hide)</a> <!-- hide-methods failed suite-TC_001 -->
+                      <a href="#" panel-name="suite-TC_001" class="show-methods failed suite-TC_001"> (show)</a> <!-- show-methods failed suite-TC_001 -->
+                    </span>
+                    <div class="method-list-content failed suite-TC_001">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TC_001" title="com.demo.tests.TestCase_Takeaway" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TC_001" title="com.demo.tests.TestCase_Takeaway" class="method navigator-link" hash-for-method="selectRestaurant">selectRestaurant</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TC_001 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +121,7 @@
                     <div class="method-list-content passed suite-TC_001">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TC_001" title="com.demo.tests.TestCase_01" class="method navigator-link" hash-for-method="web_test">web_test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TC_001" title="com.demo.tests.TestCase_Takeaway" class="method navigator-link" hash-for-method="loadHomePage">loadHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TC_001 -->
@@ -117,17 +136,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TC_001" class="panel TC_001">
-          <div class="suite-TC_001-class-passed">
+          <div class="suite-TC_001-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.demo.tests.TestCase_01</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.demo.tests.TestCase_Takeaway</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="web_test">
-                  </a> <!-- web_test -->
-                  <span class="method-name">web_test</span>
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.demo.utilities.user_interface.Assertions.checkPageTitle(Assertions.java:35)
+	at com.demo.scripts.ui.takeaway.SearchRestaurant.searchRestaurant(SearchRestaurant.java:56)
+	at com.demo.tests.TestCase_Takeaway.search(TestCase_Takeaway.java:31)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(WEB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectRestaurant">
+                  </a> <!-- selectRestaurant -->
+                  <span class="method-name">selectRestaurant</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (8f46316fca54b484d19f3e08341b57b2)] -&gt; xpath: //div[3]//div[4]//img[1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;STATIONONE-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;11.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53418}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.132, webStorageEnabled: true}
+Session ID: 8f46316fca54b484d19f3e08341b57b2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.demo.scripts.ui.takeaway.SearchNearestRestaurant.searchNearestRestaurant(SearchNearestRestaurant.java:51)
+	at com.demo.tests.TestCase_Takeaway.selectRestaurant(TestCase_Takeaway.java:39)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(WEB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TC_001-class-failed -->
+          <div class="suite-TC_001-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.tests.TestCase_Takeaway</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loadHomePage">
+                  </a> <!-- loadHomePage -->
+                  <span class="method-name">loadHomePage</span>
                   <em>
 (WEB)                  </em>
                 </div> <!-- method-content -->
@@ -137,25 +200,27 @@
         </div> <!-- panel TC_001 -->
         <div panel-name="test-xml-TC_001" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\Test.xml</span>
+            <span class="header-content">D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\TestCase_Takeaway.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite configfailurepolicy=&quot;continue&quot; name=&quot;TC_001&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; thread-count=&quot;1&quot; name=&quot;TC_001&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.demo.config.TestNGListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;TC_02&quot; verbose=&quot;10&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;TC_02&quot;&gt;
     &lt;parameter name=&quot;environment&quot; value=&quot;production&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.demo.tests.TestCase_01&quot;&gt;
+      &lt;class name=&quot;com.demo.tests.TestCase_Takeaway&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;web_test&quot;/&gt;
+          &lt;include name=&quot;loadHomePage&quot;/&gt;
+          &lt;include name=&quot;search&quot;/&gt;
+          &lt;include name=&quot;selectRestaurant&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.demo.tests.TestCase_01 --&gt;
+      &lt;/class&gt; &lt;!-- com.demo.tests.TestCase_Takeaway --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TC_02 --&gt;
 &lt;/suite&gt; &lt;!-- TC_001 --&gt;
@@ -195,16 +260,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'web_test')
-data.setCell(0, 2, 'com.demo.tests.TestCase_01')
-data.setCell(0, 3, 14998);
+data.setCell(0, 1, 'selectRestaurant')
+data.setCell(0, 2, 'com.demo.tests.TestCase_Takeaway')
+data.setCell(0, 3, 18159);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'search')
+data.setCell(1, 2, 'com.demo.tests.TestCase_Takeaway')
+data.setCell(1, 3, 8757);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loadHomePage')
+data.setCell(2, 2, 'com.demo.tests.TestCase_Takeaway')
+data.setCell(2, 3, 5189);
 window.suiteTableData['TC_001']= { tableData: data, tableDiv: 'times-div-TC_001'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-TC_001">
               </div> <!-- times-div-TC_001 -->
             </div> <!-- times-div -->
@@ -219,26 +292,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TC_001" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.demo.tests.TestCase_01</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">checkUserInfo</span>
-                <br/>
-                <span class="ignored-method-name">confirmOrder</span>
-                <br/>
-                <span class="ignored-method-name">putOrder</span>
-                <br/>
-                <span class="ignored-method-name">checkTransactionActivities</span>
-                <br/>
-                <span class="ignored-method-name">loginUser</span>
-                <br/>
-                <span class="ignored-method-name">searchForProduct</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TC_001" class="panel">
@@ -247,34 +303,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.tests.TestCase_01</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.demo.tests.TestCase_Takeaway</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">browserConfig(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
-                <span class="method-start">3326 ms</span>
+                <span class="method-start">3289 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setEnvironment(production)</span>
-                <span class="method-start">3336 ms</span>
+                <span class="method-start">3301 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">web_test</span>
-                <span class="method-start">3347 ms</span>
+                <span class="method-name">loadHomePage</span>
+                <span class="method-start">3358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport([TestResult name=web_test status=SUCCESS method=TestCase_01.web_test()[pri:0, instance:com.demo.test...)</span>
-                <span class="method-start">18345 ms</span>
+                <span class="method-name">generateReport([TestResult name=loadHomePage status=SUCCESS method=TestCase_Takeaway.loadHomePage()[pri:0, instance...)</span>
+                <span class="method-start">8548 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">search</span>
+                <span class="method-start">8550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=search status=FAILURE method=TestCase_Takeaway.search()[pri:0, instance:com.demo.te...)</span>
+                <span class="method-start">17308 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">selectRestaurant</span>
+                <span class="method-start">18486 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">generateReport([TestResult name=selectRestaurant status=FAILURE method=TestCase_Takeaway.selectRestaurant()[pri:0, ...)</span>
+                <span class="method-start">36645 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXmlFiles</span>
-                <span class="method-start">18393 ms</span>
+                <span class="method-start">37808 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReportData</span>
-                <span class="method-start">18409 ms</span>
+                <span class="method-start">37813 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

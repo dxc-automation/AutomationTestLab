@@ -9,10 +9,26 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">TC_001</th></tr>
-<tr><td><a href="#t0">TC_02</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">15,013</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TC_02</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">34,402</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_02 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.demo.tests.TestCase_01</td><td><a href="#m0">web_test</a></td><td rowspan="1">1583276520953</td><td rowspan="1">14998</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_02 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.demo.tests.TestCase_Takeaway</td><td><a href="#m0">search</a></td><td rowspan="1">1583969599834</td><td rowspan="1">8757</td></tr><tr class="failedeven"><td><a href="#m1">selectRestaurant</a></td><td rowspan="1">1583969609770</td><td rowspan="1">18159</td></tr><tr><th colspan="4">TC_02 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.demo.tests.TestCase_Takeaway</td><td><a href="#m2">loadHomePage</a></td><td rowspan="1">1583969594642</td><td rowspan="1">5189</td></tr></tbody>
 </table>
-<h2>TC_02</h2><h3 id="m0">com.demo.tests.TestCase_01#web_test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TC_02</h2><h3 id="m0">com.demo.tests.TestCase_Takeaway#search</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.demo.utilities.user_interface.Assertions.checkPageTitle(Assertions.java:35)
+	at com.demo.scripts.ui.takeaway.SearchRestaurant.searchRestaurant(SearchRestaurant.java:56)
+	at com.demo.tests.TestCase_Takeaway.search(TestCase_Takeaway.java:31)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.demo.tests.TestCase_Takeaway#selectRestaurant</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (8f46316fca54b484d19f3e08341b57b2)] -&gt; xpath: //div[3]//div[4]//img[1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;STATIONONE-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;11.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53418}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.132, webStorageEnabled: true}
+Session ID: 8f46316fca54b484d19f3e08341b57b2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.demo.scripts.ui.takeaway.SearchNearestRestaurant.searchNearestRestaurant(SearchNearestRestaurant.java:51)
+	at com.demo.tests.TestCase_Takeaway.selectRestaurant(TestCase_Takeaway.java:39)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.demo.tests.TestCase_Takeaway#loadHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

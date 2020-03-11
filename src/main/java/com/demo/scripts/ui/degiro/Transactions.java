@@ -1,4 +1,4 @@
-package com.demo.scripts.ui;
+package com.demo.scripts.ui.degiro;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
@@ -21,13 +21,15 @@ import static com.demo.utilities.user_interface.HandleTable.handleWebTable;
 public class Transactions extends BasicTestConfig {
 
     private static ActivityPage activityPage = PageFactory.initElements(driver, ActivityPage.class);
+    private static General general           = PageFactory.initElements(driver, General.class);
+
 
 
     private static void report() throws Exception {
         String testName        = "<b>[WEB] User Transactions History</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the user orders history is displayed properly."              +
-                                 "<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                                 "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
                                  "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                                  "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                                  "[3] Check login with valid credentials.";
@@ -42,13 +44,15 @@ public class Transactions extends BasicTestConfig {
         wait = new WebDriverWait(driver, 10);
 
         String url = "https://" + HOST + TRANSACTIONS_PAGE;
+        driver.navigate().back();
         driver.get(url);
+        general.side_navigation_activity_btn.click();
 
-        wait.until(ExpectedConditions.visibilityOf(activityPage.transactions_history_table));
+        wait.until(ExpectedConditions.visibilityOf(activityPage.activity_tab_menu_transactions_btn));
+        activityPage.activity_tab_menu_transactions_btn.click();
 
-        WebElement table_first_row = driver.findElement(By.cssSelector("span[data-field='price']"));
-        wait.until(ExpectedConditions.visibilityOf(table_first_row));
-        table_first_row.click();
+        wait.until(ExpectedConditions.visibilityOf(activityPage.transactions_history_table_details_row1));
+        activityPage.transactions_history_table_details_row1.click();
 
         wait.until(ExpectedConditions.visibilityOf(activityPage.transactions_details_side_panel));
         elementScreenshot(activityPage.transactions_details_side_panel, "Transaction_Details");

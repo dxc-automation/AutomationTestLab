@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -53,7 +54,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 4, 2020 01:02:01 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 12, 2020 01:33:14 AM</span>
 				</a>
 			</li>
 			<li>
@@ -80,7 +81,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -141,10 +141,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +156,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='54.545%'><span class='strong'>6</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='63.636%'><span class='strong'>7</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='36.364%'>4</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='36.364%'>4</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -174,19 +174,69 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'><b><b>[WEB] Account Login</b></b></span>
-						<span class='test-time'>Mar 4, 2020 01:02:01 AM</span>
+						<span class='test-name'><b><b>[WEB] Open Home Page</b></b></span>
+						<span class='test-time'>Mar 12, 2020 01:33:15 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 12, 2020 01:33:15 AM</span>
+	<span class='label end-time'>Mar 12, 2020 01:33:19 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+565ms</span>
+</div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the user orders history is displayed properly.<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Frontend</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:33:17 AM</td>
+					<td class='step-details'><b>[STEP 1] URL <u>https://www.thuisbezorgd.nl/en/</u> was opened successfully.</b></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:33:17 AM</td>
+					<td class='step-details'><b>[STEP 2] The title of the web page is correct.</b></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:33:19 AM</td>
+					<td class='step-details'><pre><b>Image comparison successfully completed</b><br><br>Image comparison success rate    = 55.44303%<br>Number of  pixels gets varied    = 760534<br>Time(ms) for visualization check = 1173<br>Number of pixels gets matched    = 946346<br><br>ACTUAL SCREENSHOT<br><br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Takeaway_HomePage_Actual.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Takeaway_HomePage_Actual.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Takeaway_HomePage_Actual.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'><b><b>[WEB] Search For Restaurant</b></b></span>
+						<span class='test-time'>Mar 12, 2020 01:33:19 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 4, 2020 01:02:01 AM</span>
-	<span class='label end-time'>Mar 4, 2020 01:02:04 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+837ms</span>
+	<span class='label start-time'>Mar 12, 2020 01:33:19 AM</span>
+	<span class='label end-time'>Mar 12, 2020 01:33:29 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+920ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the login functionality is working as expected.<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the user orders history is displayed properly.<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>Frontend</span>
@@ -204,73 +254,55 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:02:02 AM</td>
-					<td class='step-details'><b>[STEP 1]</b> User Login page was opened successfully</td>
+					<td class='timestamp'>1:33:20 AM</td>
+					<td class='step-details'><b>[STEP 1] Correct search suggestion appear.</b></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:33:20 AM</td>
+					<td class='step-details'><b>[STEP 2] Search results web form appear.</b></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>1:02:03 AM</td>
-					<td class='step-details'><b>Compare actual screenshot with screenshot from the data base has failed</b><br>Image comparison success rate &nbsp;&nbsp;             = &nbsp;59.026917%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;54191<br>Time(ms) for visualization check &nbsp;                = 304<br>Number of pixels gets matched &nbsp;                   = &nbsp;78069<br><center>ACTUAL SCREENSHOT<br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png</center>' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png</center>' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/LoginForm_Actual.png</center>'></td>
+					<td class='timestamp'>1:33:29 AM</td>
+					<td class='step-details'><pre><b>FAILED ON SCREEN</b><br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TestCase_Takeaway.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TestCase_Takeaway.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TestCase_Takeaway.png'></td>
 				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:02:04 AM</td>
-					<td class='step-details'><b>[STEP 2]</b> Account login successfully</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>1:02:04 AM</td>
-					<td class='step-details'>URL: <i>https://trader.degiro.nl/login/ie#/login</i><br>Username: <i>dgtraderie</i><br>Password: <i>Test_web2020</i></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'><b><b>[WEB] User Balance</b></b></span>
-						<span class='test-time'>Mar 4, 2020 01:02:04 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar 4, 2020 01:02:04 AM</span>
-	<span class='label end-time'>Mar 4, 2020 01:02:08 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+852ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the user balance is displayed.<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Wait until account available to trade balance is displayed.<br>[2] Check that the account summary for is displayed.<br>[3] Get displayed available and total user balance.<br>[4] Take a screenshot of the account summary web form.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>1:02:06 AM</td>
-					<td class='step-details'>Account available balance for trading is  —</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>1:02:06 AM</td>
-					<td class='step-details'>Account total balance is  710.14</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:02:08 AM</td>
-					<td class='step-details'><b>ACCOUNT SUMMARY</b><br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Account_Header_Form.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Account_Header_Form.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Account_Header_Form.png'></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:33:29 AM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.demo.utilities.user_interface.Assertions.checkPageTitle(Assertions.java:35)
+	at com.demo.scripts.ui.takeaway.SearchRestaurant.searchRestaurant(SearchRestaurant.java:56)
+	at com.demo.tests.TestCase_Takeaway.search(TestCase_Takeaway.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.TestNG.privateMain(TestNG.java:1354)
+	at org.testng.TestNG.main(TestNG.java:1323)
+</pre></td>
 				</tr>
 			</tbody>
 		</table>
@@ -279,19 +311,19 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'><b><b>[WEB] User Transactions History</b></b></span>
-						<span class='test-time'>Mar 4, 2020 01:02:08 AM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'><b><b>[WEB] Search For Nearest Restaurant</b></b></span>
+						<span class='test-time'>Mar 12, 2020 01:33:29 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 4, 2020 01:02:08 AM</span>
-	<span class='label end-time'>Mar 4, 2020 01:02:10 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+501ms</span>
+	<span class='label start-time'>Mar 12, 2020 01:33:29 AM</span>
+	<span class='label end-time'>Mar 12, 2020 01:33:48 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+184ms</span>
 </div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the user orders history is displayed properly.<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
+	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the user orders history is displayed properly.<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>Frontend</span>
@@ -309,58 +341,57 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:02:10 AM</td>
-					<td class='step-details'><b>TRANSACTION DETAILS</b><br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Transaction_Details.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Transaction_Details.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Transaction_Details.png'></td>
+					<td class='timestamp'>1:33:34 AM</td>
+					<td class='step-details'><b>[STEP 1] GPS map was opened successfully.</b></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:02:10 AM</td>
-					<td class='step-details'><pre><br><center><b>* * * * * * * *    TRANSACTION  DETAILS    * * * * * * * *</b></center><br><br>Date: 19/02/2020 14:22:31<br>Transaction ID: 184298138<br>Action: Buy<br>Qty: Market<br>Price: ˆ 6.516<br>Local Value: ˆ 712.28<br>Value: ˆ -13.03<br>Exchange Rate: —<br>Fee: ˆ -4.01<br>Total: ˆ -17.04<br><br></pre></td>
+					<td class='timestamp'>1:33:37 AM</td>
+					<td class='step-details'><b>[STEP 2] GPS localization was enabled.</b></td>
 				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  warning' status='warning' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'><b><b>[WEB] Search Product</b></b></span>
-						<span class='test-time'>Mar 4, 2020 01:02:10 AM</span>
-						<span class='test-status right warning'>warning</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar 4, 2020 01:02:10 AM</span>
-	<span class='label end-time'>Mar 4, 2020 01:02:15 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+241ms</span>
-</div>
-	<div class='test-desc'><pre><center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center><p align=justify>The purpose of this test is to verify that the user orders history is displayed properly.<br><br><b>*** STEPS DESCRIPTION ***</b><br><br>[1] Check that the login page can be opened and displayed with correct title.<br>[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>[3] Check login with valid credentials.</p></pre> </div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>Frontend</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:33:48 AM</td>
+					<td class='step-details'><pre><b>FAILED ON SCREEN</b><br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TestCase_Takeaway.png' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TestCase_Takeaway.png' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Failed/TestCase_Takeaway.png'></td>
 				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='warning'>
-					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
-					<td class='timestamp'>1:02:13 AM</td>
-					<td class='step-details'><b>Results from comparison needs to be checked</b><br>Image comparison success rate &nbsp;&nbsp;             = &nbsp;99.99392%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;18<br>Time(ms) for visualization check &nbsp;                = 283<br>Number of pixels gets matched &nbsp;                   = &nbsp;295857</br><center>ACTUAL SCREENSHOT<br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Place_Order_Side_Panel_Actual.png</center>' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Place_Order_Side_Panel_Actual.png</center>' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Place_Order_Side_Panel_Actual.png</center>'></td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:02:15 AM</td>
-					<td class='step-details'><b>Image comparison successfully completed</b><br>Image comparison success rate &nbsp;&nbsp;             = &nbsp;100.0%<br>Number of  pixels gets varied &nbsp;&nbsp;&nbsp;&nbsp; = &nbsp;0<br>Time(ms) for visualization check &nbsp;                = 195<br>Number of pixels gets matched &nbsp;                   = &nbsp;295875</br><center>ACTUAL SCREENSHOT<br><img data-featherlight='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Place_Order_Side_Panel_Search_Actual.png</center>' width='10%' src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Place_Order_Side_Panel_Search_Actual.png</center>' data-src='D:\Frameworks\AutomationTestLab/report/Screenshots/Actual/Place_Order_Side_Panel_Search_Actual.png</center>'></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>1:33:48 AM</td>
+					<td class='step-details'><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (8f46316fca54b484d19f3e08341b57b2)] -> xpath: //div[3]//div[4]//img[1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'STATIONONE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53418}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.132, webStorageEnabled: true}
+Session ID: 8f46316fca54b484d19f3e08341b57b2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.demo.scripts.ui.takeaway.SearchNearestRestaurant.searchNearestRestaurant(SearchNearestRestaurant.java:51)
+	at com.demo.tests.TestCase_Takeaway.selectRestaurant(TestCase_Takeaway.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.TestNG.privateMain(TestNG.java:1354)
+	at org.testng.TestNG.main(TestNG.java:1323)
+</textarea></td>
 				</tr>
 			</tbody>
 		</table>
@@ -421,16 +452,15 @@
 					<div class='category-heading'>
 						<span class='category-name'>Frontend</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
-							<span class='label fail'>1</span>
-							<span class='label others'>1</span>
+							<span class='label pass'>1</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
-							<span class='label yellow darken-2 white-text'>Others: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							
 						</div>
 					
 						<div class='category-tests'>
@@ -444,24 +474,19 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 4, 2020 01:02:01 AM</td>
-										<td class='linked' test-id='1'><b><b>[WEB] Account Login</b></b></td>
+										<td>Mar 12, 2020 01:33:15 AM</td>
+										<td class='linked' test-id='1'><b><b>[WEB] Open Home Page</b></b></td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 12, 2020 01:33:19 AM</td>
+										<td class='linked' test-id='2'><b><b>[WEB] Search For Restaurant</b></b></td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Mar 4, 2020 01:02:04 AM</td>
-										<td class='linked' test-id='2'><b><b>[WEB] User Balance</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 4, 2020 01:02:08 AM</td>
-										<td class='linked' test-id='3'><b><b>[WEB] User Transactions History</b></b></td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 4, 2020 01:02:10 AM</td>
-										<td class='linked' test-id='4'><b><b>[WEB] Search Product</b></b></td>
-										<td><span class='test-status warning'>warning</span></td>
+										<td>Mar 12, 2020 01:33:29 AM</td>
+										<td class='linked' test-id='3'><b><b>[WEB] Search For Nearest Restaurant</b></b></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -480,6 +505,159 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Mar 12, 2020 01:33:19 AM</td>
+                                                        <td class='linked' test-id='2'><b><b>[WEB] Search For Restaurant</b></b></td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.demo.utilities.user_interface.Assertions.checkPageTitle(Assertions.java:35)
+	at com.demo.scripts.ui.takeaway.SearchRestaurant.searchRestaurant(SearchRestaurant.java:56)
+	at com.demo.tests.TestCase_Takeaway.search(TestCase_Takeaway.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.TestNG.privateMain(TestNG.java:1354)
+	at org.testng.TestNG.main(TestNG.java:1323)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.TimeoutException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Mar 12, 2020 01:33:29 AM</td>
+                                                        <td class='linked' test-id='3'><b><b>[WEB] Search For Nearest Restaurant</b></b></td>
+                                                        <td><pre><textarea>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (8f46316fca54b484d19f3e08341b57b2)] -> xpath: //div[3]//div[4]//img[1]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'STATIONONE-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\STATIO~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53418}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.132, webStorageEnabled: true}
+Session ID: 8f46316fca54b484d19f3e08341b57b2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.demo.scripts.ui.takeaway.SearchNearestRestaurant.searchNearestRestaurant(SearchNearestRestaurant.java:51)
+	at com.demo.tests.TestCase_Takeaway.selectRestaurant(TestCase_Takeaway.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.TestNG.privateMain(TestNG.java:1354)
+	at org.testng.TestNG.main(TestNG.java:1323)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -489,7 +667,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -501,19 +679,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 4, 2020 01:02:01 AM</div>
+					<div class='panel-lead'>Mar 12, 2020 01:33:14 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 4, 2020 01:02:16 AM</div>
+			 		<div class='panel-lead'>Mar 12, 2020 01:33:49 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 14s+888ms</div>
+					<div class='panel-lead'>0h 0m 34s+241ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -562,11 +740,11 @@
 						</tr>
 						<tr>
 							<td>Frontend</td>
+							<td>1</td>
 							<td>2</td>
-							<td>1</td>
-							<td>1</td>
+							<td>0</td>
 							<td>
-									50%
+									33.333%
 							</td>
 						</tr>
 					</table>
@@ -582,22 +760,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
-				failParent: 1,
+				passParent: 1,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
-				warningParent: 1,
+				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 2,
 				
-				passChild: 6,
-				failChild: 1,
+				passChild: 7,
+				failChild: 4,
 				fatalChild: 0,
 				errorChild: 0,
-				warningChild: 1,
+				warningChild: 0,
 				skipChild: 0,
-				infoChild: 3,
-				exceptionsChild: 2,
+				infoChild: 0,
+				exceptionsChild: 4,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
