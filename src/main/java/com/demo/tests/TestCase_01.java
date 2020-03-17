@@ -24,7 +24,6 @@ public class TestCase_01 extends BasicTestConfig {
 
     @Test(description = "WEB")
     public void web_login() throws Exception {
-        //  start screen recorder
         videoReord.startRecording();
         secureLoginWeb();
         videoReord.stopRecording();
@@ -49,17 +48,6 @@ public class TestCase_01 extends BasicTestConfig {
     public void web_search_product() throws Exception {
         checkSearchProduct("Telefonica");
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
     @Test(description = "API")

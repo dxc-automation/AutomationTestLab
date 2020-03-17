@@ -19,6 +19,10 @@
         <classes>
             <class name="com.demo.tests.TestCase_01">
                 <methods>
+                    <include name="web_login"/>
+                    <include name="web_user_amount"/>
+                    <include name="web_user_transactions"/>
+                    <include name="web_search_product"/>
                     <include name="loginUser"/>
                     <include name="checkUserInfo"/>
                     <include name="searchForProduct"/>
