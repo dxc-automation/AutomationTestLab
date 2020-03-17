@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="10" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TC_001" duration-ms="18020" started-at="2020-03-17T20:00:04Z" finished-at="2020-03-17T20:00:22Z">
+    <groups>
+    </groups>
+    <test name="TC_01_Chrome" duration-ms="18020" started-at="2020-03-17T20:00:04Z" finished-at="2020-03-17T20:00:22Z">
+      <class name="com.demo.tests.TestCase_01">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="cleanReportData" is-config="true" duration-ms="8" started-at="2020-03-17T20:00:04Z" finished-at="2020-03-17T20:00:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanReportData -->
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="browserConfig" is-config="true" duration-ms="7096" started-at="2020-03-17T20:00:04Z" finished-at="2020-03-17T20:00:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method status="PASS" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="setEnvironment" is-config="true" duration-ms="31" started-at="2020-03-17T20:00:11Z" finished-at="2020-03-17T20:00:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web-trader]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setEnvironment -->
+        <test-method status="PASS" signature="web_login()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="web_login" duration-ms="1884" started-at="2020-03-17T20:00:11Z" description="WEB" finished-at="2020-03-17T20:00:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_login -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-17T20:00:13Z" finished-at="2020-03-17T20:00:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_login status=SUCCESS method=TestCase_01.web_login()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="web_user_amount()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="web_user_amount" duration-ms="1933" started-at="2020-03-17T20:00:13Z" description="WEB" finished-at="2020-03-17T20:00:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_user_amount -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-17T20:00:15Z" finished-at="2020-03-17T20:00:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_user_amount status=SUCCESS method=TestCase_01.web_user_amount()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="FAIL" signature="web_user_transactions()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="web_user_transactions" duration-ms="261" started-at="2020-03-17T20:00:15Z" description="WEB" finished-at="2020-03-17T20:00:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"._36CbGFJLG6WzVjeXIpURvd[data-id=activityMenuItem]"}
+  (Session info: chrome=80.0.3987.122)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'QAIT006', ip: '172.18.4.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\PPopov\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59102}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.122, webStorageEnabled: true}
+Session ID: 3d6f51fe7c8c0e88e0117c26a7a778d5
+*** Element info: {Using=css selector, value=._36CbGFJLG6WzVjeXIpURvd[data-id=activityMenuItem]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"._36CbGFJLG6WzVjeXIpURvd[data-id=activityMenuItem]"}
+  (Session info: chrome=80.0.3987.122)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'QAIT006', ip: '172.18.4.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\PPopov\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59102}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.122, webStorageEnabled: true}
+Session ID: 3d6f51fe7c8c0e88e0117c26a7a778d5
+*** Element info: {Using=css selector, value=._36CbGFJLG6WzVjeXIpURvd[data-id=activityMenuItem]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy15.click(Unknown Source)
+at com.demo.scripts.ui.degiro.Transactions.checkUserTransactionsHistory(Transactions.java:49)
+at com.demo.tests.TestCase_01.web_user_transactions(TestCase_01.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_user_transactions -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="420" started-at="2020-03-17T20:00:15Z" finished-at="2020-03-17T20:00:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_user_transactions status=FAILURE method=TestCase_01.web_user_transactions()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="FAIL" signature="web_search_product()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="web_search_product" duration-ms="2168" started-at="2020-03-17T20:00:15Z" description="WEB" finished-at="2020-03-17T20:00:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Telefonica] but found [Germany 30]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Telefonica] but found [Germany 30]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.demo.scripts.ui.degiro.Search.checkSearchProduct(Search.java:63)
+at com.demo.tests.TestCase_01.web_search_product(TestCase_01.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_search_product -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="439" started-at="2020-03-17T20:00:17Z" finished-at="2020-03-17T20:00:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_search_product status=FAILURE method=TestCase_01.web_search_product()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="loginUser(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="loginUser" duration-ms="411" started-at="2020-03-17T20:00:18Z" description="API" finished-at="2020-03-17T20:00:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.loginUser(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-17T20:00:18Z" finished-at="2020-03-17T20:00:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginUser status=SUCCESS method=TestCase_01.loginUser(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="checkUserInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="checkUserInfo" duration-ms="214" started-at="2020-03-17T20:00:18Z" description="API" finished-at="2020-03-17T20:00:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.checkUserInfo(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserInfo -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-17T20:00:19Z" finished-at="2020-03-17T20:00:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkUserInfo status=SUCCESS method=TestCase_01.checkUserInfo(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="searchForProduct(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="searchForProduct" duration-ms="299" started-at="2020-03-17T20:00:19Z" description="API" finished-at="2020-03-17T20:00:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.searchForProduct(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForProduct -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="10" started-at="2020-03-17T20:00:19Z" finished-at="2020-03-17T20:00:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchForProduct status=SUCCESS method=TestCase_01.searchForProduct(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="putOrder(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="putOrder" duration-ms="1305" started-at="2020-03-17T20:00:19Z" description="API" finished-at="2020-03-17T20:00:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.putOrder(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putOrder -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-17T20:00:20Z" finished-at="2020-03-17T20:00:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=putOrder status=SUCCESS method=TestCase_01.putOrder(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="confirmOrder(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="confirmOrder" duration-ms="1254" started-at="2020-03-17T20:00:20Z" description="API" finished-at="2020-03-17T20:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.confirmOrder(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmOrder -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-17T20:00:21Z" finished-at="2020-03-17T20:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmOrder status=SUCCESS method=TestCase_01.confirmOrder(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="checkTransactionActivities(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="checkTransactionActivities" duration-ms="268" started-at="2020-03-17T20:00:21Z" description="API" finished-at="2020-03-17T20:00:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_01.checkTransactionActivities(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTransactionActivities -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="generateReport" is-config="true" duration-ms="7" started-at="2020-03-17T20:00:22Z" finished-at="2020-03-17T20:00:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkTransactionActivities status=SUCCESS method=TestCase_01.checkTransactionActivities(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="clearXmlFiles" is-config="true" duration-ms="19" started-at="2020-03-17T20:00:22Z" finished-at="2020-03-17T20:00:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearXmlFiles -->
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01@363ee3a2]" name="flushReportData" is-config="true" duration-ms="5043" started-at="2020-03-17T20:00:22Z" finished-at="2020-03-17T20:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReportData -->
+      </class> <!-- com.demo.tests.TestCase_01 -->
+    </test> <!-- TC_01_Chrome -->
+  </suite> <!-- TC_001 -->
+</testng-results>

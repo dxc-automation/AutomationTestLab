@@ -139,7 +139,7 @@ public class BasicTestConfig {
      * @throws Exception
      */
         @Parameters({"browser"})
-        @BeforeSuite
+        @BeforeTest
         public void browserConfig(String browser) throws Exception {
             DesiredCapabilities capability = new DesiredCapabilities();
 

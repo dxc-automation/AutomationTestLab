@@ -3,115 +3,48 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/api_get_client_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/api_get_orders_history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/api_order_confirmation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/api_place_order.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/api_search_stocks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/api_user_login.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Account_Header_Form.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Account_Header_Form.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/LoginForm_Actual.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/LoginForm_Actual.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Place_Order_Side_Panel_Actual.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Place_Order_Side_Panel_Actual.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Place_Order_Side_Panel_Search_Actual.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Place_Order_Side_Panel_Search_Actual.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Buffer/null.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Buffer/null.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Failed/TestCase_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Failed/TestCase_01.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/video/TestVideo-2020-02-26 19.08.17.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/video/TestVideo-2020-03-17 18.13.51.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/video/TestVideo-2020-03-17 18.14.14.avi" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/Amazon/AmazonHomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/Degiro/ActivityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/objects/ActivityPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/Degiro/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/objects/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/Degiro/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/objects/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/Degiro/MarketsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/objects/MarketsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/News/NewsHomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/ClientInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/ClientInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/account/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/account/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/history/OrdersHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/history/OrdersHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/history/TransactionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/history/TransactionHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/place/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/place/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/orders/place/OrderConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/place/OrderConfirmation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/INT_SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/INT_SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/TEST_SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/TEST_SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/products/VWD_SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/VWD_SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/settings/MarketPageProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/settings/MarketPageProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/degiro/settings/RealTimeQuotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/settings/RealTimeQuotes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/fly/AccessToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/fly/Authenticate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/fly/NewToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/fly/RegisterUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/fly/UserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/amazon/Amazon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/ActivityOrdersHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/ActivityTransactionsHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/MarketPopularProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/PopularProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/questers/Questers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01_PlaceOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_02.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_03.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_04.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_05.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/archive-tmp/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/BasicTestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/BasicTestConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/objects/Amazon/AmazonHomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/objects/Degiro/ActivityPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/objects/Degiro/General.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/objects/Degiro/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/objects/Degiro/MarketsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/objects/News/NewsHomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/Environments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/Environments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/account/ClientInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/account/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/history/OrdersHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/history/TransactionHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/place/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/orders/place/OrderConfirmation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/INT_SearchProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/TEST_SearchProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/products/VWD_SearchProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/settings/MarketPageProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/degiro/settings/RealTimeQuotes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/fly/AccessToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/fly/Authenticate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/fly/NewToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/fly/RegisterUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/fly/UserInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/amazon/Amazon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/ActivityOrdersHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/ActivityTransactionsHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/MarketPopularProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/UserBalance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/UserLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/questers/Questers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_01_PlaceOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_04.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/account/ClientInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/account/ClientInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/account/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/account/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/orders/place/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/orders/place/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/orders/place/OrderConfirmation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/orders/place/OrderConfirmation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/INT_SearchProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/INT_SearchProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/TEST_SearchProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/TEST_SearchProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/VWD_SearchProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/VWD_SearchProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/settings/MarketPageProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/settings/MarketPageProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/PopularProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/PopularProducts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/AlertHandling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/AlertHandling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ElementScreenshot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ElementScreenshot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/GetAllPageLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/GetAllPageLinks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/HandleTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/HandleTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ImageCompare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ImageCompare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/WebDriverUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/WebDriverUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpClientUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpClientUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpURLConnectionConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpURLConnectionConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/TC_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TC_001/TC_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/TC_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TC_001/TC_01.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/TC_02.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TC_001/TC_02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/TC_001/TC_02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/TC_001/TC_02.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_01_PlaceOrder.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/TC_001/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/TC_001/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/tests.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="BasicTestConfig.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4850">
-              <caret line="230" column="13" selection-start-line="230" selection-start-column="13" selection-end-line="230" selection-end-column="13" />
+            <state relative-caret-position="243">
+              <caret line="125" column="31" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCase_01.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="95" column="42" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="42" />
+            <state relative-caret-position="1449">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,70 +82,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extent-config.xml" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/extent-config.xml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="126">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCase_01.xml" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+            <state relative-caret-position="315">
+              <caret line="15" column="45" selection-start-line="15" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Test.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestNGListener.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchRestaurant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchRestaurant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpenHomePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/OpenHomePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="777">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -295,9 +192,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/OpenHomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" />
       </list>
     </option>
@@ -387,9 +284,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -422,6 +316,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -488,6 +391,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -550,6 +455,7 @@
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings">
           <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
             <option name="environmentProperties">
               <map />
             </option>
@@ -580,6 +486,7 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -602,8 +509,9 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method v="2" />
     </configuration>
-    <configuration name="D:/Frameworks/AutomationTestLab/src/main/resources/xml_files/News.xml" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+    <configuration name="D:/Frameworks/AutomationTestLab/src/main/resources/xml_files/News.xml" type="TestNG" nameIsGenerated="true">
       <module name="JAVA_FRAMEWORK" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-11.0.5" />
@@ -617,16 +525,14 @@
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TC_03_OpenHomePage.loadHomePage" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC_03_OpenHomePage.loadHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JAVA_FRAMEWORK" />
       <extension name="coverage">
         <pattern>
@@ -634,28 +540,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.demo.tests.frontend" />
       <option name="MAIN_CLASS_NAME" value="com.demo.tests.frontend.TC_03_OpenHomePage" />
       <option name="METHOD_NAME" value="loadHomePage" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestCase_01.productsPopular" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase_01.productsPopular" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JAVA_FRAMEWORK" />
       <extension name="coverage">
         <pattern>
@@ -663,28 +560,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.demo.tests" />
       <option name="MAIN_CLASS_NAME" value="com.demo.tests.TestCase_01" />
       <option name="METHOD_NAME" value="productsPopular" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestCase_01.userLogin" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCase_01.userLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JAVA_FRAMEWORK" />
       <extension name="coverage">
         <pattern>
@@ -692,28 +580,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.demo.tests" />
       <option name="MAIN_CLASS_NAME" value="com.demo.tests.TestCase_01" />
       <option name="METHOD_NAME" value="userLogin" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="Unnamed" type="TestNG" factoryName="TestNG">
+    <configuration name="Unnamed" type="TestNG">
       <module name="JAVA_FRAMEWORK" />
       <shortenClasspath name="NONE" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -723,12 +602,10 @@
       <option name="MAIN_CLASS_NAME" value="com.demo.tests.frontend.TC_03_OpenHomePage" />
       <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
@@ -736,6 +613,9 @@
       <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Maven.JAVA_FRAMEWORK []" />
@@ -890,88 +770,85 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info id="Image Layers" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39647058" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32921588" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3282353" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.18152525" />
-      <window_info anchor="right" id="Database" order="7" />
       <window_info id="Structure" order="0" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.3888889" />
-      <window_info anchor="bottom" id="SOQL Query" order="7" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.7472067" />
-      <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32960895" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32666665" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.18346667" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="bottom" id="Log Analyzer" order="10" weight="0.66444445" />
-      <window_info anchor="right" id="JSON Utils" order="10" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32666665" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.3888889" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
+      <window_info anchor="bottom" id="SOQL Query" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Anonymous Apex" order="9" />
+      <window_info anchor="bottom" id="Log Analyzer" order="10" weight="0.66444445" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3282353" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39647058" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32960895" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.7472067" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32921588" />
+      <window_info anchor="right" id="JSON Utils" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Palette" order="4" />
+      <window_info id="Structure" order="0" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
       <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="5" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info id="Capture Tool" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32960895" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="JSON Utils" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39647058" />
-      <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Anonymous Apex" order="9" />
-      <window_info anchor="bottom" id="Log Analyzer" order="10" weight="0.66444445" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.7472067" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3282353" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32921588" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
+      <window_info id="Favorites" order="5" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
       <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.16917293" />
-      <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32666665" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.3888889" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
       <window_info anchor="bottom" id="SOQL Query" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="9" />
+      <window_info anchor="bottom" id="Log Analyzer" order="10" weight="0.66444445" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3282353" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39647058" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32960895" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.7472067" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Structure" order="0" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32666665" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.3888889" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32921588" />
+      <window_info anchor="right" id="JSON Utils" order="10" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="166" key="#Project_Structure" timestamp="1576037115949">
@@ -996,11 +873,6 @@
     </state>
     <state x="-251" y="1232" width="670" height="676" key="search.everywhere.popup/-636.1103.1440.805/-1920.23.1920.1057/0.23.1920.1057@-636.1103.1440.805" timestamp="1575040282659" />
     <state x="-251" y="1232" width="670" height="678" key="search.everywhere.popup/-636.1103.1440.807/-1920.23.1920.1057/0.23.1920.1057@-636.1103.1440.807" timestamp="1575299135440" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_02.java" />
@@ -1051,20 +923,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserBalance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Orders.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserBalance.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/VideoRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1086,13 +946,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/PopularProducts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/PopularProducts.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/ActivityPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1100,13 +954,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Transactions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Transactions.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/General.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -1114,20 +962,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="52" column="44" selection-start-line="52" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/AlertHandling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Search.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/AlertHandling.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="618">
@@ -1135,13 +971,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/PageObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/PageObjects.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
@@ -1156,26 +986,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_Takeaway.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_Takeaway.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserLogin.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3200">
@@ -1183,13 +995,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchNearestRestaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="57" column="62" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchNearestRestaurant.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/ConsoleRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -1197,50 +1003,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/OpenHomePage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchRestaurant.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_Takeaway.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Test.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4850">
-          <caret line="230" column="13" selection-start-line="230" selection-start-column="13" selection-end-line="230" selection-end-column="13" />
+        <state relative-caret-position="1449">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/OpenHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchRestaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_Takeaway.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1249,22 +1022,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/Test.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        <state relative-caret-position="777">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="95" column="42" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="42" />
+        <state relative-caret-position="243">
+          <caret line="125" column="31" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1273,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+        <state relative-caret-position="315">
+          <caret line="15" column="45" selection-start-line="15" selection-end-line="16" />
         </state>
       </provider>
     </entry>
