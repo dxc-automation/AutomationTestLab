@@ -8,20 +8,18 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">TC_001</th></tr>
-<tr><td><a href="#t0">TC_01_Chrome</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">2</td><td class="num">18,020</td><td></td><td></td></tr>
+<tr><th colspan="7">Demo Test Suite</th></tr>
+<tr><td><a href="#t0">TC_01_Chrome</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">2</td><td class="num">26,781</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TC_001</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_01_Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.demo.tests.TestCase_01</td><td><a href="#m0">web_search_product</a></td><td rowspan="1">1584475215796</td><td rowspan="1">2168</td></tr><tr class="failedeven"><td><a href="#m1">web_user_transactions</a></td><td rowspan="1">1584475215115</td><td rowspan="1">261</td></tr><tr><th colspan="4">TC_01_Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.demo.tests.TestCase_01</td><td><a href="#m2">checkTransactionActivities</a></td><td rowspan="1">1584475221904</td><td rowspan="1">268</td></tr><tr class="passedeven"><td><a href="#m3">checkUserInfo</a></td><td rowspan="1">1584475218816</td><td rowspan="1">214</td></tr><tr class="passedeven"><td><a href="#m4">confirmOrder</a></td><td rowspan="1">1584475220648</td><td rowspan="1">1254</td></tr><tr class="passedeven"><td><a href="#m5">loginUser</a></td><td rowspan="1">1584475218403</td><td rowspan="1">411</td></tr><tr class="passedeven"><td><a href="#m6">putOrder</a></td><td rowspan="1">1584475219341</td><td rowspan="1">1305</td></tr><tr class="passedeven"><td><a href="#m7">searchForProduct</a></td><td rowspan="1">1584475219032</td><td rowspan="1">299</td></tr><tr class="passedeven"><td><a href="#m8">web_login</a></td><td rowspan="1">1584475211295</td><td rowspan="1">1884</td></tr><tr class="passedeven"><td><a href="#m9">web_user_amount</a></td><td rowspan="1">1584475213181</td><td rowspan="1">1933</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Demo Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_01_Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.demo.tests.TestCase_01</td><td><a href="#m0">checkTransactionActivities</a></td><td rowspan="1">1584544214242</td><td rowspan="1">226</td></tr><tr class="failedeven"><td><a href="#m1">web_user_transactions</a></td><td rowspan="1">1584544197661</td><td rowspan="1">10609</td></tr><tr><th colspan="4">TC_01_Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.demo.tests.TestCase_01</td><td><a href="#m2">checkUserInfo</a></td><td rowspan="1">1584544211132</td><td rowspan="1">226</td></tr><tr class="passedeven"><td><a href="#m3">confirmOrder</a></td><td rowspan="1">1584544212978</td><td rowspan="1">1261</td></tr><tr class="passedeven"><td><a href="#m4">loginUser</a></td><td rowspan="1">1584544210677</td><td rowspan="1">453</td></tr><tr class="passedeven"><td><a href="#m5">putOrder</a></td><td rowspan="1">1584544211645</td><td rowspan="1">1331</td></tr><tr class="passedeven"><td><a href="#m6">searchForProduct</a></td><td rowspan="1">1584544211360</td><td rowspan="1">276</td></tr><tr class="passedeven"><td><a href="#m7">web_login</a></td><td rowspan="1">1584544194122</td><td rowspan="1">1715</td></tr><tr class="passedeven"><td><a href="#m8">web_search_product</a></td><td rowspan="1">1584544208637</td><td rowspan="1">2039</td></tr><tr class="passedeven"><td><a href="#m9">web_user_amount</a></td><td rowspan="1">1584544195840</td><td rowspan="1">1820</td></tr></tbody>
 </table>
-<h2>TC_01_Chrome</h2><h3 id="m0">com.demo.tests.TestCase_01#web_search_product</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Telefonica] but found [Germany 30]
+<h2>TC_01_Chrome</h2><h3 id="m0">com.demo.tests.TestCase_01#checkTransactionActivities</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.checkTransactionActivities(java.lang.reflect.Method) throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.demo.scripts.ui.degiro.Search.checkSearchProduct(Search.java:63)
-	at com.demo.tests.TestCase_01.web_search_product(TestCase_01.java:49)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.demo.scripts.api.orders.history.TransactionHistory.getActivityTransactionsHistory(TransactionHistory.java:84)
+	at com.demo.tests.TestCase_01.checkTransactionActivities(TestCase_01.java:98)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -47,37 +45,10 @@
 	at org.testng.TestNG.privateMain(TestNG.java:1354)
 	at org.testng.TestNG.main(TestNG.java:1323)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.demo.tests.TestCase_01#web_user_transactions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;._36CbGFJLG6WzVjeXIpURvd[data-id=activityMenuItem]&quot;}
-  (Session info: chrome=80.0.3987.122)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;QAIT006&apos;, ip: &apos;172.18.4.214&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\PPopov\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59102}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.122, webStorageEnabled: true}
-Session ID: 3d6f51fe7c8c0e88e0117c26a7a778d5
-*** Element info: {Using=css selector, value=._36CbGFJLG6WzVjeXIpURvd[data-id=activityMenuItem]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at com.demo.scripts.ui.degiro.Transactions.checkUserTransactionsHistory(Transactions.java:49)
+<h3 id="m1">com.demo.tests.TestCase_01#web_user_transactions</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: a[href=#/transactions]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.demo.scripts.ui.degiro.Transactions.checkUserTransactionsHistory(Transactions.java:52)
 	at com.demo.tests.TestCase_01.web_user_transactions(TestCase_01.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -103,14 +74,49 @@ Session ID: 3d6f51fe7c8c0e88e0117c26a7a778d5
 	at org.testng.TestNG.run(TestNG.java:1017)
 	at org.testng.TestNG.privateMain(TestNG.java:1354)
 	at org.testng.TestNG.main(TestNG.java:1323)
+Caused by: org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=80.0.3987.132)
+  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;QAIT006&apos;, ip: &apos;172.18.4.214&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\PPopov\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59777}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.132, webStorageEnabled: true}
+Session ID: cea109fa5b9f142f9e97e282196b554f
+*** Element info: {Using=css selector, value=a[href=#/transactions]}
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.demo.tests.TestCase_01#checkTransactionActivities</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.checkTransactionActivities(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.demo.tests.TestCase_01#checkUserInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.checkUserInfo(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.demo.tests.TestCase_01#confirmOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.confirmOrder(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.demo.tests.TestCase_01#loginUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.loginUser(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.demo.tests.TestCase_01#putOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.putOrder(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.demo.tests.TestCase_01#searchForProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.searchForProduct(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.demo.tests.TestCase_01#web_login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.demo.tests.TestCase_01#checkUserInfo</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.checkUserInfo(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.demo.tests.TestCase_01#confirmOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.confirmOrder(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.demo.tests.TestCase_01#loginUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.loginUser(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.demo.tests.TestCase_01#putOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.putOrder(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.demo.tests.TestCase_01#searchForProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void com.demo.tests.TestCase_01.searchForProduct(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.demo.tests.TestCase_01#web_login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.demo.tests.TestCase_01#web_search_product</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m9">com.demo.tests.TestCase_01#web_user_amount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -11,6 +11,19 @@ import static com.demo.config.ReporterConfig.*;
 public class AlertHandling extends BasicTestConfig {
 
 
+    public static void checkForAlert() {
+        try {
+            Alert alert = driver.switchTo().alert();
+            String alertMessage = driver.switchTo().alert().getText();
+            test.warning("<b> Alert message <u>" + alertMessage + "</u> detected");
+        } catch (Exception e) {
+            e.getMessage();
+        }
+    }
+
+
+
+
     public static void acceptAlert() {
         // Accept alert
         try {

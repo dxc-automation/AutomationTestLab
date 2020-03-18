@@ -18,8 +18,7 @@
 
     <!-- browserConfig name - displayed at top-nav -->
 
-    <!--<reportName> <![CDATA[ <img src='../src/main/resources/logo.png' />  ]]></reportName> -->
-    <reportName>Automation Test Report</reportName>
+    <reportName> <![CDATA[ <img src='../src/main/resources/logo.png' />  ]]> </reportName>
 
     <!-- location of charts in the scripts view -->
     <!-- top, bottom -->

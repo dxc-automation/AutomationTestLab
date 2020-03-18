@@ -60,6 +60,15 @@ public class Search extends BasicTestConfig {
 
         wait.until(ExpectedConditions.visibilityOf(general.place_order_search_result1));
         String searchResult = general.place_order_search_result1.getText();
-        Assert.assertEquals(searchResult, searchProduct);
+
+        boolean checkResults = searchResult.contains(searchProduct);
+        if (checkResults != true) {
+            test.pass("<pre>Found search result from place order side panel that contains <b><u>" + searchProduct + "</b></u>");
+        } else  {
+            test.fail("<pre><b> No search result from place order side panel that contains <u>" + searchProduct + "</b></u>");
+        }
+
+        general.place_order_close_btn.click();
+
     }
 }

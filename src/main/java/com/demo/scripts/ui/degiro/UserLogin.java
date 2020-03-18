@@ -42,7 +42,7 @@ public class UserLogin extends BasicTestConfig {
         String pageTitle = driver.getTitle();
         boolean title = pageTitle.contains("DEGIRO");
         Assert.assertTrue(title);
-        test.pass("<b>[STEP 1]</b> User Login page was opened successfully");
+        test.pass("<pre><b>[STEP 1]</b> User Login page was opened successfully</pre>");
 
         Thread.sleep(300);
         elementScreenshot(loginPage.login_form, "LoginForm_Actual");
@@ -52,8 +52,8 @@ public class UserLogin extends BasicTestConfig {
         loginPage.login_user_input.sendKeys(USER);
         loginPage.login_pass_input.sendKeys(PASS);
         loginPage.login_submit_btn.click();
-        test.pass("<b>[STEP 2]</b> Account login successfully");
-        test.info(  "URL: <i>"      + url +  "</i><br>" +
+        test.pass("<pre><b>[STEP 2]</b> Account login successfully");
+        test.info(  "<pre>URL: <i>"      + url +  "</i><br>" +
                     "Username: <i>" + USER + "</i><br>" +
                     "Password: <i>" + PASS + "</i>");
     }

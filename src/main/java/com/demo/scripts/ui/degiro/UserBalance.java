@@ -40,11 +40,11 @@ public class UserBalance extends BasicTestConfig {
         wait.until(ExpectedConditions.visibilityOf(general.account_content_available_to_spend));
         accountAvailableBalance = general.account_content_available_to_spend.getText();
         String total            = general.account_content_total.getText();
-        test.info("Account available balance for trading is " + accountAvailableBalance.substring(1));
-        test.info("Account total balance is " + total.substring(1));
+        test.info("<pre> Account available balance for trading is " + accountAvailableBalance.substring(1));
+        test.info("<pre>Account total balance is " + total.substring(1));
 
         elementScreenshot(general.account_content_form, "Account_Header_Form");
-        test.pass("<b>ACCOUNT SUMMARY</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Account_Header_Form.png").build());
+        test.pass("<pre><b>ACCOUNT SUMMARY</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Account_Header_Form.png").build());
 
     }
 }

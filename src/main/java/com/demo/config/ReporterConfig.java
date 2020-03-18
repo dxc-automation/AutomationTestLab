@@ -7,6 +7,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import static com.demo.properties.FilePaths.*;
+import static com.demo.properties.TestData.*;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -45,6 +46,9 @@ public class ReporterConfig {
         extent.setSystemInfo("OS",         osName);
         extent.setSystemInfo("OS Version", osVersion);
         extent.setSystemInfo("OS Arch",    osArch);
+        extent.setSystemInfo("",    "");
+        extent.setSystemInfo("Environment",    "https://" + env);
+
         return extent;
     }
 

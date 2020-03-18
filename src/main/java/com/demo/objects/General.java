@@ -34,6 +34,9 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "span[data-name=productName]")
     public WebElement place_order_search_result1;
 
+    @FindBy(how = How.CSS, using = "button[data-name=actionButton]")
+    public WebElement place_order_close_btn;
+
 
 
 
@@ -42,7 +45,7 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "._36CbGFJLG6WzVjeXIpURvd[data-id=marketsMenuItem]")
     public WebElement side_navigation_market_btn;
 
-    @FindBy(how = How.CSS, using = "._36CbGFJLG6WzVjeXIpURvd[data-id=activityMenuItem]")
+    @FindBy(how = How.CSS, using = "[data-id=activityMenuItem]")
     public WebElement side_navigation_activity_btn;
 
 
