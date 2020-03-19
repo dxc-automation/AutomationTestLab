@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [Demo Test Suite]" guice-stage="DEVELOPMENT" verbose="10">
+  <listeners>
+    <listener class-name="com.demo.config.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="TC_01_Chrome(failed)" verbose="10">
+    <parameter name="environment" value="internal"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.demo.tests.TestCase_01">
+        <methods>
+          <include name="checkUserInfo" invocation-numbers="0"/>
+          <include name="web_user_amount"/>
+          <include name="web_search_product"/>
+          <include name="putOrder" invocation-numbers="0"/>
+          <include name="setEnvironment"/>
+          <include name="searchForProduct" invocation-numbers="0"/>
+          <include name="clearXmlFiles"/>
+          <include name="generateReport"/>
+          <include name="web_login"/>
+          <include name="browserConfig"/>
+          <include name="cleanReportData"/>
+          <include name="flushReportData"/>
+          <include name="confirmOrder" invocation-numbers="0"/>
+          <include name="checkTransactionActivities" invocation-numbers="0"/>
+          <include name="loginUser" invocation-numbers="0"/>
+          <include name="web_user_transactions"/>
+        </methods>
+      </class> <!-- com.demo.tests.TestCase_01 -->
+    </classes>
+  </test> <!-- TC_01_Chrome(failed) -->
+</suite> <!-- Failed suite [Demo Test Suite] -->

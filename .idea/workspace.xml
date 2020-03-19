@@ -4,96 +4,14 @@
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/win/run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/bin/win/run.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/checkTransactionActivities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/checkUserInfo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/confirmOrder.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/loginUser.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/loginUser.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/putOrder.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/searchForProduct.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/LoginForm_Actual.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/LoginForm_Actual.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Screenshots/Buffer/null.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Buffer/null.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Screenshots/Failed/TestCase_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/loginUser.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/share_products_list.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Failed/TestCase_02.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/video/TestVideo-2020-03-18 17.09.54.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/video/TestVideo-2020-03-18 17.09.55.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/ReporterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/ReporterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/objects/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/MarketsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/objects/MarketsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/INT_SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/INT_SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/TEST_SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/TEST_SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/VWD_SearchProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/VWD_SearchProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Orders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/PopularProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/PopularProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchFromPlaceOrderSidePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/UserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/OpenHomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/PageObjects.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchNearestRestaurant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/takeaway/SearchRestaurant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/video/TestVideo-2020-03-19 03.33.15.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/archive-tmp/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/BasicTestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/BasicTestConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ReporterConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/ReporterConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/objects/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/objects/General.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/Environments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/Environments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/TestData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/account/ClientInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/account/ClientInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/account/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/account/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/orders/place/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/orders/place/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/orders/place/OrderConfirmation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/orders/place/OrderConfirmation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/INT_SearchProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/TEST_SearchProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/products/VWD_SearchProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/settings/MarketPageProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/settings/MarketPageProducts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/Orders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/PopularProducts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/Search.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/Transactions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/UserBalance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/degiro/UserLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/takeaway/OpenHomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/takeaway/PageObjects.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/takeaway/SearchNearestRestaurant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/takeaway/SearchRestaurant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/AlertHandling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/AlertHandling.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ElementScreenshot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ElementScreenshot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/GetAllPageLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/GetAllPageLinks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/HandleTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/HandleTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ImageCompare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ImageCompare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/WebDriverUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/WebDriverUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpClientUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpClientUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpURLConnectionConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpURLConnectionConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Chrome.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Chrome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Chrome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Chrome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/Demo Test Suite/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_01.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/tests.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -112,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TestCase_01.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestCase_01.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" column="51" selection-start-line="25" selection-end-line="26" />
+            <state relative-caret-position="68">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -124,7 +42,7 @@
       <file leaf-file-name="TestCase_02.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="550">
               <caret line="36" column="35" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -145,7 +63,7 @@
       <file leaf-file-name="TestCase_01.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
+            <state relative-caret-position="1450">
               <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -154,19 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="INT_SearchProduct.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/INT_SearchProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="48" column="37" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TEST_SearchProduct.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/TEST_SearchProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="850">
               <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
             </state>
           </provider>
@@ -175,17 +84,29 @@
       <file leaf-file-name="TestData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
+            <state relative-caret-position="400">
               <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PAGE_ProductsList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PAGE_ProductsList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/PAGE_ProductsList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transactions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,7 +114,7 @@
       <file leaf-file-name="SharesFilters.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/share_page/SharesFilters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
+            <state relative-caret-position="650">
               <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -205,7 +126,7 @@
       <file leaf-file-name="Environments.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="2375">
               <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
             </state>
           </provider>
@@ -263,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/extent-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/AlertHandling.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Transactions.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserBalance.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/UserLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/degiro/Search.java" />
@@ -293,6 +213,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_02.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_02.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/PAGE_ProductsList.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" />
       </list>
     </option>
   </component>
@@ -381,6 +302,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -450,17 +373,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -502,8 +414,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -880,7 +790,8 @@
       <workItem from="1583967254166" duration="2673000" />
       <workItem from="1584401800467" duration="597000" />
       <workItem from="1584445521385" duration="3380000" />
-      <workItem from="1584553547853" duration="18890000" />
+      <workItem from="1584553547853" duration="19489000" />
+      <workItem from="1584617911769" duration="1827000" />
     </task>
     <servers />
   </component>
@@ -896,7 +807,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="354655000" />
+    <option name="totallyTimeSpent" value="357081000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -924,9 +835,8 @@
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.2567132" />
+      <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.2604726" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32588235" />
       <window_info id="Structure" order="0" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -939,6 +849,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32960895" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32588235" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Maven" order="3" />
@@ -950,7 +861,6 @@
     <layout-to-restore>
       <window_info anchor="right" id="Maven" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info id="Image Layers" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
@@ -958,30 +868,31 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="5" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info id="Capture Tool" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="SOQL Query" order="7" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="JSON Utils" order="10" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50064266" side_tool="true" weight="0.39647058" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32666665" />
       <window_info anchor="bottom" id="Anonymous Apex" order="9" />
-      <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="bottom" id="Log Analyzer" order="10" weight="0.66444445" />
       <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.7472067" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3282353" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32921588" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3286052" />
       <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.16917293" />
-      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
-      <window_info anchor="bottom" id="SOQL Query" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Structure" order="0" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32666665" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.3888889" />
     </layout-to-restore>
   </component>
@@ -1137,9 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,13 +1124,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/DropdownHandling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/DropdownHandling.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Orders.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1244,16 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/VWD_SearchProduct.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1263,21 +1155,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/INT_SearchProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="875">
           <caret line="48" column="37" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/TEST_SearchProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="850">
           <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
+        <state relative-caret-position="1450">
           <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1287,21 +1179,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="2375">
           <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="400">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/share_page/SharesFilters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
+        <state relative-caret-position="650">
           <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1311,18 +1203,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="550">
           <caret line="36" column="35" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="51" selection-start-line="25" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -1336,7 +1221,24 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/search/PAGE_ProductsList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
         </state>
       </provider>
     </entry>
