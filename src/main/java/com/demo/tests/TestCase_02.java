@@ -1,15 +1,11 @@
 package com.demo.tests;
 
 import com.demo.config.BasicTestConfig;
-import com.demo.objects.SharesPage;
 import com.demo.utilities.user_interface.VideoRecord;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-import static com.demo.properties.Environments.HOST;
 import static com.demo.scripts.api.search.PAGE_ProductsList.*;
 import static com.demo.properties.TestData.fileName;
 import static com.demo.scripts.api.account.Login.secureLogin;

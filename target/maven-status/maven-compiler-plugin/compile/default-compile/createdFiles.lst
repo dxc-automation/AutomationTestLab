@@ -1,9 +1,11 @@
 com\demo\scripts\api\settings\RealTimeQuotes.class
+com\demo\objects\activity\TransactionsPage.class
 com\demo\utilities\user_interface\WebDriverUtils.class
 com\demo\objects\LoginPage.class
 com\demo\scripts\ui\search\SearchByNameIsinOrSymbol.class
 com\demo\utilities\user_interface\Assertions.class
 com\demo\tests\TestCase_02.class
+com\demo\objects\activity\ActivityBasic.class
 com\demo\utilities\web_services\HttpClientUtils.class
 com\demo\utilities\user_interface\ImageCompare.class
 com\demo\utilities\user_interface\SpecializedScreenRecorder.class
@@ -17,11 +19,8 @@ com\demo\scripts\api\orders\place\Order.class
 com\demo\utilities\user_interface\HandleTable.class
 com\demo\config\ReporterConfig.class
 com\demo\scripts\ui\Transactions.class
-com\demo\scripts\api\search\TEST_SearchProduct.class
-com\demo\objects\ActivityPage.class
 com\demo\properties\Environments.class
-com\demo\objects\SharesPage.class
-com\demo\objects\LeveragesPage.class
+com\demo\scripts\api\search\ProductList.class
 com\demo\scripts\api\orders\history\TransactionHistory.class
 com\demo\scripts\api\search\PAGE_ProductsList.class
 com\demo\utilities\user_interface\Assertions$1.class
@@ -34,7 +33,7 @@ com\demo\utilities\user_interface\PageScroll.class
 com\demo\scripts\api\account\ClientInfo.class
 com\demo\scripts\api\search\VWD_SearchProduct.class
 com\demo\scripts\api\account\Login.class
-com\demo\scripts\api\search\INT_SearchProduct.class
+com\demo\objects\activity\LeveragesPage.class
 com\demo\scripts\ui\UserLogin.class
 com\demo\config\TestNGListener.class
 com\demo\scripts\ui\PopularProducts.class
@@ -43,9 +42,11 @@ com\demo\objects\General.class
 com\demo\scripts\api\orders\history\OrdersHistory.class
 com\demo\scripts\api\orders\place\OrderConfirmation.class
 com\demo\scripts\api\settings\MarketPageProducts.class
+com\demo\scripts\api\search\AllProducts.class
 com\demo\config\BasicTestConfig.class
 com\demo\config\ConsoleRunner.class
 com\demo\properties\FilePaths.class
 com\demo\scripts\ui\UserBalance.class
 com\demo\utilities\user_interface\ElementScreenshot.class
+com\demo\objects\activity\SharesPage.class
 com\demo\properties\TestData.class

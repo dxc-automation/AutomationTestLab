@@ -1,14 +1,14 @@
 package com.demo.properties;
 
 import com.demo.config.BasicTestConfig;
-import org.testng.annotations.BeforeSuite;
+
 import static com.demo.utilities.FileUtility.getDate;
 import static com.demo.properties.TestData.*;
 
 
 
 public class Environments extends BasicTestConfig {
-    private static String PRODUCT_SEARCH;
+    private static String PRODUCT_LIST;
     private static String CLIENT_INFO;
     private static String ORDER;
     private static String ORDER_CONFIRMATION;
@@ -98,13 +98,13 @@ public class Environments extends BasicTestConfig {
 
     public  static String setProductSearchPath() {
         if (env.equalsIgnoreCase("internal")) {
-            PRODUCT_SEARCH = "/dgproductsearch/secure/v5/search/lookup";
+            PRODUCT_LIST = "/dgproductsearch/secure/v5/search/lookup";
         } else if (env.equalsIgnoreCase("web-trader")) {
-            PRODUCT_SEARCH = "/productsnew/secure/v5/";
+            PRODUCT_LIST = "/productsnew/secure/v5/";
         } else if (env.equalsIgnoreCase("production")) {
-            PRODUCT_SEARCH = "/dgproductsearch/secure/v5/search/lookup";
+            PRODUCT_LIST = "/dgproductsearch/secure/v5/search/lookup";
         }
-        return PRODUCT_SEARCH;
+        return PRODUCT_LIST;
     }
 }
 

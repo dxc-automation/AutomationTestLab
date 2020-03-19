@@ -1,7 +1,7 @@
 package com.demo.scripts.ui.share_page;
 
 import com.demo.config.BasicTestConfig;
-import com.demo.objects.SharesPage;
+import com.demo.objects.activity.SharesPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;

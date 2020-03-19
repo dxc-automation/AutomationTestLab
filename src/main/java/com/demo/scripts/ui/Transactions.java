@@ -2,10 +2,9 @@ package com.demo.scripts.ui;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
-import com.demo.objects.ActivityPage;
+import com.demo.objects.activity.ActivityBasic;
 import com.demo.objects.General;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import com.demo.objects.activity.TransactionsPage;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,18 +14,17 @@ import static com.demo.config.ReporterConfig.test;
 import static com.demo.properties.Environments.*;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
 import static com.demo.utilities.user_interface.ElementScreenshot.elementScreenshot;
-import static com.demo.utilities.user_interface.AlertHandling.*;
 
 
 public class Transactions extends BasicTestConfig {
 
-    private static ActivityPage activityPage = PageFactory.initElements(driver, ActivityPage.class);
+    private static TransactionsPage transactionsPage = PageFactory.initElements(driver, TransactionsPage.class);
     private static General general           = PageFactory.initElements(driver, General.class);
 
 
 
     private static void report() throws Exception {
-        String testName        = "<b>[WEB] User Transactions History</b>";
+        String testName        = "<b>Transactions History</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the user orders history is displayed properly."              +
                                  "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
@@ -43,32 +41,28 @@ public class Transactions extends BasicTestConfig {
         report();
         wait = new WebDriverWait(driver, 10);
 
-        String url = "https://" + HOST + TRANSACTIONS_PAGE;
-        driver.get(url);
-        checkForAlert();
-        wait.until(ExpectedConditions.visibilityOf(general.side_navigation_activity_btn));
-        general.side_navigation_activity_btn.click();
+        driver.get("https://" + HOST + TRANSACTIONS_PAGE);
 
-        wait.until(ExpectedConditions.visibilityOf(activityPage.activity_tab_menu_transactions_btn));
-        activityPage.activity_tab_menu_transactions_btn.click();
+        wait.until(ExpectedConditions.visibilityOf(transactionsPage.history_table));
+        elementScreenshot(transactionsPage.history_table, "Transaction_Table");
+        test.pass("<b>TRANSACTION TABLE</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Transaction_Table" + ".png").build());
 
-        wait.until(ExpectedConditions.visibilityOf(activityPage.transactions_history_table_details_row1));
-        activityPage.transactions_history_table_details_row1.click();
+        transactionsPage.history_table_details_row1_info_btn.click();
+        wait.until(ExpectedConditions.visibilityOf(general.side_information_panel));
+        elementScreenshot(general.side_information_panel, "Transaction_Details");
 
-        wait.until(ExpectedConditions.visibilityOf(activityPage.transactions_details_side_panel));
-        elementScreenshot(activityPage.transactions_details_side_panel, "Transaction_Details");
-        test.pass("<b>TRANSACTION DETAILS</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Transaction_Details" + ".png").build());
+        String transactionId = transactionsPage.info_panel_details_id.getText();
 
-        String date          = activityPage.transaction_details_date.getText();
-        String action        = activityPage.transaction_details_action.getText();
-        String qty           = activityPage.transaction_details_qty.getText();
-        String price         = activityPage.transaction_details_price.getText();
-        String value         = activityPage.transaction_details_value.getText();
-        String fee           = activityPage.transaction_details_fee.getText();
-        String total         = activityPage.transaction_details_total.getText();
-        String localValue    = activityPage.transaction_details_local_value.getText();
-        String exchangeRate  = activityPage.transaction_details_exchange_rate.getText();
-        String transactionId = activityPage.transactions_details_id.getText();
+        try {
+            String date = transactionsPage.transaction_details_date.getText();
+            String action = transactionsPage.transaction_details_action.getText();
+            String qty = transactionsPage.transaction_details_qty.getText();
+            String price = transactionsPage.transaction_details_price.getText();
+            String value = transactionsPage.transaction_details_value.getText();
+            String fee = transactionsPage.transaction_details_fee.getText();
+            String total = transactionsPage.transaction_details_total.getText();
+            String localValue = transactionsPage.transaction_details_local_value.getText();
+            String exchangeRate = transactionsPage.transaction_details_exchange_rate.getText();
 
 
         test.pass("<pre>"
@@ -98,5 +92,10 @@ public class Transactions extends BasicTestConfig {
                 + "<br>"
                 + "<br>"
                 + "</pre>");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            test.warning(e);
+        }
     }
 }

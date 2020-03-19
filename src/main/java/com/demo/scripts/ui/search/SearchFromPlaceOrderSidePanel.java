@@ -20,7 +20,7 @@ public class SearchFromPlaceOrderSidePanel extends BasicTestConfig {
 
 
     private static void report() throws Exception {
-        String testName        = "<b>[WEB] SearchFromPlaceOrderSidePanel Product</b>";
+        String testName        = "<b>Search From Place Order Side Panel Product</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the user orders history is displayed properly."              +
                                  "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +

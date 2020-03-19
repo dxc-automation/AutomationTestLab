@@ -113,7 +113,7 @@ public class Order {
                     + "</pre>");
         } catch (Exception e) {
             System.out.println("Get values from the response body has failed");
-            test.warning(e.getMessage());
+            test.warning(e);
         }
 
         Assert.assertTrue(responseCode > 199 && responseCode < 300);

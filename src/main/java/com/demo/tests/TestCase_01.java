@@ -8,10 +8,9 @@ import java.lang.reflect.Method;
 
 import static com.demo.properties.TestData.*;
 import static com.demo.scripts.api.account.Login.secureLogin;
+import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserBalance.*;
 import static com.demo.scripts.api.account.ClientInfo.getClientInfo;
-import static com.demo.scripts.api.search.TEST_SearchProduct.searchStocks;
-import static com.demo.scripts.api.search.INT_SearchProduct.searchProduct;
 import static com.demo.scripts.api.orders.place.Order.*;
 import static com.demo.scripts.api.orders.place.OrderConfirmation.*;
 import static com.demo.scripts.api.orders.history.TransactionHistory.*;
@@ -51,7 +50,7 @@ public class TestCase_01 extends BasicTestConfig {
 
 
     @Test(description = "API")
-    public void loginUser(Method method) throws Exception {
+    public void post_login(Method method) throws Exception {
         fileName = method.getName() + ".json";
         secureLogin(fileName);
     }
@@ -59,41 +58,36 @@ public class TestCase_01 extends BasicTestConfig {
 
 
     @Test(description = "API")
-    public void checkUserInfo(Method method) throws Exception {
+    public void get_user_info(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getClientInfo(fileName);
     }
 
 
     @Test(description = "API")
-    public void searchForProduct(Method method) throws Exception {
+    public void get_product_list(Method method) throws Exception {
         fileName = method.getName() + ".json";
-
-        if (env.equalsIgnoreCase("web-trader")) {
-            searchStocks(fileName, String.valueOf(ETFS), 100, false);
-
-        } else if (env.equalsIgnoreCase("internal")) {
-            searchProduct(fileName, ETFS, 0, 300, "");
+        getAllProductsFromType(fileName, "etfs", false);
         }
-    }
+
 
 
     @Test(description = "API")
-    public void putOrder(Method method) throws Exception {
+    public void post_place_order(Method method) throws Exception {
         fileName = method.getName() + ".json";
         placeOrder(fileName, 1, 0.1, "buy");
     }
 
 
     @Test(description = "API")
-    public void confirmOrder(Method method) throws Exception {
+    public void post_confirm_order(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getOrderConfirmation(fileName, 1, 0.1, "buy");
     }
 
 
     @Test(description = "API")
-    public void checkTransactionActivities(Method method) throws Exception {
+    public void get_transaction_history(Method method) throws Exception {
         fileName = method.getName() + ".json";
         getActivityTransactionsHistory(fileName, "17/02/2020");
     }

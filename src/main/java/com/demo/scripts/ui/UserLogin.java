@@ -20,7 +20,7 @@ public class UserLogin extends BasicTestConfig {
 
 
     private static void report() throws Exception {
-        String testName        = "<b>[WEB] Account Login</b>";
+        String testName        = "<b>Account Login</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected."              +
                                  "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +

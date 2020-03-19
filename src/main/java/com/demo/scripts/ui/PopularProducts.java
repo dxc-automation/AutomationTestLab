@@ -22,7 +22,7 @@ public class PopularProducts extends BasicTestConfig {
     private static General general = PageFactory.initElements(driver, General.class);
 
     private static void report() throws Exception {
-        String testName = "<b>[WEB] Popular Products</b>";
+        String testName = "<b>Popular Products</b>";
         String testCategory = "Frontend";
         String testDescription = "The purpose of this test is to verify that the popular search element is displayed properly." +
                 "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>" +

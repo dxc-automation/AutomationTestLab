@@ -18,6 +18,11 @@ public class General extends BasicTestConfig {
 
 
 
+    @FindBy(how = How.CSS, using = "section[data-name=sideInformationPanel]")
+    public WebElement side_information_panel;
+
+
+
     //  Place Order Side Panel
     @FindBy(how = How.CSS, using = "button[data-name=commonOrderButton]")
     public WebElement palace_order_btn;

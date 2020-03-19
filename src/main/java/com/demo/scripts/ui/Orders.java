@@ -2,7 +2,7 @@ package com.demo.scripts.ui;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
-import com.demo.objects.ActivityPage;
+import com.demo.objects.activity.ActivityBasic;
 import com.demo.objects.General;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,7 +19,7 @@ import static com.demo.utilities.user_interface.HandleTable.*;
 public class Orders extends BasicTestConfig {
 
     private static General           general = PageFactory.initElements(driver, General.class);
-    private static ActivityPage activityPage = PageFactory.initElements(driver, ActivityPage.class);
+    private static ActivityBasic activityPage = PageFactory.initElements(driver, ActivityBasic.class);
 
 
     private static void report() throws Exception {

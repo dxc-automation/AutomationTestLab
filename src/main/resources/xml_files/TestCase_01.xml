@@ -14,7 +14,7 @@
 
     <test name="TC_01_Chrome">
         <parameter name="browser"     value="chrome"/>
-        <parameter name="environment" value="internal"/>
+        <parameter name="environment" value="web-trader"/>
         <classes>
             <class name="com.demo.tests.TestCase_01">
                 <methods>
@@ -22,12 +22,12 @@
                     <include name="web_user_amount"/>
                     <include name="web_user_transactions"/>
                     <include name="web_search_product"/>
-                    <include name="loginUser"/>
-                    <include name="checkUserInfo"/>
-                    <include name="searchForProduct"/>
-                    <include name="putOrder"/>
-                    <include name="confirmOrder"/>
-                    <include name="checkTransactionActivities"/>
+                    <include name="post_login"/>
+                    <include name="get_user_info"/>
+                    <include name="get_product_list"/>
+                    <include name="post_place_order"/>
+                    <include name="post_confirm_order"/>
+                    <include name="get_transaction_history"/>
                 </methods>
             </class>
         </classes>
