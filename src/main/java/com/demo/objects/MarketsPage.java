@@ -15,39 +15,39 @@ public class MarketsPage extends BasicTestConfig {
     final WebDriver driver;
 
 
-    // Popular products form
+    // Popular search form
     @FindBy(how = How.CSS, using = "div[data-name=marketPopularProducts]")
     public WebElement markets_popular_products_form;
 
-    // Popular products form row 1
+    // Popular search form row 1
     @FindBy(how = How.CSS, using = "li._2aj70jg6s-8B-QyO54F7fH _2rS9kEdfAZN9j0cIXMi-G3")
     public WebElement markets_popular_products_form_row1;
 
-    // Popular products form row 2
+    // Popular search form row 2
     @FindBy(how = How.CSS, using = "span[data-id=331761]")
     public WebElement markets_popular_products_form_row2;
 
-    // Popular products form row 3
+    // Popular search form row 3
     @FindBy(how = How.CSS, using = "span[data-id=331829]")
     public WebElement markets_popular_products_form_row3;
 
-    // Popular products form row 4
+    // Popular search form row 4
     @FindBy(how = How.CSS, using = "span[data-id=92171]")
     public WebElement markets_popular_products_form_row4;
 
-    // Popular products form row 5
+    // Popular search form row 5
     @FindBy(how = How.CSS, using = "span[data-id=8267043]")
     public WebElement markets_popular_products_form_row5;
 
-    // Popular products form row 6
+    // Popular search form row 6
     @FindBy(how = How.CSS, using = "span[data-id=64879]")
     public WebElement markets_popular_products_form_row6;
 
-    // Popular products form row 7
+    // Popular search form row 7
     @FindBy(how = How.CSS, using = "span[data-id=331720]")
     public WebElement markets_popular_products_form_row7;
 
-    // Popular products form row 8
+    // Popular search form row 8
     @FindBy(how = How.CSS, using = "span[data-id=5029637]")
     public WebElement markets_popular_products_form_row8;
 

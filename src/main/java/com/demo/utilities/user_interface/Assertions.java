@@ -20,7 +20,7 @@ public class Assertions extends BasicTestConfig {
         }
     }
 
-    public static boolean isLoaded() throws Exception {
+    public static boolean isLoaded() {
         wait.until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver driver) {
                 return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
@@ -29,9 +29,9 @@ public class Assertions extends BasicTestConfig {
         return false;
     }
 
-    public static void checkPageTitle(String expectedPageTitle) {
+    public static boolean checkPageTitle(String expectedPageTitle) {
         String pageTitle   = driver.getTitle();
         boolean checkTitle = pageTitle.contains(expectedPageTitle);
-        Assert.assertTrue(checkTitle);
+        return checkTitle;
     }
 }

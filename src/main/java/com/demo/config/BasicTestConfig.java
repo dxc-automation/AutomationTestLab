@@ -116,16 +116,16 @@ public class BasicTestConfig {
     @Parameters({"environment"})
     @BeforeTest
     public void setEnvironment(String environment) {
-        TestData.env = environment;
-        if (TestData.env.equalsIgnoreCase("internal")) {
+        env = environment;
+        if (env.equalsIgnoreCase("internal")) {
             HOST = "internal.degiro.eu";
             USER = "dgtraderie";
             PASS = "Test_web2020";
-        } else if (TestData.env.equalsIgnoreCase("web-trader")) {
+        } else if (env.equalsIgnoreCase("web-trader")) {
             HOST = "test-webtrader.internal.degiro.eu";
             USER = "web2879nl";
             PASS = "Test600";
-        } else if (TestData.env.equalsIgnoreCase("production")) {
+        } else if (env.equalsIgnoreCase("production")) {
             HOST = "trader.degiro.nl";
             USER = "dgtraderie";
             PASS = "Test_web2020";

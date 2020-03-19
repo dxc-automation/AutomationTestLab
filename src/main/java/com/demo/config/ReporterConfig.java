@@ -6,6 +6,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import static com.demo.properties.Environments.HOST;
 import static com.demo.properties.FilePaths.*;
 import static com.demo.properties.TestData.*;
 
@@ -46,9 +47,14 @@ public class ReporterConfig {
         extent.setSystemInfo("OS",         osName);
         extent.setSystemInfo("OS Version", osVersion);
         extent.setSystemInfo("OS Arch",    osArch);
-        extent.setSystemInfo("",    "");
-        extent.setSystemInfo("Environment",    "https://" + env);
 
+        if (env.equalsIgnoreCase("internal")) {
+            extent.setSystemInfo("Environment",    "https://internal.degiro.eu");
+        } else if (env.equalsIgnoreCase("web-trader")) {
+            extent.setSystemInfo("Environment",    "https://test-webtrader.internal.degiro.eu");
+        } else if (env.equalsIgnoreCase("production")) {
+            extent.setSystemInfo("Environment",    "https://trader.degiro.nl");
+        }
         return extent;
     }
 

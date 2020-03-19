@@ -26,6 +26,8 @@ public class Environments extends BasicTestConfig {
     public final static String ORDERS_OUTSTANDING_PAGE = "/trader4/#/orders/open";
     public final static String ORDERS_HISTORY_PAGE     = "/trader4/#/orders/history";
     public final static String ACCOUNT_OVERVIEW_PAGE   = "/trader4/#/account-overview";
+    public final static String PRODUCTS_PAGE           = "/trader4/#/search?productType=";
+    public final static String SHARES_PAGE             = "/trader4/#/search?productType=1&stockListType=index&stockList=114005&country=963&sortColumns=name&sortTypes=asc";
 
 
     //***** LOGIN
@@ -39,7 +41,6 @@ public class Environments extends BasicTestConfig {
     public final static String INT_TEST_ORDER_HISTORY  = "/reporting/secure/v4/order-history";
     public final static String INT_TEST_REAL_QUOTES    = "/paservice/secure/settings/vwdModules";
     public final static String INT_TEST_CURRENCY       = "/hchart/v1/deGiro/data.js";
-    public final static String TEST_SEARCH_PRODUCTS    = "/productsnew/secure/v5/";
 
     public final static String WEB_LOGIN               = "/login/ie#/login";
     public final static String WEB_MARKETS             = "/trader4/#/markets";
@@ -97,11 +98,11 @@ public class Environments extends BasicTestConfig {
 
     public  static String setProductSearchPath() {
         if (env.equalsIgnoreCase("internal")) {
-            PRODUCT_SEARCH = "/dgproductsearch/secure/v5/products/lookup";
+            PRODUCT_SEARCH = "/dgproductsearch/secure/v5/search/lookup";
         } else if (env.equalsIgnoreCase("web-trader")) {
             PRODUCT_SEARCH = "/productsnew/secure/v5/";
         } else if (env.equalsIgnoreCase("production")) {
-            PRODUCT_SEARCH = "/dgproductsearch/secure/v5/products/lookup";
+            PRODUCT_SEARCH = "/dgproductsearch/secure/v5/search/lookup";
         }
         return PRODUCT_SEARCH;
     }

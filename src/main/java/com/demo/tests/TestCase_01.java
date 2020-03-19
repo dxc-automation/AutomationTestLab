@@ -8,16 +8,16 @@ import java.lang.reflect.Method;
 
 import static com.demo.properties.TestData.*;
 import static com.demo.scripts.api.account.Login.secureLogin;
-import static com.demo.scripts.ui.degiro.UserBalance.*;
+import static com.demo.scripts.ui.UserBalance.*;
 import static com.demo.scripts.api.account.ClientInfo.getClientInfo;
-import static com.demo.scripts.api.products.TEST_SearchProduct.searchStocks;
-import static com.demo.scripts.api.products.INT_SearchProduct.searchProduct;
+import static com.demo.scripts.api.search.TEST_SearchProduct.searchStocks;
+import static com.demo.scripts.api.search.INT_SearchProduct.searchProduct;
 import static com.demo.scripts.api.orders.place.Order.*;
 import static com.demo.scripts.api.orders.place.OrderConfirmation.*;
 import static com.demo.scripts.api.orders.history.TransactionHistory.*;
-import static com.demo.scripts.ui.degiro.UserLogin.secureLoginWeb;
-import static com.demo.scripts.ui.degiro.Search.*;
-import static com.demo.scripts.ui.degiro.Transactions.checkUserTransactionsHistory;
+import static com.demo.scripts.ui.UserLogin.secureLoginWeb;
+import static com.demo.scripts.ui.search.SearchFromPlaceOrderSidePanel.*;
+import static com.demo.scripts.ui.Transactions.checkUserTransactionsHistory;
 
 public class TestCase_01 extends BasicTestConfig {
     VideoRecord videoReord = new VideoRecord();
@@ -46,7 +46,7 @@ public class TestCase_01 extends BasicTestConfig {
 
     @Test(description = "WEB")
     public void web_search_product() throws Exception {
-        checkSearchProduct("Telefonica");
+        placeOrderSidePanelSearchProduct("Telefonica");
     }
 
 
@@ -70,10 +70,10 @@ public class TestCase_01 extends BasicTestConfig {
         fileName = method.getName() + ".json";
 
         if (env.equalsIgnoreCase("web-trader")) {
-            searchStocks(fileName, "etfs", 100, false);
+            searchStocks(fileName, String.valueOf(ETFS), 100, false);
 
         } else if (env.equalsIgnoreCase("internal")) {
-            searchProduct(fileName, TRACKERS, 0, 300, "");
+            searchProduct(fileName, ETFS, 0, 300, "");
         }
     }
 

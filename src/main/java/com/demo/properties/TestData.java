@@ -5,6 +5,8 @@ public class TestData {
 
     public static String USER;
     public static String PASS;
+    public static String PRODUCT;
+
 
 
     //  * * * *    P R O D U C T   T Y P E   ID
@@ -12,7 +14,7 @@ public class TestData {
     public final static int OPTIONS   = 18;
     public final static int FUTURES   = 7;
     public final static int STOCKS    = 1;
-    public final static int TRACKERS  = 131;
+    public final static int ETFS      = 131;
     public final static int LEVERAGED = 14;
     public final static int WARRANTS  = 8;
     public final static int CURRENCY  = 3;
