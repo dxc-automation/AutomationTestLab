@@ -4253,6 +4253,45 @@
       "id": 109239907,
       "totalInBaseCurrency": -0.1,
       "totalPlusFeeInBaseCurrency": -2.12
+    },
+    {
+      "date": "2020-03-20T19:46:27+01:00",
+      "buysell": "B",
+      "transfered": false,
+      "total": -0.1,
+      "feeInBaseCurrency": -2.02,
+      "quantity": 1,
+      "productId": 1672885,
+      "price": 0.1,
+      "id": 109239908,
+      "totalInBaseCurrency": -0.1,
+      "totalPlusFeeInBaseCurrency": -2.12
+    },
+    {
+      "date": "2020-03-20T19:51:33+01:00",
+      "buysell": "B",
+      "transfered": false,
+      "total": -0.1,
+      "feeInBaseCurrency": -2.02,
+      "quantity": 1,
+      "productId": 1672885,
+      "price": 0.1,
+      "id": 109239909,
+      "totalInBaseCurrency": -0.1,
+      "totalPlusFeeInBaseCurrency": -2.12
+    },
+    {
+      "date": "2020-03-20T19:59:30+01:00",
+      "buysell": "B",
+      "transfered": false,
+      "total": -0.1,
+      "feeInBaseCurrency": -2.02,
+      "quantity": 1,
+      "productId": 1672885,
+      "price": 0.1,
+      "id": 109239910,
+      "totalInBaseCurrency": -0.1,
+      "totalPlusFeeInBaseCurrency": -2.12
     }
   ]
 }

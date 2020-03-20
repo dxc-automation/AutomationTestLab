@@ -11,9 +11,9 @@ C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\FileUtility.jav
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\web_services\HttpClientConfig.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\tests\TestCase_02.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\objects\activity\LeveragesPage.java
-C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\search\AllProducts.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\WebDriverUtils.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\objects\activity\TransactionsPage.java
+C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\products\AllProducts.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\properties\TestData.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\settings\RealTimeQuotes.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\Transactions.java
@@ -46,6 +46,6 @@ C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\search\SearchB
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\PopularProducts.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\objects\MarketsPage.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\web_services\HttpClientUtils.java
-C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\search\ProductList.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\SpecializedScreenRecorder.java
+C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\products\ProductList.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\search\SearchForProduct.java

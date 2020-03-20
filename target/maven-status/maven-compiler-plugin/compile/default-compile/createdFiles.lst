@@ -2,6 +2,7 @@ com\demo\scripts\api\settings\RealTimeQuotes.class
 com\demo\objects\activity\TransactionsPage.class
 com\demo\utilities\user_interface\WebDriverUtils.class
 com\demo\objects\LoginPage.class
+com\demo\scripts\api\products\AllProducts.class
 com\demo\scripts\ui\search\SearchByNameIsinOrSymbol.class
 com\demo\utilities\user_interface\Assertions.class
 com\demo\tests\TestCase_02.class
@@ -20,7 +21,6 @@ com\demo\utilities\user_interface\HandleTable.class
 com\demo\config\ReporterConfig.class
 com\demo\scripts\ui\Transactions.class
 com\demo\properties\Environments.class
-com\demo\scripts\api\search\ProductList.class
 com\demo\scripts\api\orders\history\TransactionHistory.class
 com\demo\scripts\api\search\PAGE_ProductsList.class
 com\demo\utilities\user_interface\Assertions$1.class
@@ -42,7 +42,7 @@ com\demo\objects\General.class
 com\demo\scripts\api\orders\history\OrdersHistory.class
 com\demo\scripts\api\orders\place\OrderConfirmation.class
 com\demo\scripts\api\settings\MarketPageProducts.class
-com\demo\scripts\api\search\AllProducts.class
+com\demo\scripts\api\products\ProductList.class
 com\demo\config\BasicTestConfig.class
 com\demo\config\ConsoleRunner.class
 com\demo\properties\FilePaths.class
