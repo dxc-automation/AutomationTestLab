@@ -21,7 +21,7 @@ public class UserBalance extends BasicTestConfig {
 
 
     private static void report() throws Exception {
-        String testName        = "<b>[WEB] User Balance</b>";
+        String testName        = "<b>User Balance</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the user balance is displayed."  +
                                  "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
