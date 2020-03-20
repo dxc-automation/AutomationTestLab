@@ -109,7 +109,7 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${project.basedir}/src/main/resources/Amazon.xml</suiteXmlFile>
+                        <suiteXmlFile>${project.basedir}/src/main/resources/xml_files/TestCase_01.xml</suiteXmlFile>
                         <suiteXmlFile>${project.basedir}/src/main/resources/Demo.xml</suiteXmlFile>
                         <suiteXmlFile>${project.basedir}/src/main/resources/Degiro.xml</suiteXmlFile>
                         <suiteXmlFile>${project.basedir}/src/main/resources/News.xml</suiteXmlFile>
