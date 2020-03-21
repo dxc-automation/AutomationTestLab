@@ -59,7 +59,7 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "div.uXGVkHZqLKd_AC2KuwdPT")
     public WebElement account_content_form;
 
-    @FindBy(how = How.CSS, using = "span[data-id=totalPortfolio]")
+    @FindBy(how = How.CSS, using = "span[data-id=totalPortfolio][data-field=availableToSpend]")
     public WebElement account_content_available_to_spend;
 
     @FindBy(how = How.CSS, using = "span[data-id=totalPortfolio][data-field=total]")
