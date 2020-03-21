@@ -113,20 +113,20 @@ public class BasicTestConfig {
 
 
 
-    @Parameters({"environment"})
+    @Parameters("{environment}")
     @BeforeTest
     public void setEnvironment(String environment) {
         env = environment;
-        if (env.equalsIgnoreCase("internal")) {
+        if (environment.equalsIgnoreCase("internal")) {
             HOST = "internal.degiro.eu";
             USER = "dgtraderie";
             PASS = "Test_web2020";
-        } else if (env.equalsIgnoreCase("web-trader")) {
+        } else if (environment.equalsIgnoreCase("webtrader")) {
             HOST = "test-webtrader.internal.degiro.eu";
             USER = "web2879nl";
             PASS = "Test600";
-        } else if (env.equalsIgnoreCase("production")) {
-            HOST = "trader.degiro.nl";
+        } else if (environment.equalsIgnoreCase("weekly")) {
+            HOST = "test-weekly-webtrader.internal.degiro.eu";
             USER = "dgtraderie";
             PASS = "Test_web2020";
         }
@@ -138,7 +138,7 @@ public class BasicTestConfig {
      * @param browser
      * @throws Exception
      */
-        @Parameters({"browser"})
+        @Parameters("{browser}")
         @BeforeTest
         public void browserConfig(String browser) throws Exception {
             DesiredCapabilities capability = new DesiredCapabilities();

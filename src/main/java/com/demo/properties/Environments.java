@@ -51,9 +51,9 @@ public class Environments extends BasicTestConfig {
     public  static String setTransactionsHistoryPath() {
         if (env.equalsIgnoreCase("internal")) {
             TRANSACTIONS_HISTORY = "/reporting/secure/v4/transactions";
-        } else if (env.equalsIgnoreCase("web-trader")) {
+        } else if (env.equalsIgnoreCase("webtrader")) {
             TRANSACTIONS_HISTORY = "/DGReportingWeb/secure/v4/transactions";
-        } else if (env.equalsIgnoreCase("production")) {
+        } else if (env.equalsIgnoreCase("weekly")) {
             TRANSACTIONS_HISTORY = "/reporting/secure/v4/transactions";
         }
         return TRANSACTIONS_HISTORY;
@@ -64,9 +64,9 @@ public class Environments extends BasicTestConfig {
     public  static String setPlaceOrderPath() {
         if (env.equalsIgnoreCase("internal")) {
             ORDER = "/dgtrading/secure/v5/checkOrder;jsessionid=";
-        } else if (env.equalsIgnoreCase("web-trader")) {
+        } else if (env.equalsIgnoreCase("webtrader")) {
             ORDER = "/DGTrading/secure/v5/checkOrder;jsessionid=";
-        } else if (env.equalsIgnoreCase("production")) {
+        } else if (env.equalsIgnoreCase("weekly")) {
             ORDER = "/dgtrading/secure/v5/checkOrder;jsessionid=";
         }
         return ORDER;
@@ -76,9 +76,9 @@ public class Environments extends BasicTestConfig {
     public  static String setOrderConfirmationPath() {
         if (env.equalsIgnoreCase("internal")) {
             ORDER_CONFIRMATION = "/dgtrading/secure/v5/order/";
-        } else if (env.equalsIgnoreCase("web-trader")) {
+        } else if (env.equalsIgnoreCase("webtrader")) {
             ORDER_CONFIRMATION = "/DGTrading/secure/v5/order/";
-        } else if (env.equalsIgnoreCase("production")) {
+        } else if (env.equalsIgnoreCase("weekly")) {
             ORDER_CONFIRMATION = "/dgtrading/secure/v5/order/";
         }
         return ORDER_CONFIRMATION;
@@ -88,9 +88,9 @@ public class Environments extends BasicTestConfig {
     public  static String setClientInfoPath() {
         if (env.equalsIgnoreCase("internal")) {
             CLIENT_INFO = "/paservice/secure/client";
-        } else if (env.equalsIgnoreCase("web-trader")) {
+        } else if (env.equalsIgnoreCase("webtrader")) {
             CLIENT_INFO = "/dgpawebservice/secure/client";
-        } else if (env.equalsIgnoreCase("production")) {
+        } else if (env.equalsIgnoreCase("weekly")) {
             CLIENT_INFO = "/paservice/secure/client";
         }
         return CLIENT_INFO;
@@ -99,9 +99,9 @@ public class Environments extends BasicTestConfig {
     public  static String setProductSearchPath() {
         if (env.equalsIgnoreCase("internal")) {
             PRODUCT_LIST = "/dgproductsearch/secure/v5/search/lookup";
-        } else if (env.equalsIgnoreCase("web-trader")) {
+        } else if (env.equalsIgnoreCase("webtrader")) {
             PRODUCT_LIST = "/productsnew/secure/v5/";
-        } else if (env.equalsIgnoreCase("production")) {
+        } else if (env.equalsIgnoreCase("weekly")) {
             PRODUCT_LIST = "/dgproductsearch/secure/v5/search/lookup";
         }
         return PRODUCT_LIST;

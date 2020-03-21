@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demo Test Suite" configfailurepolicy="continue" verbose="10"  thread-count="5">
+    <!--    ENVIRONMENTS    -->
+    <!--    [1] internal    -->
+    <!--    [2] web-trader  -->
+    <!--    [3] production  -->
+
+
+    <listeners>
+        <listener class-name="com.demo.config.TestNGListener"/>
+    </listeners>
+
+    <test name="TC_01_Chrome">
+        <parameter name="browser"     value="chrome"/>
+        <parameter name="environment" value="webtrader"/>
+        <classes>
+            <class name="com.demo.tests.TestCase_01">
+                <methods>
+                    <include name="post_login"/>
+                    <include name="get_user_info"/>
+                    <include name="get_product_list"/>
+                    <include name="post_place_order"/>
+                    <include name="post_confirm_order"/>
+                    <include name="get_transaction_history"/>
+                    <include name="web_login"/>
+                    <include name="web_user_amount"/>
+                    <include name="web_user_transactions"/>
+                    <include name="web_search_product"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
+

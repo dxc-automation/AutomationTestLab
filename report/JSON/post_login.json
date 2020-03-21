@@ -1,8 +1,8 @@
 {
-  "redirectUrl": "https://test-webtrader.internal.degiro.eu/trader4/",
+  "redirectUrl": "https://trader.degiro.nl/trader4/",
   "statusText": "success",
-  "isPassCodeEnabled": false,
-  "sessionId": "D4628588897659741F8F594ECB7F339C.internal_test2",
-  "locale": "en_GB",
+  "isPassCodeEnabled": true,
+  "sessionId": "ACD4A39C8D84419CFDEBABCB391D3382.prod_a_111_4",
+  "locale": "en_IE",
   "status": 0
 }
