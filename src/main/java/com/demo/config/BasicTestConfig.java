@@ -113,7 +113,7 @@ public class BasicTestConfig {
 
 
 
-    @Parameters("{environment}")
+    @Parameters("environment")
     @BeforeTest
     public void setEnvironment(String environment) {
         env = environment;
@@ -138,7 +138,7 @@ public class BasicTestConfig {
      * @param browser
      * @throws Exception
      */
-        @Parameters("{browser}")
+        @Parameters("browser")
         @BeforeTest
         public void browserConfig(String browser) throws Exception {
             DesiredCapabilities capability = new DesiredCapabilities();
