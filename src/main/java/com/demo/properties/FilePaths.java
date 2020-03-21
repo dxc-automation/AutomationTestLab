@@ -19,7 +19,7 @@ public class FilePaths {
     public final static String report_config_xml_file      = path + "/src/main/resources/extent-config.xml";
     public final static String xml_files_folder            = path + "/src/main/resources/xml_files/";
 
-    public final static String screenshots_failed_folder   = path + "\\report\\Screenshots\\Failed\\";
+    public final static String screenshots_failed_folder   = path.toAbsolutePath() + "/report/Screenshots/Failed/";
     public final static String screenshots_actual_folder   = path + "/report/Screenshots/Actual/";
     public final static String screenshots_buffer_folder   = path + "/report/Screenshots/Buffer/";
     public final static String screenshots_expected_folder = path + "/report/Screenshots/Expected/";

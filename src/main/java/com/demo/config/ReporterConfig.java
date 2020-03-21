@@ -49,11 +49,11 @@ public class ReporterConfig {
         extent.setSystemInfo("OS Arch",    osArch);
 
         if (env.equalsIgnoreCase("internal")) {
-            extent.setSystemInfo("Environment",    "https://internal.degiro.eu");
-        } else if (env.equalsIgnoreCase("web-trader")) {
-            extent.setSystemInfo("Environment",    "https://test-webtrader.internal.degiro.eu");
-        } else if (env.equalsIgnoreCase("production")) {
-            extent.setSystemInfo("Environment",    "https://trader.degiro.nl");
+            extent.setSystemInfo("Environment",    "internal.degiro.eu");
+        } else if (env.equalsIgnoreCase("webtrader")) {
+            extent.setSystemInfo("Environment",    "test-webtrader.internal.degiro.eu");
+        } else if (env.equalsIgnoreCase("weekly")) {
+            extent.setSystemInfo("Environment",    "test-weekly-webtrader.internal.degiro.eu");
         }
         return extent;
     }
