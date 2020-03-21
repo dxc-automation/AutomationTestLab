@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TC_001" configfailurepolicy="continue" thread-count="1">
+    <!--    ENVIRONMENTS    -->
+    <!--    [1] internal    -->
+    <!--    [2] web-trader  -->
+    <!--    [3] production  -->
+
+
+    <parameter name="browser"     value="chrome"/>
+
+    <listeners>
+        <listener class-name="com.demo.config.TestNGListener"/>
+    </listeners>
+
+    <test name="TC_02">
+        <parameter name="environment" value="production"/>
+        <classes>
+            <class name="com.demo.tests.TestCase_01">
+                <methods>
+                    <include name="web_login"/>
+                    <include name="web_user_amount"/>
+                    <include name="web_user_transactions"/>
+                    <include name="web_search_product"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
+
+
+
+

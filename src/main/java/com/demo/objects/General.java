@@ -70,6 +70,6 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "input[name=quickSearchInput][type=text]")
     public WebElement quick_search_input;
 
-    @FindBy(how = How.XPATH, using = "//input[@placeholder='Search for a product']")
+    @FindBy(how = How.XPATH, using = "input[placeholder=Search for a product][name=searchText]")
     public WebElement search_for_a_product_field;
 }

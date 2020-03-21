@@ -21,10 +21,10 @@ public class UserBalance extends BasicTestConfig {
 
 
     private static void report() throws Exception {
-        String testName        = "<b>User Balance</b>";
+        String testName        = "<b></b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the user balance is displayed."  +
-                                 "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                "<br><br><br>* * *  STEPS DESCRIPTION  * * *</b><br><br>"                                                       +
                                  "[1] Wait until account available to trade balance is displayed.<br>"        +
                                  "[2] Check that the account summary for is displayed.<br>"                   +
                                  "[3] Get displayed available and total user balance.<br>"                    +

@@ -15,11 +15,11 @@ com\demo\scripts\ui\Orders.class
 com\demo\utilities\user_interface\GetAllPageLinks.class
 com\demo\objects\MarketsPage.class
 com\demo\utilities\web_services\HttpClientConfig.class
-com\demo\scripts\ui\search\SearchForProduct.class
 com\demo\scripts\api\orders\place\Order.class
 com\demo\utilities\user_interface\HandleTable.class
 com\demo\config\ReporterConfig.class
 com\demo\scripts\ui\Transactions.class
+com\demo\scripts\ui\search\SearchForProductField.class
 com\demo\properties\Environments.class
 com\demo\scripts\api\orders\history\TransactionHistory.class
 com\demo\scripts\api\search\PAGE_ProductsList.class
@@ -47,6 +47,7 @@ com\demo\config\BasicTestConfig.class
 com\demo\config\ConsoleRunner.class
 com\demo\properties\FilePaths.class
 com\demo\scripts\ui\UserBalance.class
+com\demo\tests\TestCase_03.class
 com\demo\utilities\user_interface\ElementScreenshot.class
 com\demo\objects\activity\SharesPage.class
 com\demo\properties\TestData.class

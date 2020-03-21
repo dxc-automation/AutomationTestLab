@@ -22,12 +22,11 @@ public class Environments extends BasicTestConfig {
 
 
     //***** PAGES
-    public final static String TRANSACTIONS_PAGE       = "/trader4/#/transactions?fromDate=2020-02-04&toDate=" + getDate() + "&groupTransactionsByOrder=false";
+    public final static String TRANSACTIONS_PAGE       = "https://" + HOST + "/trader4/#/transactions?fromDate=2020-02-04&toDate=" + getDate() + "&groupTransactionsByOrder=false";
     public final static String ORDERS_OUTSTANDING_PAGE = "/trader4/#/orders/open";
     public final static String ORDERS_HISTORY_PAGE     = "/trader4/#/orders/history";
     public final static String ACCOUNT_OVERVIEW_PAGE   = "/trader4/#/account-overview";
-    public final static String PRODUCTS_PAGE           = "/trader4/#/search?productType=";
-    public final static String SHARES_PAGE             = "/trader4/#/search?productType=1&stockListType=index&stockList=114005&country=963&sortColumns=name&sortTypes=asc";
+    public final static String SHARES_PAGE             = "https://" + HOST + "/trader4/#/search?productType=1&stockListType=index&stockList=114005&country=963&sortColumns=name&sortTypes=asc";
 
 
     //***** LOGIN
@@ -96,6 +95,7 @@ public class Environments extends BasicTestConfig {
         return CLIENT_INFO;
     }
 
+
     public  static String setProductSearchPath() {
         if (env.equalsIgnoreCase("internal")) {
             PRODUCT_LIST = "/dgproductsearch/secure/v5/";
@@ -105,6 +105,12 @@ public class Environments extends BasicTestConfig {
             PRODUCT_LIST = "/dgproductsearch/secure/v5/";
         }
         return PRODUCT_LIST;
+    }
+
+
+    public static String getProductWebPage(int product) {
+        String productURL = "https://" + HOST + "/trader4/#/products?productType=" + product;
+        return  productURL;
     }
 }
 

@@ -33,9 +33,6 @@ public class SharesFilters extends BasicTestConfig {
 
     public static void selectByIndex(int index) throws Exception {
         report();
-        wait = new WebDriverWait(driver, 15);
-        String url = "https://" + HOST + WEB_LOGIN;
-        driver.get(url);
 
         driver.get("https://" + HOST + SHARES_PAGE);
         wait.until(ExpectedConditions.visibilityOf(sharesPage.filter_country));

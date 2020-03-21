@@ -25,7 +25,7 @@ public class PopularProducts extends BasicTestConfig {
         String testName = "<b>Popular Products</b>";
         String testCategory = "Frontend";
         String testDescription = "The purpose of this test is to verify that the popular search element is displayed properly." +
-                "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>" +
+                "<br><br><br>* * *  STEPS DESCRIPTION  * * *</b><br><br>"                                                       +
                 "[1] Check that the login page can be opened and displayed with correct title.<br>" +
                 "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                 "[3] Check login with valid credentials.";

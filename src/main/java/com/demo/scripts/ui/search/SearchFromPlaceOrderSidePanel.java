@@ -23,7 +23,7 @@ public class SearchFromPlaceOrderSidePanel extends BasicTestConfig {
         String testName        = "<b>Search From Place Order Side Panel Product</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the user orders history is displayed properly."              +
-                                 "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                "<br><br><br>* * *  STEPS DESCRIPTION  * * *</b><br><br>"                                                       +
                                  "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                                  "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                                  "[3] Check login with valid credentials.";
@@ -37,8 +37,7 @@ public class SearchFromPlaceOrderSidePanel extends BasicTestConfig {
         report();
         wait = new WebDriverWait(driver, 10);
 
-        String url = "https://" + HOST + WEB_MARKETS;
-        driver.get(url);
+        driver.get("https://" + HOST + WEB_MARKETS);
 
         wait.until(ExpectedConditions.visibilityOf(general.palace_order_btn));
         general.palace_order_btn.click();

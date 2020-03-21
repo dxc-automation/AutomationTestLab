@@ -20,10 +20,10 @@ public class UserLogin extends BasicTestConfig {
 
 
     private static void report() throws Exception {
-        String testName        = "<b>Account Login</b>";
+        String testName        = "<b>User login with valid credentials</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the login functionality is working as expected."              +
-                                 "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
+                                 "<br><br><br>* * *  STEPS DESCRIPTION  * * *</b><br><br>"                                                       +
                                  "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
                                  "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
                                  "[3] Check login with valid credentials.";
@@ -37,7 +37,7 @@ public class UserLogin extends BasicTestConfig {
         report();
         wait = new WebDriverWait(driver, 15);
         String url = "https://" + HOST + WEB_LOGIN;
-        driver.get(url);
+        driver.get("https://" + HOST + WEB_LOGIN);
 
         String pageTitle = driver.getTitle();
         boolean title = pageTitle.contains("DEGIRO");
