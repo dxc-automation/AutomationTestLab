@@ -98,11 +98,11 @@ public class Environments extends BasicTestConfig {
 
     public  static String setProductSearchPath() {
         if (env.equalsIgnoreCase("internal")) {
-            PRODUCT_LIST = "/dgproductsearch/secure/v5/search/lookup";
+            PRODUCT_LIST = "/dgproductsearch/secure/v5/";
         } else if (env.equalsIgnoreCase("webtrader")) {
             PRODUCT_LIST = "/productsnew/secure/v5/";
         } else if (env.equalsIgnoreCase("weekly")) {
-            PRODUCT_LIST = "/dgproductsearch/secure/v5/search/lookup";
+            PRODUCT_LIST = "/dgproductsearch/secure/v5/";
         }
         return PRODUCT_LIST;
     }
