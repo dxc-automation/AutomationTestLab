@@ -41,7 +41,7 @@ public class ProductList {
 
 
 
-    public static void getProductList(String fileName, int productTypeId, int offset, int limit, String searchText) throws Exception {
+    public static void getProductList(String fileName, int productTypeId,  String searchText) throws Exception {
         report();
 
         scheme = "https";
@@ -56,8 +56,8 @@ public class ProductList {
                 .setParameter("intAccount",    String.valueOf(intAccount))
                 .setParameter("sessionId",     sessionID)
                 .setParameter("productTypeId", String.valueOf(productTypeId))
-                .setParameter("offset",        String.valueOf(offset))
-                .setParameter("limit",         String.valueOf(limit))
+                .setParameter("offset",        "0")
+                .setParameter("limit",         "999")
                 .setParameter("searchText",    searchText)
                 .build();
 

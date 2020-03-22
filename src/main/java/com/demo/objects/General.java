@@ -53,6 +53,10 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "[data-id=activityMenuItem]")
     public WebElement side_navigation_activity_btn;
 
+    @FindBy(how = How.CSS, using = "[data-id=productsMenuItem]")
+    public WebElement side_navigation_products_btn;
+
+
 
 
     //  Account Summary
@@ -70,6 +74,6 @@ public class General extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "input[name=quickSearchInput][type=text]")
     public WebElement quick_search_input;
 
-    @FindBy(how = How.XPATH, using = "input[placeholder=Search for a product][name=searchText]")
+    @FindBy(how = How.CSS, using = "input[name=searchText]")
     public WebElement search_for_a_product_field;
 }

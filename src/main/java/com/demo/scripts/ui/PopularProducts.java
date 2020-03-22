@@ -42,10 +42,9 @@ public class PopularProducts extends BasicTestConfig {
         test.pass("<b>[STEP 1]</b> Markets page was opened successfully");
 
         Thread.sleep(500);
-        String actualImage = "PopularProductsForm_Actual";
-        elementScreenshot(marketsPage.markets_popular_products_form, actualImage);
+        elementScreenshot(marketsPage.markets_popular_products_form, "PopularProductsForm_Actual");
 
-        test.pass("<b>POPULAR PRODUCTS</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + actualImage + ".png").build());
+        test.pass("<b>POPULAR PRODUCTS</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "PopularProductsForm_Actual.png").build());
 
         List<WebElement> popularProducts = marketsPage.markets_popular_products_form.findElements(By.tagName("li"));
         for (WebElement product : popularProducts) {

@@ -7,18 +7,21 @@
     <!--    [2] web-trader  -->
     <!--    [3] production  -->
 
+    <parameter name="browser"     value="chrome"/>
+    <parameter name="environment" value="webtrader"/>
 
     <listeners>
         <listener class-name="com.demo.config.TestNGListener"/>
     </listeners>
 
     <test name="TC_01_Chrome">
-        <parameter name="browser"     value="chrome"/>
-        <parameter name="environment" value="internal"/>
         <classes>
-            <class name="com.demo.tests.TestCase_03">
+            <class name="com.demo.tests.TestCase_03_Leveraged">
                 <methods>
-                    <include name="test_laverage_page"/>
+                    <include name="post_login"/>
+                    <include name="get_user_info"/>
+                    <include name="get_product_list"/>
+                    <include name="web_user_login"/>
                 </methods>
             </class>
         </classes>

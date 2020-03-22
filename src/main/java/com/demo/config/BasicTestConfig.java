@@ -114,7 +114,7 @@ public class BasicTestConfig {
 
 
     @Parameters("environment")
-    @BeforeTest
+    @BeforeSuite
     public void setEnvironment(String environment) {
         env = environment;
         if (environment.equalsIgnoreCase("internal")) {
@@ -139,7 +139,7 @@ public class BasicTestConfig {
      * @throws Exception
      */
         @Parameters("browser")
-        @BeforeTest
+        @BeforeSuite
         public void browserConfig(String browser) throws Exception {
             DesiredCapabilities capability = new DesiredCapabilities();
 

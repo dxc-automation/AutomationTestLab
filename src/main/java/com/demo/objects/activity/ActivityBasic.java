@@ -19,17 +19,13 @@ public class ActivityBasic extends BasicTestConfig {
 
     //  *****   Tab Menu Panel
     @FindBy(how = How.CSS, using = "div[role=tabpanel]")
-    public WebElement activity_tab_menu;
+    public WebElement tab_menu;
 
     @FindBy(how = How.CSS,using = "a[href=#/orders/open]")
-    public WebElement activity_tab_menu_orders_btn;
+    public WebElement tab_menu_orders_btn;
 
     @FindBy(how = How.CSS, using = "a[href=#/transactions]")
     public WebElement activity_tab_menu_transactions_btn;
-
-
-
-
 
 
 

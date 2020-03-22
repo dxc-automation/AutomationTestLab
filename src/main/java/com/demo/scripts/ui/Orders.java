@@ -53,7 +53,6 @@ public class Orders extends BasicTestConfig {
             elementScreenshot(activityPage.orders_history_table, "OrdersHistory_Actual");
 
             test.pass("<b>ORDERS HISTORY</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "OrdersHistory_Actual" + ".png").build());
-
             handleWebTable(activityPage.orders_history_table);
         }
     }

@@ -27,6 +27,7 @@ public class Environments extends BasicTestConfig {
     public final static String ORDERS_HISTORY_PAGE     = "/trader4/#/orders/history";
     public final static String ACCOUNT_OVERVIEW_PAGE   = "/trader4/#/account-overview";
     public final static String SHARES_PAGE             = "https://" + HOST + "/trader4/#/search?productType=1&stockListType=index&stockList=114005&country=963&sortColumns=name&sortTypes=asc";
+    public final static String LEVERAGES_PAGE          = "/trader4/#/products?productType=14&exchange=-1&shortLong=-1&issuer=-1&underlying=-1&popularOnly=false&sortColumns=name&sortTypes=asc";
 
 
     //***** LOGIN

@@ -16,15 +16,19 @@ com\demo\utilities\user_interface\GetAllPageLinks.class
 com\demo\objects\MarketsPage.class
 com\demo\utilities\web_services\HttpClientConfig.class
 com\demo\scripts\api\orders\place\Order.class
+com\demo\objects\products\ProductsBasic.class
 com\demo\utilities\user_interface\HandleTable.class
 com\demo\config\ReporterConfig.class
 com\demo\scripts\ui\Transactions.class
 com\demo\scripts\ui\search\SearchForProductField.class
 com\demo\properties\Environments.class
+com\demo\tests\TestCase_03_Leveraged.class
 com\demo\scripts\api\orders\history\TransactionHistory.class
 com\demo\scripts\api\search\PAGE_ProductsList.class
 com\demo\utilities\user_interface\Assertions$1.class
+com\demo\scripts\ui\products_page\OpenLaveragesPage.class
 com\demo\utilities\FileUtility.class
+com\demo\objects\products\LeveragedPage.class
 com\demo\utilities\user_interface\VideoRecord.class
 com\demo\scripts\ui\search\SearchFromPlaceOrderSidePanel.class
 com\demo\tests\TestCase_01.class
@@ -33,7 +37,6 @@ com\demo\utilities\user_interface\PageScroll.class
 com\demo\scripts\api\account\ClientInfo.class
 com\demo\scripts\api\search\VWD_SearchProduct.class
 com\demo\scripts\api\account\Login.class
-com\demo\objects\activity\LeveragesPage.class
 com\demo\scripts\ui\UserLogin.class
 com\demo\config\TestNGListener.class
 com\demo\scripts\ui\PopularProducts.class
@@ -47,7 +50,6 @@ com\demo\config\BasicTestConfig.class
 com\demo\config\ConsoleRunner.class
 com\demo\properties\FilePaths.class
 com\demo\scripts\ui\UserBalance.class
-com\demo\tests\TestCase_03.class
 com\demo\utilities\user_interface\ElementScreenshot.class
 com\demo\objects\activity\SharesPage.class
 com\demo\properties\TestData.class
