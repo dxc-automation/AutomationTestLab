@@ -42,7 +42,7 @@ public class SearchForProductField extends BasicTestConfig {
         String productPrefix = productName.substring(0, i);
         general.search_for_a_product_field.sendKeys(productPrefix);
 
-        
+
         wait.until(ExpectedConditions.visibilityOf(leveragedPage.page_table));
         String rowProduct = leveragedPage.table_row1_product.getText();
 

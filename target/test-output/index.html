@@ -189,7 +189,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot; name=&quot;Demo Test Suite&quot;&gt;
-  &lt;parameter name=&quot;environment&quot; value=&quot;webtrader&quot;/&gt;
+  &lt;parameter name=&quot;environment&quot; value=&quot;weekly&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.demo.config.TestNGListener&quot;/&gt;
@@ -247,24 +247,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'web_user_login')
 data.setCell(0, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(0, 3, 13328);
+data.setCell(0, 3, 8766);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'post_login')
 data.setCell(1, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(1, 3, 3153);
+data.setCell(1, 3, 537);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'get_product_list')
+data.setCell(2, 1, 'get_user_info')
 data.setCell(2, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(2, 3, 3030);
+data.setCell(2, 3, 349);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'get_user_info')
+data.setCell(3, 1, 'get_product_list')
 data.setCell(3, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(3, 3, 366);
+data.setCell(3, 3, 341);
 window.suiteTableData['Demo_Test_Suite']= { tableData: data, tableDiv: 'times-div-Demo_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Demo_Test_Suite">
               </div> <!-- times-div-Demo_Test_Suite -->
             </div> <!-- times-div -->
@@ -297,51 +297,51 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
-                <span class="method-start">8437 ms</span>
+                <span class="method-start">6274 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
-                <span class="method-name">setEnvironment(webtrader)</span>
-                <span class="method-start">8441 ms</span>
+                <span class="method-name">setEnvironment(weekly)</span>
+                <span class="method-start">6279 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">post_login(public void com.demo.tests.TestCase_03_Leveraged.post_login(java.lang.reflect.Method) throws java.la...)</span>
-                <span class="method-start">8477 ms</span>
+                <span class="method-start">6314 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=post_login status=SUCCESS method=TestCase_03_Leveraged.post_login(java.lang.reflect...)</span>
-                <span class="method-start">11630 ms</span>
+                <span class="method-start">6852 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">get_user_info(public void com.demo.tests.TestCase_03_Leveraged.get_user_info(java.lang.reflect.Method) throws java...)</span>
-                <span class="method-start">11633 ms</span>
+                <span class="method-start">6854 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=get_user_info status=SUCCESS method=TestCase_03_Leveraged.get_user_info(java.lang.r...)</span>
-                <span class="method-start">11999 ms</span>
+                <span class="method-start">7203 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">get_product_list(public void com.demo.tests.TestCase_03_Leveraged.get_product_list(java.lang.reflect.Method) throws j...)</span>
-                <span class="method-start">12001 ms</span>
+                <span class="method-start">7217 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=get_product_list status=SUCCESS method=TestCase_03_Leveraged.get_product_list(java....)</span>
-                <span class="method-start">15032 ms</span>
+                <span class="method-start">7558 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">web_user_login</span>
-                <span class="method-start">15067 ms</span>
+                <span class="method-start">7571 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=web_user_login status=SUCCESS method=TestCase_03_Leveraged.web_user_login()[pri:0, ...)</span>
-                <span class="method-start">28395 ms</span>
+                <span class="method-start">16337 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXmlFiles</span>
-                <span class="method-start">28421 ms</span>
+                <span class="method-start">16364 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReportData</span>
-                <span class="method-start">28430 ms</span>
+                <span class="method-start">16373 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

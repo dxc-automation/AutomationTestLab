@@ -10,8 +10,9 @@ import static com.demo.scripts.api.account.ClientInfo.getClientInfo;
 import static com.demo.scripts.api.account.Login.secureLogin;
 import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.*;
-import static com.demo.scripts.ui.products_page.OpenLaveragesPage.*;
-import static com.demo.scripts.ui.search.SearchForProductField.*;
+import static com.demo.scripts.ui.products_page.leveraged.OpenLaveragesPage.*;
+import static com.demo.scripts.ui.filters.LaveragesFilters.*;
+import static com.demo.scripts.ui.products_page.leveraged.OpenLeverageProduct.*;
 
 public class TestCase_03_Leveraged extends BasicTestConfig {
 
@@ -20,7 +21,6 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
         fileName = method.getName() + ".json";
         secureLogin(fileName);
     }
-
 
 
     @Test(description = "API")
@@ -41,6 +41,7 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
     public void web_user_login() throws Exception {
         secureLoginWeb();
         openLaveragesPage();
-        checkSearchForProduct();
+        leveragesFilters();
+        openLaveragesProduct();
     }
 }

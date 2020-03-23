@@ -8,7 +8,7 @@
     <!--    [3] production  -->
 
     <parameter name="browser"     value="chrome"/>
-    <parameter name="environment" value="webtrader"/>
+    <parameter name="environment" value="weekly"/>
 
     <listeners>
         <listener class-name="com.demo.config.TestNGListener"/>

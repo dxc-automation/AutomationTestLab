@@ -20,7 +20,7 @@ public class LeveragedPage extends BasicTestConfig {
 
 
     // Filters
-    @FindBy(how = How.CSS, using = "input[maxlength=1000][autocomplete=new-selectControl-1584564675114]")
+    @FindBy(how = How.CLASS_NAME, using = "_2434So3H9oWJ_OYbyC48su _2ZMfjlvne7XcqTClLK5Lkd _1IND80Y6PsQ6BuVcfXBSkB")
     public WebElement filter_long_short;
 
     @FindBy(how = How.CSS, using = "input[maxlength=0][autocomplete=new-selectControl-1584564164489]")

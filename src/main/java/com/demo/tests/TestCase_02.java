@@ -10,7 +10,7 @@ import static com.demo.scripts.api.search.PAGE_ProductsList.*;
 import static com.demo.properties.TestData.fileName;
 import static com.demo.scripts.api.account.Login.secureLogin;
 import static com.demo.scripts.ui.UserLogin.secureLoginWeb;
-import static com.demo.scripts.ui.share_page.SharesFilters.*;
+import static com.demo.scripts.ui.filters.SharesFilters.*;
 
 public class TestCase_02 extends BasicTestConfig {
     VideoRecord videoReord = new VideoRecord();
