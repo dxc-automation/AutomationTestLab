@@ -269,7 +269,7 @@ public class BasicTestConfig {
                         FileUtils.copyFile(fileFail, new File(screenshots_failed_folder + methodName + ".png"));
 
                         test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png", "<br>" + throwable).build());
-                        test.fail(throwable);
+                        test.fail("<pre>" + throwable.toString() + "</pre>");
                         System.out.println("\n" + throwable);
                     }
         }

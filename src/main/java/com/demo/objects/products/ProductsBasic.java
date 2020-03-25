@@ -24,6 +24,18 @@ public class ProductsBasic extends BasicTestConfig {
 
 
 
+    // Filters
+    @FindBy(how = How.CSS, using = "i.z86c6gajHVkfQlpRs2eVs._2Fq3pFkpa9sTzZ1NugJ3O7")
+    public WebElement filter_long_short;
+
+    @FindBy(how = How.XPATH, using = "//div[1]/div/div[2]/label/i[@role='img']")
+    public WebElement filter_stock_markets;
+
+    @FindBy(how = How.CSS, using = "ul[role='listbox'] > li:nth-of-type(2)")
+    public WebElement filter_option_1;
+
+
+
 
 
     //  *****   Orders

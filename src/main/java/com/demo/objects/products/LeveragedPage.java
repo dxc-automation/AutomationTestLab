@@ -17,17 +17,8 @@ public class LeveragedPage extends BasicTestConfig {
 
     final WebDriver driver;
 
-
-
-    // Filters
-    @FindBy(how = How.CLASS_NAME, using = "_2434So3H9oWJ_OYbyC48su _2ZMfjlvne7XcqTClLK5Lkd _1IND80Y6PsQ6BuVcfXBSkB")
-    public WebElement filter_long_short;
-
-    @FindBy(how = How.CSS, using = "input[maxlength=0][autocomplete=new-selectControl-1584564164489]")
-    public WebElement filter_indicates;
-
-
-
+    public static String leveraged_short_long_filter;
+    public static String leveraged_stock_markets_filter;
 
 
 
