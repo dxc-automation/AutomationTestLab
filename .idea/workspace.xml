@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java" afterDir="false" />
-    </list>
+    <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
+            <state relative-caret-position="1014">
               <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -86,10 +84,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/shares/OpenSharesPage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_04_Shares.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="210">
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_04_Shares.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -114,15 +121,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/products/ProductsBasic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -160,8 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_01.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_01.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_02.xml" />
@@ -211,6 +207,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_04_Shares.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_04_Shares.xml" />
       </list>
     </option>
   </component>
@@ -524,7 +522,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585237893659" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585237896524" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml_files/test" />
     <property name="project.structure.last.edited" value="Project" />
@@ -552,9 +550,9 @@
       <recent name="com.demo.scripts.ui.filters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Automation\AutomationTestLab\src\main\resources\xml_files\test_internal" />
       <recent name="C:\Automation\AutomationTestLab\src\main\resources\xml_files\test_weekly" />
       <recent name="C:\Automation\AutomationTestLab\src\main\resources\xml_files\test_webtrader" />
+      <recent name="C:\Automation\AutomationTestLab\src\main\resources\xml_files\test_internal" />
       <recent name="D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\test_internal" />
       <recent name="D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\test_weekly" />
     </key>
@@ -1028,14 +1026,6 @@
     <state x="-251" y="1232" width="670" height="678" key="search.everywhere.popup/-636.1103.1440.807/-1920.23.1920.1057/0.23.1920.1057@-636.1103.1440.807" timestamp="1575299135440" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/orders/place/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_01.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_01.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_02.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_02.xml" />
@@ -1280,13 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_04_Shares.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/shares/OpenSharesPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
@@ -1360,11 +1343,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
+        <state relative-caret-position="1014">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_04_Shares.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_04_Shares.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_04_Shares.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
         </state>
       </provider>
     </entry>
