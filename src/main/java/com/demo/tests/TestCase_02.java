@@ -34,10 +34,4 @@ public class TestCase_02 extends BasicTestConfig {
         fileName = method.getName() + ".json";
         takeProductsList(fileName, 100, false);
     }
-
-
-    @Test(description = "WEB")
-    public void web_set_filter() throws Exception {
-        selectByIndex(1);
-    }
 }

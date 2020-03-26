@@ -17,15 +17,6 @@ public class LeveragedPage extends BasicTestConfig {
 
     final WebDriver driver;
 
-    public static String leveraged_short_long_filter;
-    public static String leveraged_stock_markets_filter;
 
-
-
-    @FindBy(how = How.CSS, using = "table._3QuQRAgUeF2pqrF7IRP6nC")
-    public WebElement page_table;
-
-    @FindBy(how = How.CSS, using = "span[data-name=productName]")
-    public WebElement table_row1_product;
 
 }

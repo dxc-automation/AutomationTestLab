@@ -1,25 +1,26 @@
 package com.demo.scripts.ui.filters;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.activity.SharesPage;
-import org.openqa.selenium.WebElement;
+import com.demo.objects.products.ProductsBasic;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.demo.config.ReporterConfig.startTestReport;
-import static com.demo.properties.Environments.HOST;
-import static com.demo.properties.Environments.SHARES_PAGE;
-import static com.demo.properties.Environments.WEB_LOGIN;
-
+import static com.demo.config.ReporterConfig.test;
+import static com.demo.objects.products.ProductsBasic.*;
+import static com.demo.properties.FilePaths.screenshots_actual_folder;
+import static com.demo.scripts.ui.products_page.shares.OpenSharesPage.*;
 
 public class SharesFilters extends BasicTestConfig {
 
     private static SharesPage sharesPage = PageFactory.initElements(driver, SharesPage.class);
+    private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
     private static void report() throws Exception {
-        String testName        = "<b>[WEB] Shares</b>";
+        String testName        = "<b>Check shares filters</b>";
         String testCategory    = "Frontend";
         String testDescription = "The purpose of this test is to verify that the user orders history is displayed properly."              +
                 "<br><br><br>*** STEPS DESCRIPTION ***</b><br><br>"                                                       +
@@ -31,24 +32,33 @@ public class SharesFilters extends BasicTestConfig {
     }
 
 
-    public static void selectByIndex(int index) throws Exception {
+    public static void shraresFilters() throws Exception {
+        openSharesPage();
         report();
 
-        driver.get("https://" + HOST + SHARES_PAGE);
-        wait.until(ExpectedConditions.visibilityOf(sharesPage.filter_country));
+        wait = new WebDriverWait(driver, 50);
 
-        Select dropdownElement = new Select(sharesPage.filter_country);
-        dropdownElement.selectByIndex(index);
-        }
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_1));
+        productsBasic.filter_1.click();
+
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_1));
+        filter_text_1 = productsBasic.filter_option_1.getText();
+        productsBasic.filter_option_1.click();
+        test.pass("<b>[STEP 1]</b> Country filter was settled to show only <u><i>" + filter_text_1 + "</i></u>");
 
 
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_2));
+        productsBasic.filter_2.click();
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_1));
+        filter_text_2 = productsBasic.filter_option_1.getText();
+        productsBasic.filter_option_1.click();
+        test.pass("<b>[STEP 2]</b> Indicates filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
 
-    public static void selectByValue(String url, String value, WebElement element) {
-        Select dropdownElement = new Select(element);
-        dropdownElement.selectByVisibleText(value);
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+        test.pass("<b>[STEP 3]</b> Leveraged products table was opened successfully");
+
+        takeScreenshot(driver, "Shares_Product");
+        test.pass("<b>SHARES PAGE</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Shares_Product.png").build());
     }
-
-
-
-    }
+}
 

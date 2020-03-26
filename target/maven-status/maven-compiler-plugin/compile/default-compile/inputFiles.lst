@@ -6,10 +6,11 @@ C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\search\SearchForProductField.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\HandleTable.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\web_services\HttpURLConnectionConfig.java
-C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\products_page\leveraged\OpenLaveragesPage.java
+C:\Automation\AutomationTestLab\src\main\java\com\demo\tests\TestCase_04_Shares.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\Assertions.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\properties\Environments.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\orders\place\Order.java
+C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\products_page\leveraged\OpenLeveragedProduct.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\ElementScreenshot.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\FileUtility.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\web_services\HttpClientConfig.java
@@ -41,12 +42,12 @@ C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\account\Login
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\search\PAGE_ProductsList.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\search\VWD_SearchProduct.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\config\BasicTestConfig.java
+C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\products_page\leveraged\OpenLaveragedPage.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\ImageCompare.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\settings\MarketPageProducts.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\tests\TestCase_01.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\products_page\shares\OpenSharesPage.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\orders\place\OrderConfirmation.java
-C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\products_page\leveraged\OpenLeverageProduct.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\ui\UserLogin.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\scripts\api\account\ClientInfo.java
 C:\Automation\AutomationTestLab\src\main\java\com\demo\utilities\user_interface\AlertHandling.java

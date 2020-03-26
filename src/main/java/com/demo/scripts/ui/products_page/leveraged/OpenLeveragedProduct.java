@@ -38,8 +38,8 @@ public class OpenLeveragedProduct extends BasicTestConfig {
         report();
         wait = new WebDriverWait(driver, 10);
 
-        wait.until(ExpectedConditions.visibilityOf(leveragedPage.table_row1_product));
-        leveragedPage.table_row1_product.click();
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
+        productsBasic.table_row1_product.click();
         test.pass("<b>[STEP 1]</b> Products page was opened successfully");
 
 

@@ -16,9 +16,11 @@ public class ProductsBasic extends BasicTestConfig {
     }
     final WebDriver driver;
 
+    public static String filter_text_1;
+    public static String filter_text_2;
 
-    //  *****   Tab Menu Panel
 
+    //  Tab Menu Panel
     @FindBy(how = How.CSS, using = "div[role='tabpanel'] > a:nth-of-type(4)")
     public WebElement header_menu_laverages_btn;
 
@@ -26,13 +28,20 @@ public class ProductsBasic extends BasicTestConfig {
 
     // Filters
     @FindBy(how = How.CSS, using = "i.z86c6gajHVkfQlpRs2eVs._2Fq3pFkpa9sTzZ1NugJ3O7")
-    public WebElement filter_long_short;
+    public WebElement filter_1;
 
     @FindBy(how = How.XPATH, using = "//div[1]/div/div[2]/label/i[@role='img']")
-    public WebElement filter_stock_markets;
+    public WebElement filter_2;
 
     @FindBy(how = How.CSS, using = "ul[role='listbox'] > li:nth-of-type(2)")
     public WebElement filter_option_1;
+
+
+    @FindBy(how = How.CSS, using = "table._3QuQRAgUeF2pqrF7IRP6nC")
+    public WebElement page_table;
+
+    @FindBy(how = How.CSS, using = "span[data-name=productName]")
+    public WebElement table_row1_product;
 
 
 

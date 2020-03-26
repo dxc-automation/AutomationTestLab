@@ -3,6 +3,7 @@ package com.demo.scripts.ui.search;
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.General;
 import com.demo.objects.products.LeveragedPage;
+import com.demo.objects.products.ProductsBasic;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,6 +18,7 @@ public class SearchForProductField extends BasicTestConfig {
 
     private static General general           = PageFactory.initElements(driver, General.class);
     private static LeveragedPage leveragedPage = PageFactory.initElements(driver, LeveragedPage.class);
+    private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
 
     private static void report() throws Exception {
@@ -43,8 +45,8 @@ public class SearchForProductField extends BasicTestConfig {
         general.search_for_a_product_field.sendKeys(productPrefix);
 
 
-        wait.until(ExpectedConditions.visibilityOf(leveragedPage.page_table));
-        String rowProduct = leveragedPage.table_row1_product.getText();
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+        String rowProduct = productsBasic.table_row1_product.getText();
 
         try {
             if (rowProduct.contains(productName) != true) {

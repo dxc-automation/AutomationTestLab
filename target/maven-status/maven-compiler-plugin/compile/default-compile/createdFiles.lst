@@ -4,14 +4,15 @@ com\demo\utilities\user_interface\WebDriverUtils.class
 com\demo\objects\LoginPage.class
 com\demo\scripts\api\products\AllProducts.class
 com\demo\scripts\ui\search\SearchByNameIsinOrSymbol.class
+com\demo\scripts\ui\products_page\leveraged\OpenLeveragedProduct.class
 com\demo\utilities\user_interface\Assertions.class
 com\demo\tests\TestCase_02.class
-com\demo\scripts\ui\products_page\leveraged\OpenLeverageProduct.class
 com\demo\utilities\user_interface\Basic.class
 com\demo\objects\activity\ActivityBasic.class
 com\demo\utilities\web_services\HttpClientUtils.class
 com\demo\utilities\user_interface\ImageCompare.class
 com\demo\utilities\user_interface\SpecializedScreenRecorder.class
+com\demo\tests\TestCase_04_Shares.class
 com\demo\utilities\user_interface\AlertHandling.class
 com\demo\scripts\ui\Orders.class
 com\demo\utilities\user_interface\GetAllPageLinks.class
@@ -26,7 +27,6 @@ com\demo\scripts\ui\search\SearchForProductField.class
 com\demo\scripts\ui\products_page\shares\OpenSharesPage.class
 com\demo\properties\Environments.class
 com\demo\tests\TestCase_03_Leveraged.class
-com\demo\scripts\ui\products_page\leveraged\OpenLaveragesPage.class
 com\demo\scripts\api\orders\history\TransactionHistory.class
 com\demo\scripts\api\search\PAGE_ProductsList.class
 com\demo\utilities\user_interface\Assertions$1.class
@@ -50,6 +50,7 @@ com\demo\scripts\api\orders\history\OrdersHistory.class
 com\demo\scripts\api\orders\place\OrderConfirmation.class
 com\demo\scripts\api\settings\MarketPageProducts.class
 com\demo\scripts\api\products\ProductList.class
+com\demo\scripts\ui\products_page\leveraged\OpenLaveragedPage.class
 com\demo\config\BasicTestConfig.class
 com\demo\config\ConsoleRunner.class
 com\demo\properties\FilePaths.class

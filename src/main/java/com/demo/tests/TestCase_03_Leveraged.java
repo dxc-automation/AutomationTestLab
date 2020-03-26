@@ -2,6 +2,7 @@ package com.demo.tests;
 
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.products.LeveragedPage;
+import com.demo.objects.products.ProductsBasic;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
@@ -20,6 +21,7 @@ import static com.demo.utilities.user_interface.Basic.*;
 public class TestCase_03_Leveraged extends BasicTestConfig {
 
     private static LeveragedPage leveragedPage = PageFactory.initElements(driver, LeveragedPage.class);
+    private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
     @Test(description = "API", priority = 0)
     public void post_login(Method method) throws Exception {
@@ -57,10 +59,10 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
     @Test(description = "WEB", priority = 5)
     public void web_open_leveraged_product() throws Exception {
         openLaveragesProduct();
-        wait.until(ExpectedConditions.visibilityOf(leveragedPage.filter_stock_markets));
-        System.out.println(getElementText(leveragedPage.filter_long_short));
-        System.out.println(getElementText(leveragedPage.filter_stock_markets));
-      //  Assert.assertEquals(getElementText(leveragedPage.filter_long_short), leveraged_short_long_filter);
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_2));
+        System.out.println(getElementText(productsBasic.filter_1));
+        System.out.println(getElementText(productsBasic.filter_2));
+      //  Assert.assertEquals(getElementText(leveragedPage.filter_1), filter_text_1);
     }
 
 }
