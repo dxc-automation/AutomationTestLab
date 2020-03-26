@@ -59,7 +59,6 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
     @Test(description = "WEB", priority = 5)
     public void web_open_leveraged_product() throws Exception {
         openLaveragesProduct();
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_2));
     }
 
 }
