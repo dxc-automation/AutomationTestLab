@@ -13,7 +13,7 @@ public class FilePaths {
 
 
     //  * * * *    F I L E   P A T H S
-    public final static String report_json_folder          = path + "./report/JSON/";
+    public final static String report_json_folder          = path + ".\\report\\JSON\\";
     public final static String report_folder               = path + "./report/";
     public final static String report_html_file            = path + "./report/TestReport.html";
     public final static String report_config_xml_file      = path + "./src/main/resources/extent-config.xml";
@@ -26,7 +26,7 @@ public class FilePaths {
     public final static String video_files                 = path + "./report/video/";
 
     public final static String config_properties_file      = path + "./src/main/resources/config.properties";
-    public final static String chrome_driver_file          = path + "./src/main/resources/drivers/chromedriver.exe";
+    public final static String chrome_driver_file          = path + "..\\src\\main\\resources\\drivers\\chromedriver.exe";
     public final static String firefox_driver_file         = path + "./src/main/resources/drivers/geckodriver.exe";
 
     public final static String cookies_file                = path + "./report/cookies/";

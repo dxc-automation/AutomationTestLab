@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Demo Test Suite]">
+  <parameter name="environment" value="internal"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.demo.config.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" verbose="10" name="TC_01_Chrome(failed)">
+    <classes>
+      <class name="com.demo.tests.TestCase_04_Shares">
+        <methods>
+          <include name="browserConfig"/>
+          <include name="cleanReportData"/>
+          <include name="web_login"/>
+          <include name="flushReportData"/>
+          <include name="get_product_list"/>
+          <include name="setEnvironment"/>
+          <include name="get_user_info"/>
+          <include name="post_login"/>
+          <include name="clearXmlFiles"/>
+          <include name="generateReport"/>
+          <include name="web_shares_filters"/>
+        </methods>
+      </class> <!-- com.demo.tests.TestCase_04_Shares -->
+    </classes>
+  </test> <!-- TC_01_Chrome(failed) -->
+</suite> <!-- Failed suite [Demo Test Suite] -->
