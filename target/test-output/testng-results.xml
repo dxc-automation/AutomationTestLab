@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Demo Test Suite" duration-ms="16825" started-at="2020-03-26T14:27:03Z" finished-at="2020-03-26T14:27:20Z">
+  <suite name="Demo Test Suite" duration-ms="14640" started-at="2020-03-26T14:41:05Z" finished-at="2020-03-26T14:41:20Z">
     <groups>
     </groups>
-    <test name="TC_01_Chrome" duration-ms="16825" started-at="2020-03-26T14:27:03Z" finished-at="2020-03-26T14:27:20Z">
+    <test name="TC_01_Chrome" duration-ms="14640" started-at="2020-03-26T14:41:05Z" finished-at="2020-03-26T14:41:20Z">
       <class name="com.demo.tests.TestCase_04_Shares">
-        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="browserConfig" is-config="true" duration-ms="7324" started-at="2020-03-26T14:26:56Z" finished-at="2020-03-26T14:27:03Z">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="browserConfig" is-config="true" duration-ms="6956" started-at="2020-03-26T14:40:58Z" finished-at="2020-03-26T14:41:05Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="cleanReportData" is-config="true" duration-ms="6" started-at="2020-03-26T14:27:03Z" finished-at="2020-03-26T14:27:03Z">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="cleanReportData" is-config="true" duration-ms="5" started-at="2020-03-26T14:41:05Z" finished-at="2020-03-26T14:41:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method status="PASS" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="setEnvironment" is-config="true" duration-ms="28" started-at="2020-03-26T14:27:03Z" finished-at="2020-03-26T14:27:03Z">
+        <test-method status="PASS" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="setEnvironment" is-config="true" duration-ms="30" started-at="2020-03-26T14:41:05Z" finished-at="2020-03-26T14:41:05Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironment -->
-        <test-method status="PASS" signature="post_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="post_login" duration-ms="454" started-at="2020-03-26T14:27:03Z" description="API" finished-at="2020-03-26T14:27:04Z">
+        <test-method status="PASS" signature="post_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="post_login" duration-ms="448" started-at="2020-03-26T14:41:05Z" description="API" finished-at="2020-03-26T14:41:06Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- post_login -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-26T14:27:04Z" finished-at="2020-03-26T14:27:04Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-26T14:41:06Z" finished-at="2020-03-26T14:41:06Z">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="get_user_info(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="get_user_info" duration-ms="262" started-at="2020-03-26T14:27:04Z" description="API" finished-at="2020-03-26T14:27:04Z">
+        <test-method status="PASS" signature="get_user_info(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="get_user_info" duration-ms="231" started-at="2020-03-26T14:41:06Z" description="API" finished-at="2020-03-26T14:41:06Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_user_info -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-26T14:27:04Z" finished-at="2020-03-26T14:27:04Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-26T14:41:06Z" finished-at="2020-03-26T14:41:06Z">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="get_product_list(java.lang.reflect.Method)[pri:2, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="get_product_list" duration-ms="10362" started-at="2020-03-26T14:27:04Z" description="API" finished-at="2020-03-26T14:27:14Z">
+        <test-method status="PASS" signature="get_product_list(java.lang.reflect.Method)[pri:2, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="get_product_list" duration-ms="9015" started-at="2020-03-26T14:41:06Z" description="API" finished-at="2020-03-26T14:41:15Z">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_product_list -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="43" started-at="2020-03-26T14:27:14Z" finished-at="2020-03-26T14:27:14Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="42" started-at="2020-03-26T14:41:15Z" finished-at="2020-03-26T14:41:15Z">
           <params>
             <param index="0">
               <value>
@@ -99,11 +99,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="web_login()[pri:3, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="web_login" duration-ms="1546" started-at="2020-03-26T14:27:14Z" description="WEB" finished-at="2020-03-26T14:27:16Z">
+        <test-method status="PASS" signature="web_login()[pri:3, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="web_login" duration-ms="1457" started-at="2020-03-26T14:41:15Z" description="WEB" finished-at="2020-03-26T14:41:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_login -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-26T14:27:16Z" finished-at="2020-03-26T14:27:16Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-26T14:41:16Z" finished-at="2020-03-26T14:41:16Z">
           <params>
             <param index="0">
               <value>
@@ -114,11 +114,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="web_shares_filters()[pri:4, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="web_shares_filters" duration-ms="4144" started-at="2020-03-26T14:27:16Z" description="WEB" finished-at="2020-03-26T14:27:20Z">
+        <test-method status="PASS" signature="web_shares_filters()[pri:4, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="web_shares_filters" duration-ms="3433" started-at="2020-03-26T14:41:16Z" description="WEB" finished-at="2020-03-26T14:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_shares_filters -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-26T14:27:20Z" finished-at="2020-03-26T14:27:20Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-26T14:41:20Z" finished-at="2020-03-26T14:41:20Z">
           <params>
             <param index="0">
               <value>
@@ -129,11 +129,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="clearXmlFiles" is-config="true" duration-ms="9" started-at="2020-03-26T14:27:20Z" finished-at="2020-03-26T14:27:20Z">
+        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="clearXmlFiles" is-config="true" duration-ms="9" started-at="2020-03-26T14:41:20Z" finished-at="2020-03-26T14:41:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="flushReportData" is-config="true" duration-ms="5040" started-at="2020-03-26T14:27:20Z" finished-at="2020-03-26T14:27:25Z">
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="flushReportData" is-config="true" duration-ms="5095" started-at="2020-03-26T14:41:20Z" finished-at="2020-03-26T14:41:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->

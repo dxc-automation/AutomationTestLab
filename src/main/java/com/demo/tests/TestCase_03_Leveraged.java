@@ -60,9 +60,6 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
     public void web_open_leveraged_product() throws Exception {
         openLaveragesProduct();
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_2));
-        System.out.println(getElementText(productsBasic.filter_1));
-        System.out.println(getElementText(productsBasic.filter_2));
-      //  Assert.assertEquals(getElementText(leveragedPage.filter_1), filter_text_1);
     }
 
 }
