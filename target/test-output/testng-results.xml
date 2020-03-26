@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Demo Test Suite" duration-ms="14223" started-at="2020-03-26T19:05:23Z" finished-at="2020-03-26T19:05:37Z">
+    <groups>
+    </groups>
+    <test name="TC_01_Chrome" duration-ms="14223" started-at="2020-03-26T19:05:23Z" finished-at="2020-03-26T19:05:37Z">
+      <class name="com.demo.tests.TestCase_04_Shares">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="browserConfig" is-config="true" duration-ms="7256" started-at="2020-03-26T19:05:15Z" finished-at="2020-03-26T19:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="cleanReportData" is-config="true" duration-ms="6" started-at="2020-03-26T19:05:23Z" finished-at="2020-03-26T19:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanReportData -->
+        <test-method status="PASS" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="setEnvironment" is-config="true" duration-ms="34" started-at="2020-03-26T19:05:23Z" finished-at="2020-03-26T19:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[internal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setEnvironment -->
+        <test-method status="PASS" signature="post_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="post_login" duration-ms="498" started-at="2020-03-26T19:05:23Z" description="API" finished-at="2020-03-26T19:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_04_Shares.post_login(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_login -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-26T19:05:23Z" finished-at="2020-03-26T19:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=post_login status=SUCCESS method=TestCase_04_Shares.post_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="get_user_info(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="get_user_info" duration-ms="214" started-at="2020-03-26T19:05:23Z" description="API" finished-at="2020-03-26T19:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_04_Shares.get_user_info(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_user_info -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-26T19:05:23Z" finished-at="2020-03-26T19:05:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=get_user_info status=SUCCESS method=TestCase_04_Shares.get_user_info(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_04_Shares@647e447] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="get_product_list(java.lang.reflect.Method)[pri:2, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="get_product_list" duration-ms="8677" started-at="2020-03-26T19:05:23Z" description="API" finished-at="2020-03-26T19:05:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_04_Shares.get_product_list(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_product_list -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="44" started-at="2020-03-26T19:05:32Z" finished-at="2020-03-26T19:05:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=get_product_list status=SUCCESS method=TestCase_04_Shares.get_product_list(java.lang.reflect.Method)[pri:2, instance:com.demo.tests.TestCase_04_Shares@647e447] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="web_login()[pri:3, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="web_login" duration-ms="1419" started-at="2020-03-26T19:05:32Z" description="WEB" finished-at="2020-03-26T19:05:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_login -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-26T19:05:34Z" finished-at="2020-03-26T19:05:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_login status=SUCCESS method=TestCase_04_Shares.web_login()[pri:3, instance:com.demo.tests.TestCase_04_Shares@647e447] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="web_shares_filters()[pri:4, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="web_shares_filters" duration-ms="3356" started-at="2020-03-26T19:05:34Z" description="WEB" finished-at="2020-03-26T19:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_shares_filters -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-26T19:05:37Z" finished-at="2020-03-26T19:05:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_shares_filters status=SUCCESS method=TestCase_04_Shares.web_shares_filters()[pri:4, instance:com.demo.tests.TestCase_04_Shares@647e447] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="clearXmlFiles" is-config="true" duration-ms="10" started-at="2020-03-26T19:05:37Z" finished-at="2020-03-26T19:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearXmlFiles -->
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_04_Shares@647e447]" name="flushReportData" is-config="true" duration-ms="5042" started-at="2020-03-26T19:05:37Z" finished-at="2020-03-26T19:05:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReportData -->
+      </class> <!-- com.demo.tests.TestCase_04_Shares -->
+    </test> <!-- TC_01_Chrome -->
+  </suite> <!-- Demo Test Suite -->
+</testng-results>
