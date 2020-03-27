@@ -13,7 +13,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 
 
-public class Basic extends BasicTestConfig {
+public class GetElementText extends BasicTestConfig {
 
     public static String getElementText(WebElement element) {
         String elementText = element.getText();

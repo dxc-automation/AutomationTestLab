@@ -14,8 +14,13 @@ import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.*;
 import static com.demo.scripts.ui.filters.LaveragesFilters.*;
 import static com.demo.scripts.ui.products_page.BasicProductPage.*;
+import static com.demo.utilities.user_interface.GetElementText.*;
+
 
 public class TestCase_03_Leveraged extends BasicTestConfig {
+
+    private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
+
 
     @Test(description = "API", priority = 0)
     public void post_login(Method method) throws Exception {
@@ -53,6 +58,8 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
     @Test(description = "WEB", priority = 5)
     public void web_open_leveraged_product() throws Exception {
         openProduct();
+        getElementText(productsBasic.filter_1);
+        
     }
 
 }

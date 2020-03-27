@@ -15,6 +15,7 @@ import static com.demo.config.ReporterConfig.test;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
 import static com.demo.scripts.ui.products_page.leveraged.OpenLaveragedPage.*;
 import static com.demo.objects.products.ProductsBasic.*;
+import static com.demo.utilities.user_interface.GetElementText.*;
 
 
 public class LaveragesFilters extends BasicTestConfig {
