@@ -14,6 +14,7 @@ import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.secureLoginWeb;
 import static com.demo.scripts.ui.filters.SharesFilters.*;
 import static com.demo.scripts.ui.products_page.BasicProductPage.openProduct;
+import static com.demo.scripts.ui.search.SearchForProductField.*;
 
 public class TestCase_04_Shares extends BasicTestConfig {
 
@@ -49,6 +50,12 @@ public class TestCase_04_Shares extends BasicTestConfig {
     @Test(description = "WEB", priority = 4)
     public void web_shares_filters() throws Exception {
         shraresFilters();
+    }
+
+
+    @Test(description = "WEB", priority = 5)
+    public void web_search_for_product() throws Exception {
+        checkSearchForProduct();
     }
 
 
