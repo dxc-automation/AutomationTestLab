@@ -24,6 +24,12 @@ public class ProductsBasic extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "div[role='tabpanel'] > a:nth-of-type(4)")
     public WebElement header_menu_laverages_btn;
 
+    @FindBy(how = How.CSS, using = "div[role='tabpanel'] > a:nth-of-type(5)")
+    public WebElement header_menu_bonds_btn;
+
+    @FindBy(how = How.CSS, using = "div[role='tabpanel'] > a:nth-of-type(6)")
+    public WebElement header_menu_funds_btn;
+
 
 
     // Filters
@@ -33,8 +39,17 @@ public class ProductsBasic extends BasicTestConfig {
     @FindBy(how = How.XPATH, using = "//div[1]/div/div[2]/label/i[@role='img']")
     public WebElement filter_2;
 
-    @FindBy(how = How.CSS, using = "ul[role='listbox'] > li:nth-of-type(2)")
+    @FindBy(how = How.CSS, using = "ul[role='listbox'] > li:nth-of-type(1)")
     public WebElement filter_option_1;
+
+    @FindBy(how = How.CSS, using = "ul[role='listbox'] > li:nth-of-type(2)")
+    public WebElement filter_option_2;
+
+    @FindBy(how = How.CSS, using = "ul[role='listbox'] > li:nth-of-type(3)")
+    public WebElement filter_option_3;
+
+    @FindBy(how = How.CSS, using = "ul[role='listbox'] > li:nth-of-type(4)")
+    public WebElement filter_option_4;
 
 
     @FindBy(how = How.CSS, using = "table._3QuQRAgUeF2pqrF7IRP6nC")

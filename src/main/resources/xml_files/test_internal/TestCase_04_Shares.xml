@@ -23,6 +23,7 @@
                     <include name="get_product_list"/>
                     <include name="web_login"/>
                     <include name="web_shares_filters"/>
+                    <include name="web_open_shares_product"/>
                 </methods>
             </class>
         </classes>

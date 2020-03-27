@@ -2,12 +2,10 @@ package com.demo.scripts.ui.search;
 
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.General;
-import com.demo.objects.products.LeveragedPage;
 import com.demo.objects.products.ProductsBasic;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
@@ -17,7 +15,6 @@ import static com.demo.properties.TestData.productName;
 public class SearchForProductField extends BasicTestConfig {
 
     private static General general           = PageFactory.initElements(driver, General.class);
-    private static LeveragedPage leveragedPage = PageFactory.initElements(driver, LeveragedPage.class);
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
 

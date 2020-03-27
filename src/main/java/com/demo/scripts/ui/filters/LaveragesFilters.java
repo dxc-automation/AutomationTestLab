@@ -5,7 +5,6 @@ import com.demo.config.BasicTestConfig;
 import com.demo.objects.General;
 import com.demo.objects.LoginPage;
 import com.demo.objects.activity.ActivityBasic;
-import com.demo.objects.products.LeveragedPage;
 import com.demo.objects.products.ProductsBasic;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,10 +19,6 @@ import static com.demo.objects.products.ProductsBasic.*;
 
 public class LaveragesFilters extends BasicTestConfig {
 
-    private static General general = PageFactory.initElements(driver, General.class);
-    private static ActivityBasic activityBasic = PageFactory.initElements(driver, ActivityBasic.class);
-    private static LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-    private static LeveragedPage leveragedPage = PageFactory.initElements(driver, LeveragedPage.class);
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
 
@@ -48,16 +43,16 @@ public class LaveragesFilters extends BasicTestConfig {
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_1));
         productsBasic.filter_1.click();
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_1));
-        filter_text_1 = productsBasic.filter_option_1.getText();
-        productsBasic.filter_option_1.click();
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_2));
+        filter_text_1 = productsBasic.filter_option_2.getText();
+        productsBasic.filter_option_2.click();
         test.pass("<b>[STEP 1]</b> Short/Long filter was settled to show only <u><i>" + filter_text_1 + "</i></u>");
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_2));
         productsBasic.filter_2.click();
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_1));
-        filter_text_2 = productsBasic.filter_option_1.getText();
-        productsBasic.filter_option_1.click();
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_2));
+        filter_text_2 = productsBasic.filter_option_2.getText();
+        productsBasic.filter_option_2.click();
         test.pass("<b>[STEP 2]</b> Stock Markets filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));

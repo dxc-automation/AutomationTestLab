@@ -1,10 +1,8 @@
 package com.demo.tests;
 
 import com.demo.config.BasicTestConfig;
-import com.demo.objects.products.LeveragedPage;
 import com.demo.objects.products.ProductsBasic;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
@@ -15,13 +13,9 @@ import static com.demo.scripts.api.account.Login.secureLogin;
 import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.*;
 import static com.demo.scripts.ui.filters.LaveragesFilters.*;
-import static com.demo.scripts.ui.products_page.leveraged.OpenLeveragedProduct.*;
-import static com.demo.utilities.user_interface.Basic.*;
+import static com.demo.scripts.ui.products_page.BasicProductPage.*;
 
 public class TestCase_03_Leveraged extends BasicTestConfig {
-
-    private static LeveragedPage leveragedPage = PageFactory.initElements(driver, LeveragedPage.class);
-    private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
     @Test(description = "API", priority = 0)
     public void post_login(Method method) throws Exception {
@@ -58,7 +52,7 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
 
     @Test(description = "WEB", priority = 5)
     public void web_open_leveraged_product() throws Exception {
-        openLaveragesProduct();
+        openProduct();
     }
 
 }
