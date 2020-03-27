@@ -36,7 +36,7 @@ public class TestCase_04_Shares extends BasicTestConfig {
     @Test(description = "API", priority = 2)
     public void get_product_list(Method method) throws Exception {
         fileName = method.getName() + ".json";
-        getAllProductsFromType(fileName, "shares", false);
+        getAllProductsFromType(fileName, "stocks", false);
     }
 
 

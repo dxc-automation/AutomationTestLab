@@ -8,7 +8,6 @@ com\demo\scripts\ui\search\SearchByNameIsinOrSymbol.class
 com\demo\utilities\user_interface\Assertions.class
 com\demo\tests\TestCase_02.class
 com\demo\scripts\ui\filters\BondsFilters.class
-com\demo\utilities\user_interface\Basic.class
 com\demo\objects\activity\ActivityBasic.class
 com\demo\utilities\web_services\HttpClientUtils.class
 com\demo\tests\TestCase_05_Bonds.class
@@ -56,6 +55,7 @@ com\demo\scripts\api\orders\history\OrdersHistory.class
 com\demo\scripts\api\orders\place\OrderConfirmation.class
 com\demo\scripts\api\settings\MarketPageProducts.class
 com\demo\scripts\ui\products_page\BasicProductPage.class
+com\demo\utilities\user_interface\GetElementText.class
 com\demo\scripts\api\products\ProductList.class
 com\demo\scripts\ui\products_page\leveraged\OpenLaveragedPage.class
 com\demo\config\BasicTestConfig.class

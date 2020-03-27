@@ -41,9 +41,9 @@ public class EtfsFilters extends BasicTestConfig {
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_1));
         productsBasic.filter_1.click();
 
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_3));
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_1));
         filter_text_1 = productsBasic.filter_option_3.getText();
-        productsBasic.filter_option_3.click();
+        productsBasic.filter_option_1.click();
         test.pass("<b>[STEP 1]</b> Country filter was settled to show only <u><i>" + filter_text_1 + "</i></u>");
 
 
