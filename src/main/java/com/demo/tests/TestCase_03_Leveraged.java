@@ -65,8 +65,6 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
     @Test(description = "WEB", priority = 6)
     public void web_open_leveraged_product() throws Exception {
         openProduct();
-        getElementText(productsBasic.filter_1);
-
     }
 
 }
