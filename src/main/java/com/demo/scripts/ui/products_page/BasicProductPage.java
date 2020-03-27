@@ -36,13 +36,11 @@ public class BasicProductPage extends BasicTestConfig {
         wait = new WebDriverWait(driver, 10);
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
+        test.pass("<b>[STEP 1]</b> First search result is <i><u>" + productsBasic.table_row1_product.getText() + "</i></u>");
         productsBasic.table_row1_product.click();
-        test.pass("<b>[STEP 1]</b> Products page was opened successfully");
-
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.product_back_btn));
         productsBasic.product_back_btn.click();
-        test.pass("<b>[STEP 2]</b> Laverages products page was opened successfully");
-
+        test.pass("<b>[STEP 2]</b> Product page was opened successfully");
     }
 }

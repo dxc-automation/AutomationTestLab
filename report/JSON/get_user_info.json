@@ -28,7 +28,7 @@
     "bankAccount": {
       "bankAccountId": 469450,
       "iban": "NL14ABNA0411232584",
-      "bic": "ABNANL2AXXX",
+      "bic": "ABNANL2A",
       "status": "VERIFIED"
     },
     "memberCode": "A0A425F1",

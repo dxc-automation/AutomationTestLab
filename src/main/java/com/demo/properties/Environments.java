@@ -102,7 +102,7 @@ public class Environments extends BasicTestConfig {
         } else if (env.equalsIgnoreCase("webtrader")) {
             CLIENT_INFO = "/dgpawebservice/secure/client";
         } else if (env.equalsIgnoreCase("weekly")) {
-            CLIENT_INFO = "/paservice/secure/client";
+            CLIENT_INFO = "/dgpawebservice/secure/client";
         }
         return CLIENT_INFO;
     }
@@ -114,7 +114,7 @@ public class Environments extends BasicTestConfig {
         } else if (env.equalsIgnoreCase("webtrader")) {
             PRODUCT_LIST = "/productsnew/secure/v5/";
         } else if (env.equalsIgnoreCase("weekly")) {
-            PRODUCT_LIST = "/dgproductsearch/secure/v5/";
+            PRODUCT_LIST = "/productsnew/secure/v5/";
         }
         return PRODUCT_LIST;
     }

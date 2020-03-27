@@ -47,7 +47,8 @@ public class SearchForProductField extends BasicTestConfig {
 
         try {
             if (rowProduct.contains(productName) != true) {
-                test.pass("<pre><b>[STEP 1]</b> Product search completed</pre>");
+                test.pass("<pre><b>[STEP 1]</b> Product search completed<br>" +
+                          "Product <i><u>" + productName + "</i></u> is found");
             } else {
                 test.fail("<pre><b> Product was not found in search results</b></pre>");
             }

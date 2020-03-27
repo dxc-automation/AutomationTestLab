@@ -55,7 +55,7 @@ public class ProductsBasic extends BasicTestConfig {
     @FindBy(how = How.CSS, using = "table._3QuQRAgUeF2pqrF7IRP6nC")
     public WebElement page_table;
 
-    @FindBy(how = How.CSS, using = "span[data-name=productName]")
+    @FindBy(how = How.CSS, using = "a._3iZBzOL8dQb_Js_wmtyrq_.wu8cJyGvRRJtmnKePG7x6")
     public WebElement table_row1_product;
 
 
