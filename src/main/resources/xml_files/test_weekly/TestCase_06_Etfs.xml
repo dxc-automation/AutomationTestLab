@@ -16,7 +16,7 @@
 
     <test name="TC_01_Chrome">
         <classes>
-            <class name="com.demo.tests.TestCase_05_Bonds">
+            <class name="com.demo.tests.TestCase_06_Etfs">
                 <methods>
                     <include name="post_login"/>
                     <include name="get_user_info"/>

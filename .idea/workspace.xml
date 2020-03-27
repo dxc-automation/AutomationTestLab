@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/get_product_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/get_product_list.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/post_login.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/post_login.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Shares_Product.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Shares_Product.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/products/LeveragedPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/objects/products/ProductsBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/objects/products/ProductsBasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/leveraged/OpenLeveragedProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/BasicProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_02.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_04_Shares.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_04_Shares.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/archive-tmp/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/objects/products/ProductsBasic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/objects/products/ProductsBasic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/filters/LaveragesFilters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/filters/LaveragesFilters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/filters/SharesFilters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/filters/SharesFilters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/products_page/leveraged/OpenLeveragedProduct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_03_Leveraged.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_03_Leveraged.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_04_Shares.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_04_Shares.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/tests.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_06_Etfs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_06_Etfs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_06_Etfs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_06_Etfs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_06_Etfs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_06_Etfs.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+            <state relative-caret-position="378">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,52 +34,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/bonds/OpenBondsPage.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+            <state relative-caret-position="211">
+              <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/FundsFilters.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_06_Etfs.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_05_Bonds.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_06_Etfs.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="399">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_06_Etfs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/EtfsFilters.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_05_Bonds.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/etfs/OpenEtfsPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+            <state relative-caret-position="378">
+              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -120,28 +94,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_06_Etfs.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_05_Bonds.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_06_Etfs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="299">
+              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_06_Etfs.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+            <state relative-caret-position="204">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,15 +186,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_03_Shares.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_02.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/objects/products/LeveragedPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_04_Shares.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_04_Shares.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/leveraged/OpenLeveragedProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/leveraged/OpenBondsPage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_04_Shares.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_05_Bonds.xml" />
@@ -227,6 +205,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/etfs/OpenEtfsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/bonds/OpenBondsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_06_Etfs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_06_Etfs.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_06_Etfs.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_06_Etfs.xml" />
@@ -430,7 +413,7 @@
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="products_page" type="462c0819:PsiDirectoryNode" />
-              <item name="etfs" type="462c0819:PsiDirectoryNode" />
+              <item name="funds" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -441,8 +424,7 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="products_page" type="462c0819:PsiDirectoryNode" />
-              <item name="funds" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -522,7 +504,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585333276784" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585333338358" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml_files/test" />
     <property name="project.structure.last.edited" value="Project" />
@@ -1033,20 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchFromPlaceOrderSidePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchByNameIsinOrSymbol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="39" column="29" selection-start-line="39" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/api/products/ProductList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -1157,16 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_04_Shares.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1199,16 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1249,37 +1197,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_04_Shares.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_05_Bonds.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1338,30 +1259,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/FundsFilters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_05_Bonds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1389,10 +1290,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_06_Etfs.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchByNameIsinOrSymbol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+        <state relative-caret-position="558">
+          <caret line="39" column="29" selection-start-line="39" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchFromPlaceOrderSidePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1406,17 +1354,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_05_Bonds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_05_Bonds.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_06_Etfs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_webtrader/TestCase_06_Etfs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="399">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/xml_files/test_weekly/TestCase_06_Etfs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="399">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
