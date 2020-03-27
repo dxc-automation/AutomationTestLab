@@ -36,23 +36,28 @@ public class SearchForProductField extends BasicTestConfig {
         report();
         wait = new WebDriverWait(driver, 20);
 
-        wait.until(ExpectedConditions.visibilityOf(general.search_for_a_product_field));
-        int i = productName.indexOf(' ');
-        String productPrefix = productName.substring(0, i);
-        general.search_for_a_product_field.sendKeys(productPrefix);
-
-
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
-        String rowProduct = productsBasic.table_row1_product.getText();
-
         try {
-            if (rowProduct.contains(productName) != true) {
-                test.pass("<pre><b>[STEP 1]</b> Product search completed<br>" +
-                          "Product <i><u>" + productName + "</i></u> is found");
-            } else {
-                test.fail("<pre><b> Product was not found in search results</b></pre>");
+            wait.until(ExpectedConditions.visibilityOf(general.search_for_a_product_field));
+            int i = productName.indexOf(' ');
+            String productPrefix = productName.substring(0, i);
+            general.search_for_a_product_field.sendKeys(productPrefix);
+
+
+            wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+            String rowProduct = productsBasic.table_row1_product.getText();
+
+            try {
+                if (rowProduct.contains(productName) != true) {
+                    test.pass("<pre><b>[STEP 1]</b> Product search completed<br>" +
+                            "Product <i><u>" + productName + "</i></u> is found");
+                } else {
+                    test.fail("<pre><b> Product was not found in search results</b></pre>");
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         } catch (Exception e) {
+            test.fail("<pre>" + e + "</pre>");
             e.printStackTrace();
         }
     }

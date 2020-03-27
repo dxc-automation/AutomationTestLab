@@ -14,6 +14,7 @@ import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.*;
 import static com.demo.scripts.ui.filters.LaveragesFilters.*;
 import static com.demo.scripts.ui.products_page.BasicProductPage.*;
+import static com.demo.scripts.ui.search.SearchForProductField.checkSearchForProduct;
 import static com.demo.utilities.user_interface.GetElementText.*;
 
 
@@ -56,6 +57,12 @@ public class TestCase_03_Leveraged extends BasicTestConfig {
 
 
     @Test(description = "WEB", priority = 5)
+    public void web_search_for_product() throws Exception {
+        checkSearchForProduct();
+    }
+
+
+    @Test(description = "WEB", priority = 6)
     public void web_open_leveraged_product() throws Exception {
         openProduct();
         getElementText(productsBasic.filter_1);

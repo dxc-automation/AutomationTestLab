@@ -19,6 +19,7 @@
             <class name="com.demo.tests.TestCase_04_Shares">
                 <methods>
                     <include name="post_login"/>
+                    <include name="post_login"/>
                     <include name="get_user_info"/>
                     <include name="get_product_list"/>
                     <include name="web_login"/>

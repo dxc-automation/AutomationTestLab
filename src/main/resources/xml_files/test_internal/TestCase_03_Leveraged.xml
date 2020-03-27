@@ -23,6 +23,7 @@
                     <include name="get_product_list"/>
                     <include name="web_login"/>
                     <include name="web_leveraged_filters"/>
+                    <include name="web_search_for_product"/>
                     <include name="web_open_leveraged_product"/>
                 </methods>
             </class>

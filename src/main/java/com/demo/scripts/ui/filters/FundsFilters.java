@@ -45,7 +45,7 @@ public class FundsFilters extends BasicTestConfig {
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_3));
         filter_text_1 = productsBasic.filter_option_3.getText();
         productsBasic.filter_option_3.click();
-        test.pass("<b>[STEP 1]</b> Country filter was settled to show only <u><i>" + filter_text_1 + "</i></u>");
+        test.pass("<b>[STEP 1]</b> Type filter was settled to show only <u><i>" + filter_text_1 + "</i></u>");
 
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_2));
@@ -53,10 +53,10 @@ public class FundsFilters extends BasicTestConfig {
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_4));
         filter_text_2 = productsBasic.filter_option_2.getText();
         productsBasic.filter_option_4.click();
-        test.pass("<b>[STEP 2]</b> Indicates filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
+        test.pass("<b>[STEP 2]</b> Providers filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
-        test.pass("<b>[STEP 3]</b> Funds products table was opened successfully");
+        test.pass("<b>[STEP 3]</b> Providers products table was opened successfully");
 
         takeScreenshot(driver, "Shares_Product");
         test.pass("<b>FUNDS PAGE</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Shares_Product.png").build());

@@ -54,7 +54,7 @@ public class SharesFilters extends BasicTestConfig {
         test.pass("<b>[STEP 2]</b> Indicates filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
-        test.pass("<b>[STEP 3]</b> Shares products table was opened successfully");
+        test.pass("<b>[STEP 3]</b> Shares products table was displayed successfully");
 
         takeScreenshot(driver, "Shares_Product");
         test.pass("<b>SHARES PAGE</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Shares_Product.png").build());
