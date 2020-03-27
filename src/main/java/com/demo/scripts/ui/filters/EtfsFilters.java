@@ -13,7 +13,7 @@ import static com.demo.config.ReporterConfig.test;
 import static com.demo.objects.products.ProductsBasic.filter_text_1;
 import static com.demo.objects.products.ProductsBasic.filter_text_2;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
-import static com.demo.scripts.ui.products_page.bonds.OpenBondsPage.openBondsPage;
+import static com.demo.scripts.ui.products_page.etfs.OpenEtfsPage.*;
 
 public class EtfsFilters extends BasicTestConfig {
 
@@ -33,7 +33,7 @@ public class EtfsFilters extends BasicTestConfig {
 
 
     public static void etfsFilters() throws Exception {
-        openBondsPage();
+        openEtfsPage();
         report();
 
         wait = new WebDriverWait(driver, 50);
