@@ -13,7 +13,6 @@ import static com.demo.config.ReporterConfig.test;
 
 public class BasicProductPage extends BasicTestConfig {
 
-    private static General general             = PageFactory.initElements(driver, General.class);
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
 
@@ -38,9 +37,11 @@ public class BasicProductPage extends BasicTestConfig {
         wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
         test.pass("<b>[STEP 1]</b> First search result is <i><u>" + productsBasic.table_row1_product.getText() + "</i></u>");
         productsBasic.table_row1_product.click();
+        test.pass("<b>[STEP 2]</b> Product page was opened successfully");
+
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.product_back_btn));
         productsBasic.product_back_btn.click();
-        test.pass("<b>[STEP 2]</b> Product page was opened successfully");
+        test.pass("<b>[STEP 3]</b> Product page was closed successfully");
     }
 }
