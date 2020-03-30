@@ -15,6 +15,8 @@ public class BasicProductPage extends BasicTestConfig {
 
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
+    private static String product;
+
 
     private static void report() throws Exception {
         String testName        = "<b>Open product</b>";
@@ -32,15 +34,17 @@ public class BasicProductPage extends BasicTestConfig {
 
     public static void openProduct() throws Exception {
         report();
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 30);
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
-        test.pass("<b>[STEP 1]</b> First search result is <i><u>" + productsBasic.table_row1_product.getText() + "</i></u>");
+        product = productsBasic.table_row1_product.getText();
+        test.pass("<b>[STEP 1]</b> First search result is <i><u>" + product + "</i></u>");
         productsBasic.table_row1_product.click();
         test.pass("<b>[STEP 2]</b> Product page was opened successfully");
 
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.product_back_btn));
+        takeScreenshot(driver, "Product");
         productsBasic.product_back_btn.click();
         test.pass("<b>[STEP 3]</b> Product page was closed successfully");
     }

@@ -29,7 +29,7 @@ public class TestNGListener extends ReporterConfig implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult arg0) {
-        System.out.println("\n TEST STARTED: [ "+arg0.getName().toUpperCase() + " ]");
+        System.out.println("\nTEST STARTED: [ "+arg0.getName().toUpperCase() + " ]");
     }
 
 

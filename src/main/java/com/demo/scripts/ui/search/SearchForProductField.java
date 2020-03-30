@@ -17,6 +17,8 @@ public class SearchForProductField extends BasicTestConfig {
     private static General general           = PageFactory.initElements(driver, General.class);
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
+    private static String product;
+
 
     private static void report() throws Exception {
         String testName        = "<b>Search For A Product</b>";
@@ -32,7 +34,7 @@ public class SearchForProductField extends BasicTestConfig {
 
 
 
-    public static void checkSearchForProduct() throws Exception {
+    public static void checkSearchForProductFromResponse() throws Exception {
         report();
         wait = new WebDriverWait(driver, 20);
 
@@ -47,7 +49,7 @@ public class SearchForProductField extends BasicTestConfig {
             String rowProduct = productsBasic.table_row1_product.getText();
 
             try {
-                if (rowProduct.contains(productName) != true) {
+                if (rowProduct.contains(productName) == true) {
                     test.pass("<pre><b>[STEP 1]</b> Product search completed<br>" +
                             "Product <i><u>" + productName + "</i></u> is found");
                 } else {
@@ -57,7 +59,38 @@ public class SearchForProductField extends BasicTestConfig {
                 e.printStackTrace();
             }
         } catch (Exception e) {
-            test.fail("<pre>" + e + "</pre>");
+            test.fail("<pre>" + e + "<br><br> Product <u>" + productName + "</pre>");
+            e.printStackTrace();
+        }
+    }
+
+    public static void checkSearchForProductFromTable() throws Exception {
+        report();
+        wait = new WebDriverWait(driver, 20);
+
+        try {
+            wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
+            product = productsBasic.table_row1_product.getText();
+
+            String productPrefix = product.substring(0, product.indexOf(' '));
+            general.search_for_a_product_field.sendKeys(productPrefix);
+
+
+            wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+            String rowProduct = productsBasic.table_row1_product.getText();
+
+            try {
+                if (rowProduct.contains(product) == true) {
+                    test.pass("<pre><b>[STEP 1]</b> Product search completed<br>" +
+                            "Product <i><u>" + product + "</i></u> is found");
+                } else {
+                    test.fail("<pre><b> Product was not found in search results</b></pre>");
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } catch (Exception e) {
+            test.fail("<pre>" + e + "<br><br> Product <u>" + product + "</pre>");
             e.printStackTrace();
         }
     }

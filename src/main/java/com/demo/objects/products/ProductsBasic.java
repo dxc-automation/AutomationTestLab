@@ -62,7 +62,6 @@ public class ProductsBasic extends BasicTestConfig {
 
 
 
-    //  *****   Orders
     @FindBy(how = How.CSS, using = "button[data-name=backButton]")
     public WebElement product_back_btn;
 }

@@ -55,7 +55,7 @@ public class TestCase_04_Shares extends BasicTestConfig {
 
     @Test(description = "WEB", priority = 5)
     public void web_search_for_product() throws Exception {
-        checkSearchForProduct();
+        checkSearchForProductFromTable();
     }
 
 

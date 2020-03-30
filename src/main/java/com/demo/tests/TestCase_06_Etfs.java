@@ -14,7 +14,8 @@ import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.secureLoginWeb;
 import static com.demo.scripts.ui.filters.EtfsFilters.*;
 import static com.demo.scripts.ui.products_page.BasicProductPage.openProduct;
-import static com.demo.scripts.ui.search.SearchForProductField.checkSearchForProduct;
+import static com.demo.scripts.ui.search.SearchForProductField.checkSearchForProductFromResponse;
+import static com.demo.scripts.ui.search.SearchForProductField.checkSearchForProductFromTable;
 
 public class TestCase_06_Etfs extends BasicTestConfig {
 
@@ -55,7 +56,7 @@ public class TestCase_06_Etfs extends BasicTestConfig {
 
     @Test(description = "WEB", priority = 5)
     public void web_search_for_product() throws Exception {
-        checkSearchForProduct();
+        checkSearchForProductFromTable();
     }
 
 

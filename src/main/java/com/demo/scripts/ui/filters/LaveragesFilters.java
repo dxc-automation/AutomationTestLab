@@ -22,6 +22,8 @@ public class LaveragesFilters extends BasicTestConfig {
 
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
+    private static String product;
+
 
     private static void report() throws Exception {
         String testName = "<b>Check leverages filters</b>";
@@ -56,10 +58,10 @@ public class LaveragesFilters extends BasicTestConfig {
         productsBasic.filter_option_2.click();
         test.pass("<b>[STEP 2]</b> Stock Markets filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
 
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
         test.pass("<b>[STEP 3]</b> Leveraged products table was displayed successfully");
 
         takeScreenshot(driver, "Leveraged_Product");
-        test.pass("<b>LEVERAGED PAGE</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Leveraged_Product.png").build());
+        test.pass("<b>LEVERAGED PAGE</b><br> First product table is: <u>" + productsBasic.table_row1_product.getText() + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Leveraged_Product.png").build());
     }
 }
