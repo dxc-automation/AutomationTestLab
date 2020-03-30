@@ -1,5 +1,6 @@
 package com.demo.scripts.ui.search;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.General;
 import com.demo.objects.products.ProductsBasic;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
+import static com.demo.properties.FilePaths.screenshots_actual_folder;
 import static com.demo.properties.TestData.productName;
 
 
@@ -50,8 +52,9 @@ public class SearchForProductField extends BasicTestConfig {
 
             try {
                 if (rowProduct.contains(productName) == true) {
-                    test.pass("<pre><b>[STEP 1]</b> Product search completed<br>" +
-                            "Product <i><u>" + productName + "</i></u> is found");
+                    test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + productName + "</i></u> is found");
+                    takeScreenshot(driver, "Search_Results");
+                    test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + productsBasic.table_row1_product.getText() + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
                 } else {
                     test.fail("<pre><b> Product was not found in search results</b></pre>");
                 }
@@ -72,7 +75,7 @@ public class SearchForProductField extends BasicTestConfig {
             wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
             product = productsBasic.table_row1_product.getText();
 
-            String productPrefix = product.substring(0, product.indexOf(' '));
+            String productPrefix = product.substring(1, product.indexOf(' '));
             general.search_for_a_product_field.sendKeys(productPrefix);
 
 
