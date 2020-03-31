@@ -8,9 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
+import static com.demo.properties.FilePaths.screenshots_failed_folder;
 import static com.demo.properties.TestData.productName;
 
 
@@ -20,6 +24,7 @@ public class SearchForProductField extends BasicTestConfig {
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
     private static String product;
+    private static String words;
 
 
     private static void report() throws Exception {
@@ -71,30 +76,26 @@ public class SearchForProductField extends BasicTestConfig {
         report();
         wait = new WebDriverWait(driver, 20);
 
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
+        product = productsBasic.table_row1_product.getText();
+        String[] productPrefix = product.split("\\.");
+        general.search_for_a_product_field.sendKeys(productPrefix);
+
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+        String rowProduct = productsBasic.table_row1_product.getText();
+
         try {
-            wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
-            product = productsBasic.table_row1_product.getText();
-
-            String productPrefix = product.substring(1, product.indexOf(' '));
-            general.search_for_a_product_field.sendKeys(productPrefix);
-
-
-            wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
-            String rowProduct = productsBasic.table_row1_product.getText();
-
-            try {
-                if (rowProduct.contains(product) == true) {
-                    test.pass("<pre><b>[STEP 1]</b> Product search completed<br>" +
-                            "Product <i><u>" + product + "</i></u> is found");
-                } else {
-                    test.fail("<pre><b> Product was not found in search results</b></pre>");
+            if (rowProduct.contains(product) == true) {
+                test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + productName + "</i></u> is found");
+                takeScreenshot(driver, "Search_Results");
+                test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + rowProduct+ "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
+            } else {
+                test.fail("<pre><b> Product was not found in search results</b></pre>");
                 }
             } catch (Exception e) {
                 e.printStackTrace();
-            }
-        } catch (Exception e) {
             test.fail("<pre>" + e + "<br><br> Product <u>" + product + "</pre>");
-            e.printStackTrace();
+            test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + "Search_Failed.png", "<br>" + e).build());
         }
     }
 }

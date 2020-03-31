@@ -68,7 +68,7 @@ public class LaveragesFilters extends BasicTestConfig {
         } catch (Exception e) {
             e.printStackTrace();
             String methodName     = method.getName();
-            test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png", "<br>" + e).build());
+            test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png", "<br>" + e.getLocalizedMessage()).build());
         }
         takeScreenshot(driver, "Leveraged_Product");
         test.pass("<b>LEVERAGED PAGE</b><br> First product table is: <u>" + productsBasic.table_row1_product.getText() + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Leveraged_Product.png").build());
