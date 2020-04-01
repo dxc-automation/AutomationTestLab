@@ -8,17 +8,22 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.lang.reflect.Method;
+
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
 import static com.demo.objects.products.ProductsBasic.filter_text_1;
 import static com.demo.objects.products.ProductsBasic.filter_text_2;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
+import static com.demo.properties.FilePaths.screenshots_failed_folder;
 import static com.demo.scripts.ui.products_page.funds.OpenFundsPage.*;
 
 public class FundsFilters extends BasicTestConfig {
 
     private static SharesPage sharesPage = PageFactory.initElements(driver, SharesPage.class);
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
+
+    private static Method method;
 
     private static void report() throws Exception {
         String testName        = "<b>Check funds filters</b>";
@@ -58,8 +63,14 @@ public class FundsFilters extends BasicTestConfig {
         wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
         test.pass("<b>[STEP 3]</b> Providers products table was opened successfully");
 
-        takeScreenshot(driver, "Shares_Product");
-        test.pass("<b>FUNDS PAGE</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Shares_Product.png").build());
+        try {
+            wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+            test.pass("<b>[STEP 3]</b> Funds products table was displayed successfully <br>" + productsBasic.table_row1_product.getText());
+        } catch (Exception e) {
+            e.printStackTrace();
+            String methodName = method.getName();
+            test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png", "<br>" + e.getLocalizedMessage()).build());
+        }
     }
 }
 
