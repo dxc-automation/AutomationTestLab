@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Demo Test Suite" duration-ms="59223" started-at="2020-03-31T21:37:13Z" finished-at="2020-03-31T21:38:12Z">
+  <suite name="Demo Test Suite" duration-ms="9003" started-at="2020-04-01T15:34:10Z" finished-at="2020-04-01T15:34:19Z">
     <groups>
     </groups>
-    <test name="TC_01_Chrome" duration-ms="59223" started-at="2020-03-31T21:37:13Z" finished-at="2020-03-31T21:38:12Z">
+    <test name="TC_01_Chrome" duration-ms="9003" started-at="2020-04-01T15:34:10Z" finished-at="2020-04-01T15:34:19Z">
       <class name="com.demo.tests.TestCase_03_Leveraged">
-        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="browserConfig" is-config="true" duration-ms="7332" started-at="2020-03-31T21:37:05Z" finished-at="2020-03-31T21:37:13Z">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="browserConfig" is-config="true" duration-ms="7363" started-at="2020-04-01T15:34:02Z" finished-at="2020-04-01T15:34:10Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="cleanReportData" is-config="true" duration-ms="6" started-at="2020-03-31T21:37:13Z" finished-at="2020-03-31T21:37:13Z">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="cleanReportData" is-config="true" duration-ms="10" started-at="2020-04-01T15:34:10Z" finished-at="2020-04-01T15:34:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method status="PASS" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="setEnvironment" is-config="true" duration-ms="29" started-at="2020-03-31T21:37:13Z" finished-at="2020-03-31T21:37:13Z">
+        <test-method status="PASS" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="setEnvironment" is-config="true" duration-ms="62" started-at="2020-04-01T15:34:10Z" finished-at="2020-04-01T15:34:10Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironment -->
-        <test-method status="PASS" signature="post_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="post_login" duration-ms="563" started-at="2020-03-31T21:37:13Z" description="API" finished-at="2020-03-31T21:37:13Z">
+        <test-method status="PASS" signature="post_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="post_login" duration-ms="606" started-at="2020-04-01T15:34:10Z" description="API" finished-at="2020-04-01T15:34:10Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- post_login -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-31T21:37:13Z" finished-at="2020-03-31T21:37:13Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-04-01T15:34:10Z" finished-at="2020-04-01T15:34:10Z">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="get_user_info(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="get_user_info" duration-ms="251" started-at="2020-03-31T21:37:13Z" description="API" finished-at="2020-03-31T21:37:14Z">
+        <test-method status="PASS" signature="get_user_info(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="get_user_info" duration-ms="251" started-at="2020-04-01T15:34:10Z" description="API" finished-at="2020-04-01T15:34:11Z">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_user_info -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-03-31T21:37:14Z" finished-at="2020-03-31T21:37:14Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-04-01T15:34:11Z" finished-at="2020-04-01T15:34:11Z">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="get_product_list(java.lang.reflect.Method)[pri:2, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="get_product_list" duration-ms="738" started-at="2020-03-31T21:37:14Z" description="API" finished-at="2020-03-31T21:37:14Z">
+        <test-method status="PASS" signature="get_product_list(java.lang.reflect.Method)[pri:2, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="get_product_list" duration-ms="854" started-at="2020-04-01T15:34:11Z" description="API" finished-at="2020-04-01T15:34:11Z">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_product_list -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="36" started-at="2020-03-31T21:37:14Z" finished-at="2020-03-31T21:37:14Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="36" started-at="2020-04-01T15:34:11Z" finished-at="2020-04-01T15:34:11Z">
           <params>
             <param index="0">
               <value>
@@ -99,11 +99,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="web_login()[pri:3, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_login" duration-ms="1520" started-at="2020-03-31T21:37:14Z" description="WEB" finished-at="2020-03-31T21:37:16Z">
+        <test-method status="PASS" signature="web_login()[pri:3, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_login" duration-ms="1401" started-at="2020-04-01T15:34:11Z" description="WEB" finished-at="2020-04-01T15:34:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_login -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-31T21:37:16Z" finished-at="2020-03-31T21:37:16Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-04-01T15:34:13Z" finished-at="2020-04-01T15:34:13Z">
           <params>
             <param index="0">
               <value>
@@ -114,200 +114,88 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="web_leveraged_filters()[pri:4, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_leveraged_filters" duration-ms="4357" started-at="2020-03-31T21:37:16Z" description="WEB" finished-at="2020-03-31T21:37:20Z">
+        <test-method status="FAIL" signature="web_leveraged_filters()[pri:4, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_leveraged_filters" duration-ms="3096" started-at="2020-04-01T15:34:13Z" description="WEB" finished-at="2020-04-01T15:34:16Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.demo.scripts.ui.filters.LaveragesFilters.leveragesFilters(LaveragesFilters.java:70)
+at com.demo.tests.TestCase_03_Leveraged.web_leveraged_filters(TestCase_03_Leveraged.java:55)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.TestNG.privateMain(TestNG.java:1354)
+at org.testng.TestNG.main(TestNG.java:1323)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_leveraged_filters -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-03-31T21:37:20Z" finished-at="2020-03-31T21:37:20Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="520" started-at="2020-04-01T15:34:16Z" finished-at="2020-04-01T15:34:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=web_leveraged_filters status=SUCCESS method=TestCase_03_Leveraged.web_leveraged_filters()[pri:4, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+                <![CDATA[[TestResult name=web_leveraged_filters status=FAILURE method=TestCase_03_Leveraged.web_leveraged_filters()[pri:4, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="FAIL" signature="web_search_for_product()[pri:5, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_search_for_product" duration-ms="20630" started-at="2020-03-31T21:37:20Z" description="WEB" finished-at="2020-03-31T21:37:41Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: table._3QuQRAgUeF2pqrF7IRP6nC' (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: table._3QuQRAgUeF2pqrF7IRP6nC' (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.demo.scripts.ui.search.SearchForProductField.checkSearchForProductFromTable(SearchForProductField.java:84)
-at com.demo.tests.TestCase_03_Leveraged.web_search_for_product(TestCase_03_Leveraged.java:61)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"table._3QuQRAgUeF2pqrF7IRP6nC"}
-  (Session info: chrome=80.0.3987.149)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'QAIT006', ip: '172.18.4.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\PPopov\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57864}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.149, webStorageEnabled: true}
-Session ID: a794aaa9edadcbd402150f9a5451122f
-*** Element info: {Using=css selector, value=table._3QuQRAgUeF2pqrF7IRP6nC}
-at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="web_search_for_product()[pri:5, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_search_for_product" duration-ms="1141" started-at="2020-04-01T15:34:16Z" description="WEB" finished-at="2020-04-01T15:34:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_search_for_product -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="339" started-at="2020-03-31T21:37:41Z" finished-at="2020-03-31T21:37:41Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="0" started-at="2020-04-01T15:34:18Z" finished-at="2020-04-01T15:34:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=web_search_for_product status=FAILURE method=TestCase_03_Leveraged.web_search_for_product()[pri:5, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+                <![CDATA[[TestResult name=web_search_for_product status=SUCCESS method=TestCase_03_Leveraged.web_search_for_product()[pri:5, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="FAIL" signature="web_open_leveraged_product()[pri:6, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_open_leveraged_product" duration-ms="30376" started-at="2020-03-31T21:37:41Z" description="WEB" finished-at="2020-03-31T21:38:12Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: a._3iZBzOL8dQb_Js_wmtyrq_.wu8cJyGvRRJtmnKePG7x6' (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: a._3iZBzOL8dQb_Js_wmtyrq_.wu8cJyGvRRJtmnKePG7x6' (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.demo.scripts.ui.products_page.BasicProductPage.openProduct(BasicProductPage.java:39)
-at com.demo.tests.TestCase_03_Leveraged.web_open_leveraged_product(TestCase_03_Leveraged.java:67)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a._3iZBzOL8dQb_Js_wmtyrq_.wu8cJyGvRRJtmnKePG7x6"}
-  (Session info: chrome=80.0.3987.149)
-  (Driver info: chromedriver=72.0.3626.7 (efcef9a3ecda02b2132af215116a03852d08b9cb),platform=Windows NT 10.0.18363 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
-System info: host: 'QAIT006', ip: '172.18.4.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.7 (efcef9a3ecda02..., userDataDir: C:\Users\PPopov\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57864}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 80.0.3987.149, webStorageEnabled: true}
-Session ID: a794aaa9edadcbd402150f9a5451122f
-*** Element info: {Using=css selector, value=a._3iZBzOL8dQb_Js_wmtyrq_.wu8cJyGvRRJtmnKePG7x6}
-at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="web_open_leveraged_product()[pri:6, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_open_leveraged_product" duration-ms="1079" started-at="2020-04-01T15:34:18Z" description="WEB" finished-at="2020-04-01T15:34:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- web_open_leveraged_product -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="396" started-at="2020-03-31T21:38:12Z" finished-at="2020-03-31T21:38:12Z">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="0" started-at="2020-04-01T15:34:19Z" finished-at="2020-04-01T15:34:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=web_open_leveraged_product status=FAILURE method=TestCase_03_Leveraged.web_open_leveraged_product()[pri:6, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+                <![CDATA[[TestResult name=web_open_leveraged_product status=SUCCESS method=TestCase_03_Leveraged.web_open_leveraged_product()[pri:6, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="clearXmlFiles" is-config="true" duration-ms="10" started-at="2020-03-31T21:38:12Z" finished-at="2020-03-31T21:38:12Z">
+        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="clearXmlFiles" is-config="true" duration-ms="13" started-at="2020-04-01T15:34:19Z" finished-at="2020-04-01T15:34:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearXmlFiles -->
-        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="flushReportData" is-config="true" duration-ms="5039" started-at="2020-03-31T21:38:12Z" finished-at="2020-03-31T21:38:17Z">
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="flushReportData" is-config="true" duration-ms="5048" started-at="2020-04-01T15:34:19Z" finished-at="2020-04-01T15:34:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->

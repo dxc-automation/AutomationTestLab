@@ -14458,52 +14458,6 @@
       "ratio": 100
     },
     {
-      "symbol": "R885G",
-      "closePriceDate": "2016-12-06",
-      "underlying_id": 143,
-      "leverage": 7.3,
-      "trailingStopOrderAllowed": false,
-      "sellAmountAllowed": false,
-      "shortlong": "L",
-      "joinOrderAllowed": false,
-      "contractSize": 1.0,
-      "currency": "EUR",
-      "id": "4900901",
-      "productType": "LEVERAGED",
-      "marketAllowed": true,
-      "orderTimeTypes": [
-        "DAY",
-        "GTC"
-      ],
-      "financingLevel": 162144.4647,
-      "stoploss": 174000.0,
-      "isFund": false,
-      "productTypeId": 14,
-      "limitHitOrderAllowed": false,
-      "exchangeId": "200",
-      "buyOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS"
-      ],
-      "issuer_id": 4,
-      "sellOrderTypes": [
-        "LIMIT",
-        "MARKET",
-        "STOPLOSS"
-      ],
-      "stoplossAllowed": true,
-      "combinedOrderAllowed": false,
-      "name": "BERKS#####SPLOPENG",
-      "tradable": true,
-      "stopLimitOrderAllowed": false,
-      "gtcAllowed": true,
-      "closePrice": 6.34,
-      "category": "D",
-      "isin": "NL0010684486",
-      "ratio": 10000
-    },
-    {
       "symbol": "G649G",
       "closePriceDate": "2016-12-06",
       "underlying_id": 143,
@@ -14547,6 +14501,52 @@
       "closePrice": 9.03,
       "category": "D",
       "isin": "NL0010348835",
+      "ratio": 10000
+    },
+    {
+      "symbol": "R885G",
+      "closePriceDate": "2016-12-06",
+      "underlying_id": 143,
+      "leverage": 7.3,
+      "trailingStopOrderAllowed": false,
+      "sellAmountAllowed": false,
+      "shortlong": "L",
+      "joinOrderAllowed": false,
+      "contractSize": 1.0,
+      "currency": "EUR",
+      "id": "4900901",
+      "productType": "LEVERAGED",
+      "marketAllowed": true,
+      "orderTimeTypes": [
+        "DAY",
+        "GTC"
+      ],
+      "financingLevel": 162144.4647,
+      "stoploss": 174000.0,
+      "isFund": false,
+      "productTypeId": 14,
+      "limitHitOrderAllowed": false,
+      "exchangeId": "200",
+      "buyOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "issuer_id": 4,
+      "sellOrderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOPLOSS"
+      ],
+      "stoplossAllowed": true,
+      "combinedOrderAllowed": false,
+      "name": "BERKS#####SPLOPENG",
+      "tradable": true,
+      "stopLimitOrderAllowed": false,
+      "gtcAllowed": true,
+      "closePrice": 6.34,
+      "category": "D",
+      "isin": "NL0010684486",
       "ratio": 10000
     },
     {

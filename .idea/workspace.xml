@@ -3,44 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/get_product_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/get_product_list.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/post_login.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/post_login.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Leveraged_Product.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Leveraged_Product.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Product.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Product.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Search_Results.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Search_Results.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Failed/TestCase_03_Leveraged.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Failed/TestCase_03_Leveraged.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/archive-tmp/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/tests.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/filters/LaveragesFilters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/filters/LaveragesFilters.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/search/SearchForProductField.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/search/SearchForProductField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Chrome.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Chrome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Chrome.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Chrome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_03_Leveraged.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/TC_01_Chrome.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/Demo Test Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_03_Leveraged.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_03_Leveraged.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/tests.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="70" column="177" selection-start-line="70" selection-start-column="177" selection-end-line="70" selection-end-column="177" />
+            <state relative-caret-position="556">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="80" column="54" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
+            <state relative-caret-position="577">
+              <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -424,17 +408,6 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="filters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -497,7 +470,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585690493837" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585762365767" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml_files/test" />
     <property name="project.structure.last.edited" value="Project" />
@@ -896,8 +869,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.5088889" side_tool="true" weight="0.19306667" />
       <window_info id="Image Layers" order="1" />
@@ -1382,8 +1354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="70" column="177" selection-start-line="70" selection-start-column="177" selection-end-line="70" selection-end-column="177" />
+        <state relative-caret-position="556">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1392,8 +1364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="80" column="54" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
+        <state relative-caret-position="577">
+          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

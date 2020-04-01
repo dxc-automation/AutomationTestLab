@@ -78,7 +78,7 @@ public class SearchForProductField extends BasicTestConfig {
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
         product = productsBasic.table_row1_product.getText();
-        String[] productPrefix = product.split("\\.");
+        String productPrefix = product.substring(0, 5);
         general.search_for_a_product_field.sendKeys(productPrefix);
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));

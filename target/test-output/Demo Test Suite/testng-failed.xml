@@ -11,11 +11,10 @@
       <class name="com.demo.tests.TestCase_03_Leveraged">
         <methods>
           <include name="browserConfig"/>
+          <include name="web_leveraged_filters"/>
           <include name="cleanReportData"/>
           <include name="flushReportData"/>
-          <include name="web_search_for_product"/>
           <include name="setEnvironment"/>
-          <include name="web_open_leveraged_product"/>
           <include name="clearXmlFiles"/>
           <include name="generateReport"/>
         </methods>
