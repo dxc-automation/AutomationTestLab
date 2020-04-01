@@ -63,14 +63,12 @@ public class LaveragesFilters extends BasicTestConfig {
         test.pass("<b>[STEP 2]</b> Stock Markets filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
 
         try {
-            wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
+            wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
             test.pass("<b>[STEP 3]</b> Leveraged products table was displayed successfully <br>" + productsBasic.table_row1_product.getText());
         } catch (Exception e) {
             e.printStackTrace();
             String methodName     = method.getName();
             test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + methodName + ".png", "<br>" + e.getLocalizedMessage()).build());
         }
-        takeScreenshot(driver, "Leveraged_Product");
-        test.pass("<b>LEVERAGED PAGE</b><br> First product table is: <u>" + productsBasic.table_row1_product.getText() + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Leveraged_Product.png").build());
     }
 }

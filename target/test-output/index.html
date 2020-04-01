@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Demo_Test_Suite">
-              <span class="suite-name border-failed">Demo Test Suite</span>
+              <span class="suite-name border-passed">Demo Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Demo_Test_Suite" class="hide-methods failed suite-Demo_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Demo_Test_Suite -->
-                      <a href="#" panel-name="suite-Demo_Test_Suite" class="show-methods failed suite-Demo_Test_Suite"> (show)</a> <!-- show-methods failed suite-Demo_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Demo_Test_Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Demo_Test_Suite" title="com.demo.tests.TestCase_03_Leveraged" hash-for-method="web_leveraged_filters">web_leveraged_filters</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Demo_Test_Suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -127,6 +113,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Demo_Test_Suite" title="com.demo.tests.TestCase_03_Leveraged" hash-for-method="post_login(public void com.demo.tests.TestCase_03_Leveraged.post_login(java.lang.reflect.Method) throws java.la...)">post_login(public void com.demo.tests.TestCase_03_Leveraged.post_login(java.lang.reflect.Method) throws java.la...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Demo_Test_Suite" title="com.demo.tests.TestCase_03_Leveraged" hash-for-method="web_leveraged_filters">web_leveraged_filters</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -156,52 +147,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Demo_Test_Suite" class="panel Demo_Test_Suite">
-          <div class="suite-Demo_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.demo.tests.TestCase_03_Leveraged</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="web_leveraged_filters">
-                  </a> <!-- web_leveraged_filters -->
-                  <span class="method-name">web_leveraged_filters</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.demo.scripts.ui.filters.LaveragesFilters.leveragesFilters(LaveragesFilters.java:70)
-	at com.demo.tests.TestCase_03_Leveraged.web_leveraged_filters(TestCase_03_Leveraged.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.TestNG.privateMain(TestNG.java:1354)
-	at org.testng.TestNG.main(TestNG.java:1323)
-
-</div> <!-- stack-trace -->
-                  <em>
-(WEB)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Demo_Test_Suite-class-failed -->
           <div class="suite-Demo_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -236,6 +181,15 @@
                   <span class="parameters">(public void com.demo.tests.TestCase_03_Leveraged.post_login(java.lang.reflect.Method) throws java.lang.Exception)</span>
                   <em>
 (API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="web_leveraged_filters">
+                  </a> <!-- web_leveraged_filters -->
+                  <span class="method-name">web_leveraged_filters</span>
+                  <em>
+(WEB)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -338,31 +292,31 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'web_leveraged_filters')
 data.setCell(0, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(0, 3, 3096);
+data.setCell(0, 3, 3625);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'web_login')
 data.setCell(1, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(1, 3, 1401);
+data.setCell(1, 3, 1482);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'web_search_for_product')
 data.setCell(2, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(2, 3, 1141);
+data.setCell(2, 3, 1172);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'web_open_leveraged_product')
 data.setCell(3, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(3, 3, 1079);
+data.setCell(3, 3, 1073);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'get_product_list')
 data.setCell(4, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(4, 3, 854);
+data.setCell(4, 3, 758);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'post_login')
 data.setCell(5, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(5, 3, 606);
+data.setCell(5, 3, 541);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'get_user_info')
 data.setCell(6, 2, 'com.demo.tests.TestCase_03_Leveraged')
-data.setCell(6, 3, 251);
+data.setCell(6, 3, 259);
 window.suiteTableData['Demo_Test_Suite']= { tableData: data, tableDiv: 'times-div-Demo_Test_Suite'}
 return data;
 }
@@ -400,77 +354,75 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
-                <span class="method-start">7363 ms</span>
+                <span class="method-start">6492 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">setEnvironment(webtrader)</span>
-                <span class="method-start">7373 ms</span>
+                <span class="method-start">6498 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">post_login(public void com.demo.tests.TestCase_03_Leveraged.post_login(java.lang.reflect.Method) throws java.la...)</span>
-                <span class="method-start">7442 ms</span>
+                <span class="method-start">6532 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=post_login status=SUCCESS method=TestCase_03_Leveraged.post_login(java.lang.reflect...)</span>
-                <span class="method-start">8049 ms</span>
+                <span class="method-start">7073 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">get_user_info(public void com.demo.tests.TestCase_03_Leveraged.get_user_info(java.lang.reflect.Method) throws java...)</span>
-                <span class="method-start">8052 ms</span>
+                <span class="method-start">7076 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=get_user_info status=SUCCESS method=TestCase_03_Leveraged.get_user_info(java.lang.r...)</span>
-                <span class="method-start">8303 ms</span>
+                <span class="method-start">7335 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">get_product_list(public void com.demo.tests.TestCase_03_Leveraged.get_product_list(java.lang.reflect.Method) throws j...)</span>
-                <span class="method-start">8305 ms</span>
+                <span class="method-start">7337 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=get_product_list status=SUCCESS method=TestCase_03_Leveraged.get_product_list(java....)</span>
-                <span class="method-start">9160 ms</span>
+                <span class="method-start">8095 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">web_login</span>
-                <span class="method-start">9196 ms</span>
+                <span class="method-start">8133 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=web_login status=SUCCESS method=TestCase_03_Leveraged.web_login()[pri:3, instance:c...)</span>
-                <span class="method-start">10597 ms</span>
+                <span class="method-start">9615 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">web_leveraged_filters</span>
-                <span class="method-start">10598 ms</span>
+                <span class="method-start">9616 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport([TestResult name=web_leveraged_filters status=FAILURE method=TestCase_03_Leveraged.web_leveraged_fil...)</span>
-                <span class="method-start">13695 ms</span>
+                <span class="method-name">generateReport([TestResult name=web_leveraged_filters status=SUCCESS method=TestCase_03_Leveraged.web_leveraged_fil...)</span>
+                <span class="method-start">13241 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">web_search_for_product</span>
-                <span class="method-start">14215 ms</span>
+                <span class="method-start">13242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=web_search_for_product status=SUCCESS method=TestCase_03_Leveraged.web_search_for_p...)</span>
-                <span class="method-start">15356 ms</span>
+                <span class="method-start">14414 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">web_open_leveraged_product</span>
-                <span class="method-start">15357 ms</span>
+                <span class="method-start">14415 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">generateReport([TestResult name=web_open_leveraged_product status=SUCCESS method=TestCase_03_Leveraged.web_open_lev...)</span>
-                <span class="method-start">16437 ms</span>
+                <span class="method-start">15488 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">clearXmlFiles</span>
-                <span class="method-start">16480 ms</span>
+                <span class="method-start">15524 ms</span>
               </div> <!-- configuration-suite after -->
               <div class="configuration-suite after">
                 <span class="method-name">flushReportData</span>
-                <span class="method-start">16494 ms</span>
+                <span class="method-start">15535 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
