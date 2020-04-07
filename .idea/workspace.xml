@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7b30033-5ef3-480b-99a0-b7a3cb3af185" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/BondsFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/BondsFilters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/EtfsFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/EtfsFilters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/FundsFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/FundsFilters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/get_product_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/get_product_list.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/post_login.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/post_login.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Product.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Product.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Screenshots/Actual/Search_Results.png" beforeDir="false" afterPath="$PROJECT_DIR$/report/Screenshots/Actual/Search_Results.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/archive-tmp/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/tests.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/search/SearchForProductField.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/ui/search/SearchForProductField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/tests.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,22 +32,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="268" column="72" selection-start-line="268" selection-start-column="72" selection-end-line="268" selection-end-column="72" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="68" column="25" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="349">
+              <caret line="66" column="115" lean-forward="true" selection-start-line="66" selection-start-column="115" selection-end-line="66" selection-end-column="115" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,30 +44,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/BondsFilters.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ElementScreenshot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/FundsFilters.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Basic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="157">
@@ -83,22 +74,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/EtfsFilters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+            <state relative-caret-position="1210">
+              <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,10 +86,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/products/ProductsBasic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="297">
+              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,17 +121,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2604">
-              <caret line="137" column="46" selection-start-line="137" selection-end-line="138" />
+            <state relative-caret-position="362">
+              <caret line="93" lean-forward="true" selection-end-line="141" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/AlertHandling.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="126">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,7 +181,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/shares/SharesFilters.java" />
         <option value="$PROJECT_DIR$/src/main/resources/xml_files/test_internal/TestCase_03.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/leveraged/OpenLaveragesPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Basic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/leveraged/OpenLeverageProduct.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/shares/OpenSharesPage.java" />
@@ -211,12 +216,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_05_Bonds.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_06_Etfs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/EtfsFilters.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/BondsFilters.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/FundsFilters.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Basic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java" />
       </list>
     </option>
   </component>
@@ -304,6 +310,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -345,15 +352,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="objects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,39 +371,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="filters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JAVA_FRAMEWORK" type="b2602c69:ProjectViewProjectNode" />
@@ -454,7 +420,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -467,7 +432,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585764306704" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586291168738" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml_files/test" />
     <property name="project.structure.last.edited" value="Project" />
@@ -477,6 +442,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\test" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.demo.scripts.ui.products_page.bonds" />
       <recent name="com.demo.scripts.ui.products_page" />
@@ -484,22 +452,19 @@
       <recent name="com.demo.scripts.ui.filters" />
       <recent name="com.demo.scripts.ui.products_page.shares" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.demo.utilities.user_interface" />
+      <recent name="com.demo.tests" />
+      <recent name="com.demo.scripts.ui.products_page.etfs" />
+      <recent name="com.demo.scripts.ui.filters" />
+      <recent name="com.demo.scripts.ui.products_page.funds" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Automation\AutomationTestLab\src\main\resources\xml_files\test_weekly" />
       <recent name="C:\Automation\AutomationTestLab\src\main\resources\xml_files\test_webtrader" />
       <recent name="C:\Automation\AutomationTestLab\src\main\resources\xml_files\test_internal" />
       <recent name="D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\test_internal" />
       <recent name="D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\test_weekly" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.demo.tests" />
-      <recent name="com.demo.scripts.ui.products_page.etfs" />
-      <recent name="com.demo.scripts.ui.filters" />
-      <recent name="com.demo.scripts.ui.products_page.funds" />
-      <recent name="com.demo.scripts.ui.products_page.leveraged" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Frameworks\AutomationTestLab\src\main\resources\xml_files\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -875,7 +840,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.50591016" side_tool="true" weight="0.21589689" />
-      <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.2535211" />
+      <window_info active="true" content_ui="combo" x="166" y="183" width="315" height="850" id="Project" order="6" sideWeight="0.4911111" visible="true" weight="0.2568746" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3242424" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
@@ -971,31 +936,10 @@
     <state x="-251" y="1232" width="670" height="678" key="search.everywhere.popup/-636.1103.1440.807/-1920.23.1920.1057/0.23.1920.1057@-636.1103.1440.807" timestamp="1575299135440" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/funds/OpenFundsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/products_page/etfs/OpenEtfsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="44" column="39" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchByNameIsinOrSymbol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="39" column="29" selection-start-line="39" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchFromPlaceOrderSidePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
@@ -1170,13 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/products/ProductsBasic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1204,16 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_05_Bonds.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1239">
@@ -1234,13 +1161,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1252,16 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1279,17 +1189,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/BondsFilters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/FundsFilters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/EtfsFilters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/Transactions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2604">
-          <caret line="137" column="46" selection-start-line="137" selection-end-line="138" />
         </state>
       </provider>
     </entry>
@@ -1300,10 +1233,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_04_Shares.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="268" column="72" selection-start-line="268" selection-start-column="72" selection-end-line="268" selection-end-column="72" />
+        <state relative-caret-position="-4136">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchFromPlaceOrderSidePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Basic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_03_Leveraged.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1312,8 +1279,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/search/SearchForProductField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+        <state relative-caret-position="1210">
+          <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/objects/products/ProductsBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1322,48 +1306,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/LaveragesFilters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="68" column="25" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="71" selection-end-column="9" />
+        <state relative-caret-position="349">
+          <caret line="66" column="115" lean-forward="true" selection-start-line="66" selection-start-column="115" selection-end-line="66" selection-end-column="115" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/EtfsFilters.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="362">
+          <caret line="93" lean-forward="true" selection-end-line="141" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/BondsFilters.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ElementScreenshot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/FundsFilters.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/scripts/ui/filters/SharesFilters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

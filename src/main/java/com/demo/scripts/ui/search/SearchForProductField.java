@@ -4,9 +4,11 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.General;
 import com.demo.objects.products.ProductsBasic;
+import com.demo.utilities.user_interface.Basic;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -18,7 +20,7 @@ import static com.demo.properties.FilePaths.screenshots_failed_folder;
 import static com.demo.properties.TestData.productName;
 
 
-public class SearchForProductField extends BasicTestConfig {
+public class SearchForProductField extends Basic {
 
     private static General general           = PageFactory.initElements(driver, General.class);
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
@@ -52,7 +54,7 @@ public class SearchForProductField extends BasicTestConfig {
             general.search_for_a_product_field.sendKeys(productPrefix);
 
 
-            wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+            wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
             String rowProduct = productsBasic.table_row1_product.getText();
 
             try {
@@ -78,22 +80,21 @@ public class SearchForProductField extends BasicTestConfig {
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
         product = productsBasic.table_row1_product.getText();
-        String productPrefix = product.substring(0, 5);
-        general.search_for_a_product_field.sendKeys(productPrefix);
+        String[] productPrefix = product.split(" ");
+        String productSearch = productPrefix[0];
+        general.search_for_a_product_field.sendKeys(productSearch);
 
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+        wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
         String rowProduct = productsBasic.table_row1_product.getText();
 
         try {
-            if (rowProduct.contains(product) == true) {
-                test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + productName + "</i></u> is found");
-                takeScreenshot(driver, "Search_Results");
-                test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + rowProduct+ "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
-            } else {
-                test.fail("<pre><b> Product was not found in search results</b></pre>");
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
+            Assert.assertTrue(rowProduct.contains(productSearch));
+            test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + product + "</i></u> is found");
+            takeScreenshot(driver, "Search_Results");
+            test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + rowProduct + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
+            test.fail("<pre><b> Product was not found in search results</b></pre>");
+        } catch (Exception e) {
+            e.printStackTrace();
             test.fail("<pre>" + e + "<br><br> Product <u>" + product + "</pre>");
             test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + "Search_Failed.png", "<br>" + e).build());
         }
