@@ -101,7 +101,7 @@ public class SearchForProductField extends Basic {
                     wait.until(ExpectedConditions.visibilityOf(general.search_for_a_product_field_close_btn));
                     general.search_for_a_product_field_close_btn.click();
                 } catch (Exception e) {
-                    e.printStackTrace();7
+                    e.printStackTrace();
                 }
             }
         } catch (Exception e) {
