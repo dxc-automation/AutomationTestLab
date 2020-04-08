@@ -13,7 +13,7 @@ import static com.demo.scripts.api.account.Login.secureLogin;
 import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.secureLoginWeb;
 import static com.demo.scripts.ui.filters.SharesFilters.*;
-import static com.demo.scripts.ui.products_page.BasicProductPage.openProduct;
+import static com.demo.scripts.ui.products_page.OpenFirstRowProduct.openProduct;
 import static com.demo.scripts.ui.search.SearchForProductField.*;
 
 public class TestCase_04_Shares extends BasicTestConfig {

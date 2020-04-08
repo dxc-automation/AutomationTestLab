@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 public class FilePaths {
 
     //  Get project main dir
-    public static Path path = Paths.get(new File(System.getProperty("user.dir")).getParentFile().getAbsolutePath());
+    public static Path path = Paths.get(new File(System.getProperty("user.dir")).getParentFile().toPath().toString());
 
 
 

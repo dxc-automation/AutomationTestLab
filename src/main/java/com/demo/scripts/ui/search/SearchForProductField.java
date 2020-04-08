@@ -75,6 +75,10 @@ public class SearchForProductField extends Basic {
         }
     }
 
+
+
+
+
     public static void checkSearchForProductFromTable() throws Exception {
         report();
         wait = new WebDriverWait(driver, 20);
@@ -89,25 +93,21 @@ public class SearchForProductField extends Basic {
         wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
         rowProduct = productsBasic.table_row1_product.getText();
 
-        try {
-         //   boolean isElementDisplayed = productsBasic.table_row1_product.isDisplayed();
-            if (productsBasic.table_row1_product.isDisplayed() != true) {
-                //  Assert.assertTrue(rowProduct.contains(productSearch));
-                test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + product + "</i></u> is found");
-                takeScreenshot(driver, "Search_Results");
-                test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + rowProduct + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
-            } else {
-                try {
-                    wait.until(ExpectedConditions.visibilityOf(general.search_for_a_product_field_close_btn));
-                    general.search_for_a_product_field_close_btn.click();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+        //   boolean isElementDisplayed = productsBasic.table_row1_product.isDisplayed();
+        if (productsBasic.table_row1_product.isDisplayed() != true) {
+            //  Assert.assertTrue(rowProduct.contains(productSearch));
+            takeScreenshot(driver, "Search_Results");
+            test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + product + "</i></u> is found");
+            test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + rowProduct + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
+        } else {
+            try {
+                wait.until(ExpectedConditions.visibilityOf(general.search_for_a_product_field_close_btn));
+                general.search_for_a_product_field_close_btn.click();
+            } catch (Exception e) {
+                e.printStackTrace();
+                test.fail("<pre>" + e + "<br><br> Search for <u>" + product + "</u> failed !</pre>");
+                test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + "Search_Failed.png", "<br>" + e).build());
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-            test.fail("<pre>" + e + "<br><br> Search for <u>" + product + "</u> failed !</pre>");
-            test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + "Search_Failed.png", "<br>" + e).build());
         }
     }
 }

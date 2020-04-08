@@ -13,8 +13,7 @@ import static com.demo.scripts.api.account.Login.secureLogin;
 import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.secureLoginWeb;
 import static com.demo.scripts.ui.filters.FundsFilters.*;
-import static com.demo.scripts.ui.products_page.BasicProductPage.openProduct;
-import static com.demo.scripts.ui.search.SearchForProductField.checkSearchForProductFromResponse;
+import static com.demo.scripts.ui.products_page.OpenFirstRowProduct.openProduct;
 import static com.demo.scripts.ui.search.SearchForProductField.checkSearchForProductFromTable;
 
 public class TestCase_05_Bonds extends BasicTestConfig {

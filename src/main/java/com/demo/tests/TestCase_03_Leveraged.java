@@ -13,8 +13,7 @@ import static com.demo.scripts.api.account.Login.secureLogin;
 import static com.demo.scripts.api.products.AllProducts.getAllProductsFromType;
 import static com.demo.scripts.ui.UserLogin.*;
 import static com.demo.scripts.ui.filters.LaveragesFilters.*;
-import static com.demo.scripts.ui.products_page.BasicProductPage.*;
-import static com.demo.scripts.ui.search.SearchForProductField.checkSearchForProductFromResponse;
+import static com.demo.scripts.ui.products_page.OpenFirstRowProduct.*;
 import static com.demo.scripts.ui.search.SearchForProductField.checkSearchForProductFromTable;
 
 
