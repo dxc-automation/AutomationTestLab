@@ -26,7 +26,8 @@ public class SearchForProductField extends Basic {
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
 
     private static String product;
-    private static String words;
+    private static String productSearch;
+    private static String rowProduct;
 
 
     private static void report() throws Exception {
@@ -81,21 +82,31 @@ public class SearchForProductField extends Basic {
         wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
         product = productsBasic.table_row1_product.getText();
         String[] productPrefix = product.split(" ");
-        String productSearch = productPrefix[0];
+        productSearch = productPrefix[0];
         general.search_for_a_product_field.sendKeys(productSearch);
 
+
         wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
-        String rowProduct = productsBasic.table_row1_product.getText();
+        rowProduct = productsBasic.table_row1_product.getText();
 
         try {
-            Assert.assertTrue(rowProduct.contains(productSearch));
-            test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + product + "</i></u> is found");
-            takeScreenshot(driver, "Search_Results");
-            test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + rowProduct + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
-            test.fail("<pre><b> Product was not found in search results</b></pre>");
+         //   boolean isElementDisplayed = productsBasic.table_row1_product.isDisplayed();
+            if (productsBasic.table_row1_product.isDisplayed() != true) {
+                //  Assert.assertTrue(rowProduct.contains(productSearch));
+                test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + product + "</i></u> is found");
+                takeScreenshot(driver, "Search_Results");
+                test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + rowProduct + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
+            } else {
+                try {
+                    wait.until(ExpectedConditions.visibilityOf(general.search_for_a_product_field_close_btn));
+                    general.search_for_a_product_field_close_btn.click();
+                } catch (Exception e) {
+                    e.printStackTrace();7
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
-            test.fail("<pre>" + e + "<br><br> Product <u>" + product + "</pre>");
+            test.fail("<pre>" + e + "<br><br> Search for <u>" + product + "</u> failed !</pre>");
             test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + "Search_Failed.png", "<br>" + e).build());
         }
     }

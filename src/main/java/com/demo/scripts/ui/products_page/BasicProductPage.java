@@ -14,22 +14,22 @@ import static com.demo.config.ReporterConfig.test;
 public class BasicProductPage extends BasicTestConfig {
 
     private static ProductsBasic productsBasic = PageFactory.initElements(driver, ProductsBasic.class);
+    private static General general = PageFactory.initElements(driver, General.class);
 
     private static String product;
 
 
     private static void report() throws Exception {
-        String testName        = "<b>Open product</b>";
-        String testCategory    = "Frontend";
-        String testDescription = "The purpose of this test is to verify that the user orders history is displayed properly."              +
-                "<br><br><br>* * *  STEPS DESCRIPTION  * * *</b><br><br>"                                                       +
-                                 "[1] Check that the login page can be opened and displayed with correct title.<br>"                      +
-                                 "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
-                                 "[3] Check login with valid credentials.";
+        String testName = "<b>Open product</b>";
+        String testCategory = "Frontend";
+        String testDescription = "The purpose of this test is to verify that the user orders history is displayed properly." +
+                "<br><br><br>* * *  STEPS DESCRIPTION  * * *</b><br><br>" +
+                "[1] Check that the login page can be opened and displayed with correct title.<br>" +
+                "[2] Check the visualization of the login form element by image comparing based on RGB color model.<br>" +
+                "[3] Check login with valid credentials.";
 
         startTestReport(testName, testDescription, testCategory);
     }
-
 
 
     public static void openProduct() throws Exception {
@@ -41,7 +41,6 @@ public class BasicProductPage extends BasicTestConfig {
         test.pass("<b>[STEP 1]</b> First search result is <i><u>" + product + "</i></u>");
         productsBasic.table_row1_product.click();
         test.pass("<b>[STEP 2]</b> Product page was opened successfully");
-
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.product_back_btn));
         takeScreenshot(driver, "Product");

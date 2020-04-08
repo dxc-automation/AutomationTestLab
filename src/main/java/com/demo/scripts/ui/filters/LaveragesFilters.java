@@ -63,7 +63,7 @@ public class LaveragesFilters extends BasicTestConfig {
         test.pass("<b>[STEP 2]</b> Stock Markets filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
 
         try {
-            wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table));
+            wait.until(ExpectedConditions.visibilityOf(productsBasic.page_table)).isDisplayed();
             test.pass("<b>[STEP 3]</b> Leveraged products table was displayed successfully <br>" + productsBasic.table_row1_product.getText());
         } catch (Exception e) {
             e.printStackTrace();

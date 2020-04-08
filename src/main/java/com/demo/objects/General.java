@@ -76,4 +76,7 @@ public class General extends BasicTestConfig {
 
     @FindBy(how = How.CSS, using = "input[name=searchText]")
     public WebElement search_for_a_product_field;
+
+    @FindBy(how = How.XPATH, using = "//div[3]/div/div/div[1]/div//button/i[@role='img']/svg")
+    public WebElement search_for_a_product_field_close_btn;
 }
