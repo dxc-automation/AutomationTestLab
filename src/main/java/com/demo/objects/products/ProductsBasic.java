@@ -58,10 +58,6 @@ public class ProductsBasic extends BasicTestConfig {
     @FindBy(how = How.XPATH, using = "//table/tbody/tr[1]/td/div/a")
     public WebElement table_row1_product;
 
-
-
-
-
     @FindBy(how = How.CSS, using = "button[data-name=backButton]")
     public WebElement product_back_btn;
 }

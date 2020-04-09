@@ -5,11 +5,14 @@ import com.demo.config.BasicTestConfig;
 import com.demo.objects.General;
 import com.demo.objects.products.ProductsBasic;
 import com.demo.utilities.user_interface.Basic;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -28,6 +31,9 @@ public class SearchForProductField extends Basic {
     private static String product;
     private static String productSearch;
     private static String rowProduct;
+
+    private static By table_row_1_product = By.xpath("//table/tbody/tr[1]/td/div/a");
+
 
 
     private static void report() throws Exception {
@@ -77,37 +83,32 @@ public class SearchForProductField extends Basic {
 
 
 
+    public static String getItemText(By item) {
+        //wait.until(presenceOfElementLocated(item));
+        return driver.findElement(item).getText();
+    }
+
+
 
 
     public static void checkSearchForProductFromTable() throws Exception {
         report();
+        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
         wait = new WebDriverWait(driver, 20);
 
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
-        product = productsBasic.table_row1_product.getText();
-        String[] productPrefix = product.split(" ");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(table_row_1_product));
+        String ss = driver.findElement(table_row_1_product).getAttribute("title");
+        System.out.println(ss);
+        product = getItemText(table_row_1_product);
+        String[] productPrefix = product.split(" ", 0);
         productSearch = productPrefix[0];
         general.search_for_a_product_field.sendKeys(productSearch);
 
+        wait.until(ExpectedConditions.visibilityOfElementLocated(table_row_1_product));
+        rowProduct = getItemText(table_row_1_product);
 
-        wait.until(ExpectedConditions.visibilityOf(productsBasic.table_row1_product));
-        rowProduct = productsBasic.table_row1_product.getText();
-
-        //   boolean isElementDisplayed = productsBasic.table_row1_product.isDisplayed();
-        if (productsBasic.table_row1_product.isDisplayed() != true) {
-            //  Assert.assertTrue(rowProduct.contains(productSearch));
-            takeScreenshot(driver, "Search_Results");
-            test.pass("<pre><b>[STEP 1]</b> Product search completed<br> Product <i><u>" + product + "</i></u> is found");
-            test.pass("<b>SEARCH RESULTS</b><br> First product table is: <u>" + rowProduct + "</u>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
-        } else {
-            try {
-                wait.until(ExpectedConditions.visibilityOf(general.search_for_a_product_field_close_btn));
-                general.search_for_a_product_field_close_btn.click();
-            } catch (Exception e) {
-                e.printStackTrace();
-                test.fail("<pre>" + e + "<br><br> Search for <u>" + product + "</u> failed !</pre>");
-                test.fail("<pre><b>FAILED ON SCREEN</b><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_failed_folder + "Search_Failed.png", "<br>" + e).build());
-            }
+        Assert.assertTrue(rowProduct.contains(productSearch));
+        takeScreenshot(driver, "Search_Results");
+        test.pass("<pre><b>*** SEARCH RESULTS ***</b><br> First product table is: <u>" + rowProduct + "</u><br> Search for keyword: <u>" + productSearch + "</u><br><br><center>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
         }
     }
-}

@@ -1,5 +1,6 @@
 package com.demo.scripts.ui.products_page;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.demo.config.BasicTestConfig;
 import com.demo.objects.General;
 import com.demo.objects.products.ProductsBasic;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
+import static com.demo.properties.FilePaths.screenshots_actual_folder;
 
 
 public class OpenFirstRowProduct extends BasicTestConfig {
@@ -46,5 +48,8 @@ public class OpenFirstRowProduct extends BasicTestConfig {
         takeScreenshot(driver, "Product");
         productsBasic.product_back_btn.click();
         test.pass("<b>[STEP 3]</b> Product page was closed successfully");
+
+        takeScreenshot(driver, "Product");
+        test.pass("<pre><center><b>*** SCREENSHOT ***</b><br><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder  + "Product.png", "<br>").build());
     }
 }

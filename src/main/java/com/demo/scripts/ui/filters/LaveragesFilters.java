@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.lang.reflect.Method;
+import java.util.concurrent.TimeUnit;
 
 import static com.demo.config.ReporterConfig.startTestReport;
 import static com.demo.config.ReporterConfig.test;
@@ -53,17 +54,16 @@ public class LaveragesFilters extends BasicTestConfig {
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_2));
         filter_text_1 = productsBasic.filter_option_2.getText();
         productsBasic.filter_option_2.click();
-        test.pass("<b>[STEP 1]</b> Short/Long filter was settled to show only <u><i>" + filter_text_1 + "</i></u>");
+        test.pass("<b><pre>[STEP 1]</b> Short/Long filter was settled to show only <u><i>" + filter_text_1 + "</i></u>");
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_2));
         productsBasic.filter_2.click();
         wait.until(ExpectedConditions.visibilityOf(productsBasic.filter_option_2));
         filter_text_2 = productsBasic.filter_option_2.getText();
         productsBasic.filter_option_2.click();
-        test.pass("<b>[STEP 2]</b> Stock Markets filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
-
+        test.pass("<b><pre>[STEP 2]</b> Stock Markets filter was settled to show only <u><i>" + filter_text_2 + "</i></u>");
 
         takeScreenshot(driver, "Leveraged_Filters");
-        test.pass("<pre><center><b>*** SCREENSHOT ***</b><br> ", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder  + "Leveraged_Filters.png", "<br>").build());
+        test.pass("<pre><center><b>*** SCREENSHOT ***</b><br><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder  + "Leveraged_Filters.png", "<br>").build());
     }
 }

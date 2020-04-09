@@ -41,11 +41,11 @@ public class OpenLaveragedPage extends BasicTestConfig {
 
         wait.until(ExpectedConditions.visibilityOf(general.side_navigation_products_btn));
         general.side_navigation_products_btn.click();
-        test.pass("<b>[STEP 1]</b> Products page was opened successfully");
+        test.pass("<b><pre>[STEP 1]</b> Products page was opened successfully");
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.header_menu_laverages_btn));
         productsBasic.header_menu_laverages_btn.click();
-        test.pass("<b>[STEP 2]</b> Leveraged products page was opened successfully");
+        test.pass("<b><pre>[STEP 2]</b> Leveraged products page was opened successfully");
 
     }
 }
