@@ -105,8 +105,4 @@ public class TestData {
     public static String currencyName;
     public static String currencyLastPrice;
 
-
-
-    //  * * * *    F L Y T    A P I
-    public static String accessToken;
 }

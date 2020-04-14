@@ -97,12 +97,20 @@ public class SearchForProductField extends Basic {
         wait = new WebDriverWait(driver, 20);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(table_row_1_product));
-        String ss = driver.findElement(table_row_1_product).getAttribute("title");
-        System.out.println(ss);
         product = getItemText(table_row_1_product);
         String[] productPrefix = product.split(" ", 0);
         productSearch = productPrefix[0];
-        general.search_for_a_product_field.sendKeys(productSearch);
+
+            char[] charArr = product.toCharArray();
+            for (int i = 0; i <= charArr.length - 1; i++) {
+                String productName = String.valueOf(charArr[i]);
+                general.search_for_a_product_field.sendKeys(productName);
+                try {
+                    Thread.sleep(700);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+        }
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(table_row_1_product));
         rowProduct = getItemText(table_row_1_product);

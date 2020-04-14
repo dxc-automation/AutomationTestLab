@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Demo Test Suite" duration-ms="22025" started-at="2020-04-14T19:22:19Z" finished-at="2020-04-14T19:22:41Z">
+    <groups>
+    </groups>
+    <test name="TC_01_Chrome" duration-ms="22025" started-at="2020-04-14T19:22:19Z" finished-at="2020-04-14T19:22:41Z">
+      <class name="com.demo.tests.TestCase_03_Leveraged">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="browserConfig" is-config="true" duration-ms="6642" started-at="2020-04-14T19:22:12Z" finished-at="2020-04-14T19:22:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="cleanReportData" is-config="true" duration-ms="7" started-at="2020-04-14T19:22:19Z" finished-at="2020-04-14T19:22:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanReportData -->
+        <test-method status="PASS" signature="setEnvironment(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="setEnvironment" is-config="true" duration-ms="43" started-at="2020-04-14T19:22:19Z" finished-at="2020-04-14T19:22:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webtrader]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setEnvironment -->
+        <test-method status="PASS" signature="post_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="post_login" duration-ms="545" started-at="2020-04-14T19:22:19Z" description="API" finished-at="2020-04-14T19:22:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_03_Leveraged.post_login(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_login -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-04-14T19:22:19Z" finished-at="2020-04-14T19:22:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=post_login status=SUCCESS method=TestCase_03_Leveraged.post_login(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="get_user_info(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="get_user_info" duration-ms="247" started-at="2020-04-14T19:22:19Z" description="API" finished-at="2020-04-14T19:22:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_03_Leveraged.get_user_info(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_user_info -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="2" started-at="2020-04-14T19:22:19Z" finished-at="2020-04-14T19:22:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=get_user_info status=SUCCESS method=TestCase_03_Leveraged.get_user_info(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="get_product_list(java.lang.reflect.Method)[pri:2, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="get_product_list" duration-ms="756" started-at="2020-04-14T19:22:19Z" description="API" finished-at="2020-04-14T19:22:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_03_Leveraged.get_product_list(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_product_list -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="36" started-at="2020-04-14T19:22:20Z" finished-at="2020-04-14T19:22:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=get_product_list status=SUCCESS method=TestCase_03_Leveraged.get_product_list(java.lang.reflect.Method)[pri:2, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="web_login()[pri:3, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_login" duration-ms="1545" started-at="2020-04-14T19:22:20Z" description="WEB" finished-at="2020-04-14T19:22:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_login -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-04-14T19:22:22Z" finished-at="2020-04-14T19:22:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_login status=SUCCESS method=TestCase_03_Leveraged.web_login()[pri:3, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="web_leveraged_filters()[pri:4, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_leveraged_filters" duration-ms="3912" started-at="2020-04-14T19:22:22Z" description="WEB" finished-at="2020-04-14T19:22:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_leveraged_filters -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-04-14T19:22:26Z" finished-at="2020-04-14T19:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_leveraged_filters status=SUCCESS method=TestCase_03_Leveraged.web_leveraged_filters()[pri:4, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="web_search_for_product()[pri:5, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_search_for_product" duration-ms="13956" started-at="2020-04-14T19:22:26Z" description="WEB" finished-at="2020-04-14T19:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_search_for_product -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-04-14T19:22:40Z" finished-at="2020-04-14T19:22:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_search_for_product status=SUCCESS method=TestCase_03_Leveraged.web_search_for_product()[pri:5, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="web_open_leveraged_product()[pri:6, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="web_open_leveraged_product" duration-ms="1011" started-at="2020-04-14T19:22:40Z" description="WEB" finished-at="2020-04-14T19:22:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- web_open_leveraged_product -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="generateReport" is-config="true" duration-ms="0" started-at="2020-04-14T19:22:41Z" finished-at="2020-04-14T19:22:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=web_open_leveraged_product status=SUCCESS method=TestCase_03_Leveraged.web_open_leveraged_product()[pri:6, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="clearXmlFiles()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="clearXmlFiles" is-config="true" duration-ms="9" started-at="2020-04-14T19:22:41Z" finished-at="2020-04-14T19:22:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearXmlFiles -->
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_03_Leveraged@7ed7259e]" name="flushReportData" is-config="true" duration-ms="5039" started-at="2020-04-14T19:22:41Z" finished-at="2020-04-14T19:22:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReportData -->
+      </class> <!-- com.demo.tests.TestCase_03_Leveraged -->
+    </test> <!-- TC_01_Chrome -->
+  </suite> <!-- Demo Test Suite -->
+</testng-results>
