@@ -21,6 +21,7 @@ import static com.demo.config.ReporterConfig.test;
 import static com.demo.properties.FilePaths.screenshots_actual_folder;
 import static com.demo.properties.FilePaths.screenshots_failed_folder;
 import static com.demo.properties.TestData.productName;
+import static com.demo.utilities.user_interface.WriteText.typeTextWithDelay;
 
 
 public class SearchForProductField extends Basic {
@@ -98,24 +99,12 @@ public class SearchForProductField extends Basic {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(table_row_1_product));
         product = getItemText(table_row_1_product);
-        String[] productPrefix = product.split(" ", 0);
-        productSearch = productPrefix[0];
-
-            char[] charArr = product.toCharArray();
-            for (int i = 0; i <= charArr.length - 1; i++) {
-                String productName = String.valueOf(charArr[i]);
-                general.search_for_a_product_field.sendKeys(productName);
-                try {
-                    Thread.sleep(700);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-        }
+        typeTextWithDelay(general.search_for_a_product_field, product);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(table_row_1_product));
         rowProduct = getItemText(table_row_1_product);
 
-        Assert.assertTrue(rowProduct.contains(productSearch));
+        Assert.assertTrue(rowProduct.contains(product));
         takeScreenshot(driver, "Search_Results");
         test.pass("<pre><b>*** SEARCH RESULTS ***</b><br> First product table is: <u>" + rowProduct + "</u><br> Search for keyword: <u>" + productSearch + "</u><br><br><center>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder + "Search_Results.png").build());
         }

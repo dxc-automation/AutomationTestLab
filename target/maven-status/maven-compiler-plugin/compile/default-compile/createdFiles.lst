@@ -38,6 +38,7 @@ com\demo\scripts\api\search\PAGE_ProductsList.class
 com\demo\utilities\user_interface\Assertions$1.class
 com\demo\tests\TestCase_06_Etfs.class
 com\demo\utilities\FileUtility.class
+com\demo\utilities\user_interface\WriteText.class
 com\demo\utilities\user_interface\VideoRecord.class
 com\demo\scripts\ui\search\SearchFromPlaceOrderSidePanel.class
 com\demo\tests\TestCase_01.class
