@@ -43,6 +43,8 @@ public class OpenFirstRowProduct extends BasicTestConfig {
         test.pass("<b>[STEP 1]</b> First search result is <i><u>" + product + "</i></u>");
         productsBasic.table_row1_product.click();
         test.pass("<b>[STEP 2]</b> Product page was opened successfully");
+        takeScreenshot(driver, "Product_Details");
+        test.pass("<pre><center><b>*** SCREENSHOT ***</b><br><br>", MediaEntityBuilder.createScreenCaptureFromPath(screenshots_actual_folder  + "Product_Details.png", "<br>").build());
 
         wait.until(ExpectedConditions.visibilityOf(productsBasic.product_back_btn));
         takeScreenshot(driver, "Product");
