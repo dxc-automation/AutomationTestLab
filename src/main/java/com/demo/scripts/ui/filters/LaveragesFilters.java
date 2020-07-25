@@ -6,11 +6,11 @@ import com.demo.objects.General;
 import com.demo.objects.LoginPage;
 import com.demo.objects.activity.ActivityBasic;
 import com.demo.objects.products.ProductsBasic;
+import com.jayway.restassured.http.Method;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
 import static com.demo.config.ReporterConfig.startTestReport;
