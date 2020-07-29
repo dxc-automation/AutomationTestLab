@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Demo Test Suite]">
-  <parameter name="environment" value="webtrader"/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Failed suite [Demo Test Suite]" guice-stage="DEVELOPMENT" verbose="10">
+  <parameter name="environment" value="internal"/>
   <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="com.demo.config.TestNGListener"/>
   </listeners>
-  <test thread-count="5" verbose="10" name="TC_01_Chrome(failed)">
+  <test thread-count="5" name="TC_01_Chrome(failed)" verbose="10">
     <classes>
       <class name="com.demo.tests.TestCase_03_Leveraged">
         <methods>
@@ -17,7 +17,6 @@
           <include name="web_search_for_product"/>
           <include name="setEnvironment"/>
           <include name="web_open_leveraged_product"/>
-          <include name="web_login"/>
           <include name="clearXmlFiles"/>
           <include name="generateReport"/>
         </methods>

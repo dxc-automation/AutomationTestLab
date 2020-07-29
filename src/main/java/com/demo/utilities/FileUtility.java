@@ -51,7 +51,7 @@ public class FileUtility extends BasicTestConfig {
     public static String readJsonResponseFile() {
         try {
             Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
-            Object object = jsonParser.parse(new FileReader(report_json_folder + fileName));
+            JsonObject object = parser.parse(new FileReader(report_json_folder + fileName)).getAsJsonObject();
             String formattedJson = gson.toJson(object);
             return formattedJson;
         } catch (Exception e) {
@@ -64,7 +64,7 @@ public class FileUtility extends BasicTestConfig {
     public static String getFormattedJson(String responseBody) {
         try {
             Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
-            Object jsonObject    = jsonParser.parse(responseBody);
+            JsonObject jsonObject    = parser.parse(responseBody).getAsJsonObject();
             String formattedJson = gson.toJson(jsonObject);
             return formattedJson;
 

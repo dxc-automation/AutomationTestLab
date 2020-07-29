@@ -1,49 +1,62 @@
 {
   "data": {
-    "bankAccount": {
-      "bankAccountId": 439,
-      "iban": "NL91ABNA0417164300",
-      "name": "RABONL2U",
-      "bic": "ABNANL2A",
-      "status": "VERIFIED"
-    },
-    "memberCode": "17ED5E61",
-    "cellphoneNumber": "+888664477",
-    "address": {
-      "streetAddressNumber": "2512019",
-      "zip": "1000",
-      "country": "BG",
-      "streetAddress": "QualityStreet",
-      "city": "Sofia",
-      "streetAddressExt": "QualityHouse"
-    },
-    "intAccount": 100083,
-    "effectiveClientRole": "trader",
-    "contractType": "PRIVATE",
-    "displayName": "TEST TEST",
-    "isAmClientActive": false,
-    "language": "en",
-    "isIskClient": false,
-    "canUpgrade": false,
-    "locale": "en_GB",
-    "isAllocationAvailable": true,
+    "id": 463421,
+    "intAccount": 161017595,
+    "clientRole": "basic",
+    "effectiveClientRole": "basic",
+    "contractType": "CORPORATE",
+    "username": "DGTraderIE",
+    "displayName": "Stichting DeGiro",
+    "email": "testing@degiro.nl",
     "firstContact": {
-      "firstName": "TEST",
-      "lastName": "TEST",
-      "placeOfBirth": "Test",
+      "firstName": "Melvin Sebastiaan",
+      "lastName": "Huisman",
+      "displayName": "Melvin Sebastiaan Huisman",
       "nationality": "NL",
       "gender": "MALE",
-      "countryOfBirth": "NL",
-      "displayName": "TEST TEST",
-      "dateOfBirth": "1987-02-01"
+      "dateOfBirth": "1976-08-03",
+      "placeOfBirth": "Leeuwarden",
+      "countryOfBirth": "NL"
     },
-    "isCollectivePortfolio": false,
-    "phoneNumber": "10162016",
-    "clientRole": "trader",
-    "culture": "GB",
-    "id": 72073,
+    "secondContact": {
+      "firstName": "Henricus Johannes Joseph Maria",
+      "lastName": "Schoofs",
+      "displayName": "Henricus Johannes Joseph Maria Schoofs",
+      "nationality": "NL",
+      "gender": "MALE",
+      "dateOfBirth": "1943-03-17",
+      "placeOfBirth": "Veldhoven",
+      "countryOfBirth": "NL"
+    },
+    "address": {
+      "streetAddress": "Amstelplein",
+      "streetAddressNumber": "1",
+      "streetAddressExt": ".",
+      "zip": "1096HA",
+      "city": "Amsterdam",
+      "country": "NL"
+    },
+    "phoneNumber": "31205353493",
+    "cellphoneNumber": "+31205353493",
+    "locale": "en_IE",
+    "language": "en",
+    "culture": "IE",
+    "company": {
+      "name": "Stichting DeGiro",
+      "registrationNumber": "34342820"
+    },
+    "bankAccount": {
+      "bankAccountId": 469450,
+      "bic": "ABNANL2AXXX",
+      "iban": "NL14ABNA0411232584",
+      "status": "VERIFIED"
+    },
+    "memberCode": "A0A425F1",
     "isWithdrawalAvailable": true,
-    "email": "testing@degiro.nl",
-    "username": "web2879nl"
+    "isAllocationAvailable": false,
+    "isIskClient": false,
+    "isCollectivePortfolio": false,
+    "isAmClientActive": false,
+    "canUpgrade": true
   }
 }
